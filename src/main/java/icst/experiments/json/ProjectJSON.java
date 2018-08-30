@@ -24,6 +24,7 @@ public class ProjectJSON {
     public final String owner;
     public final String name;
     public final String date;
+    private int numberCommits;
 
     public final List<CommitJSON> commits;
 
@@ -42,6 +43,7 @@ public class ProjectJSON {
     }
 
     public static void save(ProjectJSON project, String path) {
+        project.numberCommits = project.commits.size();
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         final File file = new File(path);
         try (FileWriter writer = new FileWriter(file, false)) {

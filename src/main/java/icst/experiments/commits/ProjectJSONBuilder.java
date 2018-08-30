@@ -1,11 +1,9 @@
 package icst.experiments.commits;
 
-import com.martiansoftware.jsap.JSAP;
 import com.martiansoftware.jsap.JSAPResult;
 import icst.experiments.json.CommitJSON;
 import icst.experiments.json.ProjectJSON;
 import org.eclipse.jgit.api.Git;
-import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.diff.DiffFormatter;
 import org.eclipse.jgit.lib.Constants;
@@ -24,6 +22,7 @@ import java.time.ZoneId;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.Function;
 
 /**
  * Created by Benjamin DANGLOT
@@ -42,7 +41,7 @@ public class ProjectJSONBuilder {
     public ProjectJSONBuilder(String pathToRepository, String owner, String project) {
         try {
             this.repository = new FileRepositoryBuilder()
-                    .setGitDir(new File(pathToRepository))
+                    .setGitDir(new File(pathToRepository + "/.git"))
                     .build();
             this.git = new Git(this.repository);
             this.projectJSON = new ProjectJSON(owner, project, this.getDate());
@@ -63,10 +62,13 @@ public class ProjectJSONBuilder {
                     .add(this.repository.resolve(Constants.HEAD))
                     .call();
             final Iterator<RevCommit> iterator = commits.iterator();
-            while (iterator.hasNext()) {
+            int i = 0;
+            while (iterator.hasNext() && !(this.projectJSON.commits.size() == 100)) {
                 this.buildCandidateCommit(iterator.next());
+                i++;
             }
-        } catch (GitAPIException | IOException e) {
+            System.out.println(i);
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }
@@ -78,11 +80,50 @@ public class ProjectJSONBuilder {
 
         final RevCommit parentCommit = commit.getParents()[0];
         final List<DiffEntry> diffEntries = this.computeDiff(commit, parentCommit);
-        if (diffEntries.stream()
+        final boolean anyMatch = diffEntries.stream()
+                .filter(diffEntry -> diffEntry.getChangeType() != DiffEntry.ChangeType.RENAME)
+                .filter(diffEntry -> diffEntry.getChangeType() != DiffEntry.ChangeType.COPY)
+                .filter(diffEntry -> !this.isAMove(diffEntry, diffEntries))
                 .map(DiffEntry::getNewPath)
-                .anyMatch(this::isSourceJavaModification)) {
+                .anyMatch(this::isSourceJavaModification);
+        if (anyMatch) {
             this.projectJSON.commits.add(new CommitJSON(commit.getName(), parentCommit.getName()));
         }
+    }
+
+    private boolean isAMove(DiffEntry diffEntry, List<DiffEntry> diffEntries) {
+        if (diffEntry.getChangeType() == DiffEntry.ChangeType.ADD) {
+            final String fileNameToLookFor = getFileNameToLookFor(diffEntry.getNewPath());
+            return isAMoveSpecificChangeType(
+                    diffEntries,
+                    DiffEntry.ChangeType.DELETE,
+                    fileNameToLookFor,
+                    DiffEntry::getOldPath
+            );
+        } else if (diffEntry.getChangeType() == DiffEntry.ChangeType.DELETE) {
+            final String fileNameToLookFor = getFileNameToLookFor(diffEntry.getOldPath());
+            return isAMoveSpecificChangeType(
+                    diffEntries,
+                    DiffEntry.ChangeType.ADD,
+                    fileNameToLookFor,
+                    DiffEntry::getNewPath
+            );
+        }
+        return false;
+    }
+
+    private boolean isAMoveSpecificChangeType(List<DiffEntry> diffEntries,
+                                              DiffEntry.ChangeType changeType,
+                                              String fileNameToLookFor,
+                                              Function<DiffEntry, String> getter) {
+        return diffEntries.stream().noneMatch(other -> other.getChangeType() == changeType) ||
+                diffEntries.stream().filter(other -> other.getChangeType() == changeType)
+                        .anyMatch(other -> getter.apply(other).endsWith(fileNameToLookFor));
+    }
+
+    private String getFileNameToLookFor(String filename) {
+        final String[] split = filename.split("/");
+        return split[split.length - 1];
     }
 
     private List<DiffEntry> computeDiff(RevCommit commit, RevCommit parent) {
@@ -101,7 +142,7 @@ public class ProjectJSONBuilder {
     }
 
     private boolean isSourceJavaModification(String path) {
-        return path.endsWith(".java") && path.startsWith("src/main/java");
+        return path.endsWith(".java") && path.contains("src/main/java");
     }
 
     public static void main(String[] args) throws IOException {
@@ -116,7 +157,7 @@ public class ProjectJSONBuilder {
         projectJSONBuilder.buildListCandidateCommits();
         ProjectJSON.save(projectJSONBuilder.projectJSON,
                 configuration.getString("output") + "/" +
-                owner + "_" + project + ".json"
+                        owner + "_" + project + ".json"
         );
     }
 
