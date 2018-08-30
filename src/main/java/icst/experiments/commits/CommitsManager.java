@@ -35,10 +35,10 @@ public class CommitsManager {
     private Repository repository;
     private Git git;
 
-    public CommitsManager(String pathToReposoitory) {
+    public CommitsManager(String pathToRepository) {
         try {
             this.repository = new FileRepositoryBuilder()
-                    .setGitDir(new File(".git"))
+                    .setGitDir(new File(pathToRepository))
                     .build();
             this.git = new Git(this.repository);
         } catch (IOException e) {
