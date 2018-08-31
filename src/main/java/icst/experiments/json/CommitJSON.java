@@ -9,9 +9,11 @@ public class CommitJSON {
 
     public final String sha;
     public final String parent;
+    public final String concernedModule;
 
-    public CommitJSON(String sha, String parent) {
+    public CommitJSON(String sha, String parent, String concernedModule) {
         this.sha = sha;
         this.parent = parent;
+        this.concernedModule = concernedModule;
     }
 }

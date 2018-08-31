@@ -19,10 +19,14 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.ZoneId;
+import java.util.AbstractMap;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /**
  * Created by Benjamin DANGLOT
@@ -30,6 +34,8 @@ import java.util.function.Function;
  * on 30/08/18
  */
 public class ProjectJSONBuilder {
+
+    public static final int MAX_NUMBER_COMMITS = 1000;
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ProjectJSONBuilder.class);
 
@@ -63,7 +69,7 @@ public class ProjectJSONBuilder {
                     .call();
             final Iterator<RevCommit> iterator = commits.iterator();
             int i = 0;
-            while (iterator.hasNext() && !(this.projectJSON.commits.size() == 100)) {
+            while (iterator.hasNext() && !(this.projectJSON.commits.size() == MAX_NUMBER_COMMITS )) {
                 this.buildCandidateCommit(iterator.next());
                 i++;
             }
@@ -80,15 +86,31 @@ public class ProjectJSONBuilder {
 
         final RevCommit parentCommit = commit.getParents()[0];
         final List<DiffEntry> diffEntries = this.computeDiff(commit, parentCommit);
-        final boolean anyMatch = diffEntries.stream()
+        final List<String> modifiedJavaFile = diffEntries.stream()
                 .filter(diffEntry -> diffEntry.getChangeType() != DiffEntry.ChangeType.RENAME)
                 .filter(diffEntry -> diffEntry.getChangeType() != DiffEntry.ChangeType.COPY)
                 .filter(diffEntry -> !this.isAMove(diffEntry, diffEntries))
                 .map(DiffEntry::getNewPath)
-                .anyMatch(this::isSourceJavaModification);
-        if (anyMatch) {
-            this.projectJSON.commits.add(new CommitJSON(commit.getName(), parentCommit.getName()));
+                .filter(this::isSourceJavaModification)
+                .collect(Collectors.toList());
+        if (!modifiedJavaFile.isEmpty()) {
+            this.projectJSON.commits.add(new CommitJSON(commit.getName(), parentCommit.getName(), getConcernedModule(modifiedJavaFile)));
         }
+    }
+
+    private Function<String, String> getConcernedModule = string ->
+            string.substring(0, string.indexOf("src/main/java"));
+
+
+    private String getConcernedModule(List<String> modifiedJavaFile) {
+        return modifiedJavaFile.stream()
+                .map(string -> this.getConcernedModule.apply(string))
+                .collect(Collectors.groupingBy(e -> e, Collectors.counting()))
+                .entrySet()
+                .stream()
+                .max(Comparator.comparing(Map.Entry::getValue))
+                .orElse(new AbstractMap.SimpleImmutableEntry<>("", 0L))
+                .getKey();
     }
 
     private boolean isAMove(DiffEntry diffEntry, List<DiffEntry> diffEntries) {
