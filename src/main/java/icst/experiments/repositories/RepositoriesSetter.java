@@ -3,6 +3,7 @@ package icst.experiments.repositories;
 import com.martiansoftware.jsap.JSAPResult;
 import icst.experiments.commits.ProjectBuilderOptions;
 import icst.experiments.json.CommitJSON;
+import icst.experiments.json.ProjectJSON;
 import icst.experiments.util.AbstractRepositoryAndGit;
 import icst.experiments.util.OptionsWrapper;
 import org.eclipse.jgit.api.errors.GitAPIException;
@@ -23,9 +24,10 @@ public class RepositoriesSetter extends AbstractRepositoryAndGit {
 
     protected RepositoriesSetter parent;
 
-    public RepositoriesSetter(String pathToRepository) {
+    public RepositoriesSetter(String pathToRepository, String owner, String project, String output) {
         super(pathToRepository);
-        this.parent = new RepositoriesSetter(pathToRepository + SUFFIX_PATH_TO_OTHER);
+        this.parent = new RepositoriesSetter(pathToRepository + SUFFIX_PATH_TO_OTHER, owner, project, output);
+        this.projectJSON = ProjectJSON.load(output + "/" + owner + "_" + project + ".json");
     }
 
     public void setUpForGivenCommit(CommitJSON commit) {
@@ -47,7 +49,23 @@ public class RepositoriesSetter extends AbstractRepositoryAndGit {
         }
     }
 
+    public void setUpForGivenCommit(int index) {
+        this.setUpForGivenCommit(this.projectJSON.commits.get(index));
+    }
+
     public static void main(String[] args) {
         JSAPResult configuration = OptionsWrapper.parse(new RepositoriesSetterOptions(), args);
+        if (configuration.getBoolean("help")) {
+            OptionsWrapper.usage();
+        }
+        final String owner = configuration.getString("owner");
+        final String project = configuration.getString("project");
+        final String pathToJSON = configuration.getString("json");
+        final int indexOfCommit = configuration.getInt("index");
+        final String pathToRepository = configuration.getString("path-to-repository");
+        new RepositoriesSetter(pathToRepository, owner, project, pathToJSON)
+                .setUpForGivenCommit(indexOfCommit);
     }
+
+
 }
