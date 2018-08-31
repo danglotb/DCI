@@ -4,17 +4,16 @@ import com.martiansoftware.jsap.FlaggedOption;
 import com.martiansoftware.jsap.JSAP;
 import com.martiansoftware.jsap.JSAPException;
 import com.martiansoftware.jsap.Switch;
+import icst.experiments.util.Options;
 
 /**
  * Created by Benjamin DANGLOT
  * benjamin.danglot@inria.fr
  * on 30/08/18
  */
-public class ProjectBuilderOptions {
+public class ProjectBuilderOptions implements Options {
 
-    public static final JSAP options = initJSAP();
-
-    private static JSAP initJSAP() {
+    public JSAP initJSAP() throws JSAPException {
         JSAP jsap = new JSAP();
 
         Switch help = new Switch("help");
@@ -48,15 +47,12 @@ public class ProjectBuilderOptions {
         output.setStringParser(JSAP.STRING_PARSER);
         output.setHelp("[optional] specify where to save the generated json.");
 
-        try {
-            jsap.registerParameter(path);
-            jsap.registerParameter(owner);
-            jsap.registerParameter(project);
-            jsap.registerParameter(output);
-            jsap.registerParameter(help);
-        } catch (JSAPException e) {
-            throw new RuntimeException(e);
-        }
+        jsap.registerParameter(path);
+        jsap.registerParameter(owner);
+        jsap.registerParameter(project);
+        jsap.registerParameter(output);
+        jsap.registerParameter(help);
+
         return jsap;
     }
 

@@ -3,6 +3,8 @@ package icst.experiments.commits;
 import com.martiansoftware.jsap.JSAPResult;
 import icst.experiments.json.CommitJSON;
 import icst.experiments.json.ProjectJSON;
+import icst.experiments.util.AbstractRepositoryAndGit;
+import icst.experiments.util.OptionsWrapper;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.diff.DiffFormatter;
@@ -33,27 +35,15 @@ import java.util.stream.Collectors;
  * benjamin.danglot@inria.fr
  * on 30/08/18
  */
-public class ProjectJSONBuilder {
+public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
 
     public static final int MAX_NUMBER_COMMITS = 1000;
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ProjectJSONBuilder.class);
 
-    private Repository repository;
-    private Git git;
-
-    private ProjectJSON projectJSON;
-
     public ProjectJSONBuilder(String pathToRepository, String owner, String project) {
-        try {
-            this.repository = new FileRepositoryBuilder()
-                    .setGitDir(new File(pathToRepository + "/.git"))
-                    .build();
-            this.git = new Git(this.repository);
-            this.projectJSON = new ProjectJSON(owner, project, this.getDate());
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        super(pathToRepository);
+        this.projectJSON = new ProjectJSON(owner, project, this.getDate());
     }
 
     private String getDate() {
@@ -69,7 +59,7 @@ public class ProjectJSONBuilder {
                     .call();
             final Iterator<RevCommit> iterator = commits.iterator();
             int i = 0;
-            while (iterator.hasNext() && !(this.projectJSON.commits.size() == MAX_NUMBER_COMMITS )) {
+            while (iterator.hasNext() && !(this.projectJSON.commits.size() == MAX_NUMBER_COMMITS)) {
                 this.buildCandidateCommit(iterator.next());
                 i++;
             }
@@ -168,7 +158,11 @@ public class ProjectJSONBuilder {
     }
 
     public static void main(String[] args) throws IOException {
-        JSAPResult configuration = ProjectBuilderOptions.options.parse(args);
+        JSAPResult configuration = OptionsWrapper.parse(new ProjectBuilderOptions(), args);
+        if (configuration.getBoolean("help")) {
+            OptionsWrapper.usage();
+            System.exit(1);
+        }
         final String owner = configuration.getString("owner");
         final String project = configuration.getString("project");
         final ProjectJSONBuilder projectJSONBuilder = new ProjectJSONBuilder(
