@@ -26,8 +26,12 @@ public class RepositoriesSetter extends AbstractRepositoryAndGit {
 
     public RepositoriesSetter(String pathToRepository, String owner, String project, String output) {
         super(pathToRepository);
-        this.parent = new RepositoriesSetter(pathToRepository + SUFFIX_PATH_TO_OTHER, owner, project, output);
+        this.parent = new RepositoriesSetter(pathToRepository + SUFFIX_PATH_TO_OTHER);
         this.projectJSON = ProjectJSON.load(output + "/" + owner + "_" + project + ".json");
+    }
+
+    private RepositoriesSetter(String pathToRepository) {
+        super(pathToRepository);
     }
 
     public void setUpForGivenCommit(CommitJSON commit) {
@@ -37,10 +41,12 @@ public class RepositoriesSetter extends AbstractRepositoryAndGit {
 
     private void setUpForGivenCommit(String sha) {
         try {
+            LOGGER.info("Cleaning local repository...");
             this.git.clean()
                     .setCleanDirectories(true)
                     .setDryRun(true)
                     .call();
+            LOGGER.info("Checkout {} revision...", sha);
             this.git.checkout()
                     .setName(sha)
                     .call();

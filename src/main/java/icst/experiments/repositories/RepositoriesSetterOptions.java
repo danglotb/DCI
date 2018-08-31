@@ -47,12 +47,11 @@ public class RepositoriesSetterOptions implements Options {
         commitIndex.setStringParser(JSAP.INTEGER_PARSER);
         commitIndex.setHelp("[mandatory] specify the index of the commit to use");
 
-        FlaggedOption output = new FlaggedOption("output");
-        output.setLongFlag("output");
+        FlaggedOption output = new FlaggedOption("json");
+        output.setLongFlag("folder-with-json");
         output.setDefault("dataset/<owner>_<project>.json");
-        output.setShortFlag('o');
         output.setStringParser(JSAP.STRING_PARSER);
-        output.setHelp("[optional] specify where to save the generated json.");
+        output.setHelp("[optional] specify where is the generated json.");
 
         jsap.registerParameter(path);
         jsap.registerParameter(owner);

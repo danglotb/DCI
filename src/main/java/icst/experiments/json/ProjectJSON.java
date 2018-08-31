@@ -63,7 +63,7 @@ public class ProjectJSON {
                 throw new RuntimeException(e);
             }
         } else {
-            throw new RuntimeException(path  + "doest not exist.");
+            throw new RuntimeException(path  + " doest not exist.");
         }
     }
 }
