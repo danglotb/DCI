@@ -28,12 +28,6 @@ public class RepositoriesSetterOptions implements Options {
         path.setStringParser(JSAP.STRING_PARSER);
         path.setHelp("[mandatory] specify the path to the local clone of the repository");
 
-        FlaggedOption owner = new FlaggedOption("owner");
-        owner.setRequired(true);
-        owner.setLongFlag("owner");
-        owner.setStringParser(JSAP.STRING_PARSER);
-        owner.setHelp("[mandatory] specify the name of the owner of the repository");
-
         FlaggedOption project = new FlaggedOption("project");
         project.setRequired(true);
         project.setLongFlag("project");
@@ -54,7 +48,6 @@ public class RepositoriesSetterOptions implements Options {
         output.setHelp("[optional] specify where is the generated json.");
 
         jsap.registerParameter(path);
-        jsap.registerParameter(owner);
         jsap.registerParameter(project);
         jsap.registerParameter(commitIndex);
         jsap.registerParameter(output);

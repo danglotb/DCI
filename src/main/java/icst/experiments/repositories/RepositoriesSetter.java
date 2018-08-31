@@ -1,7 +1,6 @@
 package icst.experiments.repositories;
 
 import com.martiansoftware.jsap.JSAPResult;
-import icst.experiments.commits.ProjectBuilderOptions;
 import icst.experiments.json.CommitJSON;
 import icst.experiments.json.ProjectJSON;
 import icst.experiments.util.AbstractRepositoryAndGit;
@@ -24,10 +23,10 @@ public class RepositoriesSetter extends AbstractRepositoryAndGit {
 
     protected RepositoriesSetter parent;
 
-    public RepositoriesSetter(String pathToRepository, String owner, String project, String output) {
+    public RepositoriesSetter(String pathToRepository, String project, String output) {
         super(pathToRepository);
         this.parent = new RepositoriesSetter(pathToRepository + SUFFIX_PATH_TO_OTHER);
-        this.projectJSON = ProjectJSON.load(output + "/" + owner + "_" + project + ".json");
+        this.projectJSON = ProjectJSON.load(output + "/" + project + ".json");
     }
 
     private RepositoriesSetter(String pathToRepository) {
@@ -64,12 +63,11 @@ public class RepositoriesSetter extends AbstractRepositoryAndGit {
         if (configuration.getBoolean("help")) {
             OptionsWrapper.usage();
         }
-        final String owner = configuration.getString("owner");
         final String project = configuration.getString("project");
         final String pathToJSON = configuration.getString("json");
         final int indexOfCommit = configuration.getInt("index");
         final String pathToRepository = configuration.getString("path-to-repository");
-        new RepositoriesSetter(pathToRepository, owner, project, pathToJSON)
+        new RepositoriesSetter(pathToRepository, project, pathToJSON)
                 .setUpForGivenCommit(indexOfCommit);
     }
 

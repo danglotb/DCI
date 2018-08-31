@@ -14,7 +14,10 @@ path_properties = prefix_dataset + "properties_rates.json"
 prefix_current_dataset = prefix_dataset + "september-2018/"
 output_log_path = ""
 
-prefix_result = "results/september-2018/"
+prefix_url_github = "https://github.com/"
+prefix_result = "result/september-2018/"
+
+suffix_parent = "_parent"
 
 def delete_if_exists(path):
     if os.path.isdir(path):
@@ -35,7 +38,7 @@ def get_json_file(file_path):
         return json.load(data_file)
 
 def print_and_call(cmd, cwd=None):
-    if not cwd == None:
+    if not cwd is None:
         print cwd
     print " ".join(cmd) + " | " + " ".join(["tee", "-a", output_log_path])
     p1 = Popen(cmd, stdout=PIPE, cwd=cwd)

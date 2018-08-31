@@ -172,8 +172,7 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
         );
         projectJSONBuilder.buildListCandidateCommits();
         ProjectJSON.save(projectJSONBuilder.projectJSON,
-                configuration.getString("output") + "/" +
-                        owner + "_" + project + ".json"
+                configuration.getString("output") + "/" + project + ".json"
         );
     }
 
