@@ -23,10 +23,10 @@ public class RepositoriesSetter extends AbstractRepositoryAndGit {
 
     protected RepositoriesSetter parent;
 
-    public RepositoriesSetter(String pathToRepository, String project, String output) {
+    public RepositoriesSetter(String pathToRepository, String project, String jsonFolder) {
         super(pathToRepository);
         this.parent = new RepositoriesSetter(pathToRepository + SUFFIX_PATH_TO_OTHER);
-        this.projectJSON = ProjectJSON.load(output + "/" + project + ".json");
+        this.projectJSON = ProjectJSON.load(jsonFolder + "/" + project + ".json");
     }
 
     private RepositoriesSetter(String pathToRepository) {
@@ -39,13 +39,17 @@ public class RepositoriesSetter extends AbstractRepositoryAndGit {
     }
 
     private void setUpForGivenCommit(String sha) {
+        LOGGER.info("{{}}Cleaning local repository...", this.pathToRootFolder);
         try {
-            LOGGER.info("Cleaning local repository...");
             this.git.clean()
                     .setCleanDirectories(true)
                     .setDryRun(true)
                     .call();
-            LOGGER.info("Checkout {} revision...", sha);
+        } catch (GitAPIException e) {
+            throw new RuntimeException(e);
+        }
+        LOGGER.info("Checkout {} revision...", sha);
+        try {
             this.git.checkout()
                     .setName(sha)
                     .call();
@@ -64,10 +68,10 @@ public class RepositoriesSetter extends AbstractRepositoryAndGit {
             OptionsWrapper.usage();
         }
         final String project = configuration.getString("project");
-        final String pathToJSON = configuration.getString("json");
+        final String jsonFolder = configuration.getString("json");
         final int indexOfCommit = configuration.getInt("index");
         final String pathToRepository = configuration.getString("path-to-repository");
-        new RepositoriesSetter(pathToRepository, project, pathToJSON)
+        new RepositoriesSetter(pathToRepository, project, jsonFolder)
                 .setUpForGivenCommit(indexOfCommit);
     }
 
