@@ -15,6 +15,7 @@ import java.io.IOException;
  */
 public class AbstractRepositoryAndGit {
 
+    protected String pathToRootFolder;
     protected Repository repository;
     protected Git git;
 
@@ -24,6 +25,7 @@ public class AbstractRepositoryAndGit {
      * @param pathToRepository path to the root folder of the git repository (must have .git folder)
      */
     public AbstractRepositoryAndGit(String pathToRepository) {
+        this.pathToRootFolder = pathToRepository;
         try {
             this.repository = new FileRepositoryBuilder()
                     .setGitDir(new File(pathToRepository + "/.git"))
