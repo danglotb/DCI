@@ -5,6 +5,7 @@ import icst.experiments.json.CommitJSON;
 import icst.experiments.json.ProjectJSON;
 import icst.experiments.util.AbstractRepositoryAndGit;
 import icst.experiments.util.OptionsWrapper;
+import org.eclipse.jgit.api.ResetCommand;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -39,7 +40,7 @@ public class RepositoriesSetter extends AbstractRepositoryAndGit {
     }
 
     private void setUpForGivenCommit(String sha) {
-        LOGGER.info("{{}}Cleaning local repository...", this.pathToRootFolder);
+        LOGGER.info("{{}} Cleaning local repository...", this.pathToRootFolder);
         try {
             this.git.clean()
                     .setCleanDirectories(true)
@@ -50,8 +51,9 @@ public class RepositoriesSetter extends AbstractRepositoryAndGit {
         }
         LOGGER.info("Checkout {} revision...", sha);
         try {
-            this.git.checkout()
-                    .setName(sha)
+            this.git.reset()
+                    .setRef(sha)
+                    .setMode(ResetCommand.ResetType.HARD)
                     .call();
         } catch (GitAPIException e) {
             throw new RuntimeException(e);
