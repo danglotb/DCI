@@ -2,6 +2,8 @@
 import os
 import toolbox
 import sys
+import preparation
+import commit_setter
 
 
 def run(project):
@@ -14,17 +16,7 @@ def run(project):
     for commit in commits[1:2]:
         toolbox.set_output_log_path(toolbox.prefix_result + project + "/commits_" + str(commits.index(commit)) + ".log")
         #  1) set up both version of the program
-        cmd = [
-            "java",
-            "-cp",
-            toolbox.get_absolute_path(toolbox.path_to_jar),
-            toolbox.full_qualified_name_repositories_setter,
-            "--path-to-repository", path_to_project_root,
-            "--project", project,
-            "--folder-with-json", toolbox.prefix_current_dataset,
-            "--commit-index", str(commits.index(commit)),
-        ]
-        toolbox.print_and_call(cmd)
+        commit_setter.set_commit(path_to_project_root, project, commits.index(commit))
 
         path_to_concerned_module = toolbox.get_absolute_path(
             toolbox.prefix_dataset + project + "/" + commit["concernedModule"])
@@ -34,6 +26,8 @@ def run(project):
         create_diff(commit["parent"], path_to_concerned_module)
 
         path_to_test_that_executes_the_changes = toolbox.get_path_to_csv_file(project, str(commits.index(commit)))
+
+        preparation.prepare(project)
 
         # must build all the project, i.e. installing the version
 
@@ -57,7 +51,7 @@ def run(project):
 def get_list_of_tests_that_execute_changes(concerned_module, path_to_concerned_module, path_to_concerned_module_parent):
     cmd = [
         "mvn", "clean",
-        "eu.stamp-project:diff-test-selection:0.4:list",
+        "eu.stamp-project:diff-test-selection:0.5-SNAPSHOT:list",
         "-DpathToDiff=patch.diff",
         "-DpathToOtherVersion=" + path_to_concerned_module_parent,
         "-Dmodule=" + concerned_module

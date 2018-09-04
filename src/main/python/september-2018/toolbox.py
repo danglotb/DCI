@@ -24,18 +24,22 @@ suffix_parent = "_parent"
 
 name_of_csv_with_list_of_test_that_execute_the_changes = ""
 
+
 def get_path_to_csv_file(project, commit_index):
-    return get_absolute_path(prefix_dataset + project + "/" + name_of_csv_with_list_of_test_that_execute_the_changes + "_" + commit_index + ".csv")
+    return get_absolute_path(
+        prefix_dataset + project + "/" + name_of_csv_with_list_of_test_that_execute_the_changes + "_" + commit_index + ".csv")
 
 def delete_if_exists(path):
     if os.path.isdir(path):
         shutil.rmtree(path)
+
 
 def set_output_log_path(path):
     global output_log_path
     if os.path.isfile(path):
         print_and_call(["rm", "-rf", get_absolute_path(path)])
     output_log_path = path
+
 
 def get_absolute_path(path_file):
     return os.path.abspath(path_file)
@@ -47,11 +51,13 @@ def get_json_file(file_path):
     with open(file_path) as data_file:
         return json.load(data_file)
 
+
 def print_and_call_no_redirection(cmd, cwd=None):
     if not cwd is None:
         print cwd
     print " ".join(cmd)
     subprocess.call(cmd, cwd=cwd)
+
 
 def print_and_call_in_a_file_no_redirection(cmd, cwd=None):
     with open(path_to_script_to_run, "w") as f:
@@ -71,7 +77,9 @@ def print_and_call(cmd, cwd=None):
     print p2.communicate()[0]
     return p2.returncode
 
+
 path_to_script_to_run = get_absolute_path("src/main/bash/script.sh")
+
 
 def print_and_call_in_a_file(cmd, cwd=None):
     print cmd
