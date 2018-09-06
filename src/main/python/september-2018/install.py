@@ -4,20 +4,23 @@ import toolbox
 
 
 def install(project):
-    toolbox.set_output_log_path(toolbox.get_absolute_path(toolbox.prefix_result + project + "_install.log"))
+    toolbox.set_output_log_path(
+        toolbox.get_absolute_path(toolbox.get_absolute_path(toolbox.prefix_result + project + "_install.log")))
 
     with open(toolbox.prefix_current_dataset + project + '.json') as data_file:
         data = json.load(data_file)
 
-    toolbox.print_and_call(
-        ["git", "clone",
-         toolbox.prefix_url_github + data["owner"] + "/" + data["name"], toolbox.prefix_dataset + project]
+    toolbox.print_and_call_in_a_file(
+        " ".join(["git", "clone",
+                  toolbox.prefix_url_github + data["owner"] + "/" + data["name"], toolbox.prefix_dataset + project])
     )
 
-    toolbox.print_and_call(
-        ["git", "clone",
-         toolbox.prefix_url_github + data["owner"] + "/" + data["name"], toolbox.prefix_dataset + project + toolbox.suffix_parent]
+    toolbox.print_and_call_in_a_file(
+        " ".join(["git", "clone",
+         toolbox.prefix_url_github + data["owner"] + "/" + data["name"],
+         toolbox.prefix_dataset + project + toolbox.suffix_parent])
     )
+
 
 if __name__ == '__main__':
 

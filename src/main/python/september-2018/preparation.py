@@ -16,10 +16,11 @@ xml_xwiki_enforcer_skip_tag = xml_prefix + 'xwiki.enforcer.skip'
 
 def prepare(project):
     if project == "xwiki-commons":
-        set_true_include_test_roots(toolbox.prefix_dataset + project + "/pom.xml")
+        set_true_include_test_roots(project)
 
-def set_true_include_test_roots(path_to_root_pom):
+def set_true_include_test_roots(project):
     ET.register_namespace('', xml_namespace)
+    path_to_root_pom = toolbox.prefix_dataset + "/" + project + "/pom.xml"
     tree = ET.parse(path_to_root_pom)
     root_pom = tree.getroot()
     root_pom.findall(xml_properties_tag)[0].findall(xml_xwiki_enforcer_skip_tag)[0].text = "true"
@@ -29,4 +30,10 @@ def set_true_include_test_roots(path_to_root_pom):
         artifact_id = child.findall(xml_artifact_id_tag)[0].text
         if group_id == 'org.openclover' and artifact_id == 'clover-maven-plugin':
             child.findall(xml_configuration_tag)[0].findall(xml_includes_test_source_roots_tag)[0].text = "true"
+    tree.write(path_to_root_pom)
+
+    path_to_root_pom = toolbox.prefix_dataset + "/" + project + toolbox.suffix_parent + "/pom.xml"
+    tree = ET.parse(path_to_root_pom )
+    root_pom = tree.getroot()
+    root_pom.findall(xml_properties_tag)[0].findall(xml_xwiki_enforcer_skip_tag)[0].text = "true"
     tree.write(path_to_root_pom)

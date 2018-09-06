@@ -22,12 +22,12 @@ full_qualified_name_repositories_setter = "icst.experiments.repositories.Reposit
 
 suffix_parent = "_parent"
 
-name_of_csv_with_list_of_test_that_execute_the_changes = ""
+name_of_csv_with_list_of_test_that_execute_the_changes = "testsThatExecuteTheChange"
 
 
 def get_path_to_csv_file(project, commit_index):
     return get_absolute_path(
-        prefix_dataset + project + "/" + name_of_csv_with_list_of_test_that_execute_the_changes + "_" + commit_index + ".csv")
+        prefix_current_dataset + project + "/" + name_of_csv_with_list_of_test_that_execute_the_changes + "_" + commit_index + ".csv")
 
 def delete_if_exists(path):
     if os.path.isdir(path):
@@ -36,8 +36,7 @@ def delete_if_exists(path):
 
 def set_output_log_path(path):
     global output_log_path
-    if os.path.isfile(path):
-        print_and_call(["rm", "-rf", get_absolute_path(path)])
+    delete_if_exists(path)
     output_log_path = path
 
 
