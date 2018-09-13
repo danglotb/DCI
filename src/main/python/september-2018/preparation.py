@@ -37,3 +37,8 @@ def set_true_include_test_roots(project):
     root_pom = tree.getroot()
     root_pom.findall(xml_properties_tag)[0].findall(xml_xwiki_enforcer_skip_tag)[0].text = "true"
     tree.write(path_to_root_pom)
+
+def add_needed_options(cmd, project):
+    if project == "xwiki-commons":
+        cmd.append("-Duse-maven-to-exe-test=true")
+    return cmd

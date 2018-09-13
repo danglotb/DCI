@@ -27,7 +27,8 @@ name_of_csv_with_list_of_test_that_execute_the_changes = "testsThatExecuteTheCha
 
 def get_path_to_csv_file(project, commit_index):
     return get_absolute_path(
-        prefix_current_dataset + project + "/" + name_of_csv_with_list_of_test_that_execute_the_changes + "_" + commit_index + ".csv")
+        prefix_current_dataset + project + "_" + name_of_csv_with_list_of_test_that_execute_the_changes + "_" + commit_index + ".csv"
+    )
 
 def delete_if_exists(path):
     if os.path.isdir(path):

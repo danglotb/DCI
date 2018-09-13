@@ -52,6 +52,7 @@ def run(project):
             "-Dgenerate-new-test-class=true",
             "-Dclean=true"
         ]
+        cmd = preparation.add_needed_options(cmd, project)
         toolbox.print_and_call_in_a_file(" ".join(cmd), cwd=path_to_concerned_module)
 
 def get_list_of_tests_that_execute_changes(concerned_module, path_to_concerned_module, path_to_concerned_module_parent,
