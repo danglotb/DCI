@@ -83,7 +83,7 @@ def create_diff(commit_id, cwd):
 
 if __name__ == '__main__':
 
-    toolbox.init(argv)
+    toolbox.init(sys.argv)
 
     if len(sys.argv) < 2:
         print "usage: python run.py <project> <index_start> <index_end>"
