@@ -1,0 +1,2225 @@
+[INFO] 2018-09-13 12:54:01 RepositoriesSetter - {dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-09-13 12:54:02 RepositoriesSetter - Checkout a9e8d135cbfb2ebeedd2ed528ab6f65416655c1a revision...
+[INFO] 2018-09-13 12:54:02 RepositoriesSetter - {dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-09-13 12:54:03 RepositoriesSetter - Checkout 71c50cf70169ecdf554c4cd6aca08f725a7041b1 revision...
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-extension-repository-maven:jar:10.8-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.xwiki.commons:xwiki-commons-extension-api:test-jar -> duplicate declaration of version ${project.version} @ org.xwiki.commons:xwiki-commons-extension-repository-maven:[unknown-version], /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-maven/pom.xml, line 122, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] XWiki Commons - Parent POM
+[INFO] XWiki Commons - Tools - Parent POM
+[INFO] XWiki Commons - Tools - Verification Resources
+[INFO] XWiki Commons - Tools - Remote Resource Plugin
+[INFO] XWiki Commons - Tools - License Resources
+[INFO] XWiki Commons - Tools - Enforcers
+[INFO] XWiki Commons - Tools - Banned Dependencies Enforcer
+[INFO] XWiki Commons - Tools - Spoon Processor
+[INFO] XWiki Commons - Root POM
+[INFO] XWiki Commons - Tools - Test Framework - Parent POM
+[INFO] XWiki Commons - Tools - Test Framework - Simple
+[INFO] XWiki Commons - Core - Parent POM
+[INFO] XWiki Commons - Stability
+[INFO] XWiki Commons - Text
+[INFO] XWiki Commons - Component - Parent POM
+[INFO] XWiki Commons - Component - API
+[INFO] XWiki Commons - Observation - Parent POM
+[INFO] XWiki Commons - Observation - API
+[INFO] XWiki Commons - Component - Observation
+[INFO] XWiki Commons - Component - Default Implementation
+[INFO] XWiki Commons - Context
+[INFO] XWiki Commons - Configuration - Parent POM
+[INFO] XWiki Commons - Configuration - API
+[INFO] XWiki Commons - Tools - Test Framework - Component
+[INFO] XWiki Commons - Blame
+[INFO] XWiki Commons - Blame - API
+[INFO] XWiki Commons - Loggging
+[INFO] XWiki Commons - Logging - API
+[INFO] XWiki Commons - Diff
+[INFO] XWiki Commons - Diff API
+[INFO] XWiki Commons - Diff Display API
+[INFO] XWiki Commons - Script
+[INFO] XWiki Commons - Blame - Script Service
+[INFO] XWiki Commons - Environment - Parent POM
+[INFO] XWiki Commons - Environment - API
+[INFO] XWiki Commons - Cache - Parent POM
+[INFO] XWiki Commons - Cache - API
+[INFO] XWiki Commons - Cache - Tests
+[INFO] XWiki Commons - Cache - Infinispan
+[INFO] XWiki Commons - ClassLoader - Parent POM
+[INFO] XWiki Commons - ClassLoader - API
+[INFO] XWiki Commons - ClassLoader - Protocols - Parent POM
+[INFO] XWiki Commons - ClassLoader - Protocols - JAR
+[INFO] XWiki Commons - Component - Component Archetype
+[INFO] XWiki Commons - Crypto
+[INFO] XWiki Commons - Crypto - Common API
+[INFO] XWiki Commons - Crypto - Cipher API
+[INFO] XWiki Commons - Crypto - Password API
+[INFO] XWiki Commons - Crypto - Signer API
+[INFO] XWiki Commons - Crypto - PKI API
+[INFO] XWiki Commons - Crypto - Store
+[INFO] XWiki Commons - Cryptographic Services - Storage API
+[INFO] XWiki Commons - Cryptographic Services - Storage Filesystem
+[INFO] XWiki Commons - Environment - Common
+[INFO] XWiki Commons - Environment - Standard
+[INFO] XWiki Commons - Environment - Servlet
+[INFO] XWiki Commons - Properties
+[INFO] XWiki Commons - Observation - Local
+[INFO] XWiki Commons - Job
+[INFO] XWiki Commons - Logging - Logback
+[INFO] XWiki Commons - Extension - Parent POM
+[INFO] XWiki Commons - Extension - API
+[INFO] XWiki Commons - Extension - Maven
+[INFO] XWiki Commons - Extension - Handler - Parent POM
+[INFO] XWiki Commons - Extension - Handler - JAR
+[INFO] XWiki Commons - Extension - Repository - Parent POM
+[INFO] XWiki Commons - Extension - Repository - HTTP
+[INFO] XWiki Commons - Extension - Repository - Maven
+[INFO] XWiki Commons - Repository
+[INFO] XWiki Commons - Repository - Model
+[INFO] XWiki Commons - Repository - API
+[INFO] XWiki Commons - Extension - Repository - XWiki
+[INFO] XWiki Commons - Extension - Repository - Maven - Snapshots Default Repository
+[INFO] XWiki Commons - Filter - Parent POM
+[INFO] XWiki Commons - Filter - API
+[INFO] XWiki Commons - XML
+[INFO] XWiki Commons - Filter - XML
+[INFO] XWiki Commons - Filter - Test framework
+[INFO] XWiki Commons - Filter - Events
+[INFO] XWiki Commons - Filter - Event - Extension
+[INFO] XWiki Commons - Filter - Streams
+[INFO] XWiki Commons - Filter - Stream - Generic XML
+[INFO] XWiki Commons - Groovy
+[INFO] XWiki Commons - Management
+[INFO] XWiki Commons - Velocity
+[INFO] XWiki Commons - Diff Script API
+[INFO] XWiki Commons - Tools - Extension Plugin
+[INFO] XWiki Commons - Tools - XAR Tools
+[INFO] XWiki Commons - Tools - XAR Tools - XAR Plugin
+[INFO] XWiki Commons - Tools - XAR Tools - XAR Handlers
+[INFO] XWiki Commons - Tools - WEBJAR XAR Handlers
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XWiki Commons - Parent POM 10.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ xwiki-commons ---
+[INFO] Installing /tmp/icst-2019/dataset/xwiki-commons/pom.xml to /home/spirals/danglot/.m2/repository/org/xwiki/commons/xwiki-commons/10.8-SNAPSHOT/xwiki-commons-10.8-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XWiki Commons - Tools - Parent POM 10.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-tools ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-tools ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-tools ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons-tools ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons-tools ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons-tools ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons-tools ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons-tools ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons-tools ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons-tools ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons-tools ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ xwiki-commons-tools ---
+[INFO] Installing /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/pom.xml to /home/spirals/danglot/.m2/repository/org/xwiki/commons/xwiki-commons-tools/10.8-SNAPSHOT/xwiki-commons-tools-10.8-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XWiki Commons - Tools - Verification Resources 10.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-tool-verification-resources ---
+[INFO] Deleting /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-verification-resources/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-tool-verification-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-tool-verification-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons-tool-verification-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons-tool-verification-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons-tool-verification-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons-tool-verification-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons-tool-verification-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons-tool-verification-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons-tool-verification-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons-tool-verification-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ xwiki-commons-tool-verification-resources ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ xwiki-commons-tool-verification-resources ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-verification-resources/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.1:manifest (bundle-manifest) @ xwiki-commons-tool-verification-resources ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ xwiki-commons-tool-verification-resources ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ xwiki-commons-tool-verification-resources ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-verification-resources/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ xwiki-commons-tool-verification-resources ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.0:jar (default-jar) @ xwiki-commons-tool-verification-resources ---
+[INFO] Building jar: /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-verification-resources/target/xwiki-commons-tool-verification-resources-10.8-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ xwiki-commons-tool-verification-resources ---
+[INFO] Installing /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-verification-resources/target/xwiki-commons-tool-verification-resources-10.8-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/xwiki/commons/xwiki-commons-tool-verification-resources/10.8-SNAPSHOT/xwiki-commons-tool-verification-resources-10.8-SNAPSHOT.jar
+[INFO] Installing /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-verification-resources/pom.xml to /home/spirals/danglot/.m2/repository/org/xwiki/commons/xwiki-commons-tool-verification-resources/10.8-SNAPSHOT/xwiki-commons-tool-verification-resources-10.8-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XWiki Commons - Tools - Remote Resource Plugin 10.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Deleting /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-remote-resource-plugin/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-remote-resource-plugin/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-remote-resource-plugin/target/classes
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.5:descriptor (default-descriptor) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[WARNING] Deprecated @Component annotation for 'mavenSession' field in org.xwiki.tool.resource.XWikiProcessRemoteResourcesMojo: replace with @Parameter( defaultValue = "${session}", readonly = true )
+[WARNING] Deprecated @Component annotation for 'project' field in org.xwiki.tool.resource.XWikiProcessRemoteResourcesMojo: replace with @Parameter( defaultValue = "${project}", readonly = true )
+[WARNING] Deprecated @Component annotation for 'projectThis' field in org.xwiki.tool.resource.XWikiProcessRemoteResourcesMojo: replace with @Parameter( defaultValue = "${project}", readonly = true )
+[INFO] java-annotations mojo extractor found 1 mojo descriptor.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-remote-resource-plugin/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.0:jar (default-jar) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Building jar: /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-remote-resource-plugin/target/xwiki-commons-tool-remote-resource-plugin-10.8-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.5:addPluginArtifactMetadata (default-addPluginArtifactMetadata) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (blocker) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ xwiki-commons-tool-remote-resource-plugin ---
+[INFO] Installing /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-remote-resource-plugin/target/xwiki-commons-tool-remote-resource-plugin-10.8-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/xwiki/commons/xwiki-commons-tool-remote-resource-plugin/10.8-SNAPSHOT/xwiki-commons-tool-remote-resource-plugin-10.8-SNAPSHOT.jar
+[INFO] Installing /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-remote-resource-plugin/pom.xml to /home/spirals/danglot/.m2/repository/org/xwiki/commons/xwiki-commons-tool-remote-resource-plugin/10.8-SNAPSHOT/xwiki-commons-tool-remote-resource-plugin-10.8-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XWiki Commons - Tools - License Resources 10.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-tool-license-resources ---
+[INFO] Deleting /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-license-resources/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-tool-license-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-tool-license-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons-tool-license-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons-tool-license-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons-tool-license-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons-tool-license-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons-tool-license-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons-tool-license-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons-tool-license-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons-tool-license-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:bundle (default) @ xwiki-commons-tool-license-resources ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ xwiki-commons-tool-license-resources ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ xwiki-commons-tool-license-resources ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ xwiki-commons-tool-license-resources ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-license-resources/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ xwiki-commons-tool-license-resources ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ xwiki-commons-tool-license-resources ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.0:jar (default-jar) @ xwiki-commons-tool-license-resources ---
+[INFO] Building jar: /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-license-resources/target/xwiki-commons-tool-license-resources-10.8-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ xwiki-commons-tool-license-resources ---
+[INFO] Installing /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-license-resources/target/xwiki-commons-tool-license-resources-10.8-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/xwiki/commons/xwiki-commons-tool-license-resources/10.8-SNAPSHOT/xwiki-commons-tool-license-resources-10.8-SNAPSHOT.jar
+[INFO] Installing /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-license-resources/pom.xml to /home/spirals/danglot/.m2/repository/org/xwiki/commons/xwiki-commons-tool-license-resources/10.8-SNAPSHOT/xwiki-commons-tool-license-resources-10.8-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XWiki Commons - Tools - Enforcers 10.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-tool-enforcers ---
+[INFO] Deleting /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-enforcers/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-tool-enforcers ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-tool-enforcers ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons-tool-enforcers ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons-tool-enforcers ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons-tool-enforcers ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons-tool-enforcers ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons-tool-enforcers ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons-tool-enforcers ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons-tool-enforcers ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons-tool-enforcers ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ xwiki-commons-tool-enforcers ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (blocker) @ xwiki-commons-tool-enforcers ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ xwiki-commons-tool-enforcers ---
+[INFO] Installing /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-enforcers/pom.xml to /home/spirals/danglot/.m2/repository/org/xwiki/commons/xwiki-commons-tool-enforcers/10.8-SNAPSHOT/xwiki-commons-tool-enforcers-10.8-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XWiki Commons - Tools - Banned Dependencies Enforcer 10.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Deleting /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-enforcers/xwiki-commons-tool-enforcer-dependencies/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-enforcers/xwiki-commons-tool-enforcer-dependencies/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-enforcers/xwiki-commons-tool-enforcer-dependencies/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-enforcers/xwiki-commons-tool-enforcer-dependencies/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.0:jar (default-jar) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Building jar: /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-enforcers/xwiki-commons-tool-enforcer-dependencies/target/xwiki-commons-tool-enforcer-dependencies-10.8-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (blocker) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ xwiki-commons-tool-enforcer-dependencies ---
+[INFO] Installing /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-enforcers/xwiki-commons-tool-enforcer-dependencies/target/xwiki-commons-tool-enforcer-dependencies-10.8-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/xwiki/commons/xwiki-commons-tool-enforcer-dependencies/10.8-SNAPSHOT/xwiki-commons-tool-enforcer-dependencies-10.8-SNAPSHOT.jar
+[INFO] Installing /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-enforcers/xwiki-commons-tool-enforcer-dependencies/pom.xml to /home/spirals/danglot/.m2/repository/org/xwiki/commons/xwiki-commons-tool-enforcer-dependencies/10.8-SNAPSHOT/xwiki-commons-tool-enforcer-dependencies-10.8-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XWiki Commons - Tools - Spoon Processor 10.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-tool-spoon ---
+[INFO] Deleting /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-spoon/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-tool-spoon ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-tool-spoon ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons-tool-spoon ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons-tool-spoon ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons-tool-spoon ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons-tool-spoon ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons-tool-spoon ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons-tool-spoon ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons-tool-spoon ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons-tool-spoon ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ xwiki-commons-tool-spoon ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-spoon/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ xwiki-commons-tool-spoon ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-spoon/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ xwiki-commons-tool-spoon ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-spoon/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ xwiki-commons-tool-spoon ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ xwiki-commons-tool-spoon ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.0:jar (default-jar) @ xwiki-commons-tool-spoon ---
+[INFO] Building jar: /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-spoon/target/xwiki-commons-tool-spoon-10.8-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (default) @ xwiki-commons-tool-spoon ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (blocker) @ xwiki-commons-tool-spoon ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ xwiki-commons-tool-spoon ---
+[INFO] Installing /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-spoon/target/xwiki-commons-tool-spoon-10.8-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/xwiki/commons/xwiki-commons-tool-spoon/10.8-SNAPSHOT/xwiki-commons-tool-spoon-10.8-SNAPSHOT.jar
+[INFO] Installing /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-spoon/pom.xml to /home/spirals/danglot/.m2/repository/org/xwiki/commons/xwiki-commons-tool-spoon/10.8-SNAPSHOT/xwiki-commons-tool-spoon-10.8-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XWiki Commons - Root POM 10.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-pom ---
+[INFO] Deleting /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-pom/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-legacy-dependencies) @ xwiki-commons-pom ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-valid-poms) @ xwiki-commons-pom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- xwiki-commons-tool-remote-resource-plugin:10.8-SNAPSHOT:process (xwiki-license-resources) @ xwiki-commons-pom ---
+[INFO] 
+[INFO] --- revapi-maven-plugin:0.10.4:check (revapi-check) @ xwiki-commons-pom ---
+[WARNING] Error injecting: org.revapi.maven.CheckMojo
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) Error injecting: private org.eclipse.aether.spi.log.Logger org.apache.maven.repository.internal.DefaultVersionRangeResolver.logger
+  while locating org.apache.maven.repository.internal.DefaultVersionRangeResolver
+  while locating java.lang.Object annotated with *
+  at org.eclipse.sisu.wire.LocatorWiring
+  while locating org.eclipse.aether.impl.VersionRangeResolver
+    for parameter 2 at org.eclipse.aether.internal.impl.DefaultDependencyCollector.<init>(Unknown Source)
+  while locating org.eclipse.aether.internal.impl.DefaultDependencyCollector
+  while locating java.lang.Object annotated with *
+  at org.eclipse.sisu.wire.LocatorWiring
+  while locating org.eclipse.aether.impl.DependencyCollector
+    for parameter 5 at org.eclipse.aether.internal.impl.DefaultRepositorySystem.<init>(Unknown Source)
+  while locating org.eclipse.aether.internal.impl.DefaultRepositorySystem
+  while locating java.lang.Object annotated with *
+  while locating org.revapi.maven.CheckMojo
+Caused by: java.lang.IllegalArgumentException: Can not set org.eclipse.aether.spi.log.Logger field org.apache.maven.repository.internal.DefaultVersionRangeResolver.logger to org.eclipse.aether.internal.impl.slf4j.Slf4jLoggerFactory
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.lang.reflect.Field.set(Field.java:764)
+	at org.eclipse.sisu.bean.BeanPropertyField.set(BeanPropertyField.java:72)
+	at org.eclipse.sisu.plexus.ProvidedPropertyBinding.injectProperty(ProvidedPropertyBinding.java:48)
+	at org.eclipse.sisu.bean.BeanInjector.injectMembers(BeanInjector.java:52)
+	at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:140)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.eclipse.sisu.plexus.PlexusRequirements$RequirementProvider.get(PlexusRequirements.java:250)
+	at org.eclipse.sisu.plexus.ProvidedPropertyBinding.injectProperty(ProvidedPropertyBinding.java:48)
+	at org.eclipse.sisu.bean.BeanInjector.injectMembers(BeanInjector.java:52)
+	at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:140)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at org.eclipse.sisu.bean.BeanScheduler$Activator.onProvision(BeanScheduler.java:176)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:126)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:517)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:121)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+
+2) Error injecting: private org.eclipse.aether.spi.log.Logger org.apache.maven.repository.internal.DefaultVersionResolver.logger
+  while locating org.apache.maven.repository.internal.DefaultVersionResolver
+  while locating java.lang.Object annotated with *
+  at org.eclipse.sisu.wire.LocatorWiring
+  while locating org.eclipse.aether.impl.VersionResolver
+    for parameter 2 at org.eclipse.aether.internal.impl.DefaultArtifactResolver.<init>(Unknown Source)
+  while locating org.eclipse.aether.internal.impl.DefaultArtifactResolver
+  while locating java.lang.Object annotated with *
+  at org.eclipse.sisu.wire.LocatorWiring
+  while locating org.eclipse.aether.impl.ArtifactResolver
+    for parameter 2 at org.eclipse.aether.internal.impl.DefaultRepositorySystem.<init>(Unknown Source)
+  while locating org.eclipse.aether.internal.impl.DefaultRepositorySystem
+  while locating java.lang.Object annotated with *
+  while locating org.revapi.maven.CheckMojo
+Caused by: java.lang.IllegalArgumentException: Can not set org.eclipse.aether.spi.log.Logger field org.apache.maven.repository.internal.DefaultVersionResolver.logger to org.eclipse.aether.internal.impl.slf4j.Slf4jLoggerFactory
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.lang.reflect.Field.set(Field.java:764)
+	at org.eclipse.sisu.bean.BeanPropertyField.set(BeanPropertyField.java:72)
+	at org.eclipse.sisu.plexus.ProvidedPropertyBinding.injectProperty(ProvidedPropertyBinding.java:48)
+	at org.eclipse.sisu.bean.BeanInjector.injectMembers(BeanInjector.java:52)
+	at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:140)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.eclipse.sisu.plexus.PlexusRequirements$RequirementProvider.get(PlexusRequirements.java:250)
+	at org.eclipse.sisu.plexus.ProvidedPropertyBinding.injectProperty(ProvidedPropertyBinding.java:48)
+	at org.eclipse.sisu.bean.BeanInjector.injectMembers(BeanInjector.java:52)
+	at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:140)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at org.eclipse.sisu.bean.BeanScheduler$Activator.onProvision(BeanScheduler.java:176)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:126)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:517)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:121)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+
+3) Error injecting: private org.eclipse.aether.spi.log.Logger org.apache.maven.repository.internal.DefaultVersionResolver.logger
+  while locating org.apache.maven.repository.internal.DefaultVersionResolver
+  while locating java.lang.Object annotated with *
+  at org.eclipse.sisu.wire.LocatorWiring
+  while locating org.eclipse.aether.impl.VersionResolver
+    for parameter 1 at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.<init>(Unknown Source)
+  while locating org.apache.maven.repository.internal.DefaultArtifactDescriptorReader
+  while locating java.lang.Object annotated with *
+  at org.eclipse.sisu.wire.LocatorWiring
+  while locating org.eclipse.aether.impl.ArtifactDescriptorReader
+    for parameter 1 at org.eclipse.aether.internal.impl.DefaultDependencyCollector.<init>(Unknown Source)
+  while locating org.eclipse.aether.internal.impl.DefaultDependencyCollector
+  while locating java.lang.Object annotated with *
+  at org.eclipse.sisu.wire.LocatorWiring
+  while locating org.eclipse.aether.impl.DependencyCollector
+    for parameter 5 at org.eclipse.aether.internal.impl.DefaultRepositorySystem.<init>(Unknown Source)
+  while locating org.eclipse.aether.internal.impl.DefaultRepositorySystem
+  while locating java.lang.Object annotated with *
+  while locating org.revapi.maven.CheckMojo
+Caused by: java.lang.IllegalArgumentException: Can not set org.eclipse.aether.spi.log.Logger field org.apache.maven.repository.internal.DefaultVersionResolver.logger to org.eclipse.aether.internal.impl.slf4j.Slf4jLoggerFactory
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.lang.reflect.Field.set(Field.java:764)
+	at org.eclipse.sisu.bean.BeanPropertyField.set(BeanPropertyField.java:72)
+	at org.eclipse.sisu.plexus.ProvidedPropertyBinding.injectProperty(ProvidedPropertyBinding.java:48)
+	at org.eclipse.sisu.bean.BeanInjector.injectMembers(BeanInjector.java:52)
+	at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:140)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.eclipse.sisu.plexus.PlexusRequirements$RequirementProvider.get(PlexusRequirements.java:250)
+	at org.eclipse.sisu.plexus.ProvidedPropertyBinding.injectProperty(ProvidedPropertyBinding.java:48)
+	at org.eclipse.sisu.bean.BeanInjector.injectMembers(BeanInjector.java:52)
+	at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:140)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at org.eclipse.sisu.bean.BeanScheduler$Activator.onProvision(BeanScheduler.java:176)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:126)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:517)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:121)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+
+4) Error injecting: private org.eclipse.aether.spi.log.Logger org.apache.maven.repository.internal.DefaultVersionResolver.logger
+  while locating org.apache.maven.repository.internal.DefaultVersionResolver
+  while locating java.lang.Object annotated with *
+  at org.eclipse.sisu.wire.LocatorWiring
+  while locating org.eclipse.aether.impl.VersionResolver
+    for parameter 2 at org.eclipse.aether.internal.impl.DefaultArtifactResolver.<init>(Unknown Source)
+  while locating org.eclipse.aether.internal.impl.DefaultArtifactResolver
+  while locating java.lang.Object annotated with *
+  at org.eclipse.sisu.wire.LocatorWiring
+  while locating org.eclipse.aether.impl.ArtifactResolver
+    for parameter 2 at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.<init>(Unknown Source)
+  while locating org.apache.maven.repository.internal.DefaultArtifactDescriptorReader
+  while locating java.lang.Object annotated with *
+  at org.eclipse.sisu.wire.LocatorWiring
+  while locating org.eclipse.aether.impl.ArtifactDescriptorReader
+    for parameter 1 at org.eclipse.aether.internal.impl.DefaultDependencyCollector.<init>(Unknown Source)
+  while locating org.eclipse.aether.internal.impl.DefaultDependencyCollector
+  while locating java.lang.Object annotated with *
+  at org.eclipse.sisu.wire.LocatorWiring
+  while locating org.eclipse.aether.impl.DependencyCollector
+    for parameter 5 at org.eclipse.aether.internal.impl.DefaultRepositorySystem.<init>(Unknown Source)
+  while locating org.eclipse.aether.internal.impl.DefaultRepositorySystem
+  while locating java.lang.Object annotated with *
+  while locating org.revapi.maven.CheckMojo
+Caused by: java.lang.IllegalArgumentException: Can not set org.eclipse.aether.spi.log.Logger field org.apache.maven.repository.internal.DefaultVersionResolver.logger to org.eclipse.aether.internal.impl.slf4j.Slf4jLoggerFactory
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.lang.reflect.Field.set(Field.java:764)
+	at org.eclipse.sisu.bean.BeanPropertyField.set(BeanPropertyField.java:72)
+	at org.eclipse.sisu.plexus.ProvidedPropertyBinding.injectProperty(ProvidedPropertyBinding.java:48)
+	at org.eclipse.sisu.bean.BeanInjector.injectMembers(BeanInjector.java:52)
+	at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:140)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.eclipse.sisu.plexus.PlexusRequirements$RequirementProvider.get(PlexusRequirements.java:250)
+	at org.eclipse.sisu.plexus.ProvidedPropertyBinding.injectProperty(ProvidedPropertyBinding.java:48)
+	at org.eclipse.sisu.bean.BeanInjector.injectMembers(BeanInjector.java:52)
+	at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:140)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at org.eclipse.sisu.bean.BeanScheduler$Activator.onProvision(BeanScheduler.java:176)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:126)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:517)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:121)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+
+4 errors
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+	at org.eclipse.sisu.bean.BeanScheduler$Activator.onProvision(BeanScheduler.java:176)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:126)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:517)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:121)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] XWiki Commons - Parent POM ......................... SUCCESS [  2.089 s]
+[INFO] XWiki Commons - Tools - Parent POM ................. SUCCESS [  0.307 s]
+[INFO] XWiki Commons - Tools - Verification Resources ..... SUCCESS [  6.279 s]
+[INFO] XWiki Commons - Tools - Remote Resource Plugin ..... SUCCESS [  7.010 s]
+[INFO] XWiki Commons - Tools - License Resources .......... SUCCESS [  0.691 s]
+[INFO] XWiki Commons - Tools - Enforcers .................. SUCCESS [  0.790 s]
+[INFO] XWiki Commons - Tools - Banned Dependencies Enforcer SUCCESS [  1.558 s]
+[INFO] XWiki Commons - Tools - Spoon Processor ............ SUCCESS [  1.358 s]
+[INFO] XWiki Commons - Root POM ........................... FAILURE [  1.567 s]
+[INFO] XWiki Commons - Tools - Test Framework - Parent POM  SKIPPED
+[INFO] XWiki Commons - Tools - Test Framework - Simple .... SKIPPED
+[INFO] XWiki Commons - Core - Parent POM .................. SKIPPED
+[INFO] XWiki Commons - Stability .......................... SKIPPED
+[INFO] XWiki Commons - Text ............................... SKIPPED
+[INFO] XWiki Commons - Component - Parent POM ............. SKIPPED
+[INFO] XWiki Commons - Component - API .................... SKIPPED
+[INFO] XWiki Commons - Observation - Parent POM ........... SKIPPED
+[INFO] XWiki Commons - Observation - API .................. SKIPPED
+[INFO] XWiki Commons - Component - Observation ............ SKIPPED
+[INFO] XWiki Commons - Component - Default Implementation . SKIPPED
+[INFO] XWiki Commons - Context ............................ SKIPPED
+[INFO] XWiki Commons - Configuration - Parent POM ......... SKIPPED
+[INFO] XWiki Commons - Configuration - API ................ SKIPPED
+[INFO] XWiki Commons - Tools - Test Framework - Component . SKIPPED
+[INFO] XWiki Commons - Blame .............................. SKIPPED
+[INFO] XWiki Commons - Blame - API ........................ SKIPPED
+[INFO] XWiki Commons - Loggging ........................... SKIPPED
+[INFO] XWiki Commons - Logging - API ...................... SKIPPED
+[INFO] XWiki Commons - Diff ............................... SKIPPED
+[INFO] XWiki Commons - Diff API ........................... SKIPPED
+[INFO] XWiki Commons - Diff Display API ................... SKIPPED
+[INFO] XWiki Commons - Script ............................. SKIPPED
+[INFO] XWiki Commons - Blame - Script Service ............. SKIPPED
+[INFO] XWiki Commons - Environment - Parent POM ........... SKIPPED
+[INFO] XWiki Commons - Environment - API .................. SKIPPED
+[INFO] XWiki Commons - Cache - Parent POM ................. SKIPPED
+[INFO] XWiki Commons - Cache - API ........................ SKIPPED
+[INFO] XWiki Commons - Cache - Tests ...................... SKIPPED
+[INFO] XWiki Commons - Cache - Infinispan ................. SKIPPED
+[INFO] XWiki Commons - ClassLoader - Parent POM ........... SKIPPED
+[INFO] XWiki Commons - ClassLoader - API .................. SKIPPED
+[INFO] XWiki Commons - ClassLoader - Protocols - Parent POM SKIPPED
+[INFO] XWiki Commons - ClassLoader - Protocols - JAR ...... SKIPPED
+[INFO] XWiki Commons - Component - Component Archetype .... SKIPPED
+[INFO] XWiki Commons - Crypto ............................. SKIPPED
+[INFO] XWiki Commons - Crypto - Common API ................ SKIPPED
+[INFO] XWiki Commons - Crypto - Cipher API ................ SKIPPED
+[INFO] XWiki Commons - Crypto - Password API .............. SKIPPED
+[INFO] XWiki Commons - Crypto - Signer API ................ SKIPPED
+[INFO] XWiki Commons - Crypto - PKI API ................... SKIPPED
+[INFO] XWiki Commons - Crypto - Store ..................... SKIPPED
+[INFO] XWiki Commons - Cryptographic Services - Storage API SKIPPED
+[INFO] XWiki Commons - Cryptographic Services - Storage Filesystem SKIPPED
+[INFO] XWiki Commons - Environment - Common ............... SKIPPED
+[INFO] XWiki Commons - Environment - Standard ............. SKIPPED
+[INFO] XWiki Commons - Environment - Servlet .............. SKIPPED
+[INFO] XWiki Commons - Properties ......................... SKIPPED
+[INFO] XWiki Commons - Observation - Local ................ SKIPPED
+[INFO] XWiki Commons - Job ................................ SKIPPED
+[INFO] XWiki Commons - Logging - Logback .................. SKIPPED
+[INFO] XWiki Commons - Extension - Parent POM ............. SKIPPED
+[INFO] XWiki Commons - Extension - API .................... SKIPPED
+[INFO] XWiki Commons - Extension - Maven .................. SKIPPED
+[INFO] XWiki Commons - Extension - Handler - Parent POM ... SKIPPED
+[INFO] XWiki Commons - Extension - Handler - JAR .......... SKIPPED
+[INFO] XWiki Commons - Extension - Repository - Parent POM  SKIPPED
+[INFO] XWiki Commons - Extension - Repository - HTTP ...... SKIPPED
+[INFO] XWiki Commons - Extension - Repository - Maven ..... SKIPPED
+[INFO] XWiki Commons - Repository ......................... SKIPPED
+[INFO] XWiki Commons - Repository - Model ................. SKIPPED
+[INFO] XWiki Commons - Repository - API ................... SKIPPED
+[INFO] XWiki Commons - Extension - Repository - XWiki ..... SKIPPED
+[INFO] XWiki Commons - Extension - Repository - Maven - Snapshots Default Repository SKIPPED
+[INFO] XWiki Commons - Filter - Parent POM ................ SKIPPED
+[INFO] XWiki Commons - Filter - API ....................... SKIPPED
+[INFO] XWiki Commons - XML ................................ SKIPPED
+[INFO] XWiki Commons - Filter - XML ....................... SKIPPED
+[INFO] XWiki Commons - Filter - Test framework ............ SKIPPED
+[INFO] XWiki Commons - Filter - Events .................... SKIPPED
+[INFO] XWiki Commons - Filter - Event - Extension ......... SKIPPED
+[INFO] XWiki Commons - Filter - Streams ................... SKIPPED
+[INFO] XWiki Commons - Filter - Stream - Generic XML ...... SKIPPED
+[INFO] XWiki Commons - Groovy ............................. SKIPPED
+[INFO] XWiki Commons - Management ......................... SKIPPED
+[INFO] XWiki Commons - Velocity ........................... SKIPPED
+[INFO] XWiki Commons - Diff Script API .................... SKIPPED
+[INFO] XWiki Commons - Tools - Extension Plugin ........... SKIPPED
+[INFO] XWiki Commons - Tools - XAR Tools .................. SKIPPED
+[INFO] XWiki Commons - Tools - XAR Tools - XAR Plugin ..... SKIPPED
+[INFO] XWiki Commons - Tools - XAR Tools - XAR Handlers ... SKIPPED
+[INFO] XWiki Commons - Tools - WEBJAR XAR Handlers ........ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 24.886 s
+[INFO] Finished at: 2018-09-13T12:54:31+02:00
+[INFO] Final Memory: 121M/2552M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.revapi:revapi-maven-plugin:0.10.4:check (revapi-check) on project xwiki-commons-pom: Execution revapi-check of goal org.revapi:revapi-maven-plugin:0.10.4:check failed: Unable to load the mojo 'check' (or one of its required components) from the plugin 'org.revapi:revapi-maven-plugin:0.10.4': com.google.inject.ProvisionException: Unable to provision, see the following errors:
+[ERROR] 
+[ERROR] 1) Error injecting: private org.eclipse.aether.spi.log.Logger org.apache.maven.repository.internal.DefaultVersionRangeResolver.logger
+[ERROR] while locating org.apache.maven.repository.internal.DefaultVersionRangeResolver
+[ERROR] while locating java.lang.Object annotated with *
+[ERROR] at org.eclipse.sisu.wire.LocatorWiring
+[ERROR] while locating org.eclipse.aether.impl.VersionRangeResolver
+[ERROR] for parameter 2 at org.eclipse.aether.internal.impl.DefaultDependencyCollector.<init>(Unknown Source)
+[ERROR] while locating org.eclipse.aether.internal.impl.DefaultDependencyCollector
+[ERROR] while locating java.lang.Object annotated with *
+[ERROR] at org.eclipse.sisu.wire.LocatorWiring
+[ERROR] while locating org.eclipse.aether.impl.DependencyCollector
+[ERROR] for parameter 5 at org.eclipse.aether.internal.impl.DefaultRepositorySystem.<init>(Unknown Source)
+[ERROR] while locating org.eclipse.aether.internal.impl.DefaultRepositorySystem
+[ERROR] while locating java.lang.Object annotated with *
+[ERROR] while locating org.revapi.maven.CheckMojo
+[ERROR] at ClassRealm[plugin>org.revapi:revapi-maven-plugin:0.10.4, parent: sun.misc.Launcher$AppClassLoader@55f96302] (via modules: org.eclipse.sisu.wire.WireModule -> org.eclipse.sisu.plexus.PlexusBindingModule)
+[ERROR] while locating org.apache.maven.plugin.Mojo annotated with @com.google.inject.name.Named(value=org.revapi:revapi-maven-plugin:0.10.4:check)
+[ERROR] Caused by: java.lang.IllegalArgumentException: Can not set org.eclipse.aether.spi.log.Logger field org.apache.maven.repository.internal.DefaultVersionRangeResolver.logger to org.eclipse.aether.internal.impl.slf4j.Slf4jLoggerFactory
+[ERROR] at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+[ERROR] at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+[ERROR] at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+[ERROR] at java.lang.reflect.Field.set(Field.java:764)
+[ERROR] at org.eclipse.sisu.bean.BeanPropertyField.set(BeanPropertyField.java:72)
+[ERROR] at org.eclipse.sisu.plexus.ProvidedPropertyBinding.injectProperty(ProvidedPropertyBinding.java:48)
+[ERROR] at org.eclipse.sisu.bean.BeanInjector.injectMembers(BeanInjector.java:52)
+[ERROR] at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:140)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+[ERROR] at org.eclipse.sisu.plexus.PlexusRequirements$RequirementProvider.get(PlexusRequirements.java:250)
+[ERROR] at org.eclipse.sisu.plexus.ProvidedPropertyBinding.injectProperty(ProvidedPropertyBinding.java:48)
+[ERROR] at org.eclipse.sisu.bean.BeanInjector.injectMembers(BeanInjector.java:52)
+[ERROR] at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:140)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)
+[ERROR] at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at org.eclipse.sisu.bean.BeanScheduler$Activator.onProvision(BeanScheduler.java:176)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:126)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+[ERROR] at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+[ERROR] at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+[ERROR] at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:517)
+[ERROR] at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:121)
+[ERROR] at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+[ERROR] at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+[ERROR] at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+[ERROR] at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+[ERROR] at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+[ERROR] at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+[ERROR] at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+[ERROR] at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+[ERROR] at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+[ERROR] at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+[ERROR] at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+[ERROR] at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+[ERROR] at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+[ERROR] at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[ERROR] at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[ERROR] at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[ERROR] at java.lang.reflect.Method.invoke(Method.java:498)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+[ERROR] 
+[ERROR] 2) Error injecting: private org.eclipse.aether.spi.log.Logger org.apache.maven.repository.internal.DefaultVersionResolver.logger
+[ERROR] while locating org.apache.maven.repository.internal.DefaultVersionResolver
+[ERROR] while locating java.lang.Object annotated with *
+[ERROR] at org.eclipse.sisu.wire.LocatorWiring
+[ERROR] while locating org.eclipse.aether.impl.VersionResolver
+[ERROR] for parameter 2 at org.eclipse.aether.internal.impl.DefaultArtifactResolver.<init>(Unknown Source)
+[ERROR] while locating org.eclipse.aether.internal.impl.DefaultArtifactResolver
+[ERROR] while locating java.lang.Object annotated with *
+[ERROR] at org.eclipse.sisu.wire.LocatorWiring
+[ERROR] while locating org.eclipse.aether.impl.ArtifactResolver
+[ERROR] for parameter 2 at org.eclipse.aether.internal.impl.DefaultRepositorySystem.<init>(Unknown Source)
+[ERROR] while locating org.eclipse.aether.internal.impl.DefaultRepositorySystem
+[ERROR] while locating java.lang.Object annotated with *
+[ERROR] while locating org.revapi.maven.CheckMojo
+[ERROR] at ClassRealm[plugin>org.revapi:revapi-maven-plugin:0.10.4, parent: sun.misc.Launcher$AppClassLoader@55f96302] (via modules: org.eclipse.sisu.wire.WireModule -> org.eclipse.sisu.plexus.PlexusBindingModule)
+[ERROR] while locating org.apache.maven.plugin.Mojo annotated with @com.google.inject.name.Named(value=org.revapi:revapi-maven-plugin:0.10.4:check)
+[ERROR] Caused by: java.lang.IllegalArgumentException: Can not set org.eclipse.aether.spi.log.Logger field org.apache.maven.repository.internal.DefaultVersionResolver.logger to org.eclipse.aether.internal.impl.slf4j.Slf4jLoggerFactory
+[ERROR] at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+[ERROR] at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+[ERROR] at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+[ERROR] at java.lang.reflect.Field.set(Field.java:764)
+[ERROR] at org.eclipse.sisu.bean.BeanPropertyField.set(BeanPropertyField.java:72)
+[ERROR] at org.eclipse.sisu.plexus.ProvidedPropertyBinding.injectProperty(ProvidedPropertyBinding.java:48)
+[ERROR] at org.eclipse.sisu.bean.BeanInjector.injectMembers(BeanInjector.java:52)
+[ERROR] at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:140)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+[ERROR] at org.eclipse.sisu.plexus.PlexusRequirements$RequirementProvider.get(PlexusRequirements.java:250)
+[ERROR] at org.eclipse.sisu.plexus.ProvidedPropertyBinding.injectProperty(ProvidedPropertyBinding.java:48)
+[ERROR] at org.eclipse.sisu.bean.BeanInjector.injectMembers(BeanInjector.java:52)
+[ERROR] at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:140)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)
+[ERROR] at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at org.eclipse.sisu.bean.BeanScheduler$Activator.onProvision(BeanScheduler.java:176)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:126)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+[ERROR] at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+[ERROR] at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+[ERROR] at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:517)
+[ERROR] at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:121)
+[ERROR] at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+[ERROR] at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+[ERROR] at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+[ERROR] at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+[ERROR] at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+[ERROR] at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+[ERROR] at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+[ERROR] at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+[ERROR] at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+[ERROR] at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+[ERROR] at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+[ERROR] at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+[ERROR] at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+[ERROR] at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[ERROR] at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[ERROR] at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[ERROR] at java.lang.reflect.Method.invoke(Method.java:498)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+[ERROR] 
+[ERROR] 3) Error injecting: private org.eclipse.aether.spi.log.Logger org.apache.maven.repository.internal.DefaultVersionResolver.logger
+[ERROR] while locating org.apache.maven.repository.internal.DefaultVersionResolver
+[ERROR] while locating java.lang.Object annotated with *
+[ERROR] at org.eclipse.sisu.wire.LocatorWiring
+[ERROR] while locating org.eclipse.aether.impl.VersionResolver
+[ERROR] for parameter 1 at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.<init>(Unknown Source)
+[ERROR] while locating org.apache.maven.repository.internal.DefaultArtifactDescriptorReader
+[ERROR] while locating java.lang.Object annotated with *
+[ERROR] at org.eclipse.sisu.wire.LocatorWiring
+[ERROR] while locating org.eclipse.aether.impl.ArtifactDescriptorReader
+[ERROR] for parameter 1 at org.eclipse.aether.internal.impl.DefaultDependencyCollector.<init>(Unknown Source)
+[ERROR] while locating org.eclipse.aether.internal.impl.DefaultDependencyCollector
+[ERROR] while locating java.lang.Object annotated with *
+[ERROR] at org.eclipse.sisu.wire.LocatorWiring
+[ERROR] while locating org.eclipse.aether.impl.DependencyCollector
+[ERROR] for parameter 5 at org.eclipse.aether.internal.impl.DefaultRepositorySystem.<init>(Unknown Source)
+[ERROR] while locating org.eclipse.aether.internal.impl.DefaultRepositorySystem
+[ERROR] while locating java.lang.Object annotated with *
+[ERROR] while locating org.revapi.maven.CheckMojo
+[ERROR] at ClassRealm[plugin>org.revapi:revapi-maven-plugin:0.10.4, parent: sun.misc.Launcher$AppClassLoader@55f96302] (via modules: org.eclipse.sisu.wire.WireModule -> org.eclipse.sisu.plexus.PlexusBindingModule)
+[ERROR] while locating org.apache.maven.plugin.Mojo annotated with @com.google.inject.name.Named(value=org.revapi:revapi-maven-plugin:0.10.4:check)
+[ERROR] Caused by: java.lang.IllegalArgumentException: Can not set org.eclipse.aether.spi.log.Logger field org.apache.maven.repository.internal.DefaultVersionResolver.logger to org.eclipse.aether.internal.impl.slf4j.Slf4jLoggerFactory
+[ERROR] at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+[ERROR] at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+[ERROR] at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+[ERROR] at java.lang.reflect.Field.set(Field.java:764)
+[ERROR] at org.eclipse.sisu.bean.BeanPropertyField.set(BeanPropertyField.java:72)
+[ERROR] at org.eclipse.sisu.plexus.ProvidedPropertyBinding.injectProperty(ProvidedPropertyBinding.java:48)
+[ERROR] at org.eclipse.sisu.bean.BeanInjector.injectMembers(BeanInjector.java:52)
+[ERROR] at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:140)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+[ERROR] at org.eclipse.sisu.plexus.PlexusRequirements$RequirementProvider.get(PlexusRequirements.java:250)
+[ERROR] at org.eclipse.sisu.plexus.ProvidedPropertyBinding.injectProperty(ProvidedPropertyBinding.java:48)
+[ERROR] at org.eclipse.sisu.bean.BeanInjector.injectMembers(BeanInjector.java:52)
+[ERROR] at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:140)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)
+[ERROR] at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at org.eclipse.sisu.bean.BeanScheduler$Activator.onProvision(BeanScheduler.java:176)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:126)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+[ERROR] at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+[ERROR] at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+[ERROR] at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:517)
+[ERROR] at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:121)
+[ERROR] at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+[ERROR] at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+[ERROR] at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+[ERROR] at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+[ERROR] at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+[ERROR] at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+[ERROR] at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+[ERROR] at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+[ERROR] at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+[ERROR] at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+[ERROR] at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+[ERROR] at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+[ERROR] at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+[ERROR] at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[ERROR] at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[ERROR] at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[ERROR] at java.lang.reflect.Method.invoke(Method.java:498)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+[ERROR] 
+[ERROR] 4) Error injecting: private org.eclipse.aether.spi.log.Logger org.apache.maven.repository.internal.DefaultVersionResolver.logger
+[ERROR] while locating org.apache.maven.repository.internal.DefaultVersionResolver
+[ERROR] while locating java.lang.Object annotated with *
+[ERROR] at org.eclipse.sisu.wire.LocatorWiring
+[ERROR] while locating org.eclipse.aether.impl.VersionResolver
+[ERROR] for parameter 2 at org.eclipse.aether.internal.impl.DefaultArtifactResolver.<init>(Unknown Source)
+[ERROR] while locating org.eclipse.aether.internal.impl.DefaultArtifactResolver
+[ERROR] while locating java.lang.Object annotated with *
+[ERROR] at org.eclipse.sisu.wire.LocatorWiring
+[ERROR] while locating org.eclipse.aether.impl.ArtifactResolver
+[ERROR] for parameter 2 at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.<init>(Unknown Source)
+[ERROR] while locating org.apache.maven.repository.internal.DefaultArtifactDescriptorReader
+[ERROR] while locating java.lang.Object annotated with *
+[ERROR] at org.eclipse.sisu.wire.LocatorWiring
+[ERROR] while locating org.eclipse.aether.impl.ArtifactDescriptorReader
+[ERROR] for parameter 1 at org.eclipse.aether.internal.impl.DefaultDependencyCollector.<init>(Unknown Source)
+[ERROR] while locating org.eclipse.aether.internal.impl.DefaultDependencyCollector
+[ERROR] while locating java.lang.Object annotated with *
+[ERROR] at org.eclipse.sisu.wire.LocatorWiring
+[ERROR] while locating org.eclipse.aether.impl.DependencyCollector
+[ERROR] for parameter 5 at org.eclipse.aether.internal.impl.DefaultRepositorySystem.<init>(Unknown Source)
+[ERROR] while locating org.eclipse.aether.internal.impl.DefaultRepositorySystem
+[ERROR] while locating java.lang.Object annotated with *
+[ERROR] while locating org.revapi.maven.CheckMojo
+[ERROR] at ClassRealm[plugin>org.revapi:revapi-maven-plugin:0.10.4, parent: sun.misc.Launcher$AppClassLoader@55f96302] (via modules: org.eclipse.sisu.wire.WireModule -> org.eclipse.sisu.plexus.PlexusBindingModule)
+[ERROR] while locating org.apache.maven.plugin.Mojo annotated with @com.google.inject.name.Named(value=org.revapi:revapi-maven-plugin:0.10.4:check)
+[ERROR] Caused by: java.lang.IllegalArgumentException: Can not set org.eclipse.aether.spi.log.Logger field org.apache.maven.repository.internal.DefaultVersionResolver.logger to org.eclipse.aether.internal.impl.slf4j.Slf4jLoggerFactory
+[ERROR] at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+[ERROR] at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+[ERROR] at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+[ERROR] at java.lang.reflect.Field.set(Field.java:764)
+[ERROR] at org.eclipse.sisu.bean.BeanPropertyField.set(BeanPropertyField.java:72)
+[ERROR] at org.eclipse.sisu.plexus.ProvidedPropertyBinding.injectProperty(ProvidedPropertyBinding.java:48)
+[ERROR] at org.eclipse.sisu.bean.BeanInjector.injectMembers(BeanInjector.java:52)
+[ERROR] at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:140)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders.firstOf(BeanProviders.java:179)
+[ERROR] at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:160)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+[ERROR] at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+[ERROR] at org.eclipse.sisu.plexus.PlexusRequirements$RequirementProvider.get(PlexusRequirements.java:250)
+[ERROR] at org.eclipse.sisu.plexus.ProvidedPropertyBinding.injectProperty(ProvidedPropertyBinding.java:48)
+[ERROR] at org.eclipse.sisu.bean.BeanInjector.injectMembers(BeanInjector.java:52)
+[ERROR] at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:140)
+[ERROR] at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+[ERROR] at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
+[ERROR] at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
+[ERROR] at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)
+[ERROR] at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
+[ERROR] at org.eclipse.sisu.bean.BeanScheduler$Activator.onProvision(BeanScheduler.java:176)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:126)
+[ERROR] at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
+[ERROR] at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
+[ERROR] at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+[ERROR] at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+[ERROR] at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+[ERROR] at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+[ERROR] at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+[ERROR] at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+[ERROR] at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+[ERROR] at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+[ERROR] at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+[ERROR] at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:517)
+[ERROR] at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:121)
+[ERROR] at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+[ERROR] at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+[ERROR] at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+[ERROR] at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+[ERROR] at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+[ERROR] at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+[ERROR] at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+[ERROR] at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+[ERROR] at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+[ERROR] at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+[ERROR] at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+[ERROR] at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+[ERROR] at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+[ERROR] at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[ERROR] at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[ERROR] at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[ERROR] at java.lang.reflect.Method.invoke(Method.java:498)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+[ERROR] at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+[ERROR] 
+[ERROR] 4 errors
+[ERROR] role: org.apache.maven.plugin.Mojo
+[ERROR] roleHint: org.revapi:revapi-maven-plugin:0.10.4:check
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginContainerException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :xwiki-commons-pom
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-extension-repository-maven:jar:10.8-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.xwiki.commons:xwiki-commons-extension-api:test-jar -> duplicate declaration of version ${project.version} @ org.xwiki.commons:xwiki-commons-extension-repository-maven:[unknown-version], /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-maven/pom.xml, line 122, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[WARNING] The POM for eu.stamp-project:diff-test-selection:jar:0.5-SNAPSHOT is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.688 s
+[INFO] Finished at: 2018-09-13T12:54:36+02:00
+[INFO] Final Memory: 24M/1963M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Plugin eu.stamp-project:diff-test-selection:0.5-SNAPSHOT or one of its dependencies could not be resolved: Could not find artifact eu.stamp-project:diff-test-selection:jar:0.5-SNAPSHOT -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginResolutionException
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-extension-repository-maven:jar:10.8-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.xwiki.commons:xwiki-commons-extension-api:test-jar -> duplicate declaration of version ${project.version} @ org.xwiki.commons:xwiki-commons-extension-repository-maven:[unknown-version], /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-maven/pom.xml, line 122, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XWiki Commons - Extension - Repository - Maven 10.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.xwiki.commons:xwiki-commons-extension-api:jar:tests:10.8-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.xwiki.commons:xwiki-commons-properties:jar:10.8-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.xwiki.commons:xwiki-commons-environment-api:jar:10.8-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.xwiki.commons:xwiki-commons-extension-maven:jar:10.8-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.xwiki.commons:xwiki-commons-environment-standard:jar:10.8-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.xwiki.commons:xwiki-commons-tool-test-component:jar:10.8-SNAPSHOT is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.789 s
+[INFO] Finished at: 2018-09-13T12:54:40+02:00
+[INFO] Final Memory: 27M/1963M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project xwiki-commons-extension-repository-maven: Could not resolve dependencies for project org.xwiki.commons:xwiki-commons-extension-repository-maven:jar:10.8-SNAPSHOT: The following artifacts could not be resolved: org.xwiki.commons:xwiki-commons-extension-api:jar:tests:10.8-SNAPSHOT, org.xwiki.commons:xwiki-commons-properties:jar:10.8-SNAPSHOT, org.xwiki.commons:xwiki-commons-environment-api:jar:10.8-SNAPSHOT, org.xwiki.commons:xwiki-commons-extension-maven:jar:10.8-SNAPSHOT, org.xwiki.commons:xwiki-commons-environment-standard:jar:10.8-SNAPSHOT, org.xwiki.commons:xwiki-commons-tool-test-component:jar:10.8-SNAPSHOT: Could not find artifact org.xwiki.commons:xwiki-commons-extension-api:jar:tests:10.8-SNAPSHOT -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
