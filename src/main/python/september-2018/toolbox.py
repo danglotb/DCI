@@ -109,7 +109,7 @@ def init(argv):
     global maven_home
     global java_home
     if "onClusty" in argv:
-        maven_home = "/home/spirals/danglot/apache-maven-3.3.9/bin/"
+        maven_home = "/home/spirals/danglot/apache-maven-3.5.4/bin/"
         java_home = "/home/spirals/danglot/jdk1.8.0_121/bin/"
     else:
         maven_home = ""
