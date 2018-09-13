@@ -30,7 +30,7 @@ def run(project, index_begin, index_end):
         # if the list does not exists, then compute it
         if not os.path.isfile(path_to_test_that_executes_the_changes):
             # must build all the project, i.e. installing the version
-            cmd = ["mvn", "clean", "install", "-DskipTests"]
+            cmd = [toolbox.maven_home + "mvn", "clean", "install", "-DskipTests"]
             toolbox.print_and_call_in_a_file(" ".join(cmd), cwd=path_to_project_root)
 
             get_list_of_tests_that_execute_changes(commit["concernedModule"],
@@ -42,7 +42,7 @@ def run(project, index_begin, index_end):
 
         # run now dspot with maven plugin
         cmd = [
-            "mvn",
+            toolbox.maven_home + "mvn",
             "eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests",
             "-Dpath-to-test-list-csv=" + path_to_test_that_executes_the_changes,
             "-Dverbose=True",
@@ -58,7 +58,7 @@ def run(project, index_begin, index_end):
 def get_list_of_tests_that_execute_changes(concerned_module, path_to_concerned_module, path_to_concerned_module_parent,
                                            output_path):
     cmd = [
-        "mvn", "clean",
+        toolbox.maven_home + "mvn", "clean",
         "eu.stamp-project:diff-test-selection:0.5-SNAPSHOT:list",
         "-DpathToDiff=patch.diff",
         "-DpathToOtherVersion=" + path_to_concerned_module_parent,
@@ -82,16 +82,16 @@ def create_diff(commit_id, cwd):
 
 
 if __name__ == '__main__':
+
+    toolbox.init(argv)
+
     if len(sys.argv) < 2:
         print "usage: python run.py <project> <index_start> <index_end>"
 
     index_begin = 0
     index_end = -1
     if len(sys.argv) > 2:
-        if len(sys.argv) < 4:
-            print "if you specify a start index, you must specify an end index"
-        else:
-            index_begin = int(sys.argv[2])
-            index_end = int(sys.argv[3])
+        index_begin = int(sys.argv[2])
+        index_end = int(sys.argv[3])
 
     run(sys.argv[1], index_begin, index_end)
