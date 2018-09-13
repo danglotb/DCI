@@ -6,14 +6,14 @@ import preparation
 import commit_setter
 
 
-def run(project):
+def run(project, index_begin, index_end):
     path_to_project_json = toolbox.prefix_current_dataset + project + ".json"
     project_json = toolbox.get_json_file(path_to_project_json)
     path_to_project_root = toolbox.prefix_dataset + project
     commits = project_json["commits"]
 
     # for each commits.
-    for commit in commits[0:2]:
+    for commit in commits[index_begin, index_end]:
         toolbox.set_output_log_path(toolbox.get_absolute_path(toolbox.prefix_result + project + "/commits_" + str(commits.index(commit)) + ".log"))
         #  1) set up both version of the program
         commit_setter.set_commit(path_to_project_root, project, commits.index(commit))
@@ -82,9 +82,16 @@ def create_diff(commit_id, cwd):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) < 2 or "all" == sys.argv[1]:
-        projects = ["xwiki-commons"]
-        for project in projects:
-            run(project)
-    else:
-        run(sys.argv[1])
+    if len(sys.argv) < 2:
+        print "usage: python run.py <project> <index_start> <index_end>"
+
+    index_begin = 0
+    index_end = -1
+    if len(sys.argv) > 2:
+        if len(sys.argv) < 4:
+            print "if you specify a start index, you must specify an end index"
+        else:
+            index_begin = int(sys.argv[2])
+            index_end = int(sys.argv[3])
+
+    run(sys.argv[1], index_begin, index_end)
