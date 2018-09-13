@@ -13,7 +13,7 @@ def run(project, index_begin, index_end):
     commits = project_json["commits"]
 
     # for each commits.
-    for commit in commits[index_begin, index_end]:
+    for commit in commits[index_begin:index_end]:
         toolbox.set_output_log_path(toolbox.get_absolute_path(toolbox.prefix_result + project + "/commits_" + str(commits.index(commit)) + ".log"))
         #  1) set up both version of the program
         commit_setter.set_commit(path_to_project_root, project, commits.index(commit))
@@ -94,4 +94,4 @@ if __name__ == '__main__':
         index_begin = int(sys.argv[2])
         index_end = int(sys.argv[3])
 
-    run(sys.argv[1], index_begin, index_end)
+    run(sys.argv[1], index_begin=index_begin, index_end=index_end)
