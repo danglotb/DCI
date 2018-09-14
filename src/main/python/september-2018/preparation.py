@@ -1,4 +1,3 @@
-
 import toolbox
 import xml.etree.ElementTree as ET
 
@@ -17,9 +16,11 @@ xml_xwiki_clover_skip_tag = xml_prefix + 'xwiki.clover.skip'
 
 xwiki_commons_tools_path = "xwiki-commons-tools/"
 
+
 def prepare(project):
     if project == "xwiki-commons":
         set_true_include_test_roots(project)
+
 
 def set_true_include_test_roots(project):
     ET.register_namespace('', xml_namespace)
@@ -38,15 +39,17 @@ def set_true_include_test_roots(project):
     tree.write(path_to_root_pom)
 
     # set in the xwiki-commons-tools pom to not skip clover in the submodule
-    path_to_root_pom = toolbox.prefix_dataset + "/" + project + "/" + xwiki_commons_tools_path + "/pom.xml"
+    path_to_root_pom = toolbox.prefix_dataset + project + "/" + xwiki_commons_tools_path + "pom.xml"
     tree = ET.parse(path_to_root_pom)
     root_pom = tree.getroot()
-    root_pom.findall(xml_properties_tag)[0].findall(xml_xwiki_clover_skip_tag)[0].text = "false"
+    for i in root_pom.findall(xml_properties_tag)[0]:
+        if i.tag == xml_xwiki_clover_skip_tag:
+            i.text = "false"
     tree.write(path_to_root_pom)
 
     # set in the second version enforcer skip to true
     path_to_root_pom = toolbox.prefix_dataset + "/" + project + toolbox.suffix_parent + "/pom.xml"
-    tree = ET.parse(path_to_root_pom )
+    tree = ET.parse(path_to_root_pom)
     root_pom = tree.getroot()
     root_pom.findall(xml_properties_tag)[0].findall(xml_xwiki_enforcer_skip_tag)[0].text = "true"
     tree.write(path_to_root_pom)
@@ -55,7 +58,9 @@ def set_true_include_test_roots(project):
     path_to_root_pom = toolbox.prefix_dataset + "/" + project + toolbox.suffix_parent + "/pom.xml"
     tree = ET.parse(path_to_root_pom)
     root_pom = tree.getroot()
-    root_pom.findall(xml_properties_tag)[0].findall(xml_xwiki_clover_skip_tag)[0].text = "false"
+    for i in root_pom.findall(xml_properties_tag)[0]:
+        if i.tag == xml_xwiki_clover_skip_tag:
+            i.text = "false"
     tree.write(path_to_root_pom)
 
 
@@ -63,3 +68,7 @@ def add_needed_options(cmd, project):
     if project == "xwiki-commons":
         cmd.append("-Duse-maven-to-exe-test=true")
     return cmd
+
+
+if __name__ == '__main__':
+    prepare("xwiki-commons")
