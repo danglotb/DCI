@@ -82,6 +82,8 @@ path_to_script_to_run = get_absolute_path("src/main/bash/script.sh")
 
 
 def print_and_call_in_a_file(cmd, cwd=None):
+    with open(output_log_path, "a") as myfile:
+        myfile.write(cmd)
     print cmd
     with open(path_to_script_to_run, "w") as f:
         f.write(cmd + " " + " ".join(["2>&1", "|", "tee", "-a", output_log_path]))
