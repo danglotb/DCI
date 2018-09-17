@@ -1,9 +1,84 @@
 {
   "owner": "xwiki",
   "name": "xwiki-commons",
-  "date": "8/31/2018",
+  "date": "9/17/2018",
   "numberCommits": 1000,
   "commits": [
+    {
+      "sha": "bdc33d7e07d86dc6600988bd71721068a76e9673",
+      "parent": "6d0808f16ca2f6f8a4df41db0c9c914256ee3885",
+      "concernedModule": "xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/"
+    },
+    {
+      "sha": "6d0808f16ca2f6f8a4df41db0c9c914256ee3885",
+      "parent": "c745c10dbbde003a71c743bdb96d00a73f586fe3",
+      "concernedModule": "xwiki-commons-core/xwiki-commons-collection/"
+    },
+    {
+      "sha": "c745c10dbbde003a71c743bdb96d00a73f586fe3",
+      "parent": "7300f1c84fd7ad84927f7c2e9d4a08b4a977b42f",
+      "concernedModule": "xwiki-commons-core/xwiki-commons-properties/"
+    },
+    {
+      "sha": "b0dc5bc4db7e0efde64bb5359a1d1772f8e555e7",
+      "parent": "e8bdbca4d67006940d9eecd4c088e1151fbcde11",
+      "concernedModule": "xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/"
+    },
+    {
+      "sha": "c0b4a238a685fe280e23e137338712f79772d34b",
+      "parent": "1add12e6117f79118ba2b6902e6a563f9ac753bc",
+      "concernedModule": "xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/"
+    },
+    {
+      "sha": "1add12e6117f79118ba2b6902e6a563f9ac753bc",
+      "parent": "2da5bd9f2be89ea9a73153ded7584975166d108f",
+      "concernedModule": "xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/"
+    },
+    {
+      "sha": "2da5bd9f2be89ea9a73153ded7584975166d108f",
+      "parent": "9854eae303e13ed9e4e8bb98d687f667c66d18d5",
+      "concernedModule": "xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/"
+    },
+    {
+      "sha": "9854eae303e13ed9e4e8bb98d687f667c66d18d5",
+      "parent": "e60b7b4d95924a8cfc1b66b13fdbf3ab654cd103",
+      "concernedModule": "xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/"
+    },
+    {
+      "sha": "e60b7b4d95924a8cfc1b66b13fdbf3ab654cd103",
+      "parent": "ffc3997add18f586a306206b3097071d16d6ee8e",
+      "concernedModule": "xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/"
+    },
+    {
+      "sha": "ffc3997add18f586a306206b3097071d16d6ee8e",
+      "parent": "9f73a08c4ff1cf17aa00cb32a4741ffe2e39fa56",
+      "concernedModule": "xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/"
+    },
+    {
+      "sha": "4aa2965c3d7a09bcc77487f45a13d2c54d1af26a",
+      "parent": "e2df445fa49d63b95789e3ddbf52a3dca636712a",
+      "concernedModule": "xwiki-commons-tools/xwiki-commons-tool-extension-plugin/"
+    },
+    {
+      "sha": "e2df445fa49d63b95789e3ddbf52a3dca636712a",
+      "parent": "1790257b4227a12c0ee23615adcd75b4d9170fc5",
+      "concernedModule": "xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-maven/"
+    },
+    {
+      "sha": "df6986ee8ceef7d044477dcc8509c51c8c94eedf",
+      "parent": "99cd9436423fadda4f5d66c1d2dff4bea10d1775",
+      "concernedModule": "xwiki-commons-core/xwiki-commons-properties/"
+    },
+    {
+      "sha": "99cd9436423fadda4f5d66c1d2dff4bea10d1775",
+      "parent": "a83ed97fee0f054478581716169618ff0c8334ff",
+      "concernedModule": "xwiki-commons-tools/xwiki-commons-tool-extension-plugin/"
+    },
+    {
+      "sha": "a83ed97fee0f054478581716169618ff0c8334ff",
+      "parent": "fbe691ef6b347280bfac6068b18b3a5a0c8e5211",
+      "concernedModule": "xwiki-commons-core/xwiki-commons-properties/"
+    },
     {
       "sha": "cc64e922f590d5ab9eb6eea6d126bbb672116ae4",
       "parent": "a9e8d135cbfb2ebeedd2ed528ab6f65416655c1a",
@@ -3245,24 +3320,9 @@
       "concernedModule": "xwiki-commons-core/xwiki-commons-configuration/xwiki-commons-configuration-api/"
     },
     {
-      "sha": "461f6ef86c0d6f92267d292de9c8f021f13e0ddf",
-      "parent": "cd2695098a2e677f20e16c7587ec89a12167f3d1",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-test/xwiki-commons-test-component/"
-    },
-    {
-      "sha": "cd2695098a2e677f20e16c7587ec89a12167f3d1",
-      "parent": "9aacfec12b171c002f3da58e2b3d7b6dbb7ef8fe",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-test/xwiki-commons-test-component/"
-    },
-    {
       "sha": "9aacfec12b171c002f3da58e2b3d7b6dbb7ef8fe",
       "parent": "1d323a4bd8354433f393b4e3e2725bd0df86f0db",
       "concernedModule": "xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/"
-    },
-    {
-      "sha": "1d323a4bd8354433f393b4e3e2725bd0df86f0db",
-      "parent": "f674cfbe999cad7f91473dbe74262d01bc0bbeba",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-test/xwiki-commons-test-component/"
     },
     {
       "sha": "f674cfbe999cad7f91473dbe74262d01bc0bbeba",
@@ -3495,11 +3555,6 @@
       "concernedModule": "xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-default/"
     },
     {
-      "sha": "baa392e2ea6e7ef3f94abd39757bd43a4313d177",
-      "parent": "7d4383ce877fea1d757387a5ec24d0b8f2d4d6c7",
-      "concernedModule": "xwiki-commons-tools/xwiki-commons-tool-component-generation/"
-    },
-    {
       "sha": "7d4383ce877fea1d757387a5ec24d0b8f2d4d6c7",
       "parent": "ef38f0fb5b18d034c32a6315232ca8e99396bea9",
       "concernedModule": "xwiki-commons-core/xwiki-commons-crypto/xwiki-commons-crypto-common/"
@@ -3508,21 +3563,6 @@
       "sha": "716f04d0ba190c63d6266c7263c11cc3a0fed011",
       "parent": "17a139bc99b5bc90abd44454b09a39918eb53392",
       "concernedModule": "xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/"
-    },
-    {
-      "sha": "17a139bc99b5bc90abd44454b09a39918eb53392",
-      "parent": "8a8af6d6a2f79347131aa98e131ccd0b4915ee01",
-      "concernedModule": "xwiki-commons-tools/xwiki-commons-tool-component-generation/"
-    },
-    {
-      "sha": "8a8af6d6a2f79347131aa98e131ccd0b4915ee01",
-      "parent": "dc763605bce534dcad2ddf84daa49c1e2662ce23",
-      "concernedModule": "xwiki-commons-tools/xwiki-commons-tool-component-generation/"
-    },
-    {
-      "sha": "dc763605bce534dcad2ddf84daa49c1e2662ce23",
-      "parent": "40c9d0f8772c60f92dd9e383715bdc14a064ed92",
-      "concernedModule": "xwiki-commons-tools/xwiki-commons-tool-component-generation/"
     },
     {
       "sha": "d67658a4d7e05b552cda52c8c4568a9b9ead5fb6",
@@ -3613,11 +3653,6 @@
       "sha": "9d64678cea779b2ce44cc674161ffbb5abda7c57",
       "parent": "9d218e717a7ece790e33564fafb9cecd6db00189",
       "concernedModule": "xwiki-commons-core/xwiki-commons-properties/"
-    },
-    {
-      "sha": "9d218e717a7ece790e33564fafb9cecd6db00189",
-      "parent": "ba7ac27cd36c9d710d7bf29a72891f8672f71222",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-test/xwiki-commons-test-component/"
     },
     {
       "sha": "c52f6df12bcbcc25bc5ab465fa9fc3cfb50f8ea4",
@@ -4205,11 +4240,6 @@
       "concernedModule": "xwiki-commons-core/xwiki-commons-crypto/xwiki-commons-crypto-common/"
     },
     {
-      "sha": "4877f65255293f5bb62193fb54905d8b7d45e3ba",
-      "parent": "10b66057ac982b7c1ecb7199c240718af822695d",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-test/xwiki-commons-test-simple/"
-    },
-    {
       "sha": "8db12f45e56aebc8f9cc98fb0416e3e4e4bb493d",
       "parent": "07e14ff8d3202405d6cbb6d88d7bb39f698de23a",
       "concernedModule": "xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-maven/"
@@ -4240,24 +4270,9 @@
       "concernedModule": "xwiki-commons-core/xwiki-commons-crypto/xwiki-commons-crypto-signer/"
     },
     {
-      "sha": "e59e4c7dac372c2d896365eaf2e2421a8c15c376",
-      "parent": "3b81e06ad20375a985bc74fbb5ca593bfd863f75",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-test/xwiki-commons-test-component/"
-    },
-    {
       "sha": "3b81e06ad20375a985bc74fbb5ca593bfd863f75",
       "parent": "6f47b3440e115c42d8dc9f538a13d562dfd5a927",
       "concernedModule": "xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-default/"
-    },
-    {
-      "sha": "6f47b3440e115c42d8dc9f538a13d562dfd5a927",
-      "parent": "3c7e001924bbc470b489e17d162722d4ee211ec8",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-test/xwiki-commons-test-component/"
-    },
-    {
-      "sha": "3c7e001924bbc470b489e17d162722d4ee211ec8",
-      "parent": "9e2988b86e2399e129ea1c0f8c6a9674aa04cd55",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-test/xwiki-commons-test-component/"
     },
     {
       "sha": "e93f9bfb21efc8ff9dbe2c5ff1c1b484a39af7c7",
@@ -4350,16 +4365,6 @@
       "concernedModule": "xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/"
     },
     {
-      "sha": "0a10e6ddee7cf0c78b1d7d362b4149921a304362",
-      "parent": "69e4cbc2f8097aeae2ace0ad47ad43b213e46d6b",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-crypto/xwiki-platform-crypto-common/"
-    },
-    {
-      "sha": "9454e4de66b99bd1df7b1c5291575120e8f34ba5",
-      "parent": "fbd76d0a22f95d3debfbb5856bdbb8e440c287e6",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-crypto/xwiki-platform-crypto-signer/"
-    },
-    {
       "sha": "f324b92858495671169347d7ceeacff9691e0e67",
       "parent": "08e3e3097c4e1d0c67c7f64bbe213dd663b08bd3",
       "concernedModule": "xwiki-commons-core/xwiki-commons-job/"
@@ -4375,49 +4380,9 @@
       "concernedModule": "xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/"
     },
     {
-      "sha": "6c17e4f07c047e3fe29b6e0cb2c1667a9d9e3790",
-      "parent": "110c55bd7f8e0503c76c84cbfc4b754b45b0d4f9",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-crypto/xwiki-platform-crypto-common/"
-    },
-    {
-      "sha": "110c55bd7f8e0503c76c84cbfc4b754b45b0d4f9",
-      "parent": "a41342e2f473247070257f7247e093a19b91dd88",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-crypto/xwiki-platform-crypto-common/"
-    },
-    {
       "sha": "fc29672e6f461dca3a22be2df5aa9c10068e8b1c",
       "parent": "f52ede56de1074bf402edd8e9e7d2ba317773ad0",
       "concernedModule": "xwiki-commons-core/xwiki-commons-velocity/"
-    },
-    {
-      "sha": "a41342e2f473247070257f7247e093a19b91dd88",
-      "parent": "ad65a9f43563b0f10a1fbd71299262122a77aa66",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-crypto/xwiki-platform-crypto-common/"
-    },
-    {
-      "sha": "ad65a9f43563b0f10a1fbd71299262122a77aa66",
-      "parent": "31413727baea6ad86baf3330975edc05986aa3a0",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-crypto/xwiki-platform-crypto-cipher/"
-    },
-    {
-      "sha": "31413727baea6ad86baf3330975edc05986aa3a0",
-      "parent": "8636c76d8ba8f0ce497a45784b6dc25553fe3989",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-crypto/xwiki-platform-crypto-common/"
-    },
-    {
-      "sha": "b4b3d8b261ecfb798ca0e0530e16e236929d5ca5",
-      "parent": "71e726db17e6e585abd48af97577e77c401c8ca0",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-crypto/xwiki-platform-crypto-password/"
-    },
-    {
-      "sha": "71e726db17e6e585abd48af97577e77c401c8ca0",
-      "parent": "f5deb881a5961c1ef93e8ed379517b09db48bb1c",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-crypto/xwiki-platform-crypto-common/"
-    },
-    {
-      "sha": "f5deb881a5961c1ef93e8ed379517b09db48bb1c",
-      "parent": "62c8b5d86c1404d36442f456156fbfabe475ae06",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-crypto/xwiki-platform-crypto-common/"
     },
     {
       "sha": "f52ede56de1074bf402edd8e9e7d2ba317773ad0",
@@ -4595,11 +4560,6 @@
       "concernedModule": "xwiki-commons-core/xwiki-commons-properties/"
     },
     {
-      "sha": "e29c92c882ba001847e1a9b6496bc81150eb1a06",
-      "parent": "0f2b1808a825b59074a2d932efd0fa86c1f95734",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-crypto/xwiki-platform-crypto-common/"
-    },
-    {
       "sha": "9d9e395da3e7e1de8991afd3e663adbbb1a6c9b7",
       "parent": "d8cbf8af283ee5214e902dde777d280357d216b4",
       "concernedModule": "xwiki-commons-core/xwiki-commons-xml/"
@@ -4623,11 +4583,6 @@
       "sha": "c0de311d8508fdbb0414a27f10517cd07cfd63b2",
       "parent": "95758830c57a5aeaba254bf902108a43131a5704",
       "concernedModule": "xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/"
-    },
-    {
-      "sha": "d7902ce483ae3f3ba4a24e8ce5135e70e4b9ff5b",
-      "parent": "213876a34938b41733f46ff8efd5d2c3719f3980",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-test/xwiki-commons-test-component/"
     },
     {
       "sha": "213876a34938b41733f46ff8efd5d2c3719f3980",
@@ -4728,11 +4683,6 @@
       "sha": "181e6391980837b134697b266a8d895315f7528e",
       "parent": "fe1899f5ee48552d238a13c6da7ba71497bd5dd7",
       "concernedModule": "xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-default/"
-    },
-    {
-      "sha": "0a7b350847abfaf9358889dfed0a349db7606baa",
-      "parent": "f670a5d7e6d3b3d1322ca181af636b721ab96ea2",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-test/xwiki-commons-test-component/"
     },
     {
       "sha": "5eb65ebac0dadb95d295026d5a169595c816cbe8",
@@ -4885,11 +4835,6 @@
       "concernedModule": "xwiki-commons-core/xwiki-commons-environment/xwiki-commons-environment-common/"
     },
     {
-      "sha": "77c8a45572e8e07e9031859e51da81a858234d18",
-      "parent": "88e02ecfe2e212da27f8927dc5ed0b45eb77c408",
-      "concernedModule": "xwiki-commons-core/xwiki-commons-test/xwiki-commons-test-component/"
-    },
-    {
       "sha": "88e02ecfe2e212da27f8927dc5ed0b45eb77c408",
       "parent": "513239779c23c5b81d0b9d69b900bce9770b29f9",
       "concernedModule": "xwiki-commons-core/xwiki-commons-xml/"
@@ -5003,6 +4948,61 @@
       "sha": "c611d5eade3117890f757b28ab829a8151d1f3a3",
       "parent": "2afe73f657a4ed1808655c988c0396d0f401023f",
       "concernedModule": "xwiki-commons-core/xwiki-commons-velocity/"
+    },
+    {
+      "sha": "2afe73f657a4ed1808655c988c0396d0f401023f",
+      "parent": "783176f875c45ce1558b932eef65954dc5e284b4",
+      "concernedModule": "xwiki-commons-core/xwiki-commons-velocity/"
+    },
+    {
+      "sha": "783176f875c45ce1558b932eef65954dc5e284b4",
+      "parent": "d390577ce9f9789e8ed4335eadb02689106b1da4",
+      "concernedModule": "xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-api/"
+    },
+    {
+      "sha": "d390577ce9f9789e8ed4335eadb02689106b1da4",
+      "parent": "9bcdcd65a98b5e42a77b76e1e15ecf5ea1771b88",
+      "concernedModule": "xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-api/"
+    },
+    {
+      "sha": "9bcdcd65a98b5e42a77b76e1e15ecf5ea1771b88",
+      "parent": "f67c0f5b0a76321e85b05181b69e4ee174945efc",
+      "concernedModule": "xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-default/"
+    },
+    {
+      "sha": "f67c0f5b0a76321e85b05181b69e4ee174945efc",
+      "parent": "a942bf83fa4cb194eabe393a00a7f0c7eeb93643",
+      "concernedModule": "xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/"
+    },
+    {
+      "sha": "a942bf83fa4cb194eabe393a00a7f0c7eeb93643",
+      "parent": "3f7d66aacf068e3b1324ed9628ee30e265133620",
+      "concernedModule": "xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/"
+    },
+    {
+      "sha": "3f7d66aacf068e3b1324ed9628ee30e265133620",
+      "parent": "0d5c343dfb619db7c061e650b54590802f065d5f",
+      "concernedModule": "xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/"
+    },
+    {
+      "sha": "6fc45996bdcde752ffa960096013ee5e07dad03e",
+      "parent": "4c30f96e007f59c406a9b004b0c68262cea2251a",
+      "concernedModule": "xwiki-commons-core/xwiki-commons-properties/"
+    },
+    {
+      "sha": "de2203c96c7336dc212b9461eb166499206a1694",
+      "parent": "2448b5c374e1b02a0eea3bb8719a8c4ee85d28f7",
+      "concernedModule": "xwiki-commons-core/xwiki-commons-properties/"
+    },
+    {
+      "sha": "55312625a16bffbccd8728ae9badd0aa130133c3",
+      "parent": "ae5940674f98ca7bed7b193b9b2d16e90ad9823f",
+      "concernedModule": "xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-api/"
+    },
+    {
+      "sha": "ae5940674f98ca7bed7b193b9b2d16e90ad9823f",
+      "parent": "9765909de2ed6f05f5c7c516c7352233ef861a40",
+      "concernedModule": "xwiki-commons-core/xwiki-commons-properties/"
     }
   ]
 }

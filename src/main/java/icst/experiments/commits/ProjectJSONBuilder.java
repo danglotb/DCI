@@ -84,7 +84,12 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                 .filter(this::isSourceJavaModification)
                 .collect(Collectors.toList());
         if (!modifiedJavaFile.isEmpty()) {
-            this.projectJSON.commits.add(new CommitJSON(commit.getName(), parentCommit.getName(), getConcernedModule(modifiedJavaFile)));
+            final String concernedModule = getConcernedModule(modifiedJavaFile);
+            if (new File(this.pathToRootFolder + "/" + concernedModule).exists()) {
+                this.projectJSON.commits.add(new CommitJSON(commit.getName(), parentCommit.getName(), concernedModule));
+            } else {
+                LOGGER.warn("skipping {}({}), empty test folder...", commit.getName().substring(0, 7), this.projectJSON.commits.size());
+            }
         }
     }
 
