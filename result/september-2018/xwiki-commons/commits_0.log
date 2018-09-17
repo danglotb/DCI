@@ -11518,3 +11518,567 @@ Root element :testsuite
 [INFO] Total time: 12:38 min
 [INFO] Finished at: 2018-09-14T10:44:04+02:00
 [INFO] ------------------------------------------------------------------------
+[INFO] 2018-09-17 11:05:20 RepositoriesSetter - {dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-09-17 11:05:21 RepositoriesSetter - Checkout bdc33d7e07d86dc6600988bd71721068a76e9673 revision...
+[INFO] 2018-09-17 11:05:22 RepositoriesSetter - {dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-09-17 11:05:22 RepositoriesSetter - Checkout 6d0808f16ca2f6f8a4df41db0c9c914256ee3885 revision...
+/home/spirals/danglot/apache-maven-3.5.4/bin/mvn eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests -Dpath-to-test-list-csv=/tmp/icst-2019/dataset/september-2018/xwiki-commons_testsThatExecuteTheChange_0.csv -Dverbose=True -Dtest-criterion=ChangeDetectorSelector -Doutput-path=/tmp/icst-2019/result/september-2018/xwiki-commons/commit_0 -Dpath-to-second-version=/tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component -Dgenerate-new-test-class=true -Dclean=true -Duse-maven-to-exe-test=true[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-tool-test-component:jar:10.8-SNAPSHOT
+[WARNING] 'build.pluginManagement.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.codehaus.mojo:build-helper-maven-plugin @ org.xwiki.commons:xwiki-commons:10.8-SNAPSHOT, /tmp/icst-2019/dataset/xwiki-commons/pom.xml, line 1839, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------< org.xwiki.commons:xwiki-commons-tool-test-component >---------
+[INFO] Building XWiki Commons - Tools - Test Framework - Component 10.8-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) @ xwiki-commons-tool-test-component ---
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/eu/stamp-project/dspot/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/eu/stamp-project/dspot/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloading from gradle-repo: https://repo.gradle.org/gradle/libs-releases-local/eu/stamp-project/dspot/1.1.1-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.0 kB                    Downloaded from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/eu/stamp-project/dspot/1.1.1-SNAPSHOT/maven-metadata.xml (1.0 kB at 327 B/s)
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/maven-metadata.xml
+Downloading from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/maven-metadata.xml
+Downloading from gradle-repo: https://repo.gradle.org/gradle/libs-releases-local/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.0 kB                    Downloaded from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/maven-metadata.xml (1.0 kB at 2.0 kB/s)
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/spoon-core-7.1.0-20180916.224855-168.pom
+Downloading from gradle-repo: https://repo.gradle.org/gradle/libs-releases-local/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/spoon-core-7.1.0-20180916.224855-168.pom
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/spoon-core-7.1.0-20180916.224855-168.pom
+Downloading from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/spoon-core-7.1.0-20180916.224855-168.pom
+Progress (1): 4.1/22 kBProgress (1): 7.4/22 kBProgress (1): 12/22 kB Progress (1): 16/22 kBProgress (1): 20/22 kBProgress (1): 22 kB                      Downloaded from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/spoon-core-7.1.0-20180916.224855-168.pom (22 kB at 83 kB/s)
+Downloading from gradle-repo: https://repo.gradle.org/gradle/libs-releases-local/org/eclipse/platform/org.eclipse.core.resources/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/eclipse/platform/org.eclipse.core.resources/maven-metadata.xml
+Downloading from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/org/eclipse/platform/org.eclipse.core.resources/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.resources/maven-metadata.xml
+Downloading from gradle-repo: https://repo.gradle.org/gradle/libs-releases-local/org/eclipse/platform/org.eclipse.core.expressions/maven-metadata.xml
+Downloading from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/org/eclipse/platform/org.eclipse.core.expressions/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/eclipse/platform/org.eclipse.core.expressions/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.expressions/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.runtime/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/eclipse/platform/org.eclipse.core.runtime/maven-metadata.xml
+Downloading from gradle-repo: https://repo.gradle.org/gradle/libs-releases-local/org/eclipse/platform/org.eclipse.core.runtime/maven-metadata.xml
+Downloading from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/org/eclipse/platform/org.eclipse.core.runtime/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.osgi/maven-metadata.xml
+Downloading from gradle-repo: https://repo.gradle.org/gradle/libs-releases-local/org/eclipse/platform/org.eclipse.osgi/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/eclipse/platform/org.eclipse.osgi/maven-metadata.xml
+Downloading from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/org/eclipse/platform/org.eclipse.osgi/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.common/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/eclipse/platform/org.eclipse.equinox.common/maven-metadata.xml
+Downloading from gradle-repo: https://repo.gradle.org/gradle/libs-releases-local/org/eclipse/platform/org.eclipse.equinox.common/maven-metadata.xml
+Downloading from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/org/eclipse/platform/org.eclipse.equinox.common/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.jobs/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/eclipse/platform/org.eclipse.core.jobs/maven-metadata.xml
+Downloading from gradle-repo: https://repo.gradle.org/gradle/libs-releases-local/org/eclipse/platform/org.eclipse.core.jobs/maven-metadata.xml
+Downloading from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/org/eclipse/platform/org.eclipse.core.jobs/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.registry/maven-metadata.xml
+Downloading from gradle-repo: https://repo.gradle.org/gradle/libs-releases-local/org/eclipse/platform/org.eclipse.equinox.registry/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/eclipse/platform/org.eclipse.equinox.registry/maven-metadata.xml
+Downloading from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/org/eclipse/platform/org.eclipse.equinox.registry/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.preferences/maven-metadata.xml
+Downloading from gradle-repo: https://repo.gradle.org/gradle/libs-releases-local/org/eclipse/platform/org.eclipse.equinox.preferences/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/eclipse/platform/org.eclipse.equinox.preferences/maven-metadata.xml
+Downloading from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/org/eclipse/platform/org.eclipse.equinox.preferences/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.contenttype/maven-metadata.xml
+Downloading from gradle-repo: https://repo.gradle.org/gradle/libs-releases-local/org/eclipse/platform/org.eclipse.core.contenttype/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/eclipse/platform/org.eclipse.core.contenttype/maven-metadata.xml
+Downloading from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/org/eclipse/platform/org.eclipse.core.contenttype/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.app/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/eclipse/platform/org.eclipse.equinox.app/maven-metadata.xml
+Downloading from gradle-repo: https://repo.gradle.org/gradle/libs-releases-local/org/eclipse/platform/org.eclipse.equinox.app/maven-metadata.xml
+Downloading from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/org/eclipse/platform/org.eclipse.equinox.app/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.filesystem/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/eclipse/platform/org.eclipse.core.filesystem/maven-metadata.xml
+Downloading from gradle-repo: https://repo.gradle.org/gradle/libs-releases-local/org/eclipse/platform/org.eclipse.core.filesystem/maven-metadata.xml
+Downloading from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/org/eclipse/platform/org.eclipse.core.filesystem/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.text/maven-metadata.xml
+Downloading from gradle-repo: https://repo.gradle.org/gradle/libs-releases-local/org/eclipse/platform/org.eclipse.text/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/eclipse/platform/org.eclipse.text/maven-metadata.xml
+Downloading from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/org/eclipse/platform/org.eclipse.text/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.commands/maven-metadata.xml
+Downloading from gradle-repo: https://repo.gradle.org/gradle/libs-releases-local/org/eclipse/platform/org.eclipse.core.commands/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/eclipse/platform/org.eclipse.core.commands/maven-metadata.xml
+Downloading from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/org/eclipse/platform/org.eclipse.core.commands/maven-metadata.xml
+Downloading from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/spoon-core-7.1.0-20180916.224855-168.jar
+Progress (1): 0/1.6 MBProgress (1): 0/1.6 MBProgress (1): 0/1.6 MBProgress (1): 0/1.6 MBProgress (1): 0/1.6 MBProgress (1): 0/1.6 MBProgress (1): 0/1.6 MBProgress (1): 0/1.6 MBProgress (1): 0/1.6 MBProgress (1): 0/1.6 MBProgress (1): 0/1.6 MBProgress (1): 0/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.1/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.2/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.3/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.4/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.5/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.6/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.7/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.8/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 0.9/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.0/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.1/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.2/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.3/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.4/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.5/1.6 MBProgress (1): 1.6/1.6 MBProgress (1): 1.6/1.6 MBProgress (1): 1.6/1.6 MBProgress (1): 1.6/1.6 MBProgress (1): 1.6/1.6 MBProgress (1): 1.6/1.6 MBProgress (1): 1.6/1.6 MBProgress (1): 1.6/1.6 MBProgress (1): 1.6 MB                        Downloaded from maven.inria.fr-snapshot: http://maven.inria.fr/artifactory/spoon-public-snapshot/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/spoon-core-7.1.0-20180916.224855-168.jar (1.6 MB at 164 kB/s)
+[INFO] Path to runner Classes: /home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
+[INFO] /home/spirals/danglot/.m2/repository/org/jacoco/org.jacoco.core/0.7.9/org.jacoco.core-0.7.9.jar
+[INFO] /home/spirals/danglot/.m2/repository/org/ow2/asm/asm-debug-all/5.2/asm-debug-all-5.2.jar
+[INFO] /home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
+[WARNING] automaticBuilderName: unknown automatic builder specified in configuration, going to default.
+[INFO] Default: provided Maven automatic builder.
+[INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-tool-test-component:jar:10.8-SNAPSHOT
+[WARNING] 'build.pluginManagement.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.codehaus.mojo:build-helper-maven-plugin @ org.xwiki.commons:xwiki-commons:10.8-SNAPSHOT, /tmp/icst-2019/dataset/xwiki-commons/pom.xml, line 1839, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/2.22.0/maven-failsafe-plugin-2.22.0.pom
+Progress (1): 2.2/12 kB
+Progress (1): 5.0/12 kB
+Progress (1): 7.8/12 kB
+Progress (1): 11/12 kB 
+Progress (1): 12 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/2.22.0/maven-failsafe-plugin-2.22.0.pom (12 kB at 9.8 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/2.22.0/maven-failsafe-plugin-2.22.0.jar
+Progress (1): 2.2/294 kB
+Progress (1): 5.0/294 kB
+Progress (1): 7.7/294 kB
+Progress (1): 10/294 kB 
+Progress (1): 13/294 kB
+Progress (1): 16/294 kB
+Progress (1): 19/294 kB
+Progress (1): 21/294 kB
+Progress (1): 24/294 kB
+Progress (1): 27/294 kB
+Progress (1): 30/294 kB
+Progress (1): 32/294 kB
+Progress (1): 36/294 kB
+Progress (1): 40/294 kB
+Progress (1): 45/294 kB
+Progress (1): 49/294 kB
+Progress (1): 53/294 kB
+Progress (1): 57/294 kB
+Progress (1): 61/294 kB
+Progress (1): 65/294 kB
+Progress (1): 69/294 kB
+Progress (1): 73/294 kB
+Progress (1): 77/294 kB
+Progress (1): 81/294 kB
+Progress (1): 85/294 kB
+Progress (1): 90/294 kB
+Progress (1): 94/294 kB
+Progress (1): 98/294 kB
+Progress (1): 102/294 kB
+Progress (1): 106/294 kB
+Progress (1): 110/294 kB
+Progress (1): 114/294 kB
+Progress (1): 118/294 kB
+Progress (1): 122/294 kB
+Progress (1): 126/294 kB
+Progress (1): 131/294 kB
+Progress (1): 135/294 kB
+Progress (1): 139/294 kB
+Progress (1): 143/294 kB
+Progress (1): 147/294 kB
+Progress (1): 151/294 kB
+Progress (1): 155/294 kB
+Progress (1): 159/294 kB
+Progress (1): 163/294 kB
+Progress (1): 167/294 kB
+Progress (1): 171/294 kB
+Progress (1): 176/294 kB
+Progress (1): 180/294 kB
+Progress (1): 184/294 kB
+Progress (1): 188/294 kB
+Progress (1): 192/294 kB
+Progress (1): 196/294 kB
+Progress (1): 200/294 kB
+Progress (1): 204/294 kB
+Progress (1): 208/294 kB
+Progress (1): 212/294 kB
+Progress (1): 217/294 kB
+Progress (1): 221/294 kB
+Progress (1): 225/294 kB
+Progress (1): 229/294 kB
+Progress (1): 233/294 kB
+Progress (1): 237/294 kB
+Progress (1): 241/294 kB
+Progress (1): 245/294 kB
+Progress (1): 249/294 kB
+Progress (1): 253/294 kB
+Progress (1): 258/294 kB
+Progress (1): 262/294 kB
+Progress (1): 266/294 kB
+Progress (1): 270/294 kB
+Progress (1): 274/294 kB
+Progress (1): 278/294 kB
+Progress (1): 282/294 kB
+Progress (1): 286/294 kB
+Progress (1): 290/294 kB
+Progress (1): 294 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/2.22.0/maven-failsafe-plugin-2.22.0.jar (294 kB at 118 kB/s)
+[INFO] 
+[INFO] --------< org.xwiki.commons:xwiki-commons-tool-test-component >---------
+[INFO] Building XWiki Commons - Tools - Test Framework - Component 10.8-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-tool-test-component ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ xwiki-commons-tool-test-component ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ xwiki-commons-tool-test-component ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 24 source files to /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/target/classes
+[INFO] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/jmock/AbstractMockingComponentTestCase.java: /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/jmock/AbstractMockingComponentTestCase.java uses or overrides a deprecated API.
+[INFO] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/jmock/AbstractMockingComponentTestCase.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/internal/ComponentRegistrator.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/internal/ComponentRegistrator.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ xwiki-commons-tool-test-component ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ xwiki-commons-tool-test-component ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ xwiki-commons-tool-test-component ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:build-classpath (default-cli) @ xwiki-commons-tool-test-component ---
+[INFO] Wrote classpath file '/tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/target/dspot/classpath'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 12.508 s
+[INFO] Finished at: 2018-09-17T11:06:13+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-tool-test-component:jar:10.8-SNAPSHOT
+[WARNING] 'build.pluginManagement.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.codehaus.mojo:build-helper-maven-plugin @ org.xwiki.commons:xwiki-commons:10.8-SNAPSHOT, /tmp/icst-2019/dataset/xwiki-commons_parent/pom.xml, line 1839, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------< org.xwiki.commons:xwiki-commons-tool-test-component >---------
+[INFO] Building XWiki Commons - Tools - Test Framework - Component 10.8-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-tool-test-component ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ xwiki-commons-tool-test-component ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ xwiki-commons-tool-test-component ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 24 source files to /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/target/classes
+[INFO] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/jmock/AbstractMockingComponentTestCase.java: /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/jmock/AbstractMockingComponentTestCase.java uses or overrides a deprecated API.
+[INFO] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/jmock/AbstractMockingComponentTestCase.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/internal/ComponentRegistrator.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/internal/ComponentRegistrator.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ xwiki-commons-tool-test-component ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ xwiki-commons-tool-test-component ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ xwiki-commons-tool-test-component ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:build-classpath (default-cli) @ xwiki-commons-tool-test-component ---
+[INFO] Wrote classpath file '/tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/target/dspot/classpath'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.440 s
+[INFO] Finished at: 2018-09-17T11:06:27+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:00 min
+[INFO] Finished at: 2018-09-17T11:06:27+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) on project xwiki-commons-tool-test-component: Execution default-cli of goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests failed: java.lang.NullPointerException -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+[INFO] 2018-09-17 11:07:38 RepositoriesSetter - {dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-09-17 11:07:40 RepositoriesSetter - Checkout bdc33d7e07d86dc6600988bd71721068a76e9673 revision...
+[INFO] 2018-09-17 11:07:40 RepositoriesSetter - {dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-09-17 11:07:41 RepositoriesSetter - Checkout 6d0808f16ca2f6f8a4df41db0c9c914256ee3885 revision...
+/home/spirals/danglot/apache-maven-3.5.4/bin/mvn eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests -Dpath-to-test-list-csv=/tmp/icst-2019/dataset/september-2018/xwiki-commons_testsThatExecuteTheChange_0.csv -Dverbose=True -Dtest-criterion=ChangeDetectorSelector -Doutput-path=/tmp/icst-2019/result/september-2018/xwiki-commons/commit_0 -Dpath-to-second-version=/tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component -Dgenerate-new-test-class=true -Dclean=true -Duse-maven-to-exe-test=true[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-tool-test-component:jar:10.8-SNAPSHOT
+[WARNING] 'build.pluginManagement.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.codehaus.mojo:build-helper-maven-plugin @ org.xwiki.commons:xwiki-commons:10.8-SNAPSHOT, /tmp/icst-2019/dataset/xwiki-commons/pom.xml, line 1839, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------< org.xwiki.commons:xwiki-commons-tool-test-component >---------
+[INFO] Building XWiki Commons - Tools - Test Framework - Component 10.8-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) @ xwiki-commons-tool-test-component ---
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/eu/stamp-project/dspot/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.resources/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.expressions/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.runtime/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.osgi/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.common/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.jobs/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.registry/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.preferences/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.contenttype/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.app/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.filesystem/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.text/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.commands/maven-metadata.xml
+[INFO] Path to runner Classes: /home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
+[INFO] /home/spirals/danglot/.m2/repository/org/jacoco/org.jacoco.core/0.7.9/org.jacoco.core-0.7.9.jar
+[INFO] /home/spirals/danglot/.m2/repository/org/ow2/asm/asm-debug-all/5.2/asm-debug-all-5.2.jar
+[INFO] /home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
+[WARNING] automaticBuilderName: unknown automatic builder specified in configuration, going to default.
+[INFO] Default: provided Maven automatic builder.
+[INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-tool-test-component:jar:10.8-SNAPSHOT
+[WARNING] 'build.pluginManagement.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.codehaus.mojo:build-helper-maven-plugin @ org.xwiki.commons:xwiki-commons:10.8-SNAPSHOT, /tmp/icst-2019/dataset/xwiki-commons/pom.xml, line 1839, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------< org.xwiki.commons:xwiki-commons-tool-test-component >---------
+[INFO] Building XWiki Commons - Tools - Test Framework - Component 10.8-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-tool-test-component ---
+[INFO] Deleting /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ xwiki-commons-tool-test-component ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ xwiki-commons-tool-test-component ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 24 source files to /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/target/classes
+[INFO] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/jmock/AbstractMockingComponentTestCase.java: /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/jmock/AbstractMockingComponentTestCase.java uses or overrides a deprecated API.
+[INFO] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/jmock/AbstractMockingComponentTestCase.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/internal/ComponentRegistrator.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/internal/ComponentRegistrator.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ xwiki-commons-tool-test-component ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ xwiki-commons-tool-test-component ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ xwiki-commons-tool-test-component ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:build-classpath (default-cli) @ xwiki-commons-tool-test-component ---
+[INFO] Wrote classpath file '/tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/target/dspot/classpath'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.328 s
+[INFO] Finished at: 2018-09-17T11:08:03+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-tool-test-component:jar:10.8-SNAPSHOT
+[WARNING] 'build.pluginManagement.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.codehaus.mojo:build-helper-maven-plugin @ org.xwiki.commons:xwiki-commons:10.8-SNAPSHOT, /tmp/icst-2019/dataset/xwiki-commons_parent/pom.xml, line 1839, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------< org.xwiki.commons:xwiki-commons-tool-test-component >---------
+[INFO] Building XWiki Commons - Tools - Test Framework - Component 10.8-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-tool-test-component ---
+[INFO] Deleting /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons-tool-test-component ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ xwiki-commons-tool-test-component ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ xwiki-commons-tool-test-component ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 24 source files to /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/target/classes
+[INFO] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/jmock/AbstractMockingComponentTestCase.java: /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/jmock/AbstractMockingComponentTestCase.java uses or overrides a deprecated API.
+[INFO] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/jmock/AbstractMockingComponentTestCase.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/internal/ComponentRegistrator.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/main/java/org/xwiki/test/internal/ComponentRegistrator.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ xwiki-commons-tool-test-component ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ xwiki-commons-tool-test-component ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ xwiki-commons-tool-test-component ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:build-classpath (default-cli) @ xwiki-commons-tool-test-component ---
+[INFO] Wrote classpath file '/tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-test/xwiki-commons-tool-test-component/target/dspot/classpath'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.464 s
+[INFO] Finished at: 2018-09-17T11:08:17+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 33.081 s
+[INFO] Finished at: 2018-09-17T11:08:17+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) on project xwiki-commons-tool-test-component: Execution default-cli of goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests failed: java.lang.NullPointerException -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
