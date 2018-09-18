@@ -1,4 +1,4 @@
-package icst.experiments.commits;
+package icst.experiments.repositories.nojson;
 
 import com.martiansoftware.jsap.FlaggedOption;
 import com.martiansoftware.jsap.JSAP;
@@ -9,9 +9,9 @@ import icst.experiments.util.Options;
 /**
  * Created by Benjamin DANGLOT
  * benjamin.danglot@inria.fr
- * on 30/08/18
+ * on 31/08/18
  */
-public class ProjectBuilderOptions implements Options {
+public class RepositoriesSetterNoJsonOptions implements Options {
 
     public JSAP initJSAP() throws JSAPException {
         JSAP jsap = new JSAP();
@@ -28,35 +28,28 @@ public class ProjectBuilderOptions implements Options {
         path.setStringParser(JSAP.STRING_PARSER);
         path.setHelp("[mandatory] specify the path to the local clone of the repository");
 
-        FlaggedOption owner = new FlaggedOption("owner");
-        owner.setRequired(true);
-        owner.setLongFlag("owner");
-        owner.setStringParser(JSAP.STRING_PARSER);
-        owner.setHelp("[mandatory] specify the name of the owner of the repository");
-
         FlaggedOption project = new FlaggedOption("project");
         project.setRequired(true);
         project.setLongFlag("project");
         project.setStringParser(JSAP.STRING_PARSER);
         project.setHelp("[mandatory] specify the name of the repository");
 
-        FlaggedOption output = new FlaggedOption("output");
-        output.setLongFlag("output");
-        output.setDefault("dataset/<owner>_<project>.json");
-        output.setShortFlag('o');
-        output.setStringParser(JSAP.STRING_PARSER);
-        output.setHelp("[optional] specify where to save the generated json.");
+        FlaggedOption sha = new FlaggedOption("sha");
+        sha.setRequired(true);
+        sha.setLongFlag("sha");
+        sha.setStringParser(JSAP.STRING_PARSER);
+        sha.setHelp("[mandatory] specify the sha");
 
-        FlaggedOption sizeGoal = new FlaggedOption("size-goal");
-        sizeGoal.setLongFlag("size-goal");
-        sizeGoal.setDefault("5");
-        sizeGoal.setStringParser(JSAP.INTEGER_PARSER);
+        FlaggedOption shaParent = new FlaggedOption("sha-parent");
+        shaParent.setRequired(true);
+        shaParent.setLongFlag("sha-parent");
+        shaParent.setStringParser(JSAP.STRING_PARSER);
+        shaParent.setHelp("[mandatory] specify the sha parent");
 
         jsap.registerParameter(path);
-        jsap.registerParameter(owner);
         jsap.registerParameter(project);
-        jsap.registerParameter(output);
-        jsap.registerParameter(sizeGoal);
+        jsap.registerParameter(sha);
+        jsap.registerParameter(shaParent);
         jsap.registerParameter(help);
 
         return jsap;

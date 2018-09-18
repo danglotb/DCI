@@ -1,10 +1,16 @@
 package icst.experiments.commits;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.martiansoftware.jsap.JSAPResult;
+import icst.experiments.json.BlackListElement;
+import icst.experiments.json.Blacklist;
 import icst.experiments.json.CommitJSON;
 import icst.experiments.json.ProjectJSON;
+import icst.experiments.selection.TestSelectionAccordingDiff;
 import icst.experiments.util.AbstractRepositoryAndGit;
 import icst.experiments.util.OptionsWrapper;
+import org.apache.commons.io.FileUtils;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.diff.DiffFormatter;
@@ -16,9 +22,10 @@ import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
 import org.eclipse.jgit.treewalk.CanonicalTreeParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import sun.util.locale.provider.LocaleServiceProviderPool;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Files;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.AbstractMap;
@@ -41,9 +48,23 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ProjectJSONBuilder.class);
 
-    public ProjectJSONBuilder(String pathToRepository, String owner, String project) {
+    private Blacklist blacklist;
+
+    public ProjectJSONBuilder(String pathToRepository, String owner, String project, String output) {
         super(pathToRepository);
-        this.projectJSON = new ProjectJSON(owner, project, this.getDate());
+        if (new File(output + "/" + project + ".json").exists()) {
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+            try {
+                this.projectJSON = gson.fromJson(new FileReader(output + "/" + project + ".json"), ProjectJSON.class);
+                this.blacklist = gson.fromJson(new FileReader(output + "/" + project + "_blacklist.json"), Blacklist.class);
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+        } else {
+            this.projectJSON = new ProjectJSON(owner, project, this.getDate());
+            this.blacklist = new Blacklist();
+        }
+
     }
 
     private String getDate() {
@@ -52,28 +73,37 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
         return String.format("%d/%d/%d", localDate.getMonthValue(), localDate.getDayOfMonth(), localDate.getYear());
     }
 
-    private void buildListCandidateCommits() {
+    private boolean buildListCandidateCommits(int sizeGoal) {
         try {
             final Iterable<RevCommit> commits = this.git.log()
                     .add(this.repository.resolve(Constants.HEAD))
                     .call();
             final Iterator<RevCommit> iterator = commits.iterator();
-            int i = 0;
-            while (iterator.hasNext() && !(this.projectJSON.commits.size() == MAX_NUMBER_COMMITS)) {
-                this.buildCandidateCommit(iterator.next());
-                i++;
+            boolean commitAdded = false;
+            while (iterator.hasNext() && !(this.projectJSON.commits.size() >= sizeGoal)) {
+                commitAdded |= this.buildCandidateCommit(iterator.next());
             }
-            System.out.println(i);
+            return commitAdded;
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }
 
-    private void buildCandidateCommit(RevCommit commit) {
-        if (commit.getParentCount() < 1) {
-            return;
-        }
+    private static final String PREFIX_RESULT = "result/september-2018/";
 
+    private boolean buildCandidateCommit(RevCommit commit) {
+        if (commit.getParentCount() < 1) {
+            this.blacklist.blacklist.add(new BlackListElement(commit.getName(), "NoShaParent"));
+            return false;
+        }
+        if (this.projectJSON.contains(commit.getName())) {
+            LOGGER.warn("{} is already in the list!", commit.getName().substring(0, 7));
+            return false;
+        }
+        if (this.blacklist.blacklist.contains(commit.getName())) {
+            LOGGER.warn("{} is in the blacklist!", commit.getName().substring(0, 7));
+            return false;
+        }
         final RevCommit parentCommit = commit.getParents()[0];
         final List<DiffEntry> diffEntries = this.computeDiff(commit, parentCommit);
         final List<String> modifiedJavaFile = diffEntries.stream()
@@ -85,12 +115,56 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                 .collect(Collectors.toList());
         if (!modifiedJavaFile.isEmpty()) {
             final String concernedModule = getConcernedModule(modifiedJavaFile);
+            if (!new File(this.pathToRootFolder + "/" + concernedModule + "/src/test/java/").exists()) {
+                LOGGER.info("The module does not contain any test: {}", commit.getName().substring(0, 7));
+                this.blacklist.blacklist.add(new BlackListElement(commit.getName(), "NoTest"));
+                return false;
+            }
             if (new File(this.pathToRootFolder + "/" + concernedModule).exists()) {
-                this.projectJSON.commits.add(new CommitJSON(commit.getName(), parentCommit.getName(), concernedModule));
+                // checks if we find test to be amplified
+                new TestSelectionAccordingDiff().testSelection(
+                        commit.getName(),
+                        parentCommit.getName(),
+                        this.projectJSON.name,
+                        this.pathToRootFolder,
+                        concernedModule
+                );
+                // check if the .csv file is created and contains some tests to be amplified
+                final File file = new File(this.pathToRootFolder + "/testThatExecuteTheChanges.csv");
+                if (!file.exists()) {
+                    LOGGER.info("no test could be found for {}", commit.getName().substring(0, 7));
+                    this.blacklist.blacklist.add(new BlackListElement(commit.getName(), "SelectionFailed"));
+                    return false;
+                }
+                try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+                    String list = reader.lines().collect(Collectors.joining("\n"));
+                    if (!list.isEmpty()) {
+                        // copy the csv file to keep it, and rename it
+                        final File outputDirectory = new File(PREFIX_RESULT + projectJSON.name + "/commits_" + projectJSON.commits.size());
+                        if (!(outputDirectory.exists())) {
+                            FileUtils.forceMkdir(outputDirectory);
+                        }
+                        FileUtils.copyFile(file, new File(outputDirectory.getAbsolutePath() + "/testThatExecuteTheChanges.csv"));
+                        this.projectJSON.commits.add(new CommitJSON(commit.getName(), parentCommit.getName(), concernedModule));
+                        LOGGER.info("could find test to be amplified for {}", commit.getName().substring(0, 7));
+                        return true;
+                    } else {
+                        LOGGER.warn("No test execute the changes for {}", commit.getName().substring(0, 7));
+                        this.blacklist.blacklist.add(new BlackListElement(commit.getName(), "NoTestExecuteChanges"));
+                        return false;
+                    }
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
             } else {
                 LOGGER.warn("skipping {}({}), empty test folder...", commit.getName().substring(0, 7), this.projectJSON.commits.size());
+                this.blacklist.blacklist.add(new BlackListElement(commit.getName(), "NoTestInModule"));
+                return false;
             }
         }
+        LOGGER.warn("There is no java file modified for {}", commit.getName().substring(0, 7));
+        this.blacklist.blacklist.add(new BlackListElement(commit.getName(), "NoJavaModification"));
+        return false;
     }
 
     private Function<String, String> getConcernedModule = string ->
@@ -162,7 +236,7 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
         return path.endsWith(".java") && path.contains("src/main/java");
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws FileNotFoundException {
         JSAPResult configuration = OptionsWrapper.parse(new ProjectBuilderOptions(), args);
         if (configuration.getBoolean("help")) {
             OptionsWrapper.usage();
@@ -170,15 +244,17 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
         }
         final String owner = configuration.getString("owner");
         final String project = configuration.getString("project");
+        final String output = configuration.getString("output");
         final ProjectJSONBuilder projectJSONBuilder = new ProjectJSONBuilder(
                 configuration.getString("path-to-repository"),
                 owner,
-                project
+                project,
+                output
         );
-        projectJSONBuilder.buildListCandidateCommits();
-        ProjectJSON.save(projectJSONBuilder.projectJSON,
-                configuration.getString("output") + "/" + project + ".json"
-        );
+        if (projectJSONBuilder.buildListCandidateCommits(configuration.getInt("size-goal"))) {
+            ProjectJSON.save(projectJSONBuilder.projectJSON, output + "/" + project + ".json");
+            Blacklist.save(projectJSONBuilder.blacklist, output + "/" + project + "_blacklist.json");
+        }
     }
 
 }

@@ -66,4 +66,9 @@ public class ProjectJSON {
             throw new RuntimeException(path  + " doest not exist.");
         }
     }
+
+    public boolean contains(String sha) {
+        return this.commits.stream()
+                .anyMatch(commitJSON -> commitJSON.sha.equals(sha));
+    }
 }

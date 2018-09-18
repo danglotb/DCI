@@ -1,3 +1,4 @@
+import sys
 import toolbox
 import xml.etree.ElementTree as ET
 
@@ -71,4 +72,5 @@ def add_needed_options(cmd, project):
 
 
 if __name__ == '__main__':
-    prepare("xwiki-commons")
+    print "prepapre for", sys.argv[1]
+    prepare(sys.argv[1])
