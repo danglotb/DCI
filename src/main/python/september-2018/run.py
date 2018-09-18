@@ -6,7 +6,7 @@ import preparation
 import commit_setter
 
 
-def run(project, index_begin, index_end):
+def run(project, index_begin, index_end, amplifiers):
     path_to_project_json = toolbox.prefix_current_dataset + project + ".json"
     project_json = toolbox.get_json_file(path_to_project_json)
     path_to_project_root = toolbox.prefix_dataset + project
@@ -14,7 +14,12 @@ def run(project, index_begin, index_end):
 
     # for each commits.
     for commit in commits[index_begin:index_end]:
-        toolbox.set_output_log_path(toolbox.get_absolute_path(toolbox.prefix_result + project + "/commits_" + str(commits.index(commit)) + ".log"))
+        log_path = toolbox.get_absolute_path(toolbox.prefix_result + project + "/commits_" + str(commits.index(commit)))
+        if amplifiers:
+            log_path = log_path + "_amplifiers"
+        log_path = log_path + ".log"
+
+        toolbox.set_output_log_path(log_path)
         #  1) set up both version of the program
         commit_setter.set_commit(path_to_project_root, project, commits.index(commit))
 
@@ -39,6 +44,8 @@ def run(project, index_begin, index_end):
                                                    path_to_test_that_executes_the_changes)
 
         output_path = toolbox.get_absolute_path(toolbox.prefix_result + project + "/commit_" + str(commits.index(commit)))
+        if amplifiers:
+            output_path = output_path + "_amplifiers"
 
         # run now dspot with maven plugin
         cmd = [
@@ -52,6 +59,12 @@ def run(project, index_begin, index_end):
             "-Dgenerate-new-test-class=true",
             "-Dclean=true"
         ]
+
+        if amplifiers:
+            cmd.append("-Damplifiers=AllLiteralAmplifiers,MethodAdd,MethodRemove,MethodGeneratorAmplifier,ReturnValueAmplifier,NullifierAmplifier")
+            cmd.append("-Diteration=3")
+            cmd.append("-Dbudgetizer=SimpleBudgetizer")
+
         cmd = preparation.add_needed_options(cmd, project)
         toolbox.print_and_call_in_a_file(" ".join(cmd), cwd=path_to_concerned_module)
 
@@ -85,6 +98,8 @@ if __name__ == '__main__':
 
     toolbox.init(sys.argv)
 
+    amplifiers = "amplifiers" in sys.argv
+
     if len(sys.argv) < 2:
         print "usage: python run.py <project> <index_start> <index_end>"
 
@@ -94,4 +109,4 @@ if __name__ == '__main__':
         index_begin = int(sys.argv[2])
         index_end = int(sys.argv[3])
 
-    run(sys.argv[1], index_begin=index_begin, index_end=index_end)
+    run(sys.argv[1], index_begin=index_begin, index_end=index_end, amplifiers=amplifiers)
