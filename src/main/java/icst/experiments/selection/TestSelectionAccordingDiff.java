@@ -20,7 +20,7 @@ public class TestSelectionAccordingDiff {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ProjectJSONBuilder.class);
 
-    public static String mavenHome = "/usr/share/maven/";
+    public static String mavenHome = "/home/spirals/danglot/apache-maven-3.5.4/";
 
     private static final String DIFF_NAME = "patch.diff";
 
@@ -163,3 +163,4 @@ public class TestSelectionAccordingDiff {
     }
 
 }
+
