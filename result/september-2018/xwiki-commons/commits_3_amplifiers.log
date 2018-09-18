@@ -1,0 +1,257 @@
+[INFO] 2018-09-18 11:30:16 RepositoriesSetter - {dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-09-18 11:30:17 RepositoriesSetter - Checkout b0dc5bc4db7e0efde64bb5359a1d1772f8e555e7 revision...
+[INFO] 2018-09-18 11:30:18 RepositoriesSetter - {dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-09-18 11:30:19 RepositoriesSetter - Checkout e8bdbca4d67006940d9eecd4c088e1151fbcde11 revision...
+/home/spirals/danglot/apache-maven-3.5.4/bin/mvn eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests -Dpath-to-test-list-csv=/tmp/icst-2019/dataset/september-2018/xwiki-commons_testsThatExecuteTheChange_3.csv -Dverbose=True -Dtest-criterion=ChangeDetectorSelector -Doutput-path=/tmp/icst-2019/result/september-2018/xwiki-commons/commit_3_amplifiers -Dpath-to-second-version=/tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan -Dgenerate-new-test-class=true -Dclean=true -Damplifiers=AllLiteralAmplifiers,MethodAdd,MethodRemove,MethodGeneratorAmplifier,ReturnValueAmplifier,NullifierAmplifier -Diteration=3 -Dbudgetizer=SimpleBudgetizer -Duse-maven-to-exe-test=true[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-cache-infinispan:jar:10.8-SNAPSHOT
+[WARNING] 'build.pluginManagement.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.codehaus.mojo:build-helper-maven-plugin @ org.xwiki.commons:xwiki-commons:10.8-SNAPSHOT, /tmp/icst-2019/dataset/xwiki-commons/pom.xml, line 1839, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ----------< org.xwiki.commons:xwiki-commons-cache-infinispan >----------
+[INFO] Building XWiki Commons - Cache - Infinispan 10.8-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) @ xwiki-commons-cache-infinispan ---
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/eu/stamp-project/dspot/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.resources/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.expressions/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.runtime/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.osgi/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.common/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.jobs/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.registry/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.preferences/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.contenttype/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.app/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.filesystem/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.text/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.commands/maven-metadata.xml
+[INFO] Path to runner Classes: /home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
+[INFO] /home/spirals/danglot/.m2/repository/org/jacoco/org.jacoco.core/0.7.9/org.jacoco.core-0.7.9.jar
+[INFO] /home/spirals/danglot/.m2/repository/org/ow2/asm/asm-debug-all/5.2/asm-debug-all-5.2.jar
+[INFO] /home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
+[WARNING] automaticBuilderName: unknown automatic builder specified in configuration, going to default.
+[INFO] Default: provided Maven automatic builder.
+[INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-cache-infinispan:jar:10.8-SNAPSHOT
+[WARNING] 'build.pluginManagement.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.codehaus.mojo:build-helper-maven-plugin @ org.xwiki.commons:xwiki-commons:10.8-SNAPSHOT, /tmp/icst-2019/dataset/xwiki-commons/pom.xml, line 1839, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ----------< org.xwiki.commons:xwiki-commons-cache-infinispan >----------
+[INFO] Building XWiki Commons - Cache - Infinispan 10.8-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-cache-infinispan ---
+[INFO] Deleting /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-legacy-dependencies) @ xwiki-commons-cache-infinispan ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-valid-poms) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-platform-rendering-isolation) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (check-dependency-version) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- xwiki-commons-tool-remote-resource-plugin:10.8-SNAPSHOT:process (xwiki-license-resources) @ xwiki-commons-cache-infinispan ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ xwiki-commons-cache-infinispan ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ xwiki-commons-cache-infinispan ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/target/classes
+[WARNING] Cannot find annotation method 'value()' in type 'net.jcip.annotations.GuardedBy': class file for net.jcip.annotations.GuardedBy not found
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/src/main/java/org/xwiki/cache/infinispan/internal/InfinispanConfigurationLoader.java:[246,60] unchecked cast
+  required: java.lang.Class<? extends org.infinispan.configuration.cache.StoreConfigurationBuilder<?,?>>
+  found:    java.lang.Class<capture#1 of ? extends org.infinispan.commons.configuration.Builder<org.infinispan.configuration.cache.StoreConfiguration>>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/src/main/java/org/xwiki/cache/infinispan/internal/InfinispanConfigurationLoader.java:[248,75] unchecked cast
+  required: org.infinispan.commons.configuration.Builder<org.infinispan.configuration.cache.StoreConfiguration>
+  found:    capture#2 of ? extends org.infinispan.configuration.cache.StoreConfigurationBuilder<?,?>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/src/main/java/org/xwiki/cache/infinispan/internal/InfinispanCacheFactory.java:[107,24] closeQuietly(java.io.InputStream) in org.apache.commons.io.IOUtils has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/src/main/java/org/xwiki/cache/infinispan/internal/InfinispanCacheException.java:[30,8] serializable class org.xwiki.cache.infinispan.internal.InfinispanCacheException has no definition of serialVersionUID
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.1:manifest (bundle-manifest) @ xwiki-commons-cache-infinispan ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ xwiki-commons-cache-infinispan ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ xwiki-commons-cache-infinispan ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ xwiki-commons-cache-infinispan ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:build-classpath (default-cli) @ xwiki-commons-cache-infinispan ---
+[INFO] Wrote classpath file '/tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/target/dspot/classpath'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 12.610 s
+[INFO] Finished at: 2018-09-18T11:30:46+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-cache-infinispan:jar:10.8-SNAPSHOT
+[WARNING] 'build.pluginManagement.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.codehaus.mojo:build-helper-maven-plugin @ org.xwiki.commons:xwiki-commons:10.8-SNAPSHOT, /tmp/icst-2019/dataset/xwiki-commons_parent/pom.xml, line 1839, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ----------< org.xwiki.commons:xwiki-commons-cache-infinispan >----------
+[INFO] Building XWiki Commons - Cache - Infinispan 10.8-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-cache-infinispan ---
+[INFO] Deleting /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-legacy-dependencies) @ xwiki-commons-cache-infinispan ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-valid-poms) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-platform-rendering-isolation) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (check-dependency-version) @ xwiki-commons-cache-infinispan ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- xwiki-commons-tool-remote-resource-plugin:10.8-SNAPSHOT:process (xwiki-license-resources) @ xwiki-commons-cache-infinispan ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ xwiki-commons-cache-infinispan ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ xwiki-commons-cache-infinispan ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/target/classes
+[WARNING] Cannot find annotation method 'value()' in type 'net.jcip.annotations.GuardedBy': class file for net.jcip.annotations.GuardedBy not found
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/src/main/java/org/xwiki/cache/infinispan/internal/InfinispanCacheException.java:[30,8] serializable class org.xwiki.cache.infinispan.internal.InfinispanCacheException has no definition of serialVersionUID
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/src/main/java/org/xwiki/cache/infinispan/internal/InfinispanConfigurationLoader.java:[246,60] unchecked cast
+  required: java.lang.Class<? extends org.infinispan.configuration.cache.StoreConfigurationBuilder<?,?>>
+  found:    java.lang.Class<capture#1 of ? extends org.infinispan.commons.configuration.Builder<org.infinispan.configuration.cache.StoreConfiguration>>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/src/main/java/org/xwiki/cache/infinispan/internal/InfinispanConfigurationLoader.java:[248,75] unchecked cast
+  required: org.infinispan.commons.configuration.Builder<org.infinispan.configuration.cache.StoreConfiguration>
+  found:    capture#2 of ? extends org.infinispan.configuration.cache.StoreConfigurationBuilder<?,?>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/src/main/java/org/xwiki/cache/infinispan/internal/InfinispanCacheFactory.java:[107,24] closeQuietly(java.io.InputStream) in org.apache.commons.io.IOUtils has been deprecated
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.1:manifest (bundle-manifest) @ xwiki-commons-cache-infinispan ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ xwiki-commons-cache-infinispan ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ xwiki-commons-cache-infinispan ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ xwiki-commons-cache-infinispan ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:build-classpath (default-cli) @ xwiki-commons-cache-infinispan ---
+[INFO] Wrote classpath file '/tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-cache/xwiki-commons-cache-infinispan/target/dspot/classpath'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.463 s
+[INFO] Finished at: 2018-09-18T11:31:02+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 40.055 s
+[INFO] Finished at: 2018-09-18T11:31:02+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) on project xwiki-commons-cache-infinispan: Execution default-cli of goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests failed: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
