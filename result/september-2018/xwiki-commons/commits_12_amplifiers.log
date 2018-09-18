@@ -1,0 +1,523 @@
+[INFO] 2018-09-18 13:31:39 RepositoriesSetter - {dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-09-18 13:31:40 RepositoriesSetter - Checkout df6986ee8ceef7d044477dcc8509c51c8c94eedf revision...
+[INFO] 2018-09-18 13:31:50 RepositoriesSetter - {dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-09-18 13:31:50 RepositoriesSetter - Checkout 99cd9436423fadda4f5d66c1d2dff4bea10d1775 revision...
+/home/spirals/danglot/apache-maven-3.5.4/bin/mvn eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests -Dpath-to-test-list-csv=/tmp/icst-2019/dataset/september-2018/xwiki-commons_testsThatExecuteTheChange_12.csv -Dverbose=True -Dtest-criterion=ChangeDetectorSelector -Doutput-path=/tmp/icst-2019/result/september-2018/xwiki-commons/commit_12_amplifiers -Dpath-to-second-version=/tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties -Dgenerate-new-test-class=true -Dclean=true -Damplifiers=AllLiteralAmplifiers,MethodAdd,MethodRemove,MethodGeneratorAmplifier,ReturnValueAmplifier,NullifierAmplifier -Diteration=3 -Dbudgetizer=SimpleBudgetizer -Duse-maven-to-exe-test=true[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< org.xwiki.commons:xwiki-commons-properties >-------------
+[INFO] Building XWiki Commons - Properties 10.8-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) @ xwiki-commons-properties ---
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/eu/stamp-project/dspot/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.resources/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.expressions/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.runtime/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.osgi/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.common/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.jobs/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.registry/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.preferences/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.contenttype/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.app/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.filesystem/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.text/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.commands/maven-metadata.xml
+[INFO] Path to runner Classes: /home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
+[INFO] /home/spirals/danglot/.m2/repository/org/jacoco/org.jacoco.core/0.7.9/org.jacoco.core-0.7.9.jar
+[INFO] /home/spirals/danglot/.m2/repository/org/ow2/asm/asm-debug-all/5.2/asm-debug-all-5.2.jar
+[INFO] /home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
+[WARNING] automaticBuilderName: unknown automatic builder specified in configuration, going to default.
+[INFO] Default: provided Maven automatic builder.
+[INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< org.xwiki.commons:xwiki-commons-properties >-------------
+[INFO] Building XWiki Commons - Properties 10.8-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-properties ---
+[INFO] Deleting /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-legacy-dependencies) @ xwiki-commons-properties ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-valid-poms) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-platform-rendering-isolation) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (check-dependency-version) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- xwiki-commons-tool-remote-resource-plugin:10.8-SNAPSHOT:process (xwiki-license-resources) @ xwiki-commons-properties ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ xwiki-commons-properties ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ xwiki-commons-properties ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 34 source files to /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/target/classes
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/AbstractConverter.java:[46,72] unchecked cast
+  required: T
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/AbstractConverter.java:[46,51] unchecked cast
+  required: G
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/AbstractConverter.java:[49,26] unchecked cast
+  required: G
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/AbstractConverter.java:[52,39] unchecked cast
+  required: G
+  found:    T
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/AbstractConverter.java:[85,54] unchecked conversion
+  required: java.lang.Class<G>
+  found:    java.lang.Class
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[46,61] found raw type: java.util.Collection
+  missing type arguments for generic class java.util.Collection<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[129,27] unchecked call to add(E) as a member of the raw type java.util.Collection
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[132,20] unchecked cast
+  required: G
+  found:    T
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[154,27] unchecked call to add(E) as a member of the raw type java.util.Collection
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[157,20] unchecked cast
+  required: G
+  found:    T
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[200,39] unchecked call to add(E) as a member of the raw type java.util.Collection
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[210,24] unchecked cast
+  required: G
+  found:    T
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[223,60] unchecked conversion
+  required: java.lang.Class<G>
+  found:    java.lang.Class
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[225,28] found raw type: java.util.ArrayList
+  missing type arguments for generic class java.util.ArrayList<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[225,24] unchecked cast
+  required: G
+  found:    java.util.ArrayList
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/CollectionConverter.java:[35,70] found raw type: java.util.Collection
+  missing type arguments for generic class java.util.Collection<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractSetConverter.java:[35,54] found raw type: java.util.Set
+  missing type arguments for generic class java.util.Set<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractSetConverter.java:[40,60] unchecked conversion
+  required: java.lang.Class<G>
+  found:    java.lang.Class
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractSetConverter.java:[42,28] found raw type: java.util.LinkedHashSet
+  missing type arguments for generic class java.util.LinkedHashSet<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractSetConverter.java:[42,24] unchecked cast
+  required: G
+  found:    java.util.LinkedHashSet
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/HashSetConverter.java:[36,60] found raw type: java.util.HashSet
+  missing type arguments for generic class java.util.HashSet<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/HashSetConverter.java:[39,15] found raw type: java.util.HashSet
+  missing type arguments for generic class java.util.HashSet<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/HashSetConverter.java:[41,20] found raw type: java.util.HashSet
+  missing type arguments for generic class java.util.HashSet<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/EnumConverter.java:[38,54] found raw type: java.lang.Enum
+  missing type arguments for generic class java.lang.Enum<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/EnumConverter.java:[41,26] found raw type: java.lang.Enum
+  missing type arguments for generic class java.lang.Enum<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/EnumConverter.java:[50,32] unchecked cast
+  required: E
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/InputStreamConverter.java:[57,24] unchecked cast
+  required: G
+  found:    java.io.ByteArrayInputStream
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/DefaultConverterManager.java:[70,23] found raw type: java.lang.Enum
+  missing type arguments for generic class java.lang.Enum<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/DefaultConverterManager.java:[76,13] found raw type: org.xwiki.properties.converter.Converter
+  missing type arguments for generic class org.xwiki.properties.converter.Converter<T>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/DefaultConverterManager.java:[89,24] unchecked cast
+  required: T
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/DefaultConverterManager.java:[98,28] unchecked cast
+  required: T
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/DefaultConverterManager.java:[142,48] unchecked cast
+  required: org.xwiki.properties.converter.Converter<T>
+  found:    org.xwiki.properties.converter.Converter<java.lang.Enum>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/DefaultConverterManager.java:[148,33] unchecked conversion
+  required: org.xwiki.properties.converter.Converter<T>
+  found:    org.xwiki.properties.converter.Converter
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/TypeConverter.java:[42,20] convertToType(java.lang.reflect.Type,java.lang.Object) in org.xwiki.properties.internal.converter.TypeConverter overrides <G>convertToType(java.lang.reflect.Type,java.lang.Object) in org.xwiki.properties.converter.AbstractConverter
+  return type requires unchecked conversion from java.lang.reflect.Type to G
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/ListConverter.java:[35,64] found raw type: java.util.List
+  missing type arguments for generic class java.util.List<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/NamespaceConverter.java:[42,25] convertToType(java.lang.reflect.Type,java.lang.Object) in org.xwiki.properties.internal.converter.NamespaceConverter overrides <G>convertToType(java.lang.reflect.Type,java.lang.Object) in org.xwiki.properties.converter.AbstractConverter
+  return type requires unchecked conversion from org.xwiki.component.namespace.Namespace to G
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/LinkedHashSetConverter.java:[36,66] found raw type: java.util.LinkedHashSet
+  missing type arguments for generic class java.util.LinkedHashSet<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/LinkedHashSetConverter.java:[39,26] found raw type: java.util.LinkedHashSet
+  missing type arguments for generic class java.util.LinkedHashSet<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/LinkedHashSetConverter.java:[42,24] unchecked cast
+  required: G
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/ConversionException.java:[26,8] serializable class org.xwiki.properties.converter.ConversionException has no definition of serialVersionUID
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/ColorConverter.java:[49,21] convertToType(java.lang.reflect.Type,java.lang.Object) in org.xwiki.properties.internal.converter.ColorConverter overrides <G>convertToType(java.lang.reflect.Type,java.lang.Object) in org.xwiki.properties.converter.AbstractConverter
+  return type requires unchecked conversion from java.awt.Color to G
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/ArrayListConverter.java:[36,69] found raw type: java.util.ArrayList
+  missing type arguments for generic class java.util.ArrayList<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/ArrayListConverter.java:[39,26] found raw type: java.util.ArrayList
+  missing type arguments for generic class java.util.ArrayList<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/ArrayListConverter.java:[42,24] unchecked cast
+  required: G
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/SetConverter.java:[36,56] found raw type: java.util.Set
+  missing type arguments for generic class java.util.Set<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/SetConverter.java:[39,26] found raw type: java.util.Set
+  missing type arguments for generic class java.util.Set<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/SetConverter.java:[42,24] unchecked cast
+  required: G
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/ConvertUtilsConverter.java:[46,47] found raw type: org.xwiki.properties.converter.Converter
+  missing type arguments for generic class org.xwiki.properties.converter.Converter<T>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/ConvertUtilsConverter.java:[73,46] unchecked cast
+  required: T
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/LocaleConverter.java:[42,22] convertToType(java.lang.reflect.Type,java.lang.Object) in org.xwiki.properties.internal.converter.LocaleConverter overrides <G>convertToType(java.lang.reflect.Type,java.lang.Object) in org.xwiki.properties.converter.AbstractConverter
+  return type requires unchecked conversion from java.util.Locale to G
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.1:manifest (bundle-manifest) @ xwiki-commons-properties ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ xwiki-commons-properties ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ xwiki-commons-properties ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 20 source files to /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/target/test-classes
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/LinkedHashSetConverterTest.java:[30,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/SetConverterTest.java:[31,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/ListConverterTest.java:[30,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/NamespaceConverterTest.java:[27,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/HashSetConverterTest.java:[30,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/ArrayListConverterTest.java:[29,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/TypeConverterTest.java:[30,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/LocaleConverterTest.java:[28,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/InputStreamConverterTest.java:[31,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/EnumConverterTest.java:[27,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/ColorConverterTest.java:[29,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/LinkedHashSetConverterTest.java:[37,49] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/DefaultBeanDescriptorTest.java:[57,64] getPropertyClass() in org.xwiki.properties.PropertyDescriptor has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/DefaultBeanDescriptorTest.java:[78,64] getPropertyClass() in org.xwiki.properties.PropertyDescriptor has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/DefaultBeanDescriptorTest.java:[94,70] getPropertyClass() in org.xwiki.properties.PropertyDescriptor has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/DefaultBeanDescriptorTest.java:[115,56] getPropertyClass() in org.xwiki.properties.PropertyDescriptor has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/DefaultBeanDescriptorTest.java:[130,53] getPropertyClass() in org.xwiki.properties.PropertyDescriptor has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/DefaultBeanDescriptorTest.java:[145,57] getPropertyClass() in org.xwiki.properties.PropertyDescriptor has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/SetConverterTest.java:[38,39] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/ListConverterTest.java:[41,40] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/ListConverterTest.java:[78,9] serializable class <anonymous org.xwiki.properties.internal.converter.ListConverterTest$1> has no definition of serialVersionUID
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/ListConverterTest.java:[82,9] serializable class <anonymous org.xwiki.properties.internal.converter.ListConverterTest$2> has no definition of serialVersionUID
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/NamespaceConverterTest.java:[34,45] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/test/TestClass.java:[22,8] Class org.xwiki.properties.test.TestClass overrides equals, but neither it nor any superclass overrides hashCode method
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/HashSetConverterTest.java:[37,43] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/DefaultBeanManagerTest.java:[51,19] serializable class org.xwiki.properties.internal.DefaultBeanManagerTest.RawPropertiesTest has no definition of serialVersionUID
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/ArrayListConverterTest.java:[36,45] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/TypeConverterTest.java:[37,40] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/LocaleConverterTest.java:[35,42] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/test/DeprecatedTestConverter.java:[31,46] found raw type: org.xwiki.properties.converter.AbstractConverter
+  missing type arguments for generic class org.xwiki.properties.converter.AbstractConverter<T>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/test/DeprecatedTestConverter.java:[35,39] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/InputStreamConverterTest.java:[38,47] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/EnumConverterTest.java:[34,40] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/ColorConverterTest.java:[36,41] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ xwiki-commons-properties ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:build-classpath (default-cli) @ xwiki-commons-properties ---
+[INFO] Wrote classpath file '/tmp/icst-2019/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-properties/target/dspot/classpath'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.950 s
+[INFO] Finished at: 2018-09-18T13:32:18+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< org.xwiki.commons:xwiki-commons-properties >-------------
+[INFO] Building XWiki Commons - Properties 10.8-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-properties ---
+[INFO] Deleting /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-legacy-dependencies) @ xwiki-commons-properties ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-valid-poms) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-platform-rendering-isolation) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (check-dependency-version) @ xwiki-commons-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- xwiki-commons-tool-remote-resource-plugin:10.8-SNAPSHOT:process (xwiki-license-resources) @ xwiki-commons-properties ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ xwiki-commons-properties ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ xwiki-commons-properties ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 34 source files to /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/target/classes
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/DefaultConverterManager.java:[70,23] found raw type: java.lang.Enum
+  missing type arguments for generic class java.lang.Enum<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/DefaultConverterManager.java:[76,13] found raw type: org.xwiki.properties.converter.Converter
+  missing type arguments for generic class org.xwiki.properties.converter.Converter<T>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/DefaultConverterManager.java:[89,24] unchecked cast
+  required: T
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/DefaultConverterManager.java:[98,28] unchecked cast
+  required: T
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/DefaultConverterManager.java:[142,48] unchecked cast
+  required: org.xwiki.properties.converter.Converter<T>
+  found:    org.xwiki.properties.converter.Converter<java.lang.Enum>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/DefaultConverterManager.java:[148,33] unchecked conversion
+  required: org.xwiki.properties.converter.Converter<T>
+  found:    org.xwiki.properties.converter.Converter
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/ConvertUtilsConverter.java:[46,47] found raw type: org.xwiki.properties.converter.Converter
+  missing type arguments for generic class org.xwiki.properties.converter.Converter<T>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/ConvertUtilsConverter.java:[73,46] unchecked cast
+  required: T
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/AbstractConverter.java:[46,72] unchecked cast
+  required: T
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/AbstractConverter.java:[46,51] unchecked cast
+  required: G
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/AbstractConverter.java:[49,26] unchecked cast
+  required: G
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/AbstractConverter.java:[52,39] unchecked cast
+  required: G
+  found:    T
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/AbstractConverter.java:[85,54] unchecked conversion
+  required: java.lang.Class<G>
+  found:    java.lang.Class
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/LocaleConverter.java:[42,22] convertToType(java.lang.reflect.Type,java.lang.Object) in org.xwiki.properties.internal.converter.LocaleConverter overrides <G>convertToType(java.lang.reflect.Type,java.lang.Object) in org.xwiki.properties.converter.AbstractConverter
+  return type requires unchecked conversion from java.util.Locale to G
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/ColorConverter.java:[49,21] convertToType(java.lang.reflect.Type,java.lang.Object) in org.xwiki.properties.internal.converter.ColorConverter overrides <G>convertToType(java.lang.reflect.Type,java.lang.Object) in org.xwiki.properties.converter.AbstractConverter
+  return type requires unchecked conversion from java.awt.Color to G
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/InputStreamConverter.java:[57,24] unchecked cast
+  required: G
+  found:    java.io.ByteArrayInputStream
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[46,61] found raw type: java.util.Collection
+  missing type arguments for generic class java.util.Collection<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[129,27] unchecked call to add(E) as a member of the raw type java.util.Collection
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[132,20] unchecked cast
+  required: G
+  found:    T
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[154,27] unchecked call to add(E) as a member of the raw type java.util.Collection
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[157,20] unchecked cast
+  required: G
+  found:    T
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[200,39] unchecked call to add(E) as a member of the raw type java.util.Collection
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[210,24] unchecked cast
+  required: G
+  found:    T
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[223,60] unchecked conversion
+  required: java.lang.Class<G>
+  found:    java.lang.Class
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[225,28] found raw type: java.util.ArrayList
+  missing type arguments for generic class java.util.ArrayList<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractCollectionConverter.java:[225,24] unchecked cast
+  required: G
+  found:    java.util.ArrayList
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/CollectionConverter.java:[35,70] found raw type: java.util.Collection
+  missing type arguments for generic class java.util.Collection<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/ArrayListConverter.java:[36,69] found raw type: java.util.ArrayList
+  missing type arguments for generic class java.util.ArrayList<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/ArrayListConverter.java:[39,26] found raw type: java.util.ArrayList
+  missing type arguments for generic class java.util.ArrayList<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/ArrayListConverter.java:[42,24] unchecked cast
+  required: G
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractSetConverter.java:[35,54] found raw type: java.util.Set
+  missing type arguments for generic class java.util.Set<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractSetConverter.java:[40,60] unchecked conversion
+  required: java.lang.Class<G>
+  found:    java.lang.Class
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractSetConverter.java:[42,28] found raw type: java.util.LinkedHashSet
+  missing type arguments for generic class java.util.LinkedHashSet<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/collection/AbstractSetConverter.java:[42,24] unchecked cast
+  required: G
+  found:    java.util.LinkedHashSet
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/EnumConverter.java:[38,54] found raw type: java.lang.Enum
+  missing type arguments for generic class java.lang.Enum<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/EnumConverter.java:[41,26] found raw type: java.lang.Enum
+  missing type arguments for generic class java.lang.Enum<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/EnumConverter.java:[50,32] unchecked cast
+  required: E
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/NamespaceConverter.java:[42,25] convertToType(java.lang.reflect.Type,java.lang.Object) in org.xwiki.properties.internal.converter.NamespaceConverter overrides <G>convertToType(java.lang.reflect.Type,java.lang.Object) in org.xwiki.properties.converter.AbstractConverter
+  return type requires unchecked conversion from org.xwiki.component.namespace.Namespace to G
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/LinkedHashSetConverter.java:[36,66] found raw type: java.util.LinkedHashSet
+  missing type arguments for generic class java.util.LinkedHashSet<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/LinkedHashSetConverter.java:[39,26] found raw type: java.util.LinkedHashSet
+  missing type arguments for generic class java.util.LinkedHashSet<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/LinkedHashSetConverter.java:[42,24] unchecked cast
+  required: G
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/converter/ConversionException.java:[26,8] serializable class org.xwiki.properties.converter.ConversionException has no definition of serialVersionUID
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/HashSetConverter.java:[36,60] found raw type: java.util.HashSet
+  missing type arguments for generic class java.util.HashSet<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/HashSetConverter.java:[39,15] found raw type: java.util.HashSet
+  missing type arguments for generic class java.util.HashSet<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/HashSetConverter.java:[41,20] found raw type: java.util.HashSet
+  missing type arguments for generic class java.util.HashSet<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/TypeConverter.java:[42,20] convertToType(java.lang.reflect.Type,java.lang.Object) in org.xwiki.properties.internal.converter.TypeConverter overrides <G>convertToType(java.lang.reflect.Type,java.lang.Object) in org.xwiki.properties.converter.AbstractConverter
+  return type requires unchecked conversion from java.lang.reflect.Type to G
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/ListConverter.java:[35,64] found raw type: java.util.List
+  missing type arguments for generic class java.util.List<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/SetConverter.java:[36,56] found raw type: java.util.Set
+  missing type arguments for generic class java.util.Set<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/SetConverter.java:[39,26] found raw type: java.util.Set
+  missing type arguments for generic class java.util.Set<E>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/main/java/org/xwiki/properties/internal/converter/SetConverter.java:[42,24] unchecked cast
+  required: G
+  found:    java.lang.Object
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.1:manifest (bundle-manifest) @ xwiki-commons-properties ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ xwiki-commons-properties ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ xwiki-commons-properties ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 20 source files to /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/target/test-classes
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/SetConverterTest.java:[31,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/NamespaceConverterTest.java:[27,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/HashSetConverterTest.java:[30,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/LocaleConverterTest.java:[28,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/LinkedHashSetConverterTest.java:[30,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/InputStreamConverterTest.java:[31,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/ListConverterTest.java:[30,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/EnumConverterTest.java:[27,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/ColorConverterTest.java:[29,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/ArrayListConverterTest.java:[29,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/TypeConverterTest.java:[30,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/SetConverterTest.java:[38,39] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/NamespaceConverterTest.java:[34,45] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/test/TestClass.java:[22,8] Class org.xwiki.properties.test.TestClass overrides equals, but neither it nor any superclass overrides hashCode method
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/DefaultBeanDescriptorTest.java:[57,64] getPropertyClass() in org.xwiki.properties.PropertyDescriptor has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/DefaultBeanDescriptorTest.java:[78,64] getPropertyClass() in org.xwiki.properties.PropertyDescriptor has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/DefaultBeanDescriptorTest.java:[94,70] getPropertyClass() in org.xwiki.properties.PropertyDescriptor has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/DefaultBeanDescriptorTest.java:[115,56] getPropertyClass() in org.xwiki.properties.PropertyDescriptor has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/DefaultBeanDescriptorTest.java:[130,53] getPropertyClass() in org.xwiki.properties.PropertyDescriptor has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/DefaultBeanDescriptorTest.java:[145,57] getPropertyClass() in org.xwiki.properties.PropertyDescriptor has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/HashSetConverterTest.java:[37,43] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/DefaultBeanManagerTest.java:[51,19] serializable class org.xwiki.properties.internal.DefaultBeanManagerTest.RawPropertiesTest has no definition of serialVersionUID
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/LocaleConverterTest.java:[35,42] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/LinkedHashSetConverterTest.java:[37,49] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/InputStreamConverterTest.java:[38,47] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/test/DeprecatedTestConverter.java:[31,46] found raw type: org.xwiki.properties.converter.AbstractConverter
+  missing type arguments for generic class org.xwiki.properties.converter.AbstractConverter<T>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/test/DeprecatedTestConverter.java:[35,39] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/ListConverterTest.java:[41,40] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/ListConverterTest.java:[78,9] serializable class <anonymous org.xwiki.properties.internal.converter.ListConverterTest$1> has no definition of serialVersionUID
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/ListConverterTest.java:[82,9] serializable class <anonymous org.xwiki.properties.internal.converter.ListConverterTest$2> has no definition of serialVersionUID
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/EnumConverterTest.java:[34,40] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/ColorConverterTest.java:[36,41] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/ArrayListConverterTest.java:[36,45] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/src/test/java/org/xwiki/properties/internal/converter/TypeConverterTest.java:[37,40] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ xwiki-commons-properties ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:build-classpath (default-cli) @ xwiki-commons-properties ---
+[INFO] Wrote classpath file '/tmp/icst-2019/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-properties/target/dspot/classpath'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 12.373 s
+[INFO] Finished at: 2018-09-18T13:32:37+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 42.111 s
+[INFO] Finished at: 2018-09-18T13:32:37+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) on project xwiki-commons-properties: Execution default-cli of goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests failed: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
