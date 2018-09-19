@@ -26,7 +26,7 @@ public class TestSelectionAccordingDiff {
 
     private static final String PREFIX_RESULT = "result/september-2018/";
 
-    public static final String TMP_TEST_SELECTION_FILENAME = "testThatExecuteTheChanges.csv";
+    public static final String TMP_TEST_SELECTION_FILENAME = "testsThatExecuteTheChanges.csv.csv";
 
     public void testSelection(String sha, String shaParent, String project, String pathToRepository, String concernedModule) {
         // 1 setting both project to correct commit

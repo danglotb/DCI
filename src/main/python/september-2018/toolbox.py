@@ -22,7 +22,7 @@ full_qualified_name_repositories_setter = "icst.experiments.repositories.Reposit
 
 suffix_parent = "_parent"
 
-name_of_csv_with_list_of_test_that_execute_the_changes = "testsThatExecuteTheChange"
+name_of_csv_with_list_of_test_that_execute_the_changes = "testsThatExecuteTheChanges"
 
 
 def get_path_to_csv_file(project, commit_index):
