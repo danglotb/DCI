@@ -5,7 +5,7 @@ import preparation
 import commit_setter
 
 
-def run(project, index_begin, index_end, amplifiers):
+def run(project, index_begin, index_end, amplifiers, parent):
     path_to_project_json = toolbox.prefix_current_dataset + project + ".json"
     project_json = toolbox.get_json_file(path_to_project_json)
     path_to_project_root = toolbox.prefix_dataset + project
@@ -36,7 +36,7 @@ def run(project, index_begin, index_end, amplifiers):
             "-Dverbose=True",
             "-Dtest-criterion=ChangeDetectorSelector",
             "-Doutput-path=" + output_path,
-            "-Dpath-to-second-version=" + path_to_concerned_module_parent,
+            "-Dpath-to-second-version=" + path_to_concerned_module_parent if not parent else path_to_concerned_module,
             "-Dgenerate-new-test-class=true",
             "-Dclean=true"
         ]
@@ -45,21 +45,7 @@ def run(project, index_begin, index_end, amplifiers):
             cmd.append("-Diteration=3")
             cmd.append("-Dbudgetizer=SimpleBudgetizer")
         cmd = preparation.add_needed_options(cmd, project)
-        toolbox.print_and_call_in_a_file(" ".join(cmd), cwd=path_to_concerned_module)
-
-def get_list_of_tests_that_execute_changes(concerned_module, path_to_concerned_module, path_to_concerned_module_parent,
-                                           output_path):
-    cmd = [
-        toolbox.maven_home + "mvn", "clean",
-        "eu.stamp-project:diff-test-selection:0.5-SNAPSHOT:list",
-        "-DpathToDiff=patch.diff",
-        "-DpathToOtherVersion=" + path_to_concerned_module_parent,
-        "-Dmodule=" + concerned_module,
-        "-DoutputPath=" + output_path
-    ]
-    return_code = toolbox.print_and_call_in_a_file(" ".join(cmd), cwd=path_to_concerned_module)
-    return return_code
-
+        toolbox.print_and_call_in_a_file(" ".join(cmd), cwd=path_to_concerned_module_parent if not parent else path_to_concerned_module)
 
 def create_diff(commit_id, cwd):
     toolbox.delete_if_exists(
@@ -78,6 +64,7 @@ if __name__ == '__main__':
     toolbox.init(sys.argv)
 
     amplifiers = "amplifiers" in sys.argv
+    parent = "parent" in sys.argv
 
     if len(sys.argv) < 2:
         print "usage: python run.py <project> <index_start> <index_end>"
@@ -88,4 +75,4 @@ if __name__ == '__main__':
         index_begin = int(sys.argv[2])
         index_end = int(sys.argv[3])
 
-    run(sys.argv[1], index_begin=index_begin, index_end=index_end, amplifiers=amplifiers)
+    run(project=sys.argv[1], index_begin=index_begin, index_end=index_end, amplifiers=amplifiers, parent=parent)

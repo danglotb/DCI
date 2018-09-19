@@ -26,9 +26,11 @@ public class TestSelectionAccordingDiff {
 
     private static final String PREFIX_RESULT = "result/september-2018/";
 
-    public static final String TMP_TEST_SELECTION_FILENAME = "testsThatExecuteTheChanges.csv.csv";
+    public static final String TMP_TEST_SELECTION_FILENAME = "testsThatExecuteTheChanges.csv";
 
-    public void testSelection(String sha, String shaParent, String project, String pathToRepository, String concernedModule) {
+    public void testSelection(String sha, String shaParent,
+                              String project, String pathToRepository,
+                              String concernedModule, boolean useParent) {
         // 1 setting both project to correct commit
         RepositoriesSetterNoJSON.main(new String[]{
                 "--project", project,
@@ -45,13 +47,15 @@ public class TestSelectionAccordingDiff {
         runCmd("git diff " + shaParent + " > " + DIFF_NAME, pathToRepository + "/" + concernedModule, DIFF_NAME);
         runCmd("python src/main/python/september-2018/preparation.py " + project, null);
         // install
-        runGoals(pathToRepository  + "/pom.xml", "clean", "install", "-DskipTests", "--quiet");
+        runGoals(pathToRepository + "/pom.xml", "clean", "install", "-DskipTests", "--quiet");
         // 4 compute the list of the test that execute the change
-        runGoals(pathToRepository + "/" + concernedModule + "/pom.xml",
+        final String absolutePathToParent = new File(pathToRepository + "_parent/" + concernedModule).getAbsolutePath();
+        final String absolutePathToCurrentCommit = new File(pathToRepository + "/" + concernedModule).getAbsolutePath();
+        runGoals((useParent ? absolutePathToParent : absolutePathToCurrentCommit) + "/pom.xml",
                 "clean",
                 "eu.stamp-project:diff-test-selection:0.5-SNAPSHOT:list",
                 "-DpathToDiff=" + new File(pathToRepository + "/" + DIFF_NAME).getAbsolutePath(),
-                "-DpathToOtherVersion=" + new File(pathToRepository + "_parent/" + concernedModule).getAbsolutePath(),
+                "-DpathToOtherVersion=" + (useParent ? absolutePathToCurrentCommit : absolutePathToParent),
                 "-Dmodule=" + concernedModule,
                 "-DoutputPath=" + new File(pathToRepository + "/" + TMP_TEST_SELECTION_FILENAME).getAbsolutePath());
     }
