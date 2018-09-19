@@ -125,7 +125,7 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                         concernedModule
                 );
                 // check if the .csv file is created and contains some tests to be amplified
-                final File file = new File(this.pathToRootFolder + "/testsThatExecuteTheChanges.csv.csv");
+                final File file = new File(this.pathToRootFolder + "/testsThatExecuteTheChanges.csv");
                 if (!file.exists()) {
                     LOGGER.info("no test could be found for {}", commit.getName().substring(0, 7));
                     this.blacklist.blacklist.add(new BlackListElement(commit.getName(), "SelectionFailed"));
@@ -139,7 +139,7 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                         if (!(outputDirectory.exists())) {
                             FileUtils.forceMkdir(outputDirectory);
                         }
-                        FileUtils.copyFile(file, new File(outputDirectory.getAbsolutePath() + "/testsThatExecuteTheChanges.csv.csv"));
+                        FileUtils.copyFile(file, new File(outputDirectory.getAbsolutePath() + "/testsThatExecuteTheChanges.csv"));
                         this.projectJSON.commits.add(new CommitJSON(commit.getName(), parentCommit.getName(), concernedModule));
                         LOGGER.info("could find test to be amplified for {}", commit.getName().substring(0, 7));
                         return true;
