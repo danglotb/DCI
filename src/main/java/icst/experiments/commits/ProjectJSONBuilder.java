@@ -47,13 +47,16 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
 
     private boolean useParent;
 
+    private String outputAbsolutePath;
+
     public ProjectJSONBuilder(String pathToRepository, String owner, String project, String output, boolean useParent) {
         super(pathToRepository);
         if (new File(output + "/" + project + ".json").exists()) {
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
             try {
-                this.projectJSON = gson.fromJson(new FileReader(output + "/" + project + ".json"), ProjectJSON.class);
-                this.blacklist = gson.fromJson(new FileReader(output + "/" + project + "_blacklist.json"), Blacklist.class);
+                this.outputAbsolutePath = new File(output + "/" + project + (useParent ? "_parent" : "")).getAbsolutePath() + "/";
+                this.projectJSON = gson.fromJson(new FileReader(this.outputAbsolutePath + project + ".json"), ProjectJSON.class);
+                this.blacklist = gson.fromJson(new FileReader(this.outputAbsolutePath + project + "_blacklist.json"), Blacklist.class);
             } catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
             }
@@ -138,7 +141,9 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                     String list = reader.lines().collect(Collectors.joining("\n"));
                     if (!list.isEmpty()) {
                         // copy the csv file to keep it, and rename it
-                        final File outputDirectory = new File(PREFIX_RESULT + projectJSON.name + "/commits_" + projectJSON.commits.size());
+                        final File outputDirectory = new File(PREFIX_RESULT + projectJSON.name
+                                + (this.useParent ? "_parent" : "")
+                                + "/commits_" + projectJSON.commits.size());
                         if (!(outputDirectory.exists())) {
                             FileUtils.forceMkdir(outputDirectory);
                         }
@@ -252,8 +257,8 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                 useParent
         );
         if (projectJSONBuilder.buildListCandidateCommits(configuration.getInt("size-goal"))) {
-            ProjectJSON.save(projectJSONBuilder.projectJSON, output + "/" + project + ".json");
-            Blacklist.save(projectJSONBuilder.blacklist, output + "/" + project + "_blacklist.json");
+            ProjectJSON.save(projectJSONBuilder.projectJSON, projectJSONBuilder.outputAbsolutePath + project + ".json");
+            Blacklist.save(projectJSONBuilder.blacklist, projectJSONBuilder.outputAbsolutePath  + project + "_blacklist.json");
         }
     }
 
