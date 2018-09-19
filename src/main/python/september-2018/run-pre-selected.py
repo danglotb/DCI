@@ -13,7 +13,7 @@ def run(project, index_begin, index_end, amplifiers, parent):
 
     # for each commits.
     for commit in commits[index_begin:index_end]:
-        output_path = toolbox.get_absolute_path(toolbox.prefix_result + project + "/commits_" + str(commits.index(commit)))
+        output_path = toolbox.get_absolute_path(toolbox.prefix_result + project + "/" + toolbox.get_output_folder_for_commit(commit, commits))
         if amplifiers:
             output_path = output_path + "/input_amplification"
         else:
@@ -26,7 +26,7 @@ def run(project, index_begin, index_end, amplifiers, parent):
             toolbox.prefix_dataset + project + "/" + commit["concernedModule"])
         path_to_concerned_module_parent = toolbox.get_absolute_path(
             toolbox.prefix_dataset + project + toolbox.suffix_parent + "/" + commit["concernedModule"])
-        path_to_test_that_executes_the_changes = toolbox.get_path_to_csv_file(project, str(commits.index(commit)))
+        path_to_test_that_executes_the_changes = toolbox.get_path_to_csv_file(project, commit, commits)
         preparation.prepare(project)
         # run now dspot with maven plugin
         cmd = [

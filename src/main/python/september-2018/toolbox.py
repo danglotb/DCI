@@ -9,13 +9,12 @@ maven_home = ""
 java_home = ""
 
 # paths
-prefix_dataset = "dataset/"
-path_properties = prefix_dataset + "properties_rates.json"
-prefix_current_dataset = prefix_dataset + "september-2018/"
+prefix_dataset = "september-2018/dataset/"
+prefix_current_dataset = "september-2018/dataset/"
 output_log_path = ""
 
 prefix_url_github = "https://github.com/"
-prefix_result = "result/september-2018/"
+prefix_result = "september-2018/result/"
 
 path_to_jar = "target/experiments-0.1-SNAPSHOT-jar-with-dependencies.jar"
 full_qualified_name_repositories_setter = "icst.experiments.repositories.RepositoriesSetter"
@@ -24,10 +23,12 @@ suffix_parent = "_parent"
 
 name_of_csv_with_list_of_test_that_execute_the_changes = "testsThatExecuteTheChanges"
 
+def get_output_folder_for_commit(commit, commits):
+    return "commit_" + str(commits.index(commit)) + "_" + commit.substring(0, 7)
 
-def get_path_to_csv_file(project, commit_index):
+def get_path_to_csv_file(project, commit, commits):
     return get_absolute_path(
-        prefix_result + project + "/commits_" + str(commit_index) + "/" + name_of_csv_with_list_of_test_that_execute_the_changes + ".csv"
+        prefix_result + project + "/" + get_output_folder_for_commit(commit, commits)
     )
 
 def delete_if_exists(path):

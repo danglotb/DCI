@@ -1,1 +1,1 @@
-#!/usr/bin/env bash
+git clone https://github.com/xwiki/xwiki-commons september-2018/dataset/xwiki-commons_parent 2>&1 | tee -a /home/bdanglot/workspace/icst-2019/september-2018/result/xwiki-commons_install.log

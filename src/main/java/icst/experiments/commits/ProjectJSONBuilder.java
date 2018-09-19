@@ -96,7 +96,7 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
         }
     }
 
-    private static final String PREFIX_RESULT = "result/september-2018/";
+    private static final String PREFIX_RESULT = "september-2018/result/";
 
     private boolean buildCandidateCommit(RevCommit commit) {
         if (commit.getParentCount() < 1) {
