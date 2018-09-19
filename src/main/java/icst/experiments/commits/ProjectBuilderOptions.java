@@ -60,7 +60,7 @@ public class ProjectBuilderOptions implements Options {
         FlaggedOption mavenHome = new FlaggedOption("maven-home");
         mavenHome.setLongFlag("maven-home");
         mavenHome.setDefault("/home/spirals/danglot/apache-maven-3.5.4/");
-        mavenHome.setStringParser(JSAP.INTEGER_PARSER);
+        mavenHome.setStringParser(JSAP.STRING_PARSER);
 
         jsap.registerParameter(path);
         jsap.registerParameter(owner);

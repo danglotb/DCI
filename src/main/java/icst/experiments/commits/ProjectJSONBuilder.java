@@ -256,8 +256,10 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
         final String project = configuration.getString("project");
         final String output = configuration.getString("output");
         final boolean useParent = configuration.getBoolean("use-parent");
-        if (configuration.getString("maven-home") != null) {
-            TestSelectionAccordingDiff.mavenHome = configuration.getString("maven-home");
+        final String mavenHomeFromCLI = configuration.getString("maven-home");
+        LOGGER.info("{}", mavenHomeFromCLI);
+        if (mavenHomeFromCLI != null) {
+            TestSelectionAccordingDiff.mavenHome = mavenHomeFromCLI;
         }
         final ProjectJSONBuilder projectJSONBuilder = new ProjectJSONBuilder(
                 configuration.getString("path-to-repository"),
