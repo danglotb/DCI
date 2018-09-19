@@ -34,6 +34,9 @@ def delete_if_exists(path):
     if os.path.isdir(path):
         shutil.rmtree(path)
 
+def create(path):
+    if not os.path.isdir(path):
+        os.makedirs(path, exist_ok=True)
 
 def set_output_log_path(path):
     global output_log_path
