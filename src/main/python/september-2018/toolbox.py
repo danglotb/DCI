@@ -36,7 +36,7 @@ def delete_if_exists(path):
 
 def create(path):
     if not os.path.isdir(path):
-        os.makedirs(path, exist_ok=True)
+        os.makedirs(path)
 
 def set_output_log_path(path):
     global output_log_path
