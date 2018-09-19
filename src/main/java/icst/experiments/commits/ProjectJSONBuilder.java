@@ -45,7 +45,9 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
 
     private Blacklist blacklist;
 
-    public ProjectJSONBuilder(String pathToRepository, String owner, String project, String output) {
+    private boolean useParent;
+
+    public ProjectJSONBuilder(String pathToRepository, String owner, String project, String output, boolean useParent) {
         super(pathToRepository);
         if (new File(output + "/" + project + ".json").exists()) {
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
@@ -59,7 +61,7 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
             this.projectJSON = new ProjectJSON(owner, project, this.getDate());
             this.blacklist = new Blacklist();
         }
-
+        this.useParent = useParent;
     }
 
     private String getDate() {
@@ -122,7 +124,8 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                         parentCommit.getName(),
                         this.projectJSON.name,
                         this.pathToRootFolder,
-                        concernedModule
+                        concernedModule,
+                        this.useParent
                 );
                 // check if the .csv file is created and contains some tests to be amplified
                 final File file = new File(this.pathToRootFolder + "/testsThatExecuteTheChanges.csv");
@@ -240,11 +243,13 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
         final String owner = configuration.getString("owner");
         final String project = configuration.getString("project");
         final String output = configuration.getString("output");
+        final boolean useParent = configuration.getBoolean("use-parent");
         final ProjectJSONBuilder projectJSONBuilder = new ProjectJSONBuilder(
                 configuration.getString("path-to-repository"),
                 owner,
                 project,
-                output
+                output,
+                useParent
         );
         if (projectJSONBuilder.buildListCandidateCommits(configuration.getInt("size-goal"))) {
             ProjectJSON.save(projectJSONBuilder.projectJSON, output + "/" + project + ".json");
