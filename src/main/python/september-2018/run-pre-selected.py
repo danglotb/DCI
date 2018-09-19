@@ -13,11 +13,12 @@ def run(project, index_begin, index_end, amplifiers):
 
     # for each commits.
     for commit in commits[index_begin:index_end]:
-        log_path = toolbox.get_absolute_path(toolbox.prefix_result + project + "/commits_" + str(commits.index(commit)))
+        output_path = toolbox.get_absolute_path(toolbox.prefix_result + project + "/commits_" + str(commits.index(commit)))
         if amplifiers:
-            log_path = log_path + "_amplifiers"
-        log_path = log_path + ".log"
-        toolbox.set_output_log_path(log_path)
+            output_path = output_path + "/input_amplification"
+        else:
+            output_path = output_path + "/assert_amplification"
+        toolbox.set_output_log_path(output_path + "/amplification.log")
         #  1) set up both version of the program
         commit_setter.set_commit(path_to_project_root, project, commits.index(commit))
         path_to_concerned_module = toolbox.get_absolute_path(
@@ -26,9 +27,6 @@ def run(project, index_begin, index_end, amplifiers):
             toolbox.prefix_dataset + project + toolbox.suffix_parent + "/" + commit["concernedModule"])
         path_to_test_that_executes_the_changes = toolbox.get_path_to_csv_file(project, str(commits.index(commit)))
         preparation.prepare(project)
-        output_path = toolbox.get_absolute_path(toolbox.prefix_result + project + "/commit_" + str(commits.index(commit)))
-        if amplifiers:
-            output_path = output_path + "_amplifiers"
         # run now dspot with maven plugin
         cmd = [
             toolbox.maven_home + "mvn",
