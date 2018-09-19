@@ -45,23 +45,30 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
 
     private Blacklist blacklist;
 
-    private boolean useParent;
+    private final boolean useParent;
 
-    private String outputAbsolutePath;
+    private final String absolutePath;
 
     public ProjectJSONBuilder(String pathToRepository, String owner, String project, String output, boolean useParent) {
         super(pathToRepository);
-        if (new File(output + "/" + project + ".json").exists()) {
-            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        this.absolutePath = new File(output + "/" + project + (useParent ? "_parent" : "")).getAbsolutePath();
+        final Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        if (new File(this.absolutePath + ".json").exists()) {
             try {
-                this.outputAbsolutePath = new File(output + "/" + project + (useParent ? "_parent" : "")).getAbsolutePath() + "/";
-                this.projectJSON = gson.fromJson(new FileReader(this.outputAbsolutePath + project + ".json"), ProjectJSON.class);
-                this.blacklist = gson.fromJson(new FileReader(this.outputAbsolutePath + project + "_blacklist.json"), Blacklist.class);
+                this.projectJSON = gson.fromJson(new FileReader(this.absolutePath + ".json"), ProjectJSON.class);
             } catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
             }
         } else {
             this.projectJSON = new ProjectJSON(owner, project, this.getDate());
+        }
+        if (new File(this.absolutePath + "_blacklist.json").exists()) {
+            try {
+                this.blacklist = gson.fromJson(new FileReader(this.absolutePath + "_blacklist.json"), Blacklist.class);
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+        } else {
             this.blacklist = new Blacklist();
         }
         this.useParent = useParent;
@@ -249,6 +256,9 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
         final String project = configuration.getString("project");
         final String output = configuration.getString("output");
         final boolean useParent = configuration.getBoolean("use-parent");
+        if (configuration.getString("maven-home") != null) {
+            TestSelectionAccordingDiff.mavenHome = configuration.getString("maven-home");
+        }
         final ProjectJSONBuilder projectJSONBuilder = new ProjectJSONBuilder(
                 configuration.getString("path-to-repository"),
                 owner,
@@ -257,8 +267,8 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                 useParent
         );
         if (projectJSONBuilder.buildListCandidateCommits(configuration.getInt("size-goal"))) {
-            ProjectJSON.save(projectJSONBuilder.projectJSON, projectJSONBuilder.outputAbsolutePath + project + ".json");
-            Blacklist.save(projectJSONBuilder.blacklist, projectJSONBuilder.outputAbsolutePath  + project + "_blacklist.json");
+            ProjectJSON.save(projectJSONBuilder.projectJSON, projectJSONBuilder.absolutePath + ".json");
+            Blacklist.save(projectJSONBuilder.blacklist, projectJSONBuilder.absolutePath + "_blacklist.json");
         }
     }
 

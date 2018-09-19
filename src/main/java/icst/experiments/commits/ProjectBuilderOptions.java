@@ -57,12 +57,18 @@ public class ProjectBuilderOptions implements Options {
         useParent.setDefault("false");
         useParent.setHelp("Will use the parent to select test to be amplified rather than the current commit");
 
+        FlaggedOption mavenHome = new FlaggedOption("maven-home");
+        mavenHome.setLongFlag("maven-home");
+        mavenHome.setDefault("/home/spirals/danglot/apache-maven-3.5.4/");
+        mavenHome.setStringParser(JSAP.INTEGER_PARSER);
+
         jsap.registerParameter(path);
         jsap.registerParameter(owner);
         jsap.registerParameter(project);
         jsap.registerParameter(output);
         jsap.registerParameter(sizeGoal);
         jsap.registerParameter(useParent);
+        jsap.registerParameter(mavenHome);
         jsap.registerParameter(help);
 
         return jsap;

@@ -3,7 +3,7 @@
 project=${1}
 owner=${2}
 goal=${3}
-mkdi -p result/september-2018/${project}_parent/
+mkdir -p result/september-2018/${project}_parent/
 log=result/september-2018/${project}_parent/test_selection.log
 
 echo ${log}
