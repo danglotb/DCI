@@ -64,6 +64,7 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
         } else {
             try {
                 this.projectJSON = new ProjectJSON(owner, project, this.getDate(), this.repository.getRef("HEAD").getName());
+                ProjectJSON.save(this.projectJSON, this.absolutePath + ".json");
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
