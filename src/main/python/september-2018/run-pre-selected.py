@@ -36,7 +36,7 @@ def run(project, index_begin, index_end, amplifiers, parent):
             "-Dverbose=True",
             "-Dtest-criterion=ChangeDetectorSelector",
             "-Doutput-path=" + output_path,
-            "-Dpath-to-second-version=" + path_to_concerned_module_parent if not parent else path_to_concerned_module,
+            "-Dpath-to-second-version=" + (path_to_concerned_module_parent if not parent else path_to_concerned_module),
             "-Dgenerate-new-test-class=true",
             "-Dclean=true"
         ]
@@ -45,7 +45,7 @@ def run(project, index_begin, index_end, amplifiers, parent):
             cmd.append("-Diteration=3")
             cmd.append("-Dbudgetizer=SimpleBudgetizer")
         cmd = preparation.add_needed_options(cmd, project)
-        toolbox.print_and_call_in_a_file(" ".join(cmd), cwd=path_to_concerned_module_parent if not parent else path_to_concerned_module)
+        toolbox.print_and_call_in_a_file(" ".join(cmd), cwd=(path_to_concerned_module_parent if not parent else path_to_concerned_module))
 
 def create_diff(commit_id, cwd):
     toolbox.delete_if_exists(
