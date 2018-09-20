@@ -3,7 +3,7 @@
 
 ## Selection of projects
 
-We first conduct a pilot experiment with `xwiki-commons`.
+We first conduct a pilot experiment with `xwiki/xwiki-commons`.
 
 ## Selection of commits
 
