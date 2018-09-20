@@ -13,7 +13,9 @@ def run(project, index_begin, index_end, amplifiers, parent):
 
     # for each commits.
     for commit in commits[index_begin:index_end]:
-        output_path = toolbox.get_absolute_path(toolbox.prefix_result + project + "/" + toolbox.get_output_folder_for_commit(commit, commits))
+        output_path = toolbox.get_absolute_path(toolbox.prefix_result + project
+                                                + ("_parent" if parent else "")
+                                                + "/" + toolbox.get_output_folder_for_commit(commit, commits))
         if amplifiers:
             output_path = output_path + "/input_amplification"
         else:
@@ -41,11 +43,14 @@ def run(project, index_begin, index_end, amplifiers, parent):
             "-Dclean=true"
         ]
         if amplifiers:
-            cmd.append("-Damplifiers=AllLiteralAmplifiers,MethodAdd,MethodRemove,MethodGeneratorAmplifier,ReturnValueAmplifier,NullifierAmplifier")
+            cmd.append(
+                "-Damplifiers=AllLiteralAmplifiers,MethodAdd,MethodRemove,MethodGeneratorAmplifier,ReturnValueAmplifier,NullifierAmplifier")
             cmd.append("-Diteration=3")
             cmd.append("-Dbudgetizer=SimpleBudgetizer")
         cmd = preparation.add_needed_options(cmd, project)
-        toolbox.print_and_call_in_a_file(" ".join(cmd), cwd=(path_to_concerned_module_parent if not parent else path_to_concerned_module))
+        toolbox.print_and_call_in_a_file(" ".join(cmd), cwd=(
+            path_to_concerned_module_parent if not parent else path_to_concerned_module))
+
 
 def create_diff(commit_id, cwd):
     toolbox.delete_if_exists(
