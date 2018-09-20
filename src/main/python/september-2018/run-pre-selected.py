@@ -6,7 +6,8 @@ import commit_setter
 
 
 def run(project, index_begin, index_end, amplifiers, parent):
-    path_to_project_json = toolbox.prefix_current_dataset + project + ".json"
+    path_to_project_json = toolbox.prefix_current_dataset + project \
+                        + ("_parent" if parent else "") + ".json"
     project_json = toolbox.get_json_file(path_to_project_json)
     path_to_project_root = toolbox.prefix_dataset + project
     commits = project_json["commits"]

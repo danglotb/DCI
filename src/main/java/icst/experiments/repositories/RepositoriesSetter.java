@@ -27,7 +27,7 @@ public class RepositoriesSetter extends AbstractRepositoryAndGit {
     public RepositoriesSetter(String pathToRepository, String project, String jsonFolder) {
         super(pathToRepository);
         this.parent = new RepositoriesSetter(pathToRepository + SUFFIX_PATH_TO_OTHER);
-        this.projectJSON = ProjectJSON.load(jsonFolder + "/" + project + ".json");
+        this.projectJSON = ProjectJSON.load(jsonFolder + "/" + project + "_parent.json");
     }
 
     public RepositoriesSetter(String pathToRepository, String project, ProjectJSON projectJSON) {
