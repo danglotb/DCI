@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
  */
 public class TestSelectionAccordingDiff {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ProjectJSONBuilder.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(TestSelectionAccordingDiff.class);
 
     public static String mavenHome = "/home/spirals/danglot/apache-maven-3.5.4/";
 
@@ -47,7 +47,7 @@ public class TestSelectionAccordingDiff {
         runCmd("git diff " + shaParent + " > " + DIFF_NAME, pathToRepository + "/" + concernedModule, DIFF_NAME);
         runCmd("python src/main/python/september-2018/preparation.py " + project, null);
         // install
-        runGoals(pathToRepository + "/pom.xml", "clean", "install", "-DskipTests", "--quiet");
+        runGoals(pathToRepository + "/pom.xml", "clean", "install", "-DskipTests", "-Dcheckstyle.skip=true", "-Denforcer.skip=true", "--quiet");
         // 4 compute the list of the test that execute the change
         final String absolutePathToParent = new File(pathToRepository + "_parent/" + concernedModule).getAbsolutePath();
         final String absolutePathToCurrentCommit = new File(pathToRepository + "/" + concernedModule).getAbsolutePath();
