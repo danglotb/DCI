@@ -7,6 +7,7 @@ import icst.experiments.json.BlackListElement;
 import icst.experiments.json.Blacklist;
 import icst.experiments.json.CommitJSON;
 import icst.experiments.json.ProjectJSON;
+import icst.experiments.repositories.RepositoriesSetter;
 import icst.experiments.selection.TestSelectionAccordingDiff;
 import icst.experiments.util.AbstractRepositoryAndGit;
 import icst.experiments.util.OptionsWrapper;
@@ -56,11 +57,16 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
         if (new File(this.absolutePath + ".json").exists()) {
             try {
                 this.projectJSON = gson.fromJson(new FileReader(this.absolutePath + ".json"), ProjectJSON.class);
+                new RepositoriesSetter(pathToRepository, project, this.projectJSON).setUpForGivenCommit(this.projectJSON.masterSha);
             } catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
             }
         } else {
-            this.projectJSON = new ProjectJSON(owner, project, this.getDate());
+            try {
+                this.projectJSON = new ProjectJSON(owner, project, this.getDate(), this.repository.getRef("HEAD").getName());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
         if (new File(this.absolutePath + "_blacklist.json").exists()) {
             try {
@@ -80,17 +86,19 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
         return String.format("%d/%d/%d", localDate.getMonthValue(), localDate.getDayOfMonth(), localDate.getYear());
     }
 
-    private boolean buildListCandidateCommits(int sizeGoal) {
+    private void buildListCandidateCommits(int sizeGoal) {
         try {
             final Iterable<RevCommit> commits = this.git.log()
                     .add(this.repository.resolve(Constants.HEAD))
                     .call();
             final Iterator<RevCommit> iterator = commits.iterator();
-            boolean commitAdded = false;
             while (iterator.hasNext() && !(this.projectJSON.commits.size() >= sizeGoal)) {
-                commitAdded |= this.buildCandidateCommit(iterator.next());
+                if (this.buildCandidateCommit(iterator.next())) {
+                    ProjectJSON.save(this.projectJSON, this.absolutePath + ".json");
+                } else {
+                    Blacklist.save(this.blacklist, this.absolutePath + "_blacklist.json");
+                }
             }
-            return commitAdded;
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -107,7 +115,7 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
             LOGGER.warn("{} is already in the list!", commit.getName().substring(0, 7));
             return false;
         }
-        if (this.blacklist.blacklist.contains(commit.getName())) {
+        if (this.blacklist.contains(commit.getName())) {
             LOGGER.warn("{} is in the blacklist!", commit.getName().substring(0, 7));
             return false;
         }
@@ -150,7 +158,7 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                         // copy the csv file to keep it, and rename it
                         final File outputDirectory = new File(PREFIX_RESULT + projectJSON.name
                                 + (this.useParent ? "_parent" : "")
-                                + "/commits_" + projectJSON.commits.size());
+                                + "/commit_" + projectJSON.commits.size() + "_" + commit.getName().substring(0, 7));
                         if (!(outputDirectory.exists())) {
                             FileUtils.forceMkdir(outputDirectory);
                         }
@@ -268,10 +276,7 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                 output,
                 useParent
         );
-        if (projectJSONBuilder.buildListCandidateCommits(configuration.getInt("size-goal"))) {
-            ProjectJSON.save(projectJSONBuilder.projectJSON, projectJSONBuilder.absolutePath + ".json");
-            Blacklist.save(projectJSONBuilder.blacklist, projectJSONBuilder.absolutePath + "_blacklist.json");
-        }
+        projectJSONBuilder.buildListCandidateCommits(configuration.getInt("size-goal"));
     }
 
 }

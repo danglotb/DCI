@@ -26,6 +26,11 @@ public class Blacklist {
         this.blacklist = new ArrayList<>();
     }
 
+    public boolean contains(String sha) {
+        return this.blacklist.stream()
+                .anyMatch(blackListElement -> sha.equals(blackListElement.sha));
+    }
+
     public static void save(Blacklist blacklist, String path) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         final File file = new File(path);

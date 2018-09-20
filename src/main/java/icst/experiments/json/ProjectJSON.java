@@ -24,21 +24,24 @@ public class ProjectJSON {
     public final String owner;
     public final String name;
     public final String date;
+    public final String masterSha;
     private int numberCommits;
 
     public final List<CommitJSON> commits;
 
-    public ProjectJSON(String owner, String name, String date, List<CommitJSON> commits) {
+    public ProjectJSON(String owner, String name, String date, String masterSha, List<CommitJSON> commits) {
         this.owner = owner;
         this.name = name;
         this.date = date;
+        this.masterSha = masterSha;
         this.commits = commits;
     }
 
-    public ProjectJSON(String owner, String name, String date) {
+    public ProjectJSON(String owner, String name, String date, String masterSha) {
         this.owner = owner;
         this.name = name;
         this.date = date;
+        this.masterSha = masterSha;
         this.commits = new ArrayList<>();
     }
 
