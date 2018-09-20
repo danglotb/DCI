@@ -30,7 +30,7 @@ def get_output_folder_for_commit(commit, commits):
 def get_path_to_csv_file(project, commit, commits):
     return get_absolute_path(
         prefix_result + project + "/" + get_output_folder_for_commit(commit, commits)
-    ) + "/" + name_of_csv_with_list_of_test_that_execute_the_changes
+    ) + "/" + name_of_csv_with_list_of_test_that_execute_the_changes + ".csv"
 
 def delete_if_exists(path):
     if os.path.isdir(path):
