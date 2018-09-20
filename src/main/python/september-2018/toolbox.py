@@ -25,7 +25,7 @@ name_of_csv_with_list_of_test_that_execute_the_changes = "testsThatExecuteTheCha
 
 # input: commit from json array, and the array itself
 def get_output_folder_for_commit(commit, commits):
-    return "commit_" + str(commits.index(commit)) + "_" + commit["sha"].substring(0, 7)
+    return "commit_" + str(commits.index(commit)) + "_" + str(commit["sha"]).substring(0, 7)
 
 def get_path_to_csv_file(project, commit, commits):
     return get_absolute_path(
