@@ -8,7 +8,6 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.util.Arrays;
-import java.util.Objects;
 import java.util.stream.IntStream;
 
 /**
@@ -51,7 +50,11 @@ public class TestSuiteSwitcherAndChecker {
                         pathToProject + POM_FILE
                 )
         );
-        return Arrays.stream(Objects.requireNonNull(new File(pathToProject + "/" + PATH_TO_SUREFIRE_REPORTS).listFiles()))
+        if (!new File(pathToProject + "/" + PATH_TO_SUREFIRE_REPORTS).exists() ||
+                new File(pathToProject + "/" + PATH_TO_SUREFIRE_REPORTS).listFiles() == null) {
+            return false;
+        }
+        return Arrays.stream(new File(pathToProject + "/" + PATH_TO_SUREFIRE_REPORTS).listFiles())
                 .map(File::getAbsolutePath)
                 .filter(path -> path.endsWith(".xml"))
                 .filter(path -> {
