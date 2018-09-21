@@ -1,6 +1,5 @@
 package icst.experiments.selection;
 
-import icst.experiments.repositories.nojson.RepositoriesSetterNoJSON;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -38,11 +37,11 @@ public class TestSelectionAccordingDiff {
         // 4 compute the list of the test that execute the change
         final String absolutePathToParent = new File(pathToRepository + "_parent/" + concernedModule).getAbsolutePath();
         final String absolutePathToCurrentCommit = new File(pathToRepository + "/" + concernedModule).getAbsolutePath();
-        MavenExecutor.runGoals(absolutePathToCurrentCommit+ "/pom.xml",
+        MavenExecutor.runGoals(absolutePathToParent+ "/pom.xml",
                 "clean",
                 "eu.stamp-project:diff-test-selection:0.5-SNAPSHOT:list",
                 "-DpathToDiff=" + new File(pathToRepository + "/" + DIFF_NAME).getAbsolutePath(),
-                "-DpathToOtherVersion=" + absolutePathToParent,
+                "-DpathToOtherVersion=" + absolutePathToCurrentCommit,
                 "-Dmodule=" + concernedModule,
                 "-DoutputPath=" + new File(pathToRepository + "/" + TMP_TEST_SELECTION_FILENAME).getAbsolutePath());
     }

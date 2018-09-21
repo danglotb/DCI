@@ -146,7 +146,6 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                         new File(this.pathToRootFolder + "/" + concernedModule).getAbsolutePath(),
                         new File(this.pathToRootFolder + "_parent/" + concernedModule).getAbsolutePath(), true // HERE WE COMPUTE ALSO THE COVERAGE
                 );
-                // TODO retrieve the coverage of the patch for TS -> P'
                 final boolean containsAtLeastOneFAilingTestCaseTsPrimeOnP = TestSuiteSwitcherAndChecker.switchAndCheckThatContainAtLeastOneFailingTestCase(
                         new File(this.pathToRootFolder + "_parent/" + concernedModule).getAbsolutePath(),
                         new File(this.pathToRootFolder + "/" + concernedModule).getAbsolutePath(), false
@@ -162,7 +161,6 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                         this.pathToRootFolder,
                         concernedModule
                 );
-                // TODO retrieve the coverage of the patch for TS' -> P
                 // check if the .csv file is created and contains some tests to be amplified
                 final File file = new File(this.pathToRootFolder + "/testsThatExecuteTheChanges.csv");
                 if (!file.exists()) {
@@ -178,7 +176,14 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                             FileUtils.forceMkdir(outputDirectory);
                         }
                         FileUtils.copyFile(file, new File(outputDirectory.getAbsolutePath() + "/testsThatExecuteTheChanges.csv"));
-                        this.projectJSON.commits.add(new CommitJSON(commit.getName(), parentCommit.getName(), concernedModule));
+                        final File fileCoverage = new File(this.pathToRootFolder + "/testsThatExecuteTheChanges_coverage.csv");
+                        FileUtils.copyFile(fileCoverage, new File(outputDirectory.getAbsolutePath() + "/testsThatExecuteTheChanges_coverage.csv"));
+                        this.projectJSON.commits.add(
+                                new CommitJSON(commit.getName(),
+                                        parentCommit.getName(),
+                                        concernedModule
+                                )
+                        );
                         LOGGER.warn("could find test to be amplified for {}", commit.getName().substring(0, 7));
                         return true;
                     } else {

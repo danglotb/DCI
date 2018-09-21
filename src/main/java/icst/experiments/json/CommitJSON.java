@@ -11,7 +11,9 @@ public class CommitJSON {
     public final String parent;
     public final String concernedModule;
 
-    public CommitJSON(String sha, String parent, String concernedModule) {
+    public CommitJSON(String sha,
+                      String parent,
+                      String concernedModule) {
         this.sha = sha;
         this.parent = parent;
         this.concernedModule = concernedModule;
