@@ -5,9 +5,8 @@ import preparation
 import commit_setter
 
 
-def run(project, index_begin, index_end, amplifiers, parent):
-    path_to_project_json = toolbox.prefix_current_dataset + project \
-                        + ("_parent" if parent else "") + ".json"
+def run(project, index_begin, index_end, amplifiers):
+    path_to_project_json = toolbox.prefix_current_dataset + project + ".json"
     project_json = toolbox.get_json_file(path_to_project_json)
     path_to_project_root = toolbox.prefix_dataset + project
     commits = project_json["commits"]
@@ -15,7 +14,6 @@ def run(project, index_begin, index_end, amplifiers, parent):
     # for each commits.
     for commit in commits[index_begin:index_end]:
         output_path = toolbox.get_absolute_path(toolbox.prefix_result + project
-                                                + ("_parent" if parent else "")
                                                 + "/" + toolbox.get_output_folder_for_commit(commit, commits))
         if amplifiers:
             output_path = output_path + "/input_amplification"
@@ -30,7 +28,7 @@ def run(project, index_begin, index_end, amplifiers, parent):
         path_to_concerned_module_parent = toolbox.get_absolute_path(
             toolbox.prefix_dataset + project + toolbox.suffix_parent + "/" + commit["concernedModule"])
         path_to_test_that_executes_the_changes = toolbox.get_path_to_csv_file(
-            project + ("_parent" if parent else ""), commit, commits
+            project , commit, commits
         )
         preparation.prepare(project)
         # run now dspot with maven plugin
@@ -41,7 +39,7 @@ def run(project, index_begin, index_end, amplifiers, parent):
             "-Dverbose=True",
             "-Dtest-criterion=ChangeDetectorSelector",
             "-Doutput-path=" + output_path,
-            "-Dpath-to-second-version=" + (path_to_concerned_module_parent if not parent else path_to_concerned_module),
+            "-Dpath-to-second-version=" + path_to_concerned_module,
             "-Dgenerate-new-test-class=true",
             "-Dclean=true"
         ]
@@ -51,8 +49,7 @@ def run(project, index_begin, index_end, amplifiers, parent):
             cmd.append("-Diteration=3")
             cmd.append("-Dbudgetizer=SimpleBudgetizer")
         cmd = preparation.add_needed_options(cmd, project)
-        toolbox.print_and_call_in_a_file(" ".join(cmd), cwd=(
-            path_to_concerned_module_parent if not parent else path_to_concerned_module))
+        toolbox.print_and_call_in_a_file(" ".join(cmd), cwd=path_to_concerned_module_parent)
 
 
 def create_diff(commit_id, cwd):
@@ -72,7 +69,6 @@ if __name__ == '__main__':
     toolbox.init(sys.argv)
 
     amplifiers = "amplifiers" in sys.argv
-    parent = "parent" in sys.argv
 
     if len(sys.argv) < 2:
         print "usage: python run.py <project> <index_start> <index_end>"
@@ -83,4 +79,4 @@ if __name__ == '__main__':
         index_begin = int(sys.argv[2])
         index_end = int(sys.argv[3])
 
-    run(project=sys.argv[1], index_begin=index_begin, index_end=index_end, amplifiers=amplifiers, parent=parent)
+    run(project=sys.argv[1], index_begin=index_begin, index_end=index_end, amplifiers=amplifiers)

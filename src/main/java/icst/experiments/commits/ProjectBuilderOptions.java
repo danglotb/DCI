@@ -52,11 +52,6 @@ public class ProjectBuilderOptions implements Options {
         sizeGoal.setDefault("5");
         sizeGoal.setStringParser(JSAP.INTEGER_PARSER);
 
-        Switch useParent = new Switch("use-parent");
-        useParent.setLongFlag("use-parent");
-        useParent.setDefault("false");
-        useParent.setHelp("Will use the parent to select test to be amplified rather than the current commit");
-
         FlaggedOption mavenHome = new FlaggedOption("maven-home");
         mavenHome.setLongFlag("maven-home");
         mavenHome.setDefault("/home/spirals/danglot/apache-maven-3.5.4/");
@@ -67,7 +62,6 @@ public class ProjectBuilderOptions implements Options {
         jsap.registerParameter(project);
         jsap.registerParameter(output);
         jsap.registerParameter(sizeGoal);
-        jsap.registerParameter(useParent);
         jsap.registerParameter(mavenHome);
         jsap.registerParameter(help);
 
