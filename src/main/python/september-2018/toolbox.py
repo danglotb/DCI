@@ -93,7 +93,7 @@ path_to_script_to_run = get_absolute_path("src/main/bash/script.sh")
 
 def print_and_call_in_a_file(cmd, cwd=None):
     tmp_file_log = "file.log"
-    with open(cwd + "/" + tmp_file_log, "a") as myfile:
+    with open((cwd + "/" if cwd is not None else "") + tmp_file_log, "a") as myfile:
         myfile.write(cmd)
         myfile.close()
     print cmd
@@ -103,7 +103,7 @@ def print_and_call_in_a_file(cmd, cwd=None):
         f.write("\n")
         f.close()
     subprocess.call(path_to_script_to_run, cwd=cwd, shell=True)
-    shutil.copy(cwd + "/" + tmp_file_log, output_log_path)
+    shutil.copy((cwd + "/" if cwd is not None else "") + tmp_file_log, output_log_path)
 
 
 def load_properties(filepath, sep='=', comment_char='#'):
