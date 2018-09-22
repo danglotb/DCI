@@ -98,7 +98,8 @@ def print_and_call_in_a_file(cmd, cwd=None):
     print cmd
     with open(path_to_script_to_run, "w") as f:
         f.write("export JAVA_OPTS=\"-XX:-OmitStackTraceInFastThrow -XX:-UseGCOverheadLimit\"\n")
-        f.write(cmd + " " + " ".join([">", output_log_path, "2>" + output_log_path]))
+        f.write(cmd + " " + " ".join(["2>&1", ">", output_log_path]))
+        f.write("\n")
         f.close()
     subprocess.call(path_to_script_to_run, cwd=cwd, shell=True)
 
