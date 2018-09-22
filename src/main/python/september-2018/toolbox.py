@@ -87,17 +87,18 @@ path_to_script_to_run = get_absolute_path("src/main/bash/script.sh")
 
 
 def print_and_call_in_a_file(cmd, cwd=None):
-    delete_if_exists("file.log")
-    with open("file.log", "a") as myfile:
+    absolute_path_to_file_log = get_absolute_path("file.log")
+    delete_if_exists(absolute_path_to_file_log)
+    with open(absolute_path_to_file_log, "a") as myfile:
         myfile.write(cmd)
         myfile.close()
     print cmd
     with open(path_to_script_to_run, "w") as f:
         f.write("export JAVA_OPTS=\"-XX:-OmitStackTraceInFastThrow -XX:-UseGCOverheadLimit\"\n")
-        f.write(cmd + " " + " ".join(["2>&1", ">", "file.log"]))
+        f.write(cmd + " " + " ".join(["2>&1", ">", absolute_path_to_file_log]))
         f.close()
     subprocess.call(path_to_script_to_run, cwd=cwd, shell=True)
-    shutil.copyfile("file.log", output_log_path)
+    shutil.copyfile(absolute_path_to_file_log, output_log_path)
 
 def load_properties(filepath, sep='=', comment_char='#'):
     """
