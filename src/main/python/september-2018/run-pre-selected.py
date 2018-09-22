@@ -20,9 +20,10 @@ def run(project, index_begin, index_end, amplifiers):
         else:
             output_path = output_path + "/assert_amplification"
         toolbox.create(output_path)
-        toolbox.set_output_log_path(output_path + "/amplification.log")
+        toolbox.set_output_log_path(output_path + "/commit_set.log")
         #  1) set up both version of the program
         commit_setter.set_commit(path_to_project_root, project, commits.index(commit))
+        toolbox.set_output_log_path(output_path + "/amplification.log")
         path_to_concerned_module = toolbox.get_absolute_path(
             toolbox.prefix_dataset + project + "/" + commit["concernedModule"])
         path_to_concerned_module_parent = toolbox.get_absolute_path(
