@@ -23,22 +23,27 @@ suffix_parent = "_parent"
 
 name_of_csv_with_list_of_test_that_execute_the_changes = "testsThatExecuteTheChanges"
 
+
 # input: commit from json array, and the array itself
 def get_output_folder_for_commit(commit, commits):
     return "commit_" + str(commits.index(commit)) + "_" + str(commit["sha"])[0:7]
+
 
 def get_path_to_csv_file(project, commit, commits):
     return get_absolute_path(
         prefix_result + project + "/" + get_output_folder_for_commit(commit, commits)
     ) + "/" + name_of_csv_with_list_of_test_that_execute_the_changes + ".csv"
 
+
 def delete_if_exists(path):
     if os.path.isdir(path):
         shutil.rmtree(path)
 
+
 def create(path):
     if not os.path.isdir(path):
         os.makedirs(path)
+
 
 def set_output_log_path(path):
     global output_log_path
@@ -87,18 +92,16 @@ path_to_script_to_run = get_absolute_path("src/main/bash/script.sh")
 
 
 def print_and_call_in_a_file(cmd, cwd=None):
-    absolute_path_to_file_log = get_absolute_path("file.log")
-    delete_if_exists(absolute_path_to_file_log)
-    with open(absolute_path_to_file_log, "a") as myfile:
+    with open(output_log_path, "a") as myfile:
         myfile.write(cmd)
         myfile.close()
     print cmd
     with open(path_to_script_to_run, "w") as f:
         f.write("export JAVA_OPTS=\"-XX:-OmitStackTraceInFastThrow -XX:-UseGCOverheadLimit\"\n")
-        f.write(cmd + " " + " ".join(["2>&1", ">", absolute_path_to_file_log]))
+        f.write(cmd + " " + " ".join([">", output_log_path, "2>" + output_log_path]))
         f.close()
     subprocess.call(path_to_script_to_run, cwd=cwd, shell=True)
-    shutil.copyfile(absolute_path_to_file_log, output_log_path)
+
 
 def load_properties(filepath, sep='=', comment_char='#'):
     """
