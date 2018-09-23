@@ -1,0 +1,191 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.google.code.gson:gson-extras >------------------
+[INFO] Building Gson Extras 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) @ gson-extras ---
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/eu/stamp-project/dspot/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.resources/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.expressions/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.runtime/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.osgi/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.common/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.jobs/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.registry/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.preferences/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.contenttype/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.app/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.filesystem/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.text/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.commands/maven-metadata.xml
+[INFO] Path to runner Classes: /home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
+[INFO] /home/spirals/danglot/.m2/repository/org/jacoco/org.jacoco.core/0.7.9/org.jacoco.core-0.7.9.jar
+[INFO] /home/spirals/danglot/.m2/repository/org/ow2/asm/asm-debug-all/5.2/asm-debug-all-5.2.jar
+[INFO] /home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
+[WARNING] automaticBuilderName: unknown automatic builder specified in configuration, going to default.
+[INFO] Default: provided Maven automatic builder.
+[INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.google.code.gson:gson-extras >------------------
+[INFO] Building Gson Extras 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ gson-extras ---
+[INFO] Deleting /tmp/icst-2019/september-2018/dataset/gson_parent/extras/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ gson-extras ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gson-extras ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/gson_parent/extras/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ gson-extras ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /tmp/icst-2019/september-2018/dataset/gson_parent/extras/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gson-extras ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/gson_parent/extras/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ gson-extras ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /tmp/icst-2019/september-2018/dataset/gson_parent/extras/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ gson-extras ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ gson-extras ---
+[INFO] Wrote classpath file '/tmp/icst-2019/september-2018/dataset/gson_parent/extras/target/dspot/classpath'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.767 s
+[INFO] Finished at: 2018-09-23T21:07:17+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.google.code.gson:gson-extras >------------------
+[INFO] Building Gson Extras 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ gson-extras ---
+[INFO] Deleting /tmp/icst-2019/september-2018/dataset/gson/extras/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ gson-extras ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gson-extras ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/gson/extras/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ gson-extras ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /tmp/icst-2019/september-2018/dataset/gson/extras/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gson-extras ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/gson/extras/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ gson-extras ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /tmp/icst-2019/september-2018/dataset/gson/extras/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ gson-extras ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ gson-extras ---
+[INFO] Wrote classpath file '/tmp/icst-2019/september-2018/dataset/gson/extras/target/dspot/classpath'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.892 s
+[INFO] Finished at: 2018-09-23T21:07:24+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Amplification of com.google.gson.typeadapters.RuntimeTypeAdapterFactoryTest (4 test(s))
+[INFO] Assertion amplification of com.google.gson.typeadapters.RuntimeTypeAdapterFactoryTest (4 test(s))
+[ERROR] Error(s) during compilation:
+[ERROR] Pb(390) The import org.junit cannot be resolved
+[ERROR] Pb(2) Test cannot be resolved to a type
+[ERROR] Pb(50) org.junit cannot be resolved
+[ERROR] Pb(50) org.junit cannot be resolved
+[ERROR] Pb(50) org.junit cannot be resolved
+[ERROR] Pb(2) Test cannot be resolved to a type
+[ERROR] Pb(50) org.junit cannot be resolved
+[ERROR] Pb(50) org.junit cannot be resolved
+[ERROR] Pb(2) Test cannot be resolved to a type
+[ERROR] Pb(50) org.junit cannot be resolved
+[ERROR] Pb(2) Test cannot be resolved to a type
+[ERROR] Pb(50) org.junit cannot be resolved
+[ERROR] Pb(2) Test cannot be resolved to a type
+[ERROR] Pb(50) org.junit cannot be resolved
+[ERROR] Pb(2) Test cannot be resolved to a type
+[ERROR] Pb(50) org.junit cannot be resolved
+[ERROR] Pb(2) Test cannot be resolved to a type
+[ERROR] Pb(50) org.junit cannot be resolved
+[ERROR] Pb(2) Test cannot be resolved to a type
+[ERROR] Pb(50) org.junit cannot be resolved
+eu.stamp_project.dspot.AmplificationException: Every test methods are uncompilable
+	at eu.stamp_project.utils.compilation.TestCompiler.compileAndDiscardUncompilableMethods(TestCompiler.java:124)
+	at eu.stamp_project.utils.compilation.TestCompiler.compileAndRun(TestCompiler.java:93)
+	at eu.stamp_project.utils.compilation.TestCompiler.compileRunAndDiscardUncompilableAndFailingTestMethods(TestCompiler.java:55)
+	at eu.stamp_project.dspot.Amplification.amplification(Amplification.java:82)
+	at eu.stamp_project.dspot.DSpot.amplifyTest(DSpot.java:180)
+	at eu.stamp_project.dspot.DSpot.amplifyTest(DSpot.java:170)
+	at eu.stamp_project.Main.lambda$run$1(Main.java:69)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1374)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at eu.stamp_project.Main.run(Main.java:71)
+	at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:263)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:146)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:954)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:192)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+[INFO] Applying Input-amplification and Assertion-amplification test by test.
+[INFO] elapsedTime 573
+======= REPORT =======
+0 amplified test fails on the new versions.
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 18.609 s
+[INFO] Finished at: 2018-09-23T21:07:25+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) on project gson-extras: Execution default-cli of goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests failed: java.lang.RuntimeException: java.lang.NullPointerException -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
