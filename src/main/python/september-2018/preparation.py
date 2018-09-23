@@ -61,7 +61,9 @@ def set_true_include_test_roots(project):
         group_id = child.findall(xml_group_id_tag)[0].text
         artifact_id = child.findall(xml_artifact_id_tag)[0].text
         if group_id == 'org.openclover' and artifact_id == 'clover-maven-plugin':
-            child.findall(xml_configuration_tag)[0].findall(xml_includes_test_source_roots_tag)[0].text = "true"
+            if len(child.findall(xml_configuration_tag)) > 0:
+                if len(child.findall(xml_configuration_tag)[0].findall(xml_includes_test_source_roots_tag)) > 0:
+                    child.findall(xml_configuration_tag)[0].findall(xml_includes_test_source_roots_tag)[0].text = "true"
     tree.write(path_to_root_pom)
 
     # set in the xwiki-commons-tools pom to not skip clover in the submodule for the second version
