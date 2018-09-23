@@ -45,9 +45,10 @@ def set_true_include_test_roots(project):
     path_to_root_pom = toolbox.prefix_dataset + project + "/" + xwiki_commons_tools_path + "pom.xml"
     tree = ET.parse(path_to_root_pom)
     root_pom = tree.getroot()
-    for i in root_pom.findall(xml_properties_tag)[0]:
-        if i.tag == xml_xwiki_clover_skip_tag:
-            i.text = "false"
+    if len(root_pom.findall(xml_properties_tag)) > 0:
+        for i in root_pom.findall(xml_properties_tag)[0]:
+            if i.tag == xml_xwiki_clover_skip_tag:
+                i.text = "false"
     tree.write(path_to_root_pom)
 
     # set in the second version enforcer skip to true
@@ -70,9 +71,10 @@ def set_true_include_test_roots(project):
     path_to_root_pom = toolbox.prefix_dataset + "/" + project + toolbox.suffix_parent + "/" + xwiki_commons_tools_path + "/pom.xml"
     tree = ET.parse(path_to_root_pom)
     root_pom = tree.getroot()
-    for i in root_pom.findall(xml_properties_tag)[0]:
-        if i.tag == xml_xwiki_clover_skip_tag:
-            i.text = "false"
+    if len(root_pom.findall(xml_properties_tag)) > 0:
+        for i in root_pom.findall(xml_properties_tag)[0]:
+            if i.tag == xml_xwiki_clover_skip_tag:
+                i.text = "false"
     tree.write(path_to_root_pom)
 
 def add_needed_options(cmd, project):
