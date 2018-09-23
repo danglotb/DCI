@@ -51,7 +51,6 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ gson ---
-[INFO] Deleting /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ gson ---
 [INFO] Skipping Rule Enforcement.
@@ -85,10 +84,10 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 7.461 s
-[INFO] Finished at: 2018-09-22T21:19:43+02:00
+[INFO] Total time: 6.624 s
+[INFO] Finished at: 2018-09-23T13:33:29+02:00
 [INFO] ------------------------------------------------------------------------
-[ERROR] 2018-09-22 21:19:46 JDTCommentBuilder - // Note that the above example is taken from AdaptAnnotationTest. is not added into the AST
+[ERROR] 2018-09-23 13:33:32 JDTCommentBuilder - // Note that the above example is taken from AdaptAnnotationTest. is not added into the AST
 spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/tmp/icst-2019/september-2018/dataset/gson_parent/gson/src/main/java/com/google/gson/annotations/JsonAdapter.java:93)
 	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:384)
 	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:484)
@@ -127,7 +126,7 @@ spoon.reflect.declaration.ParentNotInitializedException: parent not initialized 
 	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
-[ERROR] 2018-09-22 21:19:47 JDTCommentBuilder - // Field tag only annotation is not added into the AST
+[ERROR] 2018-09-23 13:33:33 JDTCommentBuilder - // Field tag only annotation is not added into the AST
 spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/tmp/icst-2019/september-2018/dataset/gson_parent/gson/src/test/java/com/google/gson/functional/ExclusionStrategyFunctionalTest.java:167)
 	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:384)
 	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:484)
@@ -183,7 +182,6 @@ spoon.reflect.declaration.ParentNotInitializedException: parent not initialized 
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ gson ---
-[INFO] Deleting /tmp/icst-2019/september-2018/dataset/gson/gson/target
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ gson ---
 [INFO] Skipping Rule Enforcement.
@@ -217,8 +215,8 @@ spoon.reflect.declaration.ParentNotInitializedException: parent not initialized 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 6.825 s
-[INFO] Finished at: 2018-09-22T21:19:56+02:00
+[INFO] Total time: 6.952 s
+[INFO] Finished at: 2018-09-23T13:33:42+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of com.google.gson.functional.PrimitiveTest (99 test(s))
 [INFO] Assertion amplification of com.google.gson.functional.PrimitiveTest (99 test(s))
@@ -265,15 +263,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_par
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testLongAsStringDeserialization,testBigDecimalPreservePrecisionSerialization,testSmallValueForBigDecimalDeserialization,testNumberDeserialization,testMoreSpecificSerialization,testUnquotedStringDeserializationFails,testDeserializingBigIntegerAsBigDecimal,testQuotedStringSerializationAndDeserialization,testReallyLongValuesDeserialization,testNumberAsStringDeserialization,testSmallValueForBigIntegerDeserialization,testNegativeInfinityFloatDeserialization,testHtmlCharacterSerialization,testPrimitiveBooleanAutoboxedInASingleElementArraySerialization,testPrimitiveBooleanAutoboxedSerialization,testBigDecimalDeserialization,testPrimitiveLongAutoboxedDeserialization,testNegativeInfinityDeserialization,testSmallValueForBigIntegerSerialization,testSmallValueForBigDecimalSerialization,testNumberSerialization,testBigDecimalAsStringRepresentationDeserialization,testFloatNaNSerialization,testByteDeserialization,testPrimitiveIntegerAutoboxedDeserialization,testBigIntegerDeserialization,testBigDecimalNoFractAsStringRepresentationDeserialization,testReallyLongValuesSerialization,testPrimitiveDoubleAutoboxedSerialization,testNegativeInfinitySerialization,testFloatInfinitySerialization,testFloatNaNDeserialization,testDoubleNaNDeserialization,testStringsAsBooleans,testBigIntegerSerialization,testDeserializingDecimalPointValueZeroSucceeds,testLongAsStringSerialization,testDeserializePrimitiveWrapperAsObjectField,testPrimitiveClassLiteral,testBigDecimalSerialization,testByteSerialization,testNegativeInfinityFloatSerialization,testPrimitiveIntegerAutoboxedSerialization,testShortSerialization,testPrimitiveIntegerAutoboxedInASingleElementArraySerialization,testDoubleInfinityDeserialization,testBigDecimalPreservePrecisionDeserialization,testDoubleNaNSerialization,testBooleanDeserialization,testPrimitiveLongAutoboxedInASingleElementArraySerialization,testFloatInfinityDeserialization,testDoubleInfinitySerialization,testPrimitiveDoubleAutoboxedInASingleElementArraySerialization,testPrimitiveLongAutoboxedSerialization
 [INFO] Assertion amplification: 54 test method(s) has been successfully amplified.
-[WARN] 2018-09-22 21:20:07 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-22 21:20:07 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-22 21:20:07 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:33:53 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:33:53 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:33:53 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.PrimitiveTest testDeserializingDecimalPointValueZeroSucceeds:testNumberAsStringDeserialization:testBooleanDeserialization:testFloatInfinitySerialization:testNumberDeserialization:testLongAsStringSerialization:testPrimitiveIntegerAutoboxedSerialization:testNegativeInfinitySerialization:testDoubleInfinityDeserialization:testSmallValueForBigIntegerDeserialization:testUnquotedStringDeserializationFails:testQuotedStringSerializationAndDeserialization:testPrimitiveDoubleAutoboxedSerialization:testSmallValueForBigDecimalSerialization:testLongAsStringDeserialization:testShortSerialization:testByteSerialization:testDeserializePrimitiveWrapperAsObjectField:testPrimitiveDoubleAutoboxedInASingleElementArraySerialization:testNegativeInfinityFloatSerialization:testHtmlCharacterSerialization:testPrimitiveBooleanAutoboxedSerialization:testReallyLongValuesSerialization:testReallyLongValuesDeserialization:testBigDecimalPreservePrecisionSerialization:testSmallValueForBigDecimalDeserialization:testByteDeserialization:testDoubleInfinitySerialization:testPrimitiveIntegerAutoboxedDeserialization:testBigDecimalSerialization:testBigDecimalDeserialization:testBigDecimalPreservePrecisionDeserialization:testPrimitiveClassLiteral:testBigDecimalAsStringRepresentationDeserialization:testFloatNaNDeserialization:testBigIntegerSerialization:testDoubleNaNDeserialization:testStringsAsBooleans:testNegativeInfinityDeserialization:testFloatInfinityDeserialization:testMoreSpecificSerialization:testNumberSerialization:testBigDecimalNoFractAsStringRepresentationDeserialization:testDeserializingBigIntegerAsBigDecimal:testDoubleNaNSerialization:testPrimitiveIntegerAutoboxedInASingleElementArraySerialization:testPrimitiveLongAutoboxedDeserialization:testFloatNaNSerialization:testNegativeInfinityFloatDeserialization:testPrimitiveLongAutoboxedInASingleElementArraySerialization:testPrimitiveBooleanAutoboxedInASingleElementArraySerialization:testPrimitiveLongAutoboxedSerialization:testSmallValueForBigIntegerSerialization:testBigIntegerDeserialization
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testLongAsStringDeserialization,testBigDecimalPreservePrecisionSerialization,testSmallValueForBigDecimalDeserialization,testNumberDeserialization,testMoreSpecificSerialization,testUnquotedStringDeserializationFails,testDeserializingBigIntegerAsBigDecimal,testQuotedStringSerializationAndDeserialization,testReallyLongValuesDeserialization,testNumberAsStringDeserialization,testSmallValueForBigIntegerDeserialization,testNegativeInfinityFloatDeserialization,testHtmlCharacterSerialization,testPrimitiveBooleanAutoboxedInASingleElementArraySerialization,testPrimitiveBooleanAutoboxedSerialization,testBigDecimalDeserialization,testPrimitiveLongAutoboxedDeserialization,testNegativeInfinityDeserialization,testSmallValueForBigIntegerSerialization,testSmallValueForBigDecimalSerialization,testNumberSerialization,testBigDecimalAsStringRepresentationDeserialization,testFloatNaNSerialization,testByteDeserialization,testPrimitiveIntegerAutoboxedDeserialization,testBigIntegerDeserialization,testBigDecimalNoFractAsStringRepresentationDeserialization,testReallyLongValuesSerialization,testPrimitiveDoubleAutoboxedSerialization,testNegativeInfinitySerialization,testFloatInfinitySerialization,testFloatNaNDeserialization,testDoubleNaNDeserialization,testStringsAsBooleans,testBigIntegerSerialization,testDeserializingDecimalPointValueZeroSucceeds,testLongAsStringSerialization,testDeserializePrimitiveWrapperAsObjectField,testPrimitiveClassLiteral,testBigDecimalSerialization,testByteSerialization,testNegativeInfinityFloatSerialization,testPrimitiveIntegerAutoboxedSerialization,testShortSerialization,testPrimitiveIntegerAutoboxedInASingleElementArraySerialization,testDoubleInfinityDeserialization,testBigDecimalPreservePrecisionDeserialization,testDoubleNaNSerialization,testBooleanDeserialization,testPrimitiveLongAutoboxedInASingleElementArraySerialization,testFloatInfinityDeserialization,testDoubleInfinitySerialization,testPrimitiveDoubleAutoboxedInASingleElementArraySerialization,testPrimitiveLongAutoboxedSerialization
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 10440
+[INFO] elapsedTime 10116
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -307,15 +305,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_par
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testSerialize2dArray,testSerializeWithCustomTypeAdapter,testDeserialize1dArray,testDeserialize2dArray,testDeserializeWithCustomTypeAdapter,testSerialize,testSerialize1dArray,testSerializeNullField,testSerializeNullObject,testSerializeRecursive
 [INFO] Assertion amplification: 11 test method(s) has been successfully amplified.
-[WARN] 2018-09-22 21:20:13 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-22 21:20:13 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-22 21:20:13 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:33:58 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:33:58 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:33:58 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.StreamingTypeAdaptersTest testDeserialize2dArray:testSerialize1dArray:testSerialize:testSerializeWithCustomTypeAdapter:testSerialize2dArray:testSerializeNullField:testSerializeNullObject:testSerializeRecursive:testDeserializeWithCustomTypeAdapter:testDeserialize1dArray:testSerialize
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testSerialize2dArray,testSerializeWithCustomTypeAdapter,testDeserialize1dArray,testDeserialize2dArray,testDeserializeWithCustomTypeAdapter,testSerialize,testSerialize1dArray,testSerializeNullField,testSerializeNullObject,testSerializeRecursive
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 5047
+[INFO] elapsedTime 5077
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -349,15 +347,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_par
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testTransientFieldExclusion,testExcludeFieldsWithModifiers
 [INFO] Assertion amplification: 2 test method(s) has been successfully amplified.
-[WARN] 2018-09-22 21:20:16 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-22 21:20:16 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-22 21:20:16 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:34:02 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:34:02 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:34:02 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.GsonBuilderTest testTransientFieldExclusion:testExcludeFieldsWithModifiers
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testTransientFieldExclusion,testExcludeFieldsWithModifiers
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 2519
+[INFO] elapsedTime 3177
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -391,15 +389,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_par
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testNullSafeBugSerialize
 [INFO] Assertion amplification: 1 test method(s) has been successfully amplified.
-[WARN] 2018-09-22 21:20:18 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-22 21:20:18 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-22 21:20:18 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:34:05 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:34:05 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:34:05 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.regression.JsonAdapterNullSafeTest testNullSafeBugSerialize
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testNullSafeBugSerialize
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 2444
+[INFO] elapsedTime 2785
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -434,15 +432,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_par
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testNewParameterizedTypeWithoutOwner
 [INFO] Assertion amplification: 1 test method(s) has been successfully amplified.
-[WARN] 2018-09-22 21:20:28 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-22 21:20:28 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-22 21:20:28 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:34:14 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:34:14 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:34:14 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.internal.GsonTypesTest testNewParameterizedTypeWithoutOwner
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testNewParameterizedTypeWithoutOwner(com.google.gson.internal.GsonTypesTest): expected:<...er-2018/dataset/gson[_parent]/gson/target/test-cl...> but was:<...er-2018/dataset/gson[]/gson/target/test-cl...>
 [INFO] 1 amplified test methods has been selected to be kept. (global: 1)
-[INFO] elapsedTime 10533
+[INFO] elapsedTime 8930
 ======= REPORT =======
 1 amplified test fails on the new versions.
 testNewParameterizedTypeWithoutOwner(com.google.gson.internal.GsonTypesTest): expected:<...er-2018/dataset/gson[_parent]/gson/target/test-cl...> but was:<...er-2018/dataset/gson[]/gson/target/test-cl...>
@@ -476,15 +474,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_par
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testNullExposeFieldSerialization,testNoExposedFieldDeserialization,testExposeAnnotationSerialization,testExposedInterfaceFieldDeserialization,testNoExposedFieldSerialization,testExposeAnnotationDeserialization,testArrayWithOneNullExposeFieldObjectSerialization,testExposedInterfaceFieldSerialization
 [INFO] Assertion amplification: 8 test method(s) has been successfully amplified.
-[WARN] 2018-09-22 21:20:32 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-22 21:20:32 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-22 21:20:32 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:34:18 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:34:18 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:34:18 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ExposeFieldsTest testExposeAnnotationSerialization:testNoExposedFieldSerialization:testExposedInterfaceFieldDeserialization:testNullExposeFieldSerialization:testNoExposedFieldDeserialization:testArrayWithOneNullExposeFieldObjectSerialization:testExposedInterfaceFieldSerialization:testExposeAnnotationDeserialization
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testNullExposeFieldSerialization,testNoExposedFieldDeserialization,testExposeAnnotationSerialization,testExposedInterfaceFieldDeserialization,testNoExposedFieldSerialization,testExposeAnnotationDeserialization,testArrayWithOneNullExposeFieldObjectSerialization,testExposedInterfaceFieldSerialization
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 3023
+[INFO] elapsedTime 3568
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -524,7 +522,7 @@ Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/Test
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
 [INFO] Total time: 01:09 min
-[INFO] Finished at: 2018-09-22T21:20:39+02:00
+[INFO] Finished at: 2018-09-23T13:34:25+02:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) on project gson: Execution default-cli of goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests failed: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.google.gson.functional.MapTest$MyMap -> [Help 1]
 [ERROR] 

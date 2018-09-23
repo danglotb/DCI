@@ -64,10 +64,10 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 5.582 s
-[INFO] Finished at: 2018-09-22T21:26:50+02:00
+[INFO] Total time: 6.016 s
+[INFO] Finished at: 2018-09-23T13:48:05+02:00
 [INFO] ------------------------------------------------------------------------
-[ERROR] 2018-09-22 21:26:54 JDTCommentBuilder - // Note that the above example is taken from AdaptAnnotationTest. is not added into the AST
+[ERROR] 2018-09-23 13:48:08 JDTCommentBuilder - // Note that the above example is taken from AdaptAnnotationTest. is not added into the AST
 spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/tmp/icst-2019/september-2018/dataset/gson_parent/gson/src/main/java/com/google/gson/annotations/JsonAdapter.java:86)
 	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:384)
 	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:484)
@@ -106,7 +106,7 @@ spoon.reflect.declaration.ParentNotInitializedException: parent not initialized 
 	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
-[ERROR] 2018-09-22 21:26:54 JDTCommentBuilder - // Field tag only annotation is not added into the AST
+[ERROR] 2018-09-23 13:48:09 JDTCommentBuilder - // Field tag only annotation is not added into the AST
 spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/tmp/icst-2019/september-2018/dataset/gson_parent/gson/src/test/java/com/google/gson/functional/ExclusionStrategyFunctionalTest.java:167)
 	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:384)
 	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:484)
@@ -183,72 +183,256 @@ spoon.reflect.declaration.ParentNotInitializedException: parent not initialized 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 5.429 s
-[INFO] Finished at: 2018-09-22T21:27:02+02:00
+[INFO] Total time: 6.404 s
+[INFO] Finished at: 2018-09-23T13:48:17+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of com.google.gson.GsonBuilderTest (3 test(s))
 [INFO] Assertion amplification of com.google.gson.GsonBuilderTest (3 test(s))
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(390) The import org.junit cannot be resolved
-[ERROR] Pb(2) Test cannot be resolved to a type
-[ERROR] Pb(2) Test cannot be resolved to a type
-[ERROR] Pb(50) org.junit cannot be resolved
-[ERROR] Pb(2) Test cannot be resolved to a type
-[ERROR] Pb(2) Test cannot be resolved to a type
-[ERROR] Pb(50) org.junit cannot be resolved
-[ERROR] Pb(2) Test cannot be resolved to a type
-[ERROR] Pb(50) org.junit cannot be resolved
-eu.stamp_project.dspot.AmplificationException: Every test methods are uncompilable
-	at eu.stamp_project.utils.compilation.TestCompiler.compileAndDiscardUncompilableMethods(TestCompiler.java:124)
-	at eu.stamp_project.utils.compilation.TestCompiler.compileAndRun(TestCompiler.java:93)
-	at eu.stamp_project.utils.compilation.TestCompiler.compileRunAndDiscardUncompilableAndFailingTestMethods(TestCompiler.java:55)
-	at eu.stamp_project.dspot.Amplification.amplification(Amplification.java:82)
-	at eu.stamp_project.dspot.DSpot.amplifyTest(DSpot.java:180)
-	at eu.stamp_project.dspot.DSpot.amplifyTest(DSpot.java:170)
-	at eu.stamp_project.Main.lambda$run$1(Main.java:69)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1374)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
-	at eu.stamp_project.Main.run(Main.java:71)
-	at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:263)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:146)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:954)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:192)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.GsonBuilderTest testTransientFieldExclusion:testCreatingMoreThanOnce:testExcludeFieldsWithModifiers
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testTransientFieldExclusion,testExcludeFieldsWithModifiers,testCreatingMoreThanOnce
+[INFO] Run tests. (3)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.GsonBuilderTest testTransientFieldExclusion:testCreatingMoreThanOnce:testExcludeFieldsWithModifiers
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testTransientFieldExclusion,testExcludeFieldsWithModifiers,testCreatingMoreThanOnce
+[INFO] 3 test pass, generating assertion...
+[INFO] Add observations points in passing tests.
+[INFO] Instrumentation...
+ 33% |================ ]/ 66% |================================= ]-100% |================================================== ]\
+[INFO] Run instrumented tests. (9)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.GsonBuilderTest testTransientFieldExclusion_withlog0:testCreatingMoreThanOnce_withlog0:testExcludeFieldsWithModifiers_withlog0:testTransientFieldExclusion_withlog1:testCreatingMoreThanOnce_withlog1:testExcludeFieldsWithModifiers_withlog1:testTransientFieldExclusion_withlog2:testCreatingMoreThanOnce_withlog2:testExcludeFieldsWithModifiers_withlog2
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/observations.ser
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testCreatingMoreThanOnce_withlog0,testCreatingMoreThanOnce_withlog1,testCreatingMoreThanOnce_withlog2,testExcludeFieldsWithModifiers_withlog0,testExcludeFieldsWithModifiers_withlog1,testExcludeFieldsWithModifiers_withlog2,testTransientFieldExclusion_withlog0,testTransientFieldExclusion_withlog1,testTransientFieldExclusion_withlog2
+[INFO] Generating assertions...
+[INFO] 2 new tests with assertions generated
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.GsonBuilderTest testTransientFieldExclusion:testExcludeFieldsWithModifiers
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testTransientFieldExclusion,testExcludeFieldsWithModifiers
+[INFO] Assertion amplification: 2 test method(s) has been successfully amplified.
+[WARN] 2018-09-23 13:48:21 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:48:21 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:48:21 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.GsonBuilderTest testTransientFieldExclusion:testExcludeFieldsWithModifiers
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testTransientFieldExclusion,testExcludeFieldsWithModifiers
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 312
+[INFO] elapsedTime 3573
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
-[INFO] ------------------------------------------------------------------------
+[WARNING] DSpot could not obtain any amplified test method.
+[WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
+[INFO] Amplification of com.google.gson.functional.ExclusionStrategyFunctionalTest (9 test(s))
+[INFO] Assertion amplification of com.google.gson.functional.ExclusionStrategyFunctionalTest (9 test(s))
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ExclusionStrategyFunctionalTest testExclusionStrategyWithMode:testExcludeTopLevelClassSerialization:testExclusionStrategySerialization:testExcludeTopLevelClassSerializationDoesNotImpactDeserialization:testExclusionStrategySerializationDoesNotImpactDeserialization:testExcludeTopLevelClassDeserialization:testExclusionStrategySerializationDoesNotImpactSerialization:testExcludeTopLevelClassDeserializationDoesNotImpactSerialization:testExclusionStrategyDeserialization
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testExclusionStrategySerializationDoesNotImpactSerialization,testExcludeTopLevelClassSerialization,testExclusionStrategyWithMode,testExcludeTopLevelClassDeserializationDoesNotImpactSerialization,testExcludeTopLevelClassDeserialization,testExcludeTopLevelClassSerializationDoesNotImpactDeserialization,testExclusionStrategySerialization,testExclusionStrategySerializationDoesNotImpactDeserialization,testExclusionStrategyDeserialization
+[INFO] Run tests. (9)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ExclusionStrategyFunctionalTest testExclusionStrategyWithMode:testExcludeTopLevelClassSerialization:testExclusionStrategySerialization:testExcludeTopLevelClassSerializationDoesNotImpactDeserialization:testExclusionStrategySerializationDoesNotImpactDeserialization:testExcludeTopLevelClassDeserialization:testExclusionStrategySerializationDoesNotImpactSerialization:testExcludeTopLevelClassDeserializationDoesNotImpactSerialization:testExclusionStrategyDeserialization
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testExclusionStrategySerializationDoesNotImpactSerialization,testExcludeTopLevelClassSerialization,testExclusionStrategyWithMode,testExcludeTopLevelClassDeserializationDoesNotImpactSerialization,testExcludeTopLevelClassDeserialization,testExcludeTopLevelClassSerializationDoesNotImpactDeserialization,testExclusionStrategySerialization,testExclusionStrategySerializationDoesNotImpactDeserialization,testExclusionStrategyDeserialization
+[INFO] 9 test pass, generating assertion...
+[INFO] Add observations points in passing tests.
+[INFO] Instrumentation...
+ 11% |===== ]/ 22% |=========== ]- 33% |================ ]\ 44% |====================== ]| 55% |=========================== ]/ 66% |================================= ]- 77% |====================================== ]\ 88% |============================================ ]|100% |================================================== ]/
+[INFO] Run instrumented tests. (27)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ExclusionStrategyFunctionalTest testExclusionStrategyWithMode_withlog0:testExcludeTopLevelClassSerialization_withlog0:testExclusionStrategySerialization_withlog0:testExcludeTopLevelClassSerializationDoesNotImpactDeserialization_withlog0:testExclusionStrategySerializationDoesNotImpactDeserialization_withlog0:testExcludeTopLevelClassDeserialization_withlog0:testExclusionStrategySerializationDoesNotImpactSerialization_withlog0:testExcludeTopLevelClassDeserializationDoesNotImpactSerialization_withlog0:testExclusionStrategyDeserialization_withlog0:testExclusionStrategyWithMode_withlog1:testExcludeTopLevelClassSerialization_withlog1:testExclusionStrategySerialization_withlog1:testExcludeTopLevelClassSerializationDoesNotImpactDeserialization_withlog1:testExclusionStrategySerializationDoesNotImpactDeserialization_withlog1:testExcludeTopLevelClassDeserialization_withlog1:testExclusionStrategySerializationDoesNotImpactSerialization_withlog1:testExcludeTopLevelClassDeserializationDoesNotImpactSerialization_withlog1:testExclusionStrategyDeserialization_withlog1:testExclusionStrategyWithMode_withlog2:testExcludeTopLevelClassSerialization_withlog2:testExclusionStrategySerialization_withlog2:testExcludeTopLevelClassSerializationDoesNotImpactDeserialization_withlog2:testExclusionStrategySerializationDoesNotImpactDeserialization_withlog2:testExcludeTopLevelClassDeserialization_withlog2:testExclusionStrategySerializationDoesNotImpactSerialization_withlog2:testExcludeTopLevelClassDeserializationDoesNotImpactSerialization_withlog2:testExclusionStrategyDeserialization_withlog2
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/observations.ser
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testExclusionStrategyWithMode_withlog0,testExclusionStrategyWithMode_withlog1,testExclusionStrategyWithMode_withlog2,testExcludeTopLevelClassSerialization_withlog0,testExcludeTopLevelClassSerialization_withlog1,testExcludeTopLevelClassSerialization_withlog2,testExcludeTopLevelClassDeserializationDoesNotImpactSerialization_withlog0,testExcludeTopLevelClassDeserializationDoesNotImpactSerialization_withlog1,testExcludeTopLevelClassDeserializationDoesNotImpactSerialization_withlog2,testExclusionStrategySerializationDoesNotImpactSerialization_withlog0,testExclusionStrategySerializationDoesNotImpactSerialization_withlog1,testExclusionStrategySerializationDoesNotImpactSerialization_withlog2,testExclusionStrategySerializationDoesNotImpactDeserialization_withlog0,testExclusionStrategySerializationDoesNotImpactDeserialization_withlog1,testExclusionStrategySerializationDoesNotImpactDeserialization_withlog2,testExcludeTopLevelClassSerializationDoesNotImpactDeserialization_withlog0,testExcludeTopLevelClassSerializationDoesNotImpactDeserialization_withlog1,testExcludeTopLevelClassSerializationDoesNotImpactDeserialization_withlog2,testExclusionStrategySerialization_withlog0,testExclusionStrategySerialization_withlog1,testExclusionStrategySerialization_withlog2,testExclusionStrategyDeserialization_withlog0,testExclusionStrategyDeserialization_withlog1,testExclusionStrategyDeserialization_withlog2,testExcludeTopLevelClassDeserialization_withlog0(com.google.gson.functional.ExclusionStrategyFunctionalTest): null,testExcludeTopLevelClassDeserialization_withlog1(com.google.gson.functional.ExclusionStrategyFunctionalTest): null,testExcludeTopLevelClassDeserialization_withlog2(com.google.gson.functional.ExclusionStrategyFunctionalTest): null
+[WARNING] Some instrumented test failed!
+[INFO] Generating assertions...
+[INFO] 7 new tests with assertions generated
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ExclusionStrategyFunctionalTest testExcludeTopLevelClassSerialization:testExclusionStrategySerialization:testExcludeTopLevelClassSerializationDoesNotImpactDeserialization:testExclusionStrategySerializationDoesNotImpactDeserialization:testExcludeTopLevelClassDeserialization:testExclusionStrategySerializationDoesNotImpactSerialization:testExcludeTopLevelClassDeserializationDoesNotImpactSerialization
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testExclusionStrategySerializationDoesNotImpactSerialization,testExcludeTopLevelClassSerialization,testExcludeTopLevelClassDeserializationDoesNotImpactSerialization,testExcludeTopLevelClassDeserialization,testExcludeTopLevelClassSerializationDoesNotImpactDeserialization,testExclusionStrategySerialization,testExclusionStrategySerializationDoesNotImpactDeserialization
+[INFO] Assertion amplification: 7 test method(s) has been successfully amplified.
+[WARN] 2018-09-23 13:48:25 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:48:25 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:48:25 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ExclusionStrategyFunctionalTest testExcludeTopLevelClassSerialization:testExclusionStrategySerialization:testExcludeTopLevelClassSerializationDoesNotImpactDeserialization:testExclusionStrategySerializationDoesNotImpactDeserialization:testExcludeTopLevelClassDeserialization:testExclusionStrategySerializationDoesNotImpactSerialization:testExcludeTopLevelClassDeserializationDoesNotImpactSerialization
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testExclusionStrategySerializationDoesNotImpactSerialization,testExcludeTopLevelClassSerialization,testExcludeTopLevelClassDeserializationDoesNotImpactSerialization,testExcludeTopLevelClassDeserialization,testExcludeTopLevelClassSerializationDoesNotImpactDeserialization,testExclusionStrategySerialization,testExclusionStrategySerializationDoesNotImpactDeserialization
+[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+[INFO] elapsedTime 3785
+======= REPORT =======
+0 amplified test fails on the new versions.
+
+[WARNING] DSpot could not obtain any amplified test method.
+[WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
+[INFO] Amplification of com.google.gson.functional.ReadersWritersTest (7 test(s))
+[INFO] Assertion amplification of com.google.gson.functional.ReadersWritersTest (7 test(s))
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ReadersWritersTest testTopLevelNullObjectDeserializationWithReaderAndSerializeNulls:testTopLevelNullObjectSerializationWithWriterAndSerializeNulls:testWriterForSerialization:testReadWriteTwoStrings:testReadWriteTwoObjects:testReaderForDeserialization:testReadWriteTwoObjects
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testReadWriteTwoStrings,testReaderForDeserialization,testReadWriteTwoObjects,testTopLevelNullObjectDeserializationWithReaderAndSerializeNulls,testTopLevelNullObjectSerializationWithWriterAndSerializeNulls,testWriterForSerialization
+[INFO] Run tests. (7)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ReadersWritersTest testTopLevelNullObjectDeserializationWithReaderAndSerializeNulls:testTopLevelNullObjectSerializationWithWriterAndSerializeNulls:testWriterForSerialization:testReadWriteTwoStrings:testReadWriteTwoObjects:testReaderForDeserialization:testReadWriteTwoObjects
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testReadWriteTwoStrings,testReaderForDeserialization,testReadWriteTwoObjects,testTopLevelNullObjectDeserializationWithReaderAndSerializeNulls,testTopLevelNullObjectSerializationWithWriterAndSerializeNulls,testWriterForSerialization
+[INFO] 6 test pass, generating assertion...
+[INFO] Add observations points in passing tests.
+[INFO] Instrumentation...
+ 14% |======= ]/ 28% |============== ]- 42% |===================== ]\ 57% |============================ ]| 71% |=================================== ]/ 85% |========================================== ]- 71% |========================================== ]/[INFO] Run instrumented tests. (21)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ReadersWritersTest testTopLevelNullObjectDeserializationWithReaderAndSerializeNulls_withlog0:testTopLevelNullObjectSerializationWithWriterAndSerializeNulls_withlog0:testWriterForSerialization_withlog0:testReadWriteTwoStrings_withlog0:testReadWriteTwoObjects_withlog0:testReaderForDeserialization_withlog0:testReadWriteTwoObjects_withlog0:testTopLevelNullObjectDeserializationWithReaderAndSerializeNulls_withlog1:testTopLevelNullObjectSerializationWithWriterAndSerializeNulls_withlog1:testWriterForSerialization_withlog1:testReadWriteTwoStrings_withlog1:testReadWriteTwoObjects_withlog1:testReaderForDeserialization_withlog1:testReadWriteTwoObjects_withlog1:testTopLevelNullObjectDeserializationWithReaderAndSerializeNulls_withlog2:testTopLevelNullObjectSerializationWithWriterAndSerializeNulls_withlog2:testWriterForSerialization_withlog2:testReadWriteTwoStrings_withlog2:testReadWriteTwoObjects_withlog2:testReaderForDeserialization_withlog2:testReadWriteTwoObjects_withlog2
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/observations.ser
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testReadWriteTwoStrings_withlog0,testReadWriteTwoStrings_withlog1,testReadWriteTwoStrings_withlog2,testReaderForDeserialization_withlog0,testReaderForDeserialization_withlog1,testReaderForDeserialization_withlog2,testTopLevelNullObjectSerializationWithWriterAndSerializeNulls_withlog0,testTopLevelNullObjectSerializationWithWriterAndSerializeNulls_withlog1,testTopLevelNullObjectSerializationWithWriterAndSerializeNulls_withlog2,testWriterForSerialization_withlog0,testWriterForSerialization_withlog1,testWriterForSerialization_withlog2,testReadWriteTwoObjects_withlog0,testReadWriteTwoObjects_withlog1,testReadWriteTwoObjects_withlog2,testTopLevelNullObjectDeserializationWithReaderAndSerializeNulls_withlog0(com.google.gson.functional.ReadersWritersTest): null,testTopLevelNullObjectDeserializationWithReaderAndSerializeNulls_withlog1(com.google.gson.functional.ReadersWritersTest): null,testTopLevelNullObjectDeserializationWithReaderAndSerializeNulls_withlog2(com.google.gson.functional.ReadersWritersTest): null
+[WARNING] Some instrumented test failed!
+[INFO] Generating assertions...
+[INFO] 2 new tests with assertions generated
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ReadersWritersTest testReadWriteTwoStrings:testReaderForDeserialization
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testReadWriteTwoStrings,testReaderForDeserialization
+[INFO] Assertion amplification: 2 test method(s) has been successfully amplified.
+[WARN] 2018-09-23 13:48:29 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:48:29 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:48:29 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ReadersWritersTest testReadWriteTwoStrings:testReaderForDeserialization
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testReadWriteTwoStrings,testReaderForDeserialization
+[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+[INFO] elapsedTime 3531
+======= REPORT =======
+0 amplified test fails on the new versions.
+
+[WARNING] DSpot could not obtain any amplified test method.
+[WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
+[INFO] Amplification of com.google.gson.functional.ExposeFieldsTest (8 test(s))
+[INFO] Assertion amplification of com.google.gson.functional.ExposeFieldsTest (8 test(s))
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ExposeFieldsTest testExposeAnnotationSerialization:testNoExposedFieldSerialization:testNullExposeFieldSerialization:testExposedInterfaceFieldDeserialization:testNoExposedFieldDeserialization:testArrayWithOneNullExposeFieldObjectSerialization:testExposeAnnotationDeserialization:testExposedInterfaceFieldSerialization
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testNullExposeFieldSerialization,testNoExposedFieldDeserialization,testExposeAnnotationSerialization,testExposedInterfaceFieldDeserialization,testNoExposedFieldSerialization,testExposeAnnotationDeserialization,testArrayWithOneNullExposeFieldObjectSerialization,testExposedInterfaceFieldSerialization
+[INFO] Run tests. (8)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ExposeFieldsTest testExposeAnnotationSerialization:testNoExposedFieldSerialization:testNullExposeFieldSerialization:testExposedInterfaceFieldDeserialization:testNoExposedFieldDeserialization:testArrayWithOneNullExposeFieldObjectSerialization:testExposeAnnotationDeserialization:testExposedInterfaceFieldSerialization
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testNullExposeFieldSerialization,testNoExposedFieldDeserialization,testExposeAnnotationSerialization,testExposedInterfaceFieldDeserialization,testNoExposedFieldSerialization,testExposeAnnotationDeserialization,testArrayWithOneNullExposeFieldObjectSerialization,testExposedInterfaceFieldSerialization
+[INFO] 8 test pass, generating assertion...
+[INFO] Add observations points in passing tests.
+[INFO] Instrumentation...
+ 12% |========================================== ]/ 25% |========================================== ]- 37% |========================================== ]\ 50% |========================================== ]| 62% |========================================== ]/ 75% |========================================== ]- 87% |=========================================== ]\100% |================================================== ]|
+[INFO] Run instrumented tests. (24)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ExposeFieldsTest testExposeAnnotationSerialization_withlog0:testNoExposedFieldSerialization_withlog0:testNullExposeFieldSerialization_withlog0:testExposedInterfaceFieldDeserialization_withlog0:testNoExposedFieldDeserialization_withlog0:testArrayWithOneNullExposeFieldObjectSerialization_withlog0:testExposeAnnotationDeserialization_withlog0:testExposedInterfaceFieldSerialization_withlog0:testExposeAnnotationSerialization_withlog1:testNoExposedFieldSerialization_withlog1:testNullExposeFieldSerialization_withlog1:testExposedInterfaceFieldDeserialization_withlog1:testNoExposedFieldDeserialization_withlog1:testArrayWithOneNullExposeFieldObjectSerialization_withlog1:testExposeAnnotationDeserialization_withlog1:testExposedInterfaceFieldSerialization_withlog1:testExposeAnnotationSerialization_withlog2:testNoExposedFieldSerialization_withlog2:testNullExposeFieldSerialization_withlog2:testExposedInterfaceFieldDeserialization_withlog2:testNoExposedFieldDeserialization_withlog2:testArrayWithOneNullExposeFieldObjectSerialization_withlog2:testExposeAnnotationDeserialization_withlog2:testExposedInterfaceFieldSerialization_withlog2
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/observations.ser
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testNullExposeFieldSerialization_withlog0,testNullExposeFieldSerialization_withlog1,testNullExposeFieldSerialization_withlog2,testExposeAnnotationDeserialization_withlog0,testExposeAnnotationDeserialization_withlog1,testExposeAnnotationDeserialization_withlog2,testExposeAnnotationSerialization_withlog0,testExposeAnnotationSerialization_withlog1,testExposeAnnotationSerialization_withlog2,testNoExposedFieldDeserialization_withlog0,testNoExposedFieldDeserialization_withlog1,testNoExposedFieldDeserialization_withlog2,testExposedInterfaceFieldSerialization_withlog0,testExposedInterfaceFieldSerialization_withlog1,testExposedInterfaceFieldSerialization_withlog2,testExposedInterfaceFieldDeserialization_withlog0,testExposedInterfaceFieldDeserialization_withlog1,testExposedInterfaceFieldDeserialization_withlog2,testArrayWithOneNullExposeFieldObjectSerialization_withlog0,testArrayWithOneNullExposeFieldObjectSerialization_withlog1,testArrayWithOneNullExposeFieldObjectSerialization_withlog2,testNoExposedFieldSerialization_withlog0,testNoExposedFieldSerialization_withlog1,testNoExposedFieldSerialization_withlog2
+[INFO] Generating assertions...
+[INFO] 8 new tests with assertions generated
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ExposeFieldsTest testExposeAnnotationSerialization:testNoExposedFieldSerialization:testNullExposeFieldSerialization:testExposedInterfaceFieldDeserialization:testNoExposedFieldDeserialization:testArrayWithOneNullExposeFieldObjectSerialization:testExposeAnnotationDeserialization:testExposedInterfaceFieldSerialization
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testNullExposeFieldSerialization,testNoExposedFieldDeserialization,testExposeAnnotationSerialization,testExposedInterfaceFieldDeserialization,testNoExposedFieldSerialization,testExposeAnnotationDeserialization,testArrayWithOneNullExposeFieldObjectSerialization,testExposedInterfaceFieldSerialization
+[INFO] Assertion amplification: 8 test method(s) has been successfully amplified.
+[WARN] 2018-09-23 13:48:32 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:48:32 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:48:32 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ExposeFieldsTest testExposeAnnotationSerialization:testNoExposedFieldSerialization:testNullExposeFieldSerialization:testExposedInterfaceFieldDeserialization:testNoExposedFieldDeserialization:testArrayWithOneNullExposeFieldObjectSerialization:testExposeAnnotationDeserialization:testExposedInterfaceFieldSerialization
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testNullExposeFieldSerialization,testNoExposedFieldDeserialization,testExposeAnnotationSerialization,testExposedInterfaceFieldDeserialization,testNoExposedFieldSerialization,testExposeAnnotationDeserialization,testArrayWithOneNullExposeFieldObjectSerialization,testExposedInterfaceFieldSerialization
+[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+[INFO] elapsedTime 3683
+======= REPORT =======
+0 amplified test fails on the new versions.
+
+[WARNING] DSpot could not obtain any amplified test method.
+[WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
+[INFO] Amplification of com.google.gson.functional.PrimitiveTest (11 test(s))
+[INFO] Assertion amplification of com.google.gson.functional.PrimitiveTest (11 test(s))
+[ERROR] Error(s) during compilation:
+[ERROR] Pb(102) The method assertEquals(Object, Object) is ambiguous for the type Assert
+[ERROR] Pb(102) The method assertEquals(Object, Object) is ambiguous for the type Assert
+[ERROR] Pb(102) The method assertEquals(Object, Object) is ambiguous for the type Assert
+[ERROR] Pb(102) The method assertEquals(Object, Object) is ambiguous for the type Assert
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.PrimitiveTest testLongAsStringSerialization:testNegativeInfinityFloatSerialization:testHtmlCharacterSerialization:testDoubleInfinitySerialization:testMoreSpecificSerialization:testDeserializePrimitiveWrapperAsObjectField:testNegativeInfinitySerialization:testLongAsStringDeserialization:testFloatInfinitySerialization:testDoubleNaNSerialization:testFloatNaNSerialization
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testLongAsStringDeserialization,testMoreSpecificSerialization,testHtmlCharacterSerialization,testFloatNaNSerialization,testNegativeInfinitySerialization,testFloatInfinitySerialization,testLongAsStringSerialization,testDeserializePrimitiveWrapperAsObjectField,testNegativeInfinityFloatSerialization,testDoubleNaNSerialization,testDoubleInfinitySerialization
+[INFO] Run tests. (11)
+[ERROR] Error(s) during compilation:
+[ERROR] Pb(102) The method assertEquals(Object, Object) is ambiguous for the type Assert
+[ERROR] Pb(102) The method assertEquals(Object, Object) is ambiguous for the type Assert
+[ERROR] Pb(102) The method assertEquals(Object, Object) is ambiguous for the type Assert
+[ERROR] Pb(102) The method assertEquals(Object, Object) is ambiguous for the type Assert
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.PrimitiveTest testLongAsStringSerialization:testNegativeInfinityFloatSerialization:testHtmlCharacterSerialization:testDoubleInfinitySerialization:testMoreSpecificSerialization:testDeserializePrimitiveWrapperAsObjectField:testNegativeInfinitySerialization:testLongAsStringDeserialization:testFloatInfinitySerialization:testDoubleNaNSerialization:testFloatNaNSerialization
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testLongAsStringDeserialization,testMoreSpecificSerialization,testHtmlCharacterSerialization,testFloatNaNSerialization,testNegativeInfinitySerialization,testFloatInfinitySerialization,testLongAsStringSerialization,testDeserializePrimitiveWrapperAsObjectField,testNegativeInfinityFloatSerialization,testDoubleNaNSerialization,testDoubleInfinitySerialization
+[INFO] 11 test pass, generating assertion...
+[INFO] Add observations points in passing tests.
+[INFO] Instrumentation...
+  9% |==== ]/ 18% |========= ]- 27% |============= ]\ 36% |================== ]| 45% |====================== ]/ 54% |=========================== ]- 63% |=============================== ]\ 72% |==================================== ]| 81% |======================================== ]/ 90% |============================================= ]-100% |================================================== ]\
+[INFO] Run instrumented tests. (33)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.PrimitiveTest testLongAsStringSerialization_withlog0:testNegativeInfinityFloatSerialization_withlog0:testHtmlCharacterSerialization_withlog0:testDoubleInfinitySerialization_withlog0:testMoreSpecificSerialization_withlog0:testDeserializePrimitiveWrapperAsObjectField_withlog0:testNegativeInfinitySerialization_withlog0:testLongAsStringDeserialization_withlog0:testFloatInfinitySerialization_withlog0:testDoubleNaNSerialization_withlog0:testFloatNaNSerialization_withlog0:testLongAsStringSerialization_withlog1:testNegativeInfinityFloatSerialization_withlog1:testHtmlCharacterSerialization_withlog1:testDoubleInfinitySerialization_withlog1:testMoreSpecificSerialization_withlog1:testDeserializePrimitiveWrapperAsObjectField_withlog1:testNegativeInfinitySerialization_withlog1:testLongAsStringDeserialization_withlog1:testFloatInfinitySerialization_withlog1:testDoubleNaNSerialization_withlog1:testFloatNaNSerialization_withlog1:testLongAsStringSerialization_withlog2:testNegativeInfinityFloatSerialization_withlog2:testHtmlCharacterSerialization_withlog2:testDoubleInfinitySerialization_withlog2:testMoreSpecificSerialization_withlog2:testDeserializePrimitiveWrapperAsObjectField_withlog2:testNegativeInfinitySerialization_withlog2:testLongAsStringDeserialization_withlog2:testFloatInfinitySerialization_withlog2:testDoubleNaNSerialization_withlog2:testFloatNaNSerialization_withlog2
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/observations.ser
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testMoreSpecificSerialization_withlog0,testMoreSpecificSerialization_withlog1,testMoreSpecificSerialization_withlog2,testNegativeInfinityFloatSerialization_withlog0,testNegativeInfinityFloatSerialization_withlog1,testNegativeInfinityFloatSerialization_withlog2,testFloatNaNSerialization_withlog0,testFloatNaNSerialization_withlog1,testFloatNaNSerialization_withlog2,testLongAsStringDeserialization_withlog0,testLongAsStringDeserialization_withlog1,testLongAsStringDeserialization_withlog2,testHtmlCharacterSerialization_withlog0,testHtmlCharacterSerialization_withlog1,testHtmlCharacterSerialization_withlog2,testDoubleNaNSerialization_withlog0,testDoubleNaNSerialization_withlog1,testDoubleNaNSerialization_withlog2,testNegativeInfinitySerialization_withlog0,testNegativeInfinitySerialization_withlog1,testNegativeInfinitySerialization_withlog2,testFloatInfinitySerialization_withlog0,testFloatInfinitySerialization_withlog1,testFloatInfinitySerialization_withlog2,testDeserializePrimitiveWrapperAsObjectField_withlog0,testDeserializePrimitiveWrapperAsObjectField_withlog1,testDeserializePrimitiveWrapperAsObjectField_withlog2,testLongAsStringSerialization_withlog0,testLongAsStringSerialization_withlog1,testLongAsStringSerialization_withlog2,testDoubleInfinitySerialization_withlog0,testDoubleInfinitySerialization_withlog1,testDoubleInfinitySerialization_withlog2
+[INFO] Generating assertions...
+[INFO] 11 new tests with assertions generated
+[ERROR] Error(s) during compilation:
+[ERROR] Pb(102) The method assertEquals(Object, Object) is ambiguous for the type Assert
+[ERROR] Pb(102) The method assertEquals(Object, Object) is ambiguous for the type Assert
+[ERROR] Pb(102) The method assertEquals(Object, Object) is ambiguous for the type Assert
+[ERROR] Pb(102) The method assertEquals(Object, Object) is ambiguous for the type Assert
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.PrimitiveTest testLongAsStringSerialization:testNegativeInfinityFloatSerialization:testHtmlCharacterSerialization:testDoubleInfinitySerialization:testMoreSpecificSerialization:testDeserializePrimitiveWrapperAsObjectField:testNegativeInfinitySerialization:testLongAsStringDeserialization:testFloatInfinitySerialization:testDoubleNaNSerialization:testFloatNaNSerialization
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testLongAsStringDeserialization,testMoreSpecificSerialization,testHtmlCharacterSerialization,testFloatNaNSerialization,testNegativeInfinitySerialization,testFloatInfinitySerialization,testLongAsStringSerialization,testDeserializePrimitiveWrapperAsObjectField,testNegativeInfinityFloatSerialization,testDoubleNaNSerialization,testDoubleInfinitySerialization
+[INFO] Assertion amplification: 11 test method(s) has been successfully amplified.
+[WARN] 2018-09-23 13:48:37 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:48:37 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-23 13:48:37 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.PrimitiveTest testLongAsStringSerialization:testNegativeInfinityFloatSerialization:testHtmlCharacterSerialization:testDoubleInfinitySerialization:testMoreSpecificSerialization:testDeserializePrimitiveWrapperAsObjectField:testNegativeInfinitySerialization:testLongAsStringDeserialization:testFloatInfinitySerialization:testDoubleNaNSerialization:testFloatNaNSerialization
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testLongAsStringDeserialization,testMoreSpecificSerialization,testHtmlCharacterSerialization,testFloatNaNSerialization,testNegativeInfinitySerialization,testFloatInfinitySerialization,testLongAsStringSerialization,testDeserializePrimitiveWrapperAsObjectField,testNegativeInfinityFloatSerialization,testDoubleNaNSerialization,testDoubleInfinitySerialization
+[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+[INFO] elapsedTime 4815
+======= REPORT =======
+0 amplified test fails on the new versions.
+
+[WARNING] DSpot could not obtain any amplified test method.
+[WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
+[INFO] Amplification of com.google.gson.functional.ArrayTest (5 test(s))
+[INFO] Assertion amplification of com.google.gson.functional.ArrayTest (5 test(s))
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ArrayTest testNullsInArrayWithSerializeNullPropertySetSerialization:testArrayElementsAreArrays:testObjectArrayWithNonPrimitivesSerialization:testSingleNullInArraySerialization:testSingleNullInArrayDeserialization
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testArrayElementsAreArrays,testNullsInArrayWithSerializeNullPropertySetSerialization,testObjectArrayWithNonPrimitivesSerialization,testSingleNullInArrayDeserialization,testSingleNullInArraySerialization
+[INFO] Run tests. (5)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/test-classes:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ArrayTest testNullsInArrayWithSerializeNullPropertySetSerialization:testArrayElementsAreArrays:testObjectArrayWithNonPrimitivesSerialization:testSingleNullInArraySerialization:testSingleNullInArrayDeserialization
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
+[INFO] Test has been run: testArrayElementsAreArrays,testNullsInArrayWithSerializeNullPropertySetSerialization,testObjectArrayWithNonPrimitivesSerialization,testSingleNullInArrayDeserialization,testSingleNullInArraySerialization
+[INFO] 5 test pass, generating assertion...
+[INFO] Add observations points in passing tests.
+[INFO] Instrumentation...
+ 20% |========== ]/ 40% |==================== ]- 60% |============================== ]\ 80% |======================================== ]|[INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 24.276 s
-[INFO] Finished at: 2018-09-22T21:27:02+02:00
+[INFO] Total time: 47.964 s
+[INFO] Finished at: 2018-09-23T13:48:40+02:00
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) on project gson: Execution default-cli of goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests failed: java.lang.RuntimeException: java.lang.NullPointerException -> [Help 1]
+[ERROR] Failed to execute goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) on project gson: Execution default-cli of goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests failed: java.lang.NullPointerException -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.
