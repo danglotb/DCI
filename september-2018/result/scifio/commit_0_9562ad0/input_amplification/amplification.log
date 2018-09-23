@@ -1,0 +1,228 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< io.scif:scifio >---------------------------
+[INFO] Building SCIFIO Core 0.37.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) @ scifio ---
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/eu/stamp-project/dspot/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.resources/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.expressions/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.runtime/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.osgi/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.common/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.jobs/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.registry/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.preferences/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.contenttype/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.app/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.filesystem/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.text/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.commands/maven-metadata.xml
+[INFO] Path to runner Classes: /home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
+[INFO] /home/spirals/danglot/.m2/repository/org/jacoco/org.jacoco.core/0.7.9/org.jacoco.core-0.7.9.jar
+[INFO] /home/spirals/danglot/.m2/repository/org/ow2/asm/asm-debug-all/5.2/asm-debug-all-5.2.jar
+[INFO] /home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
+[WARNING] automaticBuilderName: unknown automatic builder specified in configuration, going to default.
+[INFO] Default: provided Maven automatic builder.
+[INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< io.scif:scifio >---------------------------
+[INFO] Building SCIFIO Core 0.37.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ scifio ---
+[INFO] Deleting /tmp/icst-2019/september-2018/dataset/scifio_parent/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-rules) @ scifio ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.12:regex-property (sanitize-version) @ scifio ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ scifio ---
+[INFO] Executing: /bin/sh -c cd '/tmp/icst-2019/september-2018/dataset/scifio_parent' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/icst-2019/september-2018/dataset/scifio_parent
+[INFO] Storing buildNumber: 5590cffe5f32d87f00fce435b7f04bc924a7f2d4 at timestamp: 1537623932352
+[INFO] Storing buildScmBranch: master
+[INFO] 
+[INFO] --- scijava-maven-plugin:1.0.0:set-rootdir (set-rootdir) @ scifio ---
+[INFO] Setting rootdir: /tmp/icst-2019/september-2018/dataset/scifio_parent
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ scifio ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/scifio_parent/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ scifio ---
+[INFO] Compiling 304 source files to /tmp/icst-2019/september-2018/dataset/scifio_parent/target/classes
+[INFO] /tmp/icst-2019/september-2018/dataset/scifio_parent/src/main/java/io/scif/img/ImgPlusCtxCleaningProvider.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/icst-2019/september-2018/dataset/scifio_parent/src/main/java/io/scif/img/ImgPlusCtxCleaningProvider.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ scifio ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ scifio ---
+[INFO] Compiling 71 source files to /tmp/icst-2019/september-2018/dataset/scifio_parent/target/test-classes
+[INFO] /tmp/icst-2019/september-2018/dataset/scifio_parent/src/test/java/io/scif/img/cell/SCIFIOCellImgTest.java: Some input files use or override a deprecated API.
+[INFO] /tmp/icst-2019/september-2018/dataset/scifio_parent/src/test/java/io/scif/img/cell/SCIFIOCellImgTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/icst-2019/september-2018/dataset/scifio_parent/src/test/java/io/scif/io/TestParameters.java: /tmp/icst-2019/september-2018/dataset/scifio_parent/src/test/java/io/scif/io/TestParameters.java uses unchecked or unsafe operations.
+[INFO] /tmp/icst-2019/september-2018/dataset/scifio_parent/src/test/java/io/scif/io/TestParameters.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ scifio ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.0:build-classpath (default-cli) @ scifio ---
+[INFO] Wrote classpath file '/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/classpath'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 13.569 s
+[INFO] Finished at: 2018-09-22T15:45:43+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< io.scif:scifio >---------------------------
+[INFO] Building SCIFIO Core 0.37.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ scifio ---
+[INFO] Deleting /tmp/icst-2019/september-2018/dataset/scifio/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-rules) @ scifio ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.12:regex-property (sanitize-version) @ scifio ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ scifio ---
+[INFO] Executing: /bin/sh -c cd '/tmp/icst-2019/september-2018/dataset/scifio' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/icst-2019/september-2018/dataset/scifio
+[INFO] Storing buildNumber: 9562ad0a6c4132bc3881d0483b71d1f25eb6ad1a at timestamp: 1537623954638
+[INFO] Storing buildScmBranch: master
+[INFO] 
+[INFO] --- scijava-maven-plugin:1.0.0:set-rootdir (set-rootdir) @ scifio ---
+[INFO] Setting rootdir: /tmp/icst-2019/september-2018/dataset/scifio
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ scifio ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/scifio/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ scifio ---
+[INFO] Compiling 304 source files to /tmp/icst-2019/september-2018/dataset/scifio/target/classes
+[INFO] /tmp/icst-2019/september-2018/dataset/scifio/src/main/java/io/scif/gui/ComboFileFilter.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/icst-2019/september-2018/dataset/scifio/src/main/java/io/scif/gui/ComboFileFilter.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ scifio ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ scifio ---
+[INFO] Compiling 71 source files to /tmp/icst-2019/september-2018/dataset/scifio/target/test-classes
+[INFO] /tmp/icst-2019/september-2018/dataset/scifio/src/test/java/io/scif/io/LocationTest.java: Some input files use or override a deprecated API.
+[INFO] /tmp/icst-2019/september-2018/dataset/scifio/src/test/java/io/scif/io/LocationTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/icst-2019/september-2018/dataset/scifio/src/test/java/io/scif/io/TestParameters.java: /tmp/icst-2019/september-2018/dataset/scifio/src/test/java/io/scif/io/TestParameters.java uses unchecked or unsafe operations.
+[INFO] /tmp/icst-2019/september-2018/dataset/scifio/src/test/java/io/scif/io/TestParameters.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ scifio ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.0:build-classpath (default-cli) @ scifio ---
+[INFO] Wrote classpath file '/tmp/icst-2019/september-2018/dataset/scifio/target/dspot/classpath'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 13.413 s
+[INFO] Finished at: 2018-09-22T15:46:05+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Amplification of io.scif.formats.TIFFFormatTest (1 test(s))
+[INFO] Assertion amplification of io.scif.formats.TIFFFormatTest (1 test(s))
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/scifio_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/classes/:/home/spirals/danglot/.m2/repository/io/scif/scifio-jai-imageio/1.1.1/scifio-jai-imageio-1.1.1.jar:/home/spirals/danglot/.m2/repository/net/imagej/imagej-common/0.25.0/imagej-common-0.25.0.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-roi/0.5.0/imglib2-roi-0.5.0.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-realtransform/2.0.0-beta-38/imglib2-realtransform-2.0.0-beta-38.jar:/home/spirals/danglot/.m2/repository/gov/nist/math/jama/1.0.3/jama-1.0.3.jar:/home/spirals/danglot/.m2/repository/jitk/jitk-tps/3.0.0/jitk-tps-3.0.0.jar:/home/spirals/danglot/.m2/repository/com/googlecode/efficient-java-matrix-library/ejml/0.24/ejml-0.24.jar:/home/spirals/danglot/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/spirals/danglot/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar:/home/spirals/danglot/.m2/repository/edu/ucar/udunits/4.3.18/udunits-4.3.18.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2/5.1.0/imglib2-5.1.0.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-cache/1.0.0-beta-8/imglib2-cache-1.0.0-beta-8.jar:/home/spirals/danglot/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.4.0/caffeine-2.4.0.jar:/home/spirals/danglot/.m2/repository/org/scijava/scijava-common/2.69.0/scijava-common-2.69.0.jar:/home/spirals/danglot/.m2/repository/org/scijava/parsington/1.0.1/parsington-1.0.1.jar:/home/spirals/danglot/.m2/repository/com/googlecode/gentyref/gentyref/1.1.0/gentyref-1.1.0.jar:/home/spirals/danglot/.m2/repository/org/bushe/eventbus/1.4/eventbus-1.4.jar:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner io.scif.formats.TIFFFormatTest testTiffWithoutMetadata
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
+[WARNING] Timeout when running java -classpath /tmp/icst-2019/september-2018/dataset/scifio_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/classes/:/home/spirals/danglot/.m2/repository/io/scif/scifio-jai-imageio/1.1.1/scifio-jai-imageio-1.1.1.jar:/home/spirals/danglot/.m2/repository/net/imagej/imagej-common/0.25.0/imagej-common-0.25.0.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-roi/0.5.0/imglib2-roi-0.5.0.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-realtransform/2.0.0-beta-38/imglib2-realtransform-2.0.0-beta-38.jar:/home/spirals/danglot/.m2/repository/gov/nist/math/jama/1.0.3/jama-1.0.3.jar:/home/spirals/danglot/.m2/repository/jitk/jitk-tps/3.0.0/jitk-tps-3.0.0.jar:/home/spirals/danglot/.m2/repository/com/googlecode/efficient-java-matrix-library/ejml/0.24/ejml-0.24.jar:/home/spirals/danglot/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/spirals/danglot/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar:/home/spirals/danglot/.m2/repository/edu/ucar/udunits/4.3.18/udunits-4.3.18.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2/5.1.0/imglib2-5.1.0.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-cache/1.0.0-beta-8/imglib2-cache-1.0.0-beta-8.jar:/home/spirals/danglot/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.4.0/caffeine-2.4.0.jar:/home/spirals/danglot/.m2/repository/org/scijava/scijava-common/2.69.0/scijava-common-2.69.0.jar:/home/spirals/danglot/.m2/repository/org/scijava/parsington/1.0.1/parsington-1.0.1.jar:/home/spirals/danglot/.m2/repository/com/googlecode/gentyref/gentyref/1.1.0/gentyref-1.1.0.jar:/home/spirals/danglot/.m2/repository/org/bushe/eventbus/1.4/eventbus-1.4.jar:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner io.scif.formats.TIFFFormatTest testTiffWithoutMetadata
+[WARNING] Timeout during execution of io.scif.formats.TIFFFormatTest: testTiffWithoutMetadata
+eu.stamp_project.dspot.AmplificationException: java.util.concurrent.TimeoutException
+	at eu.stamp_project.utils.compilation.TestRunner.runGivenTestMethods(TestRunner.java:75)
+	at eu.stamp_project.utils.compilation.TestCompiler.compileAndRun(TestCompiler.java:99)
+	at eu.stamp_project.utils.compilation.TestCompiler.compileRunAndDiscardUncompilableAndFailingTestMethods(TestCompiler.java:55)
+	at eu.stamp_project.dspot.Amplification.amplification(Amplification.java:82)
+	at eu.stamp_project.dspot.DSpot.amplifyTest(DSpot.java:180)
+	at eu.stamp_project.dspot.DSpot.amplifyTest(DSpot.java:170)
+	at eu.stamp_project.Main.lambda$run$1(Main.java:69)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1374)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at eu.stamp_project.Main.run(Main.java:71)
+	at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:263)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:146)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:954)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:192)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at eu.stamp_project.testrunner.EntryPoint.runGivenCommandLine(EntryPoint.java:356)
+	at eu.stamp_project.testrunner.EntryPoint.runTests(EntryPoint.java:178)
+	at eu.stamp_project.testrunner.EntryPoint.runTests(EntryPoint.java:165)
+	at eu.stamp_project.utils.compilation.TestRunner.runGivenTestMethods(TestRunner.java:61)
+	... 37 more
+[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+[INFO] Applying Input-amplification and Assertion-amplification test by test.
+[INFO] Amplification of testTiffWithoutMetadata, (1/1)
+[INFO] iteration 0 / 3
+[INFO] 1 tests selected to be amplified over 1 available tests
+[INFO] Amplification of inputs...
+100% |================================================== ]/
+[INFO] 49 new tests generated
+[INFO] Run tests. (49)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/scifio_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/classes/:/home/spirals/danglot/.m2/repository/io/scif/scifio-jai-imageio/1.1.1/scifio-jai-imageio-1.1.1.jar:/home/spirals/danglot/.m2/repository/net/imagej/imagej-common/0.25.0/imagej-common-0.25.0.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-roi/0.5.0/imglib2-roi-0.5.0.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-realtransform/2.0.0-beta-38/imglib2-realtransform-2.0.0-beta-38.jar:/home/spirals/danglot/.m2/repository/gov/nist/math/jama/1.0.3/jama-1.0.3.jar:/home/spirals/danglot/.m2/repository/jitk/jitk-tps/3.0.0/jitk-tps-3.0.0.jar:/home/spirals/danglot/.m2/repository/com/googlecode/efficient-java-matrix-library/ejml/0.24/ejml-0.24.jar:/home/spirals/danglot/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/spirals/danglot/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar:/home/spirals/danglot/.m2/repository/edu/ucar/udunits/4.3.18/udunits-4.3.18.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2/5.1.0/imglib2-5.1.0.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-cache/1.0.0-beta-8/imglib2-cache-1.0.0-beta-8.jar:/home/spirals/danglot/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.4.0/caffeine-2.4.0.jar:/home/spirals/danglot/.m2/repository/org/scijava/scijava-common/2.69.0/scijava-common-2.69.0.jar:/home/spirals/danglot/.m2/repository/org/scijava/parsington/1.0.1/parsington-1.0.1.jar:/home/spirals/danglot/.m2/repository/com/googlecode/gentyref/gentyref/1.1.0/gentyref-1.1.0.jar:/home/spirals/danglot/.m2/repository/org/bushe/eventbus/1.4/eventbus-1.4.jar:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner io.scif.formats.TIFFFormatTest testTiffWithoutMetadatalitString1:testTiffWithoutMetadatalitString2:testTiffWithoutMetadatalitString3:testTiffWithoutMetadatalitString4:testTiffWithoutMetadatalitString5:testTiffWithoutMetadatalitString6:testTiffWithoutMetadatalitString7:testTiffWithoutMetadatalitNum8:testTiffWithoutMetadatalitNum9:testTiffWithoutMetadatalitNum10:testTiffWithoutMetadatalitNum11:testTiffWithoutMetadatalitNum12:testTiffWithoutMetadatalitNum13:testTiffWithoutMetadatalitNum14:testTiffWithoutMetadatalitNum15:testTiffWithoutMetadatalitNum16:testTiffWithoutMetadatalitNum17:testTiffWithoutMetadatalitNum18:testTiffWithoutMetadatalitNum19:testTiffWithoutMetadatalitNum20:testTiffWithoutMetadatalitNum21:testTiffWithoutMetadatalitNum22:testTiffWithoutMetadatalitNum23:testTiffWithoutMetadatalitNum24:testTiffWithoutMetadatalitNum25:testTiffWithoutMetadatalitNum26:testTiffWithoutMetadatalitNum27:testTiffWithoutMetadatalitNum28:testTiffWithoutMetadatalitNum29:testTiffWithoutMetadatalitNum30:testTiffWithoutMetadatalitNum31:testTiffWithoutMetadatalitNum32:testTiffWithoutMetadatalitNum33:testTiffWithoutMetadatalitNum34:testTiffWithoutMetadatalitNum35:testTiffWithoutMetadatalitNum36:testTiffWithoutMetadata_add37:testTiffWithoutMetadata_add38:testTiffWithoutMetadata_add39:testTiffWithoutMetadata_add40:testTiffWithoutMetadata_add41:testTiffWithoutMetadata_add42:testTiffWithoutMetadata_add43:testTiffWithoutMetadata_add44:testTiffWithoutMetadata_add45:testTiffWithoutMetadata_add46:testTiffWithoutMetadata_add47:testTiffWithoutMetadata_add48:testTiffWithoutMetadatanull49
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testTiffWithoutMetadata_add37,testTiffWithoutMetadata_add38,testTiffWithoutMetadata_add39,testTiffWithoutMetadata_add40,testTiffWithoutMetadata_add41,testTiffWithoutMetadata_add42,testTiffWithoutMetadata_add43,testTiffWithoutMetadata_add44,testTiffWithoutMetadata_add45,testTiffWithoutMetadata_add46,testTiffWithoutMetadata_add47,testTiffWithoutMetadata_add48,testTiffWithoutMetadatalitNum12,testTiffWithoutMetadatalitNum14,testTiffWithoutMetadatalitNum15,testTiffWithoutMetadatalitNum16,testTiffWithoutMetadatalitNum17,testTiffWithoutMetadatalitNum18,testTiffWithoutMetadatalitNum19,testTiffWithoutMetadatalitNum20,testTiffWithoutMetadatalitNum21,testTiffWithoutMetadatalitNum22,testTiffWithoutMetadatalitNum23,testTiffWithoutMetadatalitNum24,testTiffWithoutMetadatalitNum25,testTiffWithoutMetadatalitNum26,testTiffWithoutMetadatalitNum27,testTiffWithoutMetadatalitNum28,testTiffWithoutMetadatalitNum29,testTiffWithoutMetadatalitNum30,testTiffWithoutMetadatalitNum32,testTiffWithoutMetadatalitNum35,testTiffWithoutMetadatalitNum8(io.scif.formats.TIFFFormatTest): Index: 1, Size: 1,testTiffWithoutMetadatalitNum9(io.scif.formats.TIFFFormatTest): -1,testTiffWithoutMetadatanull49(io.scif.formats.TIFFFormatTest): null,testTiffWithoutMetadatalitString1(io.scif.formats.TIFFFormatTest): null,testTiffWithoutMetadatalitString2(io.scif.formats.TIFFFormatTest): null,testTiffWithoutMetadatalitString3(io.scif.formats.TIFFFormatTest): null,testTiffWithoutMetadatalitString4(io.scif.formats.TIFFFormatTest): null,testTiffWithoutMetadatalitString5(io.scif.formats.TIFFFormatTest): Attempting to read or write from a io.scif.io.VirtualHandle. There is no source to operate on.,testTiffWithoutMetadatalitString6(io.scif.formats.TIFFFormatTest): null,testTiffWithoutMetadatalitString7(io.scif.formats.TIFFFormatTest): null,testTiffWithoutMetadatalitNum10(io.scif.formats.TIFFFormatTest): Index: 2147483647, Size: 1,testTiffWithoutMetadatalitNum11(io.scif.formats.TIFFFormatTest): -2147483648,testTiffWithoutMetadatalitNum13(io.scif.formats.TIFFFormatTest): Index: 2145706595, Size: 1,testTiffWithoutMetadatalitNum31(io.scif.formats.TIFFFormatTest): Index: 3, Size: 3,testTiffWithoutMetadatalitNum33(io.scif.formats.TIFFFormatTest): Index: 2147483647, Size: 3,testTiffWithoutMetadatalitNum34(io.scif.formats.TIFFFormatTest): -2147483648,testTiffWithoutMetadatalitNum36(io.scif.formats.TIFFFormatTest): Index: 323897869, Size: 3
+[INFO] 32 test pass, generating assertion...
+[INFO] Add observations points in passing tests.
+[INFO] Instrumentation...
+  3% |= ]/  6% |=== ]-  9% |==== ]\ 12% |====== ]| 15% |======= ]/ 18% |========= ]- 21% |========== ]\ 25% |============ ]| 28% |============== ]/ 31% |=============== ]- 34% |================= ]\ 37% |================== ]| 40% |==================== ]/ 43% |===================== ]- 46% |======================= ]\ 50% |========================= ]| 53% |========================== ]/ 56% |============================ ]- 59% |============================= ]\ 62% |=============================== ]| 65% |================================ ]/ 68% |================================== ]- 71% |=================================== ]\ 75% |===================================== ]| 78% |======================================= ]/ 81% |======================================== ]- 84% |========================================== ]\ 87% |=========================================== ]| 90% |============================================= ]/ 93% |============================================== ]- 96% |================================================ ]\100% |================================================== ]|
+[INFO] Run instrumented tests. (96)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/scifio_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/classes/:/home/spirals/danglot/.m2/repository/io/scif/scifio-jai-imageio/1.1.1/scifio-jai-imageio-1.1.1.jar:/home/spirals/danglot/.m2/repository/net/imagej/imagej-common/0.25.0/imagej-common-0.25.0.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-roi/0.5.0/imglib2-roi-0.5.0.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-realtransform/2.0.0-beta-38/imglib2-realtransform-2.0.0-beta-38.jar:/home/spirals/danglot/.m2/repository/gov/nist/math/jama/1.0.3/jama-1.0.3.jar:/home/spirals/danglot/.m2/repository/jitk/jitk-tps/3.0.0/jitk-tps-3.0.0.jar:/home/spirals/danglot/.m2/repository/com/googlecode/efficient-java-matrix-library/ejml/0.24/ejml-0.24.jar:/home/spirals/danglot/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/spirals/danglot/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar:/home/spirals/danglot/.m2/repository/edu/ucar/udunits/4.3.18/udunits-4.3.18.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2/5.1.0/imglib2-5.1.0.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-cache/1.0.0-beta-8/imglib2-cache-1.0.0-beta-8.jar:/home/spirals/danglot/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.4.0/caffeine-2.4.0.jar:/home/spirals/danglot/.m2/repository/org/scijava/scijava-common/2.69.0/scijava-common-2.69.0.jar:/home/spirals/danglot/.m2/repository/org/scijava/parsington/1.0.1/parsington-1.0.1.jar:/home/spirals/danglot/.m2/repository/com/googlecode/gentyref/gentyref/1.1.0/gentyref-1.1.0.jar:/home/spirals/danglot/.m2/repository/org/bushe/eventbus/1.4/eventbus-1.4.jar:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner io.scif.formats.TIFFFormatTest testTiffWithoutMetadatalitNum12_withlog0:testTiffWithoutMetadatalitNum14_withlog0:testTiffWithoutMetadatalitNum15_withlog0:testTiffWithoutMetadatalitNum16_withlog0:testTiffWithoutMetadatalitNum17_withlog0:testTiffWithoutMetadatalitNum18_withlog0:testTiffWithoutMetadatalitNum19_withlog0:testTiffWithoutMetadatalitNum20_withlog0:testTiffWithoutMetadatalitNum21_withlog0:testTiffWithoutMetadatalitNum22_withlog0:testTiffWithoutMetadatalitNum23_withlog0:testTiffWithoutMetadatalitNum24_withlog0:testTiffWithoutMetadatalitNum25_withlog0:testTiffWithoutMetadatalitNum26_withlog0:testTiffWithoutMetadatalitNum27_withlog0:testTiffWithoutMetadatalitNum28_withlog0:testTiffWithoutMetadatalitNum29_withlog0:testTiffWithoutMetadatalitNum30_withlog0:testTiffWithoutMetadatalitNum32_withlog0:testTiffWithoutMetadatalitNum35_withlog0:testTiffWithoutMetadata_add37_withlog0:testTiffWithoutMetadata_add38_withlog0:testTiffWithoutMetadata_add39_withlog0:testTiffWithoutMetadata_add40_withlog0:testTiffWithoutMetadata_add41_withlog0:testTiffWithoutMetadata_add42_withlog0:testTiffWithoutMetadata_add43_withlog0:testTiffWithoutMetadata_add44_withlog0:testTiffWithoutMetadata_add45_withlog0:testTiffWithoutMetadata_add46_withlog0:testTiffWithoutMetadata_add47_withlog0:testTiffWithoutMetadata_add48_withlog0:testTiffWithoutMetadatalitNum12_withlog1:testTiffWithoutMetadatalitNum14_withlog1:testTiffWithoutMetadatalitNum15_withlog1:testTiffWithoutMetadatalitNum16_withlog1:testTiffWithoutMetadatalitNum17_withlog1:testTiffWithoutMetadatalitNum18_withlog1:testTiffWithoutMetadatalitNum19_withlog1:testTiffWithoutMetadatalitNum20_withlog1:testTiffWithoutMetadatalitNum21_withlog1:testTiffWithoutMetadatalitNum22_withlog1:testTiffWithoutMetadatalitNum23_withlog1:testTiffWithoutMetadatalitNum24_withlog1:testTiffWithoutMetadatalitNum25_withlog1:testTiffWithoutMetadatalitNum26_withlog1:testTiffWithoutMetadatalitNum27_withlog1:testTiffWithoutMetadatalitNum28_withlog1:testTiffWithoutMetadatalitNum29_withlog1:testTiffWithoutMetadatalitNum30_withlog1:testTiffWithoutMetadatalitNum32_withlog1:testTiffWithoutMetadatalitNum35_withlog1:testTiffWithoutMetadata_add37_withlog1:testTiffWithoutMetadata_add38_withlog1:testTiffWithoutMetadata_add39_withlog1:testTiffWithoutMetadata_add40_withlog1:testTiffWithoutMetadata_add41_withlog1:testTiffWithoutMetadata_add42_withlog1:testTiffWithoutMetadata_add43_withlog1:testTiffWithoutMetadata_add44_withlog1:testTiffWithoutMetadata_add45_withlog1:testTiffWithoutMetadata_add46_withlog1:testTiffWithoutMetadata_add47_withlog1:testTiffWithoutMetadata_add48_withlog1:testTiffWithoutMetadatalitNum12_withlog2:testTiffWithoutMetadatalitNum14_withlog2:testTiffWithoutMetadatalitNum15_withlog2:testTiffWithoutMetadatalitNum16_withlog2:testTiffWithoutMetadatalitNum17_withlog2:testTiffWithoutMetadatalitNum18_withlog2:testTiffWithoutMetadatalitNum19_withlog2:testTiffWithoutMetadatalitNum20_withlog2:testTiffWithoutMetadatalitNum21_withlog2:testTiffWithoutMetadatalitNum22_withlog2:testTiffWithoutMetadatalitNum23_withlog2:testTiffWithoutMetadatalitNum24_withlog2:testTiffWithoutMetadatalitNum25_withlog2:testTiffWithoutMetadatalitNum26_withlog2:testTiffWithoutMetadatalitNum27_withlog2:testTiffWithoutMetadatalitNum28_withlog2:testTiffWithoutMetadatalitNum29_withlog2:testTiffWithoutMetadatalitNum30_withlog2:testTiffWithoutMetadatalitNum32_withlog2:testTiffWithoutMetadatalitNum35_withlog2:testTiffWithoutMetadata_add37_withlog2:testTiffWithoutMetadata_add38_withlog2:testTiffWithoutMetadata_add39_withlog2:testTiffWithoutMetadata_add40_withlog2:testTiffWithoutMetadata_add41_withlog2:testTiffWithoutMetadata_add42_withlog2:testTiffWithoutMetadata_add43_withlog2:testTiffWithoutMetadata_add44_withlog2:testTiffWithoutMetadata_add45_withlog2:testTiffWithoutMetadata_add46_withlog2:testTiffWithoutMetadata_add47_withlog2:testTiffWithoutMetadata_add48_withlog2
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/observations.ser
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testTiffWithoutMetadatalitNum26_withlog0,testTiffWithoutMetadatalitNum26_withlog1,testTiffWithoutMetadatalitNum26_withlog2,testTiffWithoutMetadata_add41_withlog0,testTiffWithoutMetadata_add41_withlog1,testTiffWithoutMetadata_add41_withlog2,testTiffWithoutMetadatalitNum25_withlog0,testTiffWithoutMetadatalitNum25_withlog1,testTiffWithoutMetadatalitNum25_withlog2,testTiffWithoutMetadata_add40_withlog0,testTiffWithoutMetadata_add40_withlog1,testTiffWithoutMetadata_add40_withlog2,testTiffWithoutMetadata_add39_withlog0,testTiffWithoutMetadata_add39_withlog1,testTiffWithoutMetadata_add39_withlog2,testTiffWithoutMetadatalitNum24_withlog0,testTiffWithoutMetadatalitNum24_withlog1,testTiffWithoutMetadatalitNum24_withlog2,testTiffWithoutMetadata_add38_withlog0,testTiffWithoutMetadata_add38_withlog1,testTiffWithoutMetadata_add38_withlog2,testTiffWithoutMetadatalitNum23_withlog0,testTiffWithoutMetadatalitNum23_withlog1,testTiffWithoutMetadatalitNum23_withlog2,testTiffWithoutMetadata_add37_withlog0,testTiffWithoutMetadata_add37_withlog1,testTiffWithoutMetadata_add37_withlog2,testTiffWithoutMetadatalitNum22_withlog0,testTiffWithoutMetadatalitNum22_withlog1,testTiffWithoutMetadatalitNum22_withlog2,testTiffWithoutMetadatalitNum21_withlog0,testTiffWithoutMetadatalitNum21_withlog1,testTiffWithoutMetadatalitNum21_withlog2,testTiffWithoutMetadatalitNum20_withlog0,testTiffWithoutMetadatalitNum20_withlog1,testTiffWithoutMetadatalitNum20_withlog2,testTiffWithoutMetadatalitNum19_withlog0,testTiffWithoutMetadatalitNum19_withlog1,testTiffWithoutMetadatalitNum19_withlog2,testTiffWithoutMetadatalitNum18_withlog0,testTiffWithoutMetadatalitNum18_withlog1,testTiffWithoutMetadatalitNum18_withlog2,testTiffWithoutMetadatalitNum17_withlog0,testTiffWithoutMetadatalitNum17_withlog1,testTiffWithoutMetadatalitNum17_withlog2,testTiffWithoutMetadatalitNum16_withlog0,testTiffWithoutMetadatalitNum16_withlog1,testTiffWithoutMetadatalitNum16_withlog2,testTiffWithoutMetadatalitNum15_withlog0,testTiffWithoutMetadatalitNum15_withlog1,testTiffWithoutMetadatalitNum15_withlog2,testTiffWithoutMetadatalitNum14_withlog0,testTiffWithoutMetadatalitNum14_withlog1,testTiffWithoutMetadatalitNum14_withlog2,testTiffWithoutMetadatalitNum12_withlog0,testTiffWithoutMetadatalitNum12_withlog1,testTiffWithoutMetadatalitNum12_withlog2,testTiffWithoutMetadatalitNum35_withlog0,testTiffWithoutMetadatalitNum35_withlog1,testTiffWithoutMetadatalitNum35_withlog2,testTiffWithoutMetadata_add48_withlog0,testTiffWithoutMetadata_add48_withlog1,testTiffWithoutMetadata_add48_withlog2,testTiffWithoutMetadata_add47_withlog0,testTiffWithoutMetadata_add47_withlog1,testTiffWithoutMetadata_add47_withlog2,testTiffWithoutMetadatalitNum32_withlog0,testTiffWithoutMetadatalitNum32_withlog1,testTiffWithoutMetadatalitNum32_withlog2,testTiffWithoutMetadata_add46_withlog0,testTiffWithoutMetadata_add46_withlog1,testTiffWithoutMetadata_add46_withlog2,testTiffWithoutMetadata_add45_withlog0,testTiffWithoutMetadata_add45_withlog1,testTiffWithoutMetadata_add45_withlog2,testTiffWithoutMetadatalitNum30_withlog0,testTiffWithoutMetadatalitNum30_withlog1,testTiffWithoutMetadatalitNum30_withlog2,testTiffWithoutMetadatalitNum29_withlog0,testTiffWithoutMetadatalitNum29_withlog1,testTiffWithoutMetadatalitNum29_withlog2,testTiffWithoutMetadata_add44_withlog0,testTiffWithoutMetadata_add44_withlog1,testTiffWithoutMetadata_add44_withlog2,testTiffWithoutMetadatalitNum28_withlog0,testTiffWithoutMetadatalitNum28_withlog1,testTiffWithoutMetadatalitNum28_withlog2,testTiffWithoutMetadata_add43_withlog0,testTiffWithoutMetadata_add43_withlog1,testTiffWithoutMetadata_add43_withlog2,testTiffWithoutMetadatalitNum27_withlog0,testTiffWithoutMetadatalitNum27_withlog1,testTiffWithoutMetadatalitNum27_withlog2,testTiffWithoutMetadata_add42_withlog0,testTiffWithoutMetadata_add42_withlog1,testTiffWithoutMetadata_add42_withlog2
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:03 min
+[INFO] Finished at: 2018-09-22T15:46:25+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) on project scifio: Execution default-cli of goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests failed: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.ClassNotFoundException: io.scif.DefaultMetaTable -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
