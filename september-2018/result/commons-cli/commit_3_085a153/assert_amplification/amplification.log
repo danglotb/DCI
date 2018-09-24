@@ -81,29 +81,29 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
 [DEBUG] Using local repository at /home/spirals/danglot/.m2/repository
 [DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /home/spirals/danglot/.m2/repository
 [INFO] Scanning for projects...
-[DEBUG] Extension realms for project commons-cli:commons-cli:jar:1.5-SNAPSHOT: (none)
+[DEBUG] Extension realms for project commons-cli:commons-cli:jar:1.4-SNAPSHOT: (none)
 [DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
-[DEBUG] Extension realms for project org.apache.commons:commons-parent:pom:42: (none)
+[DEBUG] Extension realms for project org.apache.commons:commons-parent:pom:37: (none)
 [DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
-[DEBUG] Extension realms for project org.apache:apache:pom:18: (none)
+[DEBUG] Extension realms for project org.apache:apache:pom:16: (none)
 [DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
 [DEBUG] === REACTOR BUILD PLAN ================================================
-[DEBUG] Project: commons-cli:commons-cli:jar:1.5-SNAPSHOT
+[DEBUG] Project: commons-cli:commons-cli:jar:1.4-SNAPSHOT
 [DEBUG] Tasks:   [eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests]
 [DEBUG] Style:   Regular
 [DEBUG] =======================================================================
 [INFO] 
 [INFO] ----------------------< commons-cli:commons-cli >-----------------------
-[INFO] Building Apache Commons CLI 1.5-SNAPSHOT
+[INFO] Building Apache Commons CLI 1.4-SNAPSHOT
 [INFO] --------------------------------[ jar ]---------------------------------
 [DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
 [DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
 [DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
 [DEBUG] === PROJECT BUILD PLAN ================================================
-[DEBUG] Project:       commons-cli:commons-cli:1.5-SNAPSHOT
+[DEBUG] Project:       commons-cli:commons-cli:1.4-SNAPSHOT
 [DEBUG] Dependencies (collect): []
 [DEBUG] Dependencies (resolve): [test]
-[DEBUG] Repositories (dependencies): [apache.snapshots (https://repository.apache.org/snapshots, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (dependencies): [apache.snapshots (http://repository.apache.org/snapshots, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
 [DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
 [DEBUG] -----------------------------------------------------------------------
 [DEBUG] Goal:          eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli)
@@ -139,8 +139,8 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=808703, ConflictMarker.markTime=450165, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=491505, ConflictIdSorter.topsortTime=372794, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=3281927, ConflictResolver.conflictItemCount=2, DefaultDependencyCollector.collectTime=26160237, DefaultDependencyCollector.transformTime=7770090}
-[DEBUG] commons-cli:commons-cli:jar:1.5-SNAPSHOT
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=854368, ConflictMarker.markTime=451398, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=462611, ConflictIdSorter.topsortTime=338393, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2885397, ConflictResolver.conflictItemCount=2, DefaultDependencyCollector.collectTime=21728365, DefaultDependencyCollector.transformTime=7490121}
+[DEBUG] commons-cli:commons-cli:jar:1.4-SNAPSHOT
 [DEBUG]    junit:junit:jar:4.12:test
 [DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test
 [INFO] 
@@ -371,7 +371,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=2873418, ConflictMarker.markTime=943004, ConflictMarker.nodeCount=496, ConflictIdSorter.graphTime=1561979, ConflictIdSorter.topsortTime=141186, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=14407330, ConflictResolver.conflictItemCount=287, DefaultDependencyCollector.collectTime=4434879307, DefaultDependencyCollector.transformTime=20091701}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=2921921, ConflictMarker.markTime=874651, ConflictMarker.nodeCount=496, ConflictIdSorter.graphTime=1598411, ConflictIdSorter.topsortTime=157051, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=13162144, ConflictResolver.conflictItemCount=287, DefaultDependencyCollector.collectTime=4441904642, DefaultDependencyCollector.transformTime=18910360}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -553,10 +553,10 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG]   (f) iteration = 3
 [DEBUG]   (f) maxTestAmplified = 200
 [DEBUG]   (f) noMinimize = false
-[DEBUG]   (f) outputPath = /tmp/icst-2019/september-2018/result/commons-cli/commit_0_0b45395/assert_amplification
+[DEBUG]   (f) outputPath = /tmp/icst-2019/september-2018/result/commons-cli/commit_3_085a153/assert_amplification
 [DEBUG]   (f) pathToSecondVersion = /tmp/icst-2019/september-2018/dataset/commons-cli
-[DEBUG]   (f) pathToTestListCsv = /tmp/icst-2019/september-2018/result/commons-cli/commit_0_0b45395/testsThatExecuteTheChanges.csv
-[DEBUG]   (f) project = MavenProject: commons-cli:commons-cli:1.5-SNAPSHOT @ /tmp/icst-2019/september-2018/dataset/commons-cli_parent/pom.xml
+[DEBUG]   (f) pathToTestListCsv = /tmp/icst-2019/september-2018/result/commons-cli/commit_3_085a153/testsThatExecuteTheChanges.csv
+[DEBUG]   (f) project = MavenProject: commons-cli:commons-cli:1.4-SNAPSHOT @ /tmp/icst-2019/september-2018/dataset/commons-cli_parent/pom.xml
 [DEBUG]   (f) randomSeed = 23
 [DEBUG]   (f) test = [all]
 [DEBUG]   (f) testCriterion = ChangeDetectorSelector
@@ -577,16 +577,16 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] ----------------------< commons-cli:commons-cli >-----------------------
-[INFO] Building Apache Commons CLI 1.5-SNAPSHOT
+[INFO] Building Apache Commons CLI 1.4-SNAPSHOT
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ commons-cli ---
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ commons-cli ---
 [INFO] Deleting /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target
 [INFO] 
-[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-3) @ commons-cli ---
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven-3) @ commons-cli ---
 [INFO] Skipping Rule Enforcement.
 [INFO] 
-[INFO] --- build-helper-maven-plugin:1.10:parse-version (parse-version) @ commons-cli ---
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ commons-cli ---
 [INFO] 
 [INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-cli ---
 [INFO] Executing tasks
@@ -595,70 +595,72 @@ main:
      [copy] Copying 2 files to /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/apidocs/META-INF
 [INFO] Executed tasks
 [INFO] 
-[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ commons-cli ---
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ commons-cli ---
 [INFO] 
-[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-cli ---
-[INFO] Executing: /bin/sh -c cd '/tmp/icst-2019/september-2018/dataset/commons-cli_parent' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] --- buildnumber-maven-plugin:1.3:create (default) @ commons-cli ---
+[INFO] Executing: /bin/sh -c cd /tmp/icst-2019/september-2018/dataset/commons-cli_parent && svn --non-interactive info
 [INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-cli_parent
-[INFO] Storing buildNumber: 70a392756c713f404fed0e3ddd48aa18ce20485f at timestamp: 1537788835213
-[INFO] Storing buildScmBranch: master
+[INFO] Storing buildNumber: ?????? at timestamp: 1537788962940
+[INFO] Executing: /bin/sh -c cd /tmp/icst-2019/september-2018/dataset/commons-cli_parent && svn --non-interactive info
+[INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-cli_parent
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
 [INFO] 
 [INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-cli ---
-[INFO] Using 'utf-8' encoding to copy filtered resources.
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
 [INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/commons-cli_parent/src/main/resources
 [INFO] Copying 2 resources to META-INF
 [INFO] 
-[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ commons-cli ---
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ commons-cli ---
 [INFO] Changes detected - recompiling the module!
 [INFO] Compiling 23 source files to /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes
 [INFO] /tmp/icst-2019/september-2018/dataset/commons-cli_parent/src/main/java/org/apache/commons/cli/Parser.java: Some input files use unchecked or unsafe operations.
 [INFO] /tmp/icst-2019/september-2018/dataset/commons-cli_parent/src/main/java/org/apache/commons/cli/Parser.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
-[INFO] --- maven-bundle-plugin:3.0.1:manifest (bundle-manifest) @ commons-cli ---
+[INFO] --- maven-bundle-plugin:2.5.3:manifest (bundle-manifest) @ commons-cli ---
 [INFO] 
-[INFO] --- animal-sniffer-maven-plugin:1.15:check (checkAPIcompatibility) @ commons-cli ---
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (checkAPIcompatibility) @ commons-cli ---
 [INFO] Checking unresolved references to org.codehaus.mojo.signature:java15:1.0
 [INFO] 
 [INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ commons-cli ---
-[INFO] Using 'utf-8' encoding to copy filtered resources.
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
 [INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/commons-cli_parent/src/test/resources
 [INFO] Copying 2 resources to META-INF
 [INFO] 
-[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ commons-cli ---
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ commons-cli ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 27 source files to /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes
+[INFO] Compiling 24 source files to /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes
 [INFO] /tmp/icst-2019/september-2018/dataset/commons-cli_parent/src/test/java/org/apache/commons/cli/bug/BugCLI71Test.java: Some input files use or override a deprecated API.
 [INFO] /tmp/icst-2019/september-2018/dataset/commons-cli_parent/src/test/java/org/apache/commons/cli/bug/BugCLI71Test.java: Recompile with -Xlint:deprecation for details.
 [INFO] 
-[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (prepare-agent) @ commons-cli ---
-[INFO] argLine set to -javaagent:/home/spirals/danglot/.m2/repository/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/jacoco.exec
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (prepare-agent) @ commons-cli ---
+[INFO] argLine set to -javaagent:/home/spirals/danglot/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/jacoco.exec
 [INFO] 
-[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ commons-cli ---
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ commons-cli ---
 [INFO] Tests are skipped.
 [INFO] 
-[INFO] --- maven-dependency-plugin:2.10:build-classpath (default-cli) @ commons-cli ---
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ commons-cli ---
 [INFO] Wrote classpath file '/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/classpath'.
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 8.363 s
-[INFO] Finished at: 2018-09-24T13:34:00+02:00
+[INFO] Total time: 8.028 s
+[INFO] Finished at: 2018-09-24T13:36:07+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
 [WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] ----------------------< commons-cli:commons-cli >-----------------------
-[INFO] Building Apache Commons CLI 1.5-SNAPSHOT
+[INFO] Building Apache Commons CLI 1.4-SNAPSHOT
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ commons-cli ---
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ commons-cli ---
 [INFO] Deleting /tmp/icst-2019/september-2018/dataset/commons-cli/target
 [INFO] 
-[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-3) @ commons-cli ---
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven-3) @ commons-cli ---
 [INFO] Skipping Rule Enforcement.
 [INFO] 
-[INFO] --- build-helper-maven-plugin:1.10:parse-version (parse-version) @ commons-cli ---
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ commons-cli ---
 [INFO] 
 [INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-cli ---
 [INFO] Executing tasks
@@ -667,184 +669,304 @@ main:
      [copy] Copying 2 files to /tmp/icst-2019/september-2018/dataset/commons-cli/target/apidocs/META-INF
 [INFO] Executed tasks
 [INFO] 
-[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ commons-cli ---
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ commons-cli ---
 [INFO] 
-[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-cli ---
-[INFO] Executing: /bin/sh -c cd '/tmp/icst-2019/september-2018/dataset/commons-cli' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] --- buildnumber-maven-plugin:1.3:create (default) @ commons-cli ---
+[INFO] Executing: /bin/sh -c cd /tmp/icst-2019/september-2018/dataset/commons-cli && svn --non-interactive info
 [INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-cli
-[INFO] Storing buildNumber: 0b453953fa5f55cf2e8fd034d4d55972deb7647a at timestamp: 1537788847234
-[INFO] Storing buildScmBranch: master
+[INFO] Storing buildNumber: ?????? at timestamp: 1537788974518
+[INFO] Executing: /bin/sh -c cd /tmp/icst-2019/september-2018/dataset/commons-cli && svn --non-interactive info
+[INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-cli
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
 [INFO] 
 [INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-cli ---
-[INFO] Using 'utf-8' encoding to copy filtered resources.
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
 [INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/commons-cli/src/main/resources
 [INFO] Copying 2 resources to META-INF
 [INFO] 
-[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ commons-cli ---
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ commons-cli ---
 [INFO] Changes detected - recompiling the module!
 [INFO] Compiling 23 source files to /tmp/icst-2019/september-2018/dataset/commons-cli/target/classes
 [INFO] /tmp/icst-2019/september-2018/dataset/commons-cli/src/main/java/org/apache/commons/cli/Parser.java: Some input files use unchecked or unsafe operations.
 [INFO] /tmp/icst-2019/september-2018/dataset/commons-cli/src/main/java/org/apache/commons/cli/Parser.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
-[INFO] --- maven-bundle-plugin:3.0.1:manifest (bundle-manifest) @ commons-cli ---
+[INFO] --- maven-bundle-plugin:2.5.3:manifest (bundle-manifest) @ commons-cli ---
 [INFO] 
-[INFO] --- animal-sniffer-maven-plugin:1.15:check (checkAPIcompatibility) @ commons-cli ---
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (checkAPIcompatibility) @ commons-cli ---
 [INFO] Checking unresolved references to org.codehaus.mojo.signature:java15:1.0
 [INFO] 
 [INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ commons-cli ---
-[INFO] Using 'utf-8' encoding to copy filtered resources.
-[INFO] Copying 1 resource
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/commons-cli/src/test/resources
 [INFO] Copying 2 resources to META-INF
 [INFO] 
-[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ commons-cli ---
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ commons-cli ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 27 source files to /tmp/icst-2019/september-2018/dataset/commons-cli/target/test-classes
+[INFO] Compiling 25 source files to /tmp/icst-2019/september-2018/dataset/commons-cli/target/test-classes
 [INFO] /tmp/icst-2019/september-2018/dataset/commons-cli/src/test/java/org/apache/commons/cli/bug/BugCLI13Test.java: Some input files use or override a deprecated API.
 [INFO] /tmp/icst-2019/september-2018/dataset/commons-cli/src/test/java/org/apache/commons/cli/bug/BugCLI13Test.java: Recompile with -Xlint:deprecation for details.
 [INFO] 
-[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (prepare-agent) @ commons-cli ---
-[INFO] argLine set to -javaagent:/home/spirals/danglot/.m2/repository/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/tmp/icst-2019/september-2018/dataset/commons-cli/target/jacoco.exec
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (prepare-agent) @ commons-cli ---
+[INFO] argLine set to -javaagent:/home/spirals/danglot/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/tmp/icst-2019/september-2018/dataset/commons-cli/target/jacoco.exec
 [INFO] 
-[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ commons-cli ---
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ commons-cli ---
 [INFO] Tests are skipped.
 [INFO] 
-[INFO] --- maven-dependency-plugin:2.10:build-classpath (default-cli) @ commons-cli ---
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ commons-cli ---
 [INFO] Wrote classpath file '/tmp/icst-2019/september-2018/dataset/commons-cli/target/dspot/classpath'.
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 8.083 s
-[INFO] Finished at: 2018-09-24T13:34:12+02:00
+[INFO] Total time: 7.432 s
+[INFO] Finished at: 2018-09-24T13:36:19+02:00
 [INFO] ------------------------------------------------------------------------
-[INFO] Amplification of org.apache.commons.cli.CommandLineTest (3 test(s))
-[INFO] Assertion amplification of org.apache.commons.cli.CommandLineTest (3 test(s))
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.CommandLineTest testGetParsedOptionValueWithChar:testGetParsedOptionValueWithOption:testGetParsedOptionValue
+[INFO] Amplification of org.apache.commons.cli.OptionGroupTest (4 test(s))
+[INFO] Assertion amplification of org.apache.commons.cli.OptionGroupTest (4 test(s))
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.OptionGroupTest testTwoLongOptionsFromGroup:testValidLongOnlyOptions:testTwoValidLongOptions:testSingleLongOption
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testGetParsedOptionValue,testGetParsedOptionValueWithOption,testGetParsedOptionValueWithChar
-[INFO] Run tests. (3)
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.CommandLineTest testGetParsedOptionValueWithChar:testGetParsedOptionValueWithOption:testGetParsedOptionValue
+[INFO] Test has been run: testTwoValidLongOptions,testTwoLongOptionsFromGroup,testSingleLongOption,testValidLongOnlyOptions
+[INFO] Run tests. (4)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.OptionGroupTest testTwoLongOptionsFromGroup:testValidLongOnlyOptions:testTwoValidLongOptions:testSingleLongOption
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testGetParsedOptionValue,testGetParsedOptionValueWithOption,testGetParsedOptionValueWithChar
-[INFO] 3 test pass, generating assertion...
+[INFO] Test has been run: testTwoValidLongOptions,testTwoLongOptionsFromGroup,testSingleLongOption,testValidLongOnlyOptions
+[INFO] 4 test pass, generating assertion...
 [INFO] Add observations points in passing tests.
 [INFO] Instrumentation...
- 33% |================ ]/ 66% |================================= ]-100% |================================================== ]\
-[INFO] Run instrumented tests. (9)
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.CommandLineTest testGetParsedOptionValueWithChar_withlog0:testGetParsedOptionValueWithOption_withlog0:testGetParsedOptionValue_withlog0:testGetParsedOptionValueWithChar_withlog1:testGetParsedOptionValueWithOption_withlog1:testGetParsedOptionValue_withlog1:testGetParsedOptionValueWithChar_withlog2:testGetParsedOptionValueWithOption_withlog2:testGetParsedOptionValue_withlog2
+ 25% |============ ]/ 50% |========================= ]- 75% |===================================== ]\100% |================================================== ]|
+[INFO] Run instrumented tests. (12)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.OptionGroupTest testTwoLongOptionsFromGroup_withlog0:testValidLongOnlyOptions_withlog0:testTwoValidLongOptions_withlog0:testSingleLongOption_withlog0:testTwoLongOptionsFromGroup_withlog1:testValidLongOnlyOptions_withlog1:testTwoValidLongOptions_withlog1:testSingleLongOption_withlog1:testTwoLongOptionsFromGroup_withlog2:testValidLongOnlyOptions_withlog2:testTwoValidLongOptions_withlog2:testSingleLongOption_withlog2
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/observations.ser
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testGetParsedOptionValue_withlog0,testGetParsedOptionValue_withlog1,testGetParsedOptionValue_withlog2,testGetParsedOptionValueWithChar_withlog0,testGetParsedOptionValueWithChar_withlog1,testGetParsedOptionValueWithChar_withlog2,testGetParsedOptionValueWithOption_withlog0,testGetParsedOptionValueWithOption_withlog1,testGetParsedOptionValueWithOption_withlog2
+[INFO] Test has been run: testTwoValidLongOptions_withlog0,testTwoValidLongOptions_withlog1,testTwoValidLongOptions_withlog2,testValidLongOnlyOptions_withlog0,testValidLongOnlyOptions_withlog1,testValidLongOnlyOptions_withlog2,testSingleLongOption_withlog0,testSingleLongOption_withlog1,testSingleLongOption_withlog2,testTwoLongOptionsFromGroup_withlog0,testTwoLongOptionsFromGroup_withlog1,testTwoLongOptionsFromGroup_withlog2
 [INFO] Generating assertions...
 [INFO] 3 new tests with assertions generated
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.CommandLineTest testGetParsedOptionValueWithChar:testGetParsedOptionValueWithOption:testGetParsedOptionValue
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.OptionGroupTest testValidLongOnlyOptions:testTwoValidLongOptions:testSingleLongOption
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testGetParsedOptionValue,testGetParsedOptionValueWithOption,testGetParsedOptionValueWithChar
+[INFO] Test has been run: testTwoValidLongOptions,testSingleLongOption,testValidLongOnlyOptions
 [INFO] Assertion amplification: 3 test method(s) has been successfully amplified.
-[WARN] 2018-09-24 13:34:16 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-24 13:34:16 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-24 13:34:16 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli/target/classes/:/tmp/icst-2019/september-2018/dataset/commons-cli/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.CommandLineTest testGetParsedOptionValueWithChar:testGetParsedOptionValueWithOption:testGetParsedOptionValue
+[WARN] 2018-09-24 13:36:22 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-24 13:36:22 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-24 13:36:22 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli/target/classes/:/tmp/icst-2019/september-2018/dataset/commons-cli/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.OptionGroupTest testValidLongOnlyOptions:testTwoValidLongOptions:testSingleLongOption
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testGetParsedOptionValue,testGetParsedOptionValueWithOption,testGetParsedOptionValueWithChar
+[INFO] Test has been run: testTwoValidLongOptions,testSingleLongOption,testValidLongOnlyOptions
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 4905
+[INFO] elapsedTime 3388
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
 [WARNING] DSpot could not obtain any amplified test method.
 [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
-[INFO] Amplification of org.apache.commons.cli.PatternOptionBuilderTest (6 test(s))
-[INFO] Assertion amplification of org.apache.commons.cli.PatternOptionBuilderTest (6 test(s))
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.PatternOptionBuilderTest testNumberPattern:testClassPattern:testExistingFilePattern:testSimplePattern:testURLPattern:testObjectPattern
+[WARNING] Could not match any test methods
+[INFO] Amplification of org.apache.commons.cli.PosixParserTest (7 test(s))
+[INFO] Assertion amplification of org.apache.commons.cli.PosixParserTest (7 test(s))
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.PosixParserTest testLongWithEqualSingleDash:testAmbiguousPartialLongOption4:testAmbiguousLongWithoutEqualSingleDash:testUnambiguousPartialLongOption4:testNegativeOption:testLongWithoutEqualSingleDash:testLongWithUnexpectedArgument1
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
-Exception found converting v to desired type: Unable to parse the URL: foo://commons.apache.org
-Exception found converting d to desired type: Unable to find the class: System.DateTime
-Exception found converting x to desired type: For input string: "3,5"
-Exception found converting i to desired type: java.lang.IllegalAccessException; Unable to create an instance of: java.util.Calendar
-Exception found converting n to desired type: Unable to find the class: System.DateTime
 Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testSimplePattern,testExistingFilePattern,testURLPattern,testClassPattern,testNumberPattern,testObjectPattern
-[INFO] Run tests. (6)
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.PatternOptionBuilderTest testNumberPattern:testClassPattern:testExistingFilePattern:testSimplePattern:testURLPattern:testObjectPattern
+[INFO] Test has been run: testAmbiguousLongWithoutEqualSingleDash,testLongWithoutEqualSingleDash,testAmbiguousPartialLongOption4,testNegativeOption,testLongWithUnexpectedArgument1,testLongWithEqualSingleDash,testUnambiguousPartialLongOption4
+[INFO] Run tests. (7)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.PosixParserTest testLongWithEqualSingleDash:testAmbiguousPartialLongOption4:testAmbiguousLongWithoutEqualSingleDash:testUnambiguousPartialLongOption4:testNegativeOption:testLongWithoutEqualSingleDash:testLongWithUnexpectedArgument1
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
-Exception found converting v to desired type: Unable to parse the URL: foo://commons.apache.org
-Exception found converting d to desired type: Unable to find the class: System.DateTime
-Exception found converting x to desired type: For input string: "3,5"
-Exception found converting i to desired type: java.lang.IllegalAccessException; Unable to create an instance of: java.util.Calendar
-Exception found converting n to desired type: Unable to find the class: System.DateTime
 Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testSimplePattern,testExistingFilePattern,testURLPattern,testClassPattern,testNumberPattern,testObjectPattern
-[INFO] 6 test pass, generating assertion...
+[INFO] Test has been run: testAmbiguousLongWithoutEqualSingleDash,testLongWithoutEqualSingleDash,testAmbiguousPartialLongOption4,testNegativeOption,testLongWithUnexpectedArgument1,testLongWithEqualSingleDash,testUnambiguousPartialLongOption4
+[INFO] 7 test pass, generating assertion...
 [INFO] Add observations points in passing tests.
 [INFO] Instrumentation...
- 16% |======== ]/ 33% |================ ]- 50% |========================= ]\ 66% |================================= ]| 83% |========================================= ]/100% |================================================== ]-
-[INFO] Run instrumented tests. (18)
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.PatternOptionBuilderTest testNumberPattern_withlog0:testClassPattern_withlog0:testExistingFilePattern_withlog0:testSimplePattern_withlog0:testURLPattern_withlog0:testObjectPattern_withlog0:testNumberPattern_withlog1:testClassPattern_withlog1:testExistingFilePattern_withlog1:testSimplePattern_withlog1:testURLPattern_withlog1:testObjectPattern_withlog1:testNumberPattern_withlog2:testClassPattern_withlog2:testExistingFilePattern_withlog2:testSimplePattern_withlog2:testURLPattern_withlog2:testObjectPattern_withlog2
+ 14% |======= ]/ 28% |============== ]- 42% |===================== ]\ 57% |============================ ]| 71% |=================================== ]/ 85% |========================================== ]-100% |================================================== ]\
+[INFO] Run instrumented tests. (21)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.PosixParserTest testLongWithEqualSingleDash_withlog0:testAmbiguousPartialLongOption4_withlog0:testAmbiguousLongWithoutEqualSingleDash_withlog0:testUnambiguousPartialLongOption4_withlog0:testNegativeOption_withlog0:testLongWithoutEqualSingleDash_withlog0:testLongWithUnexpectedArgument1_withlog0:testLongWithEqualSingleDash_withlog1:testAmbiguousPartialLongOption4_withlog1:testAmbiguousLongWithoutEqualSingleDash_withlog1:testUnambiguousPartialLongOption4_withlog1:testNegativeOption_withlog1:testLongWithoutEqualSingleDash_withlog1:testLongWithUnexpectedArgument1_withlog1:testLongWithEqualSingleDash_withlog2:testAmbiguousPartialLongOption4_withlog2:testAmbiguousLongWithoutEqualSingleDash_withlog2:testUnambiguousPartialLongOption4_withlog2:testNegativeOption_withlog2:testLongWithoutEqualSingleDash_withlog2:testLongWithUnexpectedArgument1_withlog2
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/observations.ser
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
-Exception found converting v to desired type: Unable to parse the URL: foo://commons.apache.org
-Exception found converting v to desired type: Unable to parse the URL: foo://commons.apache.org
-Exception found converting v to desired type: Unable to parse the URL: foo://commons.apache.org
-Exception found converting i to desired type: java.lang.IllegalAccessException; Unable to create an instance of: java.util.Calendar
-Exception found converting i to desired type: java.lang.IllegalAccessException; Unable to create an instance of: java.util.Calendar
-Exception found converting i to desired type: java.lang.IllegalAccessException; Unable to create an instance of: java.util.Calendar
-Exception found converting d to desired type: Unable to find the class: System.DateTime
-Exception found converting d to desired type: Unable to find the class: System.DateTime
-Exception found converting d to desired type: Unable to find the class: System.DateTime
-Exception found converting x to desired type: For input string: "3,5"
-Exception found converting x to desired type: For input string: "3,5"
-Exception found converting x to desired type: For input string: "3,5"
 Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testExistingFilePattern_withlog0,testExistingFilePattern_withlog1,testExistingFilePattern_withlog2,testSimplePattern_withlog0,testSimplePattern_withlog1,testSimplePattern_withlog2,testURLPattern_withlog0(org.apache.commons.cli.PatternOptionBuilderTest): null,testURLPattern_withlog1(org.apache.commons.cli.PatternOptionBuilderTest): null,testURLPattern_withlog2(org.apache.commons.cli.PatternOptionBuilderTest): null,testObjectPattern_withlog0(org.apache.commons.cli.PatternOptionBuilderTest): null,testObjectPattern_withlog1(org.apache.commons.cli.PatternOptionBuilderTest): null,testObjectPattern_withlog2(org.apache.commons.cli.PatternOptionBuilderTest): null,testClassPattern_withlog0(org.apache.commons.cli.PatternOptionBuilderTest): null,testClassPattern_withlog1(org.apache.commons.cli.PatternOptionBuilderTest): null,testClassPattern_withlog2(org.apache.commons.cli.PatternOptionBuilderTest): null,testNumberPattern_withlog0(org.apache.commons.cli.PatternOptionBuilderTest): null,testNumberPattern_withlog1(org.apache.commons.cli.PatternOptionBuilderTest): null,testNumberPattern_withlog2(org.apache.commons.cli.PatternOptionBuilderTest): null
+[INFO] Test has been run: testAmbiguousPartialLongOption4_withlog0,testAmbiguousPartialLongOption4_withlog1,testAmbiguousPartialLongOption4_withlog2,testLongWithEqualSingleDash_withlog0,testLongWithEqualSingleDash_withlog1,testLongWithEqualSingleDash_withlog2,testLongWithUnexpectedArgument1_withlog0,testLongWithUnexpectedArgument1_withlog1,testLongWithUnexpectedArgument1_withlog2,testAmbiguousLongWithoutEqualSingleDash_withlog0,testAmbiguousLongWithoutEqualSingleDash_withlog1,testAmbiguousLongWithoutEqualSingleDash_withlog2,testNegativeOption_withlog0,testNegativeOption_withlog1,testNegativeOption_withlog2,testLongWithoutEqualSingleDash_withlog0,testLongWithoutEqualSingleDash_withlog1,testLongWithoutEqualSingleDash_withlog2,testUnambiguousPartialLongOption4_withlog0,testUnambiguousPartialLongOption4_withlog1,testUnambiguousPartialLongOption4_withlog2
+[INFO] Generating assertions...
+[INFO] Could not generate any test with assertions
+[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+[INFO] elapsedTime 1477
+======= REPORT =======
+0 amplified test fails on the new versions.
+
+[WARNING] DSpot could not obtain any amplified test method.
+[WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
+[INFO] Amplification of org.apache.commons.cli.ValueTest (4 test(s))
+[INFO] Assertion amplification of org.apache.commons.cli.ValueTest (4 test(s))
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.ValueTest testLongOptionalArgValue:testLongOptionalNoValue:testLongOptionalArgValues:testLongOptionalNArgValues
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testLongOptionalArgValue,testLongOptionalNArgValues,testLongOptionalArgValues,testLongOptionalNoValue
+[INFO] Run tests. (4)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.ValueTest testLongOptionalArgValue:testLongOptionalNoValue:testLongOptionalArgValues:testLongOptionalNArgValues
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testLongOptionalArgValue,testLongOptionalNArgValues,testLongOptionalArgValues,testLongOptionalNoValue
+[INFO] 4 test pass, generating assertion...
+[INFO] Add observations points in passing tests.
+[INFO] Instrumentation...
+ 25% |============ ]/ 50% |========================= ]- 75% |===================================== ]\100% |================================================== ]|
+[INFO] Run instrumented tests. (12)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.ValueTest testLongOptionalArgValue_withlog0:testLongOptionalNoValue_withlog0:testLongOptionalArgValues_withlog0:testLongOptionalNArgValues_withlog0:testLongOptionalArgValue_withlog1:testLongOptionalNoValue_withlog1:testLongOptionalArgValues_withlog1:testLongOptionalNArgValues_withlog1:testLongOptionalArgValue_withlog2:testLongOptionalNoValue_withlog2:testLongOptionalArgValues_withlog2:testLongOptionalNArgValues_withlog2
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/observations.ser
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testLongOptionalArgValues_withlog0,testLongOptionalArgValues_withlog1,testLongOptionalArgValues_withlog2,testLongOptionalNArgValues_withlog0,testLongOptionalNArgValues_withlog1,testLongOptionalNArgValues_withlog2,testLongOptionalArgValue_withlog0,testLongOptionalArgValue_withlog1,testLongOptionalArgValue_withlog2,testLongOptionalNoValue_withlog0(org.apache.commons.cli.ValueTest): null,testLongOptionalNoValue_withlog1(org.apache.commons.cli.ValueTest): null,testLongOptionalNoValue_withlog2(org.apache.commons.cli.ValueTest): null
 [WARNING] Some instrumented test failed!
 [INFO] Generating assertions...
-[INFO] 6 new tests with assertions generated
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(100) The method isEmpty() is undefined for the type Object
-[ERROR] Pb(100) The method isEmpty() is undefined for the type Object
-[ERROR] Pb(100) The method isEmpty() is undefined for the type Object
-[ERROR] Pb(100) The method isEmpty() is undefined for the type Object
-[ERROR] Pb(100) The method isEmpty() is undefined for the type Object
-[ERROR] Pb(100) The method isEmpty() is undefined for the type Object
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.PatternOptionBuilderTest testNumberPattern:testClassPattern:testExistingFilePattern:testURLPattern:testObjectPattern
+[INFO] 4 new tests with assertions generated
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.ValueTest testLongOptionalArgValue:testLongOptionalNoValue:testLongOptionalArgValues:testLongOptionalNArgValues
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
-Exception found converting v to desired type: Unable to parse the URL: foo://commons.apache.org
-Exception found converting d to desired type: Unable to find the class: System.DateTime
-Exception found converting x to desired type: For input string: "3,5"
-Exception found converting i to desired type: java.lang.IllegalAccessException; Unable to create an instance of: java.util.Calendar
-Exception found converting n to desired type: Unable to find the class: System.DateTime
 Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testURLPattern,testClassPattern,testNumberPattern,testObjectPattern,testExistingFilePattern(org.apache.commons.cli.PatternOptionBuilderTest): expected:<126184378368> but was:<126184574976>
+[INFO] Test has been run: testLongOptionalArgValue,testLongOptionalNArgValues,testLongOptionalArgValues,testLongOptionalNoValue
 [INFO] Assertion amplification: 4 test method(s) has been successfully amplified.
-[WARN] 2018-09-24 13:34:47 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-24 13:34:47 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-24 13:34:47 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli/target/classes/:/tmp/icst-2019/september-2018/dataset/commons-cli/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.PatternOptionBuilderTest testNumberPattern:testClassPattern:testURLPattern:testObjectPattern
+[WARN] 2018-09-24 13:36:26 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-24 13:36:26 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-24 13:36:26 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli/target/classes/:/tmp/icst-2019/september-2018/dataset/commons-cli/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.ValueTest testLongOptionalArgValue:testLongOptionalNoValue:testLongOptionalArgValues:testLongOptionalNArgValues
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
-Exception found converting v to desired type: Unable to parse the URL: foo://commons.apache.org
-Exception found converting d to desired type: Unable to find the class: System.DateTime
-Exception found converting x to desired type: For input string: "3,5"
-Exception found converting i to desired type: java.lang.IllegalAccessException; Unable to create an instance of: java.util.Calendar
-Exception found converting n to desired type: Unable to find the class: System.DateTime
 Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testURLPattern,testClassPattern,testNumberPattern,testObjectPattern
+[INFO] Test has been run: testLongOptionalArgValue,testLongOptionalNArgValues,testLongOptionalArgValues,testLongOptionalNoValue
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 30168
+[INFO] elapsedTime 2799
+======= REPORT =======
+0 amplified test fails on the new versions.
+
+[WARNING] DSpot could not obtain any amplified test method.
+[WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
+[INFO] Amplification of org.apache.commons.cli.OptionsTest (1 test(s))
+[INFO] Assertion amplification of org.apache.commons.cli.OptionsTest (1 test(s))
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.OptionsTest testGetMatchingOpts
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testGetMatchingOpts
+[INFO] Run tests. (1)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.OptionsTest testGetMatchingOpts
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testGetMatchingOpts
+[INFO] 1 test pass, generating assertion...
+[INFO] Add observations points in passing tests.
+[INFO] Instrumentation...
+100% |================================================== ]/
+[INFO] Run instrumented tests. (3)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.OptionsTest testGetMatchingOpts_withlog0:testGetMatchingOpts_withlog1:testGetMatchingOpts_withlog2
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/observations.ser
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testGetMatchingOpts_withlog0,testGetMatchingOpts_withlog1,testGetMatchingOpts_withlog2
+[INFO] Generating assertions...
+[INFO] 1 new tests with assertions generated
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.OptionsTest testGetMatchingOpts
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testGetMatchingOpts
+[INFO] Assertion amplification: 1 test method(s) has been successfully amplified.
+[WARN] 2018-09-24 13:36:29 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-24 13:36:29 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-24 13:36:29 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli/target/classes/:/tmp/icst-2019/september-2018/dataset/commons-cli/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.OptionsTest testGetMatchingOpts
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testGetMatchingOpts
+[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+[INFO] elapsedTime 2566
+======= REPORT =======
+0 amplified test fails on the new versions.
+
+[WARNING] DSpot could not obtain any amplified test method.
+[WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
+[INFO] Amplification of org.apache.commons.cli.bug.BugsTest (1 test(s))
+[INFO] Assertion amplification of org.apache.commons.cli.bug.BugsTest (1 test(s))
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.bug.BugsTest test11457
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: test11457
+[INFO] Run tests. (1)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.bug.BugsTest test11457
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: test11457
+[INFO] 1 test pass, generating assertion...
+[INFO] Add observations points in passing tests.
+[INFO] Instrumentation...
+100% |================================================== ]/
+[INFO] Run instrumented tests. (3)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.bug.BugsTest test11457_withlog0:test11457_withlog1:test11457_withlog2
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/observations.ser
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: test11457_withlog0,test11457_withlog1,test11457_withlog2
+[INFO] Generating assertions...
+[INFO] 1 new tests with assertions generated
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.bug.BugsTest test11457
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: test11457
+[INFO] Assertion amplification: 1 test method(s) has been successfully amplified.
+[WARN] 2018-09-24 13:36:32 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-24 13:36:32 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-24 13:36:32 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli/target/classes/:/tmp/icst-2019/september-2018/dataset/commons-cli/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.bug.BugsTest test11457
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: test11457
+[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+[INFO] elapsedTime 2422
+======= REPORT =======
+0 amplified test fails on the new versions.
+
+[WARNING] DSpot could not obtain any amplified test method.
+[WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
+[INFO] Amplification of org.apache.commons.cli.ApplicationTest (1 test(s))
+[INFO] Assertion amplification of org.apache.commons.cli.ApplicationTest (1 test(s))
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.ApplicationTest testLs
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testLs
+[INFO] Run tests. (1)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.ApplicationTest testLs
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testLs
+[INFO] 1 test pass, generating assertion...
+[INFO] Add observations points in passing tests.
+[INFO] Instrumentation...
+100% |================================================== ]/
+[INFO] Run instrumented tests. (3)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.ApplicationTest testLs_withlog0:testLs_withlog1:testLs_withlog2
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/observations.ser
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testLs_withlog0,testLs_withlog1,testLs_withlog2
+[INFO] Generating assertions...
+[INFO] 1 new tests with assertions generated
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.ApplicationTest testLs
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testLs
+[INFO] Assertion amplification: 1 test method(s) has been successfully amplified.
+[WARN] 2018-09-24 13:36:35 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-24 13:36:35 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-24 13:36:35 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-cli/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-cli/target/classes/:/tmp/icst-2019/september-2018/dataset/commons-cli/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-cli/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.cli.ApplicationTest testLs
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testLs
+[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+[INFO] elapsedTime 2879
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
 [WARNING] DSpot could not obtain any amplified test method.
 [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
 [INFO] Amplification succeed.
-[INFO] Elapsed time 35677 ms
+[INFO] Elapsed time 16512 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 01:02 min
-[INFO] Finished at: 2018-09-24T13:34:47+02:00
+[INFO] Total time: 42.594 s
+[INFO] Finished at: 2018-09-24T13:36:35+02:00
 [INFO] ------------------------------------------------------------------------
