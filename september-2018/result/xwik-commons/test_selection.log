@@ -1,0 +1,12 @@
+java -cp target/experiments-0.1-SNAPSHOT-jar-with-dependencies.jar icst.experiments.commits.ProjectJSONBuilder --path-to-repository september-2018/dataset/xwik-commons --owner xwiki --project xwik-commons --output september-2018/dataset/ --size-goal 20 2>&1 | tee -a september-2018/result/xwik-commons/test_selection.log
+[INFO] 2018-09-24 12:41:13 ProjectJSONBuilder - /home/spirals/danglot/apache-maven-3.5.4/
+Exception in thread "main" java.lang.RuntimeException: java.lang.NullPointerException
+	at icst.experiments.commits.ProjectJSONBuilder.<init>(ProjectJSONBuilder.java:76)
+	at icst.experiments.commits.ProjectJSONBuilder.main(ProjectJSONBuilder.java:238)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.jgit.lib.ObjectIdOwnerMap.get(ObjectIdOwnerMap.java:131)
+	at org.eclipse.jgit.revwalk.RevWalk.lookupCommit(RevWalk.java:656)
+	at org.eclipse.jgit.api.LogCommand.add(LogCommand.java:330)
+	at org.eclipse.jgit.api.LogCommand.add(LogCommand.java:189)
+	at icst.experiments.commits.ProjectJSONBuilder.<init>(ProjectJSONBuilder.java:68)
+	... 1 more
