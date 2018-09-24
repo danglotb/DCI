@@ -84,7 +84,8 @@ public class TestSuiteSwitcherAndChecker {
         if (testCase.getFirstChild() != null) {
             if (testCase.getFirstChild().getNextSibling() != null) {
                 final Node nextSibling = testCase.getFirstChild().getNextSibling();
-                return "failure".equals(nextSibling.getNodeName());
+                return "failure".equals(nextSibling.getNodeName())
+                        || "error".equals(nextSibling.getNodeName());
             }
         }
         return false;
