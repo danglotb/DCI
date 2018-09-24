@@ -29,7 +29,7 @@ public class CommandExecutor {
                     .lines()
                     .forEach(line -> {
                         try {
-                            LOGGER.info("{}", line);
+                            //LOGGER.info("{}", line);
                             fileWriter.write(line + "\n");
                         } catch (IOException e) {
                             throw new RuntimeException(e);

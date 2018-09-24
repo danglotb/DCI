@@ -83,20 +83,4 @@ public class DiffFilter {
         return path.endsWith(".java") && path.contains("src/main/java");
     }
 
-    public static List<String> getFullQualifiedNameOfDeltaTestClasses(List<String> modifiedJavaFiles, String module) {
-        return modifiedJavaFiles.stream()
-                .peek(System.out::println)
-                .map(modifiedJavaFile -> modifiedJavaFile.substring(module.length()))
-                .peek(System.out::println)
-                .filter(modifiedJavaFile -> modifiedJavaFile.startsWith("src/test/java/"))
-                .peek(System.out::println)
-                .map(modifiedJavaFile -> modifiedJavaFile.substring("src/test/java/".length()))
-                .peek(System.out::println)
-                .map(modifiedJavaFile -> modifiedJavaFile.substring(0, modifiedJavaFile.length() - ".java".length()))
-                .peek(System.out::println)
-                .map(modifiedJavaFile -> modifiedJavaFile.replaceAll("/", "."))
-                .peek(System.out::println)
-                .collect(Collectors.toList());
-    }
-
 }
