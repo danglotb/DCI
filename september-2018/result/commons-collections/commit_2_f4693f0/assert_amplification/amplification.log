@@ -1,0 +1,262 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< org.apache.commons:commons-collections4 >---------------
+[INFO] Building Apache Commons Collections 4.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) @ commons-collections4 ---
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/eu/stamp-project/dspot/1.1.1-SNAPSHOT/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.resources/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.expressions/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.runtime/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.osgi/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.common/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.jobs/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.registry/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.preferences/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.contenttype/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.app/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.filesystem/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.text/maven-metadata.xml
+Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.commands/maven-metadata.xml
+[INFO] Path to runner Classes: /home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
+[INFO] /home/spirals/danglot/.m2/repository/org/jacoco/org.jacoco.core/0.7.9/org.jacoco.core-0.7.9.jar
+[INFO] /home/spirals/danglot/.m2/repository/org/ow2/asm/asm-debug-all/5.2/asm-debug-all-5.2.jar
+[INFO] /home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
+[WARNING] automaticBuilderName: unknown automatic builder specified in configuration, going to default.
+[INFO] Default: provided Maven automatic builder.
+[INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< org.apache.commons:commons-collections4 >---------------
+[INFO] Building Apache Commons Collections 4.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ commons-collections4 ---
+[INFO] Deleting /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven-3) @ commons-collections4 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ commons-collections4 ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-collections4 ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 2 files to /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ commons-collections4 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (default) @ commons-collections4 ---
+[INFO] Executing: /bin/sh -c cd /tmp/icst-2019/september-2018/dataset/commons-collections_parent && svn --non-interactive info
+[INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-collections_parent
+[INFO] Storing buildNumber: ?????? at timestamp: 1537768913716
+[INFO] Executing: /bin/sh -c cd /tmp/icst-2019/september-2018/dataset/commons-collections_parent && svn --non-interactive info
+[INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-collections_parent
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-collections4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/commons-collections_parent/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ commons-collections4 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 308 source files to /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/classes
+[INFO] /tmp/icst-2019/september-2018/dataset/commons-collections_parent/src/main/java/org/apache/commons/collections4/collection/IndexedCollection.java: Some input files use or override a deprecated API.
+[INFO] /tmp/icst-2019/september-2018/dataset/commons-collections_parent/src/main/java/org/apache/commons/collections4/collection/IndexedCollection.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.3:manifest (bundle-manifest) @ commons-collections4 ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (checkAPIcompatibility) @ commons-collections4 ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ commons-collections4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 164 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ commons-collections4 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 199 source files to /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/test-classes
+[INFO] /tmp/icst-2019/september-2018/dataset/commons-collections_parent/src/test/java/org/apache/commons/collections4/map/MultiValueMapTest.java: Some input files use or override a deprecated API.
+[INFO] /tmp/icst-2019/september-2018/dataset/commons-collections_parent/src/test/java/org/apache/commons/collections4/map/MultiValueMapTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/icst-2019/september-2018/dataset/commons-collections_parent/src/test/java/org/apache/commons/collections4/FluentIterableTest.java: /tmp/icst-2019/september-2018/dataset/commons-collections_parent/src/test/java/org/apache/commons/collections4/FluentIterableTest.java uses unchecked or unsafe operations.
+[INFO] /tmp/icst-2019/september-2018/dataset/commons-collections_parent/src/test/java/org/apache/commons/collections4/FluentIterableTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (prepare-agent) @ commons-collections4 ---
+[INFO] argLine set to -javaagent:/home/spirals/danglot/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ commons-collections4 ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ commons-collections4 ---
+[INFO] Wrote classpath file '/tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/classpath'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 13.757 s
+[INFO] Finished at: 2018-09-24T08:02:04+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< org.apache.commons:commons-collections4 >---------------
+[INFO] Building Apache Commons Collections 4.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ commons-collections4 ---
+[INFO] Deleting /tmp/icst-2019/september-2018/dataset/commons-collections/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven-3) @ commons-collections4 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ commons-collections4 ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-collections4 ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 2 files to /tmp/icst-2019/september-2018/dataset/commons-collections/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ commons-collections4 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (default) @ commons-collections4 ---
+[INFO] Executing: /bin/sh -c cd /tmp/icst-2019/september-2018/dataset/commons-collections && svn --non-interactive info
+[INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-collections
+[INFO] Storing buildNumber: ?????? at timestamp: 1537768938969
+[INFO] Executing: /bin/sh -c cd /tmp/icst-2019/september-2018/dataset/commons-collections && svn --non-interactive info
+[INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-collections
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-collections4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/commons-collections/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ commons-collections4 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 308 source files to /tmp/icst-2019/september-2018/dataset/commons-collections/target/classes
+[INFO] /tmp/icst-2019/september-2018/dataset/commons-collections/src/main/java/org/apache/commons/collections4/map/MultiValueMap.java: Some input files use or override a deprecated API.
+[INFO] /tmp/icst-2019/september-2018/dataset/commons-collections/src/main/java/org/apache/commons/collections4/map/MultiValueMap.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.3:manifest (bundle-manifest) @ commons-collections4 ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (checkAPIcompatibility) @ commons-collections4 ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ commons-collections4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 164 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ commons-collections4 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 199 source files to /tmp/icst-2019/september-2018/dataset/commons-collections/target/test-classes
+[INFO] /tmp/icst-2019/september-2018/dataset/commons-collections/src/test/java/org/apache/commons/collections4/map/MultiValueMapTest.java: Some input files use or override a deprecated API.
+[INFO] /tmp/icst-2019/september-2018/dataset/commons-collections/src/test/java/org/apache/commons/collections4/map/MultiValueMapTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/icst-2019/september-2018/dataset/commons-collections/src/test/java/org/apache/commons/collections4/FluentIterableTest.java: /tmp/icst-2019/september-2018/dataset/commons-collections/src/test/java/org/apache/commons/collections4/FluentIterableTest.java uses unchecked or unsafe operations.
+[INFO] /tmp/icst-2019/september-2018/dataset/commons-collections/src/test/java/org/apache/commons/collections4/FluentIterableTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (prepare-agent) @ commons-collections4 ---
+[INFO] argLine set to -javaagent:/home/spirals/danglot/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/tmp/icst-2019/september-2018/dataset/commons-collections/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ commons-collections4 ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ commons-collections4 ---
+[INFO] Wrote classpath file '/tmp/icst-2019/september-2018/dataset/commons-collections/target/dspot/classpath'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 13.456 s
+[INFO] Finished at: 2018-09-24T08:02:29+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Amplification of org.apache.commons.collections4.FluentIterableTest (19 test(s))
+[INFO] Assertion amplification of org.apache.commons.collections4.FluentIterableTest (19 test(s))
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/org/easymock/easymock/3.2/easymock-3.2.jar:/home/spirals/danglot/.m2/repository/cglib/cglib-nodep/2.2.2/cglib-nodep-2.2.2.jar:/home/spirals/danglot/.m2/repository/org/objenesis/objenesis/1.3/objenesis-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.collections4.FluentIterableTest zip:appendIterable:factoryMethodOf:appendElements:copyInto:isEmpty:skip:reverse:allMatch:filter:collate:contains:transform:unmodifiable:size:get:unique:limit:anyMatch
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: filter,unmodifiable,unique,contains,copyInto,anyMatch,appendElements,get,zip,size,skip,limit,appendIterable,collate,transform,reverse,allMatch,factoryMethodOf,isEmpty
+[INFO] Run tests. (19)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/org/easymock/easymock/3.2/easymock-3.2.jar:/home/spirals/danglot/.m2/repository/cglib/cglib-nodep/2.2.2/cglib-nodep-2.2.2.jar:/home/spirals/danglot/.m2/repository/org/objenesis/objenesis/1.3/objenesis-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.collections4.FluentIterableTest zip:appendIterable:factoryMethodOf:appendElements:copyInto:isEmpty:skip:reverse:allMatch:filter:collate:contains:transform:unmodifiable:size:get:unique:limit:anyMatch
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: filter,unmodifiable,unique,contains,copyInto,anyMatch,appendElements,get,zip,size,skip,limit,appendIterable,collate,transform,reverse,allMatch,factoryMethodOf,isEmpty
+[INFO] 19 test pass, generating assertion...
+[INFO] Add observations points in passing tests.
+[INFO] Instrumentation...
+  5% |== ]/ 10% |===== ]- 15% |======= ]\ 21% |========== ]| 26% |============= ]/ 31% |=============== ]- 36% |================== ]\ 42% |===================== ]| 47% |======================= ]/ 52% |========================== ]- 57% |============================ ]\ 63% |=============================== ]| 68% |================================== ]/ 73% |==================================== ]- 78% |======================================= ]\ 84% |========================================== ]| 89% |============================================ ]/ 94% |=============================================== ]-100% |================================================== ]\
+[INFO] Run instrumented tests. (57)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/org/easymock/easymock/3.2/easymock-3.2.jar:/home/spirals/danglot/.m2/repository/cglib/cglib-nodep/2.2.2/cglib-nodep-2.2.2.jar:/home/spirals/danglot/.m2/repository/org/objenesis/objenesis/1.3/objenesis-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.collections4.FluentIterableTest zip_withlog0:appendIterable_withlog0:factoryMethodOf_withlog0:appendElements_withlog0:copyInto_withlog0:isEmpty_withlog0:skip_withlog0:reverse_withlog0:allMatch_withlog0:filter_withlog0:collate_withlog0:contains_withlog0:transform_withlog0:unmodifiable_withlog0:size_withlog0:get_withlog0:unique_withlog0:limit_withlog0:anyMatch_withlog0:zip_withlog1:appendIterable_withlog1:factoryMethodOf_withlog1:appendElements_withlog1:copyInto_withlog1:isEmpty_withlog1:skip_withlog1:reverse_withlog1:allMatch_withlog1:filter_withlog1:collate_withlog1:contains_withlog1:transform_withlog1:unmodifiable_withlog1:size_withlog1:get_withlog1:unique_withlog1:limit_withlog1:anyMatch_withlog1:zip_withlog2:appendIterable_withlog2:factoryMethodOf_withlog2:appendElements_withlog2:copyInto_withlog2:isEmpty_withlog2:skip_withlog2:reverse_withlog2:allMatch_withlog2:filter_withlog2:collate_withlog2:contains_withlog2:transform_withlog2:unmodifiable_withlog2:size_withlog2:get_withlog2:unique_withlog2:limit_withlog2:anyMatch_withlog2
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/observations.ser
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: unique_withlog0,unique_withlog1,unique_withlog2,copyInto_withlog0,copyInto_withlog1,copyInto_withlog2,appendIterable_withlog0,appendIterable_withlog1,appendIterable_withlog2,reverse_withlog0,reverse_withlog1,reverse_withlog2,collate_withlog0,collate_withlog1,collate_withlog2,unmodifiable_withlog0,unmodifiable_withlog1,unmodifiable_withlog2,filter_withlog0,filter_withlog1,filter_withlog2,limit_withlog0,limit_withlog1,limit_withlog2,appendElements_withlog0,appendElements_withlog1,appendElements_withlog2,contains_withlog0,contains_withlog1,contains_withlog2,transform_withlog0,transform_withlog1,transform_withlog2,allMatch_withlog0,allMatch_withlog1,allMatch_withlog2,skip_withlog0,skip_withlog1,skip_withlog2,get_withlog0,get_withlog1,get_withlog2,anyMatch_withlog0,anyMatch_withlog1,anyMatch_withlog2,zip_withlog0,zip_withlog1,zip_withlog2,isEmpty_withlog0,isEmpty_withlog1,isEmpty_withlog2,factoryMethodOf_withlog0,factoryMethodOf_withlog1,factoryMethodOf_withlog2,size_withlog0,size_withlog1,size_withlog2
+[INFO] Generating assertions...
+[INFO] 18 new tests with assertions generated
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/org/easymock/easymock/3.2/easymock-3.2.jar:/home/spirals/danglot/.m2/repository/cglib/cglib-nodep/2.2.2/cglib-nodep-2.2.2.jar:/home/spirals/danglot/.m2/repository/org/objenesis/objenesis/1.3/objenesis-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.collections4.FluentIterableTest zip:appendIterable:factoryMethodOf:appendElements:copyInto:skip:reverse:allMatch:filter:collate:contains:transform:unmodifiable:size:get:unique:limit:anyMatch
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: filter,unmodifiable,unique,contains,copyInto,anyMatch,get,zip,size,skip,limit,collate,transform,reverse,allMatch,factoryMethodOf,appendElements(org.apache.commons.collections4.FluentIterableTest): expected: java.lang.String<[1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 10, 20, 30]> but was: org.apache.commons.collections4.IterableUtils$2<[1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 10, 20, 30]>,appendIterable(org.apache.commons.collections4.FluentIterableTest): expected: java.lang.String<[1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 10, 20, 30]> but was: org.apache.commons.collections4.IterableUtils$2<[1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 10, 20, 30]>
+[INFO] Assertion amplification: 16 test method(s) has been successfully amplified.
+[WARN] 2018-09-24 08:02:35 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-collections/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-24 08:02:35 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-collections/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-24 08:02:35 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-collections/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-collections/target/classes/:/tmp/icst-2019/september-2018/dataset/commons-collections/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/org/easymock/easymock/3.2/easymock-3.2.jar:/home/spirals/danglot/.m2/repository/cglib/cglib-nodep/2.2.2/cglib-nodep-2.2.2.jar:/home/spirals/danglot/.m2/repository/org/objenesis/objenesis/1.3/objenesis-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-collections/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.collections4.FluentIterableTest zip:factoryMethodOf:copyInto:skip:reverse:allMatch:filter:collate:contains:transform:unmodifiable:size:get:unique:limit:anyMatch
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: filter,unmodifiable,unique,contains,copyInto,anyMatch,get,skip,limit,transform,reverse,allMatch,zip(org.apache.commons.collections4.FluentIterableTest): Iterable must not be null.,size(org.apache.commons.collections4.FluentIterableTest): Iterable must not be null.,collate(org.apache.commons.collections4.FluentIterableTest): Iterable must not be null.,factoryMethodOf(org.apache.commons.collections4.FluentIterableTest): Iterable must not be null.
+[INFO] 4 amplified test methods has been selected to be kept. (global: 4)
+[INFO] elapsedTime 5846
+======= REPORT =======
+4 amplified test fails on the new versions.
+collate(org.apache.commons.collections4.FluentIterableTest): Iterable must not be null.
+zip(org.apache.commons.collections4.FluentIterableTest): Iterable must not be null.
+factoryMethodOf(org.apache.commons.collections4.FluentIterableTest): Iterable must not be null.
+size(org.apache.commons.collections4.FluentIterableTest): Iterable must not be null.
+
+[INFO] Print AmplFluentIterableTest with 4?amplified test cases in /tmp/icst-2019/september-2018/result/commons-collections/commit_2_f4693f0/assert_amplification
+[WARN] 2018-09-24 08:02:36 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-24 08:02:36 Launcher - You're trying to give source code in the classpath, this should be given to addInputSource [/tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/test-classes/org/apache/commons/collections4/BulkTest.java]
+[WARN] 2018-09-24 08:02:36 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-24 08:02:36 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[INFO] Amplification of org.apache.commons.collections4.iterators.ZippingIteratorTest (7 test(s))
+[INFO] Assertion amplification of org.apache.commons.collections4.iterators.ZippingIteratorTest (7 test(s))
+[ERROR] Error(s) during compilation:
+[ERROR] Pb(100) The method setUp() is undefined for the type AbstractIteratorTest<Integer>
+[ERROR] Pb(130) The constructor Object(String) is undefined
+[ERROR] Pb(402) Exception Exception is not compatible with throws clause in Object.toString()
+[ERROR] Pb(100) The method getName() is undefined for the type BulkTest
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/org/easymock/easymock/3.2/easymock-3.2.jar:/home/spirals/danglot/.m2/repository/cglib/cglib-nodep/2.2.2/cglib-nodep-2.2.2.jar:/home/spirals/danglot/.m2/repository/org/objenesis/objenesis/1.3/objenesis-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.collections4.iterators.ZippingIteratorTest testRemoveFromSingle:testIterateEven:testIterateFibEvenOdd:testIterateEvenEven:testRemoveFromDouble:testIterateEvenOdd:testIterateOddEven
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-collections_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: initializationError(org.apache.commons.collections4.iterators.ZippingIteratorTest): Test class should have exactly one public zero-argument constructor,initializationError(org.apache.commons.collections4.iterators.ZippingIteratorTest): Method toString() should be void
+[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+[INFO] elapsedTime 618
+======= REPORT =======
+4 amplified test fails on the new versions.
+collate(org.apache.commons.collections4.FluentIterableTest): Iterable must not be null.
+zip(org.apache.commons.collections4.FluentIterableTest): Iterable must not be null.
+factoryMethodOf(org.apache.commons.collections4.FluentIterableTest): Iterable must not be null.
+size(org.apache.commons.collections4.FluentIterableTest): Iterable must not be null.
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 52.514 s
+[INFO] Finished at: 2018-09-24T08:02:37+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) on project commons-collections4: Execution default-cli of goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests failed: java.lang.RuntimeException: java.lang.NullPointerException -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
