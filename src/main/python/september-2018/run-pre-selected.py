@@ -42,7 +42,8 @@ def run(project, index_begin, index_end, amplifiers):
             "-Doutput-path=" + output_path,
             "-Dpath-to-second-version=" + path_to_concerned_module,
             "-Dgenerate-new-test-class=true",
-            "-Dclean=true"
+            "-Dclean=true",
+            "-X"
         ]
         if amplifiers:
             cmd.append(

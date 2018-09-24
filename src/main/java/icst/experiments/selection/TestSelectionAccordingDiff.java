@@ -20,6 +20,9 @@ public class TestSelectionAccordingDiff {
 
     public static final String TMP_TEST_SELECTION_FILENAME = "testsThatExecuteTheChanges.csv";
 
+
+
+
     public static void testSelection(String sha,
                               String shaParent,
                               String project,
@@ -33,7 +36,14 @@ public class TestSelectionAccordingDiff {
         LOGGER.info("Prepare for {}", project);
         CommandExecutor.runCmd("git diff " + shaParent + " > " + DIFF_NAME, pathToRepository + "/" + concernedModule, DIFF_NAME);
         // install
-        MavenExecutor.runGoals(pathToRepository + "/pom.xml", "clean", "install", "-DskipTests", "-Dcheckstyle.skip=true", "-Denforcer.skip=true", "--quiet");
+        MavenExecutor.runGoals(pathToRepository + "/pom.xml",
+                "clean",
+                "install",
+                "-DskipTests",
+                "-Dcheckstyle.skip=true",
+                "-Denforcer.skip=true",
+                "-Dxwiki.clirr.skip=true", // anyway, we can use this specific goal on all project, the value is not used...
+                "--quiet");
         // 4 compute the list of the test that execute the change
         final String absolutePathToParent = new File(pathToRepository + "_parent/" + concernedModule).getAbsolutePath();
         final String absolutePathToCurrentCommit = new File(pathToRepository + "/" + concernedModule).getAbsolutePath();
