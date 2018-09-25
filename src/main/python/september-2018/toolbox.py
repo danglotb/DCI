@@ -87,7 +87,6 @@ def print_and_call(cmd, cwd=None):
     print p2.communicate()[0]
     return p2.returncode
 
-
 path_to_script_to_run = get_absolute_path("src/main/bash/script.sh")
 
 
