@@ -154,8 +154,7 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                     return addToBlackListWithMessageAndCause(commit, "No behavioral changes could be checked for {}", "NoBehavioralChanges");
                 }
                 // checks if we find test to be amplified
-                TestSelectionAccordingDiff.testSelection(
-                        commit.getName(),
+                final long time = TestSelectionAccordingDiff.testSelection(
                         parentCommit.getName(),
                         this.projectJSON.name,
                         this.pathToRootFolder,
@@ -181,7 +180,8 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                         this.projectJSON.commits.add(
                                 new CommitJSON(commit.getName(),
                                         parentCommit.getName(),
-                                        concernedModule
+                                        concernedModule,
+                                        time
                                 )
                         );
                         LOGGER.warn("could find test to be amplified for {}", commit.getName().substring(0, 7));

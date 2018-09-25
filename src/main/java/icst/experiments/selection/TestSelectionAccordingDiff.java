@@ -23,11 +23,10 @@ public class TestSelectionAccordingDiff {
 
 
 
-    public static void testSelection(String sha,
-                              String shaParent,
-                              String project,
-                              String pathToRepository,
-                              String concernedModule) {
+    public static long testSelection(String shaParent,
+                                     String project,
+                                     String pathToRepository,
+                                     String concernedModule) {
         // 2 compute the .diff file, that encodes the changes
         final File file = new File(pathToRepository + "/" + DIFF_NAME);
         // TODO checkout which git diff is used
@@ -47,6 +46,7 @@ public class TestSelectionAccordingDiff {
         // 4 compute the list of the test that execute the change
         final String absolutePathToParent = new File(pathToRepository + "_parent/" + concernedModule).getAbsolutePath();
         final String absolutePathToCurrentCommit = new File(pathToRepository + "/" + concernedModule).getAbsolutePath();
+        long time = System.currentTimeMillis();
         MavenExecutor.runGoals(absolutePathToParent+ "/pom.xml",
                 "clean",
                 "eu.stamp-project:diff-test-selection:0.5-SNAPSHOT:list",
@@ -54,6 +54,7 @@ public class TestSelectionAccordingDiff {
                 "-DpathToOtherVersion=" + absolutePathToCurrentCommit,
                 "-Dmodule=" + concernedModule,
                 "-DoutputPath=" + new File(pathToRepository + "/" + TMP_TEST_SELECTION_FILENAME).getAbsolutePath());
+        return System.currentTimeMillis() - time;
     }
 }
 
