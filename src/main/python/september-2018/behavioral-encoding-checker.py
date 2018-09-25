@@ -4,6 +4,7 @@ import commit_setter
 import test_suite_switcher
 import os
 import json
+import junit_enforcer
 
 suffix_target_surefire_reports = "/target/surefire-reports/"
 
@@ -18,18 +19,18 @@ def run(project, index_commit):
         data = {project: {}}
     data_project = data[project]
     commits = project_json["commits"]
-    for commit in commits[beg:end]:
+    for commit in commits:
         if not commits.index(commit) in data_project:
             commit_setter.set_commit(toolbox.get_absolute_path(toolbox.prefix_current_dataset + project), project,
                                      commits.index(commit))
             prefix_folder_result = toolbox.get_absolute_path(
                 toolbox.prefix_result + project + "/" + toolbox.get_output_folder_for_commit(commit, commits) + "/")
             key_commit = str(commits.index(commit)) + "_" + str(commit["sha"][0:7])
-            if not key_commit in data_project:
-                data_project[key_commit] = {}
             for configuration in ["assert_amplification", "input_amplification"]:
                 value = run_for_configuration(configuration, prefix_folder_result, commit)
                 if not value is None:
+                    if not key_commit in data_project:
+                        data_project[key_commit] = {}
                     data_project[key_commit][configuration] = value
     with open(output_path_to_json, 'w') as outfile:
         json.dump(data, outfile)
@@ -45,8 +46,9 @@ def run_for_configuration(configuration, prefix_folder_result, commit):
                 path_to_concerned_module = toolbox.get_absolute_path(
                     toolbox.prefix_current_dataset + project + "/" + commit["concernedModule"])
                 print path_to_concerned_module
-                test_suite_switcher.switch(folder_result,
-                                           path_to_concerned_module + "/pom.xml")
+                path_concerned_pom = path_to_concerned_module + "/pom.xml"
+                test_suite_switcher.switch(folder_result, path_concerned_pom)
+                junit_enforcer.enforce(path_concerned_pom)
                 toolbox.print_and_call(
                     ["mvn", "clean", "install", "-DskipTests", "--quiet", "-Dcheckstyle.skip=true",
                      "-Denforcer.skip=true", "-Dxwiki.clirr.skip=true"], cwd=toolbox.get_absolute_path(
