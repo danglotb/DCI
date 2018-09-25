@@ -17,10 +17,32 @@ xml_xwiki_clover_skip_tag = xml_prefix + 'xwiki.clover.skip'
 
 xwiki_commons_tools_path = "xwiki-commons-tools/"
 
+xml_properties_maven_compiler_source_with_error_tag = xml_prefix + 'maven.compile.source'
+xml_properties_maven_compiler_source_without_error_tag = xml_prefix + 'maven.compiler.source'
+xml_properties_maven_compiler_target_with_error_tag = xml_prefix + 'maven.compile.target'
+xml_properties_maven_compiler_target_without_error_tag = xml_prefix + 'maven.compiler.target'
+
+xml_maven_compiler_text = '1.5'
 
 def prepare(project):
     if project == "xwiki-commons":
         set_true_include_test_roots(project)
+    elif project == "commons-cli":
+        fix_maven_compiler_properties(project)
+
+def fix_maven_compiler_properties(project):
+    ET.register_namespace('', xml_namespace)
+    # set in top pom enforcer skip to true
+    path_to_root_pom = toolbox.prefix_dataset + "/" + project + "/pom.xml"
+    tree = ET.parse(path_to_root_pom)
+    root_pom = tree.getroot()
+    properties_node = root_pom.findall(xml_properties_tag)[0]
+    if len(properties_node.findall(xml_properties_maven_compiler_source_with_error_tag)) > 0:
+        xml_properties_maven_compiler_source_without_error_node = ET.SubElement(properties_node, xml_properties_maven_compiler_source_without_error_tag)
+        xml_properties_maven_compiler_source_without_error_node.text = xml_maven_compiler_text
+        xml_properties_maven_compiler_target_without_error_node = ET.SubElement(properties_node, xml_properties_maven_compiler_target_without_error_tag)
+        xml_properties_maven_compiler_target_without_error_node.text = xml_maven_compiler_text
+    tree.write(path_to_root_pom)
 
 
 def set_true_include_test_roots(project):
