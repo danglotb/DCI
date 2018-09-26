@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
@@ -20,21 +21,23 @@ public class MavenExecutor {
 
     public static String mavenHome = "/home/spirals/danglot/apache-maven-3.5.4/";
 
-    private static final String[] additionnalProperties = new String[]{
-            "-Dmaven.compiler.source=1.8",
-            "-Dmaven.compiler.target=1.8",
-            "-Dmaven.compile.target=1.8",
-            "-Dmaven.compile.source=1.8",
-            "-Dcheckstyle.skip=true",
-            "-Denforcer.skip=true",
-            "-Dxwiki.clirr.skip=true"
-    };
+    private static final List<String> additionnalProperties = new ArrayList<>();
+
+    static {
+        additionnalProperties.add("-Dmaven.compiler.source=1.8");
+        additionnalProperties.add("-Dmaven.compiler.target=1.8");
+        additionnalProperties.add("-Dmaven.compile.source=1.8");
+        additionnalProperties.add("-Dmaven.compile.target=1.8");
+        additionnalProperties.add("-Dcheckstyle.skip=true");
+        additionnalProperties.add("-Denforcer.skip=true");
+        additionnalProperties.add("-Dxwiki.clirr.skip=true");
+    }
 
     public static int runGoals(String pathToPom, String... goals) {
         InvocationRequest request = new DefaultInvocationRequest();
 
-        final List<String> finalGoals = Arrays.asList(goals);
-        finalGoals.addAll(Arrays.asList(additionnalProperties));
+        final List<String> finalGoals = new ArrayList<>(Arrays.asList(goals));
+        finalGoals.addAll(additionnalProperties);
         request.setGoals(finalGoals);
         request.setPomFile(new File(pathToPom));
         request.setJavaHome(new File(System.getProperty("java.home")));
