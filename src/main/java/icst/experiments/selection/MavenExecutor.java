@@ -31,6 +31,7 @@ public class MavenExecutor {
         additionnalProperties.add("-Dcheckstyle.skip=true");
         additionnalProperties.add("-Denforcer.skip=true");
         additionnalProperties.add("-Dxwiki.clirr.skip=true");
+        additionnalProperties.add("-Danimal.sniffer.skip=true");
     }
 
     public static int runGoals(String pathToPom, String... goals) {
