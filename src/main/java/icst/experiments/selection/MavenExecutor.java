@@ -1,6 +1,5 @@
 package icst.experiments.selection;
 
-import org.apache.commons.lang.ArrayUtils;
 import org.apache.maven.shared.invoker.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,7 +8,6 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
-import java.util.stream.Collectors;
 
 /**
  * created by Benjamin DANGLOT
@@ -37,7 +35,7 @@ public class MavenExecutor {
 
         final List<String> finalGoals = Arrays.asList(goals);
         finalGoals.addAll(Arrays.asList(additionnalProperties));
-        request.setGoals(Arrays.asList(finalGoals));
+        request.setGoals(finalGoals);
         request.setPomFile(new File(pathToPom));
         request.setJavaHome(new File(System.getProperty("java.home")));
 
