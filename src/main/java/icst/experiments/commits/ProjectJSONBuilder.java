@@ -93,6 +93,27 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
         return String.format("%d/%d/%d", localDate.getMonthValue(), localDate.getDayOfMonth(), localDate.getYear());
     }
 
+    private void buildGivenCandidateCommit(String sha) {
+        try {
+            final Iterable<RevCommit> commits = this.git.log()
+                    .add(this.repository.resolve(Constants.HEAD))
+                    .call();
+            final Iterator<RevCommit> iterator = commits.iterator();
+            while (iterator.hasNext()) {
+                final RevCommit commit = iterator.next();
+                if (sha.equals(commit.getName())) {
+                    if (this.buildCandidateCommit(commit)) {
+                        ProjectJSON.save(this.projectJSON, this.absoluteOutputPath + ".json");
+                    } else {
+                        Blacklist.save(this.blacklist, this.absoluteOutputPath + "_blacklist.json");
+                    }
+                }
+            }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     private void buildListCandidateCommits(int sizeGoal) {
         try {
             final Iterable<RevCommit> commits = this.git.log()
@@ -113,31 +134,32 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
 
 
     private boolean buildCandidateCommit(RevCommit commit) {
+        final String commitName = commit.getName();
         if (commit.getParentCount() < 1) {
-            this.blacklist.blacklist.add(new BlackListElement(commit.getName(), "NoShaParent"));
+            this.blacklist.blacklist.add(new BlackListElement(commitName, "NoShaParent"));
             return false;
         }
-        if (this.projectJSON.contains(commit.getName())) {
-            LOGGER.warn("{} is already in the list!", commit.getName().substring(0, 7));
+        if (this.projectJSON.contains(commitName)) {
+            LOGGER.warn("{} is already in the list!", commitName.substring(0, 7));
             return false;
         }
-        if (this.blacklist.contains(commit.getName())) {
-            LOGGER.warn("{} is in the blacklist!", commit.getName().substring(0, 7));
+        if (this.blacklist.contains(commitName)) {
+            LOGGER.warn("{} is in the blacklist!", commitName.substring(0, 7));
             return false;
         }
         final RevCommit parentCommit = commit.getParents()[0];
-        final List<DiffEntry> diffEntries = DiffFilter.computeDiff(this.git, this.repository, commit, parentCommit);
+        final List<DiffEntry> diffEntries = DiffFilter.computeDiff(this.git, this.repository, commit.getTree(), parentCommit.getTree());
         final List<String> modifiedJavaFiles = DiffFilter.filter(diffEntries);
         if (!modifiedJavaFiles.isEmpty()) {
             final String concernedModule = getConcernedModule(modifiedJavaFiles);
             if (!new File(this.pathToRootFolder + "/" + concernedModule + "/src/test/java/").exists()) {
-                return addToBlackListWithMessageAndCause(commit, "The module does not contain any test: {}", "NoTest");
+                return addToBlackListWithMessageAndCause(commitName, "The module does not contain any test: {}", "NoTest");
             }
             // 1 setting both project to correct commit
             RepositoriesSetterNoJSON.main(new String[]{
                     "--project", this.projectJSON.name,
                     "--path-to-repository", this.pathToRootFolder,
-                    "--sha", commit.getName(),
+                    "--sha", commitName,
                     "--sha-parent", parentCommit.getName()
             });
             CommandExecutor.runCmd("python src/main/python/september-2018/preparation.py " + this.projectJSON.name);
@@ -151,7 +173,7 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                         new File(this.pathToRootFolder + "/" + concernedModule).getAbsolutePath(), false
                 );
                 if (!containsAtLeastOneFailingTestCaseTsOnPPrime && !containsAtLeastOneFAilingTestCaseTsPrimeOnP) {
-                    return addToBlackListWithMessageAndCause(commit, "No behavioral changes could be checked for {}", "NoBehavioralChanges");
+                    return addToBlackListWithMessageAndCause(commitName, "No behavioral changes could be checked for {}", "NoBehavioralChanges");
                 }
                 // checks if we find test to be amplified
                 final long time = TestSelectionAccordingDiff.testSelection(
@@ -163,14 +185,14 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                 // check if the .csv file is created and contains some tests to be amplified
                 final File file = new File(this.pathToRootFolder + "/testsThatExecuteTheChanges.csv");
                 if (!file.exists()) {
-                    return addToBlackListWithMessageAndCause(commit, "no test could be found for {}", "SelectionFailed");
+                    return addToBlackListWithMessageAndCause(commitName, "no test could be found for {}", "SelectionFailed");
                 }
                 try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
                     String list = reader.lines().collect(Collectors.joining("\n"));
                     if (!list.isEmpty()) {
                         // copy the csv file to keep it, and rename it
                         final File outputDirectory = new File(PREFIX_RESULT + projectJSON.name
-                                + "/commit_" + projectJSON.commits.size() + "_" + commit.getName().substring(0, 7));
+                                + "/commit_" + projectJSON.commits.size() + "_" + commitName.substring(0, 7));
                         if (!(outputDirectory.exists())) {
                             FileUtils.forceMkdir(outputDirectory);
                         }
@@ -178,30 +200,30 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                         final File fileCoverage = new File(this.pathToRootFolder + "/testsThatExecuteTheChanges_coverage.csv");
                         FileUtils.copyFile(fileCoverage, new File(outputDirectory.getAbsolutePath() + "/testsThatExecuteTheChanges_coverage.csv"));
                         this.projectJSON.commits.add(
-                                new CommitJSON(commit.getName(),
+                                new CommitJSON(commitName,
                                         parentCommit.getName(),
                                         concernedModule,
                                         time
                                 )
                         );
-                        LOGGER.warn("could find test to be amplified for {}", commit.getName().substring(0, 7));
+                        LOGGER.warn("could find test to be amplified for {}", commitName.substring(0, 7));
                         return true;
                     } else {
-                        return addToBlackListWithMessageAndCause(commit, "No test execute the changes for {}", "NoTestExecuteChanges");
+                        return addToBlackListWithMessageAndCause(commitName, "No test execute the changes for {}", "NoTestExecuteChanges");
                     }
                 } catch (Exception e) {
                     throw new RuntimeException(e);
                 }
             } else {
-                return addToBlackListWithMessageAndCause(commit, "Empty test folder{}", "NoTestInModule");
+                return addToBlackListWithMessageAndCause(commitName, "Empty test folder{}", "NoTestInModule");
             }
         }
-        return addToBlackListWithMessageAndCause(commit, "There is no java file modified for {}", "NoJavaModification");
+        return addToBlackListWithMessageAndCause(commitName, "There is no java file modified for {}", "NoJavaModification");
     }
 
-    private boolean addToBlackListWithMessageAndCause(RevCommit commit, String s, String noJavaModification) {
-        LOGGER.warn(s, commit.getName().substring(0, 7));
-        this.blacklist.blacklist.add(new BlackListElement(commit.getName(), noJavaModification));
+    private boolean addToBlackListWithMessageAndCause(String commitName, String s, String noJavaModification) {
+        LOGGER.warn(s, commitName.substring(0, 7));
+        this.blacklist.blacklist.add(new BlackListElement(commitName, noJavaModification));
         return false;
     }
 
@@ -234,13 +256,20 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
         if (mavenHomeFromCLI != null) {
             MavenExecutor.mavenHome = mavenHomeFromCLI;
         }
+
+        final String commit = configuration.getString("commit");
         final ProjectJSONBuilder projectJSONBuilder = new ProjectJSONBuilder(
                 configuration.getString("path-to-repository"),
                 owner,
                 project,
                 output
         );
-        projectJSONBuilder.buildListCandidateCommits(configuration.getInt("size-goal"));
+
+        if (commit != null) {
+            projectJSONBuilder.buildGivenCandidateCommit(commit);
+        } else {
+            projectJSONBuilder.buildListCandidateCommits(configuration.getInt("size-goal"));
+        }
     }
 
 }

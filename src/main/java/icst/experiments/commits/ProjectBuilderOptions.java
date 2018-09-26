@@ -57,12 +57,17 @@ public class ProjectBuilderOptions implements Options {
         mavenHome.setDefault("/home/spirals/danglot/apache-maven-3.5.4/");
         mavenHome.setStringParser(JSAP.STRING_PARSER);
 
+        FlaggedOption commit = new FlaggedOption("commit");
+        mavenHome.setLongFlag("commit");
+        mavenHome.setStringParser(JSAP.STRING_PARSER);
+
         jsap.registerParameter(path);
         jsap.registerParameter(owner);
         jsap.registerParameter(project);
         jsap.registerParameter(output);
         jsap.registerParameter(sizeGoal);
         jsap.registerParameter(mavenHome);
+        jsap.registerParameter(commit);
         jsap.registerParameter(help);
 
         return jsap;

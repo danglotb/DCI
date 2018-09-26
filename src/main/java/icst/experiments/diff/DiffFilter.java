@@ -6,6 +6,7 @@ import org.eclipse.jgit.diff.DiffFormatter;
 import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
+import org.eclipse.jgit.revwalk.RevTree;
 import org.eclipse.jgit.treewalk.CanonicalTreeParser;
 
 import java.util.List;
@@ -64,13 +65,13 @@ public class DiffFilter {
                 .collect(Collectors.toList());
     }
 
-    public static List<DiffEntry> computeDiff(Git git, Repository repository, RevCommit commit, RevCommit parent) {
+    public static List<DiffEntry> computeDiff(Git git, Repository repository, RevTree commitTree, RevTree parentTree) {
         try {
             ObjectReader reader = repository.newObjectReader();
             CanonicalTreeParser parentTreeParser = new CanonicalTreeParser();
             CanonicalTreeParser commitTreeParser = new CanonicalTreeParser();
-            parentTreeParser.reset(reader, parent.getTree());
-            commitTreeParser.reset(reader, commit.getTree());
+            parentTreeParser.reset(reader, parentTree);
+            commitTreeParser.reset(reader, commitTree);
             DiffFormatter diffFormatter = new DiffFormatter(System.out);
             diffFormatter.setRepository(git.getRepository());
             return diffFormatter.scan(commitTreeParser, parentTreeParser);
