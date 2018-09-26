@@ -40,10 +40,16 @@ def fix_maven_compiler_properties_for_given_pom(path_to_root_pom):
     root_pom = tree.getroot()
     properties_node = root_pom.findall(xml_properties_tag)[0]
     if len(properties_node.findall(xml_properties_maven_compiler_source_with_error_tag)) > 0:
+        properties_node.findall(xml_properties_maven_compiler_source_with_error_tag).tag = xml_properties_maven_compiler_source_without_error_tag
+    if len(properties_node.findall(xml_properties_maven_compiler_target_with_error_tag)) > 0:
+        properties_node.findall(xml_properties_maven_compiler_target_with_error_tag).tag = xml_properties_maven_compiler_target_without_error_tag
+    '''
+    if len(properties_node.findall(xml_properties_maven_compiler_source_with_error_tag)) > 0:
         xml_properties_maven_compiler_source_without_error_node = ET.SubElement(properties_node, xml_properties_maven_compiler_source_without_error_tag)
         xml_properties_maven_compiler_source_without_error_node.text = xml_maven_compiler_text
         xml_properties_maven_compiler_target_without_error_node = ET.SubElement(properties_node, xml_properties_maven_compiler_target_without_error_tag)
         xml_properties_maven_compiler_target_without_error_node.text = xml_maven_compiler_text
+    '''
     tree.write(path_to_root_pom)
 
 
