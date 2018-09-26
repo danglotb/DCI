@@ -31,9 +31,11 @@ def prepare(project):
         fix_maven_compiler_properties(project)
 
 def fix_maven_compiler_properties(project):
+    fix_maven_compiler_properties_for_given_pom(toolbox.prefix_dataset + "/" + project + "/pom.xml")
+    fix_maven_compiler_properties_for_given_pom(toolbox.prefix_dataset + "/" + project + "_parent/pom.xml")
+
+def fix_maven_compiler_properties_for_given_pom(path_to_root_pom):
     ET.register_namespace('', xml_namespace)
-    # set in top pom enforcer skip to true
-    path_to_root_pom = toolbox.prefix_dataset + "/" + project + "/pom.xml"
     tree = ET.parse(path_to_root_pom)
     root_pom = tree.getroot()
     properties_node = root_pom.findall(xml_properties_tag)[0]
