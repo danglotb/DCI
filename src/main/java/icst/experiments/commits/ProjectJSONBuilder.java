@@ -242,7 +242,7 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                 .getKey();
     }
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
         JSAPResult configuration = OptionsWrapper.parse(new ProjectBuilderOptions(), args);
         if (configuration.getBoolean("help")) {
             OptionsWrapper.usage();
