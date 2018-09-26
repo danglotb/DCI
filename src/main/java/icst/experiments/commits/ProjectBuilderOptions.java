@@ -58,8 +58,8 @@ public class ProjectBuilderOptions implements Options {
         mavenHome.setStringParser(JSAP.STRING_PARSER);
 
         FlaggedOption commit = new FlaggedOption("commit");
-        mavenHome.setLongFlag("commit");
-        mavenHome.setStringParser(JSAP.STRING_PARSER);
+        commit.setLongFlag("commit");
+        commit.setStringParser(JSAP.STRING_PARSER);
 
         jsap.registerParameter(path);
         jsap.registerParameter(owner);
