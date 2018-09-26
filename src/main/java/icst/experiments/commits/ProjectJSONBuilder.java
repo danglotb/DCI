@@ -165,12 +165,16 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
             CommandExecutor.runCmd("python src/main/python/september-2018/preparation.py " + this.projectJSON.name);
             if (new File(this.pathToRootFolder + "/" + concernedModule).exists()) {
                 final boolean containsAtLeastOneFailingTestCaseTsOnPPrime = TestSuiteSwitcherAndChecker.switchAndCheckThatContainAtLeastOneFailingTestCase(
-                        new File(this.pathToRootFolder + "/" + concernedModule).getAbsolutePath(),
-                        new File(this.pathToRootFolder + "_parent/" + concernedModule).getAbsolutePath(), true // HERE WE COMPUTE ALSO THE COVERAGE
+                        new File(this.pathToRootFolder + "/").getAbsolutePath(),
+                        new File(this.pathToRootFolder + "_parent/").getAbsolutePath(),
+                        concernedModule,
+                        true // HERE WE COMPUTE ALSO THE COVERAGE
                 );
                 final boolean containsAtLeastOneFAilingTestCaseTsPrimeOnP = TestSuiteSwitcherAndChecker.switchAndCheckThatContainAtLeastOneFailingTestCase(
-                        new File(this.pathToRootFolder + "_parent/" + concernedModule).getAbsolutePath(),
-                        new File(this.pathToRootFolder + "/" + concernedModule).getAbsolutePath(), false
+                        new File(this.pathToRootFolder + "_parent/").getAbsolutePath(),
+                        new File(this.pathToRootFolder + "/").getAbsolutePath(),
+                        concernedModule,
+                        false
                 );
                 if (!containsAtLeastOneFailingTestCaseTsOnPPrime && !containsAtLeastOneFAilingTestCaseTsPrimeOnP) {
                     return addToBlackListWithMessageAndCause(commitName, "No behavioral changes could be checked for {}", "NoBehavioralChanges");
