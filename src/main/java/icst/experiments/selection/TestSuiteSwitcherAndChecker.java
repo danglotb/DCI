@@ -27,16 +27,20 @@ public class TestSuiteSwitcherAndChecker {
 
     public static boolean switchAndCheckThatContainAtLeastOneFailingTestCase(String pathToProject,
                                                                              String pathToProjectWithTestSuite,
+                                                                             String concernedModule,
                                                                              boolean computeCoverage) {
+        String pathToConcernedModule = pathToProject + "/" + concernedModule;
+        String pathToConcernedModuleOther = pathToProjectWithTestSuite + "/" + concernedModule;
         // modify the test source directory
         CommandExecutor.runCmd(
                 String.join(" ",
                         COMMAND_TEST_SUITE_SWITCHER,
-                        pathToProjectWithTestSuite + PATH_TEST,
-                        pathToProject + POM_FILE
+                        pathToConcernedModuleOther + PATH_TEST,
+                        pathToConcernedModule + POM_FILE
                 )
         );
-        MavenExecutor.runGoals(pathToProject + POM_FILE,
+        MavenExecutor.runGoals(pathToProject + POM_FILE, "clean", "install");
+        MavenExecutor.runGoals(pathToConcernedModule + POM_FILE,
                 "clean",
                 (computeCoverage ? "org.openclover:clover-maven-plugin:4.2.0:setup" : ""),
                 "test",
@@ -47,14 +51,14 @@ public class TestSuiteSwitcherAndChecker {
         CommandExecutor.runCmd(
                 String.join(" ",
                         COMMAND_TEST_SUITE_SWITCHER,
-                        pathToProject + POM_FILE
+                        pathToConcernedModule + POM_FILE
                 )
         );
-        if (!new File(pathToProject + "/" + PATH_TO_SUREFIRE_REPORTS).exists() ||
-                new File(pathToProject + "/" + PATH_TO_SUREFIRE_REPORTS).listFiles() == null) {
+        if (!new File(pathToConcernedModule + "/" + PATH_TO_SUREFIRE_REPORTS).exists() ||
+                new File(pathToConcernedModule + "/" + PATH_TO_SUREFIRE_REPORTS).listFiles() == null) {
             return false;
         }
-        return Arrays.stream(new File(pathToProject + "/" + PATH_TO_SUREFIRE_REPORTS).listFiles())
+        return Arrays.stream(new File(pathToConcernedModule + "/" + PATH_TO_SUREFIRE_REPORTS).listFiles())
                 .map(File::getAbsolutePath)
                 .filter(path -> path.endsWith(".xml"))
                 .filter(path -> {

@@ -35,6 +35,7 @@ public class TestSelectionAccordingDiff {
         LOGGER.info("Prepare for {}", project);
         CommandExecutor.runCmd("git diff " + shaParent + " > " + DIFF_NAME, pathToRepository + "/" + concernedModule, DIFF_NAME);
         // install
+        /*
         MavenExecutor.runGoals(pathToRepository + "/pom.xml",
                 "clean",
                 "install",
@@ -43,6 +44,7 @@ public class TestSelectionAccordingDiff {
                 "-Denforcer.skip=true",
                 "-Dxwiki.clirr.skip=true", // anyway, we can use this specific goal on all project, the value is not used...
                 "--quiet");
+        */
         // 4 compute the list of the test that execute the change
         final String absolutePathToParent = new File(pathToRepository + "_parent/" + concernedModule).getAbsolutePath();
         final String absolutePathToCurrentCommit = new File(pathToRepository + "/" + concernedModule).getAbsolutePath();
