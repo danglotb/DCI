@@ -1,160 +1,160 @@
 diff --git a/src/main/java/org/apache/commons/cli/HelpFormatter.java b/src/main/java/org/apache/commons/cli/HelpFormatter.java
-index 4642f7c..7072866 100644
+index 7072866..4642f7c 100644
 --- a/src/main/java/org/apache/commons/cli/HelpFormatter.java
 +++ b/src/main/java/org/apache/commons/cli/HelpFormatter.java
-@@ -341,13 +341,20 @@ public class HelpFormatter
+@@ -341,20 +341,13 @@ public class HelpFormatter
  
      /**
       * Set the comparator used to sort the options when they output in help text.
--     * Passing in a null comparator will keep the options in the order they were declared.
-+     * Passing in a null parameter will set the ordering to the default mode.
+-     * Passing in a null parameter will set the ordering to the default mode.
++     * Passing in a null comparator will keep the options in the order they were declared.
       * 
       * @since 1.2
       */
      public void setOptionComparator(Comparator<Option> comparator)
      {
--        this.optionComparator = comparator;
-+        if (comparator == null)
-+        {
-+            this.optionComparator = new OptionComparator();
-+        }
-+        else
-+        {
-+            this.optionComparator = comparator;
-+        }
+-        if (comparator == null)
+-        {
+-            this.optionComparator = new OptionComparator();
+-        }
+-        else
+-        {
+-            this.optionComparator = comparator;
+-        }
++        this.optionComparator = comparator;
      }
  
      /**
-@@ -539,17 +546,17 @@ public class HelpFormatter
+@@ -546,17 +539,17 @@ public class HelpFormatter
          // create a list for processed option groups
          final Collection<OptionGroup> processedGroups = new ArrayList<OptionGroup>();
  
-+        // temp variable
-+        Option option;
-+
+-        // temp variable
+-        Option option;
+-
          List<Option> optList = new ArrayList<Option>(options.getOptions());
--        if (getOptionComparator() != null)
--        {
--            Collections.sort(optList, getOptionComparator());
--        }
-+        Collections.sort(optList, getOptionComparator());
+-        Collections.sort(optList, getOptionComparator());
++        if (getOptionComparator() != null)
++        {
++            Collections.sort(optList, getOptionComparator());
++        }
          // iterate over the options
          for (Iterator i = optList.iterator(); i.hasNext();)
          {
              // get the next Option
--            Option option = (Option) i.next();
--            
-+            option = (Option) i.next();
-+
+-            option = (Option) i.next();
+-
++            Option option = (Option) i.next();
++            
              // check if the option is part of an OptionGroup
              OptionGroup group = options.getOptionGroup(option);
  
-@@ -604,10 +611,7 @@ public class HelpFormatter
+@@ -611,7 +604,10 @@ public class HelpFormatter
          }
  
          List<Option> optList = new ArrayList<Option>(group.getOptions());
--        if (getOptionComparator() != null)
--        {
--            Collections.sort(optList, getOptionComparator());
--        }
-+        Collections.sort(optList, getOptionComparator());
+-        Collections.sort(optList, getOptionComparator());
++        if (getOptionComparator() != null)
++        {
++            Collections.sort(optList, getOptionComparator());
++        }
          // for each option in the OptionGroup
          for (Iterator i = optList.iterator(); i.hasNext();)
          {
-@@ -753,18 +757,16 @@ public class HelpFormatter
+@@ -757,16 +753,18 @@ public class HelpFormatter
          // the longest opt string this list will be then used to 
          // sort options ascending
          int max = 0;
-+        StringBuffer optBuf;
+-        StringBuffer optBuf;
          List<StringBuffer> prefixList = new ArrayList<StringBuffer>();
          
          List<Option> optList = options.helpOptions();
          
--        if (getOptionComparator() != null)
--        {
--            Collections.sort(optList, getOptionComparator());
--        }
-+        Collections.sort(optList, getOptionComparator());
+-        Collections.sort(optList, getOptionComparator());
++        if (getOptionComparator() != null)
++        {
++            Collections.sort(optList, getOptionComparator());
++        }
          
          for (Option option : optList)
          {
--            StringBuffer optBuf = new StringBuffer();
-+            optBuf = new StringBuffer();
+-            optBuf = new StringBuffer();
++            StringBuffer optBuf = new StringBuffer();
              
              if (option.getOpt() == null)
              {
-@@ -804,7 +806,7 @@ public class HelpFormatter
+@@ -806,7 +804,7 @@ public class HelpFormatter
          for (Iterator i = optList.iterator(); i.hasNext();)
          {
              Option option = (Option) i.next();
--            StringBuffer optBuf = new StringBuffer(prefixList.get(x++).toString());
-+            optBuf = new StringBuffer(prefixList.get(x++).toString());
+-            optBuf = new StringBuffer(prefixList.get(x++).toString());
++            StringBuffer optBuf = new StringBuffer(prefixList.get(x++).toString());
  
              if (optBuf.length() < max)
              {
 diff --git a/src/main/java/org/apache/commons/cli/Options.java b/src/main/java/org/apache/commons/cli/Options.java
-index 778b2d2..a3302a8 100644
+index a3302a8..778b2d2 100644
 --- a/src/main/java/org/apache/commons/cli/Options.java
 +++ b/src/main/java/org/apache/commons/cli/Options.java
-@@ -24,7 +24,6 @@ import java.util.Collections;
+@@ -24,6 +24,7 @@ import java.util.Collections;
  import java.util.HashMap;
  import java.util.HashSet;
  import java.util.Iterator;
--import java.util.LinkedHashMap;
++import java.util.LinkedHashMap;
  import java.util.List;
  import java.util.Map;
  
-@@ -50,10 +49,10 @@ public class Options implements Serializable
+@@ -49,10 +50,10 @@ public class Options implements Serializable
      private static final long serialVersionUID = 1L;
  
      /** a map of the options with the character key */
--    private Map<String, Option> shortOpts = new LinkedHashMap<String, Option>();
-+    private Map<String, Option> shortOpts = new HashMap<String, Option>();
+-    private Map<String, Option> shortOpts = new HashMap<String, Option>();
++    private Map<String, Option> shortOpts = new LinkedHashMap<String, Option>();
  
      /** a map of the options with the long key */
--    private Map<String, Option> longOpts = new LinkedHashMap<String, Option>();
-+    private Map<String, Option> longOpts = new HashMap<String, Option>();
+-    private Map<String, Option> longOpts = new HashMap<String, Option>();
++    private Map<String, Option> longOpts = new LinkedHashMap<String, Option>();
  
      /** a map of the required options */
      private List<Object> requiredOpts = new ArrayList<Object>();
 diff --git a/src/test/java/org/apache/commons/cli/HelpFormatterTest.java b/src/test/java/org/apache/commons/cli/HelpFormatterTest.java
-index 558b395..02a6adf 100644
+index 02a6adf..558b395 100644
 --- a/src/test/java/org/apache/commons/cli/HelpFormatterTest.java
 +++ b/src/test/java/org/apache/commons/cli/HelpFormatterTest.java
-@@ -269,11 +269,13 @@ public class HelpFormatterTest extends TestCase
+@@ -269,13 +269,11 @@ public class HelpFormatterTest extends TestCase
          opts.addOption(new Option("c", "third"));
  
          HelpFormatter helpFormatter = new HelpFormatter();
--        helpFormatter.setOptionComparator(new Comparator<Option>()
-+        helpFormatter.setOptionComparator(new Comparator()
+-        helpFormatter.setOptionComparator(new Comparator()
++        helpFormatter.setOptionComparator(new Comparator<Option>()
          {
--            public int compare(Option opt1, Option opt2)
-+            public int compare(Object o1, Object o2)
+-            public int compare(Object o1, Object o2)
++            public int compare(Option opt1, Option opt2)
              {
                  // reverses the fuctionality of the default comparator
-+                Option opt1 = (Option) o1;
-+                Option opt2 = (Option) o2;
+-                Option opt1 = (Option) o1;
+-                Option opt2 = (Option) o2;
                  return opt2.getKey().compareToIgnoreCase(opt1.getKey());
              }
          });
-@@ -287,9 +289,9 @@ public class HelpFormatterTest extends TestCase
+@@ -289,9 +287,9 @@ public class HelpFormatterTest extends TestCase
      public void testPrintSortedUsageWithNullComparator()
      {
          Options opts = new Options();
--        opts.addOption(new Option("c", "first"));
-+        opts.addOption(new Option("a", "first"));
+-        opts.addOption(new Option("a", "first"));
++        opts.addOption(new Option("c", "first"));
          opts.addOption(new Option("b", "second"));
--        opts.addOption(new Option("a", "third"));
-+        opts.addOption(new Option("c", "third"));
+-        opts.addOption(new Option("c", "third"));
++        opts.addOption(new Option("a", "third"));
  
          HelpFormatter helpFormatter = new HelpFormatter();
          helpFormatter.setOptionComparator(null);
-@@ -297,7 +299,7 @@ public class HelpFormatterTest extends TestCase
+@@ -299,7 +297,7 @@ public class HelpFormatterTest extends TestCase
          StringWriter out = new StringWriter();
          helpFormatter.printUsage(new PrintWriter(out), 80, "app", opts);
  
--        assertEquals("usage: app [-c] [-b] [-a]" + EOL, out.toString());
-+        assertEquals("usage: app [-a] [-b] [-c]" + EOL, out.toString());
+-        assertEquals("usage: app [-a] [-b] [-c]" + EOL, out.toString());
++        assertEquals("usage: app [-c] [-b] [-a]" + EOL, out.toString());
      }
  
      public void testPrintOptionGroupUsage()
