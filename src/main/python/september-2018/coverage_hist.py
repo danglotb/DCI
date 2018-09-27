@@ -1,3 +1,4 @@
+import sys
 import toolbox
 import numpy as np
 import matplotlib.pyplot as plt
@@ -10,13 +11,16 @@ def run(project):
     for commit in commits:
         file_name = toolbox.get_output_folder_for_commit(commits=commits, commit=commit)
         commit_result_directory = root_project_folder_result + "/" + file_name + "/" + \
-                                  toolbox.name_of_csv_with_list_of_test_that_execute_the_changes + "_coverage.csv"
+                                  "commit_coverage_" + toolbox.name_of_csv_with_list_of_test_that_execute_the_changes + "_coverage.csv"
         with open(commit_result_directory) as data_file:
             for line in data_file:
                 if line.startswith("total"):
                     splitted = line.split(";")
                     executed = int(splitted[1])
                     total = int(splitted[2])
+                    if total == 0:
+                        print commit_result_directory
+                        continue
                     coverage = (float(executed) / float(total)) * 100.0
                     coverage_project.append(coverage)
     return coverage_project
@@ -75,7 +79,10 @@ def sort(coverages):
 
 
 if __name__ == '__main__':
-    projects = ["jsoup", "xwiki-commons", "commons-cli", "commons-lang", "commons-collections", "gson", "scifio"]
+    if len(sys.argv) > 1:
+        projects = sys.argv[1:]
+    else:
+        projects = ["commons-cli", "xwiki-commons", "jsoup", "gson"]
     bins = []
     for project in projects:
         coverage_project = run(project)

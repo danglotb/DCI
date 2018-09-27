@@ -89,7 +89,7 @@ def create_diff(commit_id, cwd):
     cmd = [
         "git", "diff",
         commit_id,
-        ">", "patch.diff"
+        ">", toolbox.get_absolute_path(cwd + "/patch.diff")
     ]
     toolbox.print_and_call_in_a_file_no_redirection(cmd, cwd=cwd)
 
