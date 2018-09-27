@@ -1,5 +1,5 @@
 diff --git a/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgress.java b/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgress.java
-index a8dfc5590..41c6f53b4 100644
+index a8dfc55..41c6f53 100644
 --- a/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgress.java
 +++ b/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgress.java
 @@ -48,9 +48,9 @@
@@ -70,7 +70,7 @@ index a8dfc5590..41c6f53b4 100644
  
          // Start a new step
 diff --git a/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgressStep.java b/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgressStep.java
-index f1c52c076..c8fee7422 100644
+index f1c52c0..c8fee74 100644
 --- a/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgressStep.java
 +++ b/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgressStep.java
 @@ -40,6 +40,8 @@
@@ -113,7 +113,7 @@ index f1c52c076..c8fee7422 100644
          return new DefaultJobProgressStep(null, newLevelSource, this);
      }
 diff --git a/xwiki-commons-core/xwiki-commons-job/src/test/java/org/xwiki/job/internal/DefaultJobProgressTest.java b/xwiki-commons-core/xwiki-commons-job/src/test/java/org/xwiki/job/internal/DefaultJobProgressTest.java
-index 0e032ef93..9a7027c87 100644
+index 0e032ef..9a7027c 100644
 --- a/xwiki-commons-core/xwiki-commons-job/src/test/java/org/xwiki/job/internal/DefaultJobProgressTest.java
 +++ b/xwiki-commons-core/xwiki-commons-job/src/test/java/org/xwiki/job/internal/DefaultJobProgressTest.java
 @@ -373,31 +373,40 @@ public void testEndStepOnParentStepSource()

@@ -1,159 +1,20 @@
-[[1;34mINFO[m] Scanning for projects...
-[[1;33mWARNING[m] 
-[[1;33mWARNING[m] Some problems were encountered while building the effective model for com.google.code.gson:gson-extras:jar:1.0-SNAPSHOT
-[[1;33mWARNING[m] 'parent.relativePath' of POM com.google.code.gson:gson-extras:1.0-SNAPSHOT (/home/bdanglot/workspace/icst-2019/september-2018/dataset/gson/extras/pom.xml) points at com.google.code.gson:gson-parent instead of org.sonatype.oss:oss-parent, please verify your project structure @ line 9, column 11
-[[1;33mWARNING[m] 
-[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
-[[1;33mWARNING[m] 
-[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
-[[1;33mWARNING[m] 
-[[1;34mINFO[m] 
-[[1;34mINFO[m] [1m------------------< [0;36mcom.google.code.gson:gson-extras[0;1m >------------------[m
-[[1;34mINFO[m] [1mBuilding Gson Extras 1.0-SNAPSHOT[m
-[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
-[[1;34mINFO[m] 
-[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mgson-extras[0;1m ---[m
-[[1;34mINFO[m] Deleting /home/bdanglot/workspace/icst-2019/september-2018/dataset/gson/extras/target
-[[1;34mINFO[m] 
-[[1;34mINFO[m] [1m--- [0;32mdiff-test-selection:0.5-SNAPSHOT:list[m [1m(default-cli)[m @ [36mgson-extras[0;1m ---[m
-[[1;34mINFO[m] Computing coverage for /home/bdanglot/workspace/icst-2019/september-2018/dataset/gson/extras
-[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
-[[1;34mINFO[m] Scanning for projects...
-[[1;33mWARNING[m] 
-[[1;33mWARNING[m] Some problems were encountered while building the effective model for com.google.code.gson:gson-extras:jar:1.0-SNAPSHOT
-[[1;33mWARNING[m] 'parent.relativePath' of POM com.google.code.gson:gson-extras:1.0-SNAPSHOT (/home/bdanglot/workspace/icst-2019/september-2018/dataset/gson/extras/pom.xml) points at com.google.code.gson:gson-parent instead of org.sonatype.oss:oss-parent, please verify your project structure @ line 9, column 11
-[[1;33mWARNING[m] 
-[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
-[[1;33mWARNING[m] 
-[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
-[[1;33mWARNING[m] 
-[[1;34mINFO[m] 
-[[1;34mINFO[m] [1m------------------< [0;36mcom.google.code.gson:gson-extras[0;1m >------------------[m
-[[1;34mINFO[m] [1mBuilding Gson Extras 1.0-SNAPSHOT[m
-[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
-[[1;34mINFO[m] 
-[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mgson-extras[0;1m ---[m
-[[1;34mINFO[m] 
-[[1;34mINFO[m] [1m--- [0;32mclover-maven-plugin:4.2.0:setup[m [1m(default-cli)[m @ [36mgson-extras[0;1m ---[m
-[[1;34mINFO[m] No 'maven.clover.licenseLocation' configured. Using default license.
-[[1;34mINFO[m] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
-[[1;34mINFO[m] Loaded from: /home/bdanglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
-[[1;34mINFO[m] Clover free edition.
-[[1;34mINFO[m] Creating new database at '/home/bdanglot/workspace/icst-2019/september-2018/dataset/gson/extras/target/clover/clover.db'.
-[[1;34mINFO[m] Processing files at 1.8 source level.
-[[1;34mINFO[m] Clover all over. Instrumented 8 files (4 packages).
-[[1;34mINFO[m] Elapsed time = 0.451 secs. (17.738 files/sec, 2,501.109 srclines/sec)
-[[1;34mINFO[m] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
-[[1;34mINFO[m] Loaded from: /home/bdanglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
-[[1;34mINFO[m] Clover free edition.
-[[1;34mINFO[m] Updating existing database at '/home/bdanglot/workspace/icst-2019/september-2018/dataset/gson/extras/target/clover/clover.db'.
-[[1;34mINFO[m] Processing files at 1.8 source level.
-[[1;34mINFO[m] Clover all over. Instrumented 5 files (3 packages).
-[[1;34mINFO[m] 37 test methods detected.
-[[1;34mINFO[m] Elapsed time = 0.211 secs. (23.697 files/sec, 3,696.682 srclines/sec)
-[[1;34mINFO[m] 
-[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.2:enforce[m [1m(enforce-maven)[m @ [36mgson-extras[0;1m ---[m
-[[1;34mINFO[m] Skipping Rule Enforcement.
-[[1;34mINFO[m] 
-[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mgson-extras[0;1m ---[m
-[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
-[[1;34mINFO[m] skip non existing resourceDirectory /home/bdanglot/workspace/icst-2019/september-2018/dataset/gson/extras/src/main/resources
-[[1;34mINFO[m] Copying 1 resource
-[[1;34mINFO[m] 
-[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.5.1:compile[m [1m(default-compile)[m @ [36mgson-extras[0;1m ---[m
-[[1;34mINFO[m] Changes detected - recompiling the module!
-[[1;34mINFO[m] Compiling 8 source files to /home/bdanglot/workspace/icst-2019/september-2018/dataset/gson/extras/target/classes
-[[1;34mINFO[m] 
-[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mgson-extras[0;1m ---[m
-[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
-[[1;34mINFO[m] skip non existing resourceDirectory /home/bdanglot/workspace/icst-2019/september-2018/dataset/gson/extras/src/test/resources
-[[1;34mINFO[m] 
-[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.5.1:testCompile[m [1m(default-testCompile)[m @ [36mgson-extras[0;1m ---[m
-[[1;34mINFO[m] Changes detected - recompiling the module!
-[[1;34mINFO[m] Compiling 5 source files to /home/bdanglot/workspace/icst-2019/september-2018/dataset/gson/extras/target/test-classes
-[[1;34mINFO[m] 
-[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mgson-extras[0;1m ---[m
-[[1;34mINFO[m] Surefire report directory: /home/bdanglot/workspace/icst-2019/september-2018/dataset/gson/extras/target/surefire-reports
-
--------------------------------------------------------
- T E S T S
--------------------------------------------------------
-Running com.google.gson.interceptors.InterceptorTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.194 sec
-Running com.google.gson.graph.GraphAdapterBuilderTest
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec <<< FAILURE!
-testSerializationDirectSelfReference(com.google.gson.graph.GraphAdapterBuilderTest)  Time elapsed: 0.01 sec  <<< FAILURE!
-junit.framework.ComparisonFailure: expected:<...1':{'name':'SUICIDE'[,'beats':'0x1']}}> but was:<...1':{'name':'SUICIDE'[]}}>
-	at junit.framework.Assert.assertEquals(Assert.java:81)
-	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at com.google.gson.graph.GraphAdapterBuilderTest.__CLR4_2_0bacie9dq(GraphAdapterBuilderTest.java:79)
-	at com.google.gson.graph.GraphAdapterBuilderTest.testSerializationDirectSelfReference(GraphAdapterBuilderTest.java:69)
-
-Running com.google.gson.typeadapters.RuntimeTypeAdapterFactoryTest
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
-Running com.google.gson.typeadapters.PostConstructAdapterFactoryTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
-Running com.google.gson.typeadapters.UtcDateTypeAdapterTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.216 sec
-
-Results :
-
-Failed tests:   testSerializationDirectSelfReference(com.google.gson.graph.GraphAdapterBuilderTest): expected:<...1':{'name':'SUICIDE'[,'beats':'0x1']}}> but was:<...1':{'name':'SUICIDE'[]}}>
-
-Tests run: 37, Failures: 1, Errors: 0, Skipped: 0
-
-[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] [1;31mBUILD FAILURE[m
-[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time: 5.131 s
-[[1;34mINFO[m] Finished at: 2018-09-27T14:56:07+02:00
-[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-surefire-plugin:2.12.4:test[m [1m(default-test)[m on project [36mgson-extras[m: [1;31mThere are test failures.[m
-[[1;31mERROR[m] [1;31m[m
-[[1;31mERROR[m] [1;31mPlease refer to /home/bdanglot/workspace/icst-2019/september-2018/dataset/gson/extras/target/surefire-reports for the individual test results.[m
-[[1;31mERROR[m] -> [1m[Help 1][m
-[[1;31mERROR[m] 
-[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
-[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
-[[1;31mERROR[m] 
-[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
-[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-Writing HTML report to '/home/bdanglot/workspace/icst-2019/september-2018/dataset/gson/extras/target/clover/report'
-Done. Processed 4 packages in 1806ms (451ms per package).
-[[1;34mINFO[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/gson/extras/src/main/java/com/google/gson/typeadapters/RuntimeTypeAdapterFactory.java
-[[1;34mINFO[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/gson_parent/extras/src/main/java/com/google/gson/typeadapters/RuntimeTypeAdapterFactory.java
-[info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:146 is modified.
-[info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:162 is modified.
-[info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:247 is modified.
-[info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:251 is modified.
-[info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:217 is modified.
-[info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:137 is modified.
-[info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:154 is modified.
-[info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:215 is modified.
-[info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:214 is modified.
-[info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:246 is modified.
-[info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:162 covered.
-[info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:247 covered.
-[info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:251 covered.
-[info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:217 covered.
-[info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:137 covered.
-[info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:214 covered.
-[info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:246 covered.
-[info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:154 covered.
-[[1;34mINFO[m] Saving result in /home/bdanglot/workspace/icst-2019/september-2018/result/gson/commit_1_c1e7e2d/commit_coverage_testsThatExecuteTheChanges.csv ...
-[[1;34mINFO[m] com.google.gson.typeadapters.RuntimeTypeAdapterFactoryTest;testRuntimeTypeIsBaseType;testNullTypeFieldName;testDuplicateSubtype;testDeserializeMissingTypeField;testDeserializeMissingSubtype;testNullBaseType;testNullSubtype;testSerializeMissingSubtype;testSerializeCollidingTypeFieldName;testDuplicateLabel;testRuntimeTypeAdapter;testSerializeWrappedNullValue;testNullLabel
-[[1;34mINFO[m] Writing Coverage in /home/bdanglot/workspace/icst-2019/september-2018/result/gson/commit_1_c1e7e2d/commit_coverage_testsThatExecuteTheChanges_coverage.csv
-[[1;34mINFO[m] com.google.gson.typeadapters.RuntimeTypeAdapterFactory;8;10
-
-[[1;34mINFO[m] total;8;10
-
-[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
-[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time: 12.490 s
-[[1;34mINFO[m] Finished at: 2018-09-27T14:56:12+02:00
-[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[INFO] 2018-09-27 14:56:12 RepositoriesSetter - {/home/bdanglot/workspace/icst-2019/september-2018/dataset/gson} Cleaning local repository...
-[INFO] 2018-09-27 14:56:12 RepositoriesSetter - Checkout b1fb9ca9a1bea5440bc6a5b506ccf67236b08243 revision...
-[INFO] 2018-09-27 14:56:12 RepositoriesSetter - {/home/bdanglot/workspace/icst-2019/september-2018/dataset/gson_parent} Cleaning local repository...
-[INFO] 2018-09-27 14:56:12 RepositoriesSetter - Checkout 08bbb226f11a1f7f76835f953e700d905e1fab4d revision...
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Gson Extras
+[INFO]    task-segment: [clean, eu.stamp-project:diff-test-selection:0.5-SNAPSHOT:list]
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[ERROR] BUILD ERROR
+[INFO] ------------------------------------------------------------------------
+[INFO] Error resolving version for 'org.apache.maven.plugins:maven-compiler-plugin': Plugin requires Maven version 3.0
+[INFO] ------------------------------------------------------------------------
+[INFO] For more information, run Maven with the -e switch
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: < 1 second
+[INFO] Finished at: Thu Sep 27 16:15:45 CEST 2018
+[INFO] Final Memory: 4M/75M
+[INFO] ------------------------------------------------------------------------
+[INFO] 2018-09-27 16:15:46 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/gson} Cleaning local repository...
+[INFO] 2018-09-27 16:15:46 RepositoriesSetter - Checkout b1fb9ca9a1bea5440bc6a5b506ccf67236b08243 revision...
+[INFO] 2018-09-27 16:15:46 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/gson_parent} Cleaning local repository...
+[INFO] 2018-09-27 16:15:46 RepositoriesSetter - Checkout 08bbb226f11a1f7f76835f953e700d905e1fab4d revision...

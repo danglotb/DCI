@@ -24,21 +24,21 @@ index 57dc878..81321e8 100644
  import java.io.BufferedInputStream;
  import java.io.IOException;
  import java.io.InputStream;
-@@ -165,6 +166,13 @@ public interface Connection {
-      */
+@@ -166,6 +167,13 @@ public interface Connection {
      Connection validateTLSCertificates(boolean value);
  
-+    /**
+     /**
 +     * Set custom SSL socket factory
 +     * @param sslSocketFactory custom SSL socket factory
 +     * @return this Connection, for chaining
 +     */
 +    Connection sslSocketFactory(SSLSocketFactory sslSocketFactory);
 +
-     /**
++    /**
       * Add a request data parameter. Request parameters are sent in the request query string for GETs, and in the
       * request body for POSTs. A request may have multiple values of the same name.
-@@ -600,10 +608,23 @@ public interface Connection {
+      * @param key data key
+@@ -600,11 +608,24 @@ public interface Connection {
           * Set TLS certificate validation. <b>True</b> by default.
           * @param value set false to ignore TLS (SSL) certificates
           * @deprecated as distributions (specifically Google Play) are starting to show warnings if these checks are
@@ -48,7 +48,7 @@ index 57dc878..81321e8 100644
           */
          void validateTLSCertificates(boolean value);
  
-+        /**
+         /**
 +         * Get the current custom SSL socket factory, if any.
 +         * @return custom SSL socket factory if set, null otherwise
 +         */
@@ -60,9 +60,10 @@ index 57dc878..81321e8 100644
 +         */
 +        void sslSocketFactory(SSLSocketFactory sslSocketFactory);
 +
-         /**
++        /**
           * Add a data parameter to the request
           * @param keyval data to add.
+          * @return this Request, for chaining
 diff --git a/src/main/java/org/jsoup/helper/HttpConnection.java b/src/main/java/org/jsoup/helper/HttpConnection.java
 index 96a624b..b7aa5f1 100644
 --- a/src/main/java/org/jsoup/helper/HttpConnection.java

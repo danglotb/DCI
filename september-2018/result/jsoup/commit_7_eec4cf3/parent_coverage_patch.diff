@@ -1,41 +1,41 @@
 diff --git a/src/main/java/org/jsoup/helper/HttpConnection.java b/src/main/java/org/jsoup/helper/HttpConnection.java
-index 9f56a29..3c6c5cc 100644
+index 3c6c5cc..9f56a29 100644
 --- a/src/main/java/org/jsoup/helper/HttpConnection.java
 +++ b/src/main/java/org/jsoup/helper/HttpConnection.java
-@@ -671,6 +671,7 @@ public class HttpConnection implements Connection {
+@@ -671,7 +671,6 @@ public class HttpConnection implements Connection {
          private String statusMessage;
          private ByteBuffer byteData;
          private InputStream bodyStream;
-+        private HttpURLConnection conn;
+-        private HttpURLConnection conn;
          private String charset;
          private String contentType;
          private boolean executed = false;
-@@ -910,6 +911,10 @@ public class HttpConnection implements Connection {
+@@ -911,10 +910,6 @@ public class HttpConnection implements Connection {
           * Call on completion of stream read, to close the body (or error) stream
           */
          private void safeClose() {
-+            if (conn != null) {
-+                conn.disconnect();
-+                conn = null;
-+            }
+-            if (conn != null) {
+-                conn.disconnect();
+-                conn = null;
+-            }
              if (bodyStream != null) {
                  try {
                      bodyStream.close();
-@@ -922,7 +927,8 @@ public class HttpConnection implements Connection {
+@@ -927,8 +922,7 @@ public class HttpConnection implements Connection {
          }
  
          // set up url, method, header, cookies
--        private void setupFromConnection(HttpURLConnection conn, Connection.Response previousResponse) throws IOException {
-+        private void setupFromConnection(HttpURLConnection conn, HttpConnection.Response previousResponse) throws IOException {
-+            this.conn = conn;
+-        private void setupFromConnection(HttpURLConnection conn, HttpConnection.Response previousResponse) throws IOException {
+-            this.conn = conn;
++        private void setupFromConnection(HttpURLConnection conn, Connection.Response previousResponse) throws IOException {
              method = Method.valueOf(conn.getRequestMethod());
              url = conn.getURL();
              statusCode = conn.getResponseCode();
-@@ -938,6 +944,7 @@ public class HttpConnection implements Connection {
+@@ -944,7 +938,6 @@ public class HttpConnection implements Connection {
                      if (!hasCookie(prevCookie.getKey()))
                          cookie(prevCookie.getKey(), prevCookie.getValue());
                  }
-+                previousResponse.safeClose();
+-                previousResponse.safeClose();
              }
          }
  

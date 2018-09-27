@@ -1,22 +1,22 @@
 diff --git a/src/main/java/org/jsoup/helper/HttpConnection.java b/src/main/java/org/jsoup/helper/HttpConnection.java
-index 880e4b4..fa4ea22 100644
+index fa4ea22..880e4b4 100644
 --- a/src/main/java/org/jsoup/helper/HttpConnection.java
 +++ b/src/main/java/org/jsoup/helper/HttpConnection.java
-@@ -1114,14 +1114,11 @@ public class HttpConnection implements Connection {
+@@ -1114,11 +1114,14 @@ public class HttpConnection implements Connection {
  
      private static boolean needsMultipart(Connection.Request req) {
          // multipart mode, for files. add the header if we see something with an inputstream, and return a non-null boundary
--        boolean needsMulti = false;
++        boolean needsMulti = false;
          for (Connection.KeyVal keyVal : req.data()) {
--            if (keyVal.hasInputStream()) {
--                needsMulti = true;
--                break;
--            }
-+            if (keyVal.hasInputStream())
-+                return true;
+-            if (keyVal.hasInputStream())
+-                return true;
++            if (keyVal.hasInputStream()) {
++                needsMulti = true;
++                break;
++            }
          }
--        return needsMulti;
-+        return false;
+-        return false;
++        return needsMulti;
      }
  
      public static class KeyVal implements Connection.KeyVal {

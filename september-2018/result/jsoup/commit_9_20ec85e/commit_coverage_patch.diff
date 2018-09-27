@@ -2,11 +2,10 @@ diff --git a/src/main/java/org/jsoup/nodes/Element.java b/src/main/java/org/jsou
 index a966b60..61420bf 100644
 --- a/src/main/java/org/jsoup/nodes/Element.java
 +++ b/src/main/java/org/jsoup/nodes/Element.java
-@@ -687,6 +687,26 @@ public class Element extends Node {
-             return null;
+@@ -688,6 +688,26 @@ public class Element extends Node {
      }
  
-+    /**
+     /**
 +     * Get all the siblings after this element.
 +     *
 +     * @return  all the siblings after this element, or null if there is no siblings after this
@@ -26,14 +25,14 @@ index a966b60..61420bf 100644
 +        return null;
 +    }
 +
-     /**
++    /**
       * Gets the previous element sibling of this element.
       * @return the previous element, or null if there is no previous element
-@@ -703,6 +723,26 @@ public class Element extends Node {
-             return null;
+      * @see #nextElementSibling()
+@@ -704,6 +724,26 @@ public class Element extends Node {
      }
  
-+    /**
+     /**
 +     * Get all the element siblings before this element.
 +     *
 +     * @return all the previous element siblings, or null if no previous siblings
@@ -53,9 +52,10 @@ index a966b60..61420bf 100644
 +        return null;
 +    }
 +
-     /**
++    /**
       * Gets the first element sibling of this element.
       * @return the first sibling that is an element (aka the parent's first element child) 
+      */
 diff --git a/src/test/java/org/jsoup/nodes/ElementTest.java b/src/test/java/org/jsoup/nodes/ElementTest.java
 index 70a58f0..9e59181 100644
 --- a/src/test/java/org/jsoup/nodes/ElementTest.java

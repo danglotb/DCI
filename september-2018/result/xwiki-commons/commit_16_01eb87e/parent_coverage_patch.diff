@@ -1,128 +1,128 @@
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-handlers/xwiki-commons-extension-handler-jar/pom.xml b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-handlers/xwiki-commons-extension-handler-jar/pom.xml
-index ce00ddb74..03e5f268a 100644
+index 03e5f26..ce00ddb 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-handlers/xwiki-commons-extension-handler-jar/pom.xml
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-handlers/xwiki-commons-extension-handler-jar/pom.xml
-@@ -74,4 +74,23 @@
+@@ -74,23 +74,4 @@
        <scope>test</scope>
      </dependency>
    </dependencies>
-+  <build>
-+    <plugins>
-+      <plugin>
-+        <groupId>org.apache.maven.plugins</groupId>
-+        <artifactId>maven-checkstyle-plugin</artifactId>
-+        <executions>
-+          <execution>
-+            <!-- Specify the "default" execution id so that the "blocker" one is always executed -->
-+            <id>default</id>
-+            <configuration>
-+              <excludes>
-+                org/xwiki/extension/jar/internal/handler/JarExtensionHandler.java
-+              </excludes>
-+            </configuration>
-+          </execution>
-+        </executions>
-+      </plugin>
-+    </plugins>
-+  </build>
+-  <build>
+-    <plugins>
+-      <plugin>
+-        <groupId>org.apache.maven.plugins</groupId>
+-        <artifactId>maven-checkstyle-plugin</artifactId>
+-        <executions>
+-          <execution>
+-            <!-- Specify the "default" execution id so that the "blocker" one is always executed -->
+-            <id>default</id>
+-            <configuration>
+-              <excludes>
+-                org/xwiki/extension/jar/internal/handler/JarExtensionHandler.java
+-              </excludes>
+-            </configuration>
+-          </execution>
+-        </executions>
+-      </plugin>
+-    </plugins>
+-  </build>
  </project>
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-handlers/xwiki-commons-extension-handler-jar/src/main/java/org/xwiki/extension/jar/internal/handler/JarExtensionHandler.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-handlers/xwiki-commons-extension-handler-jar/src/main/java/org/xwiki/extension/jar/internal/handler/JarExtensionHandler.java
-index 66f26049c..7f1ec66d2 100644
+index 7f1ec66..66f2604 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-handlers/xwiki-commons-extension-handler-jar/src/main/java/org/xwiki/extension/jar/internal/handler/JarExtensionHandler.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-handlers/xwiki-commons-extension-handler-jar/src/main/java/org/xwiki/extension/jar/internal/handler/JarExtensionHandler.java
-@@ -40,6 +40,7 @@
+@@ -40,7 +40,6 @@
  import org.xwiki.component.manager.ComponentManager;
  import org.xwiki.component.phase.Initializable;
  import org.xwiki.component.phase.InitializationException;
-+import org.xwiki.extension.Extension;
+-import org.xwiki.extension.Extension;
  import org.xwiki.extension.ExtensionException;
  import org.xwiki.extension.InstallException;
  import org.xwiki.extension.InstalledExtension;
-@@ -62,14 +63,25 @@
+@@ -63,25 +62,14 @@
  {
      /**
       * Type {@code jar}.
-+     * 
-+     * @since 9.0RC1
+-     * 
+-     * @since 9.0RC1
       */
      public static final String JAR = "jar";
  
      /**
       * Type {@code webjar}.
-+     * 
-+     * @since 9.0RC1
+-     * 
+-     * @since 9.0RC1
       */
      public static final String WEBJAR = "webjar";
  
-+    /**
-+     * Custom property containing a JAR sub type (for example {@code webjar}).
-+     * 
-+     * @since 9.0RC1
-+     */
-+    public static final String PROPERTY_TYPE = "xwiki.extension.jar.type";
-+
+-    /**
+-     * Custom property containing a JAR sub type (for example {@code webjar}).
+-     * 
+-     * @since 9.0RC1
+-     */
+-    public static final String PROPERTY_TYPE = "xwiki.extension.jar.type";
+-
      @Inject
      private ComponentManagerManager componentManagerManager;
  
-@@ -81,12 +93,43 @@
+@@ -93,43 +81,12 @@
      /**
       * @param type the type to test
       * @return true of the passed extension type is supported by this handler
-+     * @since 9.0RC1
+-     * @since 9.0RC1
       */
      public static boolean isSupported(String type)
      {
          return type != null && (type.equals(JarExtensionHandler.JAR) || type.equals(JarExtensionHandler.WEBJAR));
      }
  
-+    /**
-+     * Find of the passes extension if a webjar.
-+     * 
-+     * @param extension the extension to test
-+     * @return true of the passed extension is a webjar, false otherwise
-+     * @since 9.0RC1
-+     */
-+    public static boolean isWebjar(Extension extension)
-+    {
-+        // Ideally webjar extensions should have "webjar" type
-+        if (extension.getType().equals(WEBJAR)) {
-+            return true;
-+        }
-+
-+        ///////////////////////////////
-+        // But it's not the case for:
-+
-+        // ** webjar.org releases (i.e. most of the webjars). We assume "org.webjars:*" id means it's a webjar
-+        if (extension.getId().getId().startsWith("org.webjars:")) {
-+            return true;
-+        }
-+        // ** contrib extensions which support version of XWiki older than 9.0RC1. We support a custom property which
-+        // does not have any effect on older versions of XWiki
-+        if (JarExtensionHandler.WEBJAR.equals(extension.getProperty(JarExtensionHandler.PROPERTY_TYPE))) {
-+            return true;
-+        }
-+
-+        return false;
-+    }
-+
+-    /**
+-     * Find of the passes extension if a webjar.
+-     * 
+-     * @param extension the extension to test
+-     * @return true of the passed extension is a webjar, false otherwise
+-     * @since 9.0RC1
+-     */
+-    public static boolean isWebjar(Extension extension)
+-    {
+-        // Ideally webjar extensions should have "webjar" type
+-        if (extension.getType().equals(WEBJAR)) {
+-            return true;
+-        }
+-
+-        ///////////////////////////////
+-        // But it's not the case for:
+-
+-        // ** webjar.org releases (i.e. most of the webjars). We assume "org.webjars:*" id means it's a webjar
+-        if (extension.getId().getId().startsWith("org.webjars:")) {
+-            return true;
+-        }
+-        // ** contrib extensions which support version of XWiki older than 9.0RC1. We support a custom property which
+-        // does not have any effect on older versions of XWiki
+-        if (JarExtensionHandler.WEBJAR.equals(extension.getProperty(JarExtensionHandler.PROPERTY_TYPE))) {
+-            return true;
+-        }
+-
+-        return false;
+-    }
+-
      @Override
      public void initialize() throws InitializationException
      {
-@@ -117,11 +160,16 @@ public void install(LocalExtension localExtension, String namespace, Request req
+@@ -160,16 +117,11 @@ public void install(LocalExtension localExtension, String namespace, Request req
          }
  
          // 2) load and register components (only for standard jars)
--        if (localExtension.getType().equals(JAR)) {
-+        if (containsComponents(localExtension)) {
+-        if (containsComponents(localExtension)) {
++        if (localExtension.getType().equals(JAR)) {
              loadComponents(localExtension.getFile(), classLoader, namespace);
          }
      }
  
-+    private boolean containsComponents(Extension extension)
-+    {
-+        return extension != null && extension.getType().equals(JAR) && !isWebjar(extension);
-+    }
-+
+-    private boolean containsComponents(Extension extension)
+-    {
+-        return extension != null && extension.getType().equals(JAR) && !isWebjar(extension);
+-    }
+-
      @Override
      public void uninstall(InstalledExtension installedExtension, String namespace, Request request)
          throws UninstallException

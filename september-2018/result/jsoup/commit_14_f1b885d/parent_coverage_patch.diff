@@ -1,142 +1,142 @@
 diff --git a/CHANGES b/CHANGES
-index 92ecc3a..6f2e2aa 100644
+index 6f2e2aa..92ecc3a 100644
 --- a/CHANGES
 +++ b/CHANGES
-@@ -3,6 +3,9 @@ jsoup changelog
+@@ -3,9 +3,6 @@ jsoup changelog
  **** Release 1.12.1 [PENDING]
    * Change: removed deprecated method to disable TLS cert checking Connection.validateTLSCertificates().
  
-+  * Change: some internal methods have been rearranged; if you extended any of the Jsoup internals you may need to make
-+    updates.
-+
+-  * Change: some internal methods have been rearranged; if you extended any of the Jsoup internals you may need to make
+-    updates.
+-
    * Improvement: documents now remember their parser, so when later manipulating them, the correct HTML or XML tree
      builder is reused, as are the parser settings like case sensitivity.
      <https://github.com/jhy/jsoup/issues/769>
 diff --git a/src/main/java/org/jsoup/helper/DataUtil.java b/src/main/java/org/jsoup/helper/DataUtil.java
-index 3aaa0ed..0e8e819 100644
+index 0e8e819..3aaa0ed 100644
 --- a/src/main/java/org/jsoup/helper/DataUtil.java
 +++ b/src/main/java/org/jsoup/helper/DataUtil.java
-@@ -17,7 +17,6 @@ import java.io.IOException;
+@@ -17,6 +17,7 @@ import java.io.IOException;
  import java.io.InputStream;
  import java.io.InputStreamReader;
  import java.io.OutputStream;
--import java.io.RandomAccessFile;
++import java.io.RandomAccessFile;
  import java.nio.Buffer;
  import java.nio.ByteBuffer;
  import java.nio.charset.Charset;
-@@ -187,23 +186,6 @@ public final class DataUtil {
+@@ -186,6 +187,23 @@ public final class DataUtil {
          return input.readToByteBuffer(maxSize);
      }
  
--    static ByteBuffer readToByteBuffer(InputStream inStream) throws IOException {
--        return readToByteBuffer(inStream, 0);
--    }
--
--    static ByteBuffer readFileToByteBuffer(File file) throws IOException {
--        RandomAccessFile randomAccessFile = null;
--        try {
--            randomAccessFile = new RandomAccessFile(file, "r");
--            byte[] bytes = new byte[(int) randomAccessFile.length()];
--            randomAccessFile.readFully(bytes);
--            return ByteBuffer.wrap(bytes);
--        } finally {
--            if (randomAccessFile != null)
--                randomAccessFile.close();
--        }
--    }
--
++    static ByteBuffer readToByteBuffer(InputStream inStream) throws IOException {
++        return readToByteBuffer(inStream, 0);
++    }
++
++    static ByteBuffer readFileToByteBuffer(File file) throws IOException {
++        RandomAccessFile randomAccessFile = null;
++        try {
++            randomAccessFile = new RandomAccessFile(file, "r");
++            byte[] bytes = new byte[(int) randomAccessFile.length()];
++            randomAccessFile.readFully(bytes);
++            return ByteBuffer.wrap(bytes);
++        } finally {
++            if (randomAccessFile != null)
++                randomAccessFile.close();
++        }
++    }
++
      static ByteBuffer emptyByteBuffer() {
          return ByteBuffer.allocate(0);
      }
 diff --git a/src/main/java/org/jsoup/helper/HttpConnection.java b/src/main/java/org/jsoup/helper/HttpConnection.java
-index 6f6a4b2..b363a98 100644
+index b363a98..6f6a4b2 100644
 --- a/src/main/java/org/jsoup/helper/HttpConnection.java
 +++ b/src/main/java/org/jsoup/helper/HttpConnection.java
-@@ -9,9 +9,7 @@ import org.jsoup.nodes.Document;
+@@ -9,7 +9,9 @@ import org.jsoup.nodes.Document;
  import org.jsoup.parser.Parser;
  import org.jsoup.parser.TokenQueue;
  
--import javax.net.ssl.HostnameVerifier;
++import javax.net.ssl.HostnameVerifier;
  import javax.net.ssl.HttpsURLConnection;
--import javax.net.ssl.SSLSession;
++import javax.net.ssl.SSLSession;
  import javax.net.ssl.SSLSocketFactory;
  import java.io.BufferedInputStream;
  import java.io.BufferedWriter;
-@@ -542,7 +540,6 @@ public class HttpConnection implements Connection {
+@@ -540,6 +542,7 @@ public class HttpConnection implements Connection {
          private boolean ignoreContentType = false;
          private Parser parser;
          private boolean parserDefined = false; // called parser(...) vs initialized in ctor
--        private boolean validateTSLCertificates = true;
++        private boolean validateTSLCertificates = true;
          private String postDataCharset = DataUtil.defaultCharset;
          private SSLSocketFactory sslSocketFactory;
  
-@@ -604,14 +601,6 @@ public class HttpConnection implements Connection {
+@@ -601,6 +604,14 @@ public class HttpConnection implements Connection {
              return ignoreHttpErrors;
          }
  
--        public boolean validateTLSCertificates() {
--            return validateTSLCertificates;
--        }
--
--        public void validateTLSCertificates(boolean value) {
--            validateTSLCertificates = value;
--        }
--
++        public boolean validateTLSCertificates() {
++            return validateTSLCertificates;
++        }
++
++        public void validateTLSCertificates(boolean value) {
++            validateTSLCertificates = value;
++        }
++
          public SSLSocketFactory sslSocketFactory() {
              return sslSocketFactory;
          }
-@@ -677,7 +666,6 @@ public class HttpConnection implements Connection {
+@@ -666,6 +677,7 @@ public class HttpConnection implements Connection {
  
      public static class Response extends HttpConnection.Base<Connection.Response> implements Connection.Response {
          private static final int MAX_REDIRECTS = 20;
--        private static SSLSocketFactory sslSocketFactory;
++        private static SSLSocketFactory sslSocketFactory;
          private static final String LOCATION = "Location";
          private int statusCode;
          private String statusMessage;
-@@ -933,20 +921,6 @@ public class HttpConnection implements Connection {
+@@ -921,6 +933,20 @@ public class HttpConnection implements Connection {
              }
          }
  
--        /**
--         * Instantiate Hostname Verifier that does nothing.
--         * This is used for connections with disabled SSL certificates validation.
--         *
--         * @return Hostname Verifier that does nothing and accepts all hostnames
--         */
--        private static HostnameVerifier getInsecureVerifier() {
--            return new HostnameVerifier() {
--                public boolean verify(String urlHostName, SSLSession session) {
--                    return true;
--                }
--            };
--        }
--
++        /**
++         * Instantiate Hostname Verifier that does nothing.
++         * This is used for connections with disabled SSL certificates validation.
++         *
++         * @return Hostname Verifier that does nothing and accepts all hostnames
++         */
++        private static HostnameVerifier getInsecureVerifier() {
++            return new HostnameVerifier() {
++                public boolean verify(String urlHostName, SSLSession session) {
++                    return true;
++                }
++            };
++        }
++
          // set up url, method, header, cookies
          private void setupFromConnection(HttpURLConnection conn, Connection.Response previousResponse) throws IOException {
              method = Method.valueOf(conn.getRequestMethod());
 diff --git a/src/main/java/org/jsoup/nodes/Comment.java b/src/main/java/org/jsoup/nodes/Comment.java
-index 021d0d1..d0669fe 100644
+index d0669fe..021d0d1 100644
 --- a/src/main/java/org/jsoup/nodes/Comment.java
 +++ b/src/main/java/org/jsoup/nodes/Comment.java
 @@ -77,7 +77,7 @@ public class Comment extends LeafNode {
          XmlDeclaration decl = null;
          if (doc.childNodeSize() > 0) {
              Element el = doc.child(0);
--            decl = new XmlDeclaration(doc.getParser().settings().normalizeTag(el.tagName()), data.startsWith("!"));
-+            decl = new XmlDeclaration(NodeUtils.parser(doc).settings().normalizeTag(el.tagName()), data.startsWith("!"));
+-            decl = new XmlDeclaration(NodeUtils.parser(doc).settings().normalizeTag(el.tagName()), data.startsWith("!"));
++            decl = new XmlDeclaration(doc.getParser().settings().normalizeTag(el.tagName()), data.startsWith("!"));
              decl.attributes().addAll(el.attributes());
          }
          return decl;
 diff --git a/src/main/java/org/jsoup/nodes/Element.java b/src/main/java/org/jsoup/nodes/Element.java
-index 18da685..a966b60 100644
+index a966b60..18da685 100644
 --- a/src/main/java/org/jsoup/nodes/Element.java
 +++ b/src/main/java/org/jsoup/nodes/Element.java
 @@ -140,7 +140,7 @@ public class Element extends Node {
       */
      public Element tagName(String tagName) {
          Validate.notEmpty(tagName, "Tag name must not be empty.");
--        tag = Tag.valueOf(tagName, getParser().settings()); // maintains the case option of the original parse
-+        tag = Tag.valueOf(tagName, NodeUtils.parser(this).settings()); // maintains the case option of the original parse
+-        tag = Tag.valueOf(tagName, NodeUtils.parser(this).settings()); // maintains the case option of the original parse
++        tag = Tag.valueOf(tagName, getParser().settings()); // maintains the case option of the original parse
          return this;
      }
  
@@ -144,8 +144,8 @@ index 18da685..a966b60 100644
       *  {@code parent.appendElement("h1").attr("id", "header").text("Welcome");}
       */
      public Element appendElement(String tagName) {
--        Element child = new Element(Tag.valueOf(tagName, getParser().settings()), baseUri());
-+        Element child = new Element(Tag.valueOf(tagName, NodeUtils.parser(this).settings()), baseUri());
+-        Element child = new Element(Tag.valueOf(tagName, NodeUtils.parser(this).settings()), baseUri());
++        Element child = new Element(Tag.valueOf(tagName, getParser().settings()), baseUri());
          appendChild(child);
          return child;
      }
@@ -153,8 +153,8 @@ index 18da685..a966b60 100644
       *  {@code parent.prependElement("h1").attr("id", "header").text("Welcome");}
       */
      public Element prependElement(String tagName) {
--        Element child = new Element(Tag.valueOf(tagName, getParser().settings()), baseUri());
-+        Element child = new Element(Tag.valueOf(tagName, NodeUtils.parser(this).settings()), baseUri());
+-        Element child = new Element(Tag.valueOf(tagName, NodeUtils.parser(this).settings()), baseUri());
++        Element child = new Element(Tag.valueOf(tagName, getParser().settings()), baseUri());
          prependChild(child);
          return child;
      }
@@ -162,8 +162,8 @@ index 18da685..a966b60 100644
       */
      public Element append(String html) {
          Validate.notNull(html);
--        List<Node> nodes = getParser().parseFragmentInput(html, this, baseUri());
-+        List<Node> nodes = NodeUtils.parser(this).parseFragmentInput(html, this, baseUri());
+-        List<Node> nodes = NodeUtils.parser(this).parseFragmentInput(html, this, baseUri());
++        List<Node> nodes = getParser().parseFragmentInput(html, this, baseUri());
          addChildren(nodes.toArray(new Node[nodes.size()]));
          return this;
      }
@@ -171,285 +171,285 @@ index 18da685..a966b60 100644
       */
      public Element prepend(String html) {
          Validate.notNull(html);
--        List<Node> nodes = getParser().parseFragmentInput(html, this, baseUri());
-+        List<Node> nodes = NodeUtils.parser(this).parseFragmentInput(html, this, baseUri());
+-        List<Node> nodes = NodeUtils.parser(this).parseFragmentInput(html, this, baseUri());
++        List<Node> nodes = getParser().parseFragmentInput(html, this, baseUri());
          addChildren(0, nodes.toArray(new Node[nodes.size()]));
          return this;
      }
-@@ -733,7 +733,8 @@ public class Element extends Node {
+@@ -733,8 +733,7 @@ public class Element extends Node {
      }
  
      private static <E extends Element> int indexInList(Element search, List<E> elements) {
--        for (int i = 0; i < elements.size(); i++) {
-+        final int size = elements.size();
-+        for (int i = 0; i < size; i++) {
+-        final int size = elements.size();
+-        for (int i = 0; i < size; i++) {
++        for (int i = 0; i < elements.size(); i++) {
              if (elements.get(i) == search)
                  return i;
          }
-@@ -1114,7 +1115,7 @@ public class Element extends Node {
+@@ -1115,7 +1114,7 @@ public class Element extends Node {
  
      static boolean preserveWhitespace(Node node) {
          // looks only at this element and five levels up, to prevent recursion & needless stack searches
--        if (node != null && node instanceof Element) {
-+        if (node instanceof Element) {
+-        if (node instanceof Element) {
++        if (node != null && node instanceof Element) {
              Element el = (Element) node;
              int i = 0;
              do {
-@@ -1396,21 +1397,14 @@ public class Element extends Node {
+@@ -1397,14 +1396,21 @@ public class Element extends Node {
      public String html() {
          StringBuilder accum = StringUtil.stringBuilder();
          html(accum);
--        return getOutputSettings().prettyPrint() ? accum.toString().trim() : accum.toString();
-+        return NodeUtils.outputSettings(this).prettyPrint() ? accum.toString().trim() : accum.toString();
+-        return NodeUtils.outputSettings(this).prettyPrint() ? accum.toString().trim() : accum.toString();
++        return getOutputSettings().prettyPrint() ? accum.toString().trim() : accum.toString();
      }
  
--    private void html(StringBuilder accum) {
--        for (Node node : childNodes)
--            node.outerHtml(accum);
--    }
--
--    /**
--     * {@inheritDoc}
--     */
++    private void html(StringBuilder accum) {
++        for (Node node : childNodes)
++            node.outerHtml(accum);
++    }
++
++    /**
++     * {@inheritDoc}
++     */
      @Override
      public <T extends Appendable> T html(T appendable) {
--        for (Node node : childNodes)
--            node.outerHtml(appendable);
-+        final int size = childNodes.size();
-+        for (int i = 0; i < size; i++)
-+            childNodes.get(i).outerHtml(appendable);
+-        final int size = childNodes.size();
+-        for (int i = 0; i < size; i++)
+-            childNodes.get(i).outerHtml(appendable);
++        for (Node node : childNodes)
++            node.outerHtml(appendable);
  
          return appendable;
      }
-@@ -1427,10 +1421,6 @@ public class Element extends Node {
+@@ -1421,6 +1427,10 @@ public class Element extends Node {
          return this;
      }
  
--	public String toString() {
--        return outerHtml();
--    }
--
++	public String toString() {
++        return outerHtml();
++    }
++
      @Override
      public Element clone() {
          return (Element) super.clone();
 diff --git a/src/main/java/org/jsoup/nodes/Node.java b/src/main/java/org/jsoup/nodes/Node.java
-index d7ad20a..67d9496 100644
+index 67d9496..d7ad20a 100644
 --- a/src/main/java/org/jsoup/nodes/Node.java
 +++ b/src/main/java/org/jsoup/nodes/Node.java
-@@ -3,8 +3,6 @@ package org.jsoup.nodes;
+@@ -3,6 +3,8 @@ package org.jsoup.nodes;
  import org.jsoup.SerializationException;
  import org.jsoup.helper.StringUtil;
  import org.jsoup.helper.Validate;
--import org.jsoup.parser.HtmlTreeBuilder;
--import org.jsoup.parser.Parser;
++import org.jsoup.parser.HtmlTreeBuilder;
++import org.jsoup.parser.Parser;
  import org.jsoup.select.NodeFilter;
  import org.jsoup.select.NodeTraversor;
  import org.jsoup.select.NodeVisitor;
-@@ -84,7 +82,7 @@ public abstract class Node implements Cloneable {
+@@ -82,7 +84,7 @@ public abstract class Node implements Cloneable {
       * @return this (for chaining)
       */
      public Node attr(String attributeKey, String attributeValue) {
--        attributeKey = getParser().settings().normalizeAttribute(attributeKey);
-+        attributeKey = NodeUtils.parser(this).settings().normalizeAttribute(attributeKey);
+-        attributeKey = NodeUtils.parser(this).settings().normalizeAttribute(attributeKey);
++        attributeKey = getParser().settings().normalizeAttribute(attributeKey);
          attributes().putIgnoreCase(attributeKey, attributeValue);
          return this;
      }
-@@ -334,7 +332,7 @@ public abstract class Node implements Cloneable {
+@@ -332,7 +334,7 @@ public abstract class Node implements Cloneable {
          Validate.notNull(parentNode);
  
          Element context = parent() instanceof Element ? (Element) parent() : null;
--        List<Node> nodes = getParser().parseFragmentInput(html, context, baseUri());
-+        List<Node> nodes = NodeUtils.parser(this).parseFragmentInput(html, context, baseUri());
+-        List<Node> nodes = NodeUtils.parser(this).parseFragmentInput(html, context, baseUri());
++        List<Node> nodes = getParser().parseFragmentInput(html, context, baseUri());
          parentNode.addChildren(index, nodes.toArray(new Node[nodes.size()]));
      }
  
-@@ -347,9 +345,9 @@ public abstract class Node implements Cloneable {
+@@ -345,9 +347,9 @@ public abstract class Node implements Cloneable {
          Validate.notEmpty(html);
  
          Element context = parent() instanceof Element ? (Element) parent() : null;
--        List<Node> wrapChildren = getParser().parseFragmentInput(html, context, baseUri());
-+        List<Node> wrapChildren = NodeUtils.parser(this).parseFragmentInput(html, context, baseUri());
+-        List<Node> wrapChildren = NodeUtils.parser(this).parseFragmentInput(html, context, baseUri());
++        List<Node> wrapChildren = getParser().parseFragmentInput(html, context, baseUri());
          Node wrapNode = wrapChildren.get(0);
--        if (wrapNode == null || !(wrapNode instanceof Element)) // nothing to wrap with; noop
-+        if (!(wrapNode instanceof Element)) // nothing to wrap with; noop
+-        if (!(wrapNode instanceof Element)) // nothing to wrap with; noop
++        if (wrapNode == null || !(wrapNode instanceof Element)) // nothing to wrap with; noop
              return null;
  
          Element wrap = (Element) wrapNode;
-@@ -562,28 +560,19 @@ public abstract class Node implements Cloneable {
+@@ -560,19 +562,28 @@ public abstract class Node implements Cloneable {
      }
  
      /**
--     Get the outer HTML of this node.
--     @return HTML
-+     Get the outer HTML of this node. For example, on a {@code p} element, may return {@code <p>Para</p>}.
-+     @return outer HTML
-+     @see Element#html()
-+     @see Element#text()
+-     Get the outer HTML of this node. For example, on a {@code p} element, may return {@code <p>Para</p>}.
+-     @return outer HTML
+-     @see Element#html()
+-     @see Element#text()
++     Get the outer HTML of this node.
++     @return HTML
       */
      public String outerHtml() {
--        StringBuilder accum = new StringBuilder(128);
-+        StringBuilder accum = StringUtil.stringBuilder();
+-        StringBuilder accum = StringUtil.stringBuilder();
++        StringBuilder accum = new StringBuilder(128);
          outerHtml(accum);
          return accum.toString();
      }
  
      protected void outerHtml(Appendable accum) {
--        NodeTraversor.traverse(new OuterHtmlVisitor(accum, getOutputSettings()), this);
--    }
--
--    // if this node has no document (or parent), retrieve the default output settings
--    Document.OutputSettings getOutputSettings() {
--        Document owner = ownerDocument();
--        return owner != null ? owner.outputSettings() : (new Document("")).outputSettings();
--    }
--
--    Parser getParser() {
--        Document doc = ownerDocument();
--        return doc != null && doc.parser() != null ? doc.parser() : new Parser(new HtmlTreeBuilder());
-+        NodeTraversor.traverse(new OuterHtmlVisitor(accum, NodeUtils.outputSettings(this)), this);
+-        NodeTraversor.traverse(new OuterHtmlVisitor(accum, NodeUtils.outputSettings(this)), this);
++        NodeTraversor.traverse(new OuterHtmlVisitor(accum, getOutputSettings()), this);
++    }
++
++    // if this node has no document (or parent), retrieve the default output settings
++    Document.OutputSettings getOutputSettings() {
++        Document owner = ownerDocument();
++        return owner != null ? owner.outputSettings() : (new Document("")).outputSettings();
++    }
++
++    Parser getParser() {
++        Document doc = ownerDocument();
++        return doc != null && doc.parser() != null ? doc.parser() : new Parser(new HtmlTreeBuilder());
      }
  
      /**
-@@ -606,6 +595,11 @@ public abstract class Node implements Cloneable {
+@@ -595,11 +606,6 @@ public abstract class Node implements Cloneable {
          return appendable;
      }
  
-+    /**
-+     * Gets this node's outer HTML.
-+     * @return outer HTML.
-+     * @see #outerHtml()
-+     */
+-    /**
+-     * Gets this node's outer HTML.
+-     * @return outer HTML.
+-     * @see #outerHtml()
+-     */
  	public String toString() {
          return outerHtml();
      }
-@@ -632,7 +626,6 @@ public abstract class Node implements Cloneable {
+@@ -626,6 +632,7 @@ public abstract class Node implements Cloneable {
       * @param o other object to compare to
       * @return true if the content of this node is the same as the other
       */
--
++
      public boolean hasSameValue(Object o) {
          if (this == o) return true;
          if (o == null || getClass() != o.getClass()) return false;
 diff --git a/src/main/java/org/jsoup/nodes/NodeUtils.java b/src/main/java/org/jsoup/nodes/NodeUtils.java
-new file mode 100644
-index 0000000..2a39839
---- /dev/null
-+++ b/src/main/java/org/jsoup/nodes/NodeUtils.java
-@@ -0,0 +1,27 @@
-+package org.jsoup.nodes;
-+
-+import org.jsoup.parser.HtmlTreeBuilder;
-+import org.jsoup.parser.Parser;
-+
-+/**
-+ * Internal helpers for Nodes, to keep the actual node APIs relatively clean. A jsoup internal class, so don't use it as
-+ * there is no contract API).
-+ */
-+final class NodeUtils {
-+    /**
-+     * Get the output setting for this node,  or if this node has no document (or parent), retrieve the default output
-+     * settings
-+     */
-+    static Document.OutputSettings outputSettings(Node node) {
-+        Document owner = node.ownerDocument();
-+        return owner != null ? owner.outputSettings() : (new Document("")).outputSettings();
-+    }
-+
-+    /**
-+     * Get the parser that was used to make this node, or the default HTML parser if it has no parent.
-+     */
-+    static Parser parser(Node node) {
-+        Document doc = node.ownerDocument();
-+        return doc != null && doc.parser() != null ? doc.parser() : new Parser(new HtmlTreeBuilder());
-+    }
-+}
+deleted file mode 100644
+index 2a39839..0000000
+--- a/src/main/java/org/jsoup/nodes/NodeUtils.java
++++ /dev/null
+@@ -1,27 +0,0 @@
+-package org.jsoup.nodes;
+-
+-import org.jsoup.parser.HtmlTreeBuilder;
+-import org.jsoup.parser.Parser;
+-
+-/**
+- * Internal helpers for Nodes, to keep the actual node APIs relatively clean. A jsoup internal class, so don't use it as
+- * there is no contract API).
+- */
+-final class NodeUtils {
+-    /**
+-     * Get the output setting for this node,  or if this node has no document (or parent), retrieve the default output
+-     * settings
+-     */
+-    static Document.OutputSettings outputSettings(Node node) {
+-        Document owner = node.ownerDocument();
+-        return owner != null ? owner.outputSettings() : (new Document("")).outputSettings();
+-    }
+-
+-    /**
+-     * Get the parser that was used to make this node, or the default HTML parser if it has no parent.
+-     */
+-    static Parser parser(Node node) {
+-        Document doc = node.ownerDocument();
+-        return doc != null && doc.parser() != null ? doc.parser() : new Parser(new HtmlTreeBuilder());
+-    }
+-}
 diff --git a/src/main/java/org/jsoup/nodes/PseudoTextElement.java b/src/main/java/org/jsoup/nodes/PseudoTextElement.java
-index cacec3f..5d0cc14 100644
+index 5d0cc14..cacec3f 100644
 --- a/src/main/java/org/jsoup/nodes/PseudoTextElement.java
 +++ b/src/main/java/org/jsoup/nodes/PseudoTextElement.java
-@@ -2,8 +2,6 @@ package org.jsoup.nodes;
+@@ -2,6 +2,8 @@ package org.jsoup.nodes;
  
  import org.jsoup.parser.Tag;
  
--import java.io.IOException;
--
++import java.io.IOException;
++
  /**
   * Represents a {@link TextNode} as an {@link Element}, to enable text nodes to be selected with
   * the {@link org.jsoup.select.Selector} {@code :matchText} syntax.
-@@ -15,10 +13,10 @@ public class PseudoTextElement extends Element {
+@@ -13,10 +15,10 @@ public class PseudoTextElement extends Element {
      }
  
      @Override
--    void outerHtmlHead(Appendable accum, int depth, Document.OutputSettings out) throws IOException {
-+    void outerHtmlHead(Appendable accum, int depth, Document.OutputSettings out) {
+-    void outerHtmlHead(Appendable accum, int depth, Document.OutputSettings out) {
++    void outerHtmlHead(Appendable accum, int depth, Document.OutputSettings out) throws IOException {
      }
  
      @Override
--    void outerHtmlTail(Appendable accum, int depth, Document.OutputSettings out) throws IOException {
-+    void outerHtmlTail(Appendable accum, int depth, Document.OutputSettings out) {
+-    void outerHtmlTail(Appendable accum, int depth, Document.OutputSettings out) {
++    void outerHtmlTail(Appendable accum, int depth, Document.OutputSettings out) throws IOException {
      }
  }
 diff --git a/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java
-index 455bd6c..23d3708 100644
+index 23d3708..455bd6c 100644
 --- a/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java
 +++ b/src/main/java/org/jsoup/parser/HtmlTreeBuilder.java
-@@ -556,10 +556,6 @@ public class HtmlTreeBuilder extends TreeBuilder {
+@@ -556,6 +556,10 @@ public class HtmlTreeBuilder extends TreeBuilder {
          return pendingTableCharacters;
      }
  
--    void setPendingTableCharacters(List<String> pendingTableCharacters) {
--        this.pendingTableCharacters = pendingTableCharacters;
--    }
--
++    void setPendingTableCharacters(List<String> pendingTableCharacters) {
++        this.pendingTableCharacters = pendingTableCharacters;
++    }
++
      /**
       11.2.5.2 Closing elements that have implied end tags<p/>
       When the steps below require the UA to generate implied end tags, then, while the current node is a dd element, a
 diff --git a/src/main/java/org/jsoup/parser/Parser.java b/src/main/java/org/jsoup/parser/Parser.java
-index 919c9db..c544d18 100644
+index c544d18..919c9db 100644
 --- a/src/main/java/org/jsoup/parser/Parser.java
 +++ b/src/main/java/org/jsoup/parser/Parser.java
-@@ -13,8 +13,6 @@ import java.util.List;
+@@ -13,6 +13,8 @@ import java.util.List;
   * in {@link org.jsoup.Jsoup}.
   */
  public class Parser {
--    private static final int DEFAULT_MAX_ERRORS = 0; // by default, error tracking is disabled.
--    
++    private static final int DEFAULT_MAX_ERRORS = 0; // by default, error tracking is disabled.
++    
      private TreeBuilder treeBuilder;
      private ParseErrorList errors;
      private ParseSettings settings;
 diff --git a/src/main/java/org/jsoup/safety/Whitelist.java b/src/main/java/org/jsoup/safety/Whitelist.java
-index d363bc2..229ab36 100644
+index 229ab36..d363bc2 100644
 --- a/src/main/java/org/jsoup/safety/Whitelist.java
 +++ b/src/main/java/org/jsoup/safety/Whitelist.java
-@@ -256,8 +256,7 @@ public class Whitelist {
+@@ -256,7 +256,8 @@ public class Whitelist {
          Validate.isTrue(attributes.length > 0, "No attribute names supplied.");
  
          TagName tagName = TagName.valueOf(tag);
--        if (!tagNames.contains(tagName))
--            tagNames.add(tagName);
-+        tagNames.add(tagName);
+-        tagNames.add(tagName);
++        if (!tagNames.contains(tagName))
++            tagNames.add(tagName);
          Set<AttributeKey> attributeSet = new HashSet<>();
          for (String key : attributes) {
              Validate.notEmpty(key);
-@@ -335,8 +334,7 @@ public class Whitelist {
+@@ -334,7 +335,8 @@ public class Whitelist {
          Validate.notEmpty(value);
  
          TagName tagName = TagName.valueOf(tag);
--        if (!tagNames.contains(tagName))
--            tagNames.add(tagName);
-+        tagNames.add(tagName);
+-        tagNames.add(tagName);
++        if (!tagNames.contains(tagName))
++            tagNames.add(tagName);
          AttributeKey attrKey = AttributeKey.valueOf(attribute);
          AttributeValue attrVal = AttributeValue.valueOf(value);
  
-@@ -632,9 +630,8 @@ public class Whitelist {
+@@ -630,8 +632,9 @@ public class Whitelist {
              if (getClass() != obj.getClass()) return false;
              TypedValue other = (TypedValue) obj;
              if (value == null) {
--                if (other.value != null) return false;
--            } else if (!value.equals(other.value)) return false;
--            return true;
-+                return other.value == null;
-+            } else return value.equals(other.value);
+-                return other.value == null;
+-            } else return value.equals(other.value);
++                if (other.value != null) return false;
++            } else if (!value.equals(other.value)) return false;
++            return true;
          }
  
          @Override

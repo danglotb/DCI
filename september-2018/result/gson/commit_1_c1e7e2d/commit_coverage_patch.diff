@@ -1,5 +1,5 @@
 diff --git a/extras/src/main/java/com/google/gson/typeadapters/RuntimeTypeAdapterFactory.java b/extras/src/main/java/com/google/gson/typeadapters/RuntimeTypeAdapterFactory.java
-index bc0569cb..45d143aa 100644
+index bc0569c..45d143a 100644
 --- a/extras/src/main/java/com/google/gson/typeadapters/RuntimeTypeAdapterFactory.java
 +++ b/extras/src/main/java/com/google/gson/typeadapters/RuntimeTypeAdapterFactory.java
 @@ -126,21 +126,32 @@ public final class RuntimeTypeAdapterFactory<T> implements TypeAdapterFactory {
@@ -18,18 +18,18 @@ index bc0569cb..45d143aa 100644
 +    this.maintainType = maintainType;
    }
  
-+  /**
-+   * Creates a new runtime type adapter using for {@code baseType} using {@code
-+   * typeFieldName} as the type field name. Type field names are case sensitive.
+   /**
+    * Creates a new runtime type adapter using for {@code baseType} using {@code
+    * typeFieldName} as the type field name. Type field names are case sensitive.
 +   * {@code maintainType} flag decide if the type will be stored in pojo or not.
 +   */
 +  public static <T> RuntimeTypeAdapterFactory<T> of(Class<T> baseType, String typeFieldName, boolean maintainType) {
 +    return new RuntimeTypeAdapterFactory<T>(baseType, typeFieldName, maintainType);
 +  }
 +  
-   /**
-    * Creates a new runtime type adapter using for {@code baseType} using {@code
-    * typeFieldName} as the type field name. Type field names are case sensitive.
++  /**
++   * Creates a new runtime type adapter using for {@code baseType} using {@code
++   * typeFieldName} as the type field name. Type field names are case sensitive.
     */
    public static <T> RuntimeTypeAdapterFactory<T> of(Class<T> baseType, String typeFieldName) {
 -    return new RuntimeTypeAdapterFactory<T>(baseType, typeFieldName);

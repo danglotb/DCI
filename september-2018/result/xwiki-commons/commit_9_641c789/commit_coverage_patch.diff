@@ -1,5 +1,5 @@
 diff --git a/pom.xml b/pom.xml
-index 68dce3932..a40aaa920 100644
+index 68dce39..a40aaa9 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -144,6 +144,10 @@
@@ -14,7 +14,7 @@ index 68dce3932..a40aaa920 100644
    <prerequisites>
      <!-- Custom lifecycle configuration (used by webjar handler for example) require 3.3.9 -->
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/pom.xml b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/pom.xml
-index f2ffee81e..6ceb65667 100644
+index f2ffee8..6ceb656 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/pom.xml
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/pom.xml
 @@ -154,7 +154,9 @@
@@ -29,7 +29,7 @@ index f2ffee81e..6ceb65667 100644
              </configuration>
            </execution>
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/ExtensionManagerConfiguration.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/ExtensionManagerConfiguration.java
-index 32c594952..78f61fec8 100644
+index 32c5949..78f61fe 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/ExtensionManagerConfiguration.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/ExtensionManagerConfiguration.java
 @@ -25,6 +25,7 @@
@@ -57,7 +57,7 @@ index 32c594952..78f61fec8 100644
 +    }
  }
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/DefaultExtensionManagerConfiguration.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/DefaultExtensionManagerConfiguration.java
-index 39d7aeb0e..da9d6f0f3 100644
+index 39d7aeb..da9d6f0 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/DefaultExtensionManagerConfiguration.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/DefaultExtensionManagerConfiguration.java
 @@ -41,10 +41,16 @@
@@ -178,7 +178,7 @@ index 39d7aeb0e..da9d6f0f3 100644
 +    }
  }
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/ExtensionUtils.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/ExtensionUtils.java
-index d9a77f14b..33ff1b889 100644
+index d9a77f1..33ff1b8 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/ExtensionUtils.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/ExtensionUtils.java
 @@ -33,11 +33,14 @@
@@ -196,12 +196,10 @@ index d9a77f14b..33ff1b889 100644
  import org.xwiki.extension.wrap.WrappingCoreExtension;
  import org.xwiki.extension.wrap.WrappingExtension;
  import org.xwiki.extension.wrap.WrappingInstalledExtension;
-@@ -59,6 +62,33 @@ private ExtensionUtils()
-         // Utility class
-     }
+@@ -61,6 +64,33 @@ private ExtensionUtils()
  
-+    /**
-+     * @param dependency the initial dependency
+     /**
+      * @param dependency the initial dependency
 +     * @param configuration the configuration
 +     * @param factory the factory
 +     * @return the modified {@link ExtensionDependency} or null if it does not match any recommended dependency
@@ -227,11 +225,13 @@ index d9a77f14b..33ff1b889 100644
 +        return null;
 +    }
 +
-     /**
-      * @param dependency the initial dependency
++    /**
++     * @param dependency the initial dependency
       * @param managedDependencies the managed dependencies
+      * @param extension the extension with the passed dependency
+      * @return the actual dependency to resolve
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/converter/ExtensionIdConverter.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/converter/ExtensionIdConverter.java
-index f6bbcfa97..22be262fb 100644
+index f6bbcfa..22be262 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/converter/ExtensionIdConverter.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/converter/ExtensionIdConverter.java
 @@ -24,11 +24,13 @@
@@ -258,11 +258,10 @@ index f6bbcfa97..22be262fb 100644
      private static int countBackslashes(String str, int index)
      {
          for (int i = index - 1; i >= 0; --i) {
-@@ -61,11 +66,25 @@ private static int countBackslashes(String str, int index)
-      * @return the list of {@link ExtensionId}s created from the passed value
+@@ -62,10 +67,24 @@ private static int countBackslashes(String str, int index)
       */
      public static List<ExtensionId> toExtensionIdList(Collection<?> values, Version defaultVersion)
-+    {
+     {
 +        return toExtensionIdList(values, defaultVersion, null);
 +    }
 +
@@ -276,7 +275,7 @@ index f6bbcfa97..22be262fb 100644
 +     */
 +    public static List<ExtensionId> toExtensionIdList(Collection<?> values, Version defaultVersion,
 +        ExtensionFactory factory)
-     {
++    {
          List<ExtensionId> list = new ArrayList<>(values.size());
  
          for (Object value : values) {
@@ -285,11 +284,10 @@ index f6bbcfa97..22be262fb 100644
          }
  
          return list;
-@@ -78,21 +97,34 @@ private static int countBackslashes(String str, int index)
-      * @return the {@link ExtensionId} created from the passed value
+@@ -79,20 +98,33 @@ private static int countBackslashes(String str, int index)
       */
      public static ExtensionId toExtensionId(Object value, Version defaultVersion)
-+    {
+     {
 +        return toExtensionId(value, defaultVersion, null);
 +    }
 +
@@ -302,7 +300,7 @@ index f6bbcfa97..22be262fb 100644
 +     * @since 9.6
 +     */
 +    public static ExtensionId toExtensionId(Object value, Version defaultVersion, ExtensionFactory factory)
-     {
++    {
          if (value != null) {
              String valueString = value.toString();
 -            return toExtensionId(valueString, valueString.length() - 1, defaultVersion);
@@ -349,7 +347,7 @@ index f6bbcfa97..22be262fb 100644
  
      @Override
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/job/internal/AbstractInstallPlanJob.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/job/internal/AbstractInstallPlanJob.java
-index 611ab4a92..ed44b238e 100644
+index 611ab4a..ed44b23 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/job/internal/AbstractInstallPlanJob.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/job/internal/AbstractInstallPlanJob.java
 @@ -41,11 +41,13 @@
@@ -429,7 +427,7 @@ index 611ab4a92..ed44b238e 100644
                          this.progressManager.endStep(this);
                      }
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/version/VersionConstraint.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/version/VersionConstraint.java
-index 29e8f72fc..c1ee6ec98 100644
+index 29e8f72..c1ee6ec 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/version/VersionConstraint.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/version/VersionConstraint.java
 @@ -61,7 +61,7 @@
@@ -442,7 +440,7 @@ index 29e8f72fc..c1ee6ec98 100644
       * The difference with {@link #containsVersion(Version)} is that this method is trying to determine if this version
       * should work with this constraint while {@link #containsVersion(Version)} indicate if that's the ideal version for
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/internal/DefaultExtensionManagerConfigurationTest.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/internal/DefaultExtensionManagerConfigurationTest.java
-index 768784930..7bd0eb1c6 100644
+index 7687849..7bd0eb1 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/internal/DefaultExtensionManagerConfigurationTest.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/internal/DefaultExtensionManagerConfigurationTest.java
 @@ -29,35 +29,30 @@
@@ -537,14 +535,13 @@ index 768784930..7bd0eb1c6 100644
      }
  }
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/InstallPlanJobTest.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/InstallPlanJobTest.java
-index 815dabc13..979385b56 100644
+index 815dabc..979385b 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/InstallPlanJobTest.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/InstallPlanJobTest.java
-@@ -643,6 +643,66 @@ public void testInstallWithManagedDependency() throws Throwable
-         Assert.assertEquals(0, node.getChildren().size());
+@@ -644,6 +644,66 @@ public void testInstallWithManagedDependency() throws Throwable
      }
  
-+    @Test
+     @Test
 +    public void testInstallWithRecommendedManagedDependency() throws Throwable
 +    {
 +        // Change the version of the dependency trough recommended version
@@ -604,11 +601,12 @@ index 815dabc13..979385b56 100644
 +        Assert.assertEquals(0, node.getChildren().size());
 +    }
 +
-     @Test
++    @Test
      public void testInstallWithInvalidOptionalDependency() throws Throwable
      {
+         ExtensionPlan plan = installPlan(TestResources.REMOTE_WITHRMISSINGOPTIONALDEPENDENCY_ID, "namespace");
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/test/AbstractExtensionHandlerTest.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/test/AbstractExtensionHandlerTest.java
-index ec5e0b079..81e0f0fc5 100644
+index ec5e0b0..81e0f0f 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/test/AbstractExtensionHandlerTest.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/test/AbstractExtensionHandlerTest.java
 @@ -25,6 +25,7 @@
@@ -638,7 +636,7 @@ index ec5e0b079..81e0f0fc5 100644
  
      protected ExtensionPlanNode getNode(ExtensionId id, Collection<ExtensionPlanNode> nodes)
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/test/ConfigurableDefaultCoreExtensionRepository.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/test/ConfigurableDefaultCoreExtensionRepository.java
-index 2dd0fa504..51dd6c5fa 100644
+index 2dd0fa5..51dd6c5 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/test/ConfigurableDefaultCoreExtensionRepository.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/test/ConfigurableDefaultCoreExtensionRepository.java
 @@ -24,6 +24,7 @@

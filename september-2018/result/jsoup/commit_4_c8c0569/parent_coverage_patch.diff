@@ -1,32 +1,32 @@
 diff --git a/src/main/java/org/jsoup/helper/DataUtil.java b/src/main/java/org/jsoup/helper/DataUtil.java
-index f4012fc..d09034d 100644
+index d09034d..f4012fc 100644
 --- a/src/main/java/org/jsoup/helper/DataUtil.java
 +++ b/src/main/java/org/jsoup/helper/DataUtil.java
 @@ -229,12 +229,12 @@ public final class DataUtil {
       * Creates a random string, suitable for use as a mime boundary
       */
      static String mimeBoundary() {
--        final StringBuilder mime = new StringBuilder(boundaryLength);
-+        final StringBuilder mime = StringUtil.borrowBuilder();
+-        final StringBuilder mime = StringUtil.borrowBuilder();
++        final StringBuilder mime = new StringBuilder(boundaryLength);
          final Random rand = new Random();
          for (int i = 0; i < boundaryLength; i++) {
              mime.append(mimeBoundaryChars[rand.nextInt(mimeBoundaryChars.length)]);
          }
--        return mime.toString();
-+        return StringUtil.releaseBuilder(mime);
+-        return StringUtil.releaseBuilder(mime);
++        return mime.toString();
      }
  
      private static BomCharset detectCharsetFromBom(final ByteBuffer byteData) {
 diff --git a/src/main/java/org/jsoup/helper/HttpConnection.java b/src/main/java/org/jsoup/helper/HttpConnection.java
-index 3c6c5cc..7469192 100644
+index 7469192..3c6c5cc 100644
 --- a/src/main/java/org/jsoup/helper/HttpConnection.java
 +++ b/src/main/java/org/jsoup/helper/HttpConnection.java
 @@ -1066,7 +1066,7 @@ public class HttpConnection implements Connection {
          }
  
          private static String getRequestCookieString(Connection.Request req) {
--            StringBuilder sb = StringUtil.stringBuilder();
-+            StringBuilder sb = StringUtil.borrowBuilder();
+-            StringBuilder sb = StringUtil.borrowBuilder();
++            StringBuilder sb = StringUtil.stringBuilder();
              boolean first = true;
              for (Map.Entry<String, String> cookie : req.cookies().entrySet()) {
                  if (!first)
@@ -34,15 +34,15 @@ index 3c6c5cc..7469192 100644
                  sb.append(cookie.getKey()).append('=').append(cookie.getValue());
                  // todo: spec says only ascii, no escaping / encoding defined. validate on set? or escape somehow here?
              }
--            return sb.toString();
-+            return StringUtil.releaseBuilder(sb);
+-            return StringUtil.releaseBuilder(sb);
++            return sb.toString();
          }
  
          // for get url reqs, serialise the data map into the url
          private static void serialiseRequestUrl(Connection.Request req) throws IOException {
              URL in = req.url();
--            StringBuilder url = StringUtil.stringBuilder();
-+            StringBuilder url = StringUtil.borrowBuilder();
+-            StringBuilder url = StringUtil.borrowBuilder();
++            StringBuilder url = StringUtil.stringBuilder();
              boolean first = true;
              // reconstitute the query, ready for appends
              url
@@ -50,336 +50,336 @@ index 3c6c5cc..7469192 100644
                      .append('=')
                      .append(URLEncoder.encode(keyVal.value(), DataUtil.defaultCharset));
              }
--            req.url(new URL(url.toString()));
-+            req.url(new URL(StringUtil.releaseBuilder(url)));
+-            req.url(new URL(StringUtil.releaseBuilder(url)));
++            req.url(new URL(url.toString()));
              req.data().clear(); // moved into url as get params
          }
      }
 diff --git a/src/main/java/org/jsoup/helper/StringUtil.java b/src/main/java/org/jsoup/helper/StringUtil.java
-index 71aa7fe..c30aa48 100644
+index c30aa48..71aa7fe 100644
 --- a/src/main/java/org/jsoup/helper/StringUtil.java
 +++ b/src/main/java/org/jsoup/helper/StringUtil.java
-@@ -5,6 +5,7 @@ import java.net.URL;
+@@ -5,7 +5,6 @@ import java.net.URL;
  import java.util.Arrays;
  import java.util.Collection;
  import java.util.Iterator;
-+import java.util.Stack;
+-import java.util.Stack;
  
  /**
   * A minimal String utility class. Designed for internal jsoup use only.
-@@ -39,12 +40,12 @@ public final class StringUtil {
+@@ -40,12 +39,12 @@ public final class StringUtil {
          if (!strings.hasNext()) // only one, avoid builder
              return start;
  
--        StringBuilder sb = new StringBuilder(64).append(start);
-+        StringBuilder sb = StringUtil.borrowBuilder().append(start);
+-        StringBuilder sb = StringUtil.borrowBuilder().append(start);
++        StringBuilder sb = new StringBuilder(64).append(start);
          while (strings.hasNext()) {
              sb.append(sep);
              sb.append(strings.next());
          }
--        return sb.toString();
-+        return StringUtil.releaseBuilder(sb);
+-        return StringUtil.releaseBuilder(sb);
++        return sb.toString();
      }
  
      /**
-@@ -140,9 +141,9 @@ public final class StringUtil {
+@@ -141,9 +140,9 @@ public final class StringUtil {
       * @return normalised string
       */
      public static String normaliseWhitespace(String string) {
--        StringBuilder sb = StringUtil.stringBuilder();
-+        StringBuilder sb = StringUtil.borrowBuilder();
+-        StringBuilder sb = StringUtil.borrowBuilder();
++        StringBuilder sb = StringUtil.stringBuilder();
          appendNormalisedWhitespace(sb, string, false);
--        return sb.toString();
-+        return StringUtil.releaseBuilder(sb);
+-        return StringUtil.releaseBuilder(sb);
++        return sb.toString();
      }
  
      /**
-@@ -226,30 +227,49 @@ public final class StringUtil {
+@@ -227,49 +226,30 @@ public final class StringUtil {
          }
      }
  
-+    private static final Stack<StringBuilder> builders = new Stack<>();
-+
-     /**
--     * Maintains a cached StringBuilder, to minimize new StringBuilder GCs. Prevents it from growing too big per thread.
--     * Care must be taken to not grab more than one in the same stack (not locked or mutexed or anything).
-+     * Maintains cached StringBuilders in a flyweight pattern, to minimize new StringBuilder GCs. The StringBuilder is
-+     * prevented from growing too large.
-+     * <p>
-+     * Care must be taken to release the builder once its work has been completed, with {@see #releaseBuilder}
-      * @return an empty StringBuilder
-+     * @
-      */
--    public static StringBuilder stringBuilder() {
--        StringBuilder sb = stringLocal.get();
--        if (sb.length() > MaxCachedBuilderSize) {
--            sb = new StringBuilder(MaxCachedBuilderSize);
--            stringLocal.set(sb);
--        } else {
--            sb.delete(0, sb.length());
-+    public static StringBuilder borrowBuilder() {
-+        synchronized (builders) {
-+            return builders.empty() ?
-+                new StringBuilder(MaxCachedBuilderSize) :
-+                builders.pop();
-         }
--        return sb;
+-    private static final Stack<StringBuilder> builders = new Stack<>();
 -
+     /**
+-     * Maintains cached StringBuilders in a flyweight pattern, to minimize new StringBuilder GCs. The StringBuilder is
+-     * prevented from growing too large.
+-     * <p>
+-     * Care must be taken to release the builder once its work has been completed, with {@see #releaseBuilder}
++     * Maintains a cached StringBuilder, to minimize new StringBuilder GCs. Prevents it from growing too big per thread.
++     * Care must be taken to not grab more than one in the same stack (not locked or mutexed or anything).
+      * @return an empty StringBuilder
+-     * @
+      */
+-    public static StringBuilder borrowBuilder() {
+-        synchronized (builders) {
+-            return builders.empty() ?
+-                new StringBuilder(MaxCachedBuilderSize) :
+-                builders.pop();
++    public static StringBuilder stringBuilder() {
++        StringBuilder sb = stringLocal.get();
++        if (sb.length() > MaxCachedBuilderSize) {
++            sb = new StringBuilder(MaxCachedBuilderSize);
++            stringLocal.set(sb);
++        } else {
++            sb.delete(0, sb.length());
+         }
+-    }
+-
+-    /**
+-     * Release a borrowed builder. Care must be taken not to use the builder after it has been returned, as its
+-     * contents may be changed by this method, or by a concurrent thread.
+-     * @param sb the StringBuilder to release.
+-     * @return the string value of the released String Builder (as an incentive to release it!).
+-     */
+-    public static String releaseBuilder(StringBuilder sb) {
+-        Validate.notNull(sb);
+-        String string = sb.toString();
+-
+-        if (sb.length() > MaxCachedBuilderSize)
+-            sb = new StringBuilder(MaxCachedBuilderSize); // make sure it hasn't grown too big
+-        else
+-            sb.delete(0, sb.length()); // make sure it's emptied on release
++        return sb;
+ 
+-        synchronized (builders) {
+-            builders.push(sb);
+-
+-            while (builders.size() > MaxIdleBuilders) {
+-                builders.pop();
+-            }
+-        }
+-        return string;
      }
  
--    private static final int MaxCachedBuilderSize = 8 * 1024;
--    private static final ThreadLocal<StringBuilder> stringLocal = new ThreadLocal<StringBuilder>(){
--        @Override
--        protected StringBuilder initialValue() {
--            return new StringBuilder(MaxCachedBuilderSize);
--        }
--    };
-+    /**
-+     * Release a borrowed builder. Care must be taken not to use the builder after it has been returned, as its
-+     * contents may be changed by this method, or by a concurrent thread.
-+     * @param sb the StringBuilder to release.
-+     * @return the string value of the released String Builder (as an incentive to release it!).
-+     */
-+    public static String releaseBuilder(StringBuilder sb) {
-+        Validate.notNull(sb);
-+        String string = sb.toString();
- 
-+        if (sb.length() > MaxCachedBuilderSize)
-+            sb = new StringBuilder(MaxCachedBuilderSize); // make sure it hasn't grown too big
-+        else
-+            sb.delete(0, sb.length()); // make sure it's emptied on release
- 
-+        synchronized (builders) {
-+            builders.push(sb);
-+
-+            while (builders.size() > MaxIdleBuilders) {
-+                builders.pop();
-+            }
+     private static final int MaxCachedBuilderSize = 8 * 1024;
+-    private static final int MaxIdleBuilders = 8;
++    private static final ThreadLocal<StringBuilder> stringLocal = new ThreadLocal<StringBuilder>(){
++        @Override
++        protected StringBuilder initialValue() {
++            return new StringBuilder(MaxCachedBuilderSize);
 +        }
-+        return string;
-+    }
++    };
 +
-+    private static final int MaxCachedBuilderSize = 8 * 1024;
-+    private static final int MaxIdleBuilders = 8;
++
  }
 diff --git a/src/main/java/org/jsoup/nodes/Attribute.java b/src/main/java/org/jsoup/nodes/Attribute.java
-index 698755c..bca9fe6 100644
+index bca9fe6..698755c 100644
 --- a/src/main/java/org/jsoup/nodes/Attribute.java
 +++ b/src/main/java/org/jsoup/nodes/Attribute.java
-@@ -1,6 +1,7 @@
+@@ -1,7 +1,6 @@
  package org.jsoup.nodes;
  
  import org.jsoup.SerializationException;
-+import org.jsoup.helper.StringUtil;
+-import org.jsoup.helper.StringUtil;
  import org.jsoup.helper.Validate;
  
  import java.io.IOException;
-@@ -98,14 +99,14 @@ public class Attribute implements Map.Entry<String, String>, Cloneable  {
+@@ -99,14 +98,14 @@ public class Attribute implements Map.Entry<String, String>, Cloneable  {
       @return HTML
       */
      public String html() {
--        StringBuilder accum = new StringBuilder();
-+        StringBuilder sb = StringUtil.borrowBuilder();
+-        StringBuilder sb = StringUtil.borrowBuilder();
++        StringBuilder accum = new StringBuilder();
          
          try {
--        	html(accum, (new Document("")).outputSettings());
-+        	html(sb, (new Document("")).outputSettings());
+-        	html(sb, (new Document("")).outputSettings());
++        	html(accum, (new Document("")).outputSettings());
          } catch(IOException exception) {
          	throw new SerializationException(exception);
          }
--        return accum.toString();
-+        return StringUtil.releaseBuilder(sb);
+-        return StringUtil.releaseBuilder(sb);
++        return accum.toString();
      }
  
      protected static void html(String key, String val, Appendable accum, Document.OutputSettings out) throws IOException {
 diff --git a/src/main/java/org/jsoup/nodes/Attributes.java b/src/main/java/org/jsoup/nodes/Attributes.java
-index 1f74bf3..c4e373c 100644
+index c4e373c..1f74bf3 100644
 --- a/src/main/java/org/jsoup/nodes/Attributes.java
 +++ b/src/main/java/org/jsoup/nodes/Attributes.java
-@@ -1,6 +1,7 @@
+@@ -1,7 +1,6 @@
  package org.jsoup.nodes;
  
  import org.jsoup.SerializationException;
-+import org.jsoup.helper.StringUtil;
+-import org.jsoup.helper.StringUtil;
  import org.jsoup.helper.Validate;
  
  import java.io.IOException;
-@@ -298,13 +299,13 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
+@@ -299,13 +298,13 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
       @throws SerializationException if the HTML representation of the attributes cannot be constructed.
       */
      public String html() {
--        StringBuilder accum = new StringBuilder();
-+        StringBuilder sb = StringUtil.borrowBuilder();
+-        StringBuilder sb = StringUtil.borrowBuilder();
++        StringBuilder accum = new StringBuilder();
          try {
--            html(accum, (new Document("")).outputSettings()); // output settings a bit funky, but this html() seldom used
-+            html(sb, (new Document("")).outputSettings()); // output settings a bit funky, but this html() seldom used
+-            html(sb, (new Document("")).outputSettings()); // output settings a bit funky, but this html() seldom used
++            html(accum, (new Document("")).outputSettings()); // output settings a bit funky, but this html() seldom used
          } catch (IOException e) { // ought never happen
              throw new SerializationException(e);
          }
--        return accum.toString();
-+        return StringUtil.releaseBuilder(sb);
+-        return StringUtil.releaseBuilder(sb);
++        return accum.toString();
      }
  
      final void html(final Appendable accum, final Document.OutputSettings out) throws IOException {
 diff --git a/src/main/java/org/jsoup/nodes/Element.java b/src/main/java/org/jsoup/nodes/Element.java
-index a966b60..36a73df 100644
+index 36a73df..a966b60 100644
 --- a/src/main/java/org/jsoup/nodes/Element.java
 +++ b/src/main/java/org/jsoup/nodes/Element.java
 @@ -1020,7 +1020,7 @@ public class Element extends Node {
       * @see #textNodes()
       */
      public String text() {
--        final StringBuilder accum = new StringBuilder();
-+        final StringBuilder accum = StringUtil.borrowBuilder();
+-        final StringBuilder accum = StringUtil.borrowBuilder();
++        final StringBuilder accum = new StringBuilder();
          NodeTraversor.traverse(new NodeVisitor() {
              public void head(Node node, int depth) {
                  if (node instanceof TextNode) {
-@@ -1045,7 +1045,8 @@ public class Element extends Node {
+@@ -1045,8 +1045,7 @@ public class Element extends Node {
  
              }
          }, this);
--        return accum.toString().trim();
-+
-+        return StringUtil.releaseBuilder(accum).trim();
+-
+-        return StringUtil.releaseBuilder(accum).trim();
++        return accum.toString().trim();
      }
  
      /**
-@@ -1056,7 +1057,7 @@ public class Element extends Node {
+@@ -1057,7 +1056,7 @@ public class Element extends Node {
       * @see #text()
       */
      public String wholeText() {
--        final StringBuilder accum = new StringBuilder();
-+        final StringBuilder accum = StringUtil.borrowBuilder();
+-        final StringBuilder accum = StringUtil.borrowBuilder();
++        final StringBuilder accum = new StringBuilder();
          NodeTraversor.traverse(new NodeVisitor() {
              public void head(Node node, int depth) {
                  if (node instanceof TextNode) {
-@@ -1068,7 +1069,8 @@ public class Element extends Node {
+@@ -1069,8 +1068,7 @@ public class Element extends Node {
              public void tail(Node node, int depth) {
              }
          }, this);
--        return accum.toString();
-+
-+        return StringUtil.releaseBuilder(accum);
+-
+-        return StringUtil.releaseBuilder(accum);
++        return accum.toString();
      }
  
      /**
-@@ -1083,9 +1085,9 @@ public class Element extends Node {
+@@ -1085,9 +1083,9 @@ public class Element extends Node {
       * @see #textNodes()
       */
      public String ownText() {
--        StringBuilder sb = new StringBuilder();
-+        StringBuilder sb = StringUtil.borrowBuilder();
+-        StringBuilder sb = StringUtil.borrowBuilder();
++        StringBuilder sb = new StringBuilder();
          ownText(sb);
--        return sb.toString().trim();
-+        return StringUtil.releaseBuilder(sb).trim();
+-        return StringUtil.releaseBuilder(sb).trim();
++        return sb.toString().trim();
      }
  
      private void ownText(StringBuilder accum) {
-@@ -1172,7 +1174,7 @@ public class Element extends Node {
+@@ -1174,7 +1172,7 @@ public class Element extends Node {
       * @see #dataNodes()
       */
      public String data() {
--        StringBuilder sb = new StringBuilder();
-+        StringBuilder sb = StringUtil.borrowBuilder();
+-        StringBuilder sb = StringUtil.borrowBuilder();
++        StringBuilder sb = new StringBuilder();
  
          for (Node childNode : childNodes) {
              if (childNode instanceof DataNode) {
-@@ -1192,7 +1194,7 @@ public class Element extends Node {
+@@ -1194,7 +1192,7 @@ public class Element extends Node {
                  sb.append(cDataNode.getWholeText());
              }
          }
--        return sb.toString();
-+        return StringUtil.releaseBuilder(sb);
+-        return StringUtil.releaseBuilder(sb);
++        return sb.toString();
      }   
  
      /**
-@@ -1395,9 +1397,10 @@ public class Element extends Node {
+@@ -1397,10 +1395,9 @@ public class Element extends Node {
       * @see #outerHtml()
       */
      public String html() {
--        StringBuilder accum = StringUtil.stringBuilder();
-+        StringBuilder accum = StringUtil.borrowBuilder();
+-        StringBuilder accum = StringUtil.borrowBuilder();
++        StringBuilder accum = StringUtil.stringBuilder();
          html(accum);
--        return NodeUtils.outputSettings(this).prettyPrint() ? accum.toString().trim() : accum.toString();
-+        String html = StringUtil.releaseBuilder(accum);
-+        return NodeUtils.outputSettings(this).prettyPrint() ? html.trim() : html;
+-        String html = StringUtil.releaseBuilder(accum);
+-        return NodeUtils.outputSettings(this).prettyPrint() ? html.trim() : html;
++        return NodeUtils.outputSettings(this).prettyPrint() ? accum.toString().trim() : accum.toString();
      }
  
      @Override
 diff --git a/src/main/java/org/jsoup/nodes/Entities.java b/src/main/java/org/jsoup/nodes/Entities.java
-index bbf783f..34ee9f5 100644
+index 34ee9f5..bbf783f 100644
 --- a/src/main/java/org/jsoup/nodes/Entities.java
 +++ b/src/main/java/org/jsoup/nodes/Entities.java
 @@ -149,13 +149,13 @@ public class Entities {
      public static String escape(String string, Document.OutputSettings out) {
          if (string == null)
              return "";
--        StringBuilder accum = new StringBuilder(string.length() * 2);
-+        StringBuilder accum = StringUtil.borrowBuilder();
+-        StringBuilder accum = StringUtil.borrowBuilder();
++        StringBuilder accum = new StringBuilder(string.length() * 2);
          try {
              escape(accum, string, out, false, false, false);
          } catch (IOException e) {
              throw new SerializationException(e); // doesn't happen
          }
--        return accum.toString();
-+        return StringUtil.releaseBuilder(accum);
+-        return StringUtil.releaseBuilder(accum);
++        return accum.toString();
      }
  
      /**
 diff --git a/src/main/java/org/jsoup/nodes/Node.java b/src/main/java/org/jsoup/nodes/Node.java
-index 67d9496..aa89c6e 100644
+index aa89c6e..67d9496 100644
 --- a/src/main/java/org/jsoup/nodes/Node.java
 +++ b/src/main/java/org/jsoup/nodes/Node.java
 @@ -566,9 +566,9 @@ public abstract class Node implements Cloneable {
       @see Element#text()
       */
      public String outerHtml() {
--        StringBuilder accum = StringUtil.stringBuilder();
-+        StringBuilder accum = StringUtil.borrowBuilder();
+-        StringBuilder accum = StringUtil.borrowBuilder();
++        StringBuilder accum = StringUtil.stringBuilder();
          outerHtml(accum);
--        return accum.toString();
-+        return StringUtil.releaseBuilder(accum);
+-        return StringUtil.releaseBuilder(accum);
++        return accum.toString();
      }
  
      protected void outerHtml(Appendable accum) {
 diff --git a/src/main/java/org/jsoup/nodes/XmlDeclaration.java b/src/main/java/org/jsoup/nodes/XmlDeclaration.java
-index 602805b..966f14f 100644
+index 966f14f..602805b 100644
 --- a/src/main/java/org/jsoup/nodes/XmlDeclaration.java
 +++ b/src/main/java/org/jsoup/nodes/XmlDeclaration.java
-@@ -1,6 +1,7 @@
+@@ -1,7 +1,6 @@
  package org.jsoup.nodes;
  
  import org.jsoup.SerializationException;
-+import org.jsoup.helper.StringUtil;
+-import org.jsoup.helper.StringUtil;
  import org.jsoup.helper.Validate;
  
  import java.io.IOException;
-@@ -52,13 +53,13 @@ public class XmlDeclaration extends LeafNode {
+@@ -53,13 +52,13 @@ public class XmlDeclaration extends LeafNode {
       * @return XML declaration
       */
      public String getWholeDeclaration() {
--        StringBuilder sb = new StringBuilder();
-+        StringBuilder sb = StringUtil.borrowBuilder();
+-        StringBuilder sb = StringUtil.borrowBuilder();
++        StringBuilder sb = new StringBuilder();
          try {
              getWholeDeclaration(sb, new Document.OutputSettings());
          } catch (IOException e) {
              throw new SerializationException(e);
          }
--        return sb.toString().trim();
-+        return StringUtil.releaseBuilder(sb).trim();
+-        return StringUtil.releaseBuilder(sb).trim();
++        return sb.toString().trim();
      }
  
      private void getWholeDeclaration(Appendable accum, Document.OutputSettings out) throws IOException {
 diff --git a/src/main/java/org/jsoup/parser/TokenQueue.java b/src/main/java/org/jsoup/parser/TokenQueue.java
-index df7d925..1088d95 100644
+index 1088d95..df7d925 100644
 --- a/src/main/java/org/jsoup/parser/TokenQueue.java
 +++ b/src/main/java/org/jsoup/parser/TokenQueue.java
 @@ -302,7 +302,7 @@ public class TokenQueue {
       * @return unescaped string
       */
      public static String unescape(String in) {
--        StringBuilder out = StringUtil.stringBuilder();
-+        StringBuilder out = StringUtil.borrowBuilder();
+-        StringBuilder out = StringUtil.borrowBuilder();
++        StringBuilder out = StringUtil.stringBuilder();
          char last = 0;
          for (char c : in.toCharArray()) {
              if (c == ESC) {
@@ -387,21 +387,21 @@ index df7d925..1088d95 100644
                  out.append(c);
              last = c;
          }
--        return out.toString();
-+        return StringUtil.releaseBuilder(out);
+-        return StringUtil.releaseBuilder(out);
++        return out.toString();
      }
  
      /**
 diff --git a/src/main/java/org/jsoup/parser/Tokeniser.java b/src/main/java/org/jsoup/parser/Tokeniser.java
-index fcf90d4..803a4a4 100644
+index 803a4a4..fcf90d4 100644
 --- a/src/main/java/org/jsoup/parser/Tokeniser.java
 +++ b/src/main/java/org/jsoup/parser/Tokeniser.java
 @@ -275,7 +275,7 @@ final class Tokeniser {
       * @return unescaped string from reader
       */
      String unescapeEntities(boolean inAttribute) {
--        StringBuilder builder = StringUtil.stringBuilder();
-+        StringBuilder builder = StringUtil.borrowBuilder();
+-        StringBuilder builder = StringUtil.borrowBuilder();
++        StringBuilder builder = StringUtil.stringBuilder();
          while (!reader.isEmpty()) {
              builder.append(reader.consumeTo('&'));
              if (reader.matches('&')) {
@@ -409,79 +409,79 @@ index fcf90d4..803a4a4 100644
  
              }
          }
--        return builder.toString();
-+        return StringUtil.releaseBuilder(builder);
+-        return StringUtil.releaseBuilder(builder);
++        return builder.toString();
      }
  }
 diff --git a/src/main/java/org/jsoup/select/Elements.java b/src/main/java/org/jsoup/select/Elements.java
-index fcf1ee0..74116d7 100644
+index 74116d7..fcf1ee0 100644
 --- a/src/main/java/org/jsoup/select/Elements.java
 +++ b/src/main/java/org/jsoup/select/Elements.java
-@@ -1,5 +1,6 @@
+@@ -1,6 +1,5 @@
  package org.jsoup.select;
  
-+import org.jsoup.helper.StringUtil;
+-import org.jsoup.helper.StringUtil;
  import org.jsoup.helper.Validate;
  import org.jsoup.nodes.Element;
  import org.jsoup.nodes.FormElement;
-@@ -205,13 +206,13 @@ public class Elements extends ArrayList<Element> {
+@@ -206,13 +205,13 @@ public class Elements extends ArrayList<Element> {
       * @see #eachText()
       */
      public String text() {
--        StringBuilder sb = new StringBuilder();
-+        StringBuilder sb = StringUtil.borrowBuilder();
+-        StringBuilder sb = StringUtil.borrowBuilder();
++        StringBuilder sb = new StringBuilder();
          for (Element element : this) {
              if (sb.length() != 0)
                  sb.append(" ");
              sb.append(element.text());
          }
--        return sb.toString();
-+        return StringUtil.releaseBuilder(sb);
+-        return StringUtil.releaseBuilder(sb);
++        return sb.toString();
      }
  
      /**
-@@ -251,13 +252,13 @@ public class Elements extends ArrayList<Element> {
+@@ -252,13 +251,13 @@ public class Elements extends ArrayList<Element> {
       * @see #outerHtml()
       */
      public String html() {
--        StringBuilder sb = new StringBuilder();
-+        StringBuilder sb = StringUtil.borrowBuilder();
+-        StringBuilder sb = StringUtil.borrowBuilder();
++        StringBuilder sb = new StringBuilder();
          for (Element element : this) {
              if (sb.length() != 0)
                  sb.append("\n");
              sb.append(element.html());
          }
--        return sb.toString();
-+        return StringUtil.releaseBuilder(sb);
+-        return StringUtil.releaseBuilder(sb);
++        return sb.toString();
      }
      
      /**
-@@ -267,13 +268,13 @@ public class Elements extends ArrayList<Element> {
+@@ -268,13 +267,13 @@ public class Elements extends ArrayList<Element> {
       * @see #html()
       */
      public String outerHtml() {
--        StringBuilder sb = new StringBuilder();
-+        StringBuilder sb = StringUtil.borrowBuilder();
+-        StringBuilder sb = StringUtil.borrowBuilder();
++        StringBuilder sb = new StringBuilder();
          for (Element element : this) {
              if (sb.length() != 0)
                  sb.append("\n");
              sb.append(element.outerHtml());
          }
--        return sb.toString();
-+        return StringUtil.releaseBuilder(sb);
+-        return StringUtil.releaseBuilder(sb);
++        return sb.toString();
      }
  
      /**
 diff --git a/src/main/java/org/jsoup/select/QueryParser.java b/src/main/java/org/jsoup/select/QueryParser.java
-index 99e5147..15c0b20 100644
+index 15c0b20..99e5147 100644
 --- a/src/main/java/org/jsoup/select/QueryParser.java
 +++ b/src/main/java/org/jsoup/select/QueryParser.java
 @@ -131,7 +131,7 @@ public class QueryParser {
      }
  
      private String consumeSubQuery() {
--        StringBuilder sq = new StringBuilder();
-+        StringBuilder sq = StringUtil.borrowBuilder();
+-        StringBuilder sq = StringUtil.borrowBuilder();
++        StringBuilder sq = new StringBuilder();
          while (!tq.isEmpty()) {
              if (tq.matches("("))
                  sq.append("(").append(tq.chompBalanced('(', ')')).append(")");
@@ -489,8 +489,8 @@ index 99e5147..15c0b20 100644
              else
                  sq.append(tq.consume());
          }
--        return sq.toString();
-+        return StringUtil.releaseBuilder(sq);
+-        return StringUtil.releaseBuilder(sq);
++        return sq.toString();
      }
  
      private void findElements() {

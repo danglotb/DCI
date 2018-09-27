@@ -1,186 +1,186 @@
 diff --git a/src/main/java/org/jsoup/helper/HttpConnection.java b/src/main/java/org/jsoup/helper/HttpConnection.java
-index b363a98..9f56a29 100644
+index 9f56a29..b363a98 100644
 --- a/src/main/java/org/jsoup/helper/HttpConnection.java
 +++ b/src/main/java/org/jsoup/helper/HttpConnection.java
 @@ -740,7 +740,7 @@ public class HttpConnection implements Connection {
                      }
  
                      String location = res.header(LOCATION);
--                    if (location != null && location.startsWith("http:/") && location.charAt(6) != '/') // fix broken Location: http:/temp/AAG_New/en/index.php
-+                    if (location.startsWith("http:/") && location.charAt(6) != '/') // fix broken Location: http:/temp/AAG_New/en/index.php
+-                    if (location.startsWith("http:/") && location.charAt(6) != '/') // fix broken Location: http:/temp/AAG_New/en/index.php
++                    if (location != null && location.startsWith("http:/") && location.charAt(6) != '/') // fix broken Location: http:/temp/AAG_New/en/index.php
                          location = location.substring(6);
                      URL redir = StringUtil.resolve(req.url(), location);
                      req.url(encodeUrl(redir));
 diff --git a/src/test/java/org/jsoup/integration/ConnectTest.java b/src/test/java/org/jsoup/integration/ConnectTest.java
-index b6e1a18..dca0b55 100644
+index dca0b55..b6e1a18 100644
 --- a/src/test/java/org/jsoup/integration/ConnectTest.java
 +++ b/src/test/java/org/jsoup/integration/ConnectTest.java
-@@ -7,6 +7,7 @@ import org.jsoup.integration.servlets.Deflateservlet;
+@@ -7,7 +7,6 @@ import org.jsoup.integration.servlets.Deflateservlet;
  import org.jsoup.integration.servlets.EchoServlet;
  import org.jsoup.integration.servlets.HelloServlet;
  import org.jsoup.integration.servlets.InterruptedServlet;
-+import org.jsoup.integration.servlets.RedirectServlet;
+-import org.jsoup.integration.servlets.RedirectServlet;
  import org.jsoup.integration.servlets.SlowRider;
  import org.jsoup.nodes.Document;
  import org.jsoup.nodes.Element;
-@@ -25,6 +26,7 @@ import java.util.Map;
+@@ -26,7 +25,6 @@ import java.util.Map;
  
  import static org.jsoup.integration.UrlConnectTest.browserUa;
  import static org.junit.Assert.assertEquals;
-+import static org.junit.Assert.assertNull;
+-import static org.junit.Assert.assertNull;
  import static org.junit.Assert.assertTrue;
  
  /**
-@@ -34,13 +36,13 @@ public class ConnectTest {
+@@ -36,13 +34,13 @@ public class ConnectTest {
      private static String echoUrl;
  
      @BeforeClass
--    public static void setUp() throws Exception {
-+    public static void setUp() {
+-    public static void setUp() {
++    public static void setUp() throws Exception {
          TestServer.start();
          echoUrl = EchoServlet.Url;
      }
  
      @AfterClass
--    public static void tearDown() throws Exception {
-+    public static void tearDown() {
+-    public static void tearDown() {
++    public static void tearDown() throws Exception {
          TestServer.stop();
      }
  
-@@ -80,7 +82,8 @@ public class ConnectTest {
+@@ -82,8 +80,7 @@ public class ConnectTest {
      }
  
      private static String ihVal(String key, Document doc) {
--        return doc.select("th:contains(" + key + ") + td").first().text();
-+        final Element first = doc.select("th:contains(" + key + ") + td").first();
-+        return first != null ? first.text() : null;
+-        final Element first = doc.select("th:contains(" + key + ") + td").first();
+-        return first != null ? first.text() : null;
++        return doc.select("th:contains(" + key + ") + td").first().text();
      }
  
      @Test
-@@ -399,7 +402,7 @@ public class ConnectTest {
+@@ -402,7 +399,7 @@ public class ConnectTest {
          } catch (IOException e) {
              threw = true;
          }
--        assertEquals(true, threw);
-+        assertTrue(threw);
+-        assertTrue(threw);
++        assertEquals(true, threw);
      }
  
      @Test
-@@ -414,7 +417,52 @@ public class ConnectTest {
+@@ -417,52 +414,7 @@ public class ConnectTest {
          } catch (UncheckedIOException e) {
              threw = true;
          }
--        assertEquals(true, threw);
-+        assertTrue(threw);
-+    }
+-        assertTrue(threw);
+-    }
++        assertEquals(true, threw);
  
-+    @Test public void handlesRedirect() throws IOException {
-+        Document doc = Jsoup.connect(RedirectServlet.Url)
-+            .data(RedirectServlet.LocationParam, HelloServlet.Url)
-+            .get();
-+
-+        Element p = doc.selectFirst("p");
-+        assertEquals("Hello, World!", p.text());
-+
-+        assertEquals(HelloServlet.Url, doc.location());
-+    }
-+
-+    @Test public void handlesEmptyRedirect() throws IOException {
-+        boolean threw = false;
-+        try {
-+            Connection.Response res = Jsoup.connect(RedirectServlet.Url)
-+                .execute();
-+        } catch (IOException e) {
-+            assertTrue(e.getMessage().contains("Too many redirects"));
-+            threw = true;
-+        }
-+        assertTrue(threw);
-+    }
-+
-+    @Test public void doesNotPostFor302() throws IOException {
-+        final Document doc = Jsoup.connect(RedirectServlet.Url)
-+            .data("Hello", "there")
-+            .data(RedirectServlet.LocationParam, EchoServlet.Url)
-+            .post();
-+
-+        assertEquals(EchoServlet.Url, doc.location());
-+        assertEquals("GET", ihVal("Method", doc));
-+        assertNull(ihVal("Hello", doc)); // data not sent
-+    }
-+
-+    @Test public void doesPostFor307() throws IOException {
-+        final Document doc = Jsoup.connect(RedirectServlet.Url)
-+            .data("Hello", "there")
-+            .data(RedirectServlet.LocationParam, EchoServlet.Url)
-+            .data(RedirectServlet.CodeParam, "307")
-+            .post();
-+
-+        assertEquals(EchoServlet.Url, doc.location());
-+        assertEquals("POST", ihVal("Method", doc));
-+        assertEquals("there", ihVal("Hello", doc));
+-    @Test public void handlesRedirect() throws IOException {
+-        Document doc = Jsoup.connect(RedirectServlet.Url)
+-            .data(RedirectServlet.LocationParam, HelloServlet.Url)
+-            .get();
+-
+-        Element p = doc.selectFirst("p");
+-        assertEquals("Hello, World!", p.text());
+-
+-        assertEquals(HelloServlet.Url, doc.location());
+-    }
+-
+-    @Test public void handlesEmptyRedirect() throws IOException {
+-        boolean threw = false;
+-        try {
+-            Connection.Response res = Jsoup.connect(RedirectServlet.Url)
+-                .execute();
+-        } catch (IOException e) {
+-            assertTrue(e.getMessage().contains("Too many redirects"));
+-            threw = true;
+-        }
+-        assertTrue(threw);
+-    }
+-
+-    @Test public void doesNotPostFor302() throws IOException {
+-        final Document doc = Jsoup.connect(RedirectServlet.Url)
+-            .data("Hello", "there")
+-            .data(RedirectServlet.LocationParam, EchoServlet.Url)
+-            .post();
+-
+-        assertEquals(EchoServlet.Url, doc.location());
+-        assertEquals("GET", ihVal("Method", doc));
+-        assertNull(ihVal("Hello", doc)); // data not sent
+-    }
+-
+-    @Test public void doesPostFor307() throws IOException {
+-        final Document doc = Jsoup.connect(RedirectServlet.Url)
+-            .data("Hello", "there")
+-            .data(RedirectServlet.LocationParam, EchoServlet.Url)
+-            .data(RedirectServlet.CodeParam, "307")
+-            .post();
+-
+-        assertEquals(EchoServlet.Url, doc.location());
+-        assertEquals("POST", ihVal("Method", doc));
+-        assertEquals("there", ihVal("Hello", doc));
      }
  }
 diff --git a/src/test/java/org/jsoup/integration/servlets/RedirectServlet.java b/src/test/java/org/jsoup/integration/servlets/RedirectServlet.java
-new file mode 100644
-index 0000000..8431347
---- /dev/null
-+++ b/src/test/java/org/jsoup/integration/servlets/RedirectServlet.java
-@@ -0,0 +1,35 @@
-+package org.jsoup.integration.servlets;
-+
-+import org.jsoup.integration.TestServer;
-+
-+import javax.servlet.ServletException;
-+import javax.servlet.http.HttpServletRequest;
-+import javax.servlet.http.HttpServletResponse;
-+import java.io.IOException;
-+
-+public class RedirectServlet extends BaseServlet {
-+    public static final String Url = TestServer.map(RedirectServlet.class);
-+    public static final String LocationParam = "loc";
-+    public static final String CodeParam = "code";
-+    private static final int DefaultCode = HttpServletResponse.SC_MOVED_TEMPORARILY;
-+
-+    @Override
-+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
-+        String location = req.getParameter(LocationParam);
-+        if (location == null)
-+            location = "";
-+
-+        int intCode = DefaultCode;
-+        String code = req.getParameter(CodeParam);
-+        if (code != null)
-+            intCode = Integer.parseInt(code);
-+
-+        res.setHeader("Location", location);
-+        res.setStatus(intCode);
-+    }
-+
-+    @Override
-+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-+        doGet(req, res);
-+    }
-+}
+deleted file mode 100644
+index 8431347..0000000
+--- a/src/test/java/org/jsoup/integration/servlets/RedirectServlet.java
++++ /dev/null
+@@ -1,35 +0,0 @@
+-package org.jsoup.integration.servlets;
+-
+-import org.jsoup.integration.TestServer;
+-
+-import javax.servlet.ServletException;
+-import javax.servlet.http.HttpServletRequest;
+-import javax.servlet.http.HttpServletResponse;
+-import java.io.IOException;
+-
+-public class RedirectServlet extends BaseServlet {
+-    public static final String Url = TestServer.map(RedirectServlet.class);
+-    public static final String LocationParam = "loc";
+-    public static final String CodeParam = "code";
+-    private static final int DefaultCode = HttpServletResponse.SC_MOVED_TEMPORARILY;
+-
+-    @Override
+-    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
+-        String location = req.getParameter(LocationParam);
+-        if (location == null)
+-            location = "";
+-
+-        int intCode = DefaultCode;
+-        String code = req.getParameter(CodeParam);
+-        if (code != null)
+-            intCode = Integer.parseInt(code);
+-
+-        res.setHeader("Location", location);
+-        res.setStatus(intCode);
+-    }
+-
+-    @Override
+-    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+-        doGet(req, res);
+-    }
+-}
 diff --git a/src/test/java/org/jsoup/integration/servlets/SlowRider.java b/src/test/java/org/jsoup/integration/servlets/SlowRider.java
-index 29f2a77..5e5b550 100644
+index 5e5b550..29f2a77 100644
 --- a/src/test/java/org/jsoup/integration/servlets/SlowRider.java
 +++ b/src/test/java/org/jsoup/integration/servlets/SlowRider.java
-@@ -2,7 +2,6 @@ package org.jsoup.integration.servlets;
+@@ -2,6 +2,7 @@ package org.jsoup.integration.servlets;
  
  import org.jsoup.integration.TestServer;
  
--import javax.servlet.ServletException;
++import javax.servlet.ServletException;
  import javax.servlet.http.HttpServletRequest;
  import javax.servlet.http.HttpServletResponse;
  import java.io.IOException;
-@@ -16,9 +15,8 @@ public class SlowRider extends BaseServlet {
+@@ -15,8 +16,9 @@ public class SlowRider extends BaseServlet {
      private static final int SleepTime = 2000;
      public static final String MaxTimeParam = "maxTime";
  
--
++
      @Override
--    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
+-    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
++    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
          pause(1000);
          res.setContentType(TextHtml);
          res.setStatus(HttpServletResponse.SC_OK);

@@ -5,36 +5,36 @@ diff --git a/gson/src/main/java/com/google/gson/JsonParser.java b/gson/src/main/
 old mode 100755
 new mode 100644
 diff --git a/gson/src/main/java/com/google/gson/stream/JsonReader.java b/gson/src/main/java/com/google/gson/stream/JsonReader.java
-index 838355cb..7a5e9cbb 100644
+index 7a5e9cb..838355c 100644
 --- a/gson/src/main/java/com/google/gson/stream/JsonReader.java
 +++ b/gson/src/main/java/com/google/gson/stream/JsonReader.java
-@@ -951,8 +951,12 @@ public class JsonReader implements Closeable {
+@@ -951,12 +951,8 @@ public class JsonReader implements Closeable {
      if (p == PEEKED_NUMBER) {
        peekedString = new String(buffer, pos, peekedNumberLength);
        pos += peekedNumberLength;
--    } else if (p == PEEKED_SINGLE_QUOTED || p == PEEKED_DOUBLE_QUOTED) {
--      peekedString = nextQuotedValue(p == PEEKED_SINGLE_QUOTED ? '\'' : '"');
-+    } else if (p == PEEKED_SINGLE_QUOTED || p == PEEKED_DOUBLE_QUOTED || p == PEEKED_UNQUOTED) {
-+      if (p == PEEKED_UNQUOTED) {
-+        peekedString = nextUnquotedValue();
-+      } else {
-+        peekedString = nextQuotedValue(p == PEEKED_SINGLE_QUOTED ? '\'' : '"');
-+      }
+-    } else if (p == PEEKED_SINGLE_QUOTED || p == PEEKED_DOUBLE_QUOTED || p == PEEKED_UNQUOTED) {
+-      if (p == PEEKED_UNQUOTED) {
+-        peekedString = nextUnquotedValue();
+-      } else {
+-        peekedString = nextQuotedValue(p == PEEKED_SINGLE_QUOTED ? '\'' : '"');
+-      }
++    } else if (p == PEEKED_SINGLE_QUOTED || p == PEEKED_DOUBLE_QUOTED) {
++      peekedString = nextQuotedValue(p == PEEKED_SINGLE_QUOTED ? '\'' : '"');
        try {
          long result = Long.parseLong(peekedString);
          peeked = PEEKED_NONE;
-@@ -1179,8 +1183,12 @@ public class JsonReader implements Closeable {
+@@ -1183,12 +1179,8 @@ public class JsonReader implements Closeable {
      if (p == PEEKED_NUMBER) {
        peekedString = new String(buffer, pos, peekedNumberLength);
        pos += peekedNumberLength;
--    } else if (p == PEEKED_SINGLE_QUOTED || p == PEEKED_DOUBLE_QUOTED) {
--      peekedString = nextQuotedValue(p == PEEKED_SINGLE_QUOTED ? '\'' : '"');
-+    } else if (p == PEEKED_SINGLE_QUOTED || p == PEEKED_DOUBLE_QUOTED || p == PEEKED_UNQUOTED) {
-+      if (p == PEEKED_UNQUOTED) {
-+        peekedString = nextUnquotedValue();
-+      } else {
-+        peekedString = nextQuotedValue(p == PEEKED_SINGLE_QUOTED ? '\'' : '"');
-+      }
+-    } else if (p == PEEKED_SINGLE_QUOTED || p == PEEKED_DOUBLE_QUOTED || p == PEEKED_UNQUOTED) {
+-      if (p == PEEKED_UNQUOTED) {
+-        peekedString = nextUnquotedValue();
+-      } else {
+-        peekedString = nextQuotedValue(p == PEEKED_SINGLE_QUOTED ? '\'' : '"');
+-      }
++    } else if (p == PEEKED_SINGLE_QUOTED || p == PEEKED_DOUBLE_QUOTED) {
++      peekedString = nextQuotedValue(p == PEEKED_SINGLE_QUOTED ? '\'' : '"');
        try {
          result = Integer.parseInt(peekedString);
          peeked = PEEKED_NONE;
@@ -45,43 +45,41 @@ diff --git a/gson/src/test/java/com/google/gson/functional/ConcurrencyTest.java 
 old mode 100755
 new mode 100644
 diff --git a/gson/src/test/java/com/google/gson/functional/MapTest.java b/gson/src/test/java/com/google/gson/functional/MapTest.java
-old mode 100755
-new mode 100644
-index 590760cb..154ecf55
+index 154ecf5..590760c 100755
 --- a/gson/src/test/java/com/google/gson/functional/MapTest.java
 +++ b/gson/src/test/java/com/google/gson/functional/MapTest.java
-@@ -167,6 +167,34 @@ public class MapTest extends TestCase {
+@@ -167,34 +167,6 @@ public class MapTest extends TestCase {
      assertEquals("456", map.get(123));
    }
  
-+  public void testMapDeserializationWithUnquotedIntegerKeys() {
-+    Type typeOfMap = new TypeToken<Map<Integer, String>>() {}.getType();
-+    Map<Integer, String> map = gson.fromJson("{123:\"456\"}", typeOfMap);
-+    assertEquals(1, map.size());
-+    assertTrue(map.containsKey(123));
-+    assertEquals("456", map.get(123));
-+  }
-+
-+  public void testMapDeserializationWithLongKeys() {
-+    long longValue = 9876543210L;
-+    String json = String.format("{\"%d\":\"456\"}", longValue);
-+    Type typeOfMap = new TypeToken<Map<Long, String>>() {}.getType();
-+    Map<Long, String> map = gson.fromJson(json, typeOfMap);
-+    assertEquals(1, map.size());
-+    assertTrue(map.containsKey(longValue));
-+    assertEquals("456", map.get(longValue));
-+  }
-+
-+  public void testMapDeserializationWithUnquotedLongKeys() {
-+    long longKey = 9876543210L;
-+    String json = String.format("{%d:\"456\"}", longKey);
-+    Type typeOfMap = new TypeToken<Map<Long, String>>() {}.getType();
-+    Map<Long, String> map = gson.fromJson(json, typeOfMap);
-+    assertEquals(1, map.size());
-+    assertTrue(map.containsKey(longKey));
-+    assertEquals("456", map.get(longKey));
-+  }
-+
+-  public void testMapDeserializationWithUnquotedIntegerKeys() {
+-    Type typeOfMap = new TypeToken<Map<Integer, String>>() {}.getType();
+-    Map<Integer, String> map = gson.fromJson("{123:\"456\"}", typeOfMap);
+-    assertEquals(1, map.size());
+-    assertTrue(map.containsKey(123));
+-    assertEquals("456", map.get(123));
+-  }
+-
+-  public void testMapDeserializationWithLongKeys() {
+-    long longValue = 9876543210L;
+-    String json = String.format("{\"%d\":\"456\"}", longValue);
+-    Type typeOfMap = new TypeToken<Map<Long, String>>() {}.getType();
+-    Map<Long, String> map = gson.fromJson(json, typeOfMap);
+-    assertEquals(1, map.size());
+-    assertTrue(map.containsKey(longValue));
+-    assertEquals("456", map.get(longValue));
+-  }
+-
+-  public void testMapDeserializationWithUnquotedLongKeys() {
+-    long longKey = 9876543210L;
+-    String json = String.format("{%d:\"456\"}", longKey);
+-    Type typeOfMap = new TypeToken<Map<Long, String>>() {}.getType();
+-    Map<Long, String> map = gson.fromJson(json, typeOfMap);
+-    assertEquals(1, map.size());
+-    assertTrue(map.containsKey(longKey));
+-    assertEquals("456", map.get(longKey));
+-  }
+-
    public void testHashMapDeserialization() throws Exception {
      Type typeOfMap = new TypeToken<HashMap<Integer, String>>() {}.getType();
      HashMap<Integer, String> map = gson.fromJson("{\"123\":\"456\"}", typeOfMap);
@@ -89,15 +87,15 @@ diff --git a/gson/src/test/java/com/google/gson/functional/NullObjectAndFieldTes
 old mode 100755
 new mode 100644
 diff --git a/gson/src/test/java/com/google/gson/stream/JsonReaderTest.java b/gson/src/test/java/com/google/gson/stream/JsonReaderTest.java
-index a192940f..48279dac 100644
+index 48279da..a192940 100644
 --- a/gson/src/test/java/com/google/gson/stream/JsonReaderTest.java
 +++ b/gson/src/test/java/com/google/gson/stream/JsonReaderTest.java
 @@ -501,7 +501,7 @@ public final class JsonReaderTest extends TestCase {
      try {
        reader.nextInt();
        fail();
--    } catch (IllegalStateException expected) {
-+    } catch (NumberFormatException expected) {
+-    } catch (NumberFormatException expected) {
++    } catch (IllegalStateException expected) {
      }
      assertEquals("12.34e5x", reader.nextString());
    }

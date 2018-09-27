@@ -1,121 +1,121 @@
 diff --git a/CHANGES b/CHANGES
-index edf0e86..bb4d7da 100644
+index bb4d7da..edf0e86 100644
 --- a/CHANGES
 +++ b/CHANGES
-@@ -22,6 +22,8 @@ jsoup changelog
+@@ -22,8 +22,6 @@ jsoup changelog
      many pages.
      <https://github.com/jhy/jsoup/issues/797>
  
-+  * Improvement: performance optimization when parsing tables.
-+
+-  * Improvement: performance optimization when parsing tables.
+-
    * Bugfix: when converting a Jsoup document to a W3C DOM, if an element is namespaced but not in a defined namespace,
      set it to the global namespace.
      <https://github.com/jhy/jsoup/issues/848>
 diff --git a/src/main/java/org/jsoup/parser/CharacterReader.java b/src/main/java/org/jsoup/parser/CharacterReader.java
-index 6993524..9253bf6 100644
+index 9253bf6..6993524 100644
 --- a/src/main/java/org/jsoup/parser/CharacterReader.java
 +++ b/src/main/java/org/jsoup/parser/CharacterReader.java
-@@ -44,17 +44,18 @@ public final class CharacterReader {
+@@ -44,18 +44,17 @@ public final class CharacterReader {
      }
  
      private void bufferUp() {
--        if (bufPos < bufSplitPoint)
-+        final int pos = bufPos;
-+        if (pos < bufSplitPoint)
+-        final int pos = bufPos;
+-        if (pos < bufSplitPoint)
++        if (bufPos < bufSplitPoint)
              return;
  
          try {
--            reader.skip(bufPos);
-+            reader.skip(pos);
+-            reader.skip(pos);
++            reader.skip(bufPos);
              reader.mark(maxBufferLen);
              final int read = reader.read(charBuf);
              reader.reset();
              if (read != -1) {
                  bufLength = read;
--                readerPos += bufPos;
-+                readerPos += pos;
+-                readerPos += pos;
++                readerPos += bufPos;
                  bufPos = 0;
                  bufMark = 0;
                  bufSplitPoint = bufLength > readAheadLimit ? readAheadLimit : bufLength;
-@@ -197,16 +198,20 @@ public final class CharacterReader {
+@@ -198,20 +197,16 @@ public final class CharacterReader {
          final int start = bufPos;
          final int remaining = bufLength;
          final char[] val = charBuf;
-+        final int charLen = chars.length;
-+        int pos = bufPos;
-+        int i;
+-        final int charLen = chars.length;
+-        int pos = bufPos;
+-        int i;
  
--        OUTER: while (bufPos < remaining) {
--            for (char c : chars) {
--                if (val[bufPos] == c)
-+        OUTER: while (pos < remaining) {
-+            for (i = 0; i < charLen; i++) {
-+                if (val[pos] == chars[i])
+-        OUTER: while (pos < remaining) {
+-            for (i = 0; i < charLen; i++) {
+-                if (val[pos] == chars[i])
++        OUTER: while (bufPos < remaining) {
++            for (char c : chars) {
++                if (val[bufPos] == c)
                      break OUTER;
              }
--            bufPos++;
-+            pos++;
+-            pos++;
++            bufPos++;
          }
  
--        return bufPos > start ? cacheString(charBuf, stringCache, start, bufPos -start) : "";
-+        bufPos = pos;
-+        return pos > start ? cacheString(charBuf, stringCache, start, pos -start) : "";
+-        bufPos = pos;
+-        return pos > start ? cacheString(charBuf, stringCache, start, pos -start) : "";
++        return bufPos > start ? cacheString(charBuf, stringCache, start, bufPos -start) : "";
      }
  
      String consumeToAnySorted(final char... chars) {
-@@ -214,14 +219,15 @@ public final class CharacterReader {
+@@ -219,15 +214,14 @@ public final class CharacterReader {
          final int start = bufPos;
          final int remaining = bufLength;
          final char[] val = charBuf;
-+        int pos = bufPos;
+-        int pos = bufPos;
  
--        while (bufPos < remaining) {
--            if (Arrays.binarySearch(chars, val[bufPos]) >= 0)
-+        while (pos < remaining) {
-+            if (Arrays.binarySearch(chars, val[pos]) >= 0)
+-        while (pos < remaining) {
+-            if (Arrays.binarySearch(chars, val[pos]) >= 0)
++        while (bufPos < remaining) {
++            if (Arrays.binarySearch(chars, val[bufPos]) >= 0)
                  break;
--            bufPos++;
-+            pos++;
+-            pos++;
++            bufPos++;
          }
--
--        return bufPos > start ? cacheString(charBuf, stringCache, start, bufPos -start) : "";
-+        bufPos = pos;
-+        return bufPos > start ? cacheString(charBuf, stringCache, start, pos -start) : "";
+-        bufPos = pos;
+-        return bufPos > start ? cacheString(charBuf, stringCache, start, pos -start) : "";
++
++        return bufPos > start ? cacheString(charBuf, stringCache, start, bufPos -start) : "";
      }
  
      String consumeData() {
-@@ -248,15 +254,17 @@ public final class CharacterReader {
+@@ -254,17 +248,15 @@ public final class CharacterReader {
          final int start = bufPos;
          final int remaining = bufLength;
          final char[] val = charBuf;
-+        int pos = bufPos;
+-        int pos = bufPos;
  
--        while (bufPos < remaining) {
--            final char c = val[bufPos];
-+        while (pos < remaining) {
-+            final char c = val[pos];
+-        while (pos < remaining) {
+-            final char c = val[pos];
++        while (bufPos < remaining) {
++            final char c = val[bufPos];
              if (c == '\t'|| c ==  '\n'|| c ==  '\r'|| c ==  '\f'|| c ==  ' '|| c ==  '/'|| c ==  '>'|| c == '<' || c ==  TokeniserState.nullChar)
                  break;
--            bufPos++;
-+            pos++;
+-            pos++;
++            bufPos++;
          }
  
--        return bufPos > start ? cacheString(charBuf, stringCache, start, bufPos -start) : "";
-+        bufPos = pos;
-+        return pos > start ? cacheString(charBuf, stringCache, start, pos -start) : "";
+-        bufPos = pos;
+-        return pos > start ? cacheString(charBuf, stringCache, start, pos -start) : "";
++        return bufPos > start ? cacheString(charBuf, stringCache, start, bufPos -start) : "";
      }
  
      String consumeToEnd() {
 diff --git a/src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java b/src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java
-index 26d7d7a..8b92cdb 100644
+index 8b92cdb..26d7d7a 100644
 --- a/src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java
 +++ b/src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java
 @@ -1163,7 +1163,7 @@ enum HtmlTreeBuilderState {
                  Token.EndTag endTag = t.asEndTag();
                  String name = endTag.normalName();
  
--                if (StringUtil.in(name, "td", "th")) {
-+                if (StringUtil.inSorted(name, Constants.InCellNames)) {
+-                if (StringUtil.inSorted(name, Constants.InCellNames)) {
++                if (StringUtil.in(name, "td", "th")) {
                      if (!tb.inTableScope(name)) {
                          tb.error(this);
                          tb.transition(InRow); // might not be in scope if empty: <td /> and processing fake end tag
@@ -123,49 +123,49 @@ index 26d7d7a..8b92cdb 100644
                      tb.popStackToClose(name);
                      tb.clearFormattingElementsToLastMarker();
                      tb.transition(InRow);
--                } else if (StringUtil.in(name, "body", "caption", "col", "colgroup", "html")) {
-+                } else if (StringUtil.inSorted(name, Constants.InCellBody)) {
+-                } else if (StringUtil.inSorted(name, Constants.InCellBody)) {
++                } else if (StringUtil.in(name, "body", "caption", "col", "colgroup", "html")) {
                      tb.error(this);
                      return false;
--                } else if (StringUtil.in(name, "table", "tbody", "tfoot", "thead", "tr")) {
-+                } else if (StringUtil.inSorted(name, Constants.InCellTable)) {
+-                } else if (StringUtil.inSorted(name, Constants.InCellTable)) {
++                } else if (StringUtil.in(name, "table", "tbody", "tfoot", "thead", "tr")) {
                      if (!tb.inTableScope(name)) {
                          tb.error(this);
                          return false;
-@@ -1189,8 +1189,7 @@ enum HtmlTreeBuilderState {
+@@ -1189,7 +1189,8 @@ enum HtmlTreeBuilderState {
                      return anythingElse(t, tb);
                  }
              } else if (t.isStartTag() &&
--                    StringUtil.in(t.asStartTag().normalName(),
--                            "caption", "col", "colgroup", "tbody", "td", "tfoot", "th", "thead", "tr")) {
-+                    StringUtil.inSorted(t.asStartTag().normalName(), Constants.InCellCol)) {
+-                    StringUtil.inSorted(t.asStartTag().normalName(), Constants.InCellCol)) {
++                    StringUtil.in(t.asStartTag().normalName(),
++                            "caption", "col", "colgroup", "tbody", "td", "tfoot", "th", "thead", "tr")) {
                  if (!(tb.inTableScope("td") || tb.inTableScope("th"))) {
                      tb.error(this);
                      return false;
-@@ -1521,5 +1520,9 @@ enum HtmlTreeBuilderState {
+@@ -1520,9 +1521,5 @@ enum HtmlTreeBuilderState {
              "nav", "ol", "pre", "section", "summary", "ul"};
          static final String[] InBodyEndAdoptionFormatters = new String[]{"a", "b", "big", "code", "em", "font", "i", "nobr", "s", "small", "strike", "strong", "tt", "u"};
          static final String[] InBodyEndTableFosters = new String[]{"table", "tbody", "tfoot", "thead", "tr"};
-+        static final String[] InCellNames = new String[]{"td", "th"};
-+        static final String[] InCellBody = new String[]{"body", "caption", "col", "colgroup", "html"};
-+        static final String[] InCellTable = new String[]{ "table", "tbody", "tfoot", "thead", "tr"};
-+        static final String[] InCellCol = new String[]{"caption", "col", "colgroup", "tbody", "td", "tfoot", "th", "thead", "tr"};
+-        static final String[] InCellNames = new String[]{"td", "th"};
+-        static final String[] InCellBody = new String[]{"body", "caption", "col", "colgroup", "html"};
+-        static final String[] InCellTable = new String[]{ "table", "tbody", "tfoot", "thead", "tr"};
+-        static final String[] InCellCol = new String[]{"caption", "col", "colgroup", "tbody", "td", "tfoot", "th", "thead", "tr"};
      }
  }
 diff --git a/src/test/java/org/jsoup/parser/HtmlTreeBuilderStateTest.java b/src/test/java/org/jsoup/parser/HtmlTreeBuilderStateTest.java
-index 80ca688..953dd14 100644
+index 953dd14..80ca688 100644
 --- a/src/test/java/org/jsoup/parser/HtmlTreeBuilderStateTest.java
 +++ b/src/test/java/org/jsoup/parser/HtmlTreeBuilderStateTest.java
-@@ -27,7 +27,11 @@ public class HtmlTreeBuilderStateTest {
+@@ -27,11 +27,7 @@ public class HtmlTreeBuilderStateTest {
              Constants.InBodyStartDrop,
              Constants.InBodyEndClosers,
              Constants.InBodyEndAdoptionFormatters,
--            Constants.InBodyEndTableFosters
-+            Constants.InBodyEndTableFosters,
-+            Constants.InCellNames,
-+            Constants.InCellBody,
-+            Constants.InCellTable,
-+            Constants.InCellCol,
+-            Constants.InBodyEndTableFosters,
+-            Constants.InCellNames,
+-            Constants.InCellBody,
+-            Constants.InCellTable,
+-            Constants.InCellCol,
++            Constants.InBodyEndTableFosters
          };
  
          for (String[] array : arrays) {

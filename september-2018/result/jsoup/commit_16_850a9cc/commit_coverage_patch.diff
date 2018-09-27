@@ -557,11 +557,10 @@ index 9b1775e..08edc75 100644
  import org.junit.Ignore;
  import org.junit.Test;
  
-@@ -184,6 +185,15 @@ public class XmlTreeBuilderTest {
-         assertEquals("<CHECK>One</CHECK><TEST ID=\"1\">Check</TEST>", TextUtil.stripNewlines(doc.html()));
+@@ -185,6 +186,15 @@ public class XmlTreeBuilderTest {
      }
  
-+    @Test
+     @Test
 +    public void appendPreservesCaseByDefault() {
 +        String xml = "<One>One</One>";
 +        Document doc = Jsoup.parse(xml, "", Parser.xmlParser());
@@ -570,6 +569,7 @@ index 9b1775e..08edc75 100644
 +        assertEquals("<One>One<Two ID=\"2\">Two</Two></One>", TextUtil.stripNewlines(doc.html()));
 +    }
 +
-     @Test
++    @Test
      public void canNormalizeCase() {
          String xml = "<TEST ID=1>Check</TEST>";
+         Document doc = Jsoup.parse(xml, "", Parser.xmlParser().settings(ParseSettings.htmlDefault));

@@ -34,11 +34,10 @@ index f9c14dd..68b4f02 100644
          }
          else if (PatternOptionBuilder.FILES_VALUE == clazz)
          {
-@@ -222,6 +224,25 @@ public class TypeHandler
-         return new File(str);
+@@ -223,6 +225,25 @@ public class TypeHandler
      }
  
-+    /**
+     /**
 +     * Returns the opened FileInputStream represented by <code>str</code>.
 +     *
 +     * @param str the file location
@@ -57,9 +56,10 @@ index f9c14dd..68b4f02 100644
 +        }
 +    }
 +
-     /**
++    /**
       * Returns the File[] represented by <code>str</code>.
       * <p>
+      * This method is not yet implemented and always throws an
 diff --git a/src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java b/src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java
 index b9e7a15..3a33eb7 100644
 --- a/src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java

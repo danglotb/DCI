@@ -16,11 +16,10 @@ diff --git a/src/main/java/org/jsoup/nodes/Element.java b/src/main/java/org/jsou
 index 20bc95e..850e724 100644
 --- a/src/main/java/org/jsoup/nodes/Element.java
 +++ b/src/main/java/org/jsoup/nodes/Element.java
-@@ -687,6 +687,15 @@ public class Element extends Node {
-             return null;
+@@ -688,6 +688,15 @@ public class Element extends Node {
      }
  
-+    /**
+     /**
 +     * Get each of the sibling elements that come after this element.
 +     *
 +     * @return each of the element siblings after this element, or an empty list if there are no next sibling elements
@@ -29,14 +28,14 @@ index 20bc95e..850e724 100644
 +        return nextElementSiblings(true);
 +    }
 +
-     /**
++    /**
       * Gets the previous element sibling of this element.
       * @return the previous element, or null if there is no previous element
-@@ -703,6 +712,23 @@ public class Element extends Node {
-             return null;
+      * @see #nextElementSibling()
+@@ -704,6 +713,23 @@ public class Element extends Node {
      }
  
-+    /**
+     /**
 +     * Get each of the element siblings before this element.
 +     *
 +     * @return the previous element siblings, or an empty list if there are none.
@@ -53,9 +52,10 @@ index 20bc95e..850e724 100644
 +        return next ?  els.nextAll() : els.prevAll();
 +    }
 +
-     /**
++    /**
       * Gets the first element sibling of this element.
       * @return the first sibling that is an element (aka the parent's first element child) 
+      */
 diff --git a/src/main/java/org/jsoup/select/Elements.java b/src/main/java/org/jsoup/select/Elements.java
 index afa0f02..1a205f9 100644
 --- a/src/main/java/org/jsoup/select/Elements.java

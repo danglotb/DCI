@@ -1,5 +1,5 @@
 diff --git a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/main/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheck.java b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/main/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheck.java
-index 0aef33154..89dfeedf4 100644
+index 0aef331..89dfeed 100644
 --- a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/main/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheck.java
 +++ b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/main/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheck.java
 @@ -23,6 +23,8 @@
@@ -72,10 +72,10 @@ index 0aef33154..89dfeedf4 100644
  
      private String computeElementName(String annotatedElementName)
 diff --git a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheckTest.java b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheckTest.java
-index 6e5c122d1..4e5bb54a2 100644
+index 6e5c122..4e5bb54 100644
 --- a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheckTest.java
 +++ b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheckTest.java
-@@ -103,12 +103,21 @@ public void checkWithUnstableAnnotationShouldBeRemovedMultipleSince() throws Exc
+@@ -103,13 +103,22 @@ public void checkWithUnstableAnnotationShouldBeRemovedMultipleSince() throws Exc
          final String[] expected = {
              "30:1: The @Unstable annotation for [org.xwiki.tool.checkstyle.test."
              + "TestClassWithUnstableAnnotationShouldBeRemovedMultipleSince] must be removed since it's been there for "
@@ -86,7 +86,7 @@ index 6e5c122d1..4e5bb54a2 100644
          verify(this.checkConfig, getPath("TestClassWithUnstableAnnotationShouldBeRemovedMultipleSince.java"), expected);
      }
  
-+    @Test
+     @Test
 +    public void checkWithUnstableAnnotationShouldNotBeRemovedMultipleSince() throws Exception
 +    {
 +        final String[] expected = CommonUtils.EMPTY_STRING_ARRAY;
@@ -95,11 +95,12 @@ index 6e5c122d1..4e5bb54a2 100644
 +            expected);
 +    }
 +
-     @Test
++    @Test
      public void checkWithUnstableAnnotationShouldBeRemovedAtMethodLevel() throws Exception
      {
+         final String[] expected = {
 diff --git a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestClassWithUnstableAnnotationShouldBeRemovedMultipleSince.java b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestClassWithUnstableAnnotationShouldBeRemovedMultipleSince.java
-index 321db39f6..5e907ea78 100644
+index 321db39..5e907ea 100644
 --- a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestClassWithUnstableAnnotationShouldBeRemovedMultipleSince.java
 +++ b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestClassWithUnstableAnnotationShouldBeRemovedMultipleSince.java
 @@ -24,8 +24,8 @@
@@ -114,7 +115,7 @@ index 321db39f6..5e907ea78 100644
  public class TestClassWithUnstableAnnotationShouldBeRemovedMultipleSince
 diff --git a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestClassWithUnstableAnnotationShouldNotBeRemovedMultipleSince.java b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestClassWithUnstableAnnotationShouldNotBeRemovedMultipleSince.java
 new file mode 100644
-index 000000000..321db39f6
+index 0000000..321db39
 --- /dev/null
 +++ b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestClassWithUnstableAnnotationShouldNotBeRemovedMultipleSince.java
 @@ -0,0 +1,33 @@

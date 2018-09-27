@@ -1,5 +1,5 @@
 diff --git a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/main/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheck.java b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/main/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheck.java
-index 89dfeedf4..a7b36f974 100644
+index 89dfeed..a7b36f9 100644
 --- a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/main/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheck.java
 +++ b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/main/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheck.java
 @@ -84,7 +84,7 @@ public void visitToken(DetailAST ast)
@@ -12,7 +12,7 @@ index 89dfeedf4..a7b36f974 100644
              case TokenTypes.INTERFACE_DEF:
                  this.classOrInterfaceName = ast.findFirstToken(TokenTypes.IDENT).getText();
 diff --git a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheckTest.java b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheckTest.java
-index 4e5bb54a2..ad9bf4717 100644
+index 4e5bb54..ad9bf47 100644
 --- a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheckTest.java
 +++ b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheckTest.java
 @@ -131,6 +131,22 @@ public void checkWithUnstableAnnotationShouldBeRemovedAtMethodLevel() throws Exc
@@ -40,7 +40,7 @@ index 4e5bb54a2..ad9bf4717 100644
      {
 diff --git a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestPackageWithOtherAnnotation.java b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestPackageWithOtherAnnotation.java
 new file mode 100644
-index 000000000..98e4271fc
+index 0000000..98e4271
 --- /dev/null
 +++ b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestPackageWithOtherAnnotation.java
 @@ -0,0 +1,21 @@
@@ -68,7 +68,7 @@ index 000000000..98e4271fc
 \ No newline at end of file
 diff --git a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestPackageWithUnstable.java b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestPackageWithUnstable.java
 new file mode 100644
-index 000000000..370ee9705
+index 0000000..370ee97
 --- /dev/null
 +++ b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestPackageWithUnstable.java
 @@ -0,0 +1,21 @@

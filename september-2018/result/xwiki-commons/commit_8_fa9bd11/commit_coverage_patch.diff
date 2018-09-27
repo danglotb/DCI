@@ -1,8 +1,8 @@
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/version/internal/DefaultVersionConstraint.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/version/internal/DefaultVersionConstraint.java
-index 4d0058c71..33668ba7d 100644
+index 4d0058c..33668ba 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/version/internal/DefaultVersionConstraint.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/version/internal/DefaultVersionConstraint.java
-@@ -252,49 +252,23 @@ public VersionConstraint merge(VersionConstraint versionConstraint) throws Incom
+@@ -252,50 +252,24 @@ public VersionConstraint merge(VersionConstraint versionConstraint) throws Incom
          } else {
              VersionConstraint mergedConstraint = mergeVersions(versionConstraint);
  
@@ -30,7 +30,7 @@ index 4d0058c71..33668ba7d 100644
          return null;
      }
  
--    /**
+     /**
 -     * @param versionConstraintWithVersion the version constraint based on version
 -     * @param versionConstraint the version constraint for which we don't know yet if it's based on version or ranges
 -     * @return the merged version constraint
@@ -52,9 +52,10 @@ index 4d0058c71..33668ba7d 100644
 -        }
 -    }
 -
-     /**
+-    /**
       * Create a new {@link DefaultVersionConstraint} instance which is the combination of the provided version ranges
       * and this version ranges.
+      *
 @@ -304,32 +278,52 @@ private VersionConstraint mergeVersions(VersionConstraint versionConstraintWithV
       * @throws IncompatibleVersionConstraintException the provided version and version ranges are not compatible with
       *             this version constraint
@@ -63,7 +64,7 @@ index 4d0058c71..33668ba7d 100644
 -    private DefaultVersionConstraint mergeRanges(Collection<VersionRangeCollection> otherRanges)
 +    private DefaultVersionConstraint mergeRanges(VersionConstraint otherConstraint)
          throws IncompatibleVersionConstraintException
-+    {
+     {
 +        Collection<VersionRangeCollection> resolvedRanges = resolveRanges(this);
 +        Collection<VersionRangeCollection> otherResolvedRanges = resolveRanges(otherConstraint);
 +
@@ -72,7 +73,7 @@ index 4d0058c71..33668ba7d 100644
 +
 +    private DefaultVersionConstraint mergeRanges(Collection<VersionRangeCollection> ranges1,
 +        Collection<VersionRangeCollection> ranges2) throws IncompatibleVersionConstraintException
-     {
++    {
          // Validate
 -        validateCompatibility(otherRanges);
  
@@ -125,7 +126,7 @@ index 4d0058c71..33668ba7d 100644
              }
          }
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/version/internal/DefaultVersionConstraintTest.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/version/internal/DefaultVersionConstraintTest.java
-index ccaa232cb..b71972894 100644
+index ccaa232..b719728 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/version/internal/DefaultVersionConstraintTest.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/version/internal/DefaultVersionConstraintTest.java
 @@ -31,12 +31,14 @@

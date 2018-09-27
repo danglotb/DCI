@@ -1,5 +1,5 @@
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/AbstractExtensionDependency.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/AbstractExtensionDependency.java
-index 07346fa7e..96e8c1c75 100644
+index 07346fa..96e8c1c 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/AbstractExtensionDependency.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/AbstractExtensionDependency.java
 @@ -252,6 +252,7 @@ public int hashCode()
@@ -11,7 +11,7 @@ index 07346fa7e..96e8c1c75 100644
          return builder.toHashCode();
      }
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/DefaultExtensionManagerConfiguration.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/DefaultExtensionManagerConfiguration.java
-index add1e4883..94e16f66b 100644
+index add1e48..94e16f6 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/DefaultExtensionManagerConfiguration.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/DefaultExtensionManagerConfiguration.java
 @@ -99,6 +99,9 @@
@@ -73,7 +73,7 @@ index add1e4883..94e16f66b 100644
      @Override
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/ExtensionFactory.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/ExtensionFactory.java
 new file mode 100644
-index 000000000..b9423153d
+index 0000000..b942315
 --- /dev/null
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/ExtensionFactory.java
 @@ -0,0 +1,243 @@
@@ -321,7 +321,7 @@ index 000000000..b9423153d
 +    }
 +}
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/converter/ExtensionConverter.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/converter/ExtensionConverter.java
-index fd3732816..9a327f565 100644
+index fd37328..9a327f5 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/converter/ExtensionConverter.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/converter/ExtensionConverter.java
 @@ -42,21 +42,20 @@
@@ -445,7 +445,7 @@ index fd3732816..9a327f565 100644
  
      private String getProperty(Properties properties, String propertyName, boolean delete)
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/maven/AbstractMavenExtension.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/maven/AbstractMavenExtension.java
-index 34de4576f..a2eca92f6 100644
+index 34de457..a2eca92 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/maven/AbstractMavenExtension.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/maven/AbstractMavenExtension.java
 @@ -24,6 +24,7 @@
@@ -456,11 +456,10 @@ index 34de4576f..a2eca92f6 100644
  
  /**
   * Base class for all Maven specific {@link Extension}s.
-@@ -64,6 +65,23 @@ public AbstractMavenExtension(ExtensionRepository repository, String groupId, St
-         setMavenArtifactId(artifactId);
+@@ -65,6 +66,23 @@ public AbstractMavenExtension(ExtensionRepository repository, String groupId, St
      }
  
-+    /**
+     /**
 +     * @param repository the repository where this extension comes from
 +     * @param groupId the maven artifact group id
 +     * @param artifactId the maven artifact artifact id
@@ -477,11 +476,12 @@ index 34de4576f..a2eca92f6 100644
 +        setMavenArtifactId(artifactId);
 +    }
 +
-     /**
++    /**
       * Create new Maven extension descriptor by copying provided one.
       *
+      * @param repository the repository where this extension comes from
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/maven/DefaultMavenExtension.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/maven/DefaultMavenExtension.java
-index 8314fadd2..aa25f19e5 100644
+index 8314fad..aa25f19 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/maven/DefaultMavenExtension.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/maven/DefaultMavenExtension.java
 @@ -21,6 +21,7 @@
@@ -492,11 +492,10 @@ index 8314fadd2..aa25f19e5 100644
  
  /**
   * Default implementation of {@link MavenExtension}.
-@@ -43,6 +44,20 @@ public DefaultMavenExtension(ExtensionRepository repository, String groupId, Str
-         super(repository, groupId, artifactId, version, type);
+@@ -44,6 +45,20 @@ public DefaultMavenExtension(ExtensionRepository repository, String groupId, Str
      }
  
-+    /**
+     /**
 +     * @param repository the repository where this extension comes from
 +     * @param groupId the maven artifact group id
 +     * @param artifactId the maven artifact artifact id
@@ -510,11 +509,12 @@ index 8314fadd2..aa25f19e5 100644
 +        super(repository, groupId, artifactId, version, type);
 +    }
 +
-     /**
++    /**
       * Create new Maven extension descriptor by copying provided one.
       *
+      * @param repository the repository where this extension comes from
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/repository/DefaultExtensionRepositoryDescriptor.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/repository/DefaultExtensionRepositoryDescriptor.java
-index 27fa88edc..facbf69bd 100644
+index 27fa88e..facbf69 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/repository/DefaultExtensionRepositoryDescriptor.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/repository/DefaultExtensionRepositoryDescriptor.java
 @@ -24,6 +24,10 @@
@@ -560,7 +560,7 @@ index 27fa88edc..facbf69bd 100644
  
      @Override
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/repository/internal/DefaultExtensionSerializer.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/repository/internal/DefaultExtensionSerializer.java
-index f11c4c743..a3e7e8e25 100644
+index f11c4c7..a3e7e8e 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/repository/internal/DefaultExtensionSerializer.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/repository/internal/DefaultExtensionSerializer.java
 @@ -56,9 +56,6 @@
@@ -655,7 +655,7 @@ index f11c4c743..a3e7e8e25 100644
              }
          }
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/resources/META-INF/components.txt b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/resources/META-INF/components.txt
-index 0af44e9c8..3f66ab756 100644
+index 0af44e9..3f66ab7 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/resources/META-INF/components.txt
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/resources/META-INF/components.txt
 @@ -2,6 +2,7 @@ org.xwiki.extension.handler.internal.DefaultExtensionHandlerManager
@@ -667,7 +667,7 @@ index 0af44e9c8..3f66ab756 100644
  org.xwiki.extension.internal.DefaultExtensionManager
  org.xwiki.extension.internal.DefaultExtensionManagerConfiguration
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/internal/DefaultExtensionManagerConfigurationTest.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/internal/DefaultExtensionManagerConfigurationTest.java
-index 63bbce8e5..d4f308ee0 100644
+index 63bbce8..d4f308e 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/internal/DefaultExtensionManagerConfigurationTest.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/internal/DefaultExtensionManagerConfigurationTest.java
 @@ -44,7 +44,7 @@
@@ -680,7 +680,7 @@ index 63bbce8e5..d4f308ee0 100644
  {
      @Rule
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/repository/local/DefaultExtensionSerializerTest.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/repository/local/DefaultExtensionSerializerTest.java
-index c8b6bb00a..a318b6d28 100644
+index c8b6bb0..a318b6d 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/repository/local/DefaultExtensionSerializerTest.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/repository/local/DefaultExtensionSerializerTest.java
 @@ -43,12 +43,15 @@
@@ -700,7 +700,7 @@ index c8b6bb00a..a318b6d28 100644
  {
      @Rule
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-maven/src/main/java/org/xwiki/extension/repository/aether/internal/AetherExtension.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-maven/src/main/java/org/xwiki/extension/repository/aether/internal/AetherExtension.java
-index 5941aa9c8..5f22e0126 100644
+index 5941aa9..5f22e01 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-maven/src/main/java/org/xwiki/extension/repository/aether/internal/AetherExtension.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-maven/src/main/java/org/xwiki/extension/repository/aether/internal/AetherExtension.java
 @@ -24,6 +24,7 @@
@@ -727,7 +727,7 @@ index 5941aa9c8..5f22e0126 100644
  
          setFile(new AetherExtensionFile(artifact, repository));
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-maven/src/main/java/org/xwiki/extension/repository/aether/internal/AetherExtensionRepository.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-maven/src/main/java/org/xwiki/extension/repository/aether/internal/AetherExtensionRepository.java
-index e825b4d3f..8d99dfb36 100644
+index e825b4d..8d99dfb 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-maven/src/main/java/org/xwiki/extension/repository/aether/internal/AetherExtensionRepository.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-maven/src/main/java/org/xwiki/extension/repository/aether/internal/AetherExtensionRepository.java
 @@ -75,6 +75,7 @@
@@ -765,7 +765,7 @@ index e825b4d3f..8d99dfb36 100644
          // Convert Maven dependencies to Aether dependencies
          extension.setDependencies(toAetherDependencies(mavenExtension.getDependencies(), session));
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-maven/src/main/java/org/xwiki/extension/repository/aether/internal/AetherUtils.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-maven/src/main/java/org/xwiki/extension/repository/aether/internal/AetherUtils.java
-index b5fad61de..ed4cab624 100644
+index b5fad61..ed4cab6 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-maven/src/main/java/org/xwiki/extension/repository/aether/internal/AetherUtils.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-maven/src/main/java/org/xwiki/extension/repository/aether/internal/AetherUtils.java
 @@ -27,7 +27,9 @@
@@ -778,11 +778,10 @@ index b5fad61de..ed4cab624 100644
  
  /**
   * @version $Id$
-@@ -50,10 +52,19 @@ public static DefaultArtifact createArtifact(String id, String version) throws R
-     }
+@@ -51,9 +53,18 @@ public static DefaultArtifact createArtifact(String id, String version) throws R
  
      public static ExtensionId createExtensionId(Artifact artifact)
-+    {
+     {
 +        return createExtensionId(artifact, null);
 +    }
 +
@@ -790,7 +789,7 @@ index b5fad61de..ed4cab624 100644
 +     * @since 8.4
 +     */
 +    public static ExtensionId createExtensionId(Artifact artifact, ExtensionFactory factory)
-     {
++    {
          String extensionId =
              MavenUtils.toExtensionId(artifact.getGroupId(), artifact.getArtifactId(), artifact.getClassifier());
  
@@ -800,7 +799,7 @@ index b5fad61de..ed4cab624 100644
      }
  }
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/main/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtension.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/main/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtension.java
-index 22cfaed14..75de0a68d 100644
+index 22cfaed..75de0a6 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/main/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtension.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/main/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtension.java
 @@ -31,17 +31,16 @@
@@ -923,7 +922,7 @@ index 22cfaed14..75de0a68d 100644
      }
  
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/main/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtensionDependency.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/main/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtensionDependency.java
-index 045199596..741af56b9 100644
+index 0451995..741af56 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/main/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtensionDependency.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/main/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtensionDependency.java
 @@ -22,6 +22,8 @@
@@ -958,7 +957,7 @@ index 045199596..741af56b9 100644
                  // TODO: Log something ?
              }
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/main/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtensionRepository.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/main/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtensionRepository.java
-index a0107e842..3ec42c625 100644
+index a0107e8..3ec42c6 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/main/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtensionRepository.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/main/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtensionRepository.java
 @@ -50,6 +50,7 @@
@@ -1041,7 +1040,7 @@ index a0107e842..3ec42c625 100644
              throw new ExtensionNotFoundException(
                  "Could not find extension with id [" + extensionId + "] and version [" + extensionVersion + "]", e);
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/main/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtensionRepositoryFactory.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/main/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtensionRepositoryFactory.java
-index 690d23ab8..0ca89b1a2 100644
+index 690d23a..0ca89b1 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/main/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtensionRepositoryFactory.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/main/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtensionRepositoryFactory.java
 @@ -31,6 +31,7 @@
@@ -1074,7 +1073,7 @@ index 690d23ab8..0ca89b1a2 100644
              throw new ExtensionRepositoryException("Failed to create repository [" + repositoryDescriptor + "]", e);
          }
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/test/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtensionRepositoryTest.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/test/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtensionRepositoryTest.java
-index ca65322ea..413bd661d 100644
+index ca65322..413bd66 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/test/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtensionRepositoryTest.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-repositories/xwiki-commons-extension-repository-xwiki/src/test/java/org/xwiki/extension/repository/xwiki/internal/XWikiExtensionRepositoryTest.java
 @@ -37,6 +37,7 @@

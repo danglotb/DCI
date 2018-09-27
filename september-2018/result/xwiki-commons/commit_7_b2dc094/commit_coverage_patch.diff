@@ -1,5 +1,5 @@
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/job/internal/UpgradePlanJob.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/job/internal/UpgradePlanJob.java
-index 0d29e9f3a..208dedb40 100644
+index 0d29e9f..208dedb 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/job/internal/UpgradePlanJob.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/job/internal/UpgradePlanJob.java
 @@ -71,14 +71,39 @@ protected InstallRequest castRequest(Request request)
@@ -116,14 +116,13 @@ index 0d29e9f3a..208dedb40 100644
                      this.progressManager.endStep(this);
                  }
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/InstallPlanJobTest.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/InstallPlanJobTest.java
-index ab6e5f04b..73212a4e9 100644
+index ab6e5f0..73212a4 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/InstallPlanJobTest.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/InstallPlanJobTest.java
-@@ -673,6 +673,36 @@ public void testInstallWithRecommendedManagedDependency() throws Throwable
-         Assert.assertEquals(0, node.getChildren().size());
+@@ -674,6 +674,36 @@ public void testInstallWithRecommendedManagedDependency() throws Throwable
      }
  
-+    @Test
+     @Test
 +    public void testInstallWithStrictRecommendedManagedDependency() throws Throwable
 +    {
 +        // Change the version of the dependency trough recommended version
@@ -153,11 +152,12 @@ index ab6e5f04b..73212a4e9 100644
 +        Assert.assertEquals(0, node.getChildren().size());
 +    }
 +
-     @Test
++    @Test
      public void testInstallWithInvalidRecommendedManagedDependency() throws Throwable
      {
+         // Change the version of the dependency trough recommended version
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/UpgradePlanJobTest.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/UpgradePlanJobTest.java
-index 6c0b4eeda..359e0fef9 100644
+index 6c0b4ee..359e0fe 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/UpgradePlanJobTest.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/UpgradePlanJobTest.java
 @@ -24,12 +24,14 @@
