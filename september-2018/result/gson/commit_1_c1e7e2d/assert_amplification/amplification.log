@@ -145,7 +145,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=675354, ConflictMarker.markTime=475655, ConflictMarker.nodeCount=4, ConflictIdSorter.graphTime=376397, ConflictIdSorter.topsortTime=383505, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=3226707, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=22246769, DefaultDependencyCollector.transformTime=7167889}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=684614, ConflictMarker.markTime=540556, ConflictMarker.nodeCount=4, ConflictIdSorter.graphTime=388231, ConflictIdSorter.topsortTime=377450, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=3300570, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=23439620, DefaultDependencyCollector.transformTime=7358638}
 [DEBUG] com.google.code.gson:gson-extras:jar:1.0-SNAPSHOT
 [DEBUG]    com.google.code.gson:gson:jar:2.7:compile
 [DEBUG]    javax.annotation:jsr250-api:jar:1.0:compile
@@ -427,7 +427,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=4064596, ConflictMarker.markTime=1064474, ConflictMarker.nodeCount=671, ConflictIdSorter.graphTime=2894530, ConflictIdSorter.topsortTime=155380, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=15411731, ConflictResolver.conflictItemCount=306, DefaultDependencyCollector.collectTime=4274467363, DefaultDependencyCollector.transformTime=23741113}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=4544778, ConflictMarker.markTime=5500219, ConflictMarker.nodeCount=671, ConflictIdSorter.graphTime=3320344, ConflictIdSorter.topsortTime=176532, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=14581284, ConflictResolver.conflictItemCount=306, DefaultDependencyCollector.collectTime=4416933777, DefaultDependencyCollector.transformTime=28335150}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -674,8 +674,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.828 s
-[INFO] Finished at: 2018-09-27T14:51:17+02:00
+[INFO] Total time: 3.953 s
+[INFO] Finished at: 2018-09-27T16:05:20+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
 [WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
@@ -723,8 +723,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.752 s
-[INFO] Finished at: 2018-09-27T14:51:24+02:00
+[INFO] Total time: 3.744 s
+[INFO] Finished at: 2018-09-27T16:05:27+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of com.google.gson.typeadapters.RuntimeTypeAdapterFactoryTest (13 test(s))
 [INFO] Assertion amplification of com.google.gson.typeadapters.RuntimeTypeAdapterFactoryTest (13 test(s))
@@ -754,25 +754,25 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_par
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/extras/target/dspot/TestListener.ser
 [INFO] Test has been run: testSerializeWrappedNullValue,testRuntimeTypeAdapter,testRuntimeTypeIsBaseType
 [INFO] Assertion amplification: 3 test method(s) has been successfully amplified.
-[WARN] 2018-09-27 14:51:28 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/extras/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:51:28 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/extras/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:51:28 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/extras/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:05:31 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/extras/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:05:31 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/extras/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:05:31 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/extras/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/extras/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/extras/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/gson/extras/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.typeadapters.RuntimeTypeAdapterFactoryTest testRuntimeTypeIsBaseType:testRuntimeTypeAdapter:testSerializeWrappedNullValue
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/extras/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/extras/target/dspot/TestListener.ser
 [INFO] Test has been run: testSerializeWrappedNullValue,testRuntimeTypeAdapter,testRuntimeTypeIsBaseType
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 4405
+[INFO] elapsedTime 4556
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
 [WARNING] DSpot could not obtain any amplified test method.
 [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
 [INFO] Amplification succeed.
-[INFO] Elapsed time 4654 ms
+[INFO] Elapsed time 4773 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 22.037 s
-[INFO] Finished at: 2018-09-27T14:51:29+02:00
+[INFO] Total time: 22.586 s
+[INFO] Finished at: 2018-09-27T16:05:32+02:00
 [INFO] ------------------------------------------------------------------------

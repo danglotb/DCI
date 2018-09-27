@@ -147,7 +147,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=766477, ConflictMarker.markTime=508350, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=438543, ConflictIdSorter.topsortTime=398910, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=3511504, ConflictResolver.conflictItemCount=2, DefaultDependencyCollector.collectTime=25002902, DefaultDependencyCollector.transformTime=8159493}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=705604, ConflictMarker.markTime=471751, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=433800, ConflictIdSorter.topsortTime=365338, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=3304260, ConflictResolver.conflictItemCount=2, DefaultDependencyCollector.collectTime=22671668, DefaultDependencyCollector.transformTime=7639726}
 [DEBUG] com.google.code.gson:gson:jar:2.8.1-SNAPSHOT
 [DEBUG]    junit:junit:jar:4.12:test
 [DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test
@@ -428,7 +428,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=4445853, ConflictMarker.markTime=1128716, ConflictMarker.nodeCount=671, ConflictIdSorter.graphTime=2955426, ConflictIdSorter.topsortTime=161316, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=15896019, ConflictResolver.conflictItemCount=306, DefaultDependencyCollector.collectTime=4442845979, DefaultDependencyCollector.transformTime=24813359}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=4274941, ConflictMarker.markTime=1440200, ConflictMarker.nodeCount=671, ConflictIdSorter.graphTime=2934606, ConflictIdSorter.topsortTime=169966, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=14386427, ConflictResolver.conflictItemCount=306, DefaultDependencyCollector.collectTime=4460570689, DefaultDependencyCollector.transformTime=23408709}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -680,10 +680,10 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 7.020 s
-[INFO] Finished at: 2018-09-27T14:56:09+02:00
+[INFO] Total time: 6.724 s
+[INFO] Finished at: 2018-09-27T16:10:11+02:00
 [INFO] ------------------------------------------------------------------------
-[ERROR] 2018-09-27 14:56:12 JDTCommentBuilder - // Note that the above example is taken from AdaptAnnotationTest. is not added into the AST
+[ERROR] 2018-09-27 16:10:15 JDTCommentBuilder - // Note that the above example is taken from AdaptAnnotationTest. is not added into the AST
 spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/tmp/icst-2019/september-2018/dataset/gson_parent/gson/src/main/java/com/google/gson/annotations/JsonAdapter.java:93)
 	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:382)
 	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:484)
@@ -722,7 +722,7 @@ spoon.reflect.declaration.ParentNotInitializedException: parent not initialized 
 	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
-[ERROR] 2018-09-27 14:56:13 JDTCommentBuilder - // Field tag only annotation is not added into the AST
+[ERROR] 2018-09-27 16:10:15 JDTCommentBuilder - // Field tag only annotation is not added into the AST
 spoon.reflect.declaration.ParentNotInitializedException: parent not initialized for class spoon.support.reflect.code.CtCommentImpl (/tmp/icst-2019/september-2018/dataset/gson_parent/gson/src/test/java/com/google/gson/functional/ExclusionStrategyFunctionalTest.java:167)
 	at spoon.support.reflect.declaration.CtElementImpl.getParent(CtElementImpl.java:382)
 	at spoon.support.compiler.jdt.JDTCommentBuilder.insertCommentInAST(JDTCommentBuilder.java:484)
@@ -812,8 +812,8 @@ spoon.reflect.declaration.ParentNotInitializedException: parent not initialized 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 6.699 s
-[INFO] Finished at: 2018-09-27T14:56:22+02:00
+[INFO] Total time: 6.898 s
+[INFO] Finished at: 2018-09-27T16:10:24+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of com.google.gson.functional.JavaUtilConcurrentAtomicTest (4 test(s))
 [INFO] Assertion amplification of com.google.gson.functional.JavaUtilConcurrentAtomicTest (4 test(s))
@@ -843,15 +843,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_par
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testAtomicInteger,testAtomicLong,testAtomicLongArray,testAtomicIntegerArray
 [INFO] Assertion amplification: 4 test method(s) has been successfully amplified.
-[WARN] 2018-09-27 14:56:25 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:56:25 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:56:25 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:27 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:27 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:27 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.JavaUtilConcurrentAtomicTest testAtomicLongArray:testAtomicIntegerArray:testAtomicInteger:testAtomicLong
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testAtomicInteger,testAtomicLong,testAtomicLongArray,testAtomicIntegerArray
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 3203
+[INFO] elapsedTime 3212
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -885,15 +885,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_par
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testRegisterHierarchyAdapterForDate
 [INFO] Assertion amplification: 1 test method(s) has been successfully amplified.
-[WARN] 2018-09-27 14:56:30 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:56:30 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:56:30 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:33 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:33 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:33 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.CustomTypeAdaptersTest testRegisterHierarchyAdapterForDate
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testRegisterHierarchyAdapterForDate
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 5501
+[INFO] elapsedTime 5636
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -927,15 +927,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_par
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testBitSetDeserialization
 [INFO] Assertion amplification: 1 test method(s) has been successfully amplified.
-[WARN] 2018-09-27 14:56:36 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:56:36 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:56:36 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:39 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:39 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:39 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.DefaultTypeAdaptersTest testBitSetDeserialization
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testBitSetDeserialization
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 4968
+[INFO] elapsedTime 5073
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -969,15 +969,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_par
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testComplexFieldNameStrategy
 [INFO] Assertion amplification: 1 test method(s) has been successfully amplified.
-[WARN] 2018-09-27 14:56:39 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:56:39 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:56:39 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:42 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:42 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:42 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.NamingPolicyTest testComplexFieldNameStrategy
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testComplexFieldNameStrategy
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 2780
+[INFO] elapsedTime 2738
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -1011,15 +1011,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_par
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testDelegateInvoked
 [INFO] Assertion amplification: 1 test method(s) has been successfully amplified.
-[WARN] 2018-09-27 14:56:42 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:56:42 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:56:42 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:45 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:45 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:45 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.DelegateTypeAdapterTest testDelegateInvoked
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testDelegateInvoked
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 2669
+[INFO] elapsedTime 2686
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -1053,15 +1053,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_par
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testWildcardCollectionField,testFieldIsArrayList,testPriorityQueue,testStack,testVector
 [INFO] Assertion amplification: 5 test method(s) has been successfully amplified.
-[WARN] 2018-09-27 14:56:46 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:56:46 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:56:46 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:49 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:49 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:49 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.CollectionTest testWildcardCollectionField:testFieldIsArrayList:testStack:testVector:testPriorityQueue
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testWildcardCollectionField,testFieldIsArrayList,testPriorityQueue,testStack,testVector
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 3908
+[INFO] elapsedTime 3827
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -1096,15 +1096,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_par
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testMultipleEnableComplexKeyRegistrationHasNoEffect,testSerializeComplexMapWithTypeAdapter
 [INFO] Assertion amplification: 2 test method(s) has been successfully amplified.
-[WARN] 2018-09-27 14:56:50 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:56:50 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:56:50 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:52 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:52 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:52 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.MapAsArrayTypeAdapterTest testMultipleEnableComplexKeyRegistrationHasNoEffect:testSerializeComplexMapWithTypeAdapter
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testMultipleEnableComplexKeyRegistrationHasNoEffect,testSerializeComplexMapWithTypeAdapter
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 3091
+[INFO] elapsedTime 2962
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -1133,7 +1133,7 @@ Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/Test
 [INFO] Generating assertions...
 [INFO] Could not generate any test with assertions
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 1586
+[INFO] elapsedTime 1596
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -1167,15 +1167,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_par
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testGsonInstanceReusableForSerializationAndDeserialization
 [INFO] Assertion amplification: 1 test method(s) has been successfully amplified.
-[WARN] 2018-09-27 14:56:55 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:56:55 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:56:55 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:57 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:57 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:10:57 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.UncategorizedTest testGsonInstanceReusableForSerializationAndDeserialization
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testGsonInstanceReusableForSerializationAndDeserialization
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 2915
+[INFO] elapsedTime 2840
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -1218,15 +1218,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_par
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testVariableTypeArrayDeserialization,testVariableTypeDeserialization,testVariableTypeFieldsAndGenericArraysDeserialization,testParameterizedTypeGenericArraysDeserialization,testParameterizedTypeWithVariableTypeDeserialization
 [INFO] Assertion amplification: 5 test method(s) has been successfully amplified.
-[WARN] 2018-09-27 14:57:02 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:57:02 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:57:02 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:11:04 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:11:04 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:11:04 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.functional.ParameterizedTypesTest testParameterizedTypeGenericArraysDeserialization:testVariableTypeDeserialization:testVariableTypeFieldsAndGenericArraysDeserialization:testParameterizedTypeWithVariableTypeDeserialization:testVariableTypeArrayDeserialization
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testVariableTypeArrayDeserialization,testVariableTypeDeserialization,testVariableTypeFieldsAndGenericArraysDeserialization,testParameterizedTypeGenericArraysDeserialization,testParameterizedTypeWithVariableTypeDeserialization
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 6904
+[INFO] elapsedTime 6923
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -1260,15 +1260,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_par
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testTypeAdapterProperlyConvertsTypes
 [INFO] Assertion amplification: 1 test method(s) has been successfully amplified.
-[WARN] 2018-09-27 14:57:05 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:57:05 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-27 14:57:05 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:11:08 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:11:08 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-27 16:11:08 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/gson/gson/target/classes/:/tmp/icst-2019/september-2018/dataset/gson/gson/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/gson/gson/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner com.google.gson.GsonTypeAdapterTest testTypeAdapterProperlyConvertsTypes
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testTypeAdapterProperlyConvertsTypes
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 2710
+[INFO] elapsedTime 2646
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -1281,15 +1281,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/gson_par
 Loading /tmp/icst-2019/september-2018/dataset/gson_parent/gson/target/dspot/TestListener.ser
 [INFO] Test has been run: testNullSafe(com.google.gson.functional.StreamingTypeAdaptersTest): Use assertEquals(expected, actual, delta) to compare floating-point numbers
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 728
+[INFO] elapsedTime 722
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 01:12 min
-[INFO] Finished at: 2018-09-27T14:57:07+02:00
+[INFO] Total time: 01:11 min
+[INFO] Finished at: 2018-09-27T16:11:10+02:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) on project gson: Execution default-cli of goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests failed: java.lang.RuntimeException: java.lang.NullPointerException -> [Help 1]
 org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) on project gson: Execution default-cli of goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests failed: java.lang.RuntimeException: java.lang.NullPointerException
