@@ -145,7 +145,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=713172, ConflictMarker.markTime=499438, ConflictMarker.nodeCount=4, ConflictIdSorter.graphTime=382848, ConflictIdSorter.topsortTime=372241, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=3342837, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=26609578, DefaultDependencyCollector.transformTime=7500993}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=711539, ConflictMarker.markTime=513162, ConflictMarker.nodeCount=4, ConflictIdSorter.graphTime=380653, ConflictIdSorter.topsortTime=370736, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=3177564, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=25835545, DefaultDependencyCollector.transformTime=7263101}
 [DEBUG] com.google.code.gson:gson-extras:jar:1.0-SNAPSHOT
 [DEBUG]    com.google.code.gson:gson:jar:2.7:compile
 [DEBUG]    javax.annotation:jsr250-api:jar:1.0:compile
@@ -427,7 +427,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=4305168, ConflictMarker.markTime=1938289, ConflictMarker.nodeCount=671, ConflictIdSorter.graphTime=2890555, ConflictIdSorter.topsortTime=172854, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=14688446, ConflictResolver.conflictItemCount=306, DefaultDependencyCollector.collectTime=4545886907, DefaultDependencyCollector.transformTime=24180070}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=4091775, ConflictMarker.markTime=909743, ConflictMarker.nodeCount=671, ConflictIdSorter.graphTime=3015776, ConflictIdSorter.topsortTime=152898, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=16136843, ConflictResolver.conflictItemCount=306, DefaultDependencyCollector.collectTime=4486137203, DefaultDependencyCollector.transformTime=24479417}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -674,8 +674,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 4.038 s
-[INFO] Finished at: 2018-09-27T14:54:25+02:00
+[INFO] Total time: 4.057 s
+[INFO] Finished at: 2018-09-27T16:08:28+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
 [WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
@@ -729,8 +729,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.061 s
-[INFO] Finished at: 2018-09-27T14:54:31+02:00
+[INFO] Total time: 2.960 s
+[INFO] Finished at: 2018-09-27T16:08:34+02:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.5.1:testCompile (default-testCompile) on project gson-extras: Compilation failure: Compilation failure: 
 [ERROR] /tmp/icst-2019/september-2018/dataset/gson/extras/src/test/java/com/google/gson/typeadapters/PostConstructAdapterFactoryTest.java:[25,17] package org.junit does not exist
@@ -750,8 +750,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 17.308 s
-[INFO] Finished at: 2018-09-27T14:54:31+02:00
+[INFO] Total time: 17.083 s
+[INFO] Finished at: 2018-09-27T16:08:34+02:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) on project gson-extras: Execution default-cli of goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests failed: java.lang.RuntimeException: java.lang.RuntimeException: java.io.FileNotFoundException: /tmp/icst-2019/september-2018/dataset/gson/extras/target/dspot/classpath (No such file or directory) -> [Help 1]
 org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) on project gson-extras: Execution default-cli of goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests failed: java.lang.RuntimeException: java.lang.RuntimeException: java.io.FileNotFoundException: /tmp/icst-2019/september-2018/dataset/gson/extras/target/dspot/classpath (No such file or directory)
