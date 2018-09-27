@@ -149,7 +149,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=2138508, ConflictMarker.markTime=854151, ConflictMarker.nodeCount=78, ConflictIdSorter.graphTime=711940, ConflictIdSorter.topsortTime=485070, ConflictIdSorter.conflictIdCount=43, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=11678285, ConflictResolver.conflictItemCount=73, DefaultDependencyCollector.collectTime=580042932, DefaultDependencyCollector.transformTime=19572972}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1278336, ConflictMarker.markTime=722297, ConflictMarker.nodeCount=78, ConflictIdSorter.graphTime=675733, ConflictIdSorter.topsortTime=484526, ConflictIdSorter.conflictIdCount=43, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9035470, ConflictResolver.conflictItemCount=73, DefaultDependencyCollector.collectTime=435623505, DefaultDependencyCollector.transformTime=14887441}
 [DEBUG] org.xwiki.commons:xwiki-commons-job:jar:9.0-SNAPSHOT
 [DEBUG]    org.xwiki.commons:xwiki-commons-component-api:jar:9.0-SNAPSHOT:compile
 [DEBUG]       org.xwiki.commons:xwiki-commons-stability:jar:9.0-SNAPSHOT:compile
@@ -471,7 +471,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=5884549, ConflictMarker.markTime=1657222, ConflictMarker.nodeCount=671, ConflictIdSorter.graphTime=3721057, ConflictIdSorter.topsortTime=262692, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=8450363, ConflictResolver.conflictItemCount=306, DefaultDependencyCollector.collectTime=4786606045, DefaultDependencyCollector.transformTime=20162173}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3345902, ConflictMarker.markTime=992298, ConflictMarker.nodeCount=671, ConflictIdSorter.graphTime=1795847, ConflictIdSorter.topsortTime=134150, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9163450, ConflictResolver.conflictItemCount=306, DefaultDependencyCollector.collectTime=4280657658, DefaultDependencyCollector.transformTime=15579904}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -757,9 +757,9 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
   found:    org.xwiki.job.internal.script.safe.SafeJobStatus
 [WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/xstream/SafeThrowableConverter.java:[53,37] found raw type: java.lang.Class
   missing type arguments for generic class java.lang.Class<T>
-[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobStatusStorage.java:[40,49] org.xwiki.job.internal.JobStatusStorage in org.xwiki.job.internal has been deprecated
 [WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/xstream/SafeLogEventConverter.java:[56,31] found raw type: java.lang.Class
   missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobStatusStorage.java:[40,49] org.xwiki.job.internal.JobStatusStorage in org.xwiki.job.internal has been deprecated
 [WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[64,15] found raw type: java.lang.Class
   missing type arguments for generic class java.lang.Class<T>
 [WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[66,15] found raw type: java.lang.Class
@@ -869,8 +869,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 10.092 s
-[INFO] Finished at: 2018-09-26T17:18:28+02:00
+[INFO] Total time: 9.086 s
+[INFO] Finished at: 2018-09-26T23:12:19+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
 [WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
@@ -1069,8 +1069,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 9.607 s
-[INFO] Finished at: 2018-09-26T17:18:42+02:00
+[INFO] Total time: 8.707 s
+[INFO] Finished at: 2018-09-26T23:12:32+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of org.xwiki.job.internal.JobStatusSerializerTest (19 test(s))
 [INFO] Assertion amplification of org.xwiki.job.internal.JobStatusSerializerTest (19 test(s))
@@ -1120,9 +1120,9 @@ SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorSta
 Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/target/dspot/TestListener.ser
 [INFO] Test has been run: test
 [INFO] Assertion amplification: 1 test method(s) has been successfully amplified.
-[WARN] 2018-09-26 17:18:52 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-26 17:18:52 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-26 17:18:52 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-26 23:12:42 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-26 23:12:42 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-26 23:12:42 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] run mvn test -Dtest=org.xwiki.job.internal.JobStatusSerializerTest#test
 [WARNING] Trying to lookup for maven home.
 [WARNING] This can fail, and thus lead to a crash of the application.
@@ -1191,7 +1191,7 @@ Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.xwiki.job.internal.JobStatusSerializerTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.586 sec - in org.xwiki.job.internal.JobStatusSerializerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.636 sec - in org.xwiki.job.internal.JobStatusSerializerTest
 [INFO] 
 [INFO] Results :
 [INFO] 
@@ -1200,12 +1200,12 @@ Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons
 [INFO] [INFO] ------------------------------------------------------------------------
 [INFO] [INFO] BUILD SUCCESS
 [INFO] [INFO] ------------------------------------------------------------------------
-[INFO] [INFO] Total time: 8.532 s
-[INFO] [INFO] Finished at: 2018-09-26T17:19:02+02:00
+[INFO] [INFO] Total time: 8.142 s
+[INFO] [INFO] Finished at: 2018-09-26T23:12:52+02:00
 [INFO] [INFO] ------------------------------------------------------------------------
 Root element :testsuite
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 20217
+[INFO] elapsedTime 19570
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -1259,9 +1259,9 @@ SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorSta
 Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/target/dspot/TestListener.ser
 [INFO] Test has been run: storeJobStatus
 [INFO] Assertion amplification: 1 test method(s) has been successfully amplified.
-[WARN] 2018-09-26 17:19:12 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-26 17:19:12 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-26 17:19:12 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-26 23:13:01 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-26 23:13:01 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-26 23:13:01 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] run mvn test -Dtest=org.xwiki.job.internal.DefaultJobStatusStoreTest#storeJobStatus
 [WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
 [INFO] [INFO] Scanning for projects...
@@ -1327,7 +1327,7 @@ Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.xwiki.job.internal.DefaultJobStatusStoreTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.532 sec - in org.xwiki.job.internal.DefaultJobStatusStoreTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.518 sec - in org.xwiki.job.internal.DefaultJobStatusStoreTest
 [INFO] 
 [INFO] Results :
 [INFO] 
@@ -1336,23 +1336,23 @@ Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons
 [INFO] [INFO] ------------------------------------------------------------------------
 [INFO] [INFO] BUILD SUCCESS
 [INFO] [INFO] ------------------------------------------------------------------------
-[INFO] [INFO] Total time: 9.473 s
-[INFO] [INFO] Finished at: 2018-09-26T17:19:23+02:00
+[INFO] [INFO] Total time: 8.863 s
+[INFO] [INFO] Finished at: 2018-09-26T23:13:11+02:00
 [INFO] [INFO] ------------------------------------------------------------------------
 Root element :testsuite
 Root element :testsuite
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 20162
+[INFO] elapsedTime 19120
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
 [WARNING] DSpot could not obtain any amplified test method.
 [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
 [INFO] Amplification succeed.
-[INFO] Elapsed time 40898 ms
+[INFO] Elapsed time 39151 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 01:12 min
-[INFO] Finished at: 2018-09-26T17:19:23+02:00
+[INFO] Total time: 01:08 min
+[INFO] Finished at: 2018-09-26T23:13:11+02:00
 [INFO] ------------------------------------------------------------------------

@@ -151,7 +151,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1543258, ConflictMarker.markTime=758813, ConflictMarker.nodeCount=57, ConflictIdSorter.graphTime=600934, ConflictIdSorter.topsortTime=449417, ConflictIdSorter.conflictIdCount=34, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=8849384, ConflictResolver.conflictItemCount=52, DefaultDependencyCollector.collectTime=412425331, DefaultDependencyCollector.transformTime=14834391}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1217992, ConflictMarker.markTime=783983, ConflictMarker.nodeCount=57, ConflictIdSorter.graphTime=601962, ConflictIdSorter.topsortTime=468820, ConflictIdSorter.conflictIdCount=34, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=8198504, ConflictResolver.conflictItemCount=52, DefaultDependencyCollector.collectTime=318513078, DefaultDependencyCollector.transformTime=13975987}
 [DEBUG] org.xwiki.commons:xwiki-commons-diff-api:jar:9.5-SNAPSHOT
 [DEBUG]    org.xwiki.commons:xwiki-commons-component-api:jar:9.5-SNAPSHOT:compile
 [DEBUG]       org.xwiki.commons:xwiki-commons-stability:jar:9.5-SNAPSHOT:compile
@@ -464,7 +464,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=6369760, ConflictMarker.markTime=1501928, ConflictMarker.nodeCount=671, ConflictIdSorter.graphTime=2303375, ConflictIdSorter.topsortTime=192818, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9367295, ConflictResolver.conflictItemCount=306, DefaultDependencyCollector.collectTime=4909959744, DefaultDependencyCollector.transformTime=19918801}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3844392, ConflictMarker.markTime=1228504, ConflictMarker.nodeCount=671, ConflictIdSorter.graphTime=2383463, ConflictIdSorter.topsortTime=176186, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9173901, ConflictResolver.conflictItemCount=306, DefaultDependencyCollector.collectTime=4622054734, DefaultDependencyCollector.transformTime=16971662}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -733,8 +733,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 8.099 s
-[INFO] Finished at: 2018-09-26T17:15:45+02:00
+[INFO] Total time: 8.000 s
+[INFO] Finished at: 2018-09-26T23:09:43+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
 [WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
@@ -804,8 +804,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 8.293 s
-[INFO] Finished at: 2018-09-26T17:15:57+02:00
+[INFO] Total time: 7.975 s
+[INFO] Finished at: 2018-09-26T23:09:54+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of org.xwiki.diff.internal.DefaultDiffManagerTest (1 test(s))
 [INFO] Assertion amplification of org.xwiki.diff.internal.DefaultDiffManagerTest (1 test(s))
@@ -855,9 +855,9 @@ SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorSta
 Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/dspot/TestListener.ser
 [INFO] Test has been run: testMergeCharList
 [INFO] Assertion amplification: 1 test method(s) has been successfully amplified.
-[WARN] 2018-09-26 17:16:04 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-26 17:16:04 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-26 17:16:04 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-26 23:10:03 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-26 23:10:03 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-26 23:10:03 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] run mvn test -Dtest=org.xwiki.diff.internal.DefaultDiffManagerTest#testMergeCharList
 [WARNING] Trying to lookup for maven home.
 [WARNING] This can fail, and thus lead to a crash of the application.
@@ -922,8 +922,8 @@ Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons
 [INFO] [INFO]  T E S T S
 [INFO] [INFO] -------------------------------------------------------
 [INFO] [INFO] Running org.xwiki.diff.internal.DefaultDiffManagerTest
-[INFO] [ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.326 s <<< FAILURE! - in org.xwiki.diff.internal.DefaultDiffManagerTest
-[INFO] [ERROR] testMergeCharList(org.xwiki.diff.internal.DefaultDiffManagerTest)  Time elapsed: 0.06 s  <<< FAILURE!
+[INFO] [ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.345 s <<< FAILURE! - in org.xwiki.diff.internal.DefaultDiffManagerTest
+[INFO] [ERROR] testMergeCharList(org.xwiki.diff.internal.DefaultDiffManagerTest)  Time elapsed: 0.055 s  <<< FAILURE!
 [INFO] java.lang.AssertionError: expected:<1> but was:<0>
 [INFO] 	at org.junit.Assert.fail(Assert.java:88)
 [INFO] 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -954,8 +954,8 @@ Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons
 [INFO] [INFO] ------------------------------------------------------------------------
 [INFO] [INFO] BUILD FAILURE
 [INFO] [INFO] ------------------------------------------------------------------------
-[INFO] [INFO] Total time: 7.488 s
-[INFO] [INFO] Finished at: 2018-09-26T17:16:15+02:00
+[INFO] [INFO] Total time: 6.730 s
+[INFO] [INFO] Finished at: 2018-09-26T23:10:13+02:00
 [INFO] [INFO] ------------------------------------------------------------------------
 [INFO] [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20:test (default-test) on project xwiki-commons-diff-api: There are test failures.
 [INFO] [ERROR] 
@@ -970,17 +970,17 @@ Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons
 [INFO] [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
 Root element :testsuite
 [INFO] 1 amplified test methods has been selected to be kept. (global: 1)
-[INFO] elapsedTime 18253
+[INFO] elapsedTime 18696
 ======= REPORT =======
 1 amplified test fails on the new versions.
 testMergeCharList(org.xwiki.diff.internal.DefaultDiffManagerTest): 
 
 [INFO] Print AmplDefaultDiffManagerTest with 1?amplified test cases in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_11_805b092/assert_amplification
 [INFO] Amplification succeed.
-[INFO] Elapsed time 19087 ms
+[INFO] Elapsed time 19641 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 47.043 s
-[INFO] Finished at: 2018-09-26T17:16:16+02:00
+[INFO] Total time: 46.764 s
+[INFO] Finished at: 2018-09-26T23:10:14+02:00
 [INFO] ------------------------------------------------------------------------

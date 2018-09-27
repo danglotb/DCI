@@ -151,7 +151,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1527385, ConflictMarker.markTime=826077, ConflictMarker.nodeCount=57, ConflictIdSorter.graphTime=732893, ConflictIdSorter.topsortTime=551607, ConflictIdSorter.conflictIdCount=34, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9208215, ConflictResolver.conflictItemCount=52, DefaultDependencyCollector.collectTime=438514789, DefaultDependencyCollector.transformTime=15939090}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1476343, ConflictMarker.markTime=812740, ConflictMarker.nodeCount=57, ConflictIdSorter.graphTime=741681, ConflictIdSorter.topsortTime=560927, ConflictIdSorter.conflictIdCount=34, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9154546, ConflictResolver.conflictItemCount=52, DefaultDependencyCollector.collectTime=377618050, DefaultDependencyCollector.transformTime=15962789}
 [DEBUG] org.xwiki.commons:xwiki-commons-diff-api:jar:9.5-SNAPSHOT
 [DEBUG]    org.xwiki.commons:xwiki-commons-component-api:jar:9.5-SNAPSHOT:compile
 [DEBUG]       org.xwiki.commons:xwiki-commons-stability:jar:9.5-SNAPSHOT:compile
@@ -464,7 +464,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=4006833, ConflictMarker.markTime=1306225, ConflictMarker.nodeCount=671, ConflictIdSorter.graphTime=2530951, ConflictIdSorter.topsortTime=232061, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=11613673, ConflictResolver.conflictItemCount=306, DefaultDependencyCollector.collectTime=4816902899, DefaultDependencyCollector.transformTime=19874212}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=4218126, ConflictMarker.markTime=1164444, ConflictMarker.nodeCount=671, ConflictIdSorter.graphTime=4070411, ConflictIdSorter.topsortTime=247856, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=12451220, ConflictResolver.conflictItemCount=306, DefaultDependencyCollector.collectTime=4470068632, DefaultDependencyCollector.transformTime=22370479}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -682,7 +682,6 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ xwiki-commons-diff-api ---
-[INFO] Deleting /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-diff-api ---
 [INFO] 
@@ -733,8 +732,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 8.377 s
-[INFO] Finished at: 2018-09-26T17:14:52+02:00
+[INFO] Total time: 8.228 s
+[INFO] Finished at: 2018-09-26T23:08:51+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
 [WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
@@ -753,7 +752,6 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ xwiki-commons-diff-api ---
-[INFO] Deleting /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-diff-api ---
 [INFO] 
@@ -804,8 +802,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 8.097 s
-[INFO] Finished at: 2018-09-26T17:15:04+02:00
+[INFO] Total time: 8.031 s
+[INFO] Finished at: 2018-09-26T23:09:02+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of org.xwiki.diff.internal.DefaultDiffManagerTest (1 test(s))
 [INFO] Assertion amplification of org.xwiki.diff.internal.DefaultDiffManagerTest (1 test(s))
@@ -855,9 +853,9 @@ SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorSta
 Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/dspot/TestListener.ser
 [INFO] Test has been run: testMergeCharList
 [INFO] Assertion amplification: 1 test method(s) has been successfully amplified.
-[WARN] 2018-09-26 17:15:12 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-26 17:15:12 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-26 17:15:12 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-26 23:09:11 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-26 23:09:11 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-26 23:09:11 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] run mvn test -Dtest=org.xwiki.diff.internal.DefaultDiffManagerTest#testMergeCharList
 [WARNING] Trying to lookup for maven home.
 [WARNING] This can fail, and thus lead to a crash of the application.
@@ -922,8 +920,8 @@ Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons
 [INFO] [INFO]  T E S T S
 [INFO] [INFO] -------------------------------------------------------
 [INFO] [INFO] Running org.xwiki.diff.internal.DefaultDiffManagerTest
-[INFO] [ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.305 s <<< FAILURE! - in org.xwiki.diff.internal.DefaultDiffManagerTest
-[INFO] [ERROR] testMergeCharList(org.xwiki.diff.internal.DefaultDiffManagerTest)  Time elapsed: 0.048 s  <<< FAILURE!
+[INFO] [ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.388 s <<< FAILURE! - in org.xwiki.diff.internal.DefaultDiffManagerTest
+[INFO] [ERROR] testMergeCharList(org.xwiki.diff.internal.DefaultDiffManagerTest)  Time elapsed: 0.056 s  <<< FAILURE!
 [INFO] java.lang.AssertionError: expected:<0> but was:<1>
 [INFO] 	at org.junit.Assert.fail(Assert.java:88)
 [INFO] 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -954,8 +952,8 @@ Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons
 [INFO] [INFO] ------------------------------------------------------------------------
 [INFO] [INFO] BUILD FAILURE
 [INFO] [INFO] ------------------------------------------------------------------------
-[INFO] [INFO] Total time: 7.433 s
-[INFO] [INFO] Finished at: 2018-09-26T17:15:24+02:00
+[INFO] [INFO] Total time: 6.814 s
+[INFO] [INFO] Finished at: 2018-09-26T23:09:23+02:00
 [INFO] [INFO] ------------------------------------------------------------------------
 [INFO] [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20:test (default-test) on project xwiki-commons-diff-api: There are test failures.
 [INFO] [ERROR] 
@@ -970,17 +968,17 @@ Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons
 [INFO] [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
 Root element :testsuite
 [INFO] 1 amplified test methods has been selected to be kept. (global: 1)
-[INFO] elapsedTime 19365
+[INFO] elapsedTime 19962
 ======= REPORT =======
 1 amplified test fails on the new versions.
 testMergeCharList(org.xwiki.diff.internal.DefaultDiffManagerTest): 
 
 [INFO] Print AmplDefaultDiffManagerTest with 1?amplified test cases in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_10_548ddb9/assert_amplification
 [INFO] Amplification succeed.
-[INFO] Elapsed time 20305 ms
+[INFO] Elapsed time 21023 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 48.157 s
-[INFO] Finished at: 2018-09-26T17:15:24+02:00
+[INFO] Total time: 48.266 s
+[INFO] Finished at: 2018-09-26T23:09:23+02:00
 [INFO] ------------------------------------------------------------------------

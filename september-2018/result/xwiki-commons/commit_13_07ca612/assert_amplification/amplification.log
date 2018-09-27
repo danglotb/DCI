@@ -149,7 +149,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=2378905, ConflictMarker.markTime=990684, ConflictMarker.nodeCount=144, ConflictIdSorter.graphTime=877673, ConflictIdSorter.topsortTime=520622, ConflictIdSorter.conflictIdCount=67, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=19301338, ConflictResolver.conflictItemCount=117, DefaultDependencyCollector.collectTime=683727173, DefaultDependencyCollector.transformTime=27085209}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1527900, ConflictMarker.markTime=915367, ConflictMarker.nodeCount=144, ConflictIdSorter.graphTime=789665, ConflictIdSorter.topsortTime=510431, ConflictIdSorter.conflictIdCount=67, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=11337108, ConflictResolver.conflictItemCount=117, DefaultDependencyCollector.collectTime=616871195, DefaultDependencyCollector.transformTime=17768959}
 [DEBUG] org.xwiki.commons:xwiki-commons-velocity:jar:9.0-SNAPSHOT
 [DEBUG]    org.xwiki.commons:xwiki-commons-component-api:jar:9.0-SNAPSHOT:compile
 [DEBUG]       org.xwiki.commons:xwiki-commons-stability:jar:9.0-SNAPSHOT:compile
@@ -495,7 +495,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=4762116, ConflictMarker.markTime=1794663, ConflictMarker.nodeCount=671, ConflictIdSorter.graphTime=2683418, ConflictIdSorter.topsortTime=383179, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=8095328, ConflictResolver.conflictItemCount=306, DefaultDependencyCollector.collectTime=4489294355, DefaultDependencyCollector.transformTime=17902609}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=2269880, ConflictMarker.markTime=742746, ConflictMarker.nodeCount=671, ConflictIdSorter.graphTime=2315611, ConflictIdSorter.topsortTime=133602, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7145052, ConflictResolver.conflictItemCount=306, DefaultDependencyCollector.collectTime=4175033693, DefaultDependencyCollector.transformTime=12755287}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -713,7 +713,6 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ xwiki-commons-velocity ---
-[INFO] Deleting /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-plugins) @ xwiki-commons-velocity ---
 [INFO] Skipping Rule Enforcement.
@@ -862,8 +861,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 10.669 s
-[INFO] Finished at: 2018-09-26T17:17:31+02:00
+[INFO] Total time: 10.141 s
+[INFO] Finished at: 2018-09-26T23:11:26+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
 [WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
@@ -882,7 +881,6 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ xwiki-commons-velocity ---
-[INFO] Deleting /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-velocity/target
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-plugins) @ xwiki-commons-velocity ---
 [INFO] Skipping Rule Enforcement.
@@ -1031,8 +1029,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 10.618 s
-[INFO] Finished at: 2018-09-26T17:17:46+02:00
+[INFO] Total time: 9.745 s
+[INFO] Finished at: 2018-09-26T23:11:40+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of org.xwiki.velocity.introspection.MethodArgumentUberspectorTest (7 test(s))
 [INFO] Assertion amplification of org.xwiki.velocity.introspection.MethodArgumentUberspectorTest (7 test(s))
@@ -1082,9 +1080,9 @@ SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorSta
 Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/dspot/TestListener.ser
 [INFO] Test has been run: getMethodWhenVarargsWithConversionAndVarargParamPassedNeedingConversion,getMethodWhenVarargsWithConversionAndNoVarargParamPassed,getMethodWhenVarargsWithNoConversionAndNoVarargParamPassed,getMethodWhenVarargsWithConversionAndOneVarargParamPassed,getMethodWhenAddingSameMethodNameToExtendingClassAndConversion,getMethodWhenVarargsWithConversionAndTwoVarargParamsPassed,getMethodWhenVarargsWithNoConversionAndTwoVarargParamsPassed
 [INFO] Assertion amplification: 7 test method(s) has been successfully amplified.
-[WARN] 2018-09-26 17:17:54 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-velocity/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-26 17:17:54 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-velocity/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-26 17:17:54 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-velocity/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-26 23:11:48 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-velocity/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-26 23:11:48 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-velocity/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-09-26 23:11:48 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-velocity/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] run mvn test -Dtest=org.xwiki.velocity.introspection.MethodArgumentUberspectorTest#getMethodWhenAddingSameMethodNameToExtendingClassAndConversion+getMethodWhenVarargsWithConversionAndVarargParamPassedNeedingConversion+getMethodWhenVarargsWithNoConversionAndNoVarargParamPassed+getMethodWhenVarargsWithConversionAndNoVarargParamPassed+getMethodWhenVarargsWithConversionAndOneVarargParamPassed+getMethodWhenVarargsWithNoConversionAndTwoVarargParamsPassed+getMethodWhenVarargsWithConversionAndTwoVarargParamsPassed
 [WARNING] Trying to lookup for maven home.
 [WARNING] This can fail, and thus lead to a crash of the application.
@@ -1153,7 +1151,7 @@ Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.xwiki.velocity.introspection.MethodArgumentUberspectorTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.15 sec - in org.xwiki.velocity.introspection.MethodArgumentUberspectorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.118 sec - in org.xwiki.velocity.introspection.MethodArgumentUberspectorTest
 [INFO] 
 [INFO] Results :
 [INFO] 
@@ -1162,22 +1160,22 @@ Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons
 [INFO] [INFO] ------------------------------------------------------------------------
 [INFO] [INFO] BUILD SUCCESS
 [INFO] [INFO] ------------------------------------------------------------------------
-[INFO] [INFO] Total time: 9.969 s
-[INFO] [INFO] Finished at: 2018-09-26T17:18:06+02:00
+[INFO] [INFO] Total time: 8.841 s
+[INFO] [INFO] Finished at: 2018-09-26T23:11:59+02:00
 [INFO] [INFO] ------------------------------------------------------------------------
 Root element :testsuite
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 19842
+[INFO] elapsedTime 18628
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
 [WARNING] DSpot could not obtain any amplified test method.
 [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
 [INFO] Amplification succeed.
-[INFO] Elapsed time 20083 ms
+[INFO] Elapsed time 18746 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 53.540 s
-[INFO] Finished at: 2018-09-26T17:18:06+02:00
+[INFO] Total time: 50.229 s
+[INFO] Finished at: 2018-09-26T23:11:59+02:00
 [INFO] ------------------------------------------------------------------------
