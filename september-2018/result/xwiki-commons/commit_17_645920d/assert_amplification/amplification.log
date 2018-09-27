@@ -147,7 +147,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1248034, ConflictMarker.markTime=539948, ConflictMarker.nodeCount=26, ConflictIdSorter.graphTime=557308, ConflictIdSorter.topsortTime=452514, ConflictIdSorter.conflictIdCount=17, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5964504, ConflictResolver.conflictItemCount=25, DefaultDependencyCollector.collectTime=223849217, DefaultDependencyCollector.transformTime=12293330}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=797950, ConflictMarker.markTime=464896, ConflictMarker.nodeCount=26, ConflictIdSorter.graphTime=441307, ConflictIdSorter.topsortTime=379874, ConflictIdSorter.conflictIdCount=17, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4718988, ConflictResolver.conflictItemCount=25, DefaultDependencyCollector.collectTime=203887652, DefaultDependencyCollector.transformTime=9030207}
 [DEBUG] org.xwiki.commons:xwiki-commons-tool-verification-resources:jar:9.0-SNAPSHOT
 [DEBUG]    org.apache.commons:commons-lang3:jar:3.5:compile
 [DEBUG]    com.puppycrawl.tools:checkstyle:jar:7.2:provided
@@ -443,7 +443,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=6224001, ConflictMarker.markTime=1580382, ConflictMarker.nodeCount=671, ConflictIdSorter.graphTime=2719822, ConflictIdSorter.topsortTime=176566, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=10946515, ConflictResolver.conflictItemCount=306, DefaultDependencyCollector.collectTime=4791585693, DefaultDependencyCollector.transformTime=21827542}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3721050, ConflictMarker.markTime=966975, ConflictMarker.nodeCount=671, ConflictIdSorter.graphTime=2749025, ConflictIdSorter.topsortTime=142124, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=11057602, ConflictResolver.conflictItemCount=306, DefaultDependencyCollector.collectTime=4653429667, DefaultDependencyCollector.transformTime=18843652}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -701,8 +701,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 5.654 s
-[INFO] Finished at: 2018-09-26T17:32:04+02:00
+[INFO] Total time: 5.791 s
+[INFO] Finished at: 2018-09-26T23:14:28+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
 [WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
@@ -763,8 +763,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 5.617 s
-[INFO] Finished at: 2018-09-26T17:32:12+02:00
+[INFO] Total time: 5.168 s
+[INFO] Finished at: 2018-09-26T23:14:36+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of org.xwiki.tool.checkstyle.UnstableAnnotationCheckTest (5 test(s))
 [INFO] Assertion amplification of org.xwiki.tool.checkstyle.UnstableAnnotationCheckTest (5 test(s))
@@ -805,17 +805,17 @@ Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons
 [INFO] Generating assertions...
 [INFO] Could not generate any test with assertions
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 4038
+[INFO] elapsedTime 3757
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
 [WARNING] DSpot could not obtain any amplified test method.
 [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
 [INFO] Amplification succeed.
-[INFO] Elapsed time 4260 ms
+[INFO] Elapsed time 3904 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 26.373 s
-[INFO] Finished at: 2018-09-26T17:32:17+02:00
+[INFO] Total time: 25.120 s
+[INFO] Finished at: 2018-09-26T23:14:40+02:00
 [INFO] ------------------------------------------------------------------------
