@@ -1,237 +1,237 @@
 diff --git a/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/java/org/xwiki/tool/xar/VerifyMojoTest.java b/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/java/org/xwiki/tool/xar/VerifyMojoTest.java
-index 9494d0b41..502d39acf 100644
+index 502d39acf..9494d0b41 100644
 --- a/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/java/org/xwiki/tool/xar/VerifyMojoTest.java
 +++ b/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/java/org/xwiki/tool/xar/VerifyMojoTest.java
-@@ -43,13 +43,11 @@ public void executeWithWrongAuthor() throws Exception
+@@ -43,11 +43,13 @@ public void executeWithWrongAuthor() throws Exception
      }
  
      @Test
--    public void executeWithWrongAttachmentAuthorsAndMimetypes() throws Exception
-+    public void executeWithWrongAttachmentAuthors() throws Exception
+-    public void executeWithWrongAttachmentAuthors() throws Exception
++    public void executeWithWrongAttachmentAuthorsAndMimetypes() throws Exception
      {
--        verifyExecution("/wrongAttachmentAuthorsAndMimetypes", "Verifying [Space/WebHome.xml]... errors",
--            "- Attachment author must be [xwiki:XWiki.Admin] but was []",
--            "- Attachment author must be [xwiki:XWiki.Admin] but was [wrong author]",
--            "- Missing mimetype for attachment [applications.png]",
--            "- Missing mimetype for attachment [configuration.png]");
-+        verifyExecution("/wrongAttachmentAuthors", "Verifying [Space/WebHome.xml]... errors",
-+            "- Attachment author must [xwiki:XWiki.Admin] but was []",
-+            "- Attachment author must [xwiki:XWiki.Admin] but was [wrong author]");
+-        verifyExecution("/wrongAttachmentAuthors", "Verifying [Space/WebHome.xml]... errors",
+-            "- Attachment author must [xwiki:XWiki.Admin] but was []",
+-            "- Attachment author must [xwiki:XWiki.Admin] but was [wrong author]");
++        verifyExecution("/wrongAttachmentAuthorsAndMimetypes", "Verifying [Space/WebHome.xml]... errors",
++            "- Attachment author must be [xwiki:XWiki.Admin] but was []",
++            "- Attachment author must be [xwiki:XWiki.Admin] but was [wrong author]",
++            "- Missing mimetype for attachment [applications.png]",
++            "- Missing mimetype for attachment [configuration.png]");
      }
  
      @Test
 diff --git a/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/format/ExpectedNoStylePage2.xml b/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/format/ExpectedNoStylePage2.xml
-index 023d9f1bf..3e258be00 100644
+index 3e258be00..023d9f1bf 100644
 --- a/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/format/ExpectedNoStylePage2.xml
 +++ b/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/format/ExpectedNoStylePage2.xml
-@@ -46,7 +46,6 @@
+@@ -46,6 +46,7 @@
  <!-- Also verify that attachment authors are modified when not correct -->
  <attachment>
  <filename>applications.png</filename>
--<mimetype>image/png</mimetype>
++<mimetype>image/png</mimetype>
  <author>xwiki:XWiki.Admin</author>
  <date>1296854749000</date>
  <version>1.1</version>
-@@ -56,7 +55,6 @@
+@@ -55,6 +56,7 @@
  </attachment>
  <attachment>
  <filename>configuration.png</filename>
--<mimetype>image/png</mimetype>
++<mimetype>image/png</mimetype>
  <author>xwiki:XWiki.Admin</author>
  <date>1299688703000</date>
  <version>1.1</version>
 diff --git a/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/format/src/main/resources/NoStyle/Page2.xml b/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/format/src/main/resources/NoStyle/Page2.xml
-index 6d082040d..143904a03 100644
+index 143904a03..6d082040d 100644
 --- a/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/format/src/main/resources/NoStyle/Page2.xml
 +++ b/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/format/src/main/resources/NoStyle/Page2.xml
-@@ -47,7 +47,6 @@
+@@ -47,6 +47,7 @@
  <!-- Also verify that attachment authors are modified when not correct -->
  <attachment>
  <filename>applications.png</filename>
--<mimetype>image/png</mimetype>
++<mimetype>image/png</mimetype>
  <author></author>
  <date>1296854749000</date>
  <version>1.1</version>
-@@ -57,7 +56,6 @@
+@@ -56,6 +57,7 @@
  </attachment>
  <attachment>
  <filename>configuration.png</filename>
--<mimetype>image/png</mimetype>
++<mimetype>image/png</mimetype>
  <author>wrong author</author>
  <date>1299688703000</date>
  <version>1.1</version>
-diff --git a/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/wrongAttachmentAuthorsAndMimetypes/pom.xml b/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/wrongAttachmentAuthors/pom.xml
+diff --git a/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/wrongAttachmentAuthors/pom.xml b/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/wrongAttachmentAuthorsAndMimetypes/pom.xml
 similarity index 100%
-rename from xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/wrongAttachmentAuthorsAndMimetypes/pom.xml
-rename to xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/wrongAttachmentAuthors/pom.xml
-diff --git a/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/wrongAttachmentAuthorsAndMimetypes/src/main/resources/Space/WebHome.xml b/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/wrongAttachmentAuthors/src/main/resources/Space/WebHome.xml
+rename from xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/wrongAttachmentAuthors/pom.xml
+rename to xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/wrongAttachmentAuthorsAndMimetypes/pom.xml
+diff --git a/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/wrongAttachmentAuthors/src/main/resources/Space/WebHome.xml b/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/wrongAttachmentAuthorsAndMimetypes/src/main/resources/Space/WebHome.xml
 similarity index 100%
-rename from xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/wrongAttachmentAuthorsAndMimetypes/src/main/resources/Space/WebHome.xml
-rename to xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/wrongAttachmentAuthors/src/main/resources/Space/WebHome.xml
+rename from xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/wrongAttachmentAuthors/src/main/resources/Space/WebHome.xml
+rename to xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/resources/wrongAttachmentAuthorsAndMimetypes/src/main/resources/Space/WebHome.xml
 diff --git a/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/VerifyMojo.java b/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/VerifyMojo.java
-index 0d7d209f5..f2d25d6e9 100644
+index f2d25d6e9..0d7d209f5 100644
 --- a/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/VerifyMojo.java
 +++ b/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/VerifyMojo.java
-@@ -23,7 +23,6 @@
+@@ -23,6 +23,7 @@
  import java.util.ArrayList;
  import java.util.Collection;
  import java.util.List;
--import java.util.Map;
++import java.util.Map;
  
  import org.apache.commons.lang3.StringUtils;
  import org.apache.maven.plugin.MojoExecutionException;
-@@ -48,8 +47,6 @@
+@@ -47,6 +48,8 @@
   *   <li>ensure that Translations pages are using the plain/1.0 syntax</li>
   *   <li>ensure that Translations pages don't have a GLOBAL or USER visibility (USER makes no sense and GLOBAL would
   *       require Programming Rights, which is an issue in farm-based use cases)</li>
-- *   <li>ensure that attachments have a mimetype set. If the mimetype is missing then the attachment won't be
-- *       filterable in the attachment view in Page Index.</li>
++ *   <li>ensure that attachments have a mimetype set. If the mimetype is missing then the attachment won't be
++ *       filterable in the attachment view in Page Index.</li>
   * </ul>
   *
   * @version $Id$
-@@ -116,7 +113,7 @@ public void execute() throws MojoExecutionException, MojoFailureException
+@@ -113,7 +116,7 @@ public void execute() throws MojoExecutionException, MojoFailureException
                      AUTHOR, xdoc.getContentAuthor()));
              verifyAuthor(errors, xdoc.getCreator(), String.format("Creator must be [%s] but was [%s]",
                  AUTHOR, xdoc.getCreator()));
--            verifyAttachmentAuthors(errors, xdoc.getAttachmentData());
-+            verifyAttachmentAuthors(errors, xdoc.getAttachmentAuthors());
+-            verifyAttachmentAuthors(errors, xdoc.getAttachmentAuthors());
++            verifyAttachmentAuthors(errors, xdoc.getAttachmentData());
  
              // Verification 3: Check for orphans, except for Main.WebHome since it's the topmost document
              if (StringUtils.isEmpty(xdoc.getParent()) && !xdoc.getReference().equals("Main.WebHome")) {
-@@ -173,9 +170,6 @@ public void execute() throws MojoExecutionException, MojoFailureException
+@@ -170,6 +173,9 @@ public void execute() throws MojoExecutionException, MojoFailureException
                  }
              }
  
--            // Verification 12: Verify that  attachments have a mimetype set.
--            verifyAttachmentMimetypes(errors, xdoc.getAttachmentData());
--
++            // Verification 12: Verify that  attachments have a mimetype set.
++            verifyAttachmentMimetypes(errors, xdoc.getAttachmentData());
++
              // Display errors
              if (errors.isEmpty()) {
                  getLog().info(String.format("  Verifying [%s/%s]... ok", parentName, file.getName()));
-@@ -201,26 +195,15 @@ public void execute() throws MojoExecutionException, MojoFailureException
+@@ -195,15 +201,26 @@ public void execute() throws MojoExecutionException, MojoFailureException
  
      private void verifyAuthor(List<String> errors, String author, String message)
      {
--        if (!AUTHOR.equals(author)) {
-+        if (!author.equals(AUTHOR)) {
+-        if (!author.equals(AUTHOR)) {
++        if (!AUTHOR.equals(author)) {
              errors.add(message);
          }
      }
  
--    private void verifyAttachmentAuthors(List<String> errors, List<Map<String, String>> attachmentData)
--    {
--        for (Map<String, String> data : attachmentData) {
--            String author = data.get("author");
--            verifyAuthor(errors, author, String.format("Attachment author must be [%s] but was [%s]", AUTHOR, author));
--        }
--    }
--
--    private void verifyAttachmentMimetypes(List<String> errors, List<Map<String, String>> attachmentData)
-+    private void verifyAttachmentAuthors(List<String> errors, List<String> authors)
+-    private void verifyAttachmentAuthors(List<String> errors, List<String> authors)
++    private void verifyAttachmentAuthors(List<String> errors, List<Map<String, String>> attachmentData)
++    {
++        for (Map<String, String> data : attachmentData) {
++            String author = data.get("author");
++            verifyAuthor(errors, author, String.format("Attachment author must be [%s] but was [%s]", AUTHOR, author));
++        }
++    }
++
++    private void verifyAttachmentMimetypes(List<String> errors, List<Map<String, String>> attachmentData)
      {
--        for (Map<String, String> data : attachmentData) {
--            String mimetype = data.get("mimetype");
--            if (mimetype == null) {
--                errors.add(String.format("Missing mimetype for attachment [%s]", data.get("filename")));
--            }
-+        for (String author : authors) {
-+            verifyAuthor(errors, author, String.format("Attachment author must [%s] but was [%s]", AUTHOR, author));
+-        for (String author : authors) {
+-            verifyAuthor(errors, author, String.format("Attachment author must [%s] but was [%s]", AUTHOR, author));
++        for (Map<String, String> data : attachmentData) {
++            String mimetype = data.get("mimetype");
++            if (mimetype == null) {
++                errors.add(String.format("Missing mimetype for attachment [%s]", data.get("filename")));
++            }
          }
      }
  }
 diff --git a/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/internal/XWikiDocument.java b/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/internal/XWikiDocument.java
-index add9f4eeb..88accda4c 100644
+index 88accda4c..add9f4eeb 100644
 --- a/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/internal/XWikiDocument.java
 +++ b/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/internal/XWikiDocument.java
-@@ -22,9 +22,7 @@
+@@ -22,7 +22,9 @@
  import java.io.File;
  import java.io.StringReader;
  import java.util.ArrayList;
--import java.util.HashMap;
++import java.util.HashMap;
  import java.util.List;
--import java.util.Map;
++import java.util.Map;
  
  import org.dom4j.Document;
  import org.dom4j.DocumentException;
-@@ -41,10 +39,6 @@
+@@ -39,6 +41,10 @@
  {
      private static final String AUTHOR_TAG = "author";
  
--    private static final String MIMETYPE_TAG = "mimetype";
--
--    private static final String FILENAME_TAG = "filename";
--
++    private static final String MIMETYPE_TAG = "mimetype";
++
++    private static final String FILENAME_TAG = "filename";
++
      /**
       * @see #getReference()
       * @since 7.2M1
-@@ -78,10 +72,10 @@
+@@ -72,10 +78,10 @@
      private String contentAuthor;
  
      /**
--     * @see #getAttachmentData()
--     * @since 10.6RC1
-+     * @see #getAttachmentAuthors()
-+     * @since 7.0RC1
+-     * @see #getAttachmentAuthors()
+-     * @since 7.0RC1
++     * @see #getAttachmentData()
++     * @since 10.6RC1
       */
--    private List<Map<String, String>> attachmentData;
-+    private List<String> attachmentAuthors;
+-    private List<String> attachmentAuthors;
++    private List<Map<String, String>> attachmentData;
  
      /**
       * @see #getVersion()
-@@ -199,7 +193,7 @@ public void fromXML(Document domdoc) throws DocumentException
+@@ -193,7 +199,7 @@ public void fromXML(Document domdoc) throws DocumentException
          this.parent = readElement(rootElement, "parent");
          this.comment = readElement(rootElement, "comment");
          this.minorEdit = readElement(rootElement, "minorEdit");
--        this.attachmentData = readAttachmentData(rootElement);
-+        this.attachmentAuthors = readAttachmentAuthors(rootElement);
+-        this.attachmentAuthors = readAttachmentAuthors(rootElement);
++        this.attachmentData = readAttachmentData(rootElement);
          this.isHidden = Boolean.parseBoolean(readElement(rootElement, "hidden"));
          this.title = readElement(rootElement, "title");
          this.syntaxId = readElement(rootElement, "syntaxId");
-@@ -233,26 +227,13 @@ private String readElement(Element rootElement, String elementName)
+@@ -227,13 +233,26 @@ private String readElement(Element rootElement, String elementName)
          return result;
      }
  
--    private List<Map<String, String>> readAttachmentData(Element rootElement)
-+    private List<String> readAttachmentAuthors(Element rootElement)
+-    private List<String> readAttachmentAuthors(Element rootElement)
++    private List<Map<String, String>> readAttachmentData(Element rootElement)
      {
--        List<Map<String, String>> data = new ArrayList<>();
-+        List<String> authors = new ArrayList<>();
+-        List<String> authors = new ArrayList<>();
++        List<Map<String, String>> data = new ArrayList<>();
          for (Object attachmentNode : rootElement.elements("attachment")) {
--            Map<String, String> map = new HashMap<>();
--            String authorValue = readElement((Element) attachmentNode, AUTHOR_TAG);
--            if (authorValue != null) {
--                map.put(AUTHOR_TAG, authorValue);
--            }
--            String mimetypeValue = readElement((Element) attachmentNode, MIMETYPE_TAG);
--            if (mimetypeValue != null) {
--                map.put(MIMETYPE_TAG, mimetypeValue);
--            }
--            String filenameValue = readElement((Element) attachmentNode, FILENAME_TAG);
--            if (filenameValue != null) {
--                map.put(FILENAME_TAG, filenameValue);
--            }
--            data.add(map);
-+            authors.add(readElement((Element) attachmentNode, AUTHOR_TAG));
+-            authors.add(readElement((Element) attachmentNode, AUTHOR_TAG));
++            Map<String, String> map = new HashMap<>();
++            String authorValue = readElement((Element) attachmentNode, AUTHOR_TAG);
++            if (authorValue != null) {
++                map.put(AUTHOR_TAG, authorValue);
++            }
++            String mimetypeValue = readElement((Element) attachmentNode, MIMETYPE_TAG);
++            if (mimetypeValue != null) {
++                map.put(MIMETYPE_TAG, mimetypeValue);
++            }
++            String filenameValue = readElement((Element) attachmentNode, FILENAME_TAG);
++            if (filenameValue != null) {
++                map.put(FILENAME_TAG, filenameValue);
++            }
++            data.add(map);
          }
--        return data;
-+        return authors;
+-        return authors;
++        return data;
      }
  
      /**
-@@ -364,12 +345,12 @@ public String getMinorEdit()
+@@ -345,12 +364,12 @@ public String getMinorEdit()
      }
  
      /**
--     * @return the attachment data (authors, mimetypes, etc) and an empty list if there's no attachment
--     * @since 10.6RC1
-+     * @return the attachment authors and an empty list if there's no attachment
-+     * @since 7.0RC1
+-     * @return the attachment authors and an empty list if there's no attachment
+-     * @since 7.0RC1
++     * @return the attachment data (authors, mimetypes, etc) and an empty list if there's no attachment
++     * @since 10.6RC1
       */
--    public List<Map<String, String>> getAttachmentData()
-+    public List<String> getAttachmentAuthors()
+-    public List<String> getAttachmentAuthors()
++    public List<Map<String, String>> getAttachmentData()
      {
--        return this.attachmentData;
-+        return this.attachmentAuthors;
+-        return this.attachmentAuthors;
++        return this.attachmentData;
      }
  
      /**

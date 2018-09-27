@@ -13,6 +13,7 @@
 [[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.0.0:clean[m [1m(default-clean)[m @ [36mxwiki-commons-job[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/target
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mdiff-test-selection:0.5-SNAPSHOT:list[m [1m(default-cli)[m @ [36mxwiki-commons-job[0;1m ---[m
 [[1;34mINFO[m] Computing coverage for /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job
@@ -41,7 +42,7 @@
 [[1;34mINFO[m] Creating new database at '/home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/target/clover/clover.db'.
 [[1;34mINFO[m] Processing files at 1.8 source level.
 [[1;34mINFO[m] Clover all over. Instrumented 65 files (8 packages).
-[[1;34mINFO[m] Elapsed time = 0.942 secs. (69.002 files/sec, 7,501.062 srclines/sec)
+[[1;34mINFO[m] Elapsed time = 1.115 secs. (58.296 files/sec, 6,337.22 srclines/sec)
 [[1;34mINFO[m] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [[1;34mINFO[m] Loaded from: /home/bdanglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [[1;34mINFO[m] Clover free edition.
@@ -49,13 +50,16 @@
 [[1;34mINFO[m] Processing files at 1.8 source level.
 [[1;34mINFO[m] Clover all over. Instrumented 15 files (3 packages).
 [[1;34mINFO[m] 55 test methods detected.
-[[1;34mINFO[m] Elapsed time = 0.253 secs. (59.289 files/sec, 8,233.202 srclines/sec)
+[[1;34mINFO[m] Elapsed time = 0.29 secs. (51.724 files/sec, 7,182.759 srclines/sec)
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-plugins)[m @ [36mxwiki-commons-job[0;1m ---[m
+[[1;34mINFO[m] Skipping Rule Enforcement.
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-jcl-log4j-isolation)[m @ [36mxwiki-commons-job[0;1m ---[m
+[[1;34mINFO[m] Skipping Rule Enforcement.
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-commons-lang3)[m @ [36mxwiki-commons-job[0;1m ---[m
+[[1;34mINFO[m] Skipping Rule Enforcement.
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-upper-bounds)[m @ [36mxwiki-commons-job[0;1m ---[m
 [[1;34mINFO[m] Skipping Rule Enforcement.
@@ -63,10 +67,13 @@
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-no-legacy-dependencies)[m @ [36mxwiki-commons-job[0;1m ---[m
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-valid-poms)[m @ [36mxwiki-commons-job[0;1m ---[m
+[[1;34mINFO[m] Skipping Rule Enforcement.
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-platform-rendering-isolation)[m @ [36mxwiki-commons-job[0;1m ---[m
+[[1;34mINFO[m] Skipping Rule Enforcement.
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(check-dependency-version)[m @ [36mxwiki-commons-job[0;1m ---[m
+[[1;34mINFO[m] Skipping Rule Enforcement.
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(xwiki-license-resources)[m @ [36mxwiki-commons-job[0;1m ---[m
 [[1;34mINFO[m] 
@@ -221,23 +228,23 @@
  T E S T S
 -------------------------------------------------------
 Running org.xwiki.job.internal.DefaultJobStatusTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.873 sec - in org.xwiki.job.internal.DefaultJobStatusTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.829 sec - in org.xwiki.job.internal.DefaultJobStatusTest
 Running org.xwiki.job.internal.xstream.XStreamUtilsTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.xwiki.job.internal.xstream.XStreamUtilsTest
 Running org.xwiki.job.internal.xstream.SafeXStreamTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.264 sec - in org.xwiki.job.internal.xstream.SafeXStreamTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.223 sec - in org.xwiki.job.internal.xstream.SafeXStreamTest
 Running org.xwiki.job.internal.DefaultJobManagerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in org.xwiki.job.internal.DefaultJobManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in org.xwiki.job.internal.DefaultJobManagerTest
 Running org.xwiki.job.internal.DefaultJobExecutorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec - in org.xwiki.job.internal.DefaultJobExecutorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 sec - in org.xwiki.job.internal.DefaultJobExecutorTest
 Running org.xwiki.job.internal.JobStatusSerializerTest
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.698 sec - in org.xwiki.job.internal.JobStatusSerializerTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.473 sec - in org.xwiki.job.internal.JobStatusSerializerTest
 Running org.xwiki.job.internal.DefaultRequestTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.xwiki.job.internal.DefaultRequestTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.xwiki.job.internal.DefaultRequestTest
 Running org.xwiki.job.internal.DefaultJobStatusStoreTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.265 sec - in org.xwiki.job.internal.DefaultJobStatusStoreTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 sec - in org.xwiki.job.internal.DefaultJobStatusStoreTest
 Running org.xwiki.job.internal.DefaultJobProgressTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec - in org.xwiki.job.internal.DefaultJobProgressTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in org.xwiki.job.internal.DefaultJobProgressTest
 
 Results :
 
@@ -246,11 +253,11 @@ Tests run: 55, Failures: 0, Errors: 0, Skipped: 0
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;32mBUILD SUCCESS[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time: 11.851 s
-[[1;34mINFO[m] Finished at: 2018-09-27T09:05:41+02:00
+[[1;34mINFO[m] Total time: 12.480 s
+[[1;34mINFO[m] Finished at: 2018-09-27T12:03:42+02:00
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 Writing HTML report to '/home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/target/clover/report'
-Done. Processed 9 packages in 2049ms (227ms per package).
+Done. Processed 9 packages in 2005ms (222ms per package).
 [[1;34mINFO[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgress.java
 [[1;34mINFO[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgress.java
 [info] org.xwiki.job.internal.DefaultJobProgress:124 is modified.
@@ -276,7 +283,7 @@ Done. Processed 9 packages in 2049ms (227ms per package).
 [info] org.xwiki.job.internal.DefaultJobProgressTest:410 is modified.
 [info] org.xwiki.job.internal.DefaultJobProgressTest:377 is modified.
 [[1;34mINFO[m] Saving result in /home/bdanglot/workspace/icst-2019/september-2018/result/xwiki-commons/commit_12_7444c38/parent_coverage_testsThatExecuteTheChanges.csv ...
-[[1;34mINFO[m] org.xwiki.job.internal.DefaultJobProgressTest;testUnknownNumberOfSteps;testProgressDone;testProgressSteps;testPopDontMoveToNextStep;testPushLevelOnClosedStep;testMoveToNextStepInRoot;testPopLevelOnParentLevelSource;testEndStepOnParentStepSource;testStepProgressEvent;testMoreStepsThanExpected;testStartStepFromDifferentSource;testPopLevelOnWrongSource
+[[1;34mINFO[m] org.xwiki.job.internal.DefaultJobProgressTest;testProgressSteps;testUnknownNumberOfSteps;testProgressDone;testPopDontMoveToNextStep;testEndStepOnParentStepSource;testMoveToNextStepInRoot;testPushLevelOnClosedStep;testPopLevelOnParentLevelSource;testStepProgressEvent;testMoreStepsThanExpected;testPopLevelOnWrongSource;testStartStepFromDifferentSource
 [[1;34mINFO[m] Writing Coverage in /home/bdanglot/workspace/icst-2019/september-2018/result/xwiki-commons/commit_12_7444c38/parent_coverage_testsThatExecuteTheChanges_coverage.csv
 [[1;34mINFO[m] org.xwiki.job.internal.DefaultJobProgress;4;5
 
@@ -287,6 +294,6 @@ Done. Processed 9 packages in 2049ms (227ms per package).
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;32mBUILD SUCCESS[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time: 19.151 s
-[[1;34mINFO[m] Finished at: 2018-09-27T09:05:46+02:00
+[[1;34mINFO[m] Total time: 20.267 s
+[[1;34mINFO[m] Finished at: 2018-09-27T12:03:46+02:00
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m

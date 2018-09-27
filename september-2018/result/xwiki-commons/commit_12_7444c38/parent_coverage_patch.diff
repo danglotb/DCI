@@ -1,17 +1,17 @@
 diff --git a/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgress.java b/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgress.java
-index 41c6f53b4..a8dfc5590 100644
+index a8dfc5590..41c6f53b4 100644
 --- a/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgress.java
 +++ b/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgress.java
 @@ -48,9 +48,9 @@
      /**
       * Listened events.
       */
--    private static final List<Event> EVENTS =
--        Arrays.<Event>asList(new PushLevelProgressEvent(), PopLevelProgressEvent.INSTANCE, StepProgressEvent.INSTANCE,
--            StartStepProgressEvent.INSTANCE, EndStepProgressEvent.INSTANCE);
-+    private static final List<Event> EVENTS = Arrays.<Event>asList(new PushLevelProgressEvent(),
-+        PopLevelProgressEvent.INSTANCE, StepProgressEvent.INSTANCE, StartStepProgressEvent.INSTANCE,
-+        EndStepProgressEvent.INSTANCE);
+-    private static final List<Event> EVENTS = Arrays.<Event>asList(new PushLevelProgressEvent(),
+-        PopLevelProgressEvent.INSTANCE, StepProgressEvent.INSTANCE, StartStepProgressEvent.INSTANCE,
+-        EndStepProgressEvent.INSTANCE);
++    private static final List<Event> EVENTS =
++        Arrays.<Event>asList(new PushLevelProgressEvent(), PopLevelProgressEvent.INSTANCE, StepProgressEvent.INSTANCE,
++            StartStepProgressEvent.INSTANCE, EndStepProgressEvent.INSTANCE);
  
      private final String listenerName;
  
@@ -19,148 +19,148 @@ index 41c6f53b4..a8dfc5590 100644
      public void onEvent(Event event, Object source, Object message)
      {
          if (event instanceof PushLevelProgressEvent) {
--            onPushLevelProgress(((PushLevelProgressEvent) event).getSteps(), source, false);
-+            onPushLevelProgress(((PushLevelProgressEvent) event).getSteps(), source);
+-            onPushLevelProgress(((PushLevelProgressEvent) event).getSteps(), source);
++            onPushLevelProgress(((PushLevelProgressEvent) event).getSteps(), source, false);
          } else if (event instanceof PopLevelProgressEvent) {
              onPopLevelProgress(source);
          } else if (event instanceof StartStepProgressEvent) {
-@@ -110,8 +110,10 @@ public void onEvent(Event event, Object source, Object message)
+@@ -110,10 +110,8 @@ public void onEvent(Event event, Object source, Object message)
  
      /**
       * Adds a new level to the progress stack.
-+     *
-+     * @param event the event that was fired
+-     *
+-     * @param event the event that was fired
       */
--    private void onPushLevelProgress(int steps, Object source, boolean singlesteplevel)
-+    private void onPushLevelProgress(int steps, Object source)
+-    private void onPushLevelProgress(int steps, Object source)
++    private void onPushLevelProgress(int steps, Object source, boolean singlesteplevel)
      {
          if (this.currentStep.isLevelFinished()) {
              // If current step is done move to next one
-@@ -119,7 +121,7 @@ private void onPushLevelProgress(int steps, Object source, boolean singlesteplev
+@@ -121,7 +119,7 @@ private void onPushLevelProgress(int steps, Object source)
          }
  
          // Add level
--        this.currentStep = this.currentStep.addLevel(steps, source, singlesteplevel);
-+        this.currentStep = this.currentStep.addLevel(steps, source);
+-        this.currentStep = this.currentStep.addLevel(steps, source);
++        this.currentStep = this.currentStep.addLevel(steps, source, singlesteplevel);
      }
  
      /**
-@@ -138,6 +140,7 @@ private void onEndStepProgress(Object source)
+@@ -140,7 +138,6 @@ private void onEndStepProgress(Object source)
          }
  
          this.currentStep = step;
-+
+-
          this.currentStep.finish();
      }
  
-@@ -146,13 +149,9 @@ private void onStartStepProgress(Message message, Object source)
+@@ -149,9 +146,13 @@ private void onStartStepProgress(Message message, Object source)
          if (this.currentStep.getParent() == null) {
              // If we are still on root node, create a level
              this.currentStep = this.currentStep.addLevel(source);
--        } else if (!this.currentStep.isFinished() && this.currentStep.source != source) {
-+        } else if (!this.currentStep.isLevelFinished() && this.currentStep.source != source) {
+-        } else if (!this.currentStep.isLevelFinished() && this.currentStep.source != source) {
++        } else if (!this.currentStep.isFinished() && this.currentStep.source != source) {
              // If current step is from a different source add a level
--            onPushLevelProgress(0, source, true);
--        } else if (this.currentStep.getParent().levelStep && this.currentStep.getParent().source == source) {
--            // If current step is not part of an explicit level and parent level is asked, go back to it
--            this.currentStep = this.currentStep.getParent();
--            this.currentStep.finishLevel();
-+            onPushLevelProgress(0, source);
+-            onPushLevelProgress(0, source);
++            onPushLevelProgress(0, source, true);
++        } else if (this.currentStep.getParent().levelStep && this.currentStep.getParent().source == source) {
++            // If current step is not part of an explicit level and parent level is asked, go back to it
++            this.currentStep = this.currentStep.getParent();
++            this.currentStep.finishLevel();
          }
  
          // Start a new step
 diff --git a/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgressStep.java b/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgressStep.java
-index c8fee7422..f1c52c076 100644
+index f1c52c076..c8fee7422 100644
 --- a/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgressStep.java
 +++ b/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgressStep.java
-@@ -40,8 +40,6 @@
+@@ -40,6 +40,8 @@
  
      protected transient Object levelSource;
  
--    protected transient boolean levelStep;
--
++    protected transient boolean levelStep;
++
      // Stored data
  
      protected final Message message;
-@@ -169,7 +167,7 @@ public DefaultJobProgressStep addStep(Message stepMessage, Object newStepSource)
+@@ -167,7 +169,7 @@ public DefaultJobProgressStep addStep(Message stepMessage, Object newStepSource)
       */
      public DefaultJobProgressStep addLevel(Object newLevelSource)
      {
--        return addLevel(0, newLevelSource, false);
-+        return addLevel(0, newLevelSource);
+-        return addLevel(0, newLevelSource);
++        return addLevel(0, newLevelSource, false);
      }
  
      /**
-@@ -177,10 +175,9 @@ public DefaultJobProgressStep addLevel(Object newLevelSource)
+@@ -175,9 +177,10 @@ public DefaultJobProgressStep addLevel(Object newLevelSource)
       * 
       * @param steps the number of step
       * @param newLevelSource who asked to create this new level
--     * @param levelStep the new level can contains only one step
++     * @param levelStep the new level can contains only one step
       * @return the new step
       */
--    public DefaultJobProgressStep addLevel(int steps, Object newLevelSource, boolean levelStep)
-+    public DefaultJobProgressStep addLevel(int steps, Object newLevelSource)
+-    public DefaultJobProgressStep addLevel(int steps, Object newLevelSource)
++    public DefaultJobProgressStep addLevel(int steps, Object newLevelSource, boolean levelStep)
      {
          assertModifiable();
  
-@@ -197,8 +194,6 @@ public DefaultJobProgressStep addLevel(int steps, Object newLevelSource, boolean
+@@ -194,6 +197,8 @@ public DefaultJobProgressStep addLevel(int steps, Object newLevelSource)
              this.children = new ArrayList<>();
          }
  
--        this.levelStep = levelStep;
--
++        this.levelStep = levelStep;
++
          // Create a virtual child
          return new DefaultJobProgressStep(null, newLevelSource, this);
      }
 diff --git a/xwiki-commons-core/xwiki-commons-job/src/test/java/org/xwiki/job/internal/DefaultJobProgressTest.java b/xwiki-commons-core/xwiki-commons-job/src/test/java/org/xwiki/job/internal/DefaultJobProgressTest.java
-index 9a7027c87..0e032ef93 100644
+index 0e032ef93..9a7027c87 100644
 --- a/xwiki-commons-core/xwiki-commons-job/src/test/java/org/xwiki/job/internal/DefaultJobProgressTest.java
 +++ b/xwiki-commons-core/xwiki-commons-job/src/test/java/org/xwiki/job/internal/DefaultJobProgressTest.java
-@@ -373,40 +373,31 @@ public void testEndStepOnParentStepSource()
+@@ -373,31 +373,40 @@ public void testEndStepOnParentStepSource()
      @Test
      public void testStartStepFromDifferentSource()
      {
-+        // Root level
-+        this.observation.notify(new PushLevelProgressEvent(), null, null);
-+
+-        // Root level
+-        this.observation.notify(new PushLevelProgressEvent(), null, null);
+-
          Object source1 = "source1";
          Object source11 = "source11";
          Object source12 = "source12";
  
--        // Root level
--        this.observation.notify(new PushLevelProgressEvent(), source1, null);
--
--        // Start first step in source1 level
-+        // First step in source11 level
+-        // First step in source11 level
++        // Root level
++        this.observation.notify(new PushLevelProgressEvent(), source1, null);
++
++        // Start first step in source1 level
          this.observation.notify(new StartStepProgressEvent(), source1, null);
  
          assertEquals(1, this.progress.getRootStep().getChildren().size());
  
--        // Start first step in source11 level
-+        // First step in source11 level (from source11)
+-        // First step in source11 level (from source11)
++        // Start first step in source11 level
          this.observation.notify(new StartStepProgressEvent(), source11, null);
  
          assertEquals(1, this.progress.getRootStep().getChildren().size());
          assertEquals(1, this.progress.getRootStep().getChildren().get(0).getChildren().size());
  
--        // Close the step, back to source1 level
-+        // Close the step
+-        // Close the step
++        // Close the step, back to source1 level
          this.observation.notify(new EndStepProgressEvent(), source11, null);
  
--        // Start first step in source12 level
-+        // Second step in source11 level (from source12)
+-        // Second step in source11 level (from source12)
++        // Start first step in source12 level
          this.observation.notify(new StartStepProgressEvent(), source12, null);
  
          assertEquals(1, this.progress.getRootStep().getChildren().size());
          assertEquals(2, this.progress.getRootStep().getChildren().get(0).getChildren().size());
--
--        // Close the step, back to source1 level
--        this.observation.notify(new EndStepProgressEvent(), source12, null);
--
--        // Start second step in source1 level
--        this.observation.notify(new StartStepProgressEvent(), source1, null);
--
--        assertEquals(2, this.progress.getRootStep().getChildren().size());
--        assertEquals(2, this.progress.getRootStep().getChildren().get(0).getChildren().size());
++
++        // Close the step, back to source1 level
++        this.observation.notify(new EndStepProgressEvent(), source12, null);
++
++        // Start second step in source1 level
++        this.observation.notify(new StartStepProgressEvent(), source1, null);
++
++        assertEquals(2, this.progress.getRootStep().getChildren().size());
++        assertEquals(2, this.progress.getRootStep().getChildren().get(0).getChildren().size());
      }
  }

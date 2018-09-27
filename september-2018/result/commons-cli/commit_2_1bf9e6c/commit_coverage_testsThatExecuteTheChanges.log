@@ -26,7 +26,7 @@
 [[1;34mINFO[m] Creating new database at '/home/bdanglot/workspace/icst-2019/september-2018/dataset/commons-cli/target/clover/clover.db'.
 [[1;34mINFO[m] Processing files at 1.8 source level.
 [[1;34mINFO[m] Clover all over. Instrumented 23 files (1 package).
-[[1;34mINFO[m] Elapsed time = 0.692 secs. (33.237 files/sec, 8,985.549 srclines/sec)
+[[1;34mINFO[m] Elapsed time = 0.701 secs. (32.81 files/sec, 8,870.185 srclines/sec)
 [[1;34mINFO[m] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [[1;34mINFO[m] Loaded from: /home/bdanglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [[1;34mINFO[m] Clover free edition.
@@ -34,7 +34,7 @@
 [[1;34mINFO[m] Processing files at 1.8 source level.
 [[1;34mINFO[m] Clover all over. Instrumented 27 files (2 packages).
 [[1;34mINFO[m] 250 test methods detected.
-[[1;34mINFO[m] Elapsed time = 0.589 secs. (45.84 files/sec, 9,078.098 srclines/sec)
+[[1;34mINFO[m] Elapsed time = 0.507 secs. (53.254 files/sec, 10,546.351 srclines/sec)
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-maven-3)[m @ [36mcommons-cli[0;1m ---[m
 [[1;34mINFO[m] Skipping Rule Enforcement.
@@ -53,7 +53,7 @@ main:
 [[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.3:create[m [1m(default)[m @ [36mcommons-cli[0;1m ---[m
 [[1;34mINFO[m] Executing: /bin/sh -c cd /home/bdanglot/workspace/icst-2019/september-2018/dataset/commons-cli && svn --non-interactive info
 [[1;34mINFO[m] Working directory: /home/bdanglot/workspace/icst-2019/september-2018/dataset/commons-cli
-[[1;34mINFO[m] Storing buildNumber: ?????? at timestamp: 1538029536496
+[[1;34mINFO[m] Storing buildNumber: ?????? at timestamp: 1538040731065
 [[1;34mINFO[m] Executing: /bin/sh -c cd /home/bdanglot/workspace/icst-2019/september-2018/dataset/commons-cli && svn --non-interactive info
 [[1;34mINFO[m] Working directory: /home/bdanglot/workspace/icst-2019/september-2018/dataset/commons-cli
 [[1;34mINFO[m] Storing buildScmBranch: UNKNOWN_BRANCH
@@ -97,62 +97,62 @@ main:
  T E S T S
 -------------------------------------------------------
 Running org.apache.commons.cli.OptionTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.apache.commons.cli.OptionTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in org.apache.commons.cli.OptionTest
 Running org.apache.commons.cli.OptionsTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.apache.commons.cli.OptionsTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.apache.commons.cli.OptionsTest
 Running org.apache.commons.cli.ApplicationTest
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.apache.commons.cli.ApplicationTest
 Running org.apache.commons.cli.ArgumentIsOptionTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.apache.commons.cli.ArgumentIsOptionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.apache.commons.cli.ArgumentIsOptionTest
 Running org.apache.commons.cli.PatternOptionBuilderTest
 Exception found converting v to desired type: Unable to parse the URL: foo://commons.apache.org
 Exception found converting d to desired type: Unable to find the class: System.DateTime
 Exception found converting x to desired type: For input string: "3,5"
 Exception found converting i to desired type: java.lang.IllegalAccessException; Unable to create an instance of: java.util.Calendar
 Exception found converting n to desired type: Unable to find the class: System.DateTime
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.05 sec - in org.apache.commons.cli.PatternOptionBuilderTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.apache.commons.cli.PatternOptionBuilderTest
 Running org.apache.commons.cli.BasicParserTest
-Tests run: 58, Failures: 0, Errors: 0, Skipped: 24, Time elapsed: 0.052 sec - in org.apache.commons.cli.BasicParserTest
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 24, Time elapsed: 0.075 sec - in org.apache.commons.cli.BasicParserTest
 Running org.apache.commons.cli.DefaultParserTest
-Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec - in org.apache.commons.cli.DefaultParserTest
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 sec - in org.apache.commons.cli.DefaultParserTest
 Running org.apache.commons.cli.OptionGroupTest
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.apache.commons.cli.OptionGroupTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.apache.commons.cli.OptionGroupTest
 Running org.apache.commons.cli.OptionBuilderTest
 Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.apache.commons.cli.OptionBuilderTest
 Running org.apache.commons.cli.CommandLineTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.commons.cli.CommandLineTest
 Running org.apache.commons.cli.UtilTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.cli.UtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.cli.UtilTest
 Running org.apache.commons.cli.bug.BugCLI252Test
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.cli.bug.BugCLI252Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.cli.bug.BugCLI252Test
 Running org.apache.commons.cli.bug.BugCLI133Test
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.commons.cli.bug.BugCLI133Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.cli.bug.BugCLI133Test
 Running org.apache.commons.cli.bug.BugCLI71Test
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.apache.commons.cli.bug.BugCLI71Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.commons.cli.bug.BugCLI71Test
 Running org.apache.commons.cli.bug.BugCLI18Test
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.cli.bug.BugCLI18Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.commons.cli.bug.BugCLI18Test
 Running org.apache.commons.cli.bug.BugCLI13Test
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.cli.bug.BugCLI13Test
 Running org.apache.commons.cli.bug.BugsTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.apache.commons.cli.bug.BugsTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.apache.commons.cli.bug.BugsTest
 Running org.apache.commons.cli.bug.BugCLI162Test
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.apache.commons.cli.bug.BugCLI162Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.apache.commons.cli.bug.BugCLI162Test
 Running org.apache.commons.cli.bug.BugCLI265Test
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.commons.cli.bug.BugCLI265Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.cli.bug.BugCLI265Test
 Running org.apache.commons.cli.bug.BugCLI266Test
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.cli.bug.BugCLI266Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.commons.cli.bug.BugCLI266Test
 Running org.apache.commons.cli.bug.BugCLI148Test
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.commons.cli.bug.BugCLI148Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.commons.cli.bug.BugCLI148Test
 Running org.apache.commons.cli.PosixParserTest
-Tests run: 58, Failures: 0, Errors: 0, Skipped: 9, Time elapsed: 0.054 sec - in org.apache.commons.cli.PosixParserTest
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 9, Time elapsed: 0.062 sec - in org.apache.commons.cli.PosixParserTest
 Running org.apache.commons.cli.ValueTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.apache.commons.cli.ValueTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.apache.commons.cli.ValueTest
 Running org.apache.commons.cli.ValuesTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.apache.commons.cli.ValuesTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.apache.commons.cli.ValuesTest
 Running org.apache.commons.cli.HelpFormatterTest
-Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in org.apache.commons.cli.HelpFormatterTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in org.apache.commons.cli.HelpFormatterTest
 Running org.apache.commons.cli.GnuParserTest
-Tests run: 58, Failures: 0, Errors: 0, Skipped: 21, Time elapsed: 0.037 sec - in org.apache.commons.cli.GnuParserTest
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 21, Time elapsed: 0.038 sec - in org.apache.commons.cli.GnuParserTest
 
 Results :
 
@@ -161,11 +161,11 @@ Tests run: 370, Failures: 0, Errors: 0, Skipped: 54
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;32mBUILD SUCCESS[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time: 14.890 s
-[[1;34mINFO[m] Finished at: 2018-09-27T08:25:47+02:00
+[[1;34mINFO[m] Total time: 10.679 s
+[[1;34mINFO[m] Finished at: 2018-09-27T11:32:17+02:00
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 Writing HTML report to '/home/bdanglot/workspace/icst-2019/september-2018/dataset/commons-cli/target/clover/report'
-Done. Processed 2 packages in 2548ms (1274ms per package).
+Done. Processed 2 packages in 2655ms (1327ms per package).
 [[1;34mINFO[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/commons-cli/src/main/java/org/apache/commons/cli/DefaultParser.java
 [[1;34mINFO[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/commons-cli_parent/src/main/java/org/apache/commons/cli/DefaultParser.java
 [info] org.apache.commons.cli.DefaultParser:302 is modified.
@@ -181,8 +181,8 @@ Done. Processed 2 packages in 2548ms (1274ms per package).
 [[1;33mWARNING[m] Could not match /src/test/java/org/apache/commons/cli/bug/BugCLI265Test.java and -0,0
 [[1;34mINFO[m] Saving result in /home/bdanglot/workspace/icst-2019/september-2018/result/commons-cli/commit_2_1bf9e6c/commit_coverage_testsThatExecuteTheChanges.csv ...
 [[1;34mINFO[m] org.apache.commons.cli.DefaultParserTest;testPropertiesOption1;testWithRequiredOption;testPropertyOverrideValues;testSimpleShort;testArgumentStartingWithHyphen;testOptionAndRequiredOption;testMultiple;testStopAtExpectedArg;testSingleDash;testMultipleWithLong;testNegativeArgument;testSimpleLong;testNegativeOption;testUnlimitedArgs
-org.apache.commons.cli.bug.BugCLI265Test;shouldParseShortOptionWithValue;shouldParseShortOptionWithoutValue
 org.apache.commons.cli.CommandLineTest;testGetParsedOptionValue
+org.apache.commons.cli.bug.BugCLI265Test;shouldParseShortOptionWithValue;shouldParseShortOptionWithoutValue
 [[1;34mINFO[m] Writing Coverage in /home/bdanglot/workspace/icst-2019/september-2018/result/commons-cli/commit_2_1bf9e6c/commit_coverage_testsThatExecuteTheChanges_coverage.csv
 [[1;34mINFO[m] org.apache.commons.cli.DefaultParser;5;5
 
@@ -191,10 +191,10 @@ org.apache.commons.cli.CommandLineTest;testGetParsedOptionValue
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;32mBUILD SUCCESS[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time: 22.428 s
-[[1;34mINFO[m] Finished at: 2018-09-27T08:25:52+02:00
+[[1;34mINFO[m] Total time: 18.817 s
+[[1;34mINFO[m] Finished at: 2018-09-27T11:32:22+02:00
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[INFO] 2018-09-27 08:25:52 RepositoriesSetter - {/home/bdanglot/workspace/icst-2019/september-2018/dataset/commons-cli} Cleaning local repository...
-[INFO] 2018-09-27 08:25:53 RepositoriesSetter - Checkout 085a1538fa20d8e48faad49eaffd697f024bf1af revision...
-[INFO] 2018-09-27 08:25:53 RepositoriesSetter - {/home/bdanglot/workspace/icst-2019/september-2018/dataset/commons-cli_parent} Cleaning local repository...
-[INFO] 2018-09-27 08:25:53 RepositoriesSetter - Checkout a154084dbf5af77f6f3a64a7561fd77aadb78429 revision...
+[INFO] 2018-09-27 11:32:22 RepositoriesSetter - {/home/bdanglot/workspace/icst-2019/september-2018/dataset/commons-cli} Cleaning local repository...
+[INFO] 2018-09-27 11:32:23 RepositoriesSetter - Checkout 085a1538fa20d8e48faad49eaffd697f024bf1af revision...
+[INFO] 2018-09-27 11:32:23 RepositoriesSetter - {/home/bdanglot/workspace/icst-2019/september-2018/dataset/commons-cli_parent} Cleaning local repository...
+[INFO] 2018-09-27 11:32:23 RepositoriesSetter - Checkout a154084dbf5af77f6f3a64a7561fd77aadb78429 revision...

@@ -42,7 +42,7 @@
 [[1;34mINFO[m] Creating new database at '/home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-verification-resources/target/clover/clover.db'.
 [[1;34mINFO[m] Processing files at 1.8 source level.
 [[1;34mINFO[m] Clover all over. Instrumented 4 files (1 package).
-[[1;34mINFO[m] Elapsed time = 0.317 secs. (12.618 files/sec, 1,965.3 srclines/sec)
+[[1;34mINFO[m] Elapsed time = 0.298 secs. (13.423 files/sec, 2,090.604 srclines/sec)
 [[1;34mINFO[m] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [[1;34mINFO[m] Loaded from: /home/bdanglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [[1;34mINFO[m] Clover free edition.
@@ -50,13 +50,16 @@
 [[1;34mINFO[m] Processing files at 1.8 source level.
 [[1;34mINFO[m] Clover all over. Instrumented 2 files (1 package).
 [[1;34mINFO[m] 9 test methods detected.
-[[1;34mINFO[m] Elapsed time = 0.039 secs. (51.282 files/sec, 5,230.769 srclines/sec)
+[[1;34mINFO[m] Elapsed time = 0.031 secs. (64.516 files/sec, 6,580.645 srclines/sec)
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-plugins)[m @ [36mxwiki-commons-tool-verification-resources[0;1m ---[m
+[[1;34mINFO[m] Skipping Rule Enforcement.
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-jcl-log4j-isolation)[m @ [36mxwiki-commons-tool-verification-resources[0;1m ---[m
+[[1;34mINFO[m] Skipping Rule Enforcement.
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-commons-lang3)[m @ [36mxwiki-commons-tool-verification-resources[0;1m ---[m
+[[1;34mINFO[m] Skipping Rule Enforcement.
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-upper-bounds)[m @ [36mxwiki-commons-tool-verification-resources[0;1m ---[m
 [[1;34mINFO[m] Skipping Rule Enforcement.
@@ -86,9 +89,9 @@
  T E S T S
 -------------------------------------------------------
 Running org.xwiki.tool.checkstyle.SinceFormatCheckTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.536 sec - in org.xwiki.tool.checkstyle.SinceFormatCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.566 sec - in org.xwiki.tool.checkstyle.SinceFormatCheckTest
 Running org.xwiki.tool.checkstyle.UnstableAnnotationCheckTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec - in org.xwiki.tool.checkstyle.UnstableAnnotationCheckTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in org.xwiki.tool.checkstyle.UnstableAnnotationCheckTest
 
 Results :
 
@@ -97,11 +100,11 @@ Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;32mBUILD SUCCESS[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time: 6.298 s
-[[1;34mINFO[m] Finished at: 2018-09-27T09:20:37+02:00
+[[1;34mINFO[m] Total time: 5.856 s
+[[1;34mINFO[m] Finished at: 2018-09-27T12:15:36+02:00
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 Writing HTML report to '/home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-verification-resources/target/clover/report'
-Done. Processed 1 packages in 1255ms (1255ms per package).
+Done. Processed 1 packages in 1096ms (1096ms per package).
 [[1;34mINFO[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/main/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheck.java
 [[1;34mINFO[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/main/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheck.java
 [info] org.xwiki.tool.checkstyle.UnstableAnnotationCheck:122 is modified.
@@ -134,7 +137,7 @@ Done. Processed 1 packages in 1255ms (1255ms per package).
 [[1;34mINFO[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestClassWithUnstableAnnotationShouldBeRemovedMultipleSince.java
 [[1;33mWARNING[m] Could not match /xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestClassWithUnstableAnnotationShouldNotBeRemovedMultipleSince.java and /dev/null
 [[1;34mINFO[m] Saving result in /home/bdanglot/workspace/icst-2019/september-2018/result/xwiki-commons/commit_17_645920d/parent_coverage_testsThatExecuteTheChanges.csv ...
-[[1;34mINFO[m] org.xwiki.tool.checkstyle.UnstableAnnotationCheckTest;checkWithUnstableAnnotationShouldBeRemovedAtMethodLevel;checkWithUnstableAnnotationShouldBeRemovedMultipleSince;checkWithUnstableAnnotationShouldBeRemoved;checkWithUnstableOkAtClassLevel;checkWithUnstableOkAtMethodLevel
+[[1;34mINFO[m] org.xwiki.tool.checkstyle.UnstableAnnotationCheckTest;checkWithUnstableAnnotationShouldBeRemovedAtMethodLevel;checkWithUnstableAnnotationShouldBeRemovedMultipleSince;checkWithUnstableOkAtClassLevel;checkWithUnstableAnnotationShouldBeRemoved;checkWithUnstableOkAtMethodLevel
 [[1;34mINFO[m] Writing Coverage in /home/bdanglot/workspace/icst-2019/september-2018/result/xwiki-commons/commit_17_645920d/parent_coverage_testsThatExecuteTheChanges_coverage.csv
 [[1;34mINFO[m] org.xwiki.tool.checkstyle.UnstableAnnotationCheck;6;16
 
@@ -143,6 +146,6 @@ Done. Processed 1 packages in 1255ms (1255ms per package).
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;32mBUILD SUCCESS[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time: 12.535 s
-[[1;34mINFO[m] Finished at: 2018-09-27T09:20:41+02:00
+[[1;34mINFO[m] Total time: 11.720 s
+[[1;34mINFO[m] Finished at: 2018-09-27T12:15:39+02:00
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m

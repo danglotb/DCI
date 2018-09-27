@@ -13,6 +13,7 @@
 [[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.0.0:clean[m [1m(default-clean)[m @ [36mxwiki-commons-velocity[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mdiff-test-selection:0.5-SNAPSHOT:list[m [1m(default-cli)[m @ [36mxwiki-commons-velocity[0;1m ---[m
 [[1;34mINFO[m] Computing coverage for /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity
@@ -41,7 +42,7 @@
 [[1;34mINFO[m] Creating new database at '/home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/clover.db'.
 [[1;34mINFO[m] Processing files at 1.8 source level.
 [[1;34mINFO[m] Clover all over. Instrumented 40 files (8 packages).
-[[1;34mINFO[m] Elapsed time = 0.789 secs. (50.697 files/sec, 6,690.748 srclines/sec)
+[[1;34mINFO[m] Elapsed time = 0.877 secs. (45.61 files/sec, 6,019.384 srclines/sec)
 [[1;34mINFO[m] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [[1;34mINFO[m] Loaded from: /home/bdanglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [[1;34mINFO[m] Clover free edition.
@@ -49,13 +50,16 @@
 [[1;34mINFO[m] Processing files at 1.8 source level.
 [[1;34mINFO[m] Clover all over. Instrumented 18 files (5 packages).
 [[1;34mINFO[m] 130 test methods detected.
-[[1;34mINFO[m] Elapsed time = 0.333 secs. (54.054 files/sec, 8,753.754 srclines/sec)
+[[1;34mINFO[m] Elapsed time = 0.345 secs. (52.174 files/sec, 8,449.275 srclines/sec)
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-plugins)[m @ [36mxwiki-commons-velocity[0;1m ---[m
+[[1;34mINFO[m] Skipping Rule Enforcement.
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-jcl-log4j-isolation)[m @ [36mxwiki-commons-velocity[0;1m ---[m
+[[1;34mINFO[m] Skipping Rule Enforcement.
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-commons-lang3)[m @ [36mxwiki-commons-velocity[0;1m ---[m
+[[1;34mINFO[m] Skipping Rule Enforcement.
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-upper-bounds)[m @ [36mxwiki-commons-velocity[0;1m ---[m
 [[1;34mINFO[m] Skipping Rule Enforcement.
@@ -63,10 +67,13 @@
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-no-legacy-dependencies)[m @ [36mxwiki-commons-velocity[0;1m ---[m
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-valid-poms)[m @ [36mxwiki-commons-velocity[0;1m ---[m
+[[1;34mINFO[m] Skipping Rule Enforcement.
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-platform-rendering-isolation)[m @ [36mxwiki-commons-velocity[0;1m ---[m
+[[1;34mINFO[m] Skipping Rule Enforcement.
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(check-dependency-version)[m @ [36mxwiki-commons-velocity[0;1m ---[m
+[[1;34mINFO[m] Skipping Rule Enforcement.
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(xwiki-license-resources)[m @ [36mxwiki-commons-velocity[0;1m ---[m
 [[1;34mINFO[m] 
@@ -196,42 +203,42 @@
  T E S T S
 -------------------------------------------------------
 Running org.xwiki.velocity.tools.JSONToolTest
-09:09:12.782 [main] INFO  org.xwiki.velocity.tools.JSONTool - Tried to parse invalid JSON: [], exception was: Invalid JSON String
-09:09:12.799 [main] INFO  org.xwiki.velocity.tools.JSONTool - Tried to parse invalid JSON: [This is not the JSON you are ...], exception was: Invalid JSON String
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.581 sec - in org.xwiki.velocity.tools.JSONToolTest
+12:06:09.207 [main] INFO  org.xwiki.velocity.tools.JSONTool - Tried to parse invalid JSON: [], exception was: Invalid JSON String
+12:06:09.221 [main] INFO  org.xwiki.velocity.tools.JSONTool - Tried to parse invalid JSON: [This is not the JSON you are ...], exception was: Invalid JSON String
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.547 sec - in org.xwiki.velocity.tools.JSONToolTest
 Running org.xwiki.velocity.tools.CollectionsToolTest
-Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.xwiki.velocity.tools.CollectionsToolTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in org.xwiki.velocity.tools.CollectionsToolTest
 Running org.xwiki.velocity.tools.URLToolTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.xwiki.velocity.tools.URLToolTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.xwiki.velocity.tools.URLToolTest
 Running org.xwiki.velocity.tools.RegexToolTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.xwiki.velocity.tools.RegexToolTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.xwiki.velocity.tools.RegexToolTest
 Running org.xwiki.velocity.tools.EscapeToolTest
-09:09:12.930 [main] WARN  org.xwiki.velocity.tools.EscapeTool - Failed to escape CSS identifier. Invalid character: the input contains U+0000.
-Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in org.xwiki.velocity.tools.EscapeToolTest
+12:06:09.337 [main] WARN  org.xwiki.velocity.tools.EscapeTool - Failed to escape CSS identifier. Invalid character: the input contains U+0000.
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in org.xwiki.velocity.tools.EscapeToolTest
 Running org.xwiki.velocity.tools.CSSIdentifierSerializerTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.xwiki.velocity.tools.CSSIdentifierSerializerTest
 Running org.xwiki.velocity.internal.jmx.JMXVelocityEngineTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.442 sec - in org.xwiki.velocity.internal.jmx.JMXVelocityEngineTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.377 sec - in org.xwiki.velocity.internal.jmx.JMXVelocityEngineTest
 Running org.xwiki.velocity.internal.DefaultVelocityConfigurationTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec - in org.xwiki.velocity.internal.DefaultVelocityConfigurationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in org.xwiki.velocity.internal.DefaultVelocityConfigurationTest
 Running org.xwiki.velocity.internal.DefaultVelocityContextFactoryTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.364 sec - in org.xwiki.velocity.internal.DefaultVelocityContextFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.331 sec - in org.xwiki.velocity.internal.DefaultVelocityContextFactoryTest
 Running org.xwiki.velocity.internal.util.RestrictParseLocationEventHandlerTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.xwiki.velocity.internal.util.RestrictParseLocationEventHandlerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.xwiki.velocity.internal.util.RestrictParseLocationEventHandlerTest
 Running org.xwiki.velocity.internal.util.VelocityParserTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.xwiki.velocity.internal.util.VelocityParserTest
 Running org.xwiki.velocity.internal.DefaultVelocityEngineTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec - in org.xwiki.velocity.internal.DefaultVelocityEngineTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec - in org.xwiki.velocity.internal.DefaultVelocityEngineTest
 Running org.xwiki.velocity.introspection.LinkingUberspectorTest
-09:09:14.095 [main] WARN  o.x.v.internal.DefaultVelocityEngine - The specified class for Uberspect [java.util.Date] does not implement org.apache.velocity.util.introspection.Uberspect
-09:09:14.095 [main] WARN  o.x.v.internal.DefaultVelocityEngine - The specified uberspector [org.xwiki.velocity.introspection.AbstractChainableUberspector] cannot be instantiated.
-09:09:14.095 [main] WARN  o.x.v.internal.DefaultVelocityEngine - The specified uberspector [org.xwiki.velocity.introspection.InvalidUberspector] does not have a public default constructor.
-09:09:14.107 [main] ERROR o.x.v.internal.DefaultVelocityEngine - No uberspectors defined! This uberspector is just a placeholder that relies on at least one real uberspector to actually allow method calls. Using SecureUberspector instead as a fallback.
-09:09:14.108 [main] WARN  o.x.v.internal.DefaultVelocityEngine - Cannot retrieve method getConstructors from object of class java.lang.Class due to security restrictions.
-09:09:14.130 [main] WARN  o.x.v.internal.DefaultVelocityEngine - Cannot retrieve method getConstructors from object of class java.lang.Class due to security restrictions.
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 sec - in org.xwiki.velocity.introspection.LinkingUberspectorTest
+12:06:10.347 [main] WARN  o.x.v.internal.DefaultVelocityEngine - The specified class for Uberspect [java.util.Date] does not implement org.apache.velocity.util.introspection.Uberspect
+12:06:10.347 [main] WARN  o.x.v.internal.DefaultVelocityEngine - The specified uberspector [org.xwiki.velocity.introspection.AbstractChainableUberspector] cannot be instantiated.
+12:06:10.348 [main] WARN  o.x.v.internal.DefaultVelocityEngine - The specified uberspector [org.xwiki.velocity.introspection.InvalidUberspector] does not have a public default constructor.
+12:06:10.358 [main] ERROR o.x.v.internal.DefaultVelocityEngine - No uberspectors defined! This uberspector is just a placeholder that relies on at least one real uberspector to actually allow method calls. Using SecureUberspector instead as a fallback.
+12:06:10.359 [main] WARN  o.x.v.internal.DefaultVelocityEngine - Cannot retrieve method getConstructors from object of class java.lang.Class due to security restrictions.
+12:06:10.380 [main] WARN  o.x.v.internal.DefaultVelocityEngine - Cannot retrieve method getConstructors from object of class java.lang.Class due to security restrictions.
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 sec - in org.xwiki.velocity.introspection.LinkingUberspectorTest
 Running org.xwiki.velocity.introspection.MethodArgumentUberspectorTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in org.xwiki.velocity.introspection.MethodArgumentUberspectorTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec - in org.xwiki.velocity.introspection.MethodArgumentUberspectorTest
 Running org.xwiki.velocity.introspection.ChainingUberspectorTest
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec - in org.xwiki.velocity.introspection.ChainingUberspectorTest
 
@@ -242,11 +249,11 @@ Tests run: 130, Failures: 0, Errors: 0, Skipped: 0
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;32mBUILD SUCCESS[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time: 11.091 s
-[[1;34mINFO[m] Finished at: 2018-09-27T09:09:14+02:00
+[[1;34mINFO[m] Total time: 12.145 s
+[[1;34mINFO[m] Finished at: 2018-09-27T12:06:10+02:00
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 Writing HTML report to '/home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/report'
-Done. Processed 8 packages in 2032ms (254ms per package).
+Done. Processed 8 packages in 1793ms (224ms per package).
 [[1;34mINFO[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/src/main/java/org/xwiki/velocity/introspection/MethodArgumentsUberspector.java
 [[1;34mINFO[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-velocity/src/main/java/org/xwiki/velocity/introspection/MethodArgumentsUberspector.java
 [info] org.xwiki.velocity.introspection.MethodArgumentsUberspector:175 is modified.
@@ -268,7 +275,7 @@ Done. Processed 8 packages in 2032ms (254ms per package).
 [info] org.xwiki.velocity.introspection.MethodArgumentUberspectorTest:99 is modified.
 [info] org.xwiki.velocity.introspection.MethodArgumentUberspectorTest:101 is modified.
 [[1;34mINFO[m] Saving result in /home/bdanglot/workspace/icst-2019/september-2018/result/xwiki-commons/commit_13_07ca612/parent_coverage_testsThatExecuteTheChanges.csv ...
-[[1;34mINFO[m] org.xwiki.velocity.introspection.MethodArgumentUberspectorTest;getMethodWhenAddingSameMethodNameToExtendingClassAndConversion;getMethodWhenVarargsWithConversionAndVarargParamPassedNeedingConversion;getMethodWhenVarargsWithConversionAndNoVarargParamPassed;getMethodWhenVarargsWithNoConversionAndNoVarargParamPassed;getMethodWhenVarargsWithConversionAndOneVarargParamPassed;getMethodWhenVarargsWithNoConversionAndTwoVarargParamsPassed;getMethodWhenVarargsWithConversionAndTwoVarargParamsPassed
+[[1;34mINFO[m] org.xwiki.velocity.introspection.MethodArgumentUberspectorTest;getMethodWhenAddingSameMethodNameToExtendingClassAndConversion;getMethodWhenVarargsWithConversionAndVarargParamPassedNeedingConversion;getMethodWhenVarargsWithNoConversionAndNoVarargParamPassed;getMethodWhenVarargsWithConversionAndOneVarargParamPassed;getMethodWhenVarargsWithConversionAndNoVarargParamPassed;getMethodWhenVarargsWithNoConversionAndTwoVarargParamsPassed;getMethodWhenVarargsWithConversionAndTwoVarargParamsPassed
 [[1;34mINFO[m] Writing Coverage in /home/bdanglot/workspace/icst-2019/september-2018/result/xwiki-commons/commit_13_07ca612/parent_coverage_testsThatExecuteTheChanges_coverage.csv
 [[1;34mINFO[m] org.xwiki.velocity.introspection.MethodArgumentsUberspector;4;5
 
@@ -277,6 +284,6 @@ Done. Processed 8 packages in 2032ms (254ms per package).
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;32mBUILD SUCCESS[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time: 18.133 s
-[[1;34mINFO[m] Finished at: 2018-09-27T09:09:18+02:00
+[[1;34mINFO[m] Total time: 18.576 s
+[[1;34mINFO[m] Finished at: 2018-09-27T12:06:14+02:00
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
