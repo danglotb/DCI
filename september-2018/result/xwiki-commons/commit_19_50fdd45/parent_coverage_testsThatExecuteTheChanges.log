@@ -1,0 +1,579 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-extension-api:jar:8.4-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------< [0;36morg.xwiki.commons:xwiki-commons-extension-api[0;1m >------------[m
+[[1;34mINFO[m] [1mBuilding XWiki Commons - Extension - API 8.4-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.0.0:clean[m [1m(default-clean)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mdiff-test-selection:0.5-SNAPSHOT:list[m [1m(default-cli)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+[[1;34mINFO[m] Computing coverage for /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-extension-api:jar:8.4-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------< [0;36morg.xwiki.commons:xwiki-commons-extension-api[0;1m >------------[m
+[[1;34mINFO[m] [1mBuilding XWiki Commons - Extension - API 8.4-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.0.0:clean[m [1m(default-clean)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mclover-maven-plugin:4.2.0:setup[m [1m(default-cli)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+[[1;34mINFO[m] No 'maven.clover.licenseLocation' configured. Using default license.
+[[1;34mINFO[m] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[[1;34mINFO[m] Loaded from: /home/bdanglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[[1;34mINFO[m] Clover free edition.
+[[1;34mINFO[m] Creating new database at '/home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/clover.db'.
+[[1;34mINFO[m] Processing files at 1.8 source level.
+[[1;34mINFO[m] Clover all over. Instrumented 185 files (26 packages).
+[[1;34mINFO[m] Elapsed time = 1.81 secs. (102.21 files/sec, 13,512.707 srclines/sec)
+[[1;34mINFO[m] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[[1;34mINFO[m] Loaded from: /home/bdanglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[[1;34mINFO[m] Clover free edition.
+[[1;34mINFO[m] Updating existing database at '/home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/clover.db'.
+[[1;34mINFO[m] Processing files at 1.8 source level.
+[[1;34mINFO[m] Clover all over. Instrumented 40 files (12 packages).
+[[1;34mINFO[m] 140 test methods detected.
+[[1;34mINFO[m] Elapsed time = 0.363 secs. (110.193 files/sec, 17,173.554 srclines/sec)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-plugins)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-jcl-log4j-isolation)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-commons-lang3)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-upper-bounds)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+[[1;34mINFO[m] Skipping Rule Enforcement.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-no-legacy-dependencies)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-valid-poms)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(enforce-platform-rendering-isolation)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.3.1:enforce[m [1m(check-dependency-version)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(xwiki-license-resources)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.0.1:resources[m [1m(default-resources)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 36 resources
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.5.1:compile[m [1m(default-compile)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 185 source files to /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/classes
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/ExtensionManagerConfiguration.java:[27,38] org.xwiki.extension.repository.ExtensionRepositoryId in org.xwiki.extension.repository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/internal/DefaultExtensionManagerConfiguration.java:[47,38] org.xwiki.extension.repository.ExtensionRepositoryId in org.xwiki.extension.repository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtensionRepository.java:[28,38] org.xwiki.extension.repository.ExtensionRepositoryId in org.xwiki.extension.repository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/DefaultExtensionRepositoryManager.java:[57,38] org.xwiki.extension.repository.ExtensionRepositoryId in org.xwiki.extension.repository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/job/history/internal/ExtensionJobHistoryRecorder.java:[49,30] org.xwiki.job.internal.AbstractJobStatus in org.xwiki.job.internal has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/core/MavenCoreExtension.java:[25,47] org.xwiki.extension.repository.internal.MavenExtension in org.xwiki.extension.repository.internal has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[216,72] unchecked cast
+  required: T
+  found:    org.xwiki.extension.repository.ExtensionRepository
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[218,72] unchecked cast
+  required: T
+  found:    java.lang.String
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[220,77] unchecked cast
+  required: T
+  found:    org.xwiki.extension.version.Version
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[223,92] unchecked cast
+  required: T
+  found:    java.util.List<java.lang.String>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[225,69] unchecked cast
+  required: T
+  found:    java.lang.String
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[227,73] unchecked cast
+  required: T
+  found:    java.lang.String
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[230,69] unchecked cast
+  required: T
+  found:    java.util.List<org.xwiki.extension.ExtensionAuthor>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[232,70] unchecked cast
+  required: T
+  found:    java.lang.String
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[235,70] unchecked cast
+  required: T
+  found:    java.util.Collection<org.xwiki.extension.ExtensionLicense>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[237,66] unchecked cast
+  required: T
+  found:    java.lang.String
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[239,66] unchecked cast
+  required: T
+  found:    java.lang.String
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[241,69] unchecked cast
+  required: T
+  found:    java.lang.String
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[245,79] unchecked cast
+  required: T
+  found:    java.util.Collection<java.lang.String>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[247,65] unchecked cast
+  required: T
+  found:    org.xwiki.extension.ExtensionScm
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[249,74] unchecked cast
+  required: T
+  found:    java.util.Collection<org.xwiki.extension.repository.ExtensionRepositoryDescriptor>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[251,72] unchecked cast
+  required: T
+  found:    java.util.Map<java.lang.String,java.lang.Object>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[703,71] unchecked cast
+  required: T
+  found:    java.lang.Object
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[709,201] unchecked cast
+  required: T
+  found:    java.lang.Object
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[754,80] unchecked cast
+  required: T
+  found:    java.lang.Object
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/AbstractExtensionRepository.java:[94,34] getId() in org.xwiki.extension.repository.ExtensionRepository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/AbstractExtensionRepository.java:[94,12] org.xwiki.extension.repository.ExtensionRepositoryId in org.xwiki.extension.repository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/AbstractExtensionRepository.java:[96,57] org.xwiki.extension.repository.ExtensionRepositoryId in org.xwiki.extension.repository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/core/DefaultCoreExtensionRepository.java:[255,53] unchecked conversion
+  required: org.xwiki.extension.repository.result.IterableResult<org.xwiki.extension.Extension>
+  found:    org.xwiki.extension.repository.result.IterableResult
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/core/DefaultCoreExtensionRepository.java:[261,53] unchecked conversion
+  required: org.xwiki.extension.repository.result.IterableResult<org.xwiki.extension.Extension>
+  found:    org.xwiki.extension.repository.result.IterableResult
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/DefaultExtensionSerializer.java:[185,27] found raw type: org.xwiki.extension.repository.internal.ExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.ExtensionPropertySerializer<T>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/DefaultExtensionSerializer.java:[187,29] found raw type: org.xwiki.extension.repository.internal.ExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.ExtensionPropertySerializer<T>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/DefaultExtensionSerializer.java:[191,92] found raw type: org.xwiki.extension.repository.internal.ExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.ExtensionPropertySerializer<T>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/DefaultExtensionSerializer.java:[192,103] found raw type: org.xwiki.extension.repository.internal.ExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.ExtensionPropertySerializer<T>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/DefaultExtensionSerializer.java:[199,50] found raw type: org.xwiki.extension.repository.internal.CollectionExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.CollectionExtensionPropertySerializer<C>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/DefaultExtensionSerializer.java:[200,21] found raw type: org.xwiki.extension.repository.internal.CollectionExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.CollectionExtensionPropertySerializer<C>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/DefaultExtensionSerializer.java:[200,17] unchecked call to CollectionExtensionPropertySerializer(java.util.Map<java.lang.String,org.xwiki.extension.repository.internal.ExtensionPropertySerializer>,java.util.Map<java.lang.Class<?>,org.xwiki.extension.repository.internal.ExtensionPropertySerializer>) as a member of the raw type org.xwiki.extension.repository.internal.CollectionExtensionPropertySerializer
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/DefaultExtensionSerializer.java:[203,50] found raw type: org.xwiki.extension.repository.internal.StringKeyMapExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.StringKeyMapExtensionPropertySerializer<M>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/DefaultExtensionSerializer.java:[204,21] found raw type: org.xwiki.extension.repository.internal.StringKeyMapExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.StringKeyMapExtensionPropertySerializer<M>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/DefaultExtensionSerializer.java:[204,17] unchecked call to StringKeyMapExtensionPropertySerializer(java.util.Map<java.lang.String,org.xwiki.extension.repository.internal.ExtensionPropertySerializer>,java.util.Map<java.lang.Class<?>,org.xwiki.extension.repository.internal.ExtensionPropertySerializer>) as a member of the raw type org.xwiki.extension.repository.internal.StringKeyMapExtensionPropertySerializer
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/DefaultExtensionSerializer.java:[397,63] setFeatures(java.util.Collection<java.lang.String>) in org.xwiki.extension.AbstractExtension has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/AbstractCachedExtensionRepository.java:[108,85] getFeatures() in org.xwiki.extension.Extension has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/AbstractCachedExtensionRepository.java:[155,81] getFeatures() in org.xwiki.extension.Extension has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/internal/DefaultExtensionManagerConfiguration.java:[197,46] getRepositories() in org.xwiki.extension.ExtensionManagerConfiguration has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/internal/DefaultExtensionManagerConfiguration.java:[197,23] org.xwiki.extension.repository.ExtensionRepositoryId in org.xwiki.extension.repository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/internal/DefaultExtensionManagerConfiguration.java:[199,54] org.xwiki.extension.repository.ExtensionRepositoryId in org.xwiki.extension.repository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/internal/DefaultExtensionManagerConfiguration.java:[199,106] org.xwiki.extension.repository.ExtensionRepositoryId in org.xwiki.extension.repository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/internal/DefaultExtensionManagerConfiguration.java:[202,68] org.xwiki.extension.repository.ExtensionRepositoryId in org.xwiki.extension.repository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/core/CoreExtensionCache.java:[100,148] auto-closeable resource __CLR$ACI0 is never referenced in body of corresponding try statement
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/core/CoreExtensionCache.java:[124,151] auto-closeable resource __CLR$ACI1 is never referenced in body of corresponding try statement
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[43,61] org.xwiki.extension.wrap.AbstractWrappingObject in org.xwiki.extension.wrap has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtensionRepository.java:[39,81] org.xwiki.extension.wrap.AbstractWrappingObject in org.xwiki.extension.wrap has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtensionRepository.java:[59,34] getId() in org.xwiki.extension.repository.ExtensionRepository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtensionRepository.java:[59,12] org.xwiki.extension.repository.ExtensionRepositoryId in org.xwiki.extension.repository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtensionRepository.java:[61,65] getId() in org.xwiki.extension.repository.ExtensionRepository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/SortClauseComparator.java:[68,76] unchecked method invocation: method compare in class org.apache.commons.lang3.ObjectUtils is applied to given types
+  required: T,T
+  found: java.lang.Comparable,java.lang.Comparable
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/job/ExtensionRequest.java:[35,8] serializable class org.xwiki.extension.job.ExtensionRequest has no definition of serialVersionUID
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/job/history/internal/DefaultExtensionJobHistorySerializer.java:[72,147] auto-closeable resource __CLR$ACI0 is never referenced in body of corresponding try statement
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/job/history/internal/DefaultExtensionJobHistorySerializer.java:[94,147] auto-closeable resource __CLR$ACI1 is never referenced in body of corresponding try statement
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/job/internal/AbstractInstallPlanJob.java:[120,66] unchecked conversion
+  required: java.util.Collection<org.xwiki.extension.job.plan.ExtensionPlanNode>
+  found:    java.util.Collection
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/AbstractExtensionRepositorySource.java:[40,46] getExtensionRepositories() in org.xwiki.extension.repository.ExtensionRepositorySource has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/AbstractExtensionRepositorySource.java:[40,23] org.xwiki.extension.repository.ExtensionRepositoryId in org.xwiki.extension.repository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/AbstractExtensionRepositorySource.java:[42,57] org.xwiki.extension.repository.ExtensionRepositoryId in org.xwiki.extension.repository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/AbstractExtensionRepositorySource.java:[42,109] org.xwiki.extension.repository.ExtensionRepositoryId in org.xwiki.extension.repository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/AbstractExtensionRepositorySource.java:[45,71] org.xwiki.extension.repository.ExtensionRepositoryId in org.xwiki.extension.repository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingInstalledExtension.java:[77,20] isDependency() in org.xwiki.extension.InstalledExtension has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingInstalledExtension.java:[79,65] isDependency() in org.xwiki.extension.InstalledExtension has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/AbstractAdvancedSearchableExtensionRepository.java:[35,17] getId() in org.xwiki.extension.repository.ExtensionRepository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/CollectionExtensionPropertySerializer.java:[37,62] found raw type: java.util.Collection
+  missing type arguments for generic class java.util.Collection<E>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/CollectionExtensionPropertySerializer.java:[42,27] found raw type: org.xwiki.extension.repository.internal.ExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.ExtensionPropertySerializer<T>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/CollectionExtensionPropertySerializer.java:[47,29] found raw type: org.xwiki.extension.repository.internal.ExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.ExtensionPropertySerializer<T>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/CollectionExtensionPropertySerializer.java:[55,21] found raw type: org.xwiki.extension.repository.internal.ExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.ExtensionPropertySerializer<T>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/CollectionExtensionPropertySerializer.java:[56,23] found raw type: org.xwiki.extension.repository.internal.ExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.ExtensionPropertySerializer<T>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/CollectionExtensionPropertySerializer.java:[68,62] found raw type: org.xwiki.extension.repository.internal.ExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.ExtensionPropertySerializer<T>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/CollectionExtensionPropertySerializer.java:[69,23] found raw type: org.xwiki.extension.repository.internal.ExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.ExtensionPropertySerializer<T>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/CollectionExtensionPropertySerializer.java:[79,61] found raw type: java.util.ArrayList
+  missing type arguments for generic class java.util.ArrayList<E>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/CollectionExtensionPropertySerializer.java:[79,57] unchecked cast
+  required: C
+  found:    java.util.ArrayList
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/CollectionExtensionPropertySerializer.java:[88,62] found raw type: org.xwiki.extension.repository.internal.ExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.ExtensionPropertySerializer<T>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/CollectionExtensionPropertySerializer.java:[96,83] unchecked cast
+  required: T
+  found:    capture#1 of ?
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/CollectionExtensionPropertySerializer.java:[109,23] found raw type: org.xwiki.extension.repository.internal.ExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.ExtensionPropertySerializer<T>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/CollectionExtensionPropertySerializer.java:[108,19] found raw type: org.xwiki.extension.repository.internal.ExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.ExtensionPropertySerializer<T>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/CollectionExtensionPropertySerializer.java:[111,71] found raw type: org.xwiki.extension.repository.internal.ExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.ExtensionPropertySerializer<T>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/CollectionExtensionPropertySerializer.java:[128,23] found raw type: org.xwiki.extension.repository.internal.ExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.ExtensionPropertySerializer<T>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/CollectionExtensionPropertySerializer.java:[131,50] found raw type: org.xwiki.extension.repository.internal.ExtensionPropertySerializer
+  missing type arguments for generic class org.xwiki.extension.repository.internal.ExtensionPropertySerializer<T>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/CollectionExtensionPropertySerializer.java:[134,81] unchecked call to toElement(org.w3c.dom.Document,java.lang.String,T) as a member of the raw type org.xwiki.extension.repository.internal.ExtensionPropertySerializer
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/CollectionExtensionPropertySerializer.java:[157,72] unchecked call to add(E) as a member of the raw type java.util.Collection
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/DefaultExtensionRepositoryManager.java:[463,182] unchecked conversion
+  required: org.xwiki.extension.repository.result.IterableResult<org.xwiki.extension.Extension>
+  found:    org.xwiki.extension.repository.result.IterableResult
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/job/history/internal/ExtensionJobHistoryRecorder.java:[108,81] org.xwiki.job.internal.AbstractJobStatus in org.xwiki.job.internal has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/job/history/internal/ExtensionJobHistoryRecorder.java:[108,112] org.xwiki.job.internal.AbstractJobStatus in org.xwiki.job.internal has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/job/history/internal/ExtensionJobHistoryRecorder.java:[119,24] org.xwiki.job.internal.AbstractJobStatus in org.xwiki.job.internal has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/internal/converter/ExtensionConverter.java:[81,77] unchecked cast
+  required: G
+  found:    org.xwiki.extension.internal.maven.MavenExtension
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/core/MavenCoreExtension.java:[33,73] org.xwiki.extension.repository.internal.MavenExtension in org.xwiki.extension.repository.internal has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/installed/DefaultInstalledExtension.java:[124,57] unchecked cast
+  required: java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.Object>>
+  found:    java.lang.Object
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/installed/DefaultInstalledExtension.java:[151,84] unchecked cast
+  required: java.util.Collection<java.lang.String>
+  found:    java.lang.Object
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/installed/DefaultInstalledExtension.java:[153,99] unchecked cast
+  required: java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.Object>>
+  found:    java.lang.Object
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/installed/DefaultInstalledExtension.java:[341,103] unchecked cast
+  required: java.util.Collection<java.lang.String>
+  found:    java.lang.Object
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/installed/DefaultInstalledExtension.java:[344,107] unchecked cast
+  required: java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.Object>>
+  found:    java.lang.Object
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/internal/DefaultExtensionLicenseManager.java:[101,85] readLines(java.io.InputStream) in org.apache.commons.io.IOUtils has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/internal/converter/ExtensionIdConverter.java:[157,27] convertToType(java.lang.reflect.Type,java.lang.Object) in org.xwiki.extension.internal.converter.ExtensionIdConverter overrides <G>convertToType(java.lang.reflect.Type,java.lang.Object) in org.xwiki.properties.converter.AbstractConverter
+  return type requires unchecked conversion from org.xwiki.extension.ExtensionId to G
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/StringKeyMapExtensionPropertySerializer.java:[37,64] found raw type: java.util.Map
+  missing type arguments for generic class java.util.Map<K,V>
+[[1;34mINFO[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/AbstractExtensionRepositoryFactory.java: /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/AbstractExtensionRepositoryFactory.java uses or overrides a deprecated API.
+[[1;34mINFO[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/StringKeyMapExtensionPropertySerializer.java: Some input files additionally use unchecked or unsafe operations.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-bundle-plugin:2.5.3:manifest[m [1m(bundle-manifest)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.0.1:testResources[m [1m(default-testResources)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 83 resources
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.5.1:testCompile[m [1m(default-testCompile)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 40 source files to /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/test-classes
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/internal/DefaultExtensionManagerConfigurationTest.java:[37,22] org.xwiki.test.LogRule in org.xwiki.test has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/test/MockitoRepositoryUtils.java:[119,51] found raw type: org.xwiki.component.descriptor.ComponentDescriptor
+  missing type arguments for generic class org.xwiki.component.descriptor.ComponentDescriptor<T>
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/test/FileExtensionRepository.java:[50,8] getId() in org.xwiki.extension.repository.ExtensionRepository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/test/AbstractExtensionHandlerTest.java:[247,116] unchecked cast
+  required: org.xwiki.extension.job.plan.internal.DefaultExtensionPlan<org.xwiki.extension.job.UninstallRequest>
+  found:    org.xwiki.job.event.status.JobStatus
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[71,70] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[93,80] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[101,80] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[117,80] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[126,80] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[141,80] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[150,80] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[172,107] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[202,100] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[210,111] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[237,115] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[249,115] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[272,107] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[295,107] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[326,107] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[415,80] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[496,107] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[544,119] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/internal/InstallPlanJobTest.java:[553,113] getPreviousExtension() in org.xwiki.extension.job.plan.ExtensionPlanAction has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/repository/local/DefaultExtensionSerializerTest.java:[79,97] getFeatures() in org.xwiki.extension.AbstractExtension has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/repository/local/DefaultExtensionSerializerTest.java:[80,56] getFeatures() in org.xwiki.extension.AbstractExtension has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/repository/local/DefaultExtensionSerializerTest.java:[141,55] addFeature(java.lang.String) in org.xwiki.extension.AbstractExtension has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/repository/installed/DefaultInstalledExtensionTest.java:[83,88] isDependency() in org.xwiki.extension.repository.internal.installed.DefaultInstalledExtension has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/repository/installed/DefaultInstalledExtensionTest.java:[88,88] isDependency() in org.xwiki.extension.repository.internal.installed.DefaultInstalledExtension has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/repository/installed/DefaultInstalledExtensionTest.java:[93,87] isDependency() in org.xwiki.extension.repository.internal.installed.DefaultInstalledExtension has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/test/ResourceExtensionRepository.java:[45,8] getId() in org.xwiki.extension.repository.ExtensionRepository has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/internal/DefaultExtensionManagerConfigurationTest.java:[54,18] org.xwiki.test.LogRule in org.xwiki.test has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/internal/DefaultExtensionManagerConfigurationTest.java:[54,43] org.xwiki.test.LogRule in org.xwiki.test has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/repository/installed/DefaultInstalledExtensionRepositoryTest.java:[262,44] getFeatures() in org.xwiki.extension.Extension has been deprecated
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/repository/installed/DefaultInstalledExtensionRepositoryTest.java:[418,9] serializable class <anonymous org.xwiki.extension.repository.installed.DefaultInstalledExtensionRepositoryTest$1> has no definition of serialVersionUID
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/history/internal/AnswerReplayerTest.java:[48,94] unchecked conversion
+  required: org.xwiki.extension.job.history.QuestionRecorder<java.lang.Object>
+  found:    org.xwiki.extension.job.history.QuestionRecorder
+[[1;33mWARNING[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-test-instrumented/org/xwiki/extension/job/history/internal/ExtensionJobHistoryRecorderTest.java:[82,94] unchecked conversion
+  required: org.xwiki.job.DefaultJobStatus<org.xwiki.extension.job.ExtensionRequest>
+  found:    org.xwiki.job.DefaultJobStatus
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.19.1:test[m [1m(default-test)[m @ [36mxwiki-commons-extension-api[0;1m ---[m
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.xwiki.extension.job.history.internal.DefaultExtensionJobHistoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.664 sec - in org.xwiki.extension.job.history.internal.DefaultExtensionJobHistoryTest
+Running org.xwiki.extension.job.history.internal.CompositeReaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.xwiki.extension.job.history.internal.CompositeReaderTest
+Running org.xwiki.extension.job.history.internal.AnswerReplayerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.xwiki.extension.job.history.internal.AnswerReplayerTest
+Running org.xwiki.extension.job.history.internal.ExtensionJobHistoryRecorderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in org.xwiki.extension.job.history.internal.ExtensionJobHistoryRecorderTest
+Running org.xwiki.extension.job.history.internal.ReplayJobTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in org.xwiki.extension.job.history.internal.ReplayJobTest
+Running org.xwiki.extension.job.internal.InstallPlanJobTest
+09:27:29.898 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:29.905 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:30.260 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:30.261 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:30.430 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:30.431 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:30.605 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:30.606 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:30.755 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:30.756 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:30.923 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:30.924 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:31.082 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:31.083 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:31.215 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:31.215 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:31.340 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:31.340 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:31.474 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:31.475 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:31.589 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:31.590 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:31.698 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:31.699 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:31.830 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:31.831 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:31.964 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:31.964 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:32.107 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:32.108 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:32.225 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:32.226 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:32.343 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:32.387 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:32.499 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:32.500 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:32.603 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:32.604 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:32.729 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:32.729 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:32.839 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:32.839 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:32.937 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:32.938 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:33.037 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:33.037 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:33.170 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:33.170 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:33.288 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:33.289 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:33.413 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:33.413 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:33.522 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:33.523 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:33.621 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:33.621 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:33.719 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:33.720 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.524 sec - in org.xwiki.extension.job.internal.InstallPlanJobTest
+Running org.xwiki.extension.job.internal.InstallJobTest
+09:27:33.834 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:33.835 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:33.929 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:33.930 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:34.036 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:34.037 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:34.137 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:34.138 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:34.245 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:34.246 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:34.337 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:34.338 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:34.459 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:34.460 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:34.558 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:34.559 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:34.666 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:34.667 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:34.763 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:34.763 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:34.864 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:34.865 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.147 sec - in org.xwiki.extension.job.internal.InstallJobTest
+Running org.xwiki.extension.job.internal.UpgradePlanJobTest
+09:27:34.964 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:34.964 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:35.063 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:35.064 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:35.159 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:35.159 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:35.253 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:35.254 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:35.360 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:35.361 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.505 sec - in org.xwiki.extension.job.internal.UpgradePlanJobTest
+Running org.xwiki.extension.job.internal.UninstallJobTest
+09:27:35.528 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:35.528 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:35.655 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:35.655 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:35.772 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:35.773 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:35.872 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:35.872 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:36.015 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:36.016 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:36.116 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:36.116 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.729 sec - in org.xwiki.extension.job.internal.UninstallJobTest
+Running org.xwiki.extension.repository.core.DefaultCoreExtensionRepositoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.301 sec - in org.xwiki.extension.repository.core.DefaultCoreExtensionRepositoryTest
+Running org.xwiki.extension.repository.internal.DefaultExtensionRepositoryManagerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.xwiki.extension.repository.internal.DefaultExtensionRepositoryManagerTest
+Running org.xwiki.extension.repository.installed.DefaultInstalledExtensionRepositoryTest
+09:27:36.524 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:36.524 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:36.613 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:36.613 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:36.701 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:36.702 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:36.792 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:36.792 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:36.877 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:36.877 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:36.971 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:36.972 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:37.063 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:37.065 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:37.150 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:37.150 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:37.240 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:37.240 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:37.319 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:37.319 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:37.413 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:37.413 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:37.504 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:37.504 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:37.592 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:37.592 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:37.684 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:37.684 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:37.775 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:37.776 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:37.845 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:37.846 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:37.919 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:37.919 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.475 sec - in org.xwiki.extension.repository.installed.DefaultInstalledExtensionRepositoryTest
+Running org.xwiki.extension.repository.installed.DefaultInstalledExtensionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.xwiki.extension.repository.installed.DefaultInstalledExtensionTest
+Running org.xwiki.extension.repository.DefaultExtensionRepositoryManagerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.xwiki.extension.repository.DefaultExtensionRepositoryManagerTest
+Running org.xwiki.extension.repository.local.DefaultLocalExtensionRepositoryTest
+09:27:38.042 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:38.042 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:38.125 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:38.126 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:38.222 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:38.222 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:38.332 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:38.332 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:38.400 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:38.401 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:38.465 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:38.465 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:38.547 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:38.547 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:38.628 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:38.629 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:38.725 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:38.726 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:38.821 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:38.822 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:38.918 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:38.919 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+09:27:39.010 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid-version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+09:27:39.010 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency-version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.051 sec - in org.xwiki.extension.repository.local.DefaultLocalExtensionRepositoryTest
+Running org.xwiki.extension.repository.local.DefaultExtensionSerializerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.03 sec - in org.xwiki.extension.repository.local.DefaultExtensionSerializerTest
+Running org.xwiki.extension.internal.converter.ExtensionIdConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.xwiki.extension.internal.converter.ExtensionIdConverterTest
+Running org.xwiki.extension.internal.converter.ExtensionConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.xwiki.extension.internal.converter.ExtensionConverterTest
+Running org.xwiki.extension.internal.DefaultExtensionManagerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.xwiki.extension.internal.DefaultExtensionManagerTest
+Running org.xwiki.extension.internal.DefaultExtensionManagerConfigurationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.xwiki.extension.internal.DefaultExtensionManagerConfigurationTest
+Running org.xwiki.extension.internal.DefaultExtensionLicenseManagerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.xwiki.extension.internal.DefaultExtensionLicenseManagerTest
+Running org.xwiki.extension.AbstractExtensionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.xwiki.extension.AbstractExtensionTest
+Running org.xwiki.extension.version.internal.DefaultVersionRangeTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.xwiki.extension.version.internal.DefaultVersionRangeTest
+Running org.xwiki.extension.version.internal.DefaultVersionConstraintTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.xwiki.extension.version.internal.DefaultVersionConstraintTest
+Running org.xwiki.extension.version.internal.DefaultVersionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.xwiki.extension.version.internal.DefaultVersionTest
+
+Results :
+
+Tests run: 140, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time: 29.449 s
+[[1;34mINFO[m] Finished at: 2018-09-27T09:27:44+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+Writing HTML report to '/home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/report'
+ERROR: Invalid Java source found or Clover failed to parse it: /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/job/internal/AbstractExtensionPlanJob.java
+Done. Processed 30 packages in 3468ms (115ms per package).
+[[1;34mINFO[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/repository/internal/DefaultExtensionSerializer.java
+[[1;34mINFO[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/repository/internal/DefaultExtensionSerializer.java
+[info] org.xwiki.extension.repository.internal.DefaultExtensionSerializer:690 is modified.
+[info] org.xwiki.extension.repository.internal.DefaultExtensionSerializer:690 covered.
+[[1;34mINFO[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/repository/local/DefaultExtensionSerializerTest.java
+[[1;34mINFO[m] /home/bdanglot/workspace/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/repository/local/DefaultExtensionSerializerTest.java
+[info] org.xwiki.extension.repository.local.DefaultExtensionSerializerTest:142 is modified.
+[[1;34mINFO[m] Saving result in /home/bdanglot/workspace/icst-2019/september-2018/result/xwiki-commons/commit_19_50fdd45/parent_coverage_testsThatExecuteTheChanges.csv ...
+[[1;34mINFO[m] org.xwiki.extension.job.internal.InstallJobTest;testReplaceDependencyWithFeature;testInstallOnRoot;testInstallRemoteOnNamespaces;testInstallRemoteOnNamespace;testInstallOnNamespaceThenMoveDependencyOnRoot
+org.xwiki.extension.job.internal.UninstallJobTest;testUninstall;testUninstallTwice;testUninstallFromNamespace;testUninstallFromAllNamespaces;testUninstallWithBackwarDepencency;testUninstallFromNamespaceWithBackwarDepencency
+org.xwiki.extension.repository.installed.DefaultInstalledExtensionRepositoryTest;testInstallTwice;testBackwardDependenciesWithExtensionOnNamespaceAndDepOnNamespace;testStoreExtensionAndInstall;testUninstallExtension;testBackwardDependenciesWithExtensionAndDepOnNamespace;testBackwardDependenciesAfterUninstall
+org.xwiki.extension.repository.local.DefaultExtensionSerializerTest;testSerialize
+[[1;34mINFO[m] Writing Coverage in /home/bdanglot/workspace/icst-2019/september-2018/result/xwiki-commons/commit_19_50fdd45/parent_coverage_testsThatExecuteTheChanges_coverage.csv
+[[1;34mINFO[m] org.xwiki.extension.repository.internal.DefaultExtensionSerializer;1;1
+
+[[1;34mINFO[m] total;1;1
+
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time: 38.309 s
+[[1;34mINFO[m] Finished at: 2018-09-27T09:27:50+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

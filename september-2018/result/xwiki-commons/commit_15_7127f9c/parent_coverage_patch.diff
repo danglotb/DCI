@@ -1,0 +1,96 @@
+diff --git a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/main/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheck.java b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/main/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheck.java
+index a7b36f974..89dfeedf4 100644
+--- a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/main/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheck.java
++++ b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/main/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheck.java
+@@ -84,7 +84,7 @@ public void visitToken(DetailAST ast)
+                 // Save the package
+                 FullIdent ident = FullIdent.createFullIdent(ast.getLastChild().getPreviousSibling());
+                 this.packageName = ident.getText();
+-                return;
++                break;
+             case TokenTypes.CLASS_DEF:
+             case TokenTypes.INTERFACE_DEF:
+                 this.classOrInterfaceName = ast.findFirstToken(TokenTypes.IDENT).getText();
+diff --git a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheckTest.java b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheckTest.java
+index ad9bf4717..4e5bb54a2 100644
+--- a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheckTest.java
++++ b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/java/org/xwiki/tool/checkstyle/UnstableAnnotationCheckTest.java
+@@ -131,22 +131,6 @@ public void checkWithUnstableAnnotationShouldBeRemovedAtMethodLevel() throws Exc
+         verify(this.checkConfig, getPath("TestClassWithUnstableAnnotationShouldBeRemovedAtMethodLevel.java"), expected);
+     }
+ 
+-    @Test
+-    public void checkPackageWithUnstable() throws Exception
+-    {
+-        final String[] expected = CommonUtils.EMPTY_STRING_ARRAY;
+-
+-        verify(this.checkConfig, getPath("TestPackageWithUnstable.java"), expected);
+-    }
+-
+-    @Test
+-    public void checkPackageWithOtherAnnotation() throws Exception
+-    {
+-        final String[] expected = CommonUtils.EMPTY_STRING_ARRAY;
+-
+-        verify(this.checkConfig, getPath("TestPackageWithOtherAnnotation.java"), expected);
+-    }
+-
+     @Override
+     protected String getPath(String filename) throws IOException
+     {
+diff --git a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestPackageWithOtherAnnotation.java b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestPackageWithOtherAnnotation.java
+deleted file mode 100644
+index 98e4271fc..000000000
+--- a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestPackageWithOtherAnnotation.java
++++ /dev/null
+@@ -1,21 +0,0 @@
+-/*
+- * See the NOTICE file distributed with this work for additional
+- * information regarding copyright ownership.
+- *
+- * This is free software; you can redistribute it and/or modify it
+- * under the terms of the GNU Lesser General Public License as
+- * published by the Free Software Foundation; either version 2.1 of
+- * the License, or (at your option) any later version.
+- *
+- * This software is distributed in the hope that it will be useful,
+- * but WITHOUT ANY WARRANTY; without even the implied warranty of
+- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+- * Lesser General Public License for more details.
+- *
+- * You should have received a copy of the GNU Lesser General Public
+- * License along with this software; if not, write to the Free
+- * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+- * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+- */
+-@OtherAnnotation
+-package org.xwiki.tool.checkstyle.test;
+\ No newline at end of file
+diff --git a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestPackageWithUnstable.java b/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestPackageWithUnstable.java
+deleted file mode 100644
+index 370ee9705..000000000
+--- a/xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestPackageWithUnstable.java
++++ /dev/null
+@@ -1,21 +0,0 @@
+-/*
+- * See the NOTICE file distributed with this work for additional
+- * information regarding copyright ownership.
+- *
+- * This is free software; you can redistribute it and/or modify it
+- * under the terms of the GNU Lesser General Public License as
+- * published by the Free Software Foundation; either version 2.1 of
+- * the License, or (at your option) any later version.
+- *
+- * This software is distributed in the hope that it will be useful,
+- * but WITHOUT ANY WARRANTY; without even the implied warranty of
+- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+- * Lesser General Public License for more details.
+- *
+- * You should have received a copy of the GNU Lesser General Public
+- * License along with this software; if not, write to the Free
+- * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+- * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+- */
+-@Unstable
+-package org.xwiki.tool.checkstyle.test;
+\ No newline at end of file
