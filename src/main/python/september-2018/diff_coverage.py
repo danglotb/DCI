@@ -11,7 +11,7 @@ def diff_coverage(project):
         toolbox.prefix_current_dataset + project
     ))
     commits = project_json["commits"]
-    for commit_json in commits[5:6]:
+    for commit_json in commits:
         concerned_module = commit_json["concernedModule"]
         commit_setter.set_commit(
             toolbox.get_absolute_path(toolbox.prefix_current_dataset + project), project, commits.index(commit_json)
@@ -111,6 +111,7 @@ def compute_diff_coverage_for_given_commit(path_to_concerned_module,
 
 
 if __name__ == '__main__':
+    toolbox.init(argv)
     if len(sys.argv) > 1:
         projects = sys.argv[1:]
     else:
