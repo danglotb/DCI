@@ -1,5 +1,8 @@
 package icst.experiments.selection;
 
+import icst.experiments.commits.ProjectJSONBuilder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -17,9 +20,11 @@ import java.util.stream.IntStream;
  */
 public class TestSuiteSwitcherAndChecker {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(TestSuiteSwitcherAndChecker.class);
+
     private static final String COMMAND_TEST_SUITE_SWITCHER = "python src/main/python/september-2018/test_suite_switcher.py";
 
-    private static final String PATH_TEST = "/src/test/java/";
+    public static String PATH_TEST = "/src/test/java/";
 
     private static final String POM_FILE = "/pom.xml";
 
@@ -29,6 +34,7 @@ public class TestSuiteSwitcherAndChecker {
                                                                              String pathToProjectWithTestSuite,
                                                                              String concernedModule,
                                                                              boolean computeCoverage) {
+        LOGGER.info("Test suite: {}", TestSuiteSwitcherAndChecker.PATH_TEST);
         String pathToConcernedModule = pathToProject + "/" + concernedModule;
         String pathToConcernedModuleOther = pathToProjectWithTestSuite + "/" + concernedModule;
         // modify the test source directory

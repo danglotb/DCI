@@ -81,7 +81,7 @@ public class DiffFilter {
     }
 
     private static boolean isSourceJavaModification(String path) {
-        return path.endsWith(".java") && path.contains("src/main/java");
+        return path.endsWith(".java") && (path.contains("src/main/java") || path.contains("src/java"));
     }
 
 }

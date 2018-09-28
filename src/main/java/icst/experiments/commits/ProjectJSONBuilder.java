@@ -152,9 +152,13 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
         final List<String> modifiedJavaFiles = DiffFilter.filter(diffEntries);
         if (!modifiedJavaFiles.isEmpty()) {
             final String concernedModule = getConcernedModule(modifiedJavaFiles);
-            if (!new File(this.pathToRootFolder + "/" + concernedModule + "/src/test/java/").exists()) {
+            if (!new File(this.pathToRootFolder + "/" + concernedModule + "/src/test/java/").exists() &&
+                    !new File(this.pathToRootFolder + "/" + concernedModule + "/src/test/").exists()) {
                 return addToBlackListWithMessageAndCause(commitName, "The module does not contain any test: {}", "NoTest");
             }
+            TestSuiteSwitcherAndChecker.PATH_TEST =
+                    new File(this.pathToRootFolder + "/" + concernedModule + "/src/test/java/").exists() ?
+                            "/src/test/java/" : "src/test/";
             // 1 setting both project to correct commit
             RepositoriesSetterNoJSON.main(new String[]{
                     "--project", this.projectJSON.name,
@@ -164,12 +168,18 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
             });
             CommandExecutor.runCmd("python src/main/python/september-2018/preparation.py " + this.projectJSON.name);
             if (new File(this.pathToRootFolder + "/" + concernedModule).exists()) {
+                TestSuiteSwitcherAndChecker.PATH_TEST =
+                    new File(new File(this.pathToRootFolder + "_parent/").getAbsolutePath() + concernedModule + "/src/test/java/").exists() ?
+                            "src/test/java" : "src/test/";
                 final boolean containsAtLeastOneFailingTestCaseTsOnPPrime = TestSuiteSwitcherAndChecker.switchAndCheckThatContainAtLeastOneFailingTestCase(
                         new File(this.pathToRootFolder + "/").getAbsolutePath(),
                         new File(this.pathToRootFolder + "_parent/").getAbsolutePath(),
                         concernedModule,
                         true // HERE WE COMPUTE ALSO THE COVERAGE
                 );
+                TestSuiteSwitcherAndChecker.PATH_TEST =
+                        new File(new File(this.pathToRootFolder).getAbsolutePath() + concernedModule + "/src/test/java/").exists() ?
+                                "src/test/java" : "src/test/";
                 final boolean containsAtLeastOneFAilingTestCaseTsPrimeOnP = TestSuiteSwitcherAndChecker.switchAndCheckThatContainAtLeastOneFailingTestCase(
                         new File(this.pathToRootFolder + "_parent/").getAbsolutePath(),
                         new File(this.pathToRootFolder + "/").getAbsolutePath(),
@@ -232,7 +242,9 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
     }
 
     private Function<String, String> getConcernedModule = string ->
-            string.substring(0, string.indexOf("src/main/java"));
+            string.contains("src/main/java") ?
+                    string.substring(0, string.indexOf("src/main/java")) :
+                    string.substring(0, string.indexOf("src/java"));
 
 
     private String getConcernedModule(List<String> modifiedJavaFile) {
