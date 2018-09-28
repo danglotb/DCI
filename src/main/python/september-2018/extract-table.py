@@ -4,6 +4,7 @@ import os
 
 
 def build_table(projects):
+    print_header()
     gray = False
     for project in projects:
         project_json = toolbox.get_json_file(toolbox.get_absolute_path(toolbox.prefix_current_dataset + project))
@@ -19,48 +20,92 @@ def build_table(projects):
             ) + '/'
             nb_test_to_be_amplified = nb_test_to_be_amplified + get_nb_test_to_be_amplified(path_to_commit_folder)
             modes = ["assert_amplification", "input_amplification"]
+            nb_test_amplified_mode = [0, 0]
+            time_mode = [0, 0]
+            success_mode = [0, 0]
             for mode in modes:
                 path_to_mode_result = path_to_commit_folder + '/' + mode + '/'
                 if os.path.isdir(path_to_mode_result):
                     if is_success(path_to_mode_result):
-                        nb_success[modes.index(mode)] = nb_success[modes.index(mode)] + 1
-                    nb_test_amplified[modes.index(mode)] = nb_test_amplified[modes.index(mode)] + get_nb_test_amplified(
+                        success_mode[modes.index(mode)] = success_mode[modes.index(mode)] + 1
+                    nb_test_amplified_mode[modes.index(mode)] = nb_test_amplified_mode[
+                                                                    modes.index(mode)] + get_nb_test_amplified(
                         path_to_mode_result)
                     if not commit_json['concernedModule'] == "":
-                        time[modes.index(mode)] = get_time(path_to_mode_result,
-                                                           commit_json['concernedModule'].split('/')[-2])
+                        time_mode[modes.index(mode)] = time_mode[modes.index(mode)] + get_time(path_to_mode_result,
+                                                                                               commit_json[
+                                                                                                   'concernedModule'].split(
+                                                                                                   '/')[
+                                                                                                   -2])
                     else:
-                        time[modes.index(mode)] = get_time(path_to_mode_result, project + toolbox.suffix_parent)
+                        time_mode[modes.index(mode)] = time_mode[modes.index(mode)] + get_time(path_to_mode_result,
+                                                                                               project + toolbox.suffix_parent)
+            if gray:
+                print '\\rowcolor[HTML]{EFEFEF}'
+            gray = not gray
+            print_line(
+                str(commit_json["sha"])[0:7],
+                get_nb_test_to_be_amplified(path_to_commit_folder),
+                nb_test_amplified_mode[0],
+                "\\cmark" if success_mode[0] == 1 else "\\xmark",
+                time_mode[0],
+                nb_test_amplified_mode[1],
+                "\\cmark" if success_mode[1] == 1 else "\\xmark",
+                time_mode[1]
+            )
 
-        percentage_success_aampl = compute_percentage(nb_commit, nb_success[0])
-        percentage_success_iampl = compute_percentage(nb_commit, nb_success[1])
+            time[0] = time[0] + time_mode[0]
+            time[1] = time[1] + time_mode[1]
+            nb_success[0] = nb_success[0] + success_mode[0]
+            nb_success[1] = nb_success[1] + success_mode[1]
+
+        #percentage_success_aampl = compute_percentage(nb_commit, nb_success[0])
+        #percentage_success_iampl = compute_percentage(nb_commit, nb_success[1])
 
         time[0] = convert_time(time[0])
         time[1] = convert_time(time[1])
 
-        line = '{}\t&\t{}\t&\t{}\t&\t{}\t&\t{}\t&\t{}\t&\t{}\t&\t{}\t&\t{}\t&\t{}\t&\t{}\\\\'.format(
-            '\\textsc{' + project + '}',
-            nb_commit,
+        print '\\hline'
+
+        if gray:
+            print '\\rowcolor[HTML]{EFEFEF}'
+        gray = not gray
+        print_line(
+            project,
             nb_test_to_be_amplified,
             nb_test_amplified[0],
             nb_success[0],
-            percentage_success_aampl,
             time[0],
             nb_test_amplified[1],
             nb_success[1],
-            percentage_success_iampl,
             time[1]
         )
-        print '\\rowcolor[HTML]{EFEFEF}\n' if gray else "", line
-        gray = not gray
+        print '\\hline'
 
+def print_line(id, number_test_to_be_amplified, number_aampl, success_mark_aampl, time_aampl, number_iampl,
+               success_mark_iampl,
+               time_iampl):
+    print "\t{}\t&\t{}\t&\t{}\t&\t{}\t&\t{}\t&\t{}\t&\t{}\t&\t{}\\\\".format(
+        '\\textsc{' + id + '}',
+        number_test_to_be_amplified,
+        number_aampl,
+        success_mark_aampl,
+        time_aampl,
+        number_iampl,
+        success_mark_iampl,
+        time_iampl
+    )
+
+def print_header():
+    print 'id\t&\t\\#Test\t&\t\\#Aampl Tests\t&\tSuccess\t&\tTime(min)\t&\t\\#Iampl Tests\t&\tSuccess\t&\tTime(min)\\\\'
+    print '\\hline'
 
 def compute_percentage(total, actual):
     return float(actual) / float(total) * 100.0
 
 
 def convert_time(time):
-    return time / 60
+    return time / 1000 / 60  # from ms to minute
 
 
 def is_success(path_to_mode_result):
