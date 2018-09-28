@@ -139,7 +139,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=872469, ConflictMarker.markTime=526049, ConflictMarker.nodeCount=11, ConflictIdSorter.graphTime=485536, ConflictIdSorter.topsortTime=403318, ConflictIdSorter.conflictIdCount=9, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=3973230, ConflictResolver.conflictItemCount=10, DefaultDependencyCollector.collectTime=93399169, DefaultDependencyCollector.transformTime=8734045}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=886227, ConflictMarker.markTime=512690, ConflictMarker.nodeCount=11, ConflictIdSorter.graphTime=478599, ConflictIdSorter.topsortTime=403195, ConflictIdSorter.conflictIdCount=9, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4120137, ConflictResolver.conflictItemCount=10, DefaultDependencyCollector.collectTime=98498736, DefaultDependencyCollector.transformTime=8995913}
 [DEBUG] org.apache.commons:commons-lang3:jar:3.8-SNAPSHOT
 [DEBUG]    junit:junit:jar:4.12:test
 [DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test
@@ -152,8 +152,8 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
 [DEBUG]    org.openjdk.jmh:jmh-generator-annprocess:jar:1.19:test
 [INFO] 
 [INFO] --- dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) @ commons-lang3 ---
-[DEBUG] Failure to find eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Skipped remote request for eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Skipped remote request for eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
 Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/eu/stamp-project/dspot/1.1.1-SNAPSHOT/maven-metadata.xml
@@ -161,11 +161,11 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Could not find metadata eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
 [DEBUG] Skipped remote request for eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Skipped remote request for eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Skipped remote request for eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
 [DEBUG] Could not find metadata fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Failure to find fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Skipped remote request for fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
@@ -175,13 +175,14 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Could not find metadata fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Skipped remote request for fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.resources/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.resources/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.resources/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.resources/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.resources/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.resources/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.resources/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
@@ -190,8 +191,9 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.resources/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.expressions/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.expressions/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.expressions/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.expressions/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.expressions/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.expressions/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.expressions/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
@@ -200,8 +202,9 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.expressions/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
@@ -210,8 +213,9 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
@@ -220,8 +224,9 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
@@ -230,8 +235,9 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
@@ -240,8 +246,9 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
@@ -252,13 +259,15 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
@@ -269,13 +278,15 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
@@ -286,20 +297,23 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
@@ -310,55 +324,63 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
@@ -369,34 +391,39 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.text/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.text/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.text/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.text/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.text/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.text/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.text/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
@@ -405,8 +432,9 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.text/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.commands/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.commands/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.commands/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.commands/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.commands/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.commands/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.commands/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
@@ -417,17 +445,19 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=4709984, ConflictMarker.markTime=1854156, ConflictMarker.nodeCount=671, ConflictIdSorter.graphTime=2787179, ConflictIdSorter.topsortTime=146904, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=13783887, ConflictResolver.conflictItemCount=306, DefaultDependencyCollector.collectTime=4576448130, DefaultDependencyCollector.transformTime=23440936}
+[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=4545895, ConflictMarker.markTime=1679692, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=3103403, ConflictIdSorter.topsortTime=155235, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=14710674, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=4383924682, DefaultDependencyCollector.transformTime=24356738}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -450,6 +480,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG]          com.fasterxml.jackson.core:jackson-databind:jar:2.9.2:compile
 [DEBUG]             com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
 [DEBUG]             com.fasterxml.jackson.core:jackson-core:jar:2.9.2:compile
+[DEBUG]          org.benf:cfr:jar:0.132.0:compile
 [DEBUG]       junit:junit:jar:4.12:compile
 [DEBUG]          org.hamcrest:hamcrest-core:jar:1.3:compile
 [DEBUG]       com.google.code.gson:gson:jar:2.8.0:compile
@@ -550,6 +581,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG]   Included: com.fasterxml.jackson.core:jackson-databind:jar:2.9.2
 [DEBUG]   Included: com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0
 [DEBUG]   Included: com.fasterxml.jackson.core:jackson-core:jar:2.9.2
+[DEBUG]   Included: org.benf:cfr:jar:0.132.0
 [DEBUG]   Included: junit:junit:jar:4.12
 [DEBUG]   Included: org.hamcrest:hamcrest-core:jar:1.3
 [DEBUG]   Included: com.google.code.gson:gson:jar:2.8.0
@@ -659,7 +691,7 @@ main:
 [INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-lang3 ---
 [INFO] Executing: /bin/sh -c cd '/tmp/icst-2019/september-2018/dataset/commons-lang_parent' && 'git' 'rev-parse' '--verify' 'HEAD'
 [INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-lang_parent
-[INFO] Storing buildNumber: b610707cd072f07efb816074a4844bb1b31e482c at timestamp: 1538068565637
+[INFO] Storing buildNumber: b610707cd072f07efb816074a4844bb1b31e482c at timestamp: 1538118945864
 [INFO] Storing buildScmBranch: master
 [INFO] 
 [INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ commons-lang3 ---
@@ -701,8 +733,8 @@ main:
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 15.891 s
-[INFO] Finished at: 2018-09-27T19:16:18+02:00
+[INFO] Total time: 15.553 s
+[INFO] Finished at: 2018-09-28T09:15:58+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
 [WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
@@ -735,7 +767,7 @@ main:
 [INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-lang3 ---
 [INFO] Executing: /bin/sh -c cd '/tmp/icst-2019/september-2018/dataset/commons-lang' && 'git' 'rev-parse' '--verify' 'HEAD'
 [INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-lang
-[INFO] Storing buildNumber: 77febcfa8d3a5e078330c4911a94e399589734e5 at timestamp: 1538068593763
+[INFO] Storing buildNumber: 77febcfa8d3a5e078330c4911a94e399589734e5 at timestamp: 1538118973099
 [INFO] Storing buildScmBranch: master
 [INFO] 
 [INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ commons-lang3 ---
@@ -777,8 +809,8 @@ main:
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 15.174 s
-[INFO] Finished at: 2018-09-27T19:16:45+02:00
+[INFO] Total time: 15.196 s
+[INFO] Finished at: 2018-09-28T09:16:25+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of org.apache.commons.lang3.ArchUtilsTest (1 test(s))
 [INFO] Assertion amplification of org.apache.commons.lang3.ArchUtilsTest (1 test(s))
@@ -829,15 +861,15 @@ eu.stamp_project.dspot.AmplificationException: Every test methods are uncompilab
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 394
+[INFO] elapsedTime 547
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 51.141 s
-[INFO] Finished at: 2018-09-27T19:16:46+02:00
+[INFO] Total time: 50.261 s
+[INFO] Finished at: 2018-09-28T09:16:25+02:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) on project commons-lang3: Execution default-cli of goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests failed: java.lang.RuntimeException: java.lang.NullPointerException -> [Help 1]
 org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) on project commons-lang3: Execution default-cli of goal eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests failed: java.lang.RuntimeException: java.lang.NullPointerException
