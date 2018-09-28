@@ -26,10 +26,10 @@ def run(project):
     return coverage_project
 
 
-def plot(bins, projects):
+def plot(bins):
     colors = ["#FF0000", "#FF8800", "#FFFF00", "#00FF00", "#008800"]
     labels = ["0-25%", "25-50%", "50-75%", "75-100%", "100%"]
-    indices = np.arange(len(projects))
+    indices = np.arange(len(toolbox.projects))
     total = [sum(bin) for bin in bins]
     current_bin = [bin[0] for bin in bins]
     current_proportion = np.true_divide(current_bin, total) * 100
@@ -51,7 +51,7 @@ def plot(bins, projects):
         ))
         previous_proportion = previous_proportion + current_proportion
     plt.xticks()
-    plt.xticks(indices, projects)
+    plt.xticks(indices, toolbox.projects)
     plt.setp(plt.gca().get_xticklabels(), rotation=30, horizontalalignment='right')
     ax.legend(plots, labels, fancybox=True, shadow=True, loc='upper center', ncol=5,  bbox_to_anchor=(0.5, 1.1))
     plt.show()
@@ -79,12 +79,8 @@ def sort(coverages):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1:
-        projects = sys.argv[1:]
-    else:
-        projects = ["commons-cli", "xwiki-commons", "jsoup", "gson", "commons-lang"]
     bins = []
-    for project in projects:
+    for project in toolbox.projects:
         coverage_project = run(project)
         bins.append(sort(coverage_project))
-    plot(bins, projects)
+    plot(bins)

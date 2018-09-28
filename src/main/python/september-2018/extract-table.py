@@ -27,7 +27,8 @@ def build_table(projects):
                     nb_test_amplified[modes.index(mode)] = nb_test_amplified[modes.index(mode)] + get_nb_test_amplified(
                         path_to_mode_result)
                     if not commit_json['concernedModule'] == "":
-                        time[modes.index(mode)] = get_time(path_to_mode_result, commit_json['concernedModule'].split('/')[-2])
+                        time[modes.index(mode)] = get_time(path_to_mode_result,
+                                                           commit_json['concernedModule'].split('/')[-2])
                     else:
                         time[modes.index(mode)] = get_time(path_to_mode_result, project + toolbox.suffix_parent)
 
@@ -53,17 +54,20 @@ def build_table(projects):
         print '\\rowcolor[HTML]{EFEFEF}\n' if gray else "", line
         gray = not gray
 
+
 def compute_percentage(total, actual):
     return float(actual) / float(total) * 100.0
 
+
 def convert_time(time):
     return time / 60
+
 
 def is_success(path_to_mode_result):
     for root, dirs, files in os.walk(path_to_mode_result):
         for file in files:
             if file.endswith('.java'):
-                #print path_to_mode_result
+                # print path_to_mode_result
                 return True
     return False
 
@@ -88,11 +92,12 @@ def get_time(path_to_mode_result, project):
 
 def get_nb_test_to_be_amplified(path_to_commit_folder):
     nb_test_to_be_amplified = 0
-    with open(path_to_commit_folder + toolbox.name_of_csv_with_list_of_test_that_execute_the_changes + ".csv") as csv_file:
+    with open(
+            path_to_commit_folder + toolbox.name_of_csv_with_list_of_test_that_execute_the_changes + ".csv") as csv_file:
         for line in csv_file:
             nb_test_to_be_amplified = nb_test_to_be_amplified + len(line.split(';')[1:])
     return nb_test_to_be_amplified
 
 
 if __name__ == '__main__':
-    build_table(projects=["commons-cli", "xwiki-commons", "jsoup", "gson", "commons-lang"])
+    build_table(projects=toolbox.projects)
