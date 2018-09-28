@@ -112,9 +112,6 @@ def compute_diff_coverage_for_given_commit(path_to_concerned_module,
 
 if __name__ == '__main__':
     toolbox.init(sys.argv)
-    if len(sys.argv) > 1:
-        projects = sys.argv[1:]
-    else:
-        projects = ["commons-cli", "xwiki-commons", "jsoup", "gson"]
+    projects = ["commons-cli", "xwiki-commons", "jsoup", "gson", 'commons-lang']
     for project in projects:
         diff_coverage(project)

@@ -20,6 +20,7 @@ public class Blacklist {
 
     public Blacklist(List<BlackListElement> list) {
         this.blacklist = list;
+        System.out.println(this.blacklist);
     }
 
     public Blacklist() {

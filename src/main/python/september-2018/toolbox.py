@@ -24,6 +24,8 @@ suffix_parent = "_parent"
 name_of_csv_with_list_of_test_that_execute_the_changes = "testsThatExecuteTheChanges"
 
 
+projects = ['commons-cli', 'commons-io', 'commons-lang', 'gson', 'jsoup', 'xwiki-commons']
+
 # input: commit from json array, and the array itself
 def get_output_folder_for_commit(commit, commits):
     return "commit_" + str(commits.index(commit)) + "_" + str(commit["sha"])[0:7]

@@ -14,9 +14,17 @@ def switch(path_to_test_suite, path_to_pom_to_modify):
     root_pom = tree.getroot()
     if not root_pom.findall(xml_build_tag):
         xml_build_node = ET.SubElement(root_pom, xml_build_tag)
-        test_source_directory_node = ET.SubElement(xml_build_node, test_source_directory_tag)
     else:
-        test_source_directory_node = ET.SubElement(root_pom.findall(xml_build_tag)[0], test_source_directory_tag)
+        xml_build_node = root_pom.findall(xml_build_tag)[0]
+        print xml_build_node
+    print xml_build_node.findall(xml_test_source_directory_tag)
+    print not xml_build_node.findall(xml_test_source_directory_tag)
+    if not xml_build_node.findall(xml_test_source_directory_tag):
+        test_source_directory_node = ET.SubElement(xml_build_node, xml_test_source_directory_tag)
+    else:
+        test_source_directory_node = xml_build_node.findall(xml_test_source_directory_tag)[0]
+        print test_source_directory_node
+        print test_source_directory_node.text
     test_source_directory_node.text = path_to_test_suite
     tree.write(path_to_root_pom)
 
