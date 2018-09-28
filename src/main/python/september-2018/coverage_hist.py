@@ -82,7 +82,7 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         projects = sys.argv[1:]
     else:
-        projects = ["commons-cli", "xwiki-commons", "jsoup", "gson"]
+        projects = ["commons-cli", "xwiki-commons", "jsoup", "gson", "commons-lang"]
     bins = []
     for project in projects:
         coverage_project = run(project)
