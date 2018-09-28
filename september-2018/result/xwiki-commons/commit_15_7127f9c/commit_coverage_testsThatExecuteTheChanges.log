@@ -1,20 +1,125 @@
 [INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-tool-verification-resources:jar:9.0-SNAPSHOT
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ----< org.xwiki.commons:xwiki-commons-tool-verification-resources >-----
+[INFO] Building XWiki Commons - Tools - Verification Resources 9.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ xwiki-commons-tool-verification-resources ---
+[INFO] Deleting /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-verification-resources/target
+[INFO] 
+[INFO] --- diff-test-selection:0.5-SNAPSHOT:list (default-cli) @ xwiki-commons-tool-verification-resources ---
+[INFO] Computing coverage for /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-verification-resources
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-tool-verification-resources:jar:9.0-SNAPSHOT
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ----< org.xwiki.commons:xwiki-commons-tool-verification-resources >-----
+[INFO] Building XWiki Commons - Tools - Verification Resources 9.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ xwiki-commons-tool-verification-resources ---
+[INFO] 
+[INFO] --- clover-maven-plugin:4.2.0:setup (default-cli) @ xwiki-commons-tool-verification-resources ---
+[INFO] No 'maven.clover.licenseLocation' configured. Using default license.
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-verification-resources/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 4 files (1 package).
+[INFO] Elapsed time = 0.439 secs. (9.112 files/sec, 1,451.025 srclines/sec)
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Updating existing database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-verification-resources/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 2 files (1 package).
+[INFO] 12 test methods detected.
+[INFO] Elapsed time = 0.104 secs. (19.231 files/sec, 2,201.923 srclines/sec)
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-plugins) @ xwiki-commons-tool-verification-resources ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-tool-verification-resources ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-commons-lang3) @ xwiki-commons-tool-verification-resources ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-upper-bounds) @ xwiki-commons-tool-verification-resources ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ xwiki-commons-tool-verification-resources ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ xwiki-commons-tool-verification-resources ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-verification-resources/target/classes
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-verification-resources/target/clover/src-instrumented/org/xwiki/tool/checkstyle/UnstableAnnotationCheck.java: /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-verification-resources/target/clover/src-instrumented/org/xwiki/tool/checkstyle/UnstableAnnotationCheck.java uses unchecked or unsafe operations.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-verification-resources/target/clover/src-instrumented/org/xwiki/tool/checkstyle/UnstableAnnotationCheck.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.3:manifest (bundle-manifest) @ xwiki-commons-tool-verification-resources ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ xwiki-commons-tool-verification-resources ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ xwiki-commons-tool-verification-resources ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-verification-resources/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ xwiki-commons-tool-verification-resources ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.xwiki.tool.checkstyle.UnstableAnnotationCheckTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.353 sec - in org.xwiki.tool.checkstyle.UnstableAnnotationCheckTest
+Running org.xwiki.tool.checkstyle.SinceFormatCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.xwiki.tool.checkstyle.SinceFormatCheckTest
+
+Results :
+
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+
 [INFO] ------------------------------------------------------------------------
-[INFO] Building XWiki Commons - Tools - Verification Resources
-[INFO]    task-segment: [clean, eu.stamp-project:diff-test-selection:0.5-SNAPSHOT:list]
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
+[INFO] Total time: 15.021 s
+[INFO] Finished at: 2018-09-27T21:13:29+02:00
 [INFO] ------------------------------------------------------------------------
-[ERROR] BUILD ERROR
+Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-verification-resources/target/clover/report'
+Done. Processed 1 packages in 1728ms (1728ms per package).
+[WARNING] Could not match /xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestPackageWithOtherAnnotation.java and -0,0
+[WARNING] Could not match /xwiki-commons-tools/xwiki-commons-tool-verification-resources/src/test/resources/org/xwiki/tool/checkstyle/test/unstable/TestPackageWithUnstable.java and -0,0
+[INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_15_7127f9c/commit_coverage_testsThatExecuteTheChanges.csv ...
+[INFO] org.xwiki.tool.checkstyle.UnstableAnnotationCheckTest;checkPackageWithOtherAnnotation;checkWithNoSinceJavadocTagAtMethodLevel;checkWithUnstableAnnotationShouldBeRemovedAtMethodLevel;checkPackageWithUnstable;checkWithUnstableAnnotationShouldNotBeRemovedMultipleSince;checkWithUnstableAnnotationShouldBeRemovedMultipleSince;checkWithNoSinceJavadocTagAtClassLevel;checkWithUnstableOkAtClassLevel;checkWithUnstableAnnotationShouldBeRemoved;checkWithUnstableOkAtMethodLevel
+[INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_15_7127f9c/commit_coverage_testsThatExecuteTheChanges_coverage.csv
+[INFO] org.xwiki.tool.checkstyle.UnstableAnnotationCheck;1;1
+
+[INFO] total;1;1
+
 [INFO] ------------------------------------------------------------------------
-[INFO] Error resolving version for 'org.apache.maven.plugins:maven-clean-plugin': Plugin requires Maven version 3.0
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] For more information, run Maven with the -e switch
+[INFO] Total time: 27.482 s
+[INFO] Finished at: 2018-09-27T21:13:35+02:00
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: < 1 second
-[INFO] Finished at: Thu Sep 27 16:13:03 CEST 2018
-[INFO] Final Memory: 4M/75M
-[INFO] ------------------------------------------------------------------------
-[INFO] 2018-09-27 16:13:04 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
-[INFO] 2018-09-27 16:13:05 RepositoriesSetter - Checkout 01eb87ef72e399a0c78349990f1d30b1f32fee32 revision...
-[INFO] 2018-09-27 16:13:06 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
-[INFO] 2018-09-27 16:13:06 RepositoriesSetter - Checkout 3e2ec66dec815d59e0dbf43d01b494326122967a revision...
+[INFO] 2018-09-27 21:13:36 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-09-27 21:13:37 RepositoriesSetter - Checkout 01eb87ef72e399a0c78349990f1d30b1f32fee32 revision...
+[INFO] 2018-09-27 21:13:37 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-09-27 21:13:38 RepositoriesSetter - Checkout 3e2ec66dec815d59e0dbf43d01b494326122967a revision...
