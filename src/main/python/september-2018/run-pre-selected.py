@@ -37,7 +37,7 @@ def run(project, index_begin, index_end, amplifiers):
             toolbox.maven_home + "mvn",
             "eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests",
             "-Dpath-to-test-list-csv=" + path_to_test_that_executes_the_changes,
-            "-Dverbose=True",
+            "-Dverbose=true",
             "-Dtest-criterion=ChangeDetectorSelector",
             "-Doutput-path=" + output_path,
             "-Dpath-to-second-version=" + path_to_concerned_module,
