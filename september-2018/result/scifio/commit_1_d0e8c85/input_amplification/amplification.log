@@ -1,1347 +1,0 @@
-[INFO] Scanning for projects...
-[INFO] 
-[INFO] ---------------------------< io.scif:scifio >---------------------------
-[INFO] Building SCIFIO Core 0.27.4-SNAPSHOT
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] --- dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) @ scifio ---
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/eu/stamp-project/dspot/1.1.1-SNAPSHOT/maven-metadata.xml
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/maven-metadata.xml
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.resources/maven-metadata.xml
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.expressions/maven-metadata.xml
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.runtime/maven-metadata.xml
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.osgi/maven-metadata.xml
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.common/maven-metadata.xml
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.jobs/maven-metadata.xml
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.registry/maven-metadata.xml
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.preferences/maven-metadata.xml
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.contenttype/maven-metadata.xml
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.app/maven-metadata.xml
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.filesystem/maven-metadata.xml
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.text/maven-metadata.xml
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.commands/maven-metadata.xml
-[INFO] Path to runner Classes: /home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
-[INFO] /home/spirals/danglot/.m2/repository/org/jacoco/org.jacoco.core/0.7.9/org.jacoco.core-0.7.9.jar
-[INFO] /home/spirals/danglot/.m2/repository/org/ow2/asm/asm-debug-all/5.2/asm-debug-all-5.2.jar
-[INFO] /home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
-[WARNING] automaticBuilderName: unknown automatic builder specified in configuration, going to default.
-[INFO] Default: provided Maven automatic builder.
-[INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
-[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
-[INFO] Scanning for projects...
-[INFO] 
-[INFO] ---------------------------< io.scif:scifio >---------------------------
-[INFO] Building SCIFIO Core 0.27.4-SNAPSHOT
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ scifio ---
-[INFO] Deleting /tmp/icst-2019/september-2018/dataset/scifio_parent/target
-[INFO] 
-[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-rules) @ scifio ---
-[INFO] Skipping Rule Enforcement.
-[INFO] 
-[INFO] --- build-helper-maven-plugin:1.9.1:regex-property (sanitize-version) @ scifio ---
-[INFO] 
-[INFO] --- buildnumber-maven-plugin:1.3:create (default) @ scifio ---
-[INFO] Executing: /bin/sh -c cd /tmp/icst-2019/september-2018/dataset/scifio_parent && git rev-parse --verify HEAD
-[INFO] Working directory: /tmp/icst-2019/september-2018/dataset/scifio_parent
-[INFO] Storing buildNumber: 6f2bbc452e96e78518e6da7e502e1861f293bdab at timestamp: 1537623998251
-[INFO] Storing buildScmBranch: master
-[INFO] 
-[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ scifio ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/scifio_parent/src/main/resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ scifio ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 287 source files to /tmp/icst-2019/september-2018/dataset/scifio_parent/target/classes
-[WARNING] /tmp/icst-2019/september-2018/dataset/scifio_parent/src/main/java/io/scif/img/cell/SCIFIOCellImgCleaningProvider.java: Some input files use unchecked or unsafe operations.
-[WARNING] /tmp/icst-2019/september-2018/dataset/scifio_parent/src/main/java/io/scif/img/cell/SCIFIOCellImgCleaningProvider.java: Recompile with -Xlint:unchecked for details.
-[INFO] 
-[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ scifio ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 1 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ scifio ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 68 source files to /tmp/icst-2019/september-2018/dataset/scifio_parent/target/test-classes
-[WARNING] /tmp/icst-2019/september-2018/dataset/scifio_parent/src/test/java/io/scif/img/cell/SCIFIOCellImgTest.java: Some input files use or override a deprecated API.
-[WARNING] /tmp/icst-2019/september-2018/dataset/scifio_parent/src/test/java/io/scif/img/cell/SCIFIOCellImgTest.java: Recompile with -Xlint:deprecation for details.
-[INFO] 
-[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ scifio ---
-[INFO] Tests are skipped.
-[INFO] 
-[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ scifio ---
-[INFO] Wrote classpath file '/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/classpath'.
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 10.831 s
-[INFO] Finished at: 2018-09-22T15:46:46+02:00
-[INFO] ------------------------------------------------------------------------
-[INFO] run maven clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
-[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
-[INFO] Scanning for projects...
-[INFO] 
-[INFO] ---------------------------< io.scif:scifio >---------------------------
-[INFO] Building SCIFIO Core 0.27.4-SNAPSHOT
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ scifio ---
-[INFO] Deleting /tmp/icst-2019/september-2018/dataset/scifio/target
-[INFO] 
-[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-rules) @ scifio ---
-[INFO] Skipping Rule Enforcement.
-[INFO] 
-[INFO] --- build-helper-maven-plugin:1.9.1:regex-property (sanitize-version) @ scifio ---
-[INFO] 
-[INFO] --- buildnumber-maven-plugin:1.3:create (default) @ scifio ---
-[INFO] Executing: /bin/sh -c cd /tmp/icst-2019/september-2018/dataset/scifio && git rev-parse --verify HEAD
-[INFO] Working directory: /tmp/icst-2019/september-2018/dataset/scifio
-[INFO] Storing buildNumber: d0e8c85118ab0fc475bef3b9da3ef14bfe7aee24 at timestamp: 1537624017341
-[INFO] Storing buildScmBranch: master
-[INFO] 
-[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ scifio ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/scifio/src/main/resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ scifio ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 287 source files to /tmp/icst-2019/september-2018/dataset/scifio/target/classes
-[WARNING] /tmp/icst-2019/september-2018/dataset/scifio/src/main/java/io/scif/gui/ComboFileFilter.java: Some input files use unchecked or unsafe operations.
-[WARNING] /tmp/icst-2019/september-2018/dataset/scifio/src/main/java/io/scif/gui/ComboFileFilter.java: Recompile with -Xlint:unchecked for details.
-[INFO] 
-[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ scifio ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 1 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ scifio ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 68 source files to /tmp/icst-2019/september-2018/dataset/scifio/target/test-classes
-[WARNING] /tmp/icst-2019/september-2018/dataset/scifio/src/test/java/io/scif/io/LocationTest.java: Some input files use or override a deprecated API.
-[WARNING] /tmp/icst-2019/september-2018/dataset/scifio/src/test/java/io/scif/io/LocationTest.java: Recompile with -Xlint:deprecation for details.
-[INFO] 
-[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ scifio ---
-[INFO] Tests are skipped.
-[INFO] 
-[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ scifio ---
-[INFO] Wrote classpath file '/tmp/icst-2019/september-2018/dataset/scifio/target/dspot/classpath'.
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 10.985 s
-[INFO] Finished at: 2018-09-22T15:47:06+02:00
-[INFO] ------------------------------------------------------------------------
-[INFO] Amplification of io.scif.img.ImgOpenerTest (2 test(s))
-[INFO] Assertion amplification of io.scif.img.ImgOpenerTest (2 test(s))
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/scifio_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/classes/:/home/spirals/danglot/.m2/repository/io/scif/scifio-jai-imageio/1.1.0/scifio-jai-imageio-1.1.0.jar:/home/spirals/danglot/.m2/repository/net/imagej/imagej-common/0.18.1/imagej-common-0.18.1.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-roi/0.4.2/imglib2-roi-0.4.2.jar:/home/spirals/danglot/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar:/home/spirals/danglot/.m2/repository/edu/ucar/udunits/4.3.18/udunits-4.3.18.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2/2.4.1/imglib2-2.4.1.jar:/home/spirals/danglot/.m2/repository/org/scijava/scijava-common/2.49.1/scijava-common-2.49.1.jar:/home/spirals/danglot/.m2/repository/com/googlecode/gentyref/gentyref/1.1.0/gentyref-1.1.0.jar:/home/spirals/danglot/.m2/repository/org/bushe/eventbus/1.4/eventbus-1.4.jar:/home/spirals/danglot/.m2/repository/org/mapdb/mapdb/1.0.3/mapdb-1.0.3.jar:/home/spirals/danglot/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner io.scif.img.ImgOpenerTest testCalibrationUnits:testImgCalibration
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
-[WARNING] Timeout when running java -classpath /tmp/icst-2019/september-2018/dataset/scifio_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/classes/:/home/spirals/danglot/.m2/repository/io/scif/scifio-jai-imageio/1.1.0/scifio-jai-imageio-1.1.0.jar:/home/spirals/danglot/.m2/repository/net/imagej/imagej-common/0.18.1/imagej-common-0.18.1.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-roi/0.4.2/imglib2-roi-0.4.2.jar:/home/spirals/danglot/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar:/home/spirals/danglot/.m2/repository/edu/ucar/udunits/4.3.18/udunits-4.3.18.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2/2.4.1/imglib2-2.4.1.jar:/home/spirals/danglot/.m2/repository/org/scijava/scijava-common/2.49.1/scijava-common-2.49.1.jar:/home/spirals/danglot/.m2/repository/com/googlecode/gentyref/gentyref/1.1.0/gentyref-1.1.0.jar:/home/spirals/danglot/.m2/repository/org/bushe/eventbus/1.4/eventbus-1.4.jar:/home/spirals/danglot/.m2/repository/org/mapdb/mapdb/1.0.3/mapdb-1.0.3.jar:/home/spirals/danglot/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner io.scif.img.ImgOpenerTest testCalibrationUnits:testImgCalibration
-[WARNING] Timeout during execution of io.scif.img.ImgOpenerTest: testCalibrationUnits,testImgCalibration
-eu.stamp_project.dspot.AmplificationException: java.util.concurrent.TimeoutException
-	at eu.stamp_project.utils.compilation.TestRunner.runGivenTestMethods(TestRunner.java:75)
-	at eu.stamp_project.utils.compilation.TestCompiler.compileAndRun(TestCompiler.java:99)
-	at eu.stamp_project.utils.compilation.TestCompiler.compileRunAndDiscardUncompilableAndFailingTestMethods(TestCompiler.java:55)
-	at eu.stamp_project.dspot.Amplification.amplification(Amplification.java:82)
-	at eu.stamp_project.dspot.DSpot.amplifyTest(DSpot.java:180)
-	at eu.stamp_project.dspot.DSpot.amplifyTest(DSpot.java:170)
-	at eu.stamp_project.Main.lambda$run$1(Main.java:69)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1374)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
-	at eu.stamp_project.Main.run(Main.java:71)
-	at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:263)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:146)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:954)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:192)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
-Caused by: java.util.concurrent.TimeoutException
-	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
-	at eu.stamp_project.testrunner.EntryPoint.runGivenCommandLine(EntryPoint.java:356)
-	at eu.stamp_project.testrunner.EntryPoint.runTests(EntryPoint.java:178)
-	at eu.stamp_project.testrunner.EntryPoint.runTests(EntryPoint.java:165)
-	at eu.stamp_project.utils.compilation.TestRunner.runGivenTestMethods(TestRunner.java:61)
-	... 37 more
-[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] Applying Input-amplification and Assertion-amplification test by test.
-[INFO] Amplification of testCalibrationUnits, (1/2)
-[INFO] iteration 0 / 3
-[INFO] 1 tests selected to be amplified over 1 available tests
-[INFO] Amplification of inputs...
-100% |================================================== ]/
-[INFO] 41 new tests generated
-[INFO] Run tests. (41)
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(102) The method openImgs(String) is ambiguous for the type ImgOpener
-[ERROR] Pb(102) The method openImgs(String) is ambiguous for the type ImgOpener
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/scifio_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/classes/:/home/spirals/danglot/.m2/repository/io/scif/scifio-jai-imageio/1.1.0/scifio-jai-imageio-1.1.0.jar:/home/spirals/danglot/.m2/repository/net/imagej/imagej-common/0.18.1/imagej-common-0.18.1.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-roi/0.4.2/imglib2-roi-0.4.2.jar:/home/spirals/danglot/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar:/home/spirals/danglot/.m2/repository/edu/ucar/udunits/4.3.18/udunits-4.3.18.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2/2.4.1/imglib2-2.4.1.jar:/home/spirals/danglot/.m2/repository/org/scijava/scijava-common/2.49.1/scijava-common-2.49.1.jar:/home/spirals/danglot/.m2/repository/com/googlecode/gentyref/gentyref/1.1.0/gentyref-1.1.0.jar:/home/spirals/danglot/.m2/repository/org/bushe/eventbus/1.4/eventbus-1.4.jar:/home/spirals/danglot/.m2/repository/org/mapdb/mapdb/1.0.3/mapdb-1.0.3.jar:/home/spirals/danglot/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner io.scif.img.ImgOpenerTest testCalibrationUnitslitString1:testCalibrationUnitslitString2:testCalibrationUnitslitString3:testCalibrationUnitslitString4:testCalibrationUnitslitString5:testCalibrationUnitslitString6:testCalibrationUnitslitString7:testCalibrationUnitslitString8:testCalibrationUnitslitNum9:testCalibrationUnitslitNum10:testCalibrationUnitslitNum11:testCalibrationUnitslitNum12:testCalibrationUnitslitNum13:testCalibrationUnitslitNum14:testCalibrationUnitslitNum15:testCalibrationUnitslitNum16:testCalibrationUnitslitNum17:testCalibrationUnitslitNum18:testCalibrationUnitslitNum19:testCalibrationUnitslitNum20:testCalibrationUnitslitNum21:testCalibrationUnitslitNum22:testCalibrationUnitslitNum23:testCalibrationUnitslitNum24:testCalibrationUnitslitNum25:testCalibrationUnitslitNum26:testCalibrationUnitslitNum27:testCalibrationUnitslitNum28:testCalibrationUnitslitNum29:testCalibrationUnitslitNum30:testCalibrationUnitslitNum31:testCalibrationUnits_add32:testCalibrationUnits_add33:testCalibrationUnits_add34:testCalibrationUnits_add35:testCalibrationUnits_add36:testCalibrationUnits_add37:testCalibrationUnits_add38:testCalibrationUnits_add39:testCalibrationUnitsnull40
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
-[ECLIPSE HELPER] Indexing annotations...
-Warning: could not load class 'eu.stamp_project.compare.ObjectLog'; skipping
-java.lang.RuntimeException: Unknown tag 18
-	at org.scijava.annotations.ByteCodeAnalyzer.getConstantPoolOffsets(ByteCodeAnalyzer.java:125)
-	at org.scijava.annotations.ByteCodeAnalyzer.<init>(ByteCodeAnalyzer.java:59)
-	at org.scijava.annotations.ByteCodeAnalyzer.getAnnotations(ByteCodeAnalyzer.java:349)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:92)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.EclipseHelper.index(EclipseHelper.java:228)
-	at org.scijava.annotations.EclipseHelper.maybeIndex(EclipseHelper.java:216)
-	at org.scijava.annotations.EclipseHelper.updateAnnotationIndex(EclipseHelper.java:155)
-	at org.scijava.annotations.Index.load(Index.java:88)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:75)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:49)
-	at org.scijava.plugin.PluginIndex.discover(PluginIndex.java:107)
-	at org.scijava.Context.<init>(Context.java:261)
-	at org.scijava.Context.<init>(Context.java:224)
-	at org.scijava.Context.<init>(Context.java:163)
-	at org.scijava.Context.<init>(Context.java:149)
-	at io.scif.img.AbstractImgIOComponent.<init>(AbstractImgIOComponent.java:57)
-	at io.scif.img.ImgOpener.<init>(ImgOpener.java:94)
-	at io.scif.img.ImgOpenerTest.<init>(ImgOpenerTest.java:33)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:138)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:114)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.main(TestRunner.java:64)
-Warning: could not load class 'eu.stamp_project.compare.Observation'; skipping
-java.lang.RuntimeException: Unknown tag 18
-	at org.scijava.annotations.ByteCodeAnalyzer.getConstantPoolOffsets(ByteCodeAnalyzer.java:125)
-	at org.scijava.annotations.ByteCodeAnalyzer.<init>(ByteCodeAnalyzer.java:59)
-	at org.scijava.annotations.ByteCodeAnalyzer.getAnnotations(ByteCodeAnalyzer.java:349)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:92)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.EclipseHelper.index(EclipseHelper.java:228)
-	at org.scijava.annotations.EclipseHelper.maybeIndex(EclipseHelper.java:216)
-	at org.scijava.annotations.EclipseHelper.updateAnnotationIndex(EclipseHelper.java:155)
-	at org.scijava.annotations.Index.load(Index.java:88)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:75)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:49)
-	at org.scijava.plugin.PluginIndex.discover(PluginIndex.java:107)
-	at org.scijava.Context.<init>(Context.java:261)
-	at org.scijava.Context.<init>(Context.java:224)
-	at org.scijava.Context.<init>(Context.java:163)
-	at org.scijava.Context.<init>(Context.java:149)
-	at io.scif.img.AbstractImgIOComponent.<init>(AbstractImgIOComponent.java:57)
-	at io.scif.img.ImgOpener.<init>(ImgOpener.java:94)
-	at io.scif.img.ImgOpenerTest.<init>(ImgOpenerTest.java:33)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:138)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:114)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.main(TestRunner.java:64)
-Warning: could not load class 'eu.stamp_project.compare.ObjectLog'; skipping
-java.lang.RuntimeException: Unknown tag 18
-	at org.scijava.annotations.ByteCodeAnalyzer.getConstantPoolOffsets(ByteCodeAnalyzer.java:125)
-	at org.scijava.annotations.ByteCodeAnalyzer.<init>(ByteCodeAnalyzer.java:59)
-	at org.scijava.annotations.ByteCodeAnalyzer.getAnnotations(ByteCodeAnalyzer.java:349)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:92)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.EclipseHelper.index(EclipseHelper.java:228)
-	at org.scijava.annotations.EclipseHelper.maybeIndex(EclipseHelper.java:216)
-	at org.scijava.annotations.EclipseHelper.updateAnnotationIndex(EclipseHelper.java:155)
-	at org.scijava.annotations.Index.load(Index.java:88)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:75)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:49)
-	at org.scijava.plugin.PluginIndex.discover(PluginIndex.java:107)
-	at org.scijava.Context.<init>(Context.java:261)
-	at org.scijava.Context.<init>(Context.java:224)
-	at org.scijava.Context.<init>(Context.java:163)
-	at org.scijava.Context.<init>(Context.java:149)
-	at io.scif.img.AbstractImgIOComponent.<init>(AbstractImgIOComponent.java:57)
-	at io.scif.img.ImgOpener.<init>(ImgOpener.java:94)
-	at io.scif.img.ImgOpenerTest.<init>(ImgOpenerTest.java:33)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:138)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:114)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.main(TestRunner.java:64)
-Warning: could not load class 'eu.stamp_project.compare.Observation'; skipping
-java.lang.RuntimeException: Unknown tag 18
-	at org.scijava.annotations.ByteCodeAnalyzer.getConstantPoolOffsets(ByteCodeAnalyzer.java:125)
-	at org.scijava.annotations.ByteCodeAnalyzer.<init>(ByteCodeAnalyzer.java:59)
-	at org.scijava.annotations.ByteCodeAnalyzer.getAnnotations(ByteCodeAnalyzer.java:349)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:92)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.EclipseHelper.index(EclipseHelper.java:228)
-	at org.scijava.annotations.EclipseHelper.maybeIndex(EclipseHelper.java:216)
-	at org.scijava.annotations.EclipseHelper.updateAnnotationIndex(EclipseHelper.java:155)
-	at org.scijava.annotations.Index.load(Index.java:88)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:75)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:49)
-	at org.scijava.plugin.PluginIndex.discover(PluginIndex.java:107)
-	at org.scijava.Context.<init>(Context.java:261)
-	at org.scijava.Context.<init>(Context.java:224)
-	at org.scijava.Context.<init>(Context.java:163)
-	at org.scijava.Context.<init>(Context.java:149)
-	at io.scif.img.AbstractImgIOComponent.<init>(AbstractImgIOComponent.java:57)
-	at io.scif.img.ImgOpener.<init>(ImgOpener.java:94)
-	at io.scif.img.ImgOpenerTest.<init>(ImgOpenerTest.java:33)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:138)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:114)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.main(TestRunner.java:64)
-Loading /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testCalibrationUnitslitString2,testCalibrationUnitslitString4,testCalibrationUnits_add32,testCalibrationUnits_add33,testCalibrationUnits_add34,testCalibrationUnits_add35,testCalibrationUnits_add36,testCalibrationUnits_add37,testCalibrationUnits_add38,testCalibrationUnits_add39,testCalibrationUnitslitNum13,testCalibrationUnitslitNum15,testCalibrationUnitslitNum19,testCalibrationUnitslitNum21,testCalibrationUnitslitNum22,testCalibrationUnitslitNum27,testCalibrationUnitslitNum30,testCalibrationUnitslitString1(io.scif.img.ImgOpenerTest): io.scif.FormatException: 0,3: No supported format found.,testCalibrationUnitslitString3(io.scif.img.ImgOpenerTest): FakeFormat id: testImg&le,ngths=512,512,3&axes=X,Y,Z&scales=5.0,6.0,7.0&units=micron,um,inches.fake is not valid. Can not have a differing number of axis types and axis lengths.,testCalibrationUnitslitString5(io.scif.img.ImgOpenerTest): io.scif.FormatException: dhscbCS@!x*zH_,y(q2 5[gpbL[{$QV5:Wz2[|+mr6#-VtX(r!Fs2l>UgIvC=TU&zgYc TM1`_8;0L`A=SO: No supported format found.,testCalibrationUnitslitString6(io.scif.img.ImgOpenerTest): io.scif.FormatException: : No supported format found.,testCalibrationUnitslitString7(io.scif.img.ImgOpenerTest): io.scif.FormatException: 
-: No supported format found.,testCalibrationUnitslitString8(io.scif.img.ImgOpenerTest): io.scif.FormatException: :: No supported format found.,testCalibrationUnitslitNum9(io.scif.img.ImgOpenerTest): Index: 1, Size: 1,testCalibrationUnitsnull40(io.scif.img.ImgOpenerTest): null,testCalibrationUnitslitNum10(io.scif.img.ImgOpenerTest): -1,testCalibrationUnitslitNum11(io.scif.img.ImgOpenerTest): Index: 2147483647, Size: 1,testCalibrationUnitslitNum12(io.scif.img.ImgOpenerTest): -2147483648,testCalibrationUnitslitNum14(io.scif.img.ImgOpenerTest): -1814531737,testCalibrationUnitslitNum16(io.scif.img.ImgOpenerTest): null,testCalibrationUnitslitNum17(io.scif.img.ImgOpenerTest): Index: 2147483647, Size: 3,testCalibrationUnitslitNum18(io.scif.img.ImgOpenerTest): null,testCalibrationUnitslitNum20(io.scif.img.ImgOpenerTest): null,testCalibrationUnitslitNum23(io.scif.img.ImgOpenerTest): Index: 2147483647, Size: 3,testCalibrationUnitslitNum24(io.scif.img.ImgOpenerTest): null,testCalibrationUnitslitNum25(io.scif.img.ImgOpenerTest): Index: 901534982, Size: 3,testCalibrationUnitslitNum26(io.scif.img.ImgOpenerTest): Index: 3, Size: 3,testCalibrationUnitslitNum28(io.scif.img.ImgOpenerTest): Index: 2147483647, Size: 3,testCalibrationUnitslitNum29(io.scif.img.ImgOpenerTest): null,testCalibrationUnitslitNum31(io.scif.img.ImgOpenerTest): null
-[INFO] 17 test pass, generating assertion...
-[INFO] Add observations points in passing tests.
-[INFO] Instrumentation...
-  5% |== ]/ 11% |===== ]- 17% |======== ]\ 23% |=========== ]| 29% |============== ]/ 35% |================= ]- 41% |==================== ]\ 47% |======================= ]| 52% |========================== ]/ 58% |============================= ]- 64% |================================ ]\ 70% |=================================== ]| 76% |====================================== ]/ 82% |========================================= ]- 88% |============================================ ]\ 94% |=============================================== ]|100% |================================================== ]/
-[INFO] Run instrumented tests. (51)
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/scifio_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/classes/:/home/spirals/danglot/.m2/repository/io/scif/scifio-jai-imageio/1.1.0/scifio-jai-imageio-1.1.0.jar:/home/spirals/danglot/.m2/repository/net/imagej/imagej-common/0.18.1/imagej-common-0.18.1.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-roi/0.4.2/imglib2-roi-0.4.2.jar:/home/spirals/danglot/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar:/home/spirals/danglot/.m2/repository/edu/ucar/udunits/4.3.18/udunits-4.3.18.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2/2.4.1/imglib2-2.4.1.jar:/home/spirals/danglot/.m2/repository/org/scijava/scijava-common/2.49.1/scijava-common-2.49.1.jar:/home/spirals/danglot/.m2/repository/com/googlecode/gentyref/gentyref/1.1.0/gentyref-1.1.0.jar:/home/spirals/danglot/.m2/repository/org/bushe/eventbus/1.4/eventbus-1.4.jar:/home/spirals/danglot/.m2/repository/org/mapdb/mapdb/1.0.3/mapdb-1.0.3.jar:/home/spirals/danglot/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner io.scif.img.ImgOpenerTest testCalibrationUnitslitString2_withlog0:testCalibrationUnitslitString4_withlog0:testCalibrationUnitslitNum13_withlog0:testCalibrationUnitslitNum15_withlog0:testCalibrationUnitslitNum19_withlog0:testCalibrationUnitslitNum21_withlog0:testCalibrationUnitslitNum22_withlog0:testCalibrationUnitslitNum27_withlog0:testCalibrationUnitslitNum30_withlog0:testCalibrationUnits_add32_withlog0:testCalibrationUnits_add33_withlog0:testCalibrationUnits_add34_withlog0:testCalibrationUnits_add35_withlog0:testCalibrationUnits_add36_withlog0:testCalibrationUnits_add37_withlog0:testCalibrationUnits_add38_withlog0:testCalibrationUnits_add39_withlog0:testCalibrationUnitslitString2_withlog1:testCalibrationUnitslitString4_withlog1:testCalibrationUnitslitNum13_withlog1:testCalibrationUnitslitNum15_withlog1:testCalibrationUnitslitNum19_withlog1:testCalibrationUnitslitNum21_withlog1:testCalibrationUnitslitNum22_withlog1:testCalibrationUnitslitNum27_withlog1:testCalibrationUnitslitNum30_withlog1:testCalibrationUnits_add32_withlog1:testCalibrationUnits_add33_withlog1:testCalibrationUnits_add34_withlog1:testCalibrationUnits_add35_withlog1:testCalibrationUnits_add36_withlog1:testCalibrationUnits_add37_withlog1:testCalibrationUnits_add38_withlog1:testCalibrationUnits_add39_withlog1:testCalibrationUnitslitString2_withlog2:testCalibrationUnitslitString4_withlog2:testCalibrationUnitslitNum13_withlog2:testCalibrationUnitslitNum15_withlog2:testCalibrationUnitslitNum19_withlog2:testCalibrationUnitslitNum21_withlog2:testCalibrationUnitslitNum22_withlog2:testCalibrationUnitslitNum27_withlog2:testCalibrationUnitslitNum30_withlog2:testCalibrationUnits_add32_withlog2:testCalibrationUnits_add33_withlog2:testCalibrationUnits_add34_withlog2:testCalibrationUnits_add35_withlog2:testCalibrationUnits_add36_withlog2:testCalibrationUnits_add37_withlog2:testCalibrationUnits_add38_withlog2:testCalibrationUnits_add39_withlog2
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/observations.ser
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
-Warning: could not load class 'eu.stamp_project.compare.ObjectLog'; skipping
-java.lang.RuntimeException: Unknown tag 18
-	at org.scijava.annotations.ByteCodeAnalyzer.getConstantPoolOffsets(ByteCodeAnalyzer.java:125)
-	at org.scijava.annotations.ByteCodeAnalyzer.<init>(ByteCodeAnalyzer.java:59)
-	at org.scijava.annotations.ByteCodeAnalyzer.getAnnotations(ByteCodeAnalyzer.java:349)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:92)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.EclipseHelper.index(EclipseHelper.java:228)
-	at org.scijava.annotations.EclipseHelper.maybeIndex(EclipseHelper.java:216)
-	at org.scijava.annotations.EclipseHelper.updateAnnotationIndex(EclipseHelper.java:155)
-	at org.scijava.annotations.Index.load(Index.java:88)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:75)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:49)
-	at org.scijava.plugin.PluginIndex.discover(PluginIndex.java:107)
-	at org.scijava.Context.<init>(Context.java:261)
-	at org.scijava.Context.<init>(Context.java:224)
-	at org.scijava.Context.<init>(Context.java:163)
-	at org.scijava.Context.<init>(Context.java:149)
-	at io.scif.img.AbstractImgIOComponent.<init>(AbstractImgIOComponent.java:57)
-	at io.scif.img.ImgOpener.<init>(ImgOpener.java:94)
-	at io.scif.img.ImgOpenerTest.<init>(ImgOpenerTest.java:35)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:138)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:114)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.main(TestRunner.java:64)
-Warning: could not load class 'eu.stamp_project.compare.Observation'; skipping
-java.lang.RuntimeException: Unknown tag 18
-	at org.scijava.annotations.ByteCodeAnalyzer.getConstantPoolOffsets(ByteCodeAnalyzer.java:125)
-	at org.scijava.annotations.ByteCodeAnalyzer.<init>(ByteCodeAnalyzer.java:59)
-	at org.scijava.annotations.ByteCodeAnalyzer.getAnnotations(ByteCodeAnalyzer.java:349)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:92)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.EclipseHelper.index(EclipseHelper.java:228)
-	at org.scijava.annotations.EclipseHelper.maybeIndex(EclipseHelper.java:216)
-	at org.scijava.annotations.EclipseHelper.updateAnnotationIndex(EclipseHelper.java:155)
-	at org.scijava.annotations.Index.load(Index.java:88)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:75)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:49)
-	at org.scijava.plugin.PluginIndex.discover(PluginIndex.java:107)
-	at org.scijava.Context.<init>(Context.java:261)
-	at org.scijava.Context.<init>(Context.java:224)
-	at org.scijava.Context.<init>(Context.java:163)
-	at org.scijava.Context.<init>(Context.java:149)
-	at io.scif.img.AbstractImgIOComponent.<init>(AbstractImgIOComponent.java:57)
-	at io.scif.img.ImgOpener.<init>(ImgOpener.java:94)
-	at io.scif.img.ImgOpenerTest.<init>(ImgOpenerTest.java:35)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:138)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:114)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.main(TestRunner.java:64)
-Loading /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testCalibrationUnitslitString4_withlog0,testCalibrationUnitslitString4_withlog1,testCalibrationUnitslitString4_withlog2,testCalibrationUnitslitNum27_withlog0,testCalibrationUnitslitNum27_withlog1,testCalibrationUnitslitNum27_withlog2,testCalibrationUnitslitString2_withlog0,testCalibrationUnitslitString2_withlog1,testCalibrationUnitslitString2_withlog2,testCalibrationUnitslitNum22_withlog0,testCalibrationUnitslitNum22_withlog1,testCalibrationUnitslitNum22_withlog2,testCalibrationUnits_add39_withlog0,testCalibrationUnits_add39_withlog1,testCalibrationUnits_add39_withlog2,testCalibrationUnitslitNum21_withlog0,testCalibrationUnitslitNum21_withlog1,testCalibrationUnitslitNum21_withlog2,testCalibrationUnits_add38_withlog0,testCalibrationUnits_add38_withlog1,testCalibrationUnits_add38_withlog2,testCalibrationUnitslitNum19_withlog0,testCalibrationUnitslitNum19_withlog1,testCalibrationUnitslitNum19_withlog2,testCalibrationUnits_add37_withlog0,testCalibrationUnits_add37_withlog1,testCalibrationUnits_add37_withlog2,testCalibrationUnits_add36_withlog0,testCalibrationUnits_add36_withlog1,testCalibrationUnits_add36_withlog2,testCalibrationUnits_add35_withlog0,testCalibrationUnits_add35_withlog1,testCalibrationUnits_add35_withlog2,testCalibrationUnits_add34_withlog0,testCalibrationUnits_add34_withlog1,testCalibrationUnits_add34_withlog2,testCalibrationUnitslitNum15_withlog0,testCalibrationUnitslitNum15_withlog1,testCalibrationUnitslitNum15_withlog2,testCalibrationUnits_add33_withlog0,testCalibrationUnits_add33_withlog1,testCalibrationUnits_add33_withlog2,testCalibrationUnits_add32_withlog0,testCalibrationUnits_add32_withlog1,testCalibrationUnits_add32_withlog2,testCalibrationUnitslitNum13_withlog0,testCalibrationUnitslitNum13_withlog1,testCalibrationUnitslitNum13_withlog2,testCalibrationUnitslitNum30_withlog0,testCalibrationUnitslitNum30_withlog1,testCalibrationUnitslitNum30_withlog2
-[INFO] Generating assertions...
-[INFO] 23 test fail, generating try/catch/fail blocks...
-[INFO] 40 new tests with assertions generated
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/scifio_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/classes/:/home/spirals/danglot/.m2/repository/io/scif/scifio-jai-imageio/1.1.0/scifio-jai-imageio-1.1.0.jar:/home/spirals/danglot/.m2/repository/net/imagej/imagej-common/0.18.1/imagej-common-0.18.1.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-roi/0.4.2/imglib2-roi-0.4.2.jar:/home/spirals/danglot/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar:/home/spirals/danglot/.m2/repository/edu/ucar/udunits/4.3.18/udunits-4.3.18.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2/2.4.1/imglib2-2.4.1.jar:/home/spirals/danglot/.m2/repository/org/scijava/scijava-common/2.49.1/scijava-common-2.49.1.jar:/home/spirals/danglot/.m2/repository/com/googlecode/gentyref/gentyref/1.1.0/gentyref-1.1.0.jar:/home/spirals/danglot/.m2/repository/org/bushe/eventbus/1.4/eventbus-1.4.jar:/home/spirals/danglot/.m2/repository/org/mapdb/mapdb/1.0.3/mapdb-1.0.3.jar:/home/spirals/danglot/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner io.scif.img.ImgOpenerTest testCalibrationUnitslitString2:testCalibrationUnitslitString4:testCalibrationUnitslitNum13:testCalibrationUnitslitNum15:testCalibrationUnitslitNum19:testCalibrationUnitslitNum21:testCalibrationUnitslitNum22:testCalibrationUnitslitNum27:testCalibrationUnitslitNum30:testCalibrationUnits_add32:testCalibrationUnits_add33:testCalibrationUnits_add34:testCalibrationUnits_add35:testCalibrationUnits_add36:testCalibrationUnits_add37:testCalibrationUnits_add38:testCalibrationUnits_add39:testCalibrationUnitslitString1_failAssert0:testCalibrationUnitslitString3_failAssert1:testCalibrationUnitslitString5_failAssert2:testCalibrationUnitslitString6_failAssert3:testCalibrationUnitslitString7_failAssert4:testCalibrationUnitslitString8_failAssert5:testCalibrationUnitslitNum9_failAssert6:testCalibrationUnitslitNum10_failAssert7:testCalibrationUnitslitNum11_failAssert8:testCalibrationUnitslitNum12_failAssert9:testCalibrationUnitslitNum14_failAssert10:testCalibrationUnitslitNum16_failAssert11:testCalibrationUnitslitNum17_failAssert12:testCalibrationUnitslitNum18_failAssert13:testCalibrationUnitslitNum20_failAssert14:testCalibrationUnitslitNum23_failAssert15:testCalibrationUnitslitNum24_failAssert16:testCalibrationUnitslitNum25_failAssert17:testCalibrationUnitslitNum26_failAssert18:testCalibrationUnitslitNum28_failAssert19:testCalibrationUnitslitNum29_failAssert20:testCalibrationUnitslitNum31_failAssert21:testCalibrationUnitsnull40_failAssert22
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
-Warning: could not load class 'eu.stamp_project.compare.ObjectLog'; skipping
-java.lang.RuntimeException: Unknown tag 18
-	at org.scijava.annotations.ByteCodeAnalyzer.getConstantPoolOffsets(ByteCodeAnalyzer.java:125)
-	at org.scijava.annotations.ByteCodeAnalyzer.<init>(ByteCodeAnalyzer.java:59)
-	at org.scijava.annotations.ByteCodeAnalyzer.getAnnotations(ByteCodeAnalyzer.java:349)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:92)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.EclipseHelper.index(EclipseHelper.java:228)
-	at org.scijava.annotations.EclipseHelper.maybeIndex(EclipseHelper.java:216)
-	at org.scijava.annotations.EclipseHelper.updateAnnotationIndex(EclipseHelper.java:155)
-	at org.scijava.annotations.Index.load(Index.java:88)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:75)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:49)
-	at org.scijava.plugin.PluginIndex.discover(PluginIndex.java:107)
-	at org.scijava.Context.<init>(Context.java:261)
-	at org.scijava.Context.<init>(Context.java:224)
-	at org.scijava.Context.<init>(Context.java:163)
-	at org.scijava.Context.<init>(Context.java:149)
-	at io.scif.img.AbstractImgIOComponent.<init>(AbstractImgIOComponent.java:57)
-	at io.scif.img.ImgOpener.<init>(ImgOpener.java:94)
-	at io.scif.img.ImgOpenerTest.<init>(ImgOpenerTest.java:36)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:138)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:114)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.main(TestRunner.java:64)
-Warning: could not load class 'eu.stamp_project.compare.Observation'; skipping
-java.lang.RuntimeException: Unknown tag 18
-	at org.scijava.annotations.ByteCodeAnalyzer.getConstantPoolOffsets(ByteCodeAnalyzer.java:125)
-	at org.scijava.annotations.ByteCodeAnalyzer.<init>(ByteCodeAnalyzer.java:59)
-	at org.scijava.annotations.ByteCodeAnalyzer.getAnnotations(ByteCodeAnalyzer.java:349)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:92)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.EclipseHelper.index(EclipseHelper.java:228)
-	at org.scijava.annotations.EclipseHelper.maybeIndex(EclipseHelper.java:216)
-	at org.scijava.annotations.EclipseHelper.updateAnnotationIndex(EclipseHelper.java:155)
-	at org.scijava.annotations.Index.load(Index.java:88)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:75)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:49)
-	at org.scijava.plugin.PluginIndex.discover(PluginIndex.java:107)
-	at org.scijava.Context.<init>(Context.java:261)
-	at org.scijava.Context.<init>(Context.java:224)
-	at org.scijava.Context.<init>(Context.java:163)
-	at org.scijava.Context.<init>(Context.java:149)
-	at io.scif.img.AbstractImgIOComponent.<init>(AbstractImgIOComponent.java:57)
-	at io.scif.img.ImgOpener.<init>(ImgOpener.java:94)
-	at io.scif.img.ImgOpenerTest.<init>(ImgOpenerTest.java:36)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:138)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:114)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.main(TestRunner.java:64)
-Loading /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testCalibrationUnitslitNum23_failAssert15,testCalibrationUnitslitString3_failAssert1,testCalibrationUnitslitString2,testCalibrationUnitslitString4,testCalibrationUnitslitNum17_failAssert12,testCalibrationUnitslitString1_failAssert0,testCalibrationUnitslitNum29_failAssert20,testCalibrationUnitslitNum11_failAssert8,testCalibrationUnitslitNum16_failAssert11,testCalibrationUnitslitNum20_failAssert14,testCalibrationUnitslitNum28_failAssert19,testCalibrationUnitslitNum31_failAssert21,testCalibrationUnitslitNum26_failAssert18,testCalibrationUnitslitString8_failAssert5,testCalibrationUnitslitNum25_failAssert17,testCalibrationUnits_add32,testCalibrationUnits_add33,testCalibrationUnits_add34,testCalibrationUnits_add35,testCalibrationUnits_add36,testCalibrationUnits_add37,testCalibrationUnits_add38,testCalibrationUnits_add39,testCalibrationUnitslitNum9_failAssert6,testCalibrationUnitslitString7_failAssert4,testCalibrationUnitsnull40_failAssert22,testCalibrationUnitslitString6_failAssert3,testCalibrationUnitslitNum24_failAssert16,testCalibrationUnitslitNum13,testCalibrationUnitslitNum15,testCalibrationUnitslitNum19,testCalibrationUnitslitNum21,testCalibrationUnitslitNum22,testCalibrationUnitslitNum27,testCalibrationUnitslitNum30,testCalibrationUnitslitString5_failAssert2,testCalibrationUnitslitNum18_failAssert13(io.scif.img.ImgOpenerTest): expected:<null> but was:<-2147483648>,testCalibrationUnitslitNum12_failAssert9(io.scif.img.ImgOpenerTest): expected:<-2147483648> but was:<null>,testCalibrationUnitslitNum10_failAssert7(io.scif.img.ImgOpenerTest): expected:<-1> but was:<null>,testCalibrationUnitslitNum14_failAssert10(io.scif.img.ImgOpenerTest): expected:<-1814531737> but was:<null>
-[INFO] Assertion amplification: 36 test method(s) has been successfully amplified.
-[WARN] 2018-09-22 15:51:15 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/scifio/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-22 15:51:15 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/scifio/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-22 15:51:15 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/scifio/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/scifio/target/classes/:/tmp/icst-2019/september-2018/dataset/scifio/target/test-classes/:/home/spirals/danglot/.m2/repository/io/scif/scifio-jai-imageio/1.1.0/scifio-jai-imageio-1.1.0.jar:/home/spirals/danglot/.m2/repository/net/imagej/imagej-common/0.18.1/imagej-common-0.18.1.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-roi/0.4.2/imglib2-roi-0.4.2.jar:/home/spirals/danglot/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar:/home/spirals/danglot/.m2/repository/edu/ucar/udunits/4.3.18/udunits-4.3.18.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2/2.4.1/imglib2-2.4.1.jar:/home/spirals/danglot/.m2/repository/org/scijava/scijava-common/2.49.1/scijava-common-2.49.1.jar:/home/spirals/danglot/.m2/repository/com/googlecode/gentyref/gentyref/1.1.0/gentyref-1.1.0.jar:/home/spirals/danglot/.m2/repository/org/bushe/eventbus/1.4/eventbus-1.4.jar:/home/spirals/danglot/.m2/repository/org/mapdb/mapdb/1.0.3/mapdb-1.0.3.jar:/home/spirals/danglot/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/scifio/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner io.scif.img.ImgOpenerTest testCalibrationUnitslitString2:testCalibrationUnitslitString4:testCalibrationUnitslitNum13:testCalibrationUnitslitNum15:testCalibrationUnitslitNum19:testCalibrationUnitslitNum21:testCalibrationUnitslitNum22:testCalibrationUnitslitNum27:testCalibrationUnitslitNum30:testCalibrationUnits_add32:testCalibrationUnits_add33:testCalibrationUnits_add34:testCalibrationUnits_add35:testCalibrationUnits_add36:testCalibrationUnits_add37:testCalibrationUnits_add38:testCalibrationUnits_add39:testCalibrationUnitslitString1_failAssert0:testCalibrationUnitslitString3_failAssert1:testCalibrationUnitslitString5_failAssert2:testCalibrationUnitslitString6_failAssert3:testCalibrationUnitslitString7_failAssert4:testCalibrationUnitslitString8_failAssert5:testCalibrationUnitslitNum9_failAssert6:testCalibrationUnitslitNum11_failAssert8:testCalibrationUnitslitNum16_failAssert11:testCalibrationUnitslitNum17_failAssert12:testCalibrationUnitslitNum20_failAssert14:testCalibrationUnitslitNum23_failAssert15:testCalibrationUnitslitNum24_failAssert16:testCalibrationUnitslitNum25_failAssert17:testCalibrationUnitslitNum26_failAssert18:testCalibrationUnitslitNum28_failAssert19:testCalibrationUnitslitNum29_failAssert20:testCalibrationUnitslitNum31_failAssert21:testCalibrationUnitsnull40_failAssert22
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
-[ECLIPSE HELPER] Indexing annotations...
-Warning: could not load class 'eu.stamp_project.compare.ObjectLog'; skipping
-java.lang.RuntimeException: Unknown tag 18
-	at org.scijava.annotations.ByteCodeAnalyzer.getConstantPoolOffsets(ByteCodeAnalyzer.java:125)
-	at org.scijava.annotations.ByteCodeAnalyzer.<init>(ByteCodeAnalyzer.java:59)
-	at org.scijava.annotations.ByteCodeAnalyzer.getAnnotations(ByteCodeAnalyzer.java:349)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:92)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.EclipseHelper.index(EclipseHelper.java:228)
-	at org.scijava.annotations.EclipseHelper.maybeIndex(EclipseHelper.java:216)
-	at org.scijava.annotations.EclipseHelper.updateAnnotationIndex(EclipseHelper.java:155)
-	at org.scijava.annotations.Index.load(Index.java:88)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:75)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:49)
-	at org.scijava.plugin.PluginIndex.discover(PluginIndex.java:107)
-	at org.scijava.Context.<init>(Context.java:261)
-	at org.scijava.Context.<init>(Context.java:224)
-	at org.scijava.Context.<init>(Context.java:163)
-	at org.scijava.Context.<init>(Context.java:149)
-	at io.scif.img.AbstractImgIOComponent.<init>(AbstractImgIOComponent.java:57)
-	at io.scif.img.ImgOpener.<init>(ImgOpener.java:94)
-	at io.scif.img.ImgOpenerTest.<init>(ImgOpenerTest.java:5)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:138)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:114)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.main(TestRunner.java:64)
-Warning: could not load class 'eu.stamp_project.compare.Observation'; skipping
-java.lang.RuntimeException: Unknown tag 18
-	at org.scijava.annotations.ByteCodeAnalyzer.getConstantPoolOffsets(ByteCodeAnalyzer.java:125)
-	at org.scijava.annotations.ByteCodeAnalyzer.<init>(ByteCodeAnalyzer.java:59)
-	at org.scijava.annotations.ByteCodeAnalyzer.getAnnotations(ByteCodeAnalyzer.java:349)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:92)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.EclipseHelper.index(EclipseHelper.java:228)
-	at org.scijava.annotations.EclipseHelper.maybeIndex(EclipseHelper.java:216)
-	at org.scijava.annotations.EclipseHelper.updateAnnotationIndex(EclipseHelper.java:155)
-	at org.scijava.annotations.Index.load(Index.java:88)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:75)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:49)
-	at org.scijava.plugin.PluginIndex.discover(PluginIndex.java:107)
-	at org.scijava.Context.<init>(Context.java:261)
-	at org.scijava.Context.<init>(Context.java:224)
-	at org.scijava.Context.<init>(Context.java:163)
-	at org.scijava.Context.<init>(Context.java:149)
-	at io.scif.img.AbstractImgIOComponent.<init>(AbstractImgIOComponent.java:57)
-	at io.scif.img.ImgOpener.<init>(ImgOpener.java:94)
-	at io.scif.img.ImgOpenerTest.<init>(ImgOpenerTest.java:5)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:138)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:114)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.main(TestRunner.java:64)
-Loading /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testCalibrationUnitslitNum23_failAssert15,testCalibrationUnitslitString3_failAssert1,testCalibrationUnitslitString2,testCalibrationUnitslitString4,testCalibrationUnitslitNum17_failAssert12,testCalibrationUnitslitString1_failAssert0,testCalibrationUnitslitNum11_failAssert8,testCalibrationUnitslitNum16_failAssert11,testCalibrationUnitslitNum20_failAssert14,testCalibrationUnitslitNum28_failAssert19,testCalibrationUnitslitNum31_failAssert21,testCalibrationUnitslitNum26_failAssert18,testCalibrationUnitslitString8_failAssert5,testCalibrationUnitslitNum25_failAssert17,testCalibrationUnits_add32,testCalibrationUnits_add33,testCalibrationUnits_add34,testCalibrationUnits_add35,testCalibrationUnits_add36,testCalibrationUnits_add37,testCalibrationUnits_add38,testCalibrationUnits_add39,testCalibrationUnitslitNum9_failAssert6,testCalibrationUnitslitString7_failAssert4,testCalibrationUnitsnull40_failAssert22,testCalibrationUnitslitString6_failAssert3,testCalibrationUnitslitNum24_failAssert16,testCalibrationUnitslitNum13,testCalibrationUnitslitNum15,testCalibrationUnitslitNum19,testCalibrationUnitslitNum21,testCalibrationUnitslitNum22,testCalibrationUnitslitNum27,testCalibrationUnitslitNum30,testCalibrationUnitslitString5_failAssert2,testCalibrationUnitslitNum29_failAssert20(io.scif.img.ImgOpenerTest): expected:<null> but was:<-2147483648>
-[INFO] 1 amplified test methods has been selected to be kept.
-[INFO] iteration 1 / 3
-[INFO] 36 tests selected to be amplified over 36 available tests
-[INFO] Amplification of inputs...
- 66% |================================= ]| 33% |================================= ]| 91% |============================================= ]/ 41% |============================================= ]\ 44% |============================================= ]| 16% |============================================= ]- 83% |============================================= ]-  8% |============================================= ]\ 63% |============================================= ]\ 13% |============================================= ]/ 88% |============================================= ]| 86% |============================================= ]\ 38% |============================================= ]- 22% |================================================ ]| 11% |================================================ ]| 97% |================================================ ]\ 36% |================================================ ]/ 50% |================================================ ]- 72% |================================================ ]- 80% |================================================ ]/  5% |================================================ ]-100% |================================================== ]|
- 25% |============ ]/ 47% |======================= ]/  2% |======================= ]/ 30% |======================= ]\ 75% |===================================== ]\ 94% |=============================================== ]- 19% |=============================================== ]\ 27% |=============================================== ]- 58% |=============================================== ]/ 77% |=============================================== ]| 69% |=============================================== ]/ 55% |=============================================== ]| 61% |=============================================== ]- 52% |=============================================== ]\[INFO] 1462 new tests generated
-[WARNING] Too many tests have been generated: 1462
-[INFO] Number of generated test reduced to 200
-[INFO] Run tests. (200)
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:541)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:563)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:623)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:645)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:869)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:891)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:1197)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:1219)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:1279)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:1301)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:1361)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:1383)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:1443)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:1465)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:1607)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:1629)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:1689)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:1711)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:1771)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:1793)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:1853)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:1875)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:1950)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:1972)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:2017)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:2039)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:2326)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:2408)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:2509)
-[ERROR] 2018-09-22 15:52:29 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:2550)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:2591)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:2632)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:2654)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:2695)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:2852)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:2874)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3247)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3269)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3411)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3433)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3493)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3515)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:4410)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:4432)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:4477)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:4499)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:4559)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:4600)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:4656)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:4663)
-[ERROR] 2018-09-22 15:52:30 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:4719)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:4764)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:4805)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:4827)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:4887)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:4928)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:4984)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:4991)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5032)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5088)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5133)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5174)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5196)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5237)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5297)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5338)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5394)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5401)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5442)
-[ERROR] 2018-09-22 15:52:31 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5498)
-[ERROR] 2018-09-22 15:52:32 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5543)
-[ERROR] 2018-09-22 15:52:32 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5584)
-[ERROR] 2018-09-22 15:52:32 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5606)
-[ERROR] 2018-09-22 15:52:32 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5647)
-[ERROR] 2018-09-22 15:52:32 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5707)
-[ERROR] 2018-09-22 15:52:32 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5748)
-[ERROR] 2018-09-22 15:52:32 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5770)
-[ERROR] 2018-09-22 15:52:32 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5811)
-[ERROR] 2018-09-22 15:52:32 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5871)
-[ERROR] 2018-09-22 15:52:32 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5893)
-[ERROR] 2018-09-22 15:52:32 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5953)
-[ERROR] 2018-09-22 15:52:32 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:5975)
-[ERROR] 2018-09-22 15:52:32 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:6016)
-[ERROR] 2018-09-22 15:52:32 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:6057)
-[ERROR] 2018-09-22 15:52:32 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:6420)
-[ERROR] 2018-09-22 15:52:32 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:6442)
-[ERROR] 2018-09-22 15:52:33 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:6487)
-[ERROR] 2018-09-22 15:52:33 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:6528)
-[ERROR] 2018-09-22 15:52:33 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:6550)
-[ERROR] 2018-09-22 15:52:33 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:6610)
-[ERROR] 2018-09-22 15:52:33 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:6632)
-[ERROR] 2018-09-22 15:52:33 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:6673)
-[ERROR] 2018-09-22 15:52:33 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:6733)
-[ERROR] 2018-09-22 15:52:33 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:6755)
-[ERROR] 2018-09-22 15:52:33 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:6815)
-[ERROR] 2018-09-22 15:52:33 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:6837)
-[ERROR] 2018-09-22 15:52:33 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:6878)
-[ERROR] 2018-09-22 15:52:33 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:6938)
-[ERROR] 2018-09-22 15:52:33 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:6960)
-[ERROR] 2018-09-22 15:52:33 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7020)
-[ERROR] 2018-09-22 15:52:33 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7061)
-[ERROR] 2018-09-22 15:52:33 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7083)
-[ERROR] 2018-09-22 15:52:34 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7124)
-[ERROR] 2018-09-22 15:52:34 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7165)
-[ERROR] 2018-09-22 15:52:34 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7225)
-[ERROR] 2018-09-22 15:52:34 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7266)
-[ERROR] 2018-09-22 15:52:34 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7288)
-[ERROR] 2018-09-22 15:52:34 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7329)
-[ERROR] 2018-09-22 15:52:34 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7389)
-[ERROR] 2018-09-22 15:52:34 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7411)
-[ERROR] 2018-09-22 15:52:34 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7471)
-[ERROR] 2018-09-22 15:52:34 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7493)
-[ERROR] 2018-09-22 15:52:34 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7553)
-[ERROR] 2018-09-22 15:52:34 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7594)
-[ERROR] 2018-09-22 15:52:34 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7616)
-[ERROR] 2018-09-22 15:52:34 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7676)
-[ERROR] 2018-09-22 15:52:34 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7717)
-[ERROR] 2018-09-22 15:52:34 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7739)
-[ERROR] 2018-09-22 15:52:34 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7780)
-[ERROR] 2018-09-22 15:52:35 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7840)
-[ERROR] 2018-09-22 15:52:35 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7881)
-[ERROR] 2018-09-22 15:52:35 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7903)
-[ERROR] 2018-09-22 15:52:35 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:7978)
-[ERROR] 2018-09-22 15:52:35 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:8000)
-[ERROR] 2018-09-22 15:52:35 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:8142)
-[ERROR] 2018-09-22 15:52:35 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:8164)
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] Pb(240) Syntax error, insert "AssignmentOperator Expression" to complete Expression
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:2961)
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:2983)
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3024)
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3065)
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3125)
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3166)
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3188)
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3229)
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3289)
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3311)
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3371)
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3393)
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3453)
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3494)
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3516)
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3576)
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3617)
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3639)
-[ERROR] 2018-09-22 15:52:36 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3680)
-[ERROR] 2018-09-22 15:52:37 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3740)
-[ERROR] 2018-09-22 15:52:37 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3781)
-[ERROR] 2018-09-22 15:52:37 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3803)
-[ERROR] 2018-09-22 15:52:37 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3878)
-[ERROR] 2018-09-22 15:52:37 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:3900)
-[ERROR] 2018-09-22 15:52:37 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:4042)
-[ERROR] 2018-09-22 15:52:37 JDTTreeBuilder - Could not find declaration for variable $missing$ at (/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/tmp_test_sources/io/scif/img/ImgOpenerTest.java:4064)
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/scifio_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/classes/:/home/spirals/danglot/.m2/repository/io/scif/scifio-jai-imageio/1.1.0/scifio-jai-imageio-1.1.0.jar:/home/spirals/danglot/.m2/repository/net/imagej/imagej-common/0.18.1/imagej-common-0.18.1.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-roi/0.4.2/imglib2-roi-0.4.2.jar:/home/spirals/danglot/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar:/home/spirals/danglot/.m2/repository/edu/ucar/udunits/4.3.18/udunits-4.3.18.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2/2.4.1/imglib2-2.4.1.jar:/home/spirals/danglot/.m2/repository/org/scijava/scijava-common/2.49.1/scijava-common-2.49.1.jar:/home/spirals/danglot/.m2/repository/com/googlecode/gentyref/gentyref/1.1.0/gentyref-1.1.0.jar:/home/spirals/danglot/.m2/repository/org/bushe/eventbus/1.4/eventbus-1.4.jar:/home/spirals/danglot/.m2/repository/org/mapdb/mapdb/1.0.3/mapdb-1.0.3.jar:/home/spirals/danglot/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner io.scif.img.ImgOpenerTest testCalibrationUnits_add32_add1494:testCalibrationUnits_add32_add1385:testCalibrationUnits_add32_add1518:testCalibrationUnits_add32_add1409:testCalibrationUnits_add32_add1522:testCalibrationUnits_add32_add1413:testCalibrationUnits_add32_mg1592:testCalibrationUnits_add32_add1519:testCalibrationUnits_add32_add1410:testCalibrationUnits_add32_add1523:testCalibrationUnits_add32_add1414:testCalibrationUnits_add32_add1526:testCalibrationUnits_add32_add1417:testCalibrationUnits_add32_add1393:testCalibrationUnits_add32_add1502:testCalibrationUnits_add32_add1399:testCalibrationUnits_add32_add1508:testCalibrationUnits_add32_add1396:testCalibrationUnits_add32_add1505:testCalibrationUnits_add32_add1550:testCalibrationUnits_add32_add1441:testCalibrationUnits_add32_add1542:testCalibrationUnits_add32_add1433:testCalibrationUnits_add32_add1567:testCalibrationUnits_add32_add1458:testCalibrationUnits_add32_add1579:testCalibrationUnits_add32_add1470:testCalibrationUnits_add32_add1551:testCalibrationUnits_add32_add1442:testCalibrationUnits_add32_add1545:testCalibrationUnits_add32_add1436:testCalibrationUnits_add32_add1548:testCalibrationUnits_add32_add1439:testCalibrationUnits_add32_add1571:testCalibrationUnits_add32_add1462:testCalibrationUnits_add32_add1553:testCalibrationUnits_add32_add1444:testCalibrationUnits_add32_add1543:testCalibrationUnits_add32_add1434:testCalibrationUnits_add32_add1565:testCalibrationUnits_add32_add1456:testCalibrationUnits_add32_add1569:testCalibrationUnits_add32_add1460:testCalibrationUnits_add32_add1555:testCalibrationUnits_add32_add1446:testCalibrationUnits_add32_add1580:testCalibrationUnits_add32_add1471:testCalibrationUnits_add32_add1546:testCalibrationUnits_add32_add1437:testCalibrationUnits_add32_add1533:testCalibrationUnits_add32_add1424:testCalibrationUnits_add32_add1577:testCalibrationUnits_add32_add1468:testCalibrationUnits_add32_add1497:testCalibrationUnits_add32_add1388:testCalibrationUnits_add32_add1490:testCalibrationUnits_add32_add1381:testCalibrationUnits_add32_add1514:testCalibrationUnits_add32_add1405:testCalibrationUnits_add32_add1516:testCalibrationUnits_add32_add1407:testCalibrationUnits_add32_add1391:testCalibrationUnits_add32_add1500:testCalibrationUnits_add32_add1534:testCalibrationUnits_add32_add1425:testCalibrationUnits_add32_add1531:testCalibrationUnits_add32_add1422:testCalibrationUnits_add32_mg1591:testCalibrationUnits_add32_add1498:testCalibrationUnits_add32_add1389:testCalibrationUnits_add32_add1587:testCalibrationUnits_add32_add1478:testCalibrationUnits_add32_add1588:testCalibrationUnits_add32_add1479
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
-Warning: could not load class 'eu.stamp_project.compare.ObjectLog'; skipping
-java.lang.RuntimeException: Unknown tag 18
-	at org.scijava.annotations.ByteCodeAnalyzer.getConstantPoolOffsets(ByteCodeAnalyzer.java:125)
-	at org.scijava.annotations.ByteCodeAnalyzer.<init>(ByteCodeAnalyzer.java:59)
-	at org.scijava.annotations.ByteCodeAnalyzer.getAnnotations(ByteCodeAnalyzer.java:349)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:92)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.EclipseHelper.index(EclipseHelper.java:228)
-	at org.scijava.annotations.EclipseHelper.maybeIndex(EclipseHelper.java:216)
-	at org.scijava.annotations.EclipseHelper.updateAnnotationIndex(EclipseHelper.java:155)
-	at org.scijava.annotations.Index.load(Index.java:88)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:75)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:49)
-	at org.scijava.plugin.PluginIndex.discover(PluginIndex.java:107)
-	at org.scijava.Context.<init>(Context.java:261)
-	at org.scijava.Context.<init>(Context.java:224)
-	at org.scijava.Context.<init>(Context.java:163)
-	at org.scijava.Context.<init>(Context.java:149)
-	at io.scif.img.AbstractImgIOComponent.<init>(AbstractImgIOComponent.java:57)
-	at io.scif.img.ImgOpener.<init>(ImgOpener.java:94)
-	at io.scif.img.ImgOpenerTest.<init>(ImgOpenerTest.java:34)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:138)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:114)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.main(TestRunner.java:64)
-Warning: could not load class 'eu.stamp_project.compare.Observation'; skipping
-java.lang.RuntimeException: Unknown tag 18
-	at org.scijava.annotations.ByteCodeAnalyzer.getConstantPoolOffsets(ByteCodeAnalyzer.java:125)
-	at org.scijava.annotations.ByteCodeAnalyzer.<init>(ByteCodeAnalyzer.java:59)
-	at org.scijava.annotations.ByteCodeAnalyzer.getAnnotations(ByteCodeAnalyzer.java:349)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:92)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.EclipseHelper.index(EclipseHelper.java:228)
-	at org.scijava.annotations.EclipseHelper.maybeIndex(EclipseHelper.java:216)
-	at org.scijava.annotations.EclipseHelper.updateAnnotationIndex(EclipseHelper.java:155)
-	at org.scijava.annotations.Index.load(Index.java:88)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:75)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:49)
-	at org.scijava.plugin.PluginIndex.discover(PluginIndex.java:107)
-	at org.scijava.Context.<init>(Context.java:261)
-	at org.scijava.Context.<init>(Context.java:224)
-	at org.scijava.Context.<init>(Context.java:163)
-	at org.scijava.Context.<init>(Context.java:149)
-	at io.scif.img.AbstractImgIOComponent.<init>(AbstractImgIOComponent.java:57)
-	at io.scif.img.ImgOpener.<init>(ImgOpener.java:94)
-	at io.scif.img.ImgOpenerTest.<init>(ImgOpenerTest.java:34)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:138)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:114)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.main(TestRunner.java:64)
-Loading /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testCalibrationUnits_add32_mg1592,testCalibrationUnits_add32_add1381,testCalibrationUnits_add32_add1385,testCalibrationUnits_add32_add1388,testCalibrationUnits_add32_add1389,testCalibrationUnits_add32_add1391,testCalibrationUnits_add32_add1393,testCalibrationUnits_add32_add1396,testCalibrationUnits_add32_add1399,testCalibrationUnits_add32_add1405,testCalibrationUnits_add32_add1407,testCalibrationUnits_add32_add1409,testCalibrationUnits_add32_add1410,testCalibrationUnits_add32_add1413,testCalibrationUnits_add32_add1414,testCalibrationUnits_add32_add1417,testCalibrationUnits_add32_add1422,testCalibrationUnits_add32_add1424,testCalibrationUnits_add32_add1425,testCalibrationUnits_add32_add1433,testCalibrationUnits_add32_add1434,testCalibrationUnits_add32_add1436,testCalibrationUnits_add32_add1437,testCalibrationUnits_add32_add1439,testCalibrationUnits_add32_add1441,testCalibrationUnits_add32_add1442,testCalibrationUnits_add32_add1444,testCalibrationUnits_add32_add1446,testCalibrationUnits_add32_add1456,testCalibrationUnits_add32_add1458,testCalibrationUnits_add32_add1460,testCalibrationUnits_add32_add1462,testCalibrationUnits_add32_add1468,testCalibrationUnits_add32_add1470,testCalibrationUnits_add32_add1471,testCalibrationUnits_add32_add1478,testCalibrationUnits_add32_add1479,testCalibrationUnits_add32_add1490,testCalibrationUnits_add32_add1494,testCalibrationUnits_add32_add1497,testCalibrationUnits_add32_add1498,testCalibrationUnits_add32_add1500,testCalibrationUnits_add32_add1502,testCalibrationUnits_add32_add1505,testCalibrationUnits_add32_add1508,testCalibrationUnits_add32_add1514,testCalibrationUnits_add32_add1516,testCalibrationUnits_add32_add1518,testCalibrationUnits_add32_add1519,testCalibrationUnits_add32_add1522,testCalibrationUnits_add32_add1523,testCalibrationUnits_add32_add1526,testCalibrationUnits_add32_add1531,testCalibrationUnits_add32_add1533,testCalibrationUnits_add32_add1534,testCalibrationUnits_add32_add1542,testCalibrationUnits_add32_add1543,testCalibrationUnits_add32_add1545,testCalibrationUnits_add32_add1546,testCalibrationUnits_add32_add1548,testCalibrationUnits_add32_add1550,testCalibrationUnits_add32_add1551,testCalibrationUnits_add32_add1553,testCalibrationUnits_add32_add1555,testCalibrationUnits_add32_add1565,testCalibrationUnits_add32_add1567,testCalibrationUnits_add32_add1569,testCalibrationUnits_add32_add1571,testCalibrationUnits_add32_add1577,testCalibrationUnits_add32_add1579,testCalibrationUnits_add32_add1580,testCalibrationUnits_add32_add1587,testCalibrationUnits_add32_add1588,testCalibrationUnits_add32_mg1591(io.scif.img.ImgOpenerTest): -1897557011
-[INFO] 73 test pass, generating assertion...
-[INFO] Add observations points in passing tests.
-[INFO] Instrumentation...
-  1% |=============================================== ]/  2% |=============================================== ]-  4% |=============================================== ]\  5% |=============================================== ]|  6% |=============================================== ]/  8% |=============================================== ]-  9% |=============================================== ]\ 10% |=============================================== ]| 12% |=============================================== ]/ 13% |=============================================== ]- 15% |=============================================== ]\ 16% |=============================================== ]| 17% |=============================================== ]/ 19% |=============================================== ]- 20% |=============================================== ]\ 21% |=============================================== ]| 23% |=============================================== ]/ 24% |=============================================== ]- 26% |=============================================== ]\ 27% |=============================================== ]| 28% |=============================================== ]/ 30% |=============================================== ]- 31% |=============================================== ]\ 32% |=============================================== ]| 34% |=============================================== ]/ 35% |=============================================== ]- 36% |=============================================== ]\ 38% |=============================================== ]| 39% |=============================================== ]/ 41% |=============================================== ]- 42% |=============================================== ]\ 43% |=============================================== ]| 45% |=============================================== ]/ 46% |=============================================== ]- 47% |=============================================== ]\ 49% |=============================================== ]| 50% |=============================================== ]/ 52% |=============================================== ]- 53% |=============================================== ]\ 54% |=============================================== ]| 56% |=============================================== ]/ 57% |=============================================== ]- 58% |=============================================== ]\ 60% |=============================================== ]| 61% |=============================================== ]/ 63% |=============================================== ]- 64% |=============================================== ]\ 65% |=============================================== ]| 67% |=============================================== ]/ 68% |=============================================== ]- 69% |=============================================== ]\ 71% |=============================================== ]| 72% |=============================================== ]/ 73% |=============================================== ]- 75% |=============================================== ]\ 76% |=============================================== ]| 78% |=============================================== ]/ 79% |=============================================== ]- 80% |=============================================== ]\ 82% |=============================================== ]| 83% |=============================================== ]/ 84% |=============================================== ]- 86% |=============================================== ]\ 87% |=============================================== ]| 89% |=============================================== ]/ 90% |=============================================== ]- 91% |=============================================== ]\ 93% |=============================================== ]| 94% |=============================================== ]/ 95% |=============================================== ]- 97% |================================================ ]\ 98% |================================================= ]|100% |================================================== ]/
-[INFO] Run instrumented tests. (219)
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/scifio_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/classes/:/home/spirals/danglot/.m2/repository/io/scif/scifio-jai-imageio/1.1.0/scifio-jai-imageio-1.1.0.jar:/home/spirals/danglot/.m2/repository/net/imagej/imagej-common/0.18.1/imagej-common-0.18.1.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-roi/0.4.2/imglib2-roi-0.4.2.jar:/home/spirals/danglot/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar:/home/spirals/danglot/.m2/repository/edu/ucar/udunits/4.3.18/udunits-4.3.18.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2/2.4.1/imglib2-2.4.1.jar:/home/spirals/danglot/.m2/repository/org/scijava/scijava-common/2.49.1/scijava-common-2.49.1.jar:/home/spirals/danglot/.m2/repository/com/googlecode/gentyref/gentyref/1.1.0/gentyref-1.1.0.jar:/home/spirals/danglot/.m2/repository/org/bushe/eventbus/1.4/eventbus-1.4.jar:/home/spirals/danglot/.m2/repository/org/mapdb/mapdb/1.0.3/mapdb-1.0.3.jar:/home/spirals/danglot/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner io.scif.img.ImgOpenerTest testCalibrationUnits_add32_add1494_withlog0:testCalibrationUnits_add32_add1385_withlog0:testCalibrationUnits_add32_add1518_withlog0:testCalibrationUnits_add32_add1409_withlog0:testCalibrationUnits_add32_add1522_withlog0:testCalibrationUnits_add32_add1413_withlog0:testCalibrationUnits_add32_mg1592_withlog0:testCalibrationUnits_add32_add1519_withlog0:testCalibrationUnits_add32_add1410_withlog0:testCalibrationUnits_add32_add1523_withlog0:testCalibrationUnits_add32_add1414_withlog0:testCalibrationUnits_add32_add1526_withlog0:testCalibrationUnits_add32_add1417_withlog0:testCalibrationUnits_add32_add1393_withlog0:testCalibrationUnits_add32_add1502_withlog0:testCalibrationUnits_add32_add1399_withlog0:testCalibrationUnits_add32_add1508_withlog0:testCalibrationUnits_add32_add1396_withlog0:testCalibrationUnits_add32_add1505_withlog0:testCalibrationUnits_add32_add1550_withlog0:testCalibrationUnits_add32_add1441_withlog0:testCalibrationUnits_add32_add1542_withlog0:testCalibrationUnits_add32_add1433_withlog0:testCalibrationUnits_add32_add1567_withlog0:testCalibrationUnits_add32_add1458_withlog0:testCalibrationUnits_add32_add1579_withlog0:testCalibrationUnits_add32_add1470_withlog0:testCalibrationUnits_add32_add1551_withlog0:testCalibrationUnits_add32_add1442_withlog0:testCalibrationUnits_add32_add1545_withlog0:testCalibrationUnits_add32_add1436_withlog0:testCalibrationUnits_add32_add1548_withlog0:testCalibrationUnits_add32_add1439_withlog0:testCalibrationUnits_add32_add1571_withlog0:testCalibrationUnits_add32_add1462_withlog0:testCalibrationUnits_add32_add1553_withlog0:testCalibrationUnits_add32_add1444_withlog0:testCalibrationUnits_add32_add1543_withlog0:testCalibrationUnits_add32_add1434_withlog0:testCalibrationUnits_add32_add1565_withlog0:testCalibrationUnits_add32_add1456_withlog0:testCalibrationUnits_add32_add1569_withlog0:testCalibrationUnits_add32_add1460_withlog0:testCalibrationUnits_add32_add1555_withlog0:testCalibrationUnits_add32_add1446_withlog0:testCalibrationUnits_add32_add1580_withlog0:testCalibrationUnits_add32_add1471_withlog0:testCalibrationUnits_add32_add1546_withlog0:testCalibrationUnits_add32_add1437_withlog0:testCalibrationUnits_add32_add1533_withlog0:testCalibrationUnits_add32_add1424_withlog0:testCalibrationUnits_add32_add1577_withlog0:testCalibrationUnits_add32_add1468_withlog0:testCalibrationUnits_add32_add1497_withlog0:testCalibrationUnits_add32_add1388_withlog0:testCalibrationUnits_add32_add1490_withlog0:testCalibrationUnits_add32_add1381_withlog0:testCalibrationUnits_add32_add1514_withlog0:testCalibrationUnits_add32_add1405_withlog0:testCalibrationUnits_add32_add1516_withlog0:testCalibrationUnits_add32_add1407_withlog0:testCalibrationUnits_add32_add1391_withlog0:testCalibrationUnits_add32_add1500_withlog0:testCalibrationUnits_add32_add1534_withlog0:testCalibrationUnits_add32_add1425_withlog0:testCalibrationUnits_add32_add1531_withlog0:testCalibrationUnits_add32_add1422_withlog0:testCalibrationUnits_add32_add1498_withlog0:testCalibrationUnits_add32_add1389_withlog0:testCalibrationUnits_add32_add1587_withlog0:testCalibrationUnits_add32_add1478_withlog0:testCalibrationUnits_add32_add1588_withlog0:testCalibrationUnits_add32_add1479_withlog0:testCalibrationUnits_add32_add1494_withlog1:testCalibrationUnits_add32_add1385_withlog1:testCalibrationUnits_add32_add1518_withlog1:testCalibrationUnits_add32_add1409_withlog1:testCalibrationUnits_add32_add1522_withlog1:testCalibrationUnits_add32_add1413_withlog1:testCalibrationUnits_add32_mg1592_withlog1:testCalibrationUnits_add32_add1519_withlog1:testCalibrationUnits_add32_add1410_withlog1:testCalibrationUnits_add32_add1523_withlog1:testCalibrationUnits_add32_add1414_withlog1:testCalibrationUnits_add32_add1526_withlog1:testCalibrationUnits_add32_add1417_withlog1:testCalibrationUnits_add32_add1393_withlog1:testCalibrationUnits_add32_add1502_withlog1:testCalibrationUnits_add32_add1399_withlog1:testCalibrationUnits_add32_add1508_withlog1:testCalibrationUnits_add32_add1396_withlog1:testCalibrationUnits_add32_add1505_withlog1:testCalibrationUnits_add32_add1550_withlog1:testCalibrationUnits_add32_add1441_withlog1:testCalibrationUnits_add32_add1542_withlog1:testCalibrationUnits_add32_add1433_withlog1:testCalibrationUnits_add32_add1567_withlog1:testCalibrationUnits_add32_add1458_withlog1:testCalibrationUnits_add32_add1579_withlog1:testCalibrationUnits_add32_add1470_withlog1:testCalibrationUnits_add32_add1551_withlog1:testCalibrationUnits_add32_add1442_withlog1:testCalibrationUnits_add32_add1545_withlog1:testCalibrationUnits_add32_add1436_withlog1:testCalibrationUnits_add32_add1548_withlog1:testCalibrationUnits_add32_add1439_withlog1:testCalibrationUnits_add32_add1571_withlog1:testCalibrationUnits_add32_add1462_withlog1:testCalibrationUnits_add32_add1553_withlog1:testCalibrationUnits_add32_add1444_withlog1:testCalibrationUnits_add32_add1543_withlog1:testCalibrationUnits_add32_add1434_withlog1:testCalibrationUnits_add32_add1565_withlog1:testCalibrationUnits_add32_add1456_withlog1:testCalibrationUnits_add32_add1569_withlog1:testCalibrationUnits_add32_add1460_withlog1:testCalibrationUnits_add32_add1555_withlog1:testCalibrationUnits_add32_add1446_withlog1:testCalibrationUnits_add32_add1580_withlog1:testCalibrationUnits_add32_add1471_withlog1:testCalibrationUnits_add32_add1546_withlog1:testCalibrationUnits_add32_add1437_withlog1:testCalibrationUnits_add32_add1533_withlog1:testCalibrationUnits_add32_add1424_withlog1:testCalibrationUnits_add32_add1577_withlog1:testCalibrationUnits_add32_add1468_withlog1:testCalibrationUnits_add32_add1497_withlog1:testCalibrationUnits_add32_add1388_withlog1:testCalibrationUnits_add32_add1490_withlog1:testCalibrationUnits_add32_add1381_withlog1:testCalibrationUnits_add32_add1514_withlog1:testCalibrationUnits_add32_add1405_withlog1:testCalibrationUnits_add32_add1516_withlog1:testCalibrationUnits_add32_add1407_withlog1:testCalibrationUnits_add32_add1391_withlog1:testCalibrationUnits_add32_add1500_withlog1:testCalibrationUnits_add32_add1534_withlog1:testCalibrationUnits_add32_add1425_withlog1:testCalibrationUnits_add32_add1531_withlog1:testCalibrationUnits_add32_add1422_withlog1:testCalibrationUnits_add32_add1498_withlog1:testCalibrationUnits_add32_add1389_withlog1:testCalibrationUnits_add32_add1587_withlog1:testCalibrationUnits_add32_add1478_withlog1:testCalibrationUnits_add32_add1588_withlog1:testCalibrationUnits_add32_add1479_withlog1:testCalibrationUnits_add32_add1494_withlog2:testCalibrationUnits_add32_add1385_withlog2:testCalibrationUnits_add32_add1518_withlog2:testCalibrationUnits_add32_add1409_withlog2:testCalibrationUnits_add32_add1522_withlog2:testCalibrationUnits_add32_add1413_withlog2:testCalibrationUnits_add32_mg1592_withlog2:testCalibrationUnits_add32_add1519_withlog2:testCalibrationUnits_add32_add1410_withlog2:testCalibrationUnits_add32_add1523_withlog2:testCalibrationUnits_add32_add1414_withlog2:testCalibrationUnits_add32_add1526_withlog2:testCalibrationUnits_add32_add1417_withlog2:testCalibrationUnits_add32_add1393_withlog2:testCalibrationUnits_add32_add1502_withlog2:testCalibrationUnits_add32_add1399_withlog2:testCalibrationUnits_add32_add1508_withlog2:testCalibrationUnits_add32_add1396_withlog2:testCalibrationUnits_add32_add1505_withlog2:testCalibrationUnits_add32_add1550_withlog2:testCalibrationUnits_add32_add1441_withlog2:testCalibrationUnits_add32_add1542_withlog2:testCalibrationUnits_add32_add1433_withlog2:testCalibrationUnits_add32_add1567_withlog2:testCalibrationUnits_add32_add1458_withlog2:testCalibrationUnits_add32_add1579_withlog2:testCalibrationUnits_add32_add1470_withlog2:testCalibrationUnits_add32_add1551_withlog2:testCalibrationUnits_add32_add1442_withlog2:testCalibrationUnits_add32_add1545_withlog2:testCalibrationUnits_add32_add1436_withlog2:testCalibrationUnits_add32_add1548_withlog2:testCalibrationUnits_add32_add1439_withlog2:testCalibrationUnits_add32_add1571_withlog2:testCalibrationUnits_add32_add1462_withlog2:testCalibrationUnits_add32_add1553_withlog2:testCalibrationUnits_add32_add1444_withlog2:testCalibrationUnits_add32_add1543_withlog2:testCalibrationUnits_add32_add1434_withlog2:testCalibrationUnits_add32_add1565_withlog2:testCalibrationUnits_add32_add1456_withlog2:testCalibrationUnits_add32_add1569_withlog2:testCalibrationUnits_add32_add1460_withlog2:testCalibrationUnits_add32_add1555_withlog2:testCalibrationUnits_add32_add1446_withlog2:testCalibrationUnits_add32_add1580_withlog2:testCalibrationUnits_add32_add1471_withlog2:testCalibrationUnits_add32_add1546_withlog2:testCalibrationUnits_add32_add1437_withlog2:testCalibrationUnits_add32_add1533_withlog2:testCalibrationUnits_add32_add1424_withlog2:testCalibrationUnits_add32_add1577_withlog2:testCalibrationUnits_add32_add1468_withlog2:testCalibrationUnits_add32_add1497_withlog2:testCalibrationUnits_add32_add1388_withlog2:testCalibrationUnits_add32_add1490_withlog2:testCalibrationUnits_add32_add1381_withlog2:testCalibrationUnits_add32_add1514_withlog2:testCalibrationUnits_add32_add1405_withlog2:testCalibrationUnits_add32_add1516_withlog2:testCalibrationUnits_add32_add1407_withlog2:testCalibrationUnits_add32_add1391_withlog2:testCalibrationUnits_add32_add1500_withlog2:testCalibrationUnits_add32_add1534_withlog2:testCalibrationUnits_add32_add1425_withlog2:testCalibrationUnits_add32_add1531_withlog2:testCalibrationUnits_add32_add1422_withlog2:testCalibrationUnits_add32_add1498_withlog2:testCalibrationUnits_add32_add1389_withlog2:testCalibrationUnits_add32_add1587_withlog2:testCalibrationUnits_add32_add1478_withlog2:testCalibrationUnits_add32_add1588_withlog2:testCalibrationUnits_add32_add1479_withlog2
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/observations.ser
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
-Warning: could not load class 'eu.stamp_project.compare.ObjectLog'; skipping
-java.lang.RuntimeException: Unknown tag 18
-	at org.scijava.annotations.ByteCodeAnalyzer.getConstantPoolOffsets(ByteCodeAnalyzer.java:125)
-	at org.scijava.annotations.ByteCodeAnalyzer.<init>(ByteCodeAnalyzer.java:59)
-	at org.scijava.annotations.ByteCodeAnalyzer.getAnnotations(ByteCodeAnalyzer.java:349)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:92)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.EclipseHelper.index(EclipseHelper.java:228)
-	at org.scijava.annotations.EclipseHelper.maybeIndex(EclipseHelper.java:216)
-	at org.scijava.annotations.EclipseHelper.updateAnnotationIndex(EclipseHelper.java:155)
-	at org.scijava.annotations.Index.load(Index.java:88)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:75)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:49)
-	at org.scijava.plugin.PluginIndex.discover(PluginIndex.java:107)
-	at org.scijava.Context.<init>(Context.java:261)
-	at org.scijava.Context.<init>(Context.java:224)
-	at org.scijava.Context.<init>(Context.java:163)
-	at org.scijava.Context.<init>(Context.java:149)
-	at io.scif.img.AbstractImgIOComponent.<init>(AbstractImgIOComponent.java:57)
-	at io.scif.img.ImgOpener.<init>(ImgOpener.java:94)
-	at io.scif.img.ImgOpenerTest.<init>(ImgOpenerTest.java:36)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:138)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:114)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.main(TestRunner.java:64)
-Warning: could not load class 'eu.stamp_project.compare.Observation'; skipping
-java.lang.RuntimeException: Unknown tag 18
-	at org.scijava.annotations.ByteCodeAnalyzer.getConstantPoolOffsets(ByteCodeAnalyzer.java:125)
-	at org.scijava.annotations.ByteCodeAnalyzer.<init>(ByteCodeAnalyzer.java:59)
-	at org.scijava.annotations.ByteCodeAnalyzer.getAnnotations(ByteCodeAnalyzer.java:349)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:92)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.EclipseHelper.index(EclipseHelper.java:228)
-	at org.scijava.annotations.EclipseHelper.maybeIndex(EclipseHelper.java:216)
-	at org.scijava.annotations.EclipseHelper.updateAnnotationIndex(EclipseHelper.java:155)
-	at org.scijava.annotations.Index.load(Index.java:88)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:75)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:49)
-	at org.scijava.plugin.PluginIndex.discover(PluginIndex.java:107)
-	at org.scijava.Context.<init>(Context.java:261)
-	at org.scijava.Context.<init>(Context.java:224)
-	at org.scijava.Context.<init>(Context.java:163)
-	at org.scijava.Context.<init>(Context.java:149)
-	at io.scif.img.AbstractImgIOComponent.<init>(AbstractImgIOComponent.java:57)
-	at io.scif.img.ImgOpener.<init>(ImgOpener.java:94)
-	at io.scif.img.ImgOpenerTest.<init>(ImgOpenerTest.java:36)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:138)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:114)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.main(TestRunner.java:64)
-[ERROR] Cannot create plugin: class='io.scif.formats.APNGFormat', name='Animated PNG', priority=0.0, enabled=true, pluginType=Format
-java.lang.IllegalArgumentException: Required service is missing: io.scif.services.FormatService
-Context: org.scijava.Context@2e16b08d
-ClassLoader: sun.misc.Launcher$AppClassLoader@60e53b93
-
--- Services known to context --
-org.scijava.event.DefaultEventService [priority = 100000.0]
-io.scif.DefaultMetadataService [priority = 0.0]
-io.scif.codec.DefaultCodecService [priority = 0.0]
-io.scif.formats.qt.DefaultQTJavaService [priority = 0.0]
-io.scif.formats.tiff.DefaultTiffService [priority = 0.0]
-io.scif.gui.DefaultGUIService [priority = 0.0]
-io.scif.img.DefaultImgUtilityService [priority = 0.0]
-io.scif.img.cell.cache.MapDBCache [priority = 0.0]
-io.scif.img.converters.DefaultPlaneConverterService [priority = 0.0]
-io.scif.io.DefaultNIOService [priority = 0.0]
-io.scif.refs.DefaultRefManagerService [priority = 0.0]
-org.scijava.app.DefaultAppService [priority = 0.0]
-org.scijava.object.DefaultObjectService [priority = 0.0]
-org.scijava.plugin.DefaultPluginService [priority = 0.0]
-org.scijava.thread.DefaultThreadService [priority = 0.0]
-org.scijava.log.StderrLogService [priority = -100.0]
-
--- Classpath of ClassLoader --
-/tmp/icst-2019/september-2018/dataset/scifio_parent/target/test-classes/
-/tmp/icst-2019/september-2018/dataset/scifio_parent/target/classes/
-/home/spirals/danglot/.m2/repository/io/scif/scifio-jai-imageio/1.1.0/scifio-jai-imageio-1.1.0.jar
-/home/spirals/danglot/.m2/repository/net/imagej/imagej-common/0.18.1/imagej-common-0.18.1.jar
-/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-roi/0.4.2/imglib2-roi-0.4.2.jar
-/home/spirals/danglot/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar
-/home/spirals/danglot/.m2/repository/edu/ucar/udunits/4.3.18/udunits-4.3.18.jar
-/home/spirals/danglot/.m2/repository/net/imglib2/imglib2/2.4.1/imglib2-2.4.1.jar
-/home/spirals/danglot/.m2/repository/org/scijava/scijava-common/2.49.1/scijava-common-2.49.1.jar
-/home/spirals/danglot/.m2/repository/com/googlecode/gentyref/gentyref/1.1.0/gentyref-1.1.0.jar
-/home/spirals/danglot/.m2/repository/org/bushe/eventbus/1.4/eventbus-1.4.jar
-/home/spirals/danglot/.m2/repository/org/mapdb/mapdb/1.0.3/mapdb-1.0.3.jar
-/home/spirals/danglot/.m2/repository/junit/junit/4.11/junit-4.11.jar
-/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
-/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/dependencies/
-/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
-
-	at org.scijava.Context.inject(Context.java:440)
-	at org.scijava.Context.inject(Context.java:372)
-	at org.scijava.plugin.DefaultPluginService.createInstance(DefaultPluginService.java:237)
-	at org.scijava.plugin.DefaultPluginService.createInstances(DefaultPluginService.java:225)
-	at org.scijava.plugin.DefaultPluginService.createInstancesOfType(DefaultPluginService.java:216)
-	at io.scif.services.DefaultFormatService$2.run(DefaultFormatService.java:451)
-	at org.scijava.thread.DefaultThreadService$1.run(DefaultThreadService.java:174)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-[ERROR] Cannot create plugin: class='io.scif.formats.AVIFormat', name='Audio Video Interleave', priority=0.0, enabled=true, pluginType=Format
-java.lang.IllegalArgumentException: Required service is missing: io.scif.services.FormatService
-Context: org.scijava.Context@2e16b08d
-ClassLoader: sun.misc.Launcher$AppClassLoader@60e53b93
-
--- Services known to context --
-org.scijava.event.DefaultEventService [priority = 100000.0]
-io.scif.DefaultMetadataService [priority = 0.0]
-io.scif.codec.DefaultCodecService [priority = 0.0]
-io.scif.formats.qt.DefaultQTJavaService [priority = 0.0]
-io.scif.formats.tiff.DefaultTiffService [priority = 0.0]
-io.scif.gui.DefaultGUIService [priority = 0.0]
-io.scif.img.DefaultImgUtilityService [priority = 0.0]
-io.scif.img.cell.cache.MapDBCache [priority = 0.0]
-io.scif.img.converters.DefaultPlaneConverterService [priority = 0.0]
-io.scif.io.DefaultNIOService [priority = 0.0]
-io.scif.refs.DefaultRefManagerService [priority = 0.0]
-org.scijava.app.DefaultAppService [priority = 0.0]
-org.scijava.object.DefaultObjectService [priority = 0.0]
-org.scijava.plugin.DefaultPluginService [priority = 0.0]
-org.scijava.thread.DefaultThreadService [priority = 0.0]
-org.scijava.log.StderrLogService [priority = -100.0]
-
--- Classpath of ClassLoader --
-/tmp/icst-2019/september-2018/dataset/scifio_parent/target/test-classes/
-/tmp/icst-2019/september-2018/dataset/scifio_parent/target/classes/
-/home/spirals/danglot/.m2/repository/io/scif/scifio-jai-imageio/1.1.0/scifio-jai-imageio-1.1.0.jar
-/home/spirals/danglot/.m2/repository/net/imagej/imagej-common/0.18.1/imagej-common-0.18.1.jar
-/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-roi/0.4.2/imglib2-roi-0.4.2.jar
-/home/spirals/danglot/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar
-/home/spirals/danglot/.m2/repository/edu/ucar/udunits/4.3.18/udunits-4.3.18.jar
-/home/spirals/danglot/.m2/repository/net/imglib2/imglib2/2.4.1/imglib2-2.4.1.jar
-/home/spirals/danglot/.m2/repository/org/scijava/scijava-common/2.49.1/scijava-common-2.49.1.jar
-/home/spirals/danglot/.m2/repository/com/googlecode/gentyref/gentyref/1.1.0/gentyref-1.1.0.jar
-/home/spirals/danglot/.m2/repository/org/bushe/eventbus/1.4/eventbus-1.4.jar
-/home/spirals/danglot/.m2/repository/org/mapdb/mapdb/1.0.3/mapdb-1.0.3.jar
-/home/spirals/danglot/.m2/repository/junit/junit/4.11/junit-4.11.jar
-/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
-/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/dependencies/
-/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
-
-	at org.scijava.Context.inject(Context.java:440)
-	at org.scijava.Context.inject(Context.java:372)
-	at org.scijava.plugin.DefaultPluginService.createInstance(DefaultPluginService.java:237)
-	at org.scijava.plugin.DefaultPluginService.createInstances(DefaultPluginService.java:225)
-	at org.scijava.plugin.DefaultPluginService.createInstancesOfType(DefaultPluginService.java:216)
-	at io.scif.services.DefaultFormatService$2.run(DefaultFormatService.java:451)
-	at org.scijava.thread.DefaultThreadService$1.run(DefaultThreadService.java:174)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Loading /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testCalibrationUnits_add32_add1498_withlog0,testCalibrationUnits_add32_add1498_withlog1,testCalibrationUnits_add32_add1498_withlog2,testCalibrationUnits_add32_add1551_withlog0,testCalibrationUnits_add32_add1551_withlog1,testCalibrationUnits_add32_add1551_withlog2,testCalibrationUnits_add32_add1497_withlog0,testCalibrationUnits_add32_add1497_withlog1,testCalibrationUnits_add32_add1497_withlog2,testCalibrationUnits_add32_add1526_withlog0,testCalibrationUnits_add32_add1526_withlog1,testCalibrationUnits_add32_add1526_withlog2,testCalibrationUnits_add32_add1396_withlog0,testCalibrationUnits_add32_add1396_withlog1,testCalibrationUnits_add32_add1396_withlog2,testCalibrationUnits_add32_add1425_withlog0,testCalibrationUnits_add32_add1425_withlog1,testCalibrationUnits_add32_add1425_withlog2,testCalibrationUnits_add32_add1550_withlog0,testCalibrationUnits_add32_add1550_withlog1,testCalibrationUnits_add32_add1550_withlog2,testCalibrationUnits_add32_add1502_withlog0,testCalibrationUnits_add32_add1502_withlog1,testCalibrationUnits_add32_add1502_withlog2,testCalibrationUnits_add32_add1424_withlog0,testCalibrationUnits_add32_add1424_withlog1,testCalibrationUnits_add32_add1424_withlog2,testCalibrationUnits_add32_add1548_withlog0,testCalibrationUnits_add32_add1548_withlog1,testCalibrationUnits_add32_add1548_withlog2,testCalibrationUnits_add32_add1471_withlog0,testCalibrationUnits_add32_add1471_withlog1,testCalibrationUnits_add32_add1471_withlog2,testCalibrationUnits_add32_add1500_withlog0,testCalibrationUnits_add32_add1500_withlog1,testCalibrationUnits_add32_add1500_withlog2,testCalibrationUnits_add32_add1494_withlog0,testCalibrationUnits_add32_add1494_withlog1,testCalibrationUnits_add32_add1494_withlog2,testCalibrationUnits_add32_add1446_withlog0,testCalibrationUnits_add32_add1446_withlog1,testCalibrationUnits_add32_add1446_withlog2,testCalibrationUnits_add32_add1571_withlog0,testCalibrationUnits_add32_add1571_withlog1,testCalibrationUnits_add32_add1571_withlog2,testCalibrationUnits_add32_add1523_withlog0,testCalibrationUnits_add32_add1523_withlog1,testCalibrationUnits_add32_add1523_withlog2,testCalibrationUnits_add32_add1393_withlog0,testCalibrationUnits_add32_add1393_withlog1,testCalibrationUnits_add32_add1393_withlog2,testCalibrationUnits_add32_add1470_withlog0,testCalibrationUnits_add32_add1470_withlog1,testCalibrationUnits_add32_add1470_withlog2,testCalibrationUnits_add32_add1422_withlog0,testCalibrationUnits_add32_add1422_withlog1,testCalibrationUnits_add32_add1422_withlog2,testCalibrationUnits_add32_add1546_withlog0,testCalibrationUnits_add32_add1546_withlog1,testCalibrationUnits_add32_add1546_withlog2,testCalibrationUnits_add32_add1522_withlog0,testCalibrationUnits_add32_add1522_withlog1,testCalibrationUnits_add32_add1522_withlog2,testCalibrationUnits_add32_add1569_withlog0,testCalibrationUnits_add32_add1569_withlog1,testCalibrationUnits_add32_add1569_withlog2,testCalibrationUnits_add32_add1468_withlog0,testCalibrationUnits_add32_add1468_withlog1,testCalibrationUnits_add32_add1468_withlog2,testCalibrationUnits_add32_add1545_withlog0,testCalibrationUnits_add32_add1545_withlog1,testCalibrationUnits_add32_add1545_withlog2,testCalibrationUnits_add32_add1444_withlog0,testCalibrationUnits_add32_add1444_withlog1,testCalibrationUnits_add32_add1444_withlog2,testCalibrationUnits_add32_add1391_withlog0,testCalibrationUnits_add32_add1391_withlog1,testCalibrationUnits_add32_add1391_withlog2,testCalibrationUnits_add32_add1567_withlog0,testCalibrationUnits_add32_add1567_withlog1,testCalibrationUnits_add32_add1567_withlog2,testCalibrationUnits_add32_add1519_withlog0,testCalibrationUnits_add32_add1519_withlog1,testCalibrationUnits_add32_add1519_withlog2,testCalibrationUnits_add32_add1389_withlog0,testCalibrationUnits_add32_add1389_withlog1,testCalibrationUnits_add32_add1389_withlog2,testCalibrationUnits_add32_add1543_withlog0,testCalibrationUnits_add32_add1543_withlog1,testCalibrationUnits_add32_add1543_withlog2,testCalibrationUnits_add32_add1490_withlog0,testCalibrationUnits_add32_add1490_withlog1,testCalibrationUnits_add32_add1490_withlog2,testCalibrationUnits_add32_add1442_withlog0,testCalibrationUnits_add32_add1442_withlog1,testCalibrationUnits_add32_add1442_withlog2,testCalibrationUnits_add32_add1518_withlog0,testCalibrationUnits_add32_add1518_withlog1,testCalibrationUnits_add32_add1518_withlog2,testCalibrationUnits_add32_add1388_withlog0,testCalibrationUnits_add32_add1388_withlog1,testCalibrationUnits_add32_add1388_withlog2,testCalibrationUnits_add32_add1417_withlog0,testCalibrationUnits_add32_add1417_withlog1,testCalibrationUnits_add32_add1417_withlog2,testCalibrationUnits_add32_add1542_withlog0,testCalibrationUnits_add32_add1542_withlog1,testCalibrationUnits_add32_add1542_withlog2,testCalibrationUnits_add32_add1441_withlog0,testCalibrationUnits_add32_add1441_withlog1,testCalibrationUnits_add32_add1441_withlog2,testCalibrationUnits_add32_add1565_withlog0,testCalibrationUnits_add32_add1565_withlog1,testCalibrationUnits_add32_add1565_withlog2,testCalibrationUnits_add32_add1588_withlog0,testCalibrationUnits_add32_add1588_withlog1,testCalibrationUnits_add32_add1588_withlog2,testCalibrationUnits_add32_add1439_withlog0,testCalibrationUnits_add32_add1439_withlog1,testCalibrationUnits_add32_add1439_withlog2,testCalibrationUnits_add32_add1516_withlog0,testCalibrationUnits_add32_add1516_withlog1,testCalibrationUnits_add32_add1516_withlog2,testCalibrationUnits_add32_add1587_withlog0,testCalibrationUnits_add32_add1587_withlog1,testCalibrationUnits_add32_add1587_withlog2,testCalibrationUnits_add32_add1385_withlog0,testCalibrationUnits_add32_add1385_withlog1,testCalibrationUnits_add32_add1385_withlog2,testCalibrationUnits_add32_add1462_withlog0,testCalibrationUnits_add32_add1462_withlog1,testCalibrationUnits_add32_add1462_withlog2,testCalibrationUnits_add32_add1414_withlog0,testCalibrationUnits_add32_add1414_withlog1,testCalibrationUnits_add32_add1414_withlog2,testCalibrationUnits_add32_add1437_withlog0,testCalibrationUnits_add32_add1437_withlog1,testCalibrationUnits_add32_add1437_withlog2,testCalibrationUnits_add32_add1514_withlog0,testCalibrationUnits_add32_add1514_withlog1,testCalibrationUnits_add32_add1514_withlog2,testCalibrationUnits_add32_add1413_withlog0,testCalibrationUnits_add32_add1413_withlog1,testCalibrationUnits_add32_add1413_withlog2,testCalibrationUnits_add32_add1436_withlog0,testCalibrationUnits_add32_add1436_withlog1,testCalibrationUnits_add32_add1436_withlog2,testCalibrationUnits_add32_add1460_withlog0,testCalibrationUnits_add32_add1460_withlog1,testCalibrationUnits_add32_add1460_withlog2,testCalibrationUnits_add32_add1458_withlog0,testCalibrationUnits_add32_add1458_withlog1,testCalibrationUnits_add32_add1458_withlog2,testCalibrationUnits_add32_add1434_withlog0,testCalibrationUnits_add32_add1434_withlog1,testCalibrationUnits_add32_add1434_withlog2,testCalibrationUnits_add32_add1381_withlog0,testCalibrationUnits_add32_add1381_withlog1,testCalibrationUnits_add32_add1381_withlog2,testCalibrationUnits_add32_add1410_withlog0,testCalibrationUnits_add32_add1410_withlog1,testCalibrationUnits_add32_add1410_withlog2,testCalibrationUnits_add32_add1409_withlog0,testCalibrationUnits_add32_add1409_withlog1,testCalibrationUnits_add32_add1409_withlog2,testCalibrationUnits_add32_add1534_withlog0,testCalibrationUnits_add32_add1534_withlog1,testCalibrationUnits_add32_add1534_withlog2,testCalibrationUnits_add32_add1433_withlog0,testCalibrationUnits_add32_add1433_withlog1,testCalibrationUnits_add32_add1433_withlog2,testCalibrationUnits_add32_add1456_withlog0,testCalibrationUnits_add32_add1456_withlog1,testCalibrationUnits_add32_add1456_withlog2,testCalibrationUnits_add32_add1533_withlog0,testCalibrationUnits_add32_add1533_withlog1,testCalibrationUnits_add32_add1533_withlog2,testCalibrationUnits_add32_add1479_withlog0,testCalibrationUnits_add32_add1479_withlog1,testCalibrationUnits_add32_add1479_withlog2,testCalibrationUnits_add32_add1508_withlog0,testCalibrationUnits_add32_add1508_withlog1,testCalibrationUnits_add32_add1508_withlog2,testCalibrationUnits_add32_add1407_withlog0,testCalibrationUnits_add32_add1407_withlog1,testCalibrationUnits_add32_add1407_withlog2,testCalibrationUnits_add32_add1580_withlog0,testCalibrationUnits_add32_add1580_withlog1,testCalibrationUnits_add32_add1580_withlog2,testCalibrationUnits_add32_add1579_withlog0,testCalibrationUnits_add32_add1579_withlog1,testCalibrationUnits_add32_add1579_withlog2,testCalibrationUnits_add32_add1478_withlog0,testCalibrationUnits_add32_add1478_withlog1,testCalibrationUnits_add32_add1478_withlog2,testCalibrationUnits_add32_add1555_withlog0,testCalibrationUnits_add32_add1555_withlog1,testCalibrationUnits_add32_add1555_withlog2,testCalibrationUnits_add32_add1531_withlog0,testCalibrationUnits_add32_add1531_withlog1,testCalibrationUnits_add32_add1531_withlog2,testCalibrationUnits_add32_add1405_withlog0,testCalibrationUnits_add32_add1405_withlog1,testCalibrationUnits_add32_add1405_withlog2,testCalibrationUnits_add32_add1577_withlog0,testCalibrationUnits_add32_add1577_withlog1,testCalibrationUnits_add32_add1577_withlog2,testCalibrationUnits_add32_add1399_withlog0,testCalibrationUnits_add32_add1399_withlog1,testCalibrationUnits_add32_add1399_withlog2,testCalibrationUnits_add32_add1553_withlog0,testCalibrationUnits_add32_add1553_withlog1,testCalibrationUnits_add32_add1553_withlog2,testCalibrationUnits_add32_add1505_withlog0,testCalibrationUnits_add32_add1505_withlog1,testCalibrationUnits_add32_add1505_withlog2,testCalibrationUnits_add32_mg1592_withlog0(io.scif.img.ImgOpenerTest): null,testCalibrationUnits_add32_mg1592_withlog1(io.scif.img.ImgOpenerTest): null,testCalibrationUnits_add32_mg1592_withlog2(io.scif.img.ImgOpenerTest): null
-[WARNING] Some instrumented test failed!
-[INFO] Generating assertions...
-[INFO] 1 test fail, generating try/catch/fail blocks...
-[INFO] 74 new tests with assertions generated
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/scifio_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/classes/:/home/spirals/danglot/.m2/repository/io/scif/scifio-jai-imageio/1.1.0/scifio-jai-imageio-1.1.0.jar:/home/spirals/danglot/.m2/repository/net/imagej/imagej-common/0.18.1/imagej-common-0.18.1.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-roi/0.4.2/imglib2-roi-0.4.2.jar:/home/spirals/danglot/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar:/home/spirals/danglot/.m2/repository/edu/ucar/udunits/4.3.18/udunits-4.3.18.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2/2.4.1/imglib2-2.4.1.jar:/home/spirals/danglot/.m2/repository/org/scijava/scijava-common/2.49.1/scijava-common-2.49.1.jar:/home/spirals/danglot/.m2/repository/com/googlecode/gentyref/gentyref/1.1.0/gentyref-1.1.0.jar:/home/spirals/danglot/.m2/repository/org/bushe/eventbus/1.4/eventbus-1.4.jar:/home/spirals/danglot/.m2/repository/org/mapdb/mapdb/1.0.3/mapdb-1.0.3.jar:/home/spirals/danglot/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner io.scif.img.ImgOpenerTest testCalibrationUnits_add32_add1494:testCalibrationUnits_add32_add1385:testCalibrationUnits_add32_add1518:testCalibrationUnits_add32_add1409:testCalibrationUnits_add32_add1522:testCalibrationUnits_add32_add1413:testCalibrationUnits_add32_mg1592:testCalibrationUnits_add32_add1519:testCalibrationUnits_add32_add1410:testCalibrationUnits_add32_add1523:testCalibrationUnits_add32_add1414:testCalibrationUnits_add32_add1526:testCalibrationUnits_add32_add1417:testCalibrationUnits_add32_add1393:testCalibrationUnits_add32_add1502:testCalibrationUnits_add32_add1399:testCalibrationUnits_add32_add1508:testCalibrationUnits_add32_add1396:testCalibrationUnits_add32_add1505:testCalibrationUnits_add32_add1550:testCalibrationUnits_add32_add1441:testCalibrationUnits_add32_add1542:testCalibrationUnits_add32_add1433:testCalibrationUnits_add32_add1567:testCalibrationUnits_add32_add1458:testCalibrationUnits_add32_add1579:testCalibrationUnits_add32_add1470:testCalibrationUnits_add32_add1551:testCalibrationUnits_add32_add1442:testCalibrationUnits_add32_add1545:testCalibrationUnits_add32_add1436:testCalibrationUnits_add32_add1548:testCalibrationUnits_add32_add1439:testCalibrationUnits_add32_add1571:testCalibrationUnits_add32_add1462:testCalibrationUnits_add32_add1553:testCalibrationUnits_add32_add1444:testCalibrationUnits_add32_add1543:testCalibrationUnits_add32_add1434:testCalibrationUnits_add32_add1565:testCalibrationUnits_add32_add1456:testCalibrationUnits_add32_add1569:testCalibrationUnits_add32_add1460:testCalibrationUnits_add32_add1555:testCalibrationUnits_add32_add1446:testCalibrationUnits_add32_add1580:testCalibrationUnits_add32_add1471:testCalibrationUnits_add32_add1546:testCalibrationUnits_add32_add1437:testCalibrationUnits_add32_add1533:testCalibrationUnits_add32_add1424:testCalibrationUnits_add32_add1577:testCalibrationUnits_add32_add1468:testCalibrationUnits_add32_add1497:testCalibrationUnits_add32_add1388:testCalibrationUnits_add32_add1490:testCalibrationUnits_add32_add1381:testCalibrationUnits_add32_add1514:testCalibrationUnits_add32_add1405:testCalibrationUnits_add32_add1516:testCalibrationUnits_add32_add1407:testCalibrationUnits_add32_add1391:testCalibrationUnits_add32_add1500:testCalibrationUnits_add32_add1534:testCalibrationUnits_add32_add1425:testCalibrationUnits_add32_add1531:testCalibrationUnits_add32_add1422:testCalibrationUnits_add32_add1498:testCalibrationUnits_add32_add1389:testCalibrationUnits_add32_add1587:testCalibrationUnits_add32_add1478:testCalibrationUnits_add32_add1588:testCalibrationUnits_add32_add1479:testCalibrationUnits_add32_mg1591_failAssert23
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
-Warning: could not load class 'eu.stamp_project.compare.ObjectLog'; skipping
-java.lang.RuntimeException: Unknown tag 18
-	at org.scijava.annotations.ByteCodeAnalyzer.getConstantPoolOffsets(ByteCodeAnalyzer.java:125)
-	at org.scijava.annotations.ByteCodeAnalyzer.<init>(ByteCodeAnalyzer.java:59)
-	at org.scijava.annotations.ByteCodeAnalyzer.getAnnotations(ByteCodeAnalyzer.java:349)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:92)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.EclipseHelper.index(EclipseHelper.java:228)
-	at org.scijava.annotations.EclipseHelper.maybeIndex(EclipseHelper.java:216)
-	at org.scijava.annotations.EclipseHelper.updateAnnotationIndex(EclipseHelper.java:155)
-	at org.scijava.annotations.Index.load(Index.java:88)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:75)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:49)
-	at org.scijava.plugin.PluginIndex.discover(PluginIndex.java:107)
-	at org.scijava.Context.<init>(Context.java:261)
-	at org.scijava.Context.<init>(Context.java:224)
-	at org.scijava.Context.<init>(Context.java:163)
-	at org.scijava.Context.<init>(Context.java:149)
-	at io.scif.img.AbstractImgIOComponent.<init>(AbstractImgIOComponent.java:57)
-	at io.scif.img.ImgOpener.<init>(ImgOpener.java:94)
-	at io.scif.img.ImgOpenerTest.<init>(ImgOpenerTest.java:34)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:138)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:114)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.main(TestRunner.java:64)
-Warning: could not load class 'eu.stamp_project.compare.Observation'; skipping
-java.lang.RuntimeException: Unknown tag 18
-	at org.scijava.annotations.ByteCodeAnalyzer.getConstantPoolOffsets(ByteCodeAnalyzer.java:125)
-	at org.scijava.annotations.ByteCodeAnalyzer.<init>(ByteCodeAnalyzer.java:59)
-	at org.scijava.annotations.ByteCodeAnalyzer.getAnnotations(ByteCodeAnalyzer.java:349)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:92)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.EclipseHelper.index(EclipseHelper.java:228)
-	at org.scijava.annotations.EclipseHelper.maybeIndex(EclipseHelper.java:216)
-	at org.scijava.annotations.EclipseHelper.updateAnnotationIndex(EclipseHelper.java:155)
-	at org.scijava.annotations.Index.load(Index.java:88)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:75)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:49)
-	at org.scijava.plugin.PluginIndex.discover(PluginIndex.java:107)
-	at org.scijava.Context.<init>(Context.java:261)
-	at org.scijava.Context.<init>(Context.java:224)
-	at org.scijava.Context.<init>(Context.java:163)
-	at org.scijava.Context.<init>(Context.java:149)
-	at io.scif.img.AbstractImgIOComponent.<init>(AbstractImgIOComponent.java:57)
-	at io.scif.img.ImgOpener.<init>(ImgOpener.java:94)
-	at io.scif.img.ImgOpenerTest.<init>(ImgOpenerTest.java:34)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:138)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:114)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.main(TestRunner.java:64)
-Loading /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testCalibrationUnits_add32_mg1591_failAssert23,testCalibrationUnits_add32_mg1592,testCalibrationUnits_add32_add1381,testCalibrationUnits_add32_add1385,testCalibrationUnits_add32_add1388,testCalibrationUnits_add32_add1389,testCalibrationUnits_add32_add1391,testCalibrationUnits_add32_add1393,testCalibrationUnits_add32_add1396,testCalibrationUnits_add32_add1399,testCalibrationUnits_add32_add1405,testCalibrationUnits_add32_add1407,testCalibrationUnits_add32_add1409,testCalibrationUnits_add32_add1410,testCalibrationUnits_add32_add1413,testCalibrationUnits_add32_add1414,testCalibrationUnits_add32_add1417,testCalibrationUnits_add32_add1422,testCalibrationUnits_add32_add1424,testCalibrationUnits_add32_add1425,testCalibrationUnits_add32_add1433,testCalibrationUnits_add32_add1434,testCalibrationUnits_add32_add1436,testCalibrationUnits_add32_add1437,testCalibrationUnits_add32_add1439,testCalibrationUnits_add32_add1441,testCalibrationUnits_add32_add1442,testCalibrationUnits_add32_add1444,testCalibrationUnits_add32_add1446,testCalibrationUnits_add32_add1456,testCalibrationUnits_add32_add1458,testCalibrationUnits_add32_add1460,testCalibrationUnits_add32_add1462,testCalibrationUnits_add32_add1468,testCalibrationUnits_add32_add1470,testCalibrationUnits_add32_add1471,testCalibrationUnits_add32_add1478,testCalibrationUnits_add32_add1479,testCalibrationUnits_add32_add1490,testCalibrationUnits_add32_add1494,testCalibrationUnits_add32_add1497,testCalibrationUnits_add32_add1498,testCalibrationUnits_add32_add1500,testCalibrationUnits_add32_add1502,testCalibrationUnits_add32_add1505,testCalibrationUnits_add32_add1508,testCalibrationUnits_add32_add1514,testCalibrationUnits_add32_add1516,testCalibrationUnits_add32_add1518,testCalibrationUnits_add32_add1519,testCalibrationUnits_add32_add1522,testCalibrationUnits_add32_add1523,testCalibrationUnits_add32_add1526,testCalibrationUnits_add32_add1531,testCalibrationUnits_add32_add1533,testCalibrationUnits_add32_add1534,testCalibrationUnits_add32_add1542,testCalibrationUnits_add32_add1543,testCalibrationUnits_add32_add1545,testCalibrationUnits_add32_add1546,testCalibrationUnits_add32_add1548,testCalibrationUnits_add32_add1550,testCalibrationUnits_add32_add1551,testCalibrationUnits_add32_add1553,testCalibrationUnits_add32_add1555,testCalibrationUnits_add32_add1565,testCalibrationUnits_add32_add1567,testCalibrationUnits_add32_add1569,testCalibrationUnits_add32_add1571,testCalibrationUnits_add32_add1577,testCalibrationUnits_add32_add1579,testCalibrationUnits_add32_add1580,testCalibrationUnits_add32_add1587,testCalibrationUnits_add32_add1588
-[INFO] Assertion amplification: 74 test method(s) has been successfully amplified.
-[WARN] 2018-09-22 16:05:46 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/scifio/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-22 16:05:46 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/scifio/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-22 16:05:46 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/scifio/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/scifio/target/classes/:/tmp/icst-2019/september-2018/dataset/scifio/target/test-classes/:/home/spirals/danglot/.m2/repository/io/scif/scifio-jai-imageio/1.1.0/scifio-jai-imageio-1.1.0.jar:/home/spirals/danglot/.m2/repository/net/imagej/imagej-common/0.18.1/imagej-common-0.18.1.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2-roi/0.4.2/imglib2-roi-0.4.2.jar:/home/spirals/danglot/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar:/home/spirals/danglot/.m2/repository/edu/ucar/udunits/4.3.18/udunits-4.3.18.jar:/home/spirals/danglot/.m2/repository/net/imglib2/imglib2/2.4.1/imglib2-2.4.1.jar:/home/spirals/danglot/.m2/repository/org/scijava/scijava-common/2.49.1/scijava-common-2.49.1.jar:/home/spirals/danglot/.m2/repository/com/googlecode/gentyref/gentyref/1.1.0/gentyref-1.1.0.jar:/home/spirals/danglot/.m2/repository/org/bushe/eventbus/1.4/eventbus-1.4.jar:/home/spirals/danglot/.m2/repository/org/mapdb/mapdb/1.0.3/mapdb-1.0.3.jar:/home/spirals/danglot/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/scifio/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner io.scif.img.ImgOpenerTest testCalibrationUnits_add32_add1494:testCalibrationUnits_add32_add1385:testCalibrationUnits_add32_add1518:testCalibrationUnits_add32_add1409:testCalibrationUnits_add32_add1522:testCalibrationUnits_add32_add1413:testCalibrationUnits_add32_mg1592:testCalibrationUnits_add32_add1519:testCalibrationUnits_add32_add1410:testCalibrationUnits_add32_add1523:testCalibrationUnits_add32_add1414:testCalibrationUnits_add32_add1526:testCalibrationUnits_add32_add1417:testCalibrationUnits_add32_add1393:testCalibrationUnits_add32_add1502:testCalibrationUnits_add32_add1399:testCalibrationUnits_add32_add1508:testCalibrationUnits_add32_add1396:testCalibrationUnits_add32_add1505:testCalibrationUnits_add32_add1550:testCalibrationUnits_add32_add1441:testCalibrationUnits_add32_add1542:testCalibrationUnits_add32_add1433:testCalibrationUnits_add32_add1567:testCalibrationUnits_add32_add1458:testCalibrationUnits_add32_add1579:testCalibrationUnits_add32_add1470:testCalibrationUnits_add32_add1551:testCalibrationUnits_add32_add1442:testCalibrationUnits_add32_add1545:testCalibrationUnits_add32_add1436:testCalibrationUnits_add32_add1548:testCalibrationUnits_add32_add1439:testCalibrationUnits_add32_add1571:testCalibrationUnits_add32_add1462:testCalibrationUnits_add32_add1553:testCalibrationUnits_add32_add1444:testCalibrationUnits_add32_add1543:testCalibrationUnits_add32_add1434:testCalibrationUnits_add32_add1565:testCalibrationUnits_add32_add1456:testCalibrationUnits_add32_add1569:testCalibrationUnits_add32_add1460:testCalibrationUnits_add32_add1555:testCalibrationUnits_add32_add1446:testCalibrationUnits_add32_add1580:testCalibrationUnits_add32_add1471:testCalibrationUnits_add32_add1546:testCalibrationUnits_add32_add1437:testCalibrationUnits_add32_add1533:testCalibrationUnits_add32_add1424:testCalibrationUnits_add32_add1577:testCalibrationUnits_add32_add1468:testCalibrationUnits_add32_add1497:testCalibrationUnits_add32_add1388:testCalibrationUnits_add32_add1490:testCalibrationUnits_add32_add1381:testCalibrationUnits_add32_add1514:testCalibrationUnits_add32_add1405:testCalibrationUnits_add32_add1516:testCalibrationUnits_add32_add1407:testCalibrationUnits_add32_add1391:testCalibrationUnits_add32_add1500:testCalibrationUnits_add32_add1534:testCalibrationUnits_add32_add1425:testCalibrationUnits_add32_add1531:testCalibrationUnits_add32_add1422:testCalibrationUnits_add32_add1498:testCalibrationUnits_add32_add1389:testCalibrationUnits_add32_add1587:testCalibrationUnits_add32_add1478:testCalibrationUnits_add32_add1588:testCalibrationUnits_add32_add1479:testCalibrationUnits_add32_mg1591_failAssert23
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
-Warning: could not load class 'eu.stamp_project.compare.ObjectLog'; skipping
-java.lang.RuntimeException: Unknown tag 18
-	at org.scijava.annotations.ByteCodeAnalyzer.getConstantPoolOffsets(ByteCodeAnalyzer.java:125)
-	at org.scijava.annotations.ByteCodeAnalyzer.<init>(ByteCodeAnalyzer.java:59)
-	at org.scijava.annotations.ByteCodeAnalyzer.getAnnotations(ByteCodeAnalyzer.java:349)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:92)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.EclipseHelper.index(EclipseHelper.java:228)
-	at org.scijava.annotations.EclipseHelper.maybeIndex(EclipseHelper.java:216)
-	at org.scijava.annotations.EclipseHelper.updateAnnotationIndex(EclipseHelper.java:155)
-	at org.scijava.annotations.Index.load(Index.java:88)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:75)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:49)
-	at org.scijava.plugin.PluginIndex.discover(PluginIndex.java:107)
-	at org.scijava.Context.<init>(Context.java:261)
-	at org.scijava.Context.<init>(Context.java:224)
-	at org.scijava.Context.<init>(Context.java:163)
-	at org.scijava.Context.<init>(Context.java:149)
-	at io.scif.img.AbstractImgIOComponent.<init>(AbstractImgIOComponent.java:57)
-	at io.scif.img.ImgOpener.<init>(ImgOpener.java:94)
-	at io.scif.img.ImgOpenerTest.<init>(ImgOpenerTest.java:5)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:138)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:114)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.main(TestRunner.java:64)
-Warning: could not load class 'eu.stamp_project.compare.Observation'; skipping
-java.lang.RuntimeException: Unknown tag 18
-	at org.scijava.annotations.ByteCodeAnalyzer.getConstantPoolOffsets(ByteCodeAnalyzer.java:125)
-	at org.scijava.annotations.ByteCodeAnalyzer.<init>(ByteCodeAnalyzer.java:59)
-	at org.scijava.annotations.ByteCodeAnalyzer.getAnnotations(ByteCodeAnalyzer.java:349)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:92)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.DirectoryIndexer.discoverAnnotations(DirectoryIndexer.java:81)
-	at org.scijava.annotations.EclipseHelper.index(EclipseHelper.java:228)
-	at org.scijava.annotations.EclipseHelper.maybeIndex(EclipseHelper.java:216)
-	at org.scijava.annotations.EclipseHelper.updateAnnotationIndex(EclipseHelper.java:155)
-	at org.scijava.annotations.Index.load(Index.java:88)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:75)
-	at org.scijava.plugin.DefaultPluginFinder.findPlugins(DefaultPluginFinder.java:49)
-	at org.scijava.plugin.PluginIndex.discover(PluginIndex.java:107)
-	at org.scijava.Context.<init>(Context.java:261)
-	at org.scijava.Context.<init>(Context.java:224)
-	at org.scijava.Context.<init>(Context.java:163)
-	at org.scijava.Context.<init>(Context.java:149)
-	at io.scif.img.AbstractImgIOComponent.<init>(AbstractImgIOComponent.java:57)
-	at io.scif.img.ImgOpener.<init>(ImgOpener.java:94)
-	at io.scif.img.ImgOpenerTest.<init>(ImgOpenerTest.java:5)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:138)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.run(TestRunner.java:114)
-	at eu.stamp_project.testrunner.runner.test.TestRunner.main(TestRunner.java:64)
-Loading /tmp/icst-2019/september-2018/dataset/scifio_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testCalibrationUnits_add32_mg1591_failAssert23,testCalibrationUnits_add32_mg1592,testCalibrationUnits_add32_add1381,testCalibrationUnits_add32_add1385,testCalibrationUnits_add32_add1388,testCalibrationUnits_add32_add1389,testCalibrationUnits_add32_add1391,testCalibrationUnits_add32_add1393,testCalibrationUnits_add32_add1396,testCalibrationUnits_add32_add1399,testCalibrationUnits_add32_add1405,testCalibrationUnits_add32_add1407,testCalibrationUnits_add32_add1409,testCalibrationUnits_add32_add1410,testCalibrationUnits_add32_add1413,testCalibrationUnits_add32_add1414,testCalibrationUnits_add32_add1417,testCalibrationUnits_add32_add1422,testCalibrationUnits_add32_add1424,testCalibrationUnits_add32_add1425,testCalibrationUnits_add32_add1433,testCalibrationUnits_add32_add1434,testCalibrationUnits_add32_add1436,testCalibrationUnits_add32_add1437,testCalibrationUnits_add32_add1439,testCalibrationUnits_add32_add1441,testCalibrationUnits_add32_add1442,testCalibrationUnits_add32_add1444,testCalibrationUnits_add32_add1446,testCalibrationUnits_add32_add1456,testCalibrationUnits_add32_add1458,testCalibrationUnits_add32_add1460,testCalibrationUnits_add32_add1462,testCalibrationUnits_add32_add1468,testCalibrationUnits_add32_add1470,testCalibrationUnits_add32_add1471,testCalibrationUnits_add32_add1478,testCalibrationUnits_add32_add1479,testCalibrationUnits_add32_add1490,testCalibrationUnits_add32_add1494,testCalibrationUnits_add32_add1497,testCalibrationUnits_add32_add1498,testCalibrationUnits_add32_add1500,testCalibrationUnits_add32_add1502,testCalibrationUnits_add32_add1505,testCalibrationUnits_add32_add1508,testCalibrationUnits_add32_add1514,testCalibrationUnits_add32_add1516,testCalibrationUnits_add32_add1518,testCalibrationUnits_add32_add1519,testCalibrationUnits_add32_add1522,testCalibrationUnits_add32_add1523,testCalibrationUnits_add32_add1526,testCalibrationUnits_add32_add1531,testCalibrationUnits_add32_add1533,testCalibrationUnits_add32_add1534,testCalibrationUnits_add32_add1542,testCalibrationUnits_add32_add1543,testCalibrationUnits_add32_add1545,testCalibrationUnits_add32_add1546,testCalibrationUnits_add32_add1548,testCalibrationUnits_add32_add1550,testCalibrationUnits_add32_add1551,testCalibrationUnits_add32_add1553,testCalibrationUnits_add32_add1555,testCalibrationUnits_add32_add1565,testCalibrationUnits_add32_add1567,testCalibrationUnits_add32_add1569,testCalibrationUnits_add32_add1571,testCalibrationUnits_add32_add1577,testCalibrationUnits_add32_add1579,testCalibrationUnits_add32_add1580,testCalibrationUnits_add32_add1587,testCalibrationUnits_add32_add1588
-[INFO] 0 amplified test methods has been selected to be kept.
-[INFO] iteration 2 / 3
-[INFO] 74 tests selected to be amplified over 74 available tests
-[INFO] Amplification of inputs...
- 66% |================================= ]/ 31% |================================= ]\ 90% |============================================= ]\ 44% |============================================= ]/ 16% |============================================= ]| 81% |============================================= ]| 28% |============================================= ]/  6% |============================================= ]/ 29% |============================================= ]- 45% |============================================= ]- 32% |============================================= ]| 82% |============================================= ]/  8% |============================================= ]- 91% |============================================= ]| 67% |============================================= ]- 17% |============================================= ]/ 25% |============================================= ]\ 48% |============================================= ]| 85% |============================================= ]\ 35% |============================================= ]- 10% |============================================= ]| 63% |============================================= ]\ 93% |============================================== ]/ 13% |============================================== ]- 27% |============================================== ]| 50% |============================================== ]/ 86% |============================================== ]| 12% |============================================== ]/ 36% |============================================== ]\ 87% |============================================== ]/ 64% |============================================== ]| 14% |============================================== ]\  4% |============================================== ]\ 47% |============================================== ]\ 83% |============================================== ]-  9% |============================================== ]\ 33% |============================================== ]/ 89% |============================================== ]- 71% |============================================== ]/ 21% |============================================== ]|  1% |============================================== ]/  5% |============================================== ]| 40% |============================================== ]- 78% |============================================== ]- 37% |============================================== ]| 97% |================================================ ]| 72% |================================================ ]- 22% |================================================ ]/  2% |================================================ ]- 41% |================================================ ]\ 79% |================================================ ]\ 94% |================================================ ]- 39% |================================================ ]/ 98% |================================================= ]/ 74% |================================================= ]\ 24% |================================================= ]- 18% |================================================= ]- 43% |================================================= ]| 75% |================================================= ]| 95% |================================================= ]\ 56% |================================================= ]-100% |================================================== ]-
- 60% |============================== ]/ 54% |============================== ]| 51% |============================== ]- 59 68% |================================== ]\[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 06:53 h
-[INFO] Finished at: 2018-09-22T22:40:02+02:00
-[INFO] ------------------------------------------------------------------------
-[ERROR] OutOfMemoryError: Java heap space -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/OutOfMemoryError
