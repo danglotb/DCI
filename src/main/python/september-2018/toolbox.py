@@ -24,7 +24,40 @@ suffix_parent = "_parent"
 name_of_csv_with_list_of_test_that_execute_the_changes = "testsThatExecuteTheChanges"
 
 
-projects = ['commons-cli', 'commons-io', 'commons-lang', 'gson', 'jsoup', 'xwiki-commons']
+projects = [
+    'commons-cli',
+    'commons-io',
+    'commons-lang',
+    'gson',
+    'jsoup',
+    'xwiki-commons'
+]
+
+new_projects = [
+    'core',
+    'commons-codec',
+    'commons-collection',
+    'commons-io',
+    'commons-lang',
+    'gson',
+    'jaxen',
+    'joda-time'
+    'jsoup',
+    'xwiki-commons'
+]
+
+new_owners = [
+    'authzforce',
+    'apache',
+    'apache',
+    'apache',
+    'apache',
+    'google',
+    'jaxen-xpath',
+    'JodaOrg',
+    'jhy',
+    'xwiki'
+]
 
 # input: commit from json array, and the array itself
 def get_output_folder_for_commit(commit, commits):

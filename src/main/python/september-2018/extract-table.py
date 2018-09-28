@@ -71,7 +71,7 @@ def build_table(projects):
             print '\\rowcolor[HTML]{EFEFEF}'
         gray = not gray
         print_line(
-            project,
+            '\\textsc{' + project + '}',
             nb_test_to_be_amplified,
             nb_test_amplified[0],
             nb_success[0],
@@ -86,7 +86,7 @@ def print_line(id, number_test_to_be_amplified, number_aampl, success_mark_aampl
                success_mark_iampl,
                time_iampl):
     print "\t{}\t&\t{}\t&\t{}\t&\t{}\t&\t{}\t&\t{}\t&\t{}\t&\t{}\\\\".format(
-        '\\textsc{' + id + '}',
+        id,
         number_test_to_be_amplified,
         number_aampl,
         success_mark_aampl,
