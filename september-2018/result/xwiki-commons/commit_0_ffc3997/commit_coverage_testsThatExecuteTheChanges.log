@@ -78,7 +78,7 @@ Goal prefix is specified as: 'xar'. Maven currently expects it to be 'xwiki-comm
 [INFO] -------------------------------------------------------
 [INFO] Running org.xwiki.tool.xar.FormatMojoTest
 [ERROR] Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.359 s <<< FAILURE! - in org.xwiki.tool.xar.FormatMojoTest
-[ERROR] formatSpecialContentFailingWithXercesFromJDK8  Time elapsed: 0.337 s  <<< FAILURE!
+[ERROR] formatSpecialContentFailingWithXercesFromJDK8  Time elapsed: 0.331 s  <<< FAILURE!
 org.junit.ComparisonFailure: 
 expected:<...nel testo|{{{Questo [? un URL: http://xwiki.org}}}|Questo ? un URL: http://xwiki.org
 |Link ad un URL|{{{[http://xwiki.org]}}}|[[http://xwiki.org]]
@@ -359,8 +359,8 @@ Il formato completo di un link ?? **##[etichetta {&gt; o |}] (risorsa) [@interWi
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 22.863 s
-[INFO] Finished at: 2018-09-27T19:34:16+02:00
+[INFO] Total time: 20.887 s
+[INFO] Finished at: 2018-09-28T11:40:40+02:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project xwiki-commons-tool-xar-plugin: There are test failures.
 [ERROR] 
@@ -376,6 +376,37 @@ Il formato completo di un link ?? **##[etichetta {&gt; o |}] (risorsa) [@interWi
 ERROR: A problem was encountered while rendering the report: Clover registry file "/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/target/clover/clover.db" does not exist, cannot be read or is a directory. 
 Please ensure Clover has instrumented your source files. 
 You may need to remove existing .class files for this to occur.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/VerifyMojo.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/VerifyMojo.java
+[info] org.xwiki.tool.xar.VerifyMojo:197 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:198 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:226 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:227 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:228 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:231 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:232 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:235 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:236 is modified.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/internal/XWikiDocument.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/internal/XWikiDocument.java
+[info] org.xwiki.tool.xar.internal.XWikiDocument:174 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:234 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:236 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:237 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:241 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:185 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:209 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:210 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:211 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:232 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:246 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:235 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:249 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:259 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:260 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:504 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:512 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:520 is modified.
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_0_ffc3997/commit_coverage_testsThatExecuteTheChanges.csv ...
 [INFO] 
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_0_ffc3997/commit_coverage_testsThatExecuteTheChanges_coverage.csv
@@ -384,10 +415,10 @@ You may need to remove existing .class files for this to occur.
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 33.274 s
-[INFO] Finished at: 2018-09-27T19:34:20+02:00
+[INFO] Total time: 31.183 s
+[INFO] Finished at: 2018-09-28T11:40:44+02:00
 [INFO] ------------------------------------------------------------------------
-[INFO] 2018-09-27 19:34:20 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
-[INFO] 2018-09-27 19:34:21 RepositoriesSetter - Checkout ced26356e8ee384967b8349b7dbf461166422a64 revision...
-[INFO] 2018-09-27 19:34:22 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
-[INFO] 2018-09-27 19:34:23 RepositoriesSetter - Checkout 0c0484e10a816074d23588c7122447d850f5fb4c revision...
+[INFO] 2018-09-28 11:40:45 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-09-28 11:40:46 RepositoriesSetter - Checkout ced26356e8ee384967b8349b7dbf461166422a64 revision...
+[INFO] 2018-09-28 11:40:47 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-09-28 11:40:48 RepositoriesSetter - Checkout 0c0484e10a816074d23588c7122447d850f5fb4c revision...

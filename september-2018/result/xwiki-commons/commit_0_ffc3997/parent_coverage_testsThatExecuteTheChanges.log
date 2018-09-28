@@ -76,8 +76,8 @@ Goal prefix is specified as: 'xar'. Maven currently expects it to be 'xwiki-comm
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.xwiki.tool.xar.FormatMojoTest
-[ERROR] Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.364 s <<< FAILURE! - in org.xwiki.tool.xar.FormatMojoTest
-[ERROR] formatSpecialContentFailingWithXercesFromJDK8  Time elapsed: 0.333 s  <<< FAILURE!
+[ERROR] Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.365 s <<< FAILURE! - in org.xwiki.tool.xar.FormatMojoTest
+[ERROR] formatSpecialContentFailingWithXercesFromJDK8  Time elapsed: 0.342 s  <<< FAILURE!
 org.junit.ComparisonFailure: 
 expected:<...nel testo|{{{Questo [? un URL: http://xwiki.org}}}|Questo ? un URL: http://xwiki.org
 |Link ad un URL|{{{[http://xwiki.org]}}}|[[http://xwiki.org]]
@@ -236,7 +236,7 @@ Il formato completo di un link ?? **##[etichetta {&gt; o |}] (risorsa) [@interWi
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
 
 [INFO] Running org.xwiki.tool.xar.XWikiDocumentTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.xwiki.tool.xar.XWikiDocumentTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.xwiki.tool.xar.XWikiDocumentTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -358,8 +358,8 @@ Il formato completo di un link ?? **##[etichetta {&gt; o |}] (risorsa) [@interWi
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 22.809 s
-[INFO] Finished at: 2018-09-27T19:33:39+02:00
+[INFO] Total time: 21.650 s
+[INFO] Finished at: 2018-09-28T11:40:06+02:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project xwiki-commons-tool-xar-plugin: There are test failures.
 [ERROR] 
@@ -375,6 +375,33 @@ Il formato completo di un link ?? **##[etichetta {&gt; o |}] (risorsa) [@interWi
 ERROR: A problem was encountered while rendering the report: Clover registry file "/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/target/clover/clover.db" does not exist, cannot be read or is a directory. 
 Please ensure Clover has instrumented your source files. 
 You may need to remove existing .class files for this to occur.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/VerifyMojo.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/VerifyMojo.java
+[info] org.xwiki.tool.xar.VerifyMojo:226 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:197 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:227 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:231 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:235 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:198 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:228 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:232 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:236 is modified.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/internal/XWikiDocument.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/internal/XWikiDocument.java
+[info] org.xwiki.tool.xar.internal.XWikiDocument:209 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:210 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:211 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:232 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:234 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:174 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:249 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:259 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:260 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:504 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:512 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:520 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:188 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:173 is modified.
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_0_ffc3997/parent_coverage_testsThatExecuteTheChanges.csv ...
 [INFO] 
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_0_ffc3997/parent_coverage_testsThatExecuteTheChanges_coverage.csv
@@ -383,6 +410,6 @@ You may need to remove existing .class files for this to occur.
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 33.441 s
-[INFO] Finished at: 2018-09-27T19:33:43+02:00
+[INFO] Total time: 31.965 s
+[INFO] Finished at: 2018-09-28T11:40:10+02:00
 [INFO] ------------------------------------------------------------------------

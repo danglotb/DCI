@@ -42,7 +42,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 20 files (2 packages).
-[INFO] Elapsed time = 0.877 secs. (22.805 files/sec, 2,148.233 srclines/sec)
+[INFO] Elapsed time = 0.811 secs. (24.661 files/sec, 2,323.058 srclines/sec)
 [INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [INFO] Clover free edition.
@@ -50,7 +50,7 @@
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 1 file (1 package).
 [INFO] 6 test methods detected.
-[INFO] Elapsed time = 0.108 secs. (9.259 files/sec, 3,305.556 srclines/sec)
+[INFO] Elapsed time = 0.106 secs. (9.434 files/sec, 3,367.925 srclines/sec)
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-diff-api ---
 [INFO] 
@@ -97,7 +97,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.xwiki.diff.internal.DefaultDiffManagerTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.689 s - in org.xwiki.diff.internal.DefaultDiffManagerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.697 s - in org.xwiki.diff.internal.DefaultDiffManagerTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -106,11 +106,17 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 19.887 s
-[INFO] Finished at: 2018-09-27T20:42:10+02:00
+[INFO] Total time: 18.976 s
+[INFO] Finished at: 2018-09-28T12:45:42+02:00
 [INFO] ------------------------------------------------------------------------
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/clover/report'
-Done. Processed 2 packages in 2092ms (1046ms per package).
+Done. Processed 2 packages in 2064ms (1032ms per package).
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/src/main/java/org/xwiki/diff/internal/DefaultDiffManager.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/src/main/java/org/xwiki/diff/internal/DefaultDiffManager.java
+[info] org.xwiki.diff.internal.DefaultDiffManager:225 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManager:225 covered.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/src/test/java/org/xwiki/diff/internal/DefaultDiffManagerTest.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/src/test/java/org/xwiki/diff/internal/DefaultDiffManagerTest.java
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_10_548ddb9/commit_coverage_testsThatExecuteTheChanges.csv ...
 [INFO] org.xwiki.diff.internal.DefaultDiffManagerTest;testMergeCharList
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_10_548ddb9/commit_coverage_testsThatExecuteTheChanges_coverage.csv
@@ -121,10 +127,10 @@ Done. Processed 2 packages in 2092ms (1046ms per package).
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 33.961 s
-[INFO] Finished at: 2018-09-27T20:42:17+02:00
+[INFO] Total time: 32.722 s
+[INFO] Finished at: 2018-09-28T12:45:50+02:00
 [INFO] ------------------------------------------------------------------------
-[INFO] 2018-09-27 20:42:18 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
-[INFO] 2018-09-27 20:42:19 RepositoriesSetter - Checkout 805b09213e010ad7dfa6aba426cef34c67eac881 revision...
-[INFO] 2018-09-27 20:42:20 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
-[INFO] 2018-09-27 20:42:20 RepositoriesSetter - Checkout b2c174a7da7d41b9149a5237ac5bfd27e19dcc72 revision...
+[INFO] 2018-09-28 12:45:51 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-09-28 12:45:52 RepositoriesSetter - Checkout 805b09213e010ad7dfa6aba426cef34c67eac881 revision...
+[INFO] 2018-09-28 12:45:52 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-09-28 12:45:53 RepositoriesSetter - Checkout b2c174a7da7d41b9149a5237ac5bfd27e19dcc72 revision...

@@ -42,7 +42,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 22 files (1 package).
-[INFO] Elapsed time = 1.185 secs. (18.565 files/sec, 4,823.629 srclines/sec)
+[INFO] Elapsed time = 1.171 secs. (18.787 files/sec, 4,881.298 srclines/sec)
 [INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [INFO] Clover free edition.
@@ -50,7 +50,7 @@
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 24 files (2 packages).
 [INFO] 241 test methods detected.
-[INFO] Elapsed time = 1.132 secs. (21.201 files/sec, 4,151.943 srclines/sec)
+[INFO] Elapsed time = 1.296 secs. (18.519 files/sec, 3,626.543 srclines/sec)
 [INFO] 
 [INFO] --- maven-antrun-plugin:1.3:run (javadoc.resources) @ commons-cli ---
 [INFO] Executing tasks
@@ -87,33 +87,33 @@
  T E S T S
 -------------------------------------------------------
 Running org.apache.commons.cli.PosixParserTest
-Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.377 sec
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.37 sec
 Running org.apache.commons.cli.BugsTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
-Running org.apache.commons.cli.ValueTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec
 Running org.apache.commons.cli.bug.BugCLI13Test
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.apache.commons.cli.ValueTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
 Running org.apache.commons.cli.bug.BugCLI18Test
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running org.apache.commons.cli.OptionTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
 Running org.apache.commons.cli.ValuesTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
 Running org.apache.commons.cli.UtilTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
 Running org.apache.commons.cli.OptionsTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
 Running org.apache.commons.cli.HelpFormatterTest
 Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec
 Running org.apache.commons.cli.OptionBuilderTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
 Running org.apache.commons.cli.GnuParserTest
-Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 sec
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec
 Running org.apache.commons.cli.bug.BugCLI148Test
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running org.apache.commons.cli.BasicParserTest
-Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec
 Running org.apache.commons.cli.bug.BugCLI162Test
 usage: app
  -h,--help   This is
@@ -167,42 +167,42 @@ usage: org.apache.commons.cli.bug.BugCLI162Test
  -s,--sql <arg>              Runs SQL or {call stored_procedure(?, ?)} or
                              {?=call function(?, ?)}
  -t,--printStack             Prints stack traces on errors
-    --trim <arg>             Trims leading and trailing spaces from alulsage:
-
-       org.apache.comm 
-                              o n s . c lcio.lbuumgn. Bvuagl
-ues. Column XML   n a m e s  CcLaIn1 6b2eT
-est
-Header
--x,--extralongarg
- This description is
- Long.
-Footer
-
+    --trim <arg>             Trims leading and trailing spaces from all
+                             column values. Column XML names can be
                              optionally specified to set which columns to
                              trim.
  -u,--user <arg>             A database user name
  -w,--outfile <arg>          Writes the SQL output to the given file
  -y,--paramTypes <arg>       Parameter types from java.sql.Types. -y and
                              -Y are mutually exclusive. Example: -y "-10
-                             12"
+                 usage : 
+           1 2 " 
+   org.apache.comm
+       ons.cli.bug.Bug
+       CLI162Test
+Header
+-x,--extralongarg
+ This description is
+ Long.
+Footer
+
  -Y,--paramTypeNames <arg>   Parameter java.sql.Types names. -y and -Y are
                              mutually exclusive. Example: -Y "CURSOR
                              VARCHAR"
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
 Running org.apache.commons.cli.DefaultParserTest
-Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec
-Running org.apache.commons.cli.CommandLineTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 sec
 Running org.apache.commons.cli.OptionGroupTest
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+Running org.apache.commons.cli.CommandLineTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
 Running org.apache.commons.cli.PatternOptionBuilderTest
 Exception found converting x to desired type: For input string: "3,5"
 Exception found converting d to desired type: Unable to find the class: System.DateTime
 Exception found converting i to desired type: java.lang.IllegalAccessException; Unable to create an instance of: java.util.Calendar
 Exception found converting n to desired type: Unable to find the class: System.DateTime
 Exception found converting v to desired type: Unable to parse the URL: foo://commons.apache.org
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
 Running org.apache.commons.cli.ApplicationTest
 usage: man [-c|-f|-k|-w|-tZT device] [-adlhu7V] [-Mpath]
            [-Ppager] [-Slist] [-msystem] [-pstring]
@@ -259,25 +259,63 @@ Tests run: 361, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 17.954 s
-[INFO] Finished at: 2018-09-27T19:26:39+02:00
+[INFO] Total time: 18.087 s
+[INFO] Finished at: 2018-09-28T11:33:27+02:00
 [INFO] ------------------------------------------------------------------------
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/commons-cli_parent/target/clover/report'
-Done. Processed 2 packages in 4911ms (2455ms per package).
+Done. Processed 2 packages in 5289ms (2644ms per package).
+[INFO] /tmp/icst-2019/september-2018/dataset/commons-cli_parent/src/main/java/org/apache/commons/cli/HelpFormatter.java
+[INFO] /tmp/icst-2019/september-2018/dataset/commons-cli/src/main/java/org/apache/commons/cli/HelpFormatter.java
+[info] org.apache.commons.cli.HelpFormatter:356 is modified.
+[info] org.apache.commons.cli.HelpFormatter:543 is modified.
+[info] org.apache.commons.cli.HelpFormatter:607 is modified.
+[info] org.apache.commons.cli.HelpFormatter:760 is modified.
+[info] org.apache.commons.cli.HelpFormatter:551 is modified.
+[info] org.apache.commons.cli.HelpFormatter:767 is modified.
+[info] org.apache.commons.cli.HelpFormatter:807 is modified.
+[info] org.apache.commons.cli.HelpFormatter:553 is modified.
+[info] org.apache.commons.cli.HelpFormatter:614 is modified.
+[info] org.apache.commons.cli.HelpFormatter:765 is modified.
+[info] org.apache.commons.cli.HelpFormatter:809 is modified.
+[info] org.apache.commons.cli.HelpFormatter:352 is modified.
+[info] org.apache.commons.cli.HelpFormatter:350 is modified.
+[info] org.apache.commons.cli.HelpFormatter:550 is modified.
+[info] org.apache.commons.cli.HelpFormatter:558 is modified.
+[info] org.apache.commons.cli.HelpFormatter:769 is modified.
+[info] org.apache.commons.cli.HelpFormatter:760 covered.
+[info] org.apache.commons.cli.HelpFormatter:767 covered.
+[info] org.apache.commons.cli.HelpFormatter:765 covered.
+[info] org.apache.commons.cli.HelpFormatter:809 covered.
+[info] org.apache.commons.cli.HelpFormatter:769 covered.
+[info] org.apache.commons.cli.HelpFormatter:553 covered.
+[info] org.apache.commons.cli.HelpFormatter:550 covered.
+[info] org.apache.commons.cli.HelpFormatter:558 covered.
+[info] org.apache.commons.cli.HelpFormatter:614 covered.
+[info] org.apache.commons.cli.HelpFormatter:356 covered.
+[info] org.apache.commons.cli.HelpFormatter:350 covered.
+[info] org.apache.commons.cli.HelpFormatter:352 covered.
+[INFO] /tmp/icst-2019/september-2018/dataset/commons-cli_parent/src/main/java/org/apache/commons/cli/Options.java
+[INFO] /tmp/icst-2019/september-2018/dataset/commons-cli/src/main/java/org/apache/commons/cli/Options.java
+[info] org.apache.commons.cli.Options:52 is modified.
+[info] org.apache.commons.cli.Options:55 is modified.
+[INFO] /tmp/icst-2019/september-2018/dataset/commons-cli_parent/src/test/java/org/apache/commons/cli/HelpFormatterTest.java
+[INFO] /tmp/icst-2019/september-2018/dataset/commons-cli/src/test/java/org/apache/commons/cli/HelpFormatterTest.java
+[info] org.apache.commons.cli.HelpFormatterTest:277 is modified.
+[info] org.apache.commons.cli.HelpFormatterTest:278 is modified.
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/commons-cli/commit_4_a955324/parent_coverage_testsThatExecuteTheChanges.csv ...
 [INFO] org.apache.commons.cli.BugsTest;test13666
 org.apache.commons.cli.ApplicationTest;testMan
-org.apache.commons.cli.HelpFormatterTest;testIndentedHeaderAndFooter;testAutomaticUsage;testPrintOptionWithEmptyArgNameUsage;testHelpWithLongOptSeparator;testPrintRequiredOptionGroupUsage;testHeaderStartingWithLineSeparator;testPrintUsage;testPrintSortedUsageWithNullComparator;testDefaultArgName;testPrintOptions;testPrintSortedUsage;testUsageWithLongOptSeparator;testOptionWithoutShortFormat;testPrintOptionGroupUsage;testOptionWithoutShortFormat2
 org.apache.commons.cli.bug.BugCLI162Test;testPrintHelpLongLines;testInfiniteLoop;testLongLineChunking;testLongLineChunkingIndentIgnored
+org.apache.commons.cli.HelpFormatterTest;testIndentedHeaderAndFooter;testAutomaticUsage;testPrintOptionWithEmptyArgNameUsage;testHelpWithLongOptSeparator;testPrintRequiredOptionGroupUsage;testHeaderStartingWithLineSeparator;testPrintUsage;testPrintSortedUsageWithNullComparator;testDefaultArgName;testPrintOptions;testPrintSortedUsage;testUsageWithLongOptSeparator;testPrintOptionGroupUsage;testOptionWithoutShortFormat;testOptionWithoutShortFormat2
 org.apache.commons.cli.bug.BugCLI18Test;testCLI18
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/commons-cli/commit_4_a955324/parent_coverage_testsThatExecuteTheChanges_coverage.csv
-[INFO] org.apache.commons.cli.HelpFormatter;15;21
+[INFO] org.apache.commons.cli.HelpFormatter;12;16
 
-[INFO] total;15;21
+[INFO] total;12;16
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 36.104 s
-[INFO] Finished at: 2018-09-27T19:26:51+02:00
+[INFO] Total time: 35.803 s
+[INFO] Finished at: 2018-09-28T11:33:38+02:00
 [INFO] ------------------------------------------------------------------------

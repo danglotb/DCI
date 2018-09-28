@@ -42,7 +42,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 191 files (25 packages).
-[INFO] Elapsed time = 5.046 secs. (37.852 files/sec, 5,045.977 srclines/sec)
+[INFO] Elapsed time = 5.064 secs. (37.717 files/sec, 5,028.041 srclines/sec)
 [INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [INFO] Clover free edition.
@@ -50,7 +50,7 @@
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 39 files (12 packages).
 [INFO] 142 test methods detected.
-[INFO] Elapsed time = 1.149 secs. (33.943 files/sec, 5,469.974 srclines/sec)
+[INFO] Elapsed time = 1.257 secs. (31.026 files/sec, 5,000 srclines/sec)
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-extension-api ---
 [INFO] 
@@ -86,40 +86,6 @@
 [WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/job/history/internal/ExtensionJobHistoryRecorder.java:[49,30] org.xwiki.job.internal.AbstractJobStatus in org.xwiki.job.internal has been deprecated
 [WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/Extension.java:[62,12] deprecated item is not annotated with @Deprecated
 [WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/Extension.java:[69,12] deprecated item is not annotated with @Deprecated
-[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[45,61] org.xwiki.extension.wrap.AbstractWrappingObject in org.xwiki.extension.wrap has been deprecated
-[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[74,80] unchecked cast
-  required: T
-  found:    java.lang.Object
-[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[97,102] unchecked cast
-  required: java.util.Collection<org.xwiki.extension.ExtensionId>
-  found:    java.lang.Object
-[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[133,107] unchecked cast
-  required: java.util.Collection<org.xwiki.extension.ExtensionLicense>
-  found:    java.lang.Object
-[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[173,106] unchecked cast
-  required: java.util.Collection<org.xwiki.extension.ExtensionAuthor>
-  found:    java.lang.Object
-[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[183,97] unchecked cast
-  required: java.util.Collection<java.lang.String>
-  found:    java.lang.Object
-[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[193,110] unchecked cast
-  required: java.util.Collection<org.xwiki.extension.ExtensionDependency>
-  found:    java.lang.Object
-[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[203,110] unchecked cast
-  required: java.util.Collection<org.xwiki.extension.ExtensionDependency>
-  found:    java.lang.Object
-[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[255,120] unchecked cast
-  required: java.util.Collection<org.xwiki.extension.repository.ExtensionRepositoryDescriptor>
-  found:    java.lang.Object
-[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[265,98] unchecked cast
-  required: java.util.Map<java.lang.String,java.lang.Object>
-  found:    java.lang.Object
-[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[275,80] unchecked cast
-  required: T
-  found:    java.lang.Object
-[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[285,80] unchecked cast
-  required: T
-  found:    java.lang.Object
 [WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/AbstractExtension.java:[211,72] unchecked cast
   required: T
   found:    org.xwiki.extension.repository.ExtensionRepository
@@ -191,6 +157,40 @@
 [WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/core/DefaultCoreExtensionRepository.java:[272,53] unchecked conversion
   required: org.xwiki.extension.repository.result.IterableResult<org.xwiki.extension.Extension>
   found:    org.xwiki.extension.repository.result.IterableResult
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[45,61] org.xwiki.extension.wrap.AbstractWrappingObject in org.xwiki.extension.wrap has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[74,80] unchecked cast
+  required: T
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[97,102] unchecked cast
+  required: java.util.Collection<org.xwiki.extension.ExtensionId>
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[133,107] unchecked cast
+  required: java.util.Collection<org.xwiki.extension.ExtensionLicense>
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[173,106] unchecked cast
+  required: java.util.Collection<org.xwiki.extension.ExtensionAuthor>
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[183,97] unchecked cast
+  required: java.util.Collection<java.lang.String>
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[193,110] unchecked cast
+  required: java.util.Collection<org.xwiki.extension.ExtensionDependency>
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[203,110] unchecked cast
+  required: java.util.Collection<org.xwiki.extension.ExtensionDependency>
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[255,120] unchecked cast
+  required: java.util.Collection<org.xwiki.extension.repository.ExtensionRepositoryDescriptor>
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[265,98] unchecked cast
+  required: java.util.Map<java.lang.String,java.lang.Object>
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[275,80] unchecked cast
+  required: T
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/wrap/WrappingExtension.java:[285,80] unchecked cast
+  required: T
+  found:    java.lang.Object
 [WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/job/ExtensionRequest.java:[39,8] serializable class org.xwiki.extension.job.ExtensionRequest has no definition of serialVersionUID
 [WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/AbstractCachedExtensionRepository.java:[108,85] getFeatures() in org.xwiki.extension.Extension has been deprecated
 [WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/src-instrumented/org/xwiki/extension/repository/internal/AbstractCachedExtensionRepository.java:[155,81] getFeatures() in org.xwiki.extension.Extension has been deprecated
@@ -346,222 +346,222 @@
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
-[INFO] Running org.xwiki.extension.job.internal.InstallPlanJobTest
-20:20:15.261 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:15.272 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:16.260 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:16.263 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:16.493 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:16.496 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:16.730 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:16.732 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:16.914 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:16.916 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:17.104 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:17.106 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:17.305 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:17.308 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:17.455 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:17.458 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:17.652 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:17.653 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:17.803 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:17.806 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:17.966 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:17.972 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:18.120 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:18.123 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:18.307 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:18.308 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:18.496 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:18.499 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:18.623 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:18.625 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:18.763 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:18.765 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:18.897 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:18.899 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:19.028 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:19.030 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:19.157 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:19.159 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:19.307 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:19.309 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:19.478 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:19.480 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:19.643 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:19.645 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:19.770 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:19.772 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:19.920 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:19.922 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:20.036 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:20.037 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:20.166 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:20.167 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:20.309 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:20.310 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:20.446 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:20.448 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:20.570 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:20.572 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:20.705 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:20.707 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:20.825 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:20.827 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:21.011 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:21.013 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:21.152 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:21.153 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-[INFO] Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.526 s - in org.xwiki.extension.job.internal.InstallPlanJobTest
-[INFO] Running org.xwiki.extension.job.internal.InstallJobTest
-20:20:21.332 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:21.334 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:21.453 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:21.455 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:21.579 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:21.580 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:21.716 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:21.718 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:21.844 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:21.845 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:21.959 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:21.960 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:22.083 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:22.084 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:22.191 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:22.192 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:22.312 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:22.313 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:22.434 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:22.435 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:22.551 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:22.552 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.431 s - in org.xwiki.extension.job.internal.InstallJobTest
-[INFO] Running org.xwiki.extension.job.internal.UpgradePlanJobTest
-20:20:22.779 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:22.781 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:22.955 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:22.957 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:23.082 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:23.084 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:23.204 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:23.205 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:23.352 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:23.354 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.75 s - in org.xwiki.extension.job.internal.UpgradePlanJobTest
-[INFO] Running org.xwiki.extension.job.internal.UninstallJobTest
-20:20:23.524 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:23.526 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:23.673 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:23.675 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:23.845 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:23.846 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:24.002 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:24.003 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:24.115 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:24.117 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:24.230 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:24.231 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.818 s - in org.xwiki.extension.job.internal.UninstallJobTest
-[INFO] Running org.xwiki.extension.job.history.internal.ExtensionJobHistoryRecorderTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.659 s - in org.xwiki.extension.job.history.internal.ExtensionJobHistoryRecorderTest
-[INFO] Running org.xwiki.extension.job.history.internal.AnswerReplayerTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 s - in org.xwiki.extension.job.history.internal.AnswerReplayerTest
-[INFO] Running org.xwiki.extension.job.history.internal.ReplayJobTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.412 s - in org.xwiki.extension.job.history.internal.ReplayJobTest
-[INFO] Running org.xwiki.extension.job.history.internal.DefaultExtensionJobHistoryTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 s - in org.xwiki.extension.job.history.internal.DefaultExtensionJobHistoryTest
-[INFO] Running org.xwiki.extension.job.history.internal.CompositeReaderTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 s - in org.xwiki.extension.job.history.internal.CompositeReaderTest
-[INFO] Running org.xwiki.extension.repository.local.DefaultLocalExtensionRepositoryTest
-20:20:25.826 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:25.828 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:25.923 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:25.925 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:26.019 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:26.021 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:26.121 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:26.123 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:26.211 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:26.213 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:26.301 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:26.302 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:26.389 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:26.390 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:26.476 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:26.477 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:26.563 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:26.565 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:26.652 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:26.653 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:26.743 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:26.744 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:26.830 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:26.832 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.146 s - in org.xwiki.extension.repository.local.DefaultLocalExtensionRepositoryTest
-[INFO] Running org.xwiki.extension.repository.local.DefaultExtensionSerializerTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 s - in org.xwiki.extension.repository.local.DefaultExtensionSerializerTest
-[INFO] Running org.xwiki.extension.repository.DefaultExtensionRepositoryManagerTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.197 s - in org.xwiki.extension.repository.DefaultExtensionRepositoryManagerTest
-[INFO] Running org.xwiki.extension.repository.internal.DefaultExtensionRepositoryManagerTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in org.xwiki.extension.repository.internal.DefaultExtensionRepositoryManagerTest
 [INFO] Running org.xwiki.extension.repository.core.DefaultCoreExtensionRepositoryTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.203 s - in org.xwiki.extension.repository.core.DefaultCoreExtensionRepositoryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.969 s - in org.xwiki.extension.repository.core.DefaultCoreExtensionRepositoryTest
+[INFO] Running org.xwiki.extension.repository.local.DefaultExtensionSerializerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 s - in org.xwiki.extension.repository.local.DefaultExtensionSerializerTest
+[INFO] Running org.xwiki.extension.repository.local.DefaultLocalExtensionRepositoryTest
+12:25:10.126 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:10.141 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:10.341 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:10.348 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:10.583 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:10.588 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:10.773 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:10.779 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:10.913 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:10.918 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:11.046 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:11.052 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:11.177 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:11.182 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:11.306 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:11.312 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:11.463 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:11.468 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:11.627 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:11.632 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:11.755 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:11.760 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:11.879 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:11.884 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.206 s - in org.xwiki.extension.repository.local.DefaultLocalExtensionRepositoryTest
+[INFO] Running org.xwiki.extension.repository.DefaultExtensionRepositoryManagerTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.242 s - in org.xwiki.extension.repository.DefaultExtensionRepositoryManagerTest
 [INFO] Running org.xwiki.extension.repository.installed.DefaultInstalledExtensionTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.xwiki.extension.repository.installed.DefaultInstalledExtensionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.xwiki.extension.repository.installed.DefaultInstalledExtensionTest
 [INFO] Running org.xwiki.extension.repository.installed.DefaultInstalledExtensionRepositoryTest
-20:20:27.474 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:27.476 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:27.580 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:27.582 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:27.731 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:27.732 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:27.828 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:27.830 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:27.937 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:27.938 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:28.028 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:28.030 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:28.118 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:28.119 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:28.205 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:28.207 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:28.327 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:28.331 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:28.437 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:28.442 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:28.532 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:28.535 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:28.622 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:28.623 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:28.715 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:28.717 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:28.807 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:28.808 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:28.895 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:28.896 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:28.986 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:28.988 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-20:20:29.079 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
-20:20:29.080 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
-[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.709 s - in org.xwiki.extension.repository.installed.DefaultInstalledExtensionRepositoryTest
-[INFO] Running org.xwiki.extension.internal.DefaultExtensionManagerTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.358 s - in org.xwiki.extension.internal.DefaultExtensionManagerTest
-[INFO] Running org.xwiki.extension.internal.converter.ExtensionIdConverterTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.xwiki.extension.internal.converter.ExtensionIdConverterTest
-[INFO] Running org.xwiki.extension.internal.DefaultExtensionLicenseManagerTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s - in org.xwiki.extension.internal.DefaultExtensionLicenseManagerTest
-[INFO] Running org.xwiki.extension.internal.DefaultExtensionManagerConfigurationTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 s - in org.xwiki.extension.internal.DefaultExtensionManagerConfigurationTest
-[INFO] Running org.xwiki.extension.version.internal.DefaultVersionRangeTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in org.xwiki.extension.version.internal.DefaultVersionRangeTest
-[INFO] Running org.xwiki.extension.version.internal.DefaultVersionTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.xwiki.extension.version.internal.DefaultVersionTest
-[INFO] Running org.xwiki.extension.version.internal.DefaultVersionConstraintTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.xwiki.extension.version.internal.DefaultVersionConstraintTest
+12:25:12.278 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:12.284 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:12.433 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:12.439 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:12.568 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:12.571 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:12.709 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:12.712 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:12.844 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:12.846 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:12.994 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:12.996 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:13.101 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:13.104 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:13.207 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:13.210 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:13.362 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:13.364 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:13.466 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:13.469 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:13.571 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:13.574 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:13.675 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:13.677 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:13.792 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:13.794 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:13.898 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:13.901 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:14.004 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:14.007 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:14.124 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:14.128 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:14.231 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:14.233 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.081 s - in org.xwiki.extension.repository.installed.DefaultInstalledExtensionRepositoryTest
+[INFO] Running org.xwiki.extension.repository.internal.DefaultExtensionRepositoryManagerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in org.xwiki.extension.repository.internal.DefaultExtensionRepositoryManagerTest
 [INFO] Running org.xwiki.extension.AbstractExtensionTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.xwiki.extension.AbstractExtensionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.xwiki.extension.AbstractExtensionTest
+[INFO] Running org.xwiki.extension.job.history.internal.AnswerReplayerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.213 s - in org.xwiki.extension.job.history.internal.AnswerReplayerTest
+[INFO] Running org.xwiki.extension.job.history.internal.DefaultExtensionJobHistoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.205 s - in org.xwiki.extension.job.history.internal.DefaultExtensionJobHistoryTest
+[INFO] Running org.xwiki.extension.job.history.internal.ReplayJobTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.29 s - in org.xwiki.extension.job.history.internal.ReplayJobTest
+[INFO] Running org.xwiki.extension.job.history.internal.ExtensionJobHistoryRecorderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.3 s - in org.xwiki.extension.job.history.internal.ExtensionJobHistoryRecorderTest
+[INFO] Running org.xwiki.extension.job.history.internal.CompositeReaderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 s - in org.xwiki.extension.job.history.internal.CompositeReaderTest
+[INFO] Running org.xwiki.extension.job.internal.InstallJobTest
+12:25:15.535 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:15.537 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:16.099 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:16.102 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:16.294 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:16.297 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:16.477 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:16.479 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:16.673 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:16.675 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:16.841 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:16.843 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:17.014 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:17.016 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:17.164 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:17.167 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:17.356 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:17.358 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:17.517 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:17.520 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:17.695 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:17.697 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.334 s - in org.xwiki.extension.job.internal.InstallJobTest
+[INFO] Running org.xwiki.extension.job.internal.InstallPlanJobTest
+12:25:17.866 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:17.868 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:18.005 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:18.007 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:18.113 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:18.116 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:18.234 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:18.237 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:18.345 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:18.347 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:18.474 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:18.476 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:18.595 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:18.598 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:18.710 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:18.712 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:18.821 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:18.823 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:18.934 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:18.936 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:19.045 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:19.047 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:19.160 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:19.162 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:19.272 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:19.275 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:19.378 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:19.379 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:19.500 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:19.503 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:19.634 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:19.637 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:19.765 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:19.768 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:19.909 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:19.911 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:20.037 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:20.039 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:20.199 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:20.201 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:20.318 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:20.319 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:20.435 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:20.436 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:20.550 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:20.552 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:20.680 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:20.683 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:20.797 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:20.800 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:20.911 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:20.914 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:21.018 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:21.021 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:21.136 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:21.139 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:21.253 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:21.256 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:21.358 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:21.360 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:21.463 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:21.465 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:21.573 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:21.575 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:21.687 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:21.689 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+[INFO] Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.96 s - in org.xwiki.extension.job.internal.InstallPlanJobTest
+[INFO] Running org.xwiki.extension.job.internal.UninstallJobTest
+12:25:21.818 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:21.820 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:21.992 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:21.994 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:22.144 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:22.145 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:22.296 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:22.298 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:22.411 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:22.413 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:22.524 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:22.526 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.812 s - in org.xwiki.extension.job.internal.UninstallJobTest
+[INFO] Running org.xwiki.extension.job.internal.UpgradePlanJobTest
+12:25:22.648 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:22.650 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:22.801 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:22.803 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:22.936 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:22.938 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:23.068 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:23.070 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+12:25:23.209 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedextensioninvalid/version] (InvalidExtensionException: No compatible extension is installed for dependency [invaliddependency-version])
+12:25:23.211 [main] WARN  o.x.e.r.i.i.DefaultInstalledExtensionRepository - Invalid extension [installedwithmissingdependency/version] (InvalidExtensionException: No compatible extension is installed for dependency [missingdependency-version])
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.727 s - in org.xwiki.extension.job.internal.UpgradePlanJobTest
+[INFO] Running org.xwiki.extension.version.internal.DefaultVersionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.xwiki.extension.version.internal.DefaultVersionTest
+[INFO] Running org.xwiki.extension.version.internal.DefaultVersionConstraintTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 s - in org.xwiki.extension.version.internal.DefaultVersionConstraintTest
+[INFO] Running org.xwiki.extension.version.internal.DefaultVersionRangeTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in org.xwiki.extension.version.internal.DefaultVersionRangeTest
+[INFO] Running org.xwiki.extension.internal.DefaultExtensionManagerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.468 s - in org.xwiki.extension.internal.DefaultExtensionManagerTest
+[INFO] Running org.xwiki.extension.internal.DefaultExtensionManagerConfigurationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 s - in org.xwiki.extension.internal.DefaultExtensionManagerConfigurationTest
+[INFO] Running org.xwiki.extension.internal.converter.ExtensionIdConverterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.xwiki.extension.internal.converter.ExtensionIdConverterTest
+[INFO] Running org.xwiki.extension.internal.DefaultExtensionLicenseManagerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in org.xwiki.extension.internal.DefaultExtensionLicenseManagerTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -570,22 +570,74 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 56.248 s
-[INFO] Finished at: 2018-09-27T20:20:30+02:00
+[INFO] Total time: 56.880 s
+[INFO] Finished at: 2018-09-28T12:25:24+02:00
 [INFO] ------------------------------------------------------------------------
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/target/clover/report'
-ERROR: Invalid Java source found or Clover failed to parse it: /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/ExtensionFactory.java
-Done. Processed 29 packages in 8126ms (280ms per package).
+Done. Processed 29 packages in 7918ms (273ms per package).
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/job/internal/UpgradePlanJob.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/job/internal/UpgradePlanJob.java
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:78 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:269 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:270 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:97 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:106 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:80 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:79 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:88 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:275 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:89 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:93 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:178 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:197 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:283 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:81 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:205 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:90 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:269 covered.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:270 covered.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:97 covered.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:80 covered.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:93 covered.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:178 covered.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:283 covered.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:275 covered.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:197 covered.
+[info] org.xwiki.extension.job.internal.UpgradePlanJob:205 covered.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/InstallPlanJobTest.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/InstallPlanJobTest.java
+[info] org.xwiki.extension.job.internal.InstallPlanJobTest:680 is modified.
+[info] org.xwiki.extension.job.internal.InstallPlanJobTest:683 is modified.
+[info] org.xwiki.extension.job.internal.InstallPlanJobTest:685 is modified.
+[info] org.xwiki.extension.job.internal.InstallPlanJobTest:687 is modified.
+[info] org.xwiki.extension.job.internal.InstallPlanJobTest:688 is modified.
+[info] org.xwiki.extension.job.internal.InstallPlanJobTest:690 is modified.
+[info] org.xwiki.extension.job.internal.InstallPlanJobTest:691 is modified.
+[info] org.xwiki.extension.job.internal.InstallPlanJobTest:692 is modified.
+[info] org.xwiki.extension.job.internal.InstallPlanJobTest:693 is modified.
+[info] org.xwiki.extension.job.internal.InstallPlanJobTest:694 is modified.
+[info] org.xwiki.extension.job.internal.InstallPlanJobTest:696 is modified.
+[info] org.xwiki.extension.job.internal.InstallPlanJobTest:697 is modified.
+[info] org.xwiki.extension.job.internal.InstallPlanJobTest:699 is modified.
+[info] org.xwiki.extension.job.internal.InstallPlanJobTest:700 is modified.
+[info] org.xwiki.extension.job.internal.InstallPlanJobTest:701 is modified.
+[info] org.xwiki.extension.job.internal.InstallPlanJobTest:702 is modified.
+[info] org.xwiki.extension.job.internal.InstallPlanJobTest:703 is modified.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/UpgradePlanJobTest.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/UpgradePlanJobTest.java
+[info] org.xwiki.extension.job.internal.UpgradePlanJobTest:43 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJobTest:45 is modified.
+[info] org.xwiki.extension.job.internal.UpgradePlanJobTest:41 is modified.
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_7_b2dc094/parent_coverage_testsThatExecuteTheChanges.csv ...
 [INFO] org.xwiki.extension.job.internal.UpgradePlanJobTest;testUpgradePlanWithDependencyOnNamespace;testUpgradePlanOnRootWithTargetDependencyExtension;testUpgradePlanWithDependencyOnRoot;testUpgradePlanOnNamespaceWithExtensionOnRoot;testUpgradePlanOnRoot
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_7_b2dc094/parent_coverage_testsThatExecuteTheChanges_coverage.csv
-[INFO] org.xwiki.extension.job.internal.UpgradePlanJob;10;23
+[INFO] org.xwiki.extension.job.internal.UpgradePlanJob;10;17
 
-[INFO] total;10;23
+[INFO] total;10;17
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 01:17 min
-[INFO] Finished at: 2018-09-27T20:20:44+02:00
+[INFO] Total time: 01:18 min
+[INFO] Finished at: 2018-09-28T12:25:38+02:00
 [INFO] ------------------------------------------------------------------------

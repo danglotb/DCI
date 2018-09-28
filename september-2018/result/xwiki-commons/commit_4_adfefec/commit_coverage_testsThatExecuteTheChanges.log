@@ -42,7 +42,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-xml/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 26 files (8 packages).
-[INFO] Elapsed time = 1.585 secs. (16.404 files/sec, 2,766.562 srclines/sec)
+[INFO] Elapsed time = 1.502 secs. (17.31 files/sec, 2,919.441 srclines/sec)
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-xml ---
 [INFO] 
@@ -101,13 +101,13 @@
  T E S T S
 -------------------------------------------------------
 Running org.xwiki.xml.XMLUtilsTest
-Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.611 sec - in org.xwiki.xml.XMLUtilsTest
-Running org.xwiki.xml.internal.html.DefaultHTMLCleanerTest
-Tests run: 23, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.896 sec - in org.xwiki.xml.internal.html.DefaultHTMLCleanerTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.633 sec - in org.xwiki.xml.XMLUtilsTest
 Running org.xwiki.xml.stax.StAXUtilsTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.705 sec - in org.xwiki.xml.stax.StAXUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.495 sec - in org.xwiki.xml.stax.StAXUtilsTest
 Running org.xwiki.xml.html.HTMLUtilsTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.xwiki.xml.html.HTMLUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.28 sec - in org.xwiki.xml.html.HTMLUtilsTest
+Running org.xwiki.xml.internal.html.DefaultHTMLCleanerTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.869 sec - in org.xwiki.xml.internal.html.DefaultHTMLCleanerTest
 
 Results :
 
@@ -116,11 +116,22 @@ Tests run: 50, Failures: 0, Errors: 0, Skipped: 1
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 28.887 s
-[INFO] Finished at: 2018-09-27T20:03:20+02:00
+[INFO] Total time: 27.220 s
+[INFO] Finished at: 2018-09-28T12:08:45+02:00
 [INFO] ------------------------------------------------------------------------
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-xml/target/clover/report'
-Done. Processed 8 packages in 2723ms (340ms per package).
+Done. Processed 8 packages in 2530ms (316ms per package).
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-xml/src/main/java/org/htmlcleaner/XWikiDOMSerializer.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-xml/src/main/java/org/htmlcleaner/XWikiDOMSerializer.java
+[info] org.htmlcleaner.XWikiDOMSerializer:158 is modified.
+[info] org.htmlcleaner.XWikiDOMSerializer:192 is modified.
+[info] org.htmlcleaner.XWikiDOMSerializer:303 is modified.
+[info] org.htmlcleaner.XWikiDOMSerializer:325 is modified.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-xml/src/main/java/org/xwiki/xml/internal/html/DefaultHTMLCleaner.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-xml/src/main/java/org/xwiki/xml/internal/html/DefaultHTMLCleaner.java
+[info] org.xwiki.xml.internal.html.DefaultHTMLCleaner:237 is modified.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-xml/src/test/java/org/xwiki/xml/internal/html/DefaultHTMLCleanerTest.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-xml/src/test/java/org/xwiki/xml/internal/html/DefaultHTMLCleanerTest.java
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_4_adfefec/commit_coverage_testsThatExecuteTheChanges.csv ...
 [INFO] 
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_4_adfefec/commit_coverage_testsThatExecuteTheChanges_coverage.csv
@@ -129,10 +140,10 @@ Done. Processed 8 packages in 2723ms (340ms per package).
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 43.480 s
-[INFO] Finished at: 2018-09-27T20:03:28+02:00
+[INFO] Total time: 42.169 s
+[INFO] Finished at: 2018-09-28T12:08:54+02:00
 [INFO] ------------------------------------------------------------------------
-[INFO] 2018-09-27 20:03:29 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
-[INFO] 2018-09-27 20:03:30 RepositoriesSetter - Checkout d3101aed5d0b3df40e9ac9cf1a40af74262d5f75 revision...
-[INFO] 2018-09-27 20:03:31 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
-[INFO] 2018-09-27 20:03:32 RepositoriesSetter - Checkout a0b25ca3b297fe7ab3ceaac64c368d994ec29841 revision...
+[INFO] 2018-09-28 12:08:55 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-09-28 12:08:56 RepositoriesSetter - Checkout d3101aed5d0b3df40e9ac9cf1a40af74262d5f75 revision...
+[INFO] 2018-09-28 12:08:57 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-09-28 12:08:57 RepositoriesSetter - Checkout a0b25ca3b297fe7ab3ceaac64c368d994ec29841 revision...

@@ -41,7 +41,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 65 files (8 packages).
-[INFO] Elapsed time = 1.731 secs. (37.551 files/sec, 4,082.034 srclines/sec)
+[INFO] Elapsed time = 2.034 secs. (31.957 files/sec, 3,473.943 srclines/sec)
 [INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [INFO] Clover free edition.
@@ -49,7 +49,7 @@
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 15 files (3 packages).
 [INFO] 55 test methods detected.
-[INFO] Elapsed time = 0.84 secs. (17.857 files/sec, 2,479.762 srclines/sec)
+[INFO] Elapsed time = 0.735 secs. (20.408 files/sec, 2,834.014 srclines/sec)
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-plugins) @ xwiki-commons-job ---
 [INFO] 
@@ -220,24 +220,24 @@
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
-Running org.xwiki.job.internal.DefaultJobStatusStoreTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.228 sec - in org.xwiki.job.internal.DefaultJobStatusStoreTest
-Running org.xwiki.job.internal.DefaultJobStatusTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.222 sec - in org.xwiki.job.internal.DefaultJobStatusTest
-Running org.xwiki.job.internal.JobStatusSerializerTest
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.514 sec - in org.xwiki.job.internal.JobStatusSerializerTest
-Running org.xwiki.job.internal.xstream.XStreamUtilsTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.xwiki.job.internal.xstream.XStreamUtilsTest
-Running org.xwiki.job.internal.xstream.SafeXStreamTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in org.xwiki.job.internal.xstream.SafeXStreamTest
-Running org.xwiki.job.internal.DefaultJobManagerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec - in org.xwiki.job.internal.DefaultJobManagerTest
-Running org.xwiki.job.internal.DefaultJobProgressTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.259 sec - in org.xwiki.job.internal.DefaultJobProgressTest
 Running org.xwiki.job.internal.DefaultJobExecutorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec - in org.xwiki.job.internal.DefaultJobExecutorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.856 sec - in org.xwiki.job.internal.DefaultJobExecutorTest
+Running org.xwiki.job.internal.DefaultJobProgressTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.332 sec - in org.xwiki.job.internal.DefaultJobProgressTest
+Running org.xwiki.job.internal.xstream.SafeXStreamTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.511 sec - in org.xwiki.job.internal.xstream.SafeXStreamTest
+Running org.xwiki.job.internal.xstream.XStreamUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.xwiki.job.internal.xstream.XStreamUtilsTest
+Running org.xwiki.job.internal.JobStatusSerializerTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.217 sec - in org.xwiki.job.internal.JobStatusSerializerTest
 Running org.xwiki.job.internal.DefaultRequestTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.xwiki.job.internal.DefaultRequestTest
+Running org.xwiki.job.internal.DefaultJobStatusStoreTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.503 sec - in org.xwiki.job.internal.DefaultJobStatusStoreTest
+Running org.xwiki.job.internal.DefaultJobManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec - in org.xwiki.job.internal.DefaultJobManagerTest
+Running org.xwiki.job.internal.DefaultJobStatusTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 sec - in org.xwiki.job.internal.DefaultJobStatusTest
 
 Results :
 
@@ -246,23 +246,47 @@ Tests run: 55, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 30.404 s
-[INFO] Finished at: 2018-09-27T20:53:39+02:00
+[INFO] Total time: 29.200 s
+[INFO] Finished at: 2018-09-28T12:56:27+02:00
 [INFO] ------------------------------------------------------------------------
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/target/clover/report'
-Done. Processed 9 packages in 3710ms (412ms per package).
+Done. Processed 9 packages in 4167ms (463ms per package).
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgress.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgress.java
+[info] org.xwiki.job.internal.DefaultJobProgress:124 is modified.
+[info] org.xwiki.job.internal.DefaultJobProgress:99 is modified.
+[info] org.xwiki.job.internal.DefaultJobProgress:154 is modified.
+[info] org.xwiki.job.internal.DefaultJobProgress:152 is modified.
+[info] org.xwiki.job.internal.DefaultJobProgress:155 is modified.
+[info] org.xwiki.job.internal.DefaultJobProgress:124 covered.
+[info] org.xwiki.job.internal.DefaultJobProgress:99 covered.
+[info] org.xwiki.job.internal.DefaultJobProgress:152 covered.
+[info] org.xwiki.job.internal.DefaultJobProgress:154 covered.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgressStep.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobProgressStep.java
+[info] org.xwiki.job.internal.DefaultJobProgressStep:200 is modified.
+[info] org.xwiki.job.internal.DefaultJobProgressStep:170 is modified.
+[info] org.xwiki.job.internal.DefaultJobProgressStep:170 covered.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/src/test/java/org/xwiki/job/internal/DefaultJobProgressTest.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/src/test/java/org/xwiki/job/internal/DefaultJobProgressTest.java
+[info] org.xwiki.job.internal.DefaultJobProgressTest:381 is modified.
+[info] org.xwiki.job.internal.DefaultJobProgressTest:404 is modified.
+[info] org.xwiki.job.internal.DefaultJobProgressTest:407 is modified.
+[info] org.xwiki.job.internal.DefaultJobProgressTest:409 is modified.
+[info] org.xwiki.job.internal.DefaultJobProgressTest:410 is modified.
+[info] org.xwiki.job.internal.DefaultJobProgressTest:377 is modified.
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_12_7444c38/parent_coverage_testsThatExecuteTheChanges.csv ...
-[INFO] org.xwiki.job.internal.DefaultJobProgressTest;testUnknownNumberOfSteps;testProgressDone;testProgressSteps;testPopDontMoveToNextStep;testEndStepOnParentStepSource;testMoveToNextStepInRoot;testPopLevelOnParentLevelSource;testPushLevelOnClosedStep;testStepProgressEvent;testMoreStepsThanExpected;testPopLevelOnWrongSource;testStartStepFromDifferentSource
+[INFO] org.xwiki.job.internal.DefaultJobProgressTest;testUnknownNumberOfSteps;testProgressSteps;testProgressDone;testPopDontMoveToNextStep;testPushLevelOnClosedStep;testMoveToNextStepInRoot;testPopLevelOnParentLevelSource;testEndStepOnParentStepSource;testStepProgressEvent;testMoreStepsThanExpected;testStartStepFromDifferentSource;testPopLevelOnWrongSource
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_12_7444c38/parent_coverage_testsThatExecuteTheChanges_coverage.csv
-[INFO] org.xwiki.job.internal.DefaultJobProgress;5;8
+[INFO] org.xwiki.job.internal.DefaultJobProgress;4;5
 
-[INFO] org.xwiki.job.internal.DefaultJobProgressStep;1;5
+[INFO] org.xwiki.job.internal.DefaultJobProgressStep;1;2
 
-[INFO] total;6;13
+[INFO] total;5;7
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 46.424 s
-[INFO] Finished at: 2018-09-27T20:53:49+02:00
+[INFO] Total time: 45.501 s
+[INFO] Finished at: 2018-09-28T12:56:37+02:00
 [INFO] ------------------------------------------------------------------------

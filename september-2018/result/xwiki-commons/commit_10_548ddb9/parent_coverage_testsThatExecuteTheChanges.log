@@ -42,7 +42,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 20 files (2 packages).
-[INFO] Elapsed time = 0.724 secs. (27.624 files/sec, 2,598.066 srclines/sec)
+[INFO] Elapsed time = 0.741 secs. (26.991 files/sec, 2,538.462 srclines/sec)
 [INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [INFO] Clover free edition.
@@ -50,7 +50,7 @@
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 1 file (1 package).
 [INFO] 6 test methods detected.
-[INFO] Elapsed time = 0.147 secs. (6.803 files/sec, 2,421.769 srclines/sec)
+[INFO] Elapsed time = 0.14 secs. (7.143 files/sec, 2,542.857 srclines/sec)
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-diff-api ---
 [INFO] 
@@ -97,7 +97,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.xwiki.diff.internal.DefaultDiffManagerTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.742 s - in org.xwiki.diff.internal.DefaultDiffManagerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.732 s - in org.xwiki.diff.internal.DefaultDiffManagerTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -106,11 +106,17 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 20.105 s
-[INFO] Finished at: 2018-09-27T20:41:33+02:00
+[INFO] Total time: 19.620 s
+[INFO] Finished at: 2018-09-28T12:45:07+02:00
 [INFO] ------------------------------------------------------------------------
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/clover/report'
-Done. Processed 2 packages in 2270ms (1135ms per package).
+Done. Processed 2 packages in 2315ms (1157ms per package).
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/src/main/java/org/xwiki/diff/internal/DefaultDiffManager.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/src/main/java/org/xwiki/diff/internal/DefaultDiffManager.java
+[info] org.xwiki.diff.internal.DefaultDiffManager:225 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManager:225 covered.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/src/test/java/org/xwiki/diff/internal/DefaultDiffManagerTest.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/src/test/java/org/xwiki/diff/internal/DefaultDiffManagerTest.java
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_10_548ddb9/parent_coverage_testsThatExecuteTheChanges.csv ...
 [INFO] org.xwiki.diff.internal.DefaultDiffManagerTest;testMergeCharList
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_10_548ddb9/parent_coverage_testsThatExecuteTheChanges_coverage.csv
@@ -121,6 +127,6 @@ Done. Processed 2 packages in 2270ms (1135ms per package).
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 34.454 s
-[INFO] Finished at: 2018-09-27T20:41:40+02:00
+[INFO] Total time: 33.912 s
+[INFO] Finished at: 2018-09-28T12:45:14+02:00
 [INFO] ------------------------------------------------------------------------

@@ -42,7 +42,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 65 files (8 packages).
-[INFO] Elapsed time = 1.996 secs. (32.565 files/sec, 3,535.07 srclines/sec)
+[INFO] Elapsed time = 2.055 secs. (31.63 files/sec, 3,433.577 srclines/sec)
 [INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [INFO] Clover free edition.
@@ -50,7 +50,7 @@
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 15 files (3 packages).
 [INFO] 54 test methods detected.
-[INFO] Elapsed time = 0.75 secs. (20 files/sec, 2,753.333 srclines/sec)
+[INFO] Elapsed time = 0.784 secs. (19.133 files/sec, 2,633.929 srclines/sec)
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-plugins) @ xwiki-commons-job ---
 [INFO] 
@@ -222,24 +222,24 @@
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
-Running org.xwiki.job.internal.DefaultJobStatusStoreTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.324 sec - in org.xwiki.job.internal.DefaultJobStatusStoreTest
-Running org.xwiki.job.internal.DefaultJobStatusTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.227 sec - in org.xwiki.job.internal.DefaultJobStatusTest
-Running org.xwiki.job.internal.JobStatusSerializerTest
-Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.566 sec - in org.xwiki.job.internal.JobStatusSerializerTest
+Running org.xwiki.job.internal.DefaultJobExecutorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.754 sec - in org.xwiki.job.internal.DefaultJobExecutorTest
+Running org.xwiki.job.internal.DefaultJobProgressTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.232 sec - in org.xwiki.job.internal.DefaultJobProgressTest
+Running org.xwiki.job.internal.xstream.SafeXStreamTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.469 sec - in org.xwiki.job.internal.xstream.SafeXStreamTest
 Running org.xwiki.job.internal.xstream.XStreamUtilsTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.xwiki.job.internal.xstream.XStreamUtilsTest
-Running org.xwiki.job.internal.xstream.SafeXStreamTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in org.xwiki.job.internal.xstream.SafeXStreamTest
-Running org.xwiki.job.internal.DefaultJobManagerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in org.xwiki.job.internal.DefaultJobManagerTest
-Running org.xwiki.job.internal.DefaultJobProgressTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.237 sec - in org.xwiki.job.internal.DefaultJobProgressTest
-Running org.xwiki.job.internal.DefaultJobExecutorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec - in org.xwiki.job.internal.DefaultJobExecutorTest
+Running org.xwiki.job.internal.JobStatusSerializerTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.043 sec - in org.xwiki.job.internal.JobStatusSerializerTest
 Running org.xwiki.job.internal.DefaultRequestTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.xwiki.job.internal.DefaultRequestTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.xwiki.job.internal.DefaultRequestTest
+Running org.xwiki.job.internal.DefaultJobStatusStoreTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.514 sec - in org.xwiki.job.internal.DefaultJobStatusStoreTest
+Running org.xwiki.job.internal.DefaultJobManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec - in org.xwiki.job.internal.DefaultJobManagerTest
+Running org.xwiki.job.internal.DefaultJobStatusTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.199 sec - in org.xwiki.job.internal.DefaultJobStatusTest
 
 Results :
 
@@ -248,15 +248,35 @@ Tests run: 54, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 30.444 s
-[INFO] Finished at: 2018-09-27T21:06:42+02:00
+[INFO] Total time: 29.792 s
+[INFO] Finished at: 2018-09-28T13:09:13+02:00
 [INFO] ------------------------------------------------------------------------
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/target/clover/report'
-ERROR: Invalid Java source found or Clover failed to parse it: /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/event/status/AbstractProgressEvent.java
-Done. Processed 9 packages in 4080ms (453ms per package).
+Done. Processed 9 packages in 3687ms (409ms per package).
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/xstream/SafeMessageConverter.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/xstream/SafeMessageConverter.java
+[info] org.xwiki.job.internal.xstream.SafeMessageConverter:98 is modified.
+[info] org.xwiki.job.internal.xstream.SafeMessageConverter:99 is modified.
+[info] org.xwiki.job.internal.xstream.SafeMessageConverter:83 is modified.
+[info] org.xwiki.job.internal.xstream.SafeMessageConverter:82 is modified.
+[info] org.xwiki.job.internal.xstream.SafeMessageConverter:82 covered.
+[info] org.xwiki.job.internal.xstream.SafeMessageConverter:83 covered.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/xstream/XStreamUtils.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/xstream/XStreamUtils.java
+[info] org.xwiki.job.internal.xstream.XStreamUtils:92 is modified.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/src/test/java/org/xwiki/job/internal/JobStatusSerializerTest.java
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/src/test/java/org/xwiki/job/internal/JobStatusSerializerTest.java
+[info] org.xwiki.job.internal.JobStatusSerializerTest:262 is modified.
+[info] org.xwiki.job.internal.JobStatusSerializerTest:264 is modified.
+[info] org.xwiki.job.internal.JobStatusSerializerTest:266 is modified.
+[info] org.xwiki.job.internal.JobStatusSerializerTest:268 is modified.
+[info] org.xwiki.job.internal.JobStatusSerializerTest:269 is modified.
+[info] org.xwiki.job.internal.JobStatusSerializerTest:270 is modified.
+[info] org.xwiki.job.internal.JobStatusSerializerTest:271 is modified.
+[info] org.xwiki.job.internal.JobStatusSerializerTest:272 is modified.
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_14_f2feca6/parent_coverage_testsThatExecuteTheChanges.csv ...
 [INFO] org.xwiki.job.internal.DefaultJobStatusStoreTest;storeJobStatus
-org.xwiki.job.internal.JobStatusSerializerTest;testLogWithComponentManagerField;testLogMessage;testLogWithSerializableProviderField;testLogWithComponentArgument;test;testLogWithLoggerField;testLogWithSerializableStandaloneComponentArgument;testLogWithArguments;testLogWithProviderField;testLogWithException;testLogWithNotSerializableCustomObjectArgument;testLogWithCrossReference;testLogWithSerializableImplementationProviderField;testLogMarker;testLogWithStandaloneComponentField;testLogWithComponentField;testLogWithSerializableCustomObjectArgument;testLogWithCustomObjectArgument;testLogWithStandaloneComponentArgument
+org.xwiki.job.internal.JobStatusSerializerTest;testLogWithComponentManagerField;testLogMessage;testLogWithSerializableProviderField;testLogWithComponentArgument;test;testLogWithLoggerField;testLogWithSerializableStandaloneComponentArgument;testLogWithArguments;testLogWithProviderField;testLogWithException;testLogWithNotSerializableCustomObjectArgument;testLogWithSerializableImplementationProviderField;testLogWithCrossReference;testLogMarker;testLogWithStandaloneComponentField;testLogWithComponentField;testLogWithSerializableCustomObjectArgument;testLogWithCustomObjectArgument;testLogWithStandaloneComponentArgument
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_14_f2feca6/parent_coverage_testsThatExecuteTheChanges_coverage.csv
 [INFO] org.xwiki.job.internal.xstream.SafeMessageConverter;2;4
 
@@ -265,6 +285,6 @@ org.xwiki.job.internal.JobStatusSerializerTest;testLogWithComponentManagerField;
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 46.282 s
-[INFO] Finished at: 2018-09-27T21:06:52+02:00
+[INFO] Total time: 44.974 s
+[INFO] Finished at: 2018-09-28T13:09:22+02:00
 [INFO] ------------------------------------------------------------------------
