@@ -1,20 +1,122 @@
 [INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.google.code.gson:gson-extras:jar:1.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM com.google.code.gson:gson-extras:1.0-SNAPSHOT (/tmp/icst-2019/september-2018/dataset/gson/extras/pom.xml) points at com.google.code.gson:gson-parent instead of org.sonatype.oss:oss-parent, please verify your project structure @ line 9, column 11
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------< com.google.code.gson:gson-extras >------------------
+[INFO] Building Gson Extras 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ gson-extras ---
+[INFO] Deleting /tmp/icst-2019/september-2018/dataset/gson/extras/target
+[INFO] 
+[INFO] --- diff-test-selection:0.5-SNAPSHOT:list (default-cli) @ gson-extras ---
+[INFO] Computing coverage for /tmp/icst-2019/september-2018/dataset/gson/extras
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.google.code.gson:gson-extras:jar:1.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM com.google.code.gson:gson-extras:1.0-SNAPSHOT (/tmp/icst-2019/september-2018/dataset/gson/extras/pom.xml) points at com.google.code.gson:gson-parent instead of org.sonatype.oss:oss-parent, please verify your project structure @ line 9, column 11
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------< com.google.code.gson:gson-extras >------------------
+[INFO] Building Gson Extras 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ gson-extras ---
+[INFO] 
+[INFO] --- clover-maven-plugin:4.2.0:setup (default-cli) @ gson-extras ---
+[INFO] No 'maven.clover.licenseLocation' configured. Using default license.
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/gson/extras/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 8 files (4 packages).
+[INFO] Elapsed time = 0.585 secs. (13.675 files/sec, 1,892.308 srclines/sec)
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Updating existing database at '/tmp/icst-2019/september-2018/dataset/gson/extras/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 5 files (3 packages).
+[INFO] 36 test methods detected.
+[INFO] Elapsed time = 0.235 secs. (21.277 files/sec, 3,280.851 srclines/sec)
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ gson-extras ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gson-extras ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/gson/extras/src/main/resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ gson-extras ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /tmp/icst-2019/september-2018/dataset/gson/extras/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gson-extras ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/gson/extras/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ gson-extras ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /tmp/icst-2019/september-2018/dataset/gson/extras/target/test-classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /tmp/icst-2019/september-2018/dataset/gson/extras/target/clover/src-test-instrumented/com/google/gson/typeadapters/PostConstructAdapterFactoryTest.java:[25,17] package org.junit does not exist
+[ERROR] /tmp/icst-2019/september-2018/dataset/gson/extras/target/clover/src-test-instrumented/com/google/gson/typeadapters/PostConstructAdapterFactoryTest.java:[53,43] cannot find symbol
+  symbol:   variable Assert
+  location: class com.google.gson.typeadapters.PostConstructAdapterFactoryTest
+[ERROR] /tmp/icst-2019/september-2018/dataset/gson/extras/target/clover/src-test-instrumented/com/google/gson/typeadapters/PostConstructAdapterFactoryTest.java:[56,43] cannot find symbol
+  symbol:   variable Assert
+  location: class com.google.gson.typeadapters.PostConstructAdapterFactoryTest
+[INFO] 3 errors 
+[INFO] -------------------------------------------------------------
 [INFO] ------------------------------------------------------------------------
-[INFO] Building Gson Extras
-[INFO]    task-segment: [clean, eu.stamp-project:diff-test-selection:0.5-SNAPSHOT:list]
+[INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.189 s
+[INFO] Finished at: 2018-09-27T22:46:27+02:00
 [INFO] ------------------------------------------------------------------------
-[ERROR] BUILD ERROR
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.5.1:testCompile (default-testCompile) on project gson-extras: Compilation failure: Compilation failure: 
+[ERROR] /tmp/icst-2019/september-2018/dataset/gson/extras/target/clover/src-test-instrumented/com/google/gson/typeadapters/PostConstructAdapterFactoryTest.java:[25,17] package org.junit does not exist
+[ERROR] /tmp/icst-2019/september-2018/dataset/gson/extras/target/clover/src-test-instrumented/com/google/gson/typeadapters/PostConstructAdapterFactoryTest.java:[53,43] cannot find symbol
+[ERROR]   symbol:   variable Assert
+[ERROR]   location: class com.google.gson.typeadapters.PostConstructAdapterFactoryTest
+[ERROR] /tmp/icst-2019/september-2018/dataset/gson/extras/target/clover/src-test-instrumented/com/google/gson/typeadapters/PostConstructAdapterFactoryTest.java:[56,43] cannot find symbol
+[ERROR]   symbol:   variable Assert
+[ERROR]   location: class com.google.gson.typeadapters.PostConstructAdapterFactoryTest
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+WARN: No coverage recordings found. No report will be generated.
+[INFO] Saving result in /tmp/icst-2019/september-2018/result/gson/commit_5_74e3711/commit_coverage_testsThatExecuteTheChanges.csv ...
+[INFO] 
+[INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/gson/commit_5_74e3711/commit_coverage_testsThatExecuteTheChanges_coverage.csv
+[INFO] total;0;0
+
 [INFO] ------------------------------------------------------------------------
-[INFO] Error resolving version for 'org.apache.maven.plugins:maven-compiler-plugin': Plugin requires Maven version 3.0
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] For more information, run Maven with the -e switch
+[INFO] Total time: 19.803 s
+[INFO] Finished at: 2018-09-27T22:46:31+02:00
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: < 1 second
-[INFO] Finished at: Thu Sep 27 16:17:38 CEST 2018
-[INFO] Final Memory: 4M/75M
-[INFO] ------------------------------------------------------------------------
-[INFO] 2018-09-27 16:17:38 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/gson} Cleaning local repository...
-[INFO] 2018-09-27 16:17:39 RepositoriesSetter - Checkout ada597e69a78b8b99f79f79493cbf51e16045202 revision...
-[INFO] 2018-09-27 16:17:39 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/gson_parent} Cleaning local repository...
-[INFO] 2018-09-27 16:17:39 RepositoriesSetter - Checkout 0aaef0fd1bb1b9729543dc40168adfb829eb75a4 revision...
+[INFO] 2018-09-27 22:46:31 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/gson} Cleaning local repository...
+[INFO] 2018-09-27 22:46:32 RepositoriesSetter - Checkout ada597e69a78b8b99f79f79493cbf51e16045202 revision...
+[INFO] 2018-09-27 22:46:32 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/gson_parent} Cleaning local repository...
+[INFO] 2018-09-27 22:46:32 RepositoriesSetter - Checkout 0aaef0fd1bb1b9729543dc40168adfb829eb75a4 revision...

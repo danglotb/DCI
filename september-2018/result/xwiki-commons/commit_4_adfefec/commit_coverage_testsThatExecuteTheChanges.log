@@ -1,48 +1,138 @@
 [INFO] Scanning for projects...
-[INFO] ------------------------------------------------------------------------
-[ERROR] FATAL ERROR
-[INFO] ------------------------------------------------------------------------
-[INFO] An invalid artifact was detected.
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-xml:jar:10.6-SNAPSHOT
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ----------------< org.xwiki.commons:xwiki-commons-xml >-----------------
+[INFO] Building XWiki Commons - XML 10.6-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-xml ---
+[INFO] Deleting /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-xml/target
+[INFO] 
+[INFO] --- diff-test-selection:0.5-SNAPSHOT:list (default-cli) @ xwiki-commons-xml ---
+[INFO] Computing coverage for /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-xml
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-xml:jar:10.6-SNAPSHOT
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ----------------< org.xwiki.commons:xwiki-commons-xml >-----------------
+[INFO] Building XWiki Commons - XML 10.6-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-xml ---
+[INFO] 
+[INFO] --- clover-maven-plugin:4.2.0:setup (default-cli) @ xwiki-commons-xml ---
+[INFO] No 'maven.clover.licenseLocation' configured. Using default license.
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-xml/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 26 files (8 packages).
+[INFO] Elapsed time = 1.585 secs. (16.404 files/sec, 2,766.562 srclines/sec)
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-xml ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-xml ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons-xml ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons-xml ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons-xml ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons-xml ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons-xml ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons-xml ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons-xml ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons-xml ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-no-legacy-dependencies) @ xwiki-commons-xml ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-valid-poms) @ xwiki-commons-xml ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-platform-rendering-isolation) @ xwiki-commons-xml ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (check-dependency-version) @ xwiki-commons-xml ---
+[INFO] 
+[INFO] --- xwiki-commons-tool-remote-resource-plugin:10.6-SNAPSHOT:process (xwiki-license-resources) @ xwiki-commons-xml ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ xwiki-commons-xml ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ xwiki-commons-xml ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 26 source files to /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-xml/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.0:manifest (bundle-manifest) @ xwiki-commons-xml ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ xwiki-commons-xml ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-xml/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ xwiki-commons-xml ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-xml/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ xwiki-commons-xml ---
 
-This artifact might be in your project's POM, or it might have been included transitively during the resolution process. Here is the information we do have for this artifact:
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.xwiki.xml.XMLUtilsTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.611 sec - in org.xwiki.xml.XMLUtilsTest
+Running org.xwiki.xml.internal.html.DefaultHTMLCleanerTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.896 sec - in org.xwiki.xml.internal.html.DefaultHTMLCleanerTest
+Running org.xwiki.xml.stax.StAXUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.705 sec - in org.xwiki.xml.stax.StAXUtilsTest
+Running org.xwiki.xml.html.HTMLUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.xwiki.xml.html.HTMLUtilsTest
 
-    o GroupID:     javax.activation
-    o ArtifactID:  activation
-    o Version:     <<< MISSING >>>
-    o Type:        jar
+Results :
+
+Tests run: 50, Failures: 0, Errors: 0, Skipped: 1
 
 [INFO] ------------------------------------------------------------------------
-[INFO] Trace
-org.apache.maven.artifact.InvalidArtifactRTException: For artifact {javax.activation:activation:null:jar}: The version cannot be empty.
-	at org.apache.maven.artifact.DefaultArtifact.validateIdentity(DefaultArtifact.java:147)
-	at org.apache.maven.artifact.DefaultArtifact.<init>(DefaultArtifact.java:122)
-	at org.apache.maven.artifact.factory.DefaultArtifactFactory.createArtifact(DefaultArtifactFactory.java:158)
-	at org.apache.maven.artifact.factory.DefaultArtifactFactory.createDependencyArtifact(DefaultArtifactFactory.java:58)
-	at org.apache.maven.project.DefaultMavenProjectBuilder.createManagedVersionMap(DefaultMavenProjectBuilder.java:454)
-	at org.apache.maven.project.DefaultMavenProjectBuilder.buildInternal(DefaultMavenProjectBuilder.java:910)
-	at org.apache.maven.project.DefaultMavenProjectBuilder.buildFromSourceFileInternal(DefaultMavenProjectBuilder.java:508)
-	at org.apache.maven.project.DefaultMavenProjectBuilder.build(DefaultMavenProjectBuilder.java:200)
-	at org.apache.maven.DefaultMaven.getProject(DefaultMaven.java:604)
-	at org.apache.maven.DefaultMaven.collectProjects(DefaultMaven.java:487)
-	at org.apache.maven.DefaultMaven.getProjects(DefaultMaven.java:391)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:272)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:138)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:362)
-	at org.apache.maven.cli.compat.CompatibleMain.main(CompatibleMain.java:60)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.classworlds.Launcher.launchEnhanced(Launcher.java:315)
-	at org.codehaus.classworlds.Launcher.launch(Launcher.java:255)
-	at org.codehaus.classworlds.Launcher.mainWithExitCode(Launcher.java:430)
-	at org.codehaus.classworlds.Launcher.main(Launcher.java:375)
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: < 1 second
-[INFO] Finished at: Thu Sep 27 16:11:32 CEST 2018
-[INFO] Final Memory: 3M/75M
+[INFO] Total time: 28.887 s
+[INFO] Finished at: 2018-09-27T20:03:20+02:00
 [INFO] ------------------------------------------------------------------------
-[INFO] 2018-09-27 16:11:33 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
-[INFO] 2018-09-27 16:11:34 RepositoriesSetter - Checkout d3101aed5d0b3df40e9ac9cf1a40af74262d5f75 revision...
-[INFO] 2018-09-27 16:11:34 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
-[INFO] 2018-09-27 16:11:35 RepositoriesSetter - Checkout a0b25ca3b297fe7ab3ceaac64c368d994ec29841 revision...
+Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-xml/target/clover/report'
+Done. Processed 8 packages in 2723ms (340ms per package).
+[INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_4_adfefec/commit_coverage_testsThatExecuteTheChanges.csv ...
+[INFO] 
+[INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_4_adfefec/commit_coverage_testsThatExecuteTheChanges_coverage.csv
+[INFO] total;0;0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 43.480 s
+[INFO] Finished at: 2018-09-27T20:03:28+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] 2018-09-27 20:03:29 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-09-27 20:03:30 RepositoriesSetter - Checkout d3101aed5d0b3df40e9ac9cf1a40af74262d5f75 revision...
+[INFO] 2018-09-27 20:03:31 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-09-27 20:03:32 RepositoriesSetter - Checkout a0b25ca3b297fe7ab3ceaac64c368d994ec29841 revision...

@@ -1,20 +1,273 @@
 [INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-job:jar:9.0-SNAPSHOT
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ----------------< org.xwiki.commons:xwiki-commons-job >-----------------
+[INFO] Building XWiki Commons - Job 9.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ xwiki-commons-job ---
+[INFO] Deleting /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target
+[INFO] 
+[INFO] --- diff-test-selection:0.5-SNAPSHOT:list (default-cli) @ xwiki-commons-job ---
+[INFO] Computing coverage for /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-job:jar:9.0-SNAPSHOT
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ----------------< org.xwiki.commons:xwiki-commons-job >-----------------
+[INFO] Building XWiki Commons - Job 9.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ xwiki-commons-job ---
+[INFO] 
+[INFO] --- clover-maven-plugin:4.2.0:setup (default-cli) @ xwiki-commons-job ---
+[INFO] No 'maven.clover.licenseLocation' configured. Using default license.
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 65 files (8 packages).
+[INFO] Elapsed time = 2.028 secs. (32.051 files/sec, 3,487.179 srclines/sec)
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Updating existing database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 15 files (3 packages).
+[INFO] 55 test methods detected.
+[INFO] Elapsed time = 0.406 secs. (36.946 files/sec, 5,152.709 srclines/sec)
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-plugins) @ xwiki-commons-job ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-job ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-commons-lang3) @ xwiki-commons-job ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-upper-bounds) @ xwiki-commons-job ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-no-legacy-dependencies) @ xwiki-commons-job ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-valid-poms) @ xwiki-commons-job ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-platform-rendering-isolation) @ xwiki-commons-job ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (check-dependency-version) @ xwiki-commons-job ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (xwiki-license-resources) @ xwiki-commons-job ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ xwiki-commons-job ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ xwiki-commons-job ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 65 source files to /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/classes
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/DefaultJobProgress.java:[32,34] org.xwiki.job.event.status.StepProgressEvent in org.xwiki.job.event.status has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/DefaultJobProgressManager.java:[33,34] org.xwiki.job.event.status.StepProgressEvent in org.xwiki.job.event.status has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/DefaultJobManager.java:[44,21] org.xwiki.job.JobManager in org.xwiki.job has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/script/safe/JobStatusScriptSafeProvider.java:[49,59] found raw type: org.xwiki.job.internal.script.safe.SafeJobStatus
+  missing type arguments for generic class org.xwiki.job.internal.script.safe.SafeJobStatus<J>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/script/safe/JobStatusScriptSafeProvider.java:[49,55] unchecked call to SafeJobStatus(J,org.xwiki.script.internal.safe.ScriptSafeProvider<?>) as a member of the raw type org.xwiki.job.internal.script.safe.SafeJobStatus
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/script/safe/JobStatusScriptSafeProvider.java:[49,55] unchecked cast
+  required: S
+  found:    org.xwiki.job.internal.script.safe.SafeJobStatus
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeThrowableConverter.java:[53,37] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeArrayConverter.java:[53,31] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeMessageConverter.java:[62,31] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeMessageConverter.java:[162,77] unchecked cast
+  required: T
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeLogEventConverter.java:[56,31] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/DefaultJobProgress.java:[52,92] org.xwiki.job.event.status.StepProgressEvent in org.xwiki.job.event.status has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/DefaultJobProgress.java:[106,76] org.xwiki.job.event.status.StepProgressEvent in org.xwiki.job.event.status has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/DefaultJobProgressStep.java:[110,41] getChildren() in org.xwiki.job.internal.DefaultJobProgressStep implements <S>getChildren() in org.xwiki.job.event.status.JobProgressStep
+  return type requires unchecked conversion from java.util.List<org.xwiki.job.internal.DefaultJobProgressStep> to java.util.List<S>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/AbstractJob.java:[225,72] unchecked cast
+  required: org.xwiki.job.AbstractJobStatus<R>
+  found:    S
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/AbstractJob.java:[226,72] unchecked cast
+  required: org.xwiki.job.AbstractJobStatus<R>
+  found:    S
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/AbstractJob.java:[319,51] unchecked cast
+  required: S
+  found:    org.xwiki.job.DefaultJobStatus<R>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/AbstractRequest.java:[155,76] unchecked cast
+  required: T
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/AbstractRequest.java:[169,169] unchecked cast
+  required: T
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/DefaultJobContext.java:[63,98] unchecked cast
+  required: java.util.Stack<org.xwiki.job.Job>
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[64,15] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[66,15] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[70,37] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[70,49] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[93,50] found raw type: java.util.List
+  missing type arguments for generic class java.util.List<E>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[93,68] found raw type: java.util.ArrayList
+  missing type arguments for generic class java.util.ArrayList<E>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[94,50] found raw type: java.util.Map
+  missing type arguments for generic class java.util.Map<K,V>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[94,83] found raw type: java.util.HashMap
+  missing type arguments for generic class java.util.HashMap<K,V>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[98,19] found raw type: java.util.Set
+  missing type arguments for generic class java.util.Set<E>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[98,47] found raw type: java.util.HashSet
+  missing type arguments for generic class java.util.HashSet<E>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[100,49] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[100,61] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[105,56] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[111,83] unchecked call to put(K,V) as a member of the raw type java.util.Map
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[132,78] unchecked call to add(E) as a member of the raw type java.util.Set
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[134,66] unchecked call to add(E) as a member of the raw type java.util.List
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[141,57] found raw type: java.util.Iterator
+  missing type arguments for generic class java.util.Iterator<E>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[160,69] found raw type: java.util.Iterator
+  missing type arguments for generic class java.util.Iterator<E>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[167,74] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[175,75] found raw type: java.util.Map.Entry
+  missing type arguments for generic class java.util.Map.Entry<K,V>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[204,69] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[204,86] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[211,65] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[212,17] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[213,52] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeReflectionConverter.java:[219,56] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeTreeUnmarshaller.java:[61,45] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-instrumented/org/xwiki/job/internal/xstream/SafeWriter.java:[52,40] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.3:manifest (bundle-manifest) @ xwiki-commons-job ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ xwiki-commons-job ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ xwiki-commons-job ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 15 source files to /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/test-classes
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/DefaultJobManagerTest.java:[32,21] org.xwiki.job.JobManager in org.xwiki.job has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/DefaultJobManagerTest.java:[35,28] org.xwiki.test.jmock.AbstractMockingComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/DefaultJobManagerTest.java:[36,39] org.xwiki.test.jmock.annotation.MockingRequirement in org.xwiki.test.jmock.annotation has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/DefaultJobProgressTest.java:[30,34] org.xwiki.job.event.status.StepProgressEvent in org.xwiki.job.event.status has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/JobStatusSerializerTest.java:[84,20] Class org.xwiki.job.internal.JobStatusSerializerTest.CustomSerializableObject overrides equals, but neither it nor any superclass overrides hashCode method
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/JobStatusSerializerTest.java:[101,20] Class org.xwiki.job.internal.JobStatusSerializerTest.SerializableCustomObject overrides equals, but neither it nor any superclass overrides hashCode method
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/JobStatusSerializerTest.java:[118,20] Class org.xwiki.job.internal.JobStatusSerializerTest.NotSerializableCustomObject overrides equals, but neither it nor any superclass overrides hashCode method
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/JobStatusSerializerTest.java:[161,20] serializable class org.xwiki.job.internal.JobStatusSerializerTest.TestException has no definition of serialVersionUID
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/DefaultJobStatusStoreTest.java:[160,72] found raw type: org.xwiki.job.DefaultJobStatus
+  missing type arguments for generic class org.xwiki.job.DefaultJobStatus<R>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/DefaultJobStatusStoreTest.java:[160,68] unchecked call to DefaultJobStatus(R,org.xwiki.job.event.status.JobStatus,org.xwiki.observation.ObservationManager,org.xwiki.logging.LoggerManager) as a member of the raw type org.xwiki.job.DefaultJobStatus
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/DefaultJobManagerTest.java:[48,44] org.xwiki.test.jmock.AbstractMockingComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/DefaultJobManagerTest.java:[48,77] org.xwiki.job.JobManager in org.xwiki.job has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/DefaultJobManagerTest.java:[43,2] org.xwiki.test.jmock.annotation.MockingRequirement in org.xwiki.test.jmock.annotation has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/DefaultJobManagerTest.java:[43,29] org.xwiki.job.internal.DefaultJobManager in org.xwiki.job.internal has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/DefaultJobProgressTest.java:[107,74] org.xwiki.job.event.status.StepProgressEvent in org.xwiki.job.event.status has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/DefaultJobProgressTest.java:[117,74] org.xwiki.job.event.status.StepProgressEvent in org.xwiki.job.event.status has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/DefaultJobProgressTest.java:[153,74] org.xwiki.job.event.status.StepProgressEvent in org.xwiki.job.event.status has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/DefaultJobProgressTest.java:[159,74] org.xwiki.job.event.status.StepProgressEvent in org.xwiki.job.event.status has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/DefaultJobProgressTest.java:[164,74] org.xwiki.job.event.status.StepProgressEvent in org.xwiki.job.event.status has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/DefaultJobStatusTest.java:[69,112] <T>anyObject() in org.mockito.Mockito has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/DefaultJobStatusTest.java:[70,112] <T>anyObject() in org.mockito.Mockito has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/DefaultJobStatusTest.java:[70,125] <T>anyObject() in org.mockito.Mockito has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/xstream/SafeXStreamTest.java:[77,12] serializable class org.xwiki.job.internal.xstream.SafeXStreamTest.FailToSerializeObject has no definition of serialVersionUID
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/xstream/SafeXStreamTest.java:[93,12] serializable class org.xwiki.job.internal.xstream.SafeXStreamTest.FailToSerializeField has no definition of serialVersionUID
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/xstream/SafeXStreamTest.java:[99,20] Class org.xwiki.job.internal.xstream.SafeXStreamTest.NotSerializableObject overrides equals, but neither it nor any superclass overrides hashCode method
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/xstream/SafeXStreamTest.java:[121,20] Class org.xwiki.job.internal.xstream.SafeXStreamTest.NotSerializableField overrides equals, but neither it nor any superclass overrides hashCode method
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/xstream/SafeXStreamTest.java:[165,74] toString(java.io.InputStream) in org.apache.commons.io.IOUtils has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/src-test-instrumented/org/xwiki/job/internal/xstream/SafeXStreamTest.java:[175,70] toString(java.io.InputStream) in org.apache.commons.io.IOUtils has been deprecated
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ xwiki-commons-job ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.xwiki.job.internal.DefaultJobStatusStoreTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.268 sec - in org.xwiki.job.internal.DefaultJobStatusStoreTest
+Running org.xwiki.job.internal.DefaultJobStatusTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.274 sec - in org.xwiki.job.internal.DefaultJobStatusTest
+Running org.xwiki.job.internal.JobStatusSerializerTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.591 sec - in org.xwiki.job.internal.JobStatusSerializerTest
+Running org.xwiki.job.internal.xstream.XStreamUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.xwiki.job.internal.xstream.XStreamUtilsTest
+Running org.xwiki.job.internal.xstream.SafeXStreamTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.xwiki.job.internal.xstream.SafeXStreamTest
+Running org.xwiki.job.internal.DefaultJobManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in org.xwiki.job.internal.DefaultJobManagerTest
+Running org.xwiki.job.internal.DefaultJobProgressTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 sec - in org.xwiki.job.internal.DefaultJobProgressTest
+Running org.xwiki.job.internal.DefaultJobExecutorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in org.xwiki.job.internal.DefaultJobExecutorTest
+Running org.xwiki.job.internal.DefaultRequestTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.xwiki.job.internal.DefaultRequestTest
+
+Results :
+
+Tests run: 55, Failures: 0, Errors: 0, Skipped: 0
+
 [INFO] ------------------------------------------------------------------------
-[INFO] Building XWiki Commons - Job
-[INFO]    task-segment: [clean, eu.stamp-project:diff-test-selection:0.5-SNAPSHOT:list]
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
+[INFO] Total time: 29.812 s
+[INFO] Finished at: 2018-09-27T20:54:28+02:00
 [INFO] ------------------------------------------------------------------------
-[ERROR] BUILD ERROR
+Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/report'
+Done. Processed 9 packages in 3752ms (416ms per package).
+[INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_12_7444c38/commit_coverage_testsThatExecuteTheChanges.csv ...
+[INFO] org.xwiki.job.internal.DefaultJobProgressTest;testUnknownNumberOfSteps;testProgressDone;testProgressSteps;testPopDontMoveToNextStep;testPopLevelOnParentLevelSource;testMoveToNextStepInRoot;testPushLevelOnClosedStep;testEndStepOnParentStepSource;testStepProgressEvent;testMoreStepsThanExpected;testStartStepFromDifferentSource;testPopLevelOnWrongSource
+[INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_12_7444c38/commit_coverage_testsThatExecuteTheChanges_coverage.csv
+[INFO] org.xwiki.job.internal.DefaultJobProgress;7;8
+
+[INFO] org.xwiki.job.internal.DefaultJobProgressStep;2;4
+
+[INFO] total;9;12
+
 [INFO] ------------------------------------------------------------------------
-[INFO] Error resolving version for 'org.apache.maven.plugins:maven-clean-plugin': Plugin requires Maven version 3.0
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] For more information, run Maven with the -e switch
+[INFO] Total time: 45.504 s
+[INFO] Finished at: 2018-09-27T20:54:37+02:00
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: < 1 second
-[INFO] Finished at: Thu Sep 27 16:12:38 CEST 2018
-[INFO] Final Memory: 4M/75M
-[INFO] ------------------------------------------------------------------------
-[INFO] 2018-09-27 16:12:39 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
-[INFO] 2018-09-27 16:12:40 RepositoriesSetter - Checkout 07ca6125607ba5162513c380e0ece57a953dca6a revision...
-[INFO] 2018-09-27 16:12:40 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
-[INFO] 2018-09-27 16:12:41 RepositoriesSetter - Checkout 812002159655917a4bf1895fdcf83105e541a5c7 revision...
+[INFO] 2018-09-27 20:54:38 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-09-27 20:54:39 RepositoriesSetter - Checkout 07ca6125607ba5162513c380e0ece57a953dca6a revision...
+[INFO] 2018-09-27 20:54:39 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-09-27 20:54:40 RepositoriesSetter - Checkout 812002159655917a4bf1895fdcf83105e541a5c7 revision...

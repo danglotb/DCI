@@ -1,16 +1,262 @@
 [INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-velocity:jar:9.0-SNAPSHOT
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------------< org.xwiki.commons:xwiki-commons-velocity >--------------
+[INFO] Building XWiki Commons - Velocity 9.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ xwiki-commons-velocity ---
+[INFO] 
+[INFO] --- diff-test-selection:0.5-SNAPSHOT:list (default-cli) @ xwiki-commons-velocity ---
+[INFO] Computing coverage for /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.xwiki.commons:xwiki-commons-velocity:jar:9.0-SNAPSHOT
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------------< org.xwiki.commons:xwiki-commons-velocity >--------------
+[INFO] Building XWiki Commons - Velocity 9.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ xwiki-commons-velocity ---
+[INFO] 
+[INFO] --- clover-maven-plugin:4.2.0:setup (default-cli) @ xwiki-commons-velocity ---
+[INFO] No 'maven.clover.licenseLocation' configured. Using default license.
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 40 files (8 packages).
+[INFO] Elapsed time = 1.725 secs. (23.188 files/sec, 3,060.29 srclines/sec)
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Updating existing database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 18 files (5 packages).
+[INFO] 130 test methods detected.
+[INFO] Elapsed time = 0.867 secs. (20.761 files/sec, 3,362.168 srclines/sec)
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-plugins) @ xwiki-commons-velocity ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-velocity ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-commons-lang3) @ xwiki-commons-velocity ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-upper-bounds) @ xwiki-commons-velocity ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-no-legacy-dependencies) @ xwiki-commons-velocity ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-valid-poms) @ xwiki-commons-velocity ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-platform-rendering-isolation) @ xwiki-commons-velocity ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (check-dependency-version) @ xwiki-commons-velocity ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (xwiki-license-resources) @ xwiki-commons-velocity ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ xwiki-commons-velocity ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ xwiki-commons-velocity ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 40 source files to /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/classes
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-instrumented/org/xwiki/velocity/internal/DefaultVelocityConfiguration.java:[28,41] org.apache.velocity.tools.generic.ListTool in org.apache.velocity.tools.generic has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-instrumented/org/xwiki/velocity/internal/DefaultVelocityConfiguration.java:[85,81] org.apache.velocity.tools.generic.ListTool in org.apache.velocity.tools.generic has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-instrumented/org/xwiki/velocity/introspection/SecureIntrospector.java:[75,49] found raw type: java.lang.Class
+  missing type arguments for generic class java.lang.Class<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-instrumented/org/xwiki/velocity/introspection/LinkingUberspector.java:[183,12] found raw type: java.util.Iterator
+  missing type arguments for generic class java.util.Iterator<E>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-instrumented/org/xwiki/velocity/introspection/LinkingUberspector.java:[185,43] found raw type: java.util.Iterator
+  missing type arguments for generic class java.util.Iterator<E>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-instrumented/org/xwiki/velocity/internal/util/InvalidVelocityException.java:[27,8] serializable class org.xwiki.velocity.internal.util.InvalidVelocityException has no definition of serialVersionUID
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-instrumented/org/xwiki/velocity/introspection/SecureUberspector.java:[64,12] found raw type: java.util.Iterator
+  missing type arguments for generic class java.util.Iterator<E>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-instrumented/org/xwiki/velocity/internal/jmx/JMXVelocityEngine.java:[73,47] found raw type: javax.management.openmbean.ArrayType
+  missing type arguments for generic class javax.management.openmbean.ArrayType<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-instrumented/org/xwiki/velocity/internal/jmx/JMXVelocityEngine.java:[73,77] found raw type: javax.management.openmbean.ArrayType
+  missing type arguments for generic class javax.management.openmbean.ArrayType<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-instrumented/org/xwiki/velocity/internal/jmx/JMXVelocityEngine.java:[73,73] unchecked call to ArrayType(int,javax.management.openmbean.OpenType<?>) as a member of the raw type javax.management.openmbean.ArrayType
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-instrumented/org/xwiki/velocity/internal/jmx/JMXVelocityEngine.java:[80,21] found raw type: javax.management.openmbean.OpenType
+  missing type arguments for generic class javax.management.openmbean.OpenType<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-instrumented/org/xwiki/velocity/internal/jmx/JMXVelocityEngine.java:[120,51] unchecked cast
+  required: java.util.Map<java.lang.String,java.util.Map<java.lang.String,?>>
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-instrumented/org/xwiki/velocity/internal/jmx/JMXVelocityEngine.java:[122,101] unchecked cast
+  required: java.util.Map<java.lang.String,?>
+  found:    java.lang.Object
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-instrumented/org/xwiki/velocity/tools/nio/NIOTool.java:[71,78] found raw type: java.nio.file.DirectoryStream.Filter
+  missing type arguments for generic class java.nio.file.DirectoryStream.Filter<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-instrumented/org/xwiki/velocity/tools/nio/NIOTool.java:[74,109] unchecked method invocation: method newDirectoryStream in class java.nio.file.Files is applied to given types
+  required: java.nio.file.Path,java.nio.file.DirectoryStream.Filter<? super java.nio.file.Path>
+  found: java.nio.file.Path,java.nio.file.DirectoryStream.Filter
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-instrumented/org/xwiki/velocity/tools/nio/NIOTool.java:[74,115] unchecked conversion
+  required: java.nio.file.DirectoryStream.Filter<? super java.nio.file.Path>
+  found:    java.nio.file.DirectoryStream.Filter
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-instrumented/org/xwiki/velocity/tools/nio/NIOTool.java:[74,57] unchecked method invocation: constructor <init> in class org.xwiki.velocity.tools.nio.WrappingDirectoryStream is applied to given types
+  required: java.nio.file.DirectoryStream<java.nio.file.Path>
+  found: java.nio.file.DirectoryStream
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-instrumented/org/xwiki/velocity/tools/nio/NIOTool.java:[74,109] unchecked conversion
+  required: java.nio.file.DirectoryStream<java.nio.file.Path>
+  found:    java.nio.file.DirectoryStream
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.3:manifest (bundle-manifest) @ xwiki-commons-velocity ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ xwiki-commons-velocity ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ xwiki-commons-velocity ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 18 source files to /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/test-classes
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/internal/DefaultVelocityContextFactoryTest.java:[26,41] org.apache.velocity.tools.generic.ListTool in org.apache.velocity.tools.generic has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/internal/DefaultVelocityConfigurationTest.java:[25,41] org.apache.velocity.tools.generic.ListTool in org.apache.velocity.tools.generic has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/internal/DefaultVelocityEngineTest.java:[44,40] org.xwiki.velocity.introspection.ChainingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[40,28] org.xwiki.test.jmock.JMockRule in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/LinkingUberspectorTest.java:[31,28] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/internal/util/RestrictParseLocationEventHandlerTest.java:[25,22] org.xwiki.test.LogRule in org.xwiki.test has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/internal/jmx/JMXVelocityEngineTest.java:[90,116] unchecked cast
+  required: java.util.Collection<javax.management.openmbean.CompositeData>
+  found:    java.util.Collection<capture#1 of ?>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/TestingUberspector.java:[26,41] org.xwiki.velocity.introspection.AbstractChainableUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/internal/DefaultVelocityContextFactoryTest.java:[53,13] found raw type: org.xwiki.test.mockito.MockitoComponentMockingRule
+  missing type arguments for generic class org.xwiki.test.mockito.MockitoComponentMockingRule<T>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/internal/DefaultVelocityContextFactoryTest.java:[53,9] unchecked call to MockitoComponentMockingRule(java.lang.Class<? extends T>) as a member of the raw type org.xwiki.test.mockito.MockitoComponentMockingRule
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/internal/DefaultVelocityContextFactoryTest.java:[53,9] unchecked conversion
+  required: org.xwiki.test.mockito.MockitoComponentMockingRule<org.xwiki.velocity.internal.DefaultVelocityContextFactory>
+  found:    org.xwiki.test.mockito.MockitoComponentMockingRule
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/internal/DefaultVelocityContextFactoryTest.java:[62,73] org.apache.velocity.tools.generic.ListTool in org.apache.velocity.tools.generic has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/MethodArgumentUberspectorTest.java:[88,30] found raw type: java.util.List
+  missing type arguments for generic class java.util.List<E>
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/InvalidUberspector.java:[25,41] org.xwiki.velocity.introspection.AbstractChainableUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/internal/DefaultVelocityConfigurationTest.java:[63,59] org.apache.velocity.tools.generic.ListTool in org.apache.velocity.tools.generic has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/DeprecatedObject.java:[25,8] serializable class org.xwiki.velocity.introspection.DeprecatedObject has no definition of serialVersionUID
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/internal/DefaultVelocityEngineTest.java:[63,95] org.xwiki.velocity.introspection.ChainingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[60,18] org.xwiki.test.jmock.JMockRule in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[60,42] org.xwiki.test.jmock.JMockRule in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[95,101] org.xwiki.velocity.introspection.ChainingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[97,63] org.xwiki.velocity.introspection.ChainingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[116,101] org.xwiki.velocity.introspection.ChainingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[118,63] org.xwiki.velocity.introspection.ChainingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[139,101] org.xwiki.velocity.introspection.ChainingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[141,63] org.xwiki.velocity.introspection.ChainingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[144,15] org.xwiki.velocity.introspection.AbstractChainableUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[167,101] org.xwiki.velocity.introspection.ChainingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[169,63] org.xwiki.velocity.introspection.ChainingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[188,101] org.xwiki.velocity.introspection.ChainingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[190,63] org.xwiki.velocity.introspection.ChainingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[207,101] org.xwiki.velocity.introspection.ChainingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[209,63] org.xwiki.velocity.introspection.ChainingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[238,101] org.xwiki.velocity.introspection.ChainingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[240,63] org.xwiki.velocity.introspection.ChainingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[257,101] org.xwiki.velocity.introspection.ChainingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[259,63] org.xwiki.velocity.introspection.ChainingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[272,73] org.xwiki.velocity.introspection.DeprecatedObject in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[289,67] getYear() in java.util.Date has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/ChainingUberspectorTest.java:[289,87] getMonth() in java.util.Date has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/LinkingUberspectorTest.java:[39,45] org.xwiki.test.jmock.AbstractComponentTestCase in org.xwiki.test.jmock has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/LinkingUberspectorTest.java:[56,101] org.xwiki.velocity.introspection.LinkingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/LinkingUberspectorTest.java:[57,63] org.xwiki.velocity.introspection.LinkingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/LinkingUberspectorTest.java:[75,101] org.xwiki.velocity.introspection.LinkingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/LinkingUberspectorTest.java:[76,63] org.xwiki.velocity.introspection.LinkingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/LinkingUberspectorTest.java:[97,101] org.xwiki.velocity.introspection.LinkingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/LinkingUberspectorTest.java:[98,63] org.xwiki.velocity.introspection.LinkingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/LinkingUberspectorTest.java:[99,15] org.xwiki.velocity.introspection.AbstractChainableUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/LinkingUberspectorTest.java:[119,101] org.xwiki.velocity.introspection.LinkingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/LinkingUberspectorTest.java:[120,63] org.xwiki.velocity.introspection.LinkingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/LinkingUberspectorTest.java:[135,101] org.xwiki.velocity.introspection.LinkingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/LinkingUberspectorTest.java:[136,63] org.xwiki.velocity.introspection.LinkingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/LinkingUberspectorTest.java:[151,101] org.xwiki.velocity.introspection.LinkingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/introspection/LinkingUberspectorTest.java:[152,63] org.xwiki.velocity.introspection.LinkingUberspector in org.xwiki.velocity.introspection has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/internal/util/RestrictParseLocationEventHandlerTest.java:[40,18] org.xwiki.test.LogRule in org.xwiki.test has been deprecated
+[WARNING] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/src-test-instrumented/org/xwiki/velocity/internal/util/RestrictParseLocationEventHandlerTest.java:[40,40] org.xwiki.test.LogRule in org.xwiki.test has been deprecated
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ xwiki-commons-velocity ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.xwiki.velocity.tools.URLToolTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.826 sec - in org.xwiki.velocity.tools.URLToolTest
+Running org.xwiki.velocity.tools.CSSIdentifierSerializerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.xwiki.velocity.tools.CSSIdentifierSerializerTest
+Running org.xwiki.velocity.tools.CollectionsToolTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec - in org.xwiki.velocity.tools.CollectionsToolTest
+Running org.xwiki.velocity.tools.EscapeToolTest
+21:00:05.475 [main] WARN  org.xwiki.velocity.tools.EscapeTool - Failed to escape CSS identifier. Invalid character: the input contains U+0000.
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 sec - in org.xwiki.velocity.tools.EscapeToolTest
+Running org.xwiki.velocity.tools.RegexToolTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in org.xwiki.velocity.tools.RegexToolTest
+Running org.xwiki.velocity.tools.JSONToolTest
+21:00:06.192 [main] INFO  org.xwiki.velocity.tools.JSONTool - Tried to parse invalid JSON: [], exception was: Invalid JSON String
+21:00:06.219 [main] INFO  org.xwiki.velocity.tools.JSONTool - Tried to parse invalid JSON: [This is not the JSON you are ...], exception was: Invalid JSON String
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.621 sec - in org.xwiki.velocity.tools.JSONToolTest
+Running org.xwiki.velocity.internal.jmx.JMXVelocityEngineTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1 sec - in org.xwiki.velocity.internal.jmx.JMXVelocityEngineTest
+Running org.xwiki.velocity.internal.DefaultVelocityContextFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.842 sec - in org.xwiki.velocity.internal.DefaultVelocityContextFactoryTest
+Running org.xwiki.velocity.internal.DefaultVelocityEngineTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.225 sec - in org.xwiki.velocity.internal.DefaultVelocityEngineTest
+Running org.xwiki.velocity.internal.DefaultVelocityConfigurationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec - in org.xwiki.velocity.internal.DefaultVelocityConfigurationTest
+Running org.xwiki.velocity.internal.util.RestrictParseLocationEventHandlerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.xwiki.velocity.internal.util.RestrictParseLocationEventHandlerTest
+Running org.xwiki.velocity.internal.util.VelocityParserTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.xwiki.velocity.internal.util.VelocityParserTest
+Running org.xwiki.velocity.introspection.MethodArgumentUberspectorTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.212 sec - in org.xwiki.velocity.introspection.MethodArgumentUberspectorTest
+Running org.xwiki.velocity.introspection.LinkingUberspectorTest
+21:00:08.829 [main] WARN  o.x.v.internal.DefaultVelocityEngine - The specified class for Uberspect [java.util.Date] does not implement org.apache.velocity.util.introspection.Uberspect
+21:00:08.834 [main] WARN  o.x.v.internal.DefaultVelocityEngine - The specified uberspector [org.xwiki.velocity.introspection.AbstractChainableUberspector] cannot be instantiated.
+21:00:08.838 [main] WARN  o.x.v.internal.DefaultVelocityEngine - The specified uberspector [org.xwiki.velocity.introspection.InvalidUberspector] does not have a public default constructor.
+21:00:08.869 [main] ERROR o.x.v.internal.DefaultVelocityEngine - No uberspectors defined! This uberspector is just a placeholder that relies on at least one real uberspector to actually allow method calls. Using SecureUberspector instead as a fallback.
+21:00:08.872 [main] WARN  o.x.v.internal.DefaultVelocityEngine - Cannot retrieve method getConstructors from object of class java.lang.Class due to security restrictions.
+21:00:08.912 [main] WARN  o.x.v.internal.DefaultVelocityEngine - Cannot retrieve method getConstructors from object of class java.lang.Class due to security restrictions.
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.288 sec - in org.xwiki.velocity.introspection.LinkingUberspectorTest
+Running org.xwiki.velocity.introspection.ChainingUberspectorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.178 sec - in org.xwiki.velocity.introspection.ChainingUberspectorTest
+
+Results :
+
+Tests run: 130, Failures: 0, Errors: 0, Skipped: 0
+
 [INFO] ------------------------------------------------------------------------
-[INFO] Building XWiki Commons - Velocity
-[INFO]    task-segment: [clean, eu.stamp-project:diff-test-selection:0.5-SNAPSHOT:list]
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
+[INFO] Total time: 31.673 s
+[INFO] Finished at: 2018-09-27T21:00:09+02:00
 [INFO] ------------------------------------------------------------------------
-[ERROR] BUILD ERROR
+Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-velocity/target/clover/report'
+Done. Processed 8 packages in 3608ms (451ms per package).
+[INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_13_07ca612/parent_coverage_testsThatExecuteTheChanges.csv ...
+[INFO] org.xwiki.velocity.introspection.MethodArgumentUberspectorTest;getMethodWhenAddingSameMethodNameToExtendingClassAndConversion;getMethodWhenVarargsWithConversionAndVarargParamPassedNeedingConversion;getMethodWhenVarargsWithNoConversionAndNoVarargParamPassed;getMethodWhenVarargsWithConversionAndNoVarargParamPassed;getMethodWhenVarargsWithConversionAndOneVarargParamPassed;getMethodWhenVarargsWithNoConversionAndTwoVarargParamsPassed;getMethodWhenVarargsWithConversionAndTwoVarargParamsPassed
+[INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_13_07ca612/parent_coverage_testsThatExecuteTheChanges_coverage.csv
+[INFO] org.xwiki.velocity.introspection.MethodArgumentsUberspector;6;9
+
+[INFO] total;6;9
+
 [INFO] ------------------------------------------------------------------------
-[INFO] Error resolving version for 'org.apache.maven.plugins:maven-clean-plugin': Plugin requires Maven version 3.0
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] For more information, run Maven with the -e switch
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: < 1 second
-[INFO] Finished at: Thu Sep 27 16:12:44 CEST 2018
-[INFO] Final Memory: 4M/75M
+[INFO] Total time: 46.614 s
+[INFO] Finished at: 2018-09-27T21:00:17+02:00
 [INFO] ------------------------------------------------------------------------
