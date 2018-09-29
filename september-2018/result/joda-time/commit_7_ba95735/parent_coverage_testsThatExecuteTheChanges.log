@@ -1,0 +1,153 @@
+[INFO] Scanning for projects...
+[WARNING] The project joda-time:joda-time:jar:2.9.9 uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[INFO] 
+[INFO] ------------------------< joda-time:joda-time >-------------------------
+[INFO] Building Joda-Time 2.9.9
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ joda-time ---
+[INFO] Deleting /tmp/icst-2019/september-2018/dataset/joda-time_parent/target
+[INFO] 
+[INFO] --- diff-test-selection:0.5-SNAPSHOT:list (default-cli) @ joda-time ---
+[INFO] Computing coverage for /tmp/icst-2019/september-2018/dataset/joda-time_parent
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[WARNING] The project joda-time:joda-time:jar:2.9.9 uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[INFO] 
+[INFO] ------------------------< joda-time:joda-time >-------------------------
+[INFO] Building Joda-Time 2.9.9
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ joda-time ---
+[INFO] 
+[INFO] --- clover-maven-plugin:4.2.0:setup (default-cli) @ joda-time ---
+[INFO] No 'maven.clover.licenseLocation' configured. Using default license.
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/joda-time_parent/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 166 files (7 packages).
+[INFO] Elapsed time = 5.275 secs. (31.469 files/sec, 13,413.649 srclines/sec)
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Updating existing database at '/tmp/icst-2019/september-2018/dataset/joda-time_parent/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 158 files (7 packages).
+[INFO] 4206 test methods detected.
+[INFO] Elapsed time = 9.622 secs. (16.421 files/sec, 7,562.877 srclines/sec)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ joda-time ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 15 resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ joda-time ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 166 source files to /tmp/icst-2019/september-2018/dataset/joda-time_parent/target/classes
+[INFO] 
+[INFO] --- exec-maven-plugin:1.4.0:java (compile-tzdb) @ joda-time ---
+Writing zoneinfo files
+Writing ZoneInfoMap
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ joda-time ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 35 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ joda-time ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 158 source files to /tmp/icst-2019/september-2018/dataset/joda-time_parent/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ joda-time ---
+[INFO] Surefire report directory: /tmp/icst-2019/september-2018/dataset/joda-time_parent/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.joda.time.TestAllPackages
+
+TestBuddhistChronology.testCalendar
+
+TestCopticChronology.testCalendar
+
+TestEthiopicChronology.testCalendar
+
+TestIslamicChronology.testCalendar
+
+Testing Gregorian chronology over 1000 iterations
+100% complete (i=1000)
+
+Testing Julian chronology over 1000 iterations
+100% complete (i=1000)
+Writing zoneinfo files
+Writing ZoneInfoMap
+Tests run: 4207, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 44.28 sec <<< FAILURE! - in org.joda.time.TestAllPackages
+test_other(org.joda.time.TestDateTimeFieldType)  Time elapsed: 0.006 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<1> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestDateTimeFieldType.__CLR4_2_0r2q5yjai(TestDateTimeFieldType.java:286)
+	at org.joda.time.TestDateTimeFieldType.test_other(TestDateTimeFieldType.java:285)
+
+test_other(org.joda.time.TestDurationFieldType)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<1> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at org.joda.time.TestDurationFieldType.__CLR4_2_0r2q5ymqv(TestDurationFieldType.java:152)
+	at org.joda.time.TestDurationFieldType.test_other(TestDurationFieldType.java:151)
+
+
+Results :
+
+Failed tests: 
+  org.joda.time.TestDateTimeFieldType#test_other AssertionFailedError expected:<...
+  org.joda.time.TestDurationFieldType#test_other AssertionFailedError expected:<...
+
+Tests run: 4207, Failures: 2, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:25 min
+[INFO] Finished at: 2018-09-29T02:09:14+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project joda-time: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /tmp/icst-2019/september-2018/dataset/joda-time_parent/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Writing HTML report to '/tmp/icst-2019/september-2018/dataset/joda-time_parent/target/clover/report'
+Done. Processed 8 packages in 38557ms (4819ms per package).
+[INFO] /tmp/icst-2019/september-2018/dataset/joda-time_parent/src/main/java/org/joda/time/DateTimeZone.java
+[INFO] /tmp/icst-2019/september-2018/dataset/joda-time/src/main/java/org/joda/time/DateTimeZone.java
+[INFO] /tmp/icst-2019/september-2018/dataset/joda-time_parent/src/main/java/org/joda/time/tz/ZoneInfoProvider.java
+[INFO] /tmp/icst-2019/september-2018/dataset/joda-time/src/main/java/org/joda/time/tz/ZoneInfoProvider.java
+[info] org.joda.time.tz.ZoneInfoProvider:62 is modified.
+[info] org.joda.time.tz.ZoneInfoProvider:62 covered.
+[INFO] Saving result in /tmp/icst-2019/september-2018/result/joda-time/commit_7_ba95735/parent_coverage_testsThatExecuteTheChanges.csv ...
+[INFO] org.joda.time.tz.TestCompiler;testCompile
+org.joda.time.TestDateTimeZone;testProvider
+[INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/joda-time/commit_7_ba95735/parent_coverage_testsThatExecuteTheChanges_coverage.csv
+[INFO] org.joda.time.tz.ZoneInfoProvider;1;1
+
+[INFO] total;1;1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:14 min
+[INFO] Finished at: 2018-09-29T02:09:58+02:00
+[INFO] ------------------------------------------------------------------------

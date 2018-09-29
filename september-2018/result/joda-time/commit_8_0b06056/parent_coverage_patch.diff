@@ -1,0 +1,45 @@
+diff --git a/src/main/java/org/joda/time/DateTimeZone.java b/src/main/java/org/joda/time/DateTimeZone.java
+index bdca787..71a3d8f 100644
+--- a/src/main/java/org/joda/time/DateTimeZone.java
++++ b/src/main/java/org/joda/time/DateTimeZone.java
+@@ -127,11 +127,6 @@ public abstract class DateTimeZone implements Serializable {
+      */
+     private static final AtomicReference<DateTimeZone> cDefault =
+                     new AtomicReference<DateTimeZone>();
+-    /**
+-     * The default TZ data path
+-     * This is the default classpath location containing the compiled data files.
+-     */
+-    public static final String DEFAULT_TZ_DATA_PATH = "org/joda/time/tz/data";
+ 
+     //-----------------------------------------------------------------------
+     /**
+@@ -534,7 +529,7 @@ public abstract class DateTimeZone implements Serializable {
+         }
+         // approach 3
+         try {
+-            Provider provider = new ZoneInfoProvider(DEFAULT_TZ_DATA_PATH);
++            Provider provider = new ZoneInfoProvider("org/joda/time/tz/data");
+             return validateProvider(provider);
+         } catch (Exception ex) {
+             ex.printStackTrace();
+diff --git a/src/main/java/org/joda/time/tz/ZoneInfoProvider.java b/src/main/java/org/joda/time/tz/ZoneInfoProvider.java
+index e0db339..0015074 100644
+--- a/src/main/java/org/joda/time/tz/ZoneInfoProvider.java
++++ b/src/main/java/org/joda/time/tz/ZoneInfoProvider.java
+@@ -54,15 +54,6 @@ public class ZoneInfoProvider implements Provider {
+     private final Set<String> iZoneInfoKeys;
+ 
+     /**
+-     * Search the default classloader resource path for compiled data files.
+-     *
+-     * @throws IOException if directory or map file cannot be read
+-     */
+-    public ZoneInfoProvider() throws IOException {
+-        this(DateTimeZone.DEFAULT_TZ_DATA_PATH);
+-    }
+-
+-    /**
+      * ZoneInfoProvider searches the given directory for compiled data files.
+      *
+      * @throws IOException if directory or map file cannot be read
