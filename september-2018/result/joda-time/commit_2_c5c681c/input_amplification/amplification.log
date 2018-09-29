@@ -1,842 +1,0 @@
-Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fe; 2018-06-17T20:33:14+02:00)
-Maven home: /home/spirals/danglot/apache-maven-3.5.4
-Java version: 1.8.0_121, vendor: Oracle Corporation, runtime: /home/spirals/danglot/jdk1.8.0_121/jre
-Default locale: en_US, platform encoding: ANSI_X3.4-1968
-OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
-[DEBUG] Created new class realm maven.api
-[DEBUG] Importing foreign packages into class realm maven.api
-[DEBUG]   Imported: javax.annotation.* < plexus.core
-[DEBUG]   Imported: javax.annotation.security.* < plexus.core
-[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
-[DEBUG]   Imported: javax.enterprise.util.* < plexus.core
-[DEBUG]   Imported: javax.inject.* < plexus.core
-[DEBUG]   Imported: org.apache.maven.* < plexus.core
-[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
-[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
-[DEBUG]   Imported: org.apache.maven.cli < plexus.core
-[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
-[DEBUG]   Imported: org.apache.maven.exception < plexus.core
-[DEBUG]   Imported: org.apache.maven.execution < plexus.core
-[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
-[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
-[DEBUG]   Imported: org.apache.maven.model < plexus.core
-[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
-[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
-[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
-[DEBUG]   Imported: org.apache.maven.project < plexus.core
-[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
-[DEBUG]   Imported: org.apache.maven.repository < plexus.core
-[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
-[DEBUG]   Imported: org.apache.maven.settings < plexus.core
-[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
-[DEBUG]   Imported: org.apache.maven.usability < plexus.core
-[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
-[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
-[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
-[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
-[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
-[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
-[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
-[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
-[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
-[DEBUG]   Imported: org.fusesource.jansi.* < plexus.core
-[DEBUG]   Imported: org.slf4j.* < plexus.core
-[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
-[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
-[DEBUG] Populating class realm maven.api
-[INFO] Error stacktraces are turned on.
-[DEBUG] Message scheme: color
-[DEBUG] Message styles: debug info warning error success failure strong mojo project
-[DEBUG] Reading global settings from /home/spirals/danglot/apache-maven-3.5.4/conf/settings.xml
-[DEBUG] Reading user settings from /home/spirals/danglot/.m2/settings.xml
-[DEBUG] Reading global toolchains from /home/spirals/danglot/apache-maven-3.5.4/conf/toolchains.xml
-[DEBUG] Reading user toolchains from /home/spirals/danglot/.m2/toolchains.xml
-[DEBUG] Using local repository at /home/spirals/danglot/.m2/repository
-[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /home/spirals/danglot/.m2/repository
-[INFO] Scanning for projects...
-[DEBUG] Extension realms for project joda-time:joda-time:jar:2.9.9: (none)
-[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
-[WARNING] The project joda-time:joda-time:jar:2.9.9 uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
-[DEBUG] === REACTOR BUILD PLAN ================================================
-[DEBUG] Project: joda-time:joda-time:jar:2.9.9
-[DEBUG] Tasks:   [eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests]
-[DEBUG] Style:   Regular
-[DEBUG] =======================================================================
-[INFO] 
-[INFO] ------------------------< joda-time:joda-time >-------------------------
-[INFO] Building Joda-Time 2.9.9
-[INFO] --------------------------------[ jar ]---------------------------------
-[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
-[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
-[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
-[DEBUG] === PROJECT BUILD PLAN ================================================
-[DEBUG] Project:       joda-time:joda-time:2.9.9
-[DEBUG] Dependencies (collect): []
-[DEBUG] Dependencies (resolve): [test]
-[DEBUG] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
-[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Goal:          eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli)
-[DEBUG] Style:         Regular
-[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-  <amplifiers default-value="None">${amplifiers}</amplifiers>
-  <automaticBuilder default-value="MavenBuilder">${automatic-builder}</automaticBuilder>
-  <budgetizer default-value="NoBudgetizer">${budgetizer}</budgetizer>
-  <cases>${cases}</cases>
-  <clean default-value="false">${clean}</clean>
-  <descartes default-value="false">${descartes}</descartes>
-  <example default-value="false">${example}</example>
-  <generateNewTestClass default-value="false">${generate-new-test-class}</generateNewTestClass>
-  <help default-value="false">${help}</help>
-  <iteration default-value="3">${iteration}</iteration>
-  <mavenHome>${maven-home}</mavenHome>
-  <maxTestAmplified default-value="200">${max-test-amplified}</maxTestAmplified>
-  <noMinimize default-value="false">${no-minimize}</noMinimize>
-  <outputPath default-value="target/dspot/output">${output-path}</outputPath>
-  <pathPitResult>${path-pit-result}</pathPitResult>
-  <pathToProperties default-value="">${path-to-properties}</pathToProperties>
-  <pathToSecondVersion default-value="">${path-to-second-version}</pathToSecondVersion>
-  <pathToTestListCsv default-value="">${path-to-test-list-csv}</pathToTestListCsv>
-  <project default-value="${project}"/>
-  <randomSeed default-value="23">${randomSeed}</randomSeed>
-  <test default-value="all">${test}</test>
-  <testCriterion default-value="PitMutantScoreSelector">${test-criterion}</testCriterion>
-  <timeOut default-value="10000">${timeOut}</timeOut>
-  <useMavenToExeTest default-value="false">${use-maven-to-exe-test}</useMavenToExeTest>
-  <verbose default-value="false">${verbose}</verbose>
-  <withComment default-value="false">${with-comment}</withComment>
-  <workingDirectory default-value="false">${working-directory}</workingDirectory>
-</configuration>
-[DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=740550, ConflictMarker.markTime=474827, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=479871, ConflictIdSorter.topsortTime=401102, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2895056, ConflictResolver.conflictItemCount=2, DefaultDependencyCollector.collectTime=21385014, DefaultDependencyCollector.transformTime=7323888}
-[DEBUG] joda-time:joda-time:jar:2.9.9
-[DEBUG]    org.joda:joda-convert:jar:1.2:compile (optional)
-[DEBUG]    junit:junit:jar:3.8.2:test
-[INFO] 
-[INFO] --- dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) @ joda-time ---
-[DEBUG] Failure to find eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Skipped remote request for eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
-[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/eu/stamp-project/dspot/1.1.1-SNAPSHOT/maven-metadata.xml
-[DEBUG] Writing tracking file /home/spirals/danglot/.m2/repository/eu/stamp-project/dspot/1.1.1-SNAPSHOT/resolver-status.properties
-[DEBUG] Could not find metadata eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
-[DEBUG] Skipped remote request for eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Skipped remote request for eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Could not find metadata fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Failure to find fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Skipped remote request for fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
-[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/maven-metadata.xml
-[DEBUG] Writing tracking file /home/spirals/danglot/.m2/repository/fr/inria/gforge/spoon/spoon-core/7.1.0-SNAPSHOT/resolver-status.properties
-[DEBUG] Could not find metadata fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
-[DEBUG] Could not find metadata fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Skipped remote request for fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.resources/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.resources/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.resources/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.resources/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.resources/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.resources/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
-[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.resources/maven-metadata.xml
-[DEBUG] Writing tracking file /home/spirals/danglot/.m2/repository/org/eclipse/platform/org.eclipse.core.resources/resolver-status.properties
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.resources/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.expressions/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.expressions/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.expressions/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.expressions/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.expressions/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.expressions/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
-[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.expressions/maven-metadata.xml
-[DEBUG] Writing tracking file /home/spirals/danglot/.m2/repository/org/eclipse/platform/org.eclipse.core.expressions/resolver-status.properties
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.expressions/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
-[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.runtime/maven-metadata.xml
-[DEBUG] Writing tracking file /home/spirals/danglot/.m2/repository/org/eclipse/platform/org.eclipse.core.runtime/resolver-status.properties
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
-[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.osgi/maven-metadata.xml
-[DEBUG] Writing tracking file /home/spirals/danglot/.m2/repository/org/eclipse/platform/org.eclipse.osgi/resolver-status.properties
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
-[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.common/maven-metadata.xml
-[DEBUG] Writing tracking file /home/spirals/danglot/.m2/repository/org/eclipse/platform/org.eclipse.equinox.common/resolver-status.properties
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
-[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.jobs/maven-metadata.xml
-[DEBUG] Writing tracking file /home/spirals/danglot/.m2/repository/org/eclipse/platform/org.eclipse.core.jobs/resolver-status.properties
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
-[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.registry/maven-metadata.xml
-[DEBUG] Writing tracking file /home/spirals/danglot/.m2/repository/org/eclipse/platform/org.eclipse.equinox.registry/resolver-status.properties
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
-[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.preferences/maven-metadata.xml
-[DEBUG] Writing tracking file /home/spirals/danglot/.m2/repository/org/eclipse/platform/org.eclipse.equinox.preferences/resolver-status.properties
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
-[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.contenttype/maven-metadata.xml
-[DEBUG] Writing tracking file /home/spirals/danglot/.m2/repository/org/eclipse/platform/org.eclipse.core.contenttype/resolver-status.properties
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
-[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.equinox.app/maven-metadata.xml
-[DEBUG] Writing tracking file /home/spirals/danglot/.m2/repository/org/eclipse/platform/org.eclipse.equinox.app/resolver-status.properties
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.registry/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.jobs/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.preferences/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.contenttype/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.app/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
-[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.filesystem/maven-metadata.xml
-[DEBUG] Writing tracking file /home/spirals/danglot/.m2/repository/org/eclipse/platform/org.eclipse.core.filesystem/resolver-status.properties
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.osgi/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.filesystem/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.text/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.text/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.text/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.text/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.text/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.text/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
-[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.text/maven-metadata.xml
-[DEBUG] Writing tracking file /home/spirals/danglot/.m2/repository/org/eclipse/platform/org.eclipse.text/resolver-status.properties
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.text/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.commands/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.commands/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.commands/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.commands/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.commands/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.commands/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
-[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
-Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/org/eclipse/platform/org.eclipse.core.commands/maven-metadata.xml
-[DEBUG] Writing tracking file /home/spirals/danglot/.m2/repository/org/eclipse/platform/org.eclipse.core.commands/resolver-status.properties
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.commands/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.equinox.common/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Could not find metadata org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Skipped remote request for org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml, already updated during this session.
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
-[DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3633862, ConflictMarker.markTime=970964, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=2596476, ConflictIdSorter.topsortTime=131759, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=12316090, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=4677142079, DefaultDependencyCollector.transformTime=19819392}
-[DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
-[DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
-[DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
-[DEBUG]          org.eclipse.jdt:org.eclipse.jdt.core:jar:3.13.102:compile
-[DEBUG]             org.eclipse.platform:org.eclipse.core.resources:jar:3.13.100:compile
-[DEBUG]                org.eclipse.platform:org.eclipse.core.expressions:jar:3.6.200:compile
-[DEBUG]             org.eclipse.platform:org.eclipse.core.runtime:jar:3.15.0:compile
-[DEBUG]                org.eclipse.platform:org.eclipse.osgi:jar:3.13.100:compile
-[DEBUG]                org.eclipse.platform:org.eclipse.equinox.common:jar:3.10.100:compile
-[DEBUG]                org.eclipse.platform:org.eclipse.core.jobs:jar:3.10.100:compile
-[DEBUG]                org.eclipse.platform:org.eclipse.equinox.registry:jar:3.8.100:compile
-[DEBUG]                org.eclipse.platform:org.eclipse.equinox.preferences:jar:3.7.200:compile
-[DEBUG]                org.eclipse.platform:org.eclipse.core.contenttype:jar:3.7.100:compile
-[DEBUG]                org.eclipse.platform:org.eclipse.equinox.app:jar:1.3.600:compile
-[DEBUG]             org.eclipse.platform:org.eclipse.core.filesystem:jar:1.7.200:compile
-[DEBUG]             org.eclipse.platform:org.eclipse.text:jar:3.7.0:compile
-[DEBUG]                org.eclipse.platform:org.eclipse.core.commands:jar:3.9.200:compile
-[DEBUG]          com.martiansoftware:jsap:jar:2.1:compile
-[DEBUG]          log4j:log4j:jar:1.2.17:compile
-[DEBUG]          com.fasterxml.jackson.core:jackson-databind:jar:2.9.2:compile
-[DEBUG]             com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
-[DEBUG]             com.fasterxml.jackson.core:jackson-core:jar:2.9.2:compile
-[DEBUG]          org.benf:cfr:jar:0.132.0:compile
-[DEBUG]       junit:junit:jar:4.12:compile
-[DEBUG]          org.hamcrest:hamcrest-core:jar:1.3:compile
-[DEBUG]       com.google.code.gson:gson:jar:2.8.0:compile
-[DEBUG]       org.apache.maven.shared:maven-invoker:jar:3.0.0:compile
-[DEBUG]       org.slf4j:slf4j-api:jar:1.7.25:compile
-[DEBUG]       org.slf4j:slf4j-log4j12:jar:1.7.25:compile
-[DEBUG]       org.jacoco:org.jacoco.core:jar:0.7.9:compile
-[DEBUG]          org.ow2.asm:asm-debug-all:jar:5.2:compile
-[DEBUG]       eu.stamp-project:descartes:jar:1.1:compile
-[DEBUG]          org.pitest:pitest:jar:1.2.0:compile
-[DEBUG]          org.pitest:pitest-entry:jar:1.2.0:compile
-[DEBUG]             com.thoughtworks.xstream:xstream:jar:1.4.8:compile
-[DEBUG]                xmlpull:xmlpull:jar:1.1.3.1:compile
-[DEBUG]                xpp3:xpp3_min:jar:1.1.4c:compile
-[DEBUG]       org.gradle:gradle-tooling-api:jar:4.0.1:compile
-[DEBUG]       org.mockito:mockito-core:jar:2.10.0:compile
-[DEBUG]          net.bytebuddy:byte-buddy:jar:1.7.4:runtime
-[DEBUG]          net.bytebuddy:byte-buddy-agent:jar:1.7.4:runtime
-[DEBUG]          org.objenesis:objenesis:jar:2.6:runtime
-[DEBUG]       eu.stamp-project:test-runner:jar:jar-with-dependencies:1.1.0:compile
-[DEBUG]       org.openclover:clover:jar:4.2.1:compile
-[DEBUG]       fr.inria.gforge.spoon.labs:gumtree-spoon-ast-diff:jar:1.3:compile
-[DEBUG]          com.github.gumtreediff:core:jar:2.0.0:compile
-[DEBUG]             com.github.mpkorstanje:simmetrics-core:jar:3.0.3:compile
-[DEBUG]                commons-codec:commons-codec:jar:1.10:compile
-[DEBUG]             net.sf.trove4j:trove4j:jar:3.0.3:compile
-[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.5.0:compile
-[DEBUG]       org.apache.maven:maven-artifact:jar:3.5.0:compile
-[DEBUG]       org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.3:compile
-[DEBUG]          javax.enterprise:cdi-api:jar:1.0:compile
-[DEBUG]             javax.annotation:jsr250-api:jar:1.0:compile
-[DEBUG]          org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.3.3:compile
-[DEBUG]    org.apache.maven.plugin-testing:maven-plugin-testing-harness:jar:3.3.0:compile
-[DEBUG]       commons-io:commons-io:jar:2.2:compile
-[DEBUG]       org.codehaus.plexus:plexus-archiver:jar:2.2:compile
-[DEBUG]          org.codehaus.plexus:plexus-io:jar:2.0.4:compile
-[DEBUG]    org.apache.maven:maven-compat:jar:3.5.0:compile
-[DEBUG]       org.apache.maven:maven-model-builder:jar:3.5.0:compile
-[DEBUG]          org.apache.maven:maven-builder-support:jar:3.5.0:compile
-[DEBUG]          com.google.guava:guava:jar:20.0:compile
-[DEBUG]       org.apache.maven:maven-settings:jar:3.5.0:compile
-[DEBUG]       org.apache.maven:maven-resolver-provider:jar:3.5.0:compile
-[DEBUG]       org.apache.maven.resolver:maven-resolver-api:jar:1.0.3:compile
-[DEBUG]       org.apache.maven.resolver:maven-resolver-util:jar:1.0.3:compile
-[DEBUG]       org.apache.maven.resolver:maven-resolver-impl:jar:1.0.3:compile
-[DEBUG]       org.codehaus.plexus:plexus-utils:jar:3.0.24:compile
-[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.24:compile
-[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
-[DEBUG]       org.apache.maven.wagon:wagon-provider-api:jar:2.12:compile
-[DEBUG]    org.apache.maven:maven-core:jar:3.5.0:compile
-[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.5.0:compile
-[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.5.0:compile
-[DEBUG]       org.apache.maven.resolver:maven-resolver-spi:jar:1.0.3:compile
-[DEBUG]       org.apache.maven.shared:maven-shared-utils:jar:3.1.0:compile
-[DEBUG]       com.google.inject:guice:jar:no_aop:4.0:compile
-[DEBUG]          javax.inject:javax.inject:jar:1:compile
-[DEBUG]          aopalliance:aopalliance:jar:1.0:compile
-[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.5.2:compile
-[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.4:compile
-[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
-[DEBUG]       org.apache.commons:commons-lang3:jar:3.5:compile
-[DEBUG]    org.apache.maven:maven-model:jar:3.5.0:compile
-[DEBUG]    org.apache.maven:maven-aether-provider:jar:3.3.9:compile
-[DEBUG]       org.eclipse.aether:aether-api:jar:1.0.2.v20150114:compile
-[DEBUG]       org.eclipse.aether:aether-spi:jar:1.0.2.v20150114:compile
-[DEBUG]       org.eclipse.aether:aether-util:jar:1.0.2.v20150114:compile
-[DEBUG]       org.eclipse.aether:aether-impl:jar:1.0.2.v20150114:compile
-[DEBUG]    org.apache.maven:maven-project:jar:2.2.1:compile
-[DEBUG]       org.apache.maven:maven-profile:jar:2.2.1:compile
-[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.2.1:compile
-[DEBUG]          backport-util-concurrent:backport-util-concurrent:jar:3.1:compile
-[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.2.1:compile
-[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
-[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
-[DEBUG] Created new class realm plugin>eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT
-[DEBUG] Importing foreign packages into class realm plugin>eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT
-[DEBUG]   Imported:  < maven.api
-[DEBUG] Populating class realm plugin>eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT
-[DEBUG]   Included: eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT
-[DEBUG]   Included: eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT
-[DEBUG]   Included: fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT
-[DEBUG]   Included: org.eclipse.jdt:org.eclipse.jdt.core:jar:3.13.102
-[DEBUG]   Included: org.eclipse.platform:org.eclipse.core.resources:jar:3.13.100
-[DEBUG]   Included: org.eclipse.platform:org.eclipse.core.expressions:jar:3.6.200
-[DEBUG]   Included: org.eclipse.platform:org.eclipse.core.runtime:jar:3.15.0
-[DEBUG]   Included: org.eclipse.platform:org.eclipse.osgi:jar:3.13.100
-[DEBUG]   Included: org.eclipse.platform:org.eclipse.equinox.common:jar:3.10.100
-[DEBUG]   Included: org.eclipse.platform:org.eclipse.core.jobs:jar:3.10.100
-[DEBUG]   Included: org.eclipse.platform:org.eclipse.equinox.registry:jar:3.8.100
-[DEBUG]   Included: org.eclipse.platform:org.eclipse.equinox.preferences:jar:3.7.200
-[DEBUG]   Included: org.eclipse.platform:org.eclipse.core.contenttype:jar:3.7.100
-[DEBUG]   Included: org.eclipse.platform:org.eclipse.equinox.app:jar:1.3.600
-[DEBUG]   Included: org.eclipse.platform:org.eclipse.core.filesystem:jar:1.7.200
-[DEBUG]   Included: org.eclipse.platform:org.eclipse.text:jar:3.7.0
-[DEBUG]   Included: org.eclipse.platform:org.eclipse.core.commands:jar:3.9.200
-[DEBUG]   Included: com.martiansoftware:jsap:jar:2.1
-[DEBUG]   Included: log4j:log4j:jar:1.2.17
-[DEBUG]   Included: com.fasterxml.jackson.core:jackson-databind:jar:2.9.2
-[DEBUG]   Included: com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0
-[DEBUG]   Included: com.fasterxml.jackson.core:jackson-core:jar:2.9.2
-[DEBUG]   Included: org.benf:cfr:jar:0.132.0
-[DEBUG]   Included: junit:junit:jar:4.12
-[DEBUG]   Included: org.hamcrest:hamcrest-core:jar:1.3
-[DEBUG]   Included: com.google.code.gson:gson:jar:2.8.0
-[DEBUG]   Included: org.apache.maven.shared:maven-invoker:jar:3.0.0
-[DEBUG]   Included: org.slf4j:slf4j-log4j12:jar:1.7.25
-[DEBUG]   Included: org.jacoco:org.jacoco.core:jar:0.7.9
-[DEBUG]   Included: org.ow2.asm:asm-debug-all:jar:5.2
-[DEBUG]   Included: eu.stamp-project:descartes:jar:1.1
-[DEBUG]   Included: org.pitest:pitest:jar:1.2.0
-[DEBUG]   Included: org.pitest:pitest-entry:jar:1.2.0
-[DEBUG]   Included: com.thoughtworks.xstream:xstream:jar:1.4.8
-[DEBUG]   Included: xmlpull:xmlpull:jar:1.1.3.1
-[DEBUG]   Included: xpp3:xpp3_min:jar:1.1.4c
-[DEBUG]   Included: org.gradle:gradle-tooling-api:jar:4.0.1
-[DEBUG]   Included: org.mockito:mockito-core:jar:2.10.0
-[DEBUG]   Included: net.bytebuddy:byte-buddy:jar:1.7.4
-[DEBUG]   Included: net.bytebuddy:byte-buddy-agent:jar:1.7.4
-[DEBUG]   Included: org.objenesis:objenesis:jar:2.6
-[DEBUG]   Included: eu.stamp-project:test-runner:jar:jar-with-dependencies:1.1.0
-[DEBUG]   Included: org.openclover:clover:jar:4.2.1
-[DEBUG]   Included: fr.inria.gforge.spoon.labs:gumtree-spoon-ast-diff:jar:1.3
-[DEBUG]   Included: com.github.gumtreediff:core:jar:2.0.0
-[DEBUG]   Included: com.github.mpkorstanje:simmetrics-core:jar:3.0.3
-[DEBUG]   Included: commons-codec:commons-codec:jar:1.10
-[DEBUG]   Included: net.sf.trove4j:trove4j:jar:3.0.3
-[DEBUG]   Included: javax.enterprise:cdi-api:jar:1.0
-[DEBUG]   Included: org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.3.3
-[DEBUG]   Included: org.apache.maven.plugin-testing:maven-plugin-testing-harness:jar:3.3.0
-[DEBUG]   Included: commons-io:commons-io:jar:2.2
-[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.2
-[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.0.4
-[DEBUG]   Included: org.apache.maven:maven-builder-support:jar:3.5.0
-[DEBUG]   Included: com.google.guava:guava:jar:20.0
-[DEBUG]   Included: org.apache.maven.resolver:maven-resolver-util:jar:1.0.3
-[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.24
-[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.24
-[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.7.1
-[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.1.0
-[DEBUG]   Included: com.google.inject:guice:jar:no_aop:4.0
-[DEBUG]   Included: aopalliance:aopalliance:jar:1.0
-[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.4
-[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
-[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.5
-[DEBUG]   Included: org.eclipse.aether:aether-util:jar:1.0.2.v20150114
-[DEBUG]   Included: backport-util-concurrent:backport-util-concurrent:jar:3.1
-[DEBUG] Configuring mojo eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests from plugin realm ClassRealm[plugin>eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT, parent: sun.misc.Launcher$AppClassLoader@55f96302]
-[DEBUG] Configuring mojo 'eu.stamp-project:dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests' with basic configurator -->
-[DEBUG]   (f) amplifiers = [TestDataMutator, MethodAdd, MethodRemove, MethodGeneratorAmplifier, ReturnValueAmplifier, NullifierAmplifier]
-[DEBUG]   (f) automaticBuilder = MavenBuilder
-[DEBUG]   (f) budgetizer = SimpleBudgetizer
-[DEBUG]   (f) cases = []
-[DEBUG]   (f) clean = true
-[DEBUG]   (f) descartes = false
-[DEBUG]   (f) example = false
-[DEBUG]   (f) generateNewTestClass = true
-[DEBUG]   (f) help = false
-[DEBUG]   (f) iteration = 3
-[DEBUG]   (f) maxTestAmplified = 200
-[DEBUG]   (f) noMinimize = false
-[DEBUG]   (f) outputPath = /tmp/icst-2019/september-2018/result/joda-time/commit_2_c5c681c/input_amplification
-[DEBUG]   (f) pathToSecondVersion = /tmp/icst-2019/september-2018/dataset/joda-time
-[DEBUG]   (f) pathToTestListCsv = /tmp/icst-2019/september-2018/result/joda-time/commit_2_c5c681c/testsThatExecuteTheChanges.csv
-[DEBUG]   (f) project = MavenProject: joda-time:joda-time:2.9.9 @ /tmp/icst-2019/september-2018/dataset/joda-time_parent/pom.xml
-[DEBUG]   (f) randomSeed = 23
-[DEBUG]   (f) test = [all]
-[DEBUG]   (f) testCriterion = ChangeDetectorSelector
-[DEBUG]   (f) timeOut = 10000
-[DEBUG]   (f) useMavenToExeTest = false
-[DEBUG]   (f) verbose = true
-[DEBUG]   (f) withComment = false
-[DEBUG]   (f) workingDirectory = false
-[DEBUG] -- end configuration --
-[INFO] Path to runner Classes: /home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
-[INFO] /home/spirals/danglot/.m2/repository/org/jacoco/org.jacoco.core/0.7.9/org.jacoco.core-0.7.9.jar
-[INFO] /home/spirals/danglot/.m2/repository/org/ow2/asm/asm-debug-all/5.2/asm-debug-all-5.2.jar
-[INFO] /home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar
-[WARNING] automaticBuilderName: unknown automatic builder specified in configuration, going to default.
-[INFO] Default: provided Maven automatic builder.
-[INFO] Using /home/spirals/danglot/apache-maven-3.5.4 for maven home
-[INFO] run maven: {}/bin/mvn /home/spirals/danglot/apache-maven-3.5.4
-[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
-[INFO] Scanning for projects...
-[WARNING] The project joda-time:joda-time:jar:2.9.9 uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
-[INFO] 
-[INFO] ------------------------< joda-time:joda-time >-------------------------
-[INFO] Building Joda-Time 2.9.9
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ joda-time ---
-[INFO] Deleting /tmp/icst-2019/september-2018/dataset/joda-time_parent/target
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ joda-time ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 2 resources to META-INF
-[INFO] Copying 16 resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ joda-time ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 166 source files to /tmp/icst-2019/september-2018/dataset/joda-time_parent/target/classes
-[INFO] 
-[INFO] --- exec-maven-plugin:1.4.0:java (compile-tzdb) @ joda-time ---
-Writing zoneinfo files
-Writing ZoneInfoMap
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ joda-time ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 35 resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ joda-time ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 159 source files to /tmp/icst-2019/september-2018/dataset/joda-time_parent/target/test-classes
-[INFO] 
-[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ joda-time ---
-[INFO] Tests are skipped.
-[INFO] 
-[INFO] --- maven-dependency-plugin:2.10:build-classpath (default-cli) @ joda-time ---
-[INFO] Wrote classpath file '/tmp/icst-2019/september-2018/dataset/joda-time_parent/target/dspot/classpath'.
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 16.515 s
-[INFO] Finished at: 2018-09-29T02:54:16+02:00
-[INFO] ------------------------------------------------------------------------
-[INFO] Using /home/spirals/danglot/apache-maven-3.5.4 for maven home
-[INFO] run maven: {}/bin/mvn /home/spirals/danglot/apache-maven-3.5.4
-[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
-[INFO] Scanning for projects...
-[WARNING] The project joda-time:joda-time:jar:2.9.9 uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
-[INFO] 
-[INFO] ------------------------< joda-time:joda-time >-------------------------
-[INFO] Building Joda-Time 2.9.9
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ joda-time ---
-[INFO] Deleting /tmp/icst-2019/september-2018/dataset/joda-time/target
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ joda-time ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 2 resources to META-INF
-[INFO] Copying 16 resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ joda-time ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 166 source files to /tmp/icst-2019/september-2018/dataset/joda-time/target/classes
-[INFO] 
-[INFO] --- exec-maven-plugin:1.4.0:java (compile-tzdb) @ joda-time ---
-Writing zoneinfo files
-Writing ZoneInfoMap
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ joda-time ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 35 resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ joda-time ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 159 source files to /tmp/icst-2019/september-2018/dataset/joda-time/target/test-classes
-[INFO] 
-[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ joda-time ---
-[INFO] Tests are skipped.
-[INFO] 
-[INFO] --- maven-dependency-plugin:2.10:build-classpath (default-cli) @ joda-time ---
-[INFO] Wrote classpath file '/tmp/icst-2019/september-2018/dataset/joda-time/target/dspot/classpath'.
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 15.661 s
-[INFO] Finished at: 2018-09-29T02:54:42+02:00
-[INFO] ------------------------------------------------------------------------
-[INFO] Amplification of org.joda.time.tz.TestCompiler (1 test(s))
-[INFO] Assertion amplification of org.joda.time.tz.TestCompiler (1 test(s))
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(130) The constructor Object(String) is undefined
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(130) The constructor Object(String) is undefined
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(130) The constructor Object(String) is undefined
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(130) The constructor Object(String) is undefined
-[WARNING] Trying three time to compile with no success. Give up.
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/joda-time_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/joda-time_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/joda/joda-convert/1.2/joda-convert-1.2.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/joda-time_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.joda.time.tz.TestCompiler testCompile
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/joda-time_parent/target/dspot/TestListener.ser
-Loading /tmp/icst-2019/september-2018/dataset/joda-time_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: initializationError(org.junit.runner.manipulation.Filter): No tests found matching Filter test methods according their simple name: [testCompile] from org.junit.internal.requests.ClassRequest@b81eda8
-[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] Applying Input-amplification and Assertion-amplification test by test.
-[INFO] Amplification of testCompile, (1/1)
-[INFO] iteration 0 / 3
-[INFO] 1 tests selected to be amplified over 1 available tests
-[INFO] Amplification of inputs...
-100% |================================================== ]/
-[INFO] 23 new tests generated
-[INFO] Run tests. (23)
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(130) The constructor Object(String) is undefined
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(130) The constructor Object(String) is undefined
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(130) The constructor Object(String) is undefined
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(130) The constructor Object(String) is undefined
-[WARNING] Trying three time to compile with no success. Give up.
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/joda-time_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/joda-time_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/joda/joda-convert/1.2/joda-convert-1.2.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/joda-time_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.joda.time.tz.TestCompiler testCompile_literalMutationString1:testCompile_literalMutationString2:testCompile_literalMutationString3:testCompile_literalMutationString4:testCompile_literalMutationString5:testCompile_literalMutationString6:testCompile_add7:testCompile_add8:testCompile_add9:testCompile_add10:testCompile_mg11:testCompile_mg12:testCompile_mg13:testCompile_mg14:testCompile_mg15:testCompile_mg16:testCompile_mg17:testCompile_mg18:testCompile_mg19:testCompile_mg20:testCompile_mg21:testCompile_mg22:testCompilenull23
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/joda-time_parent/target/dspot/TestListener.ser
-Loading /tmp/icst-2019/september-2018/dataset/joda-time_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: initializationError(org.junit.runner.manipulation.Filter): No tests found matching Filter test methods according their simple name: [testCompile_literalMutationString1, testCompile_literalMutationString2, testCompile_literalMutationString3, testCompile_literalMutationString4, testCompile_literalMutationString5, testCompile_literalMutationString6, testCompile_add7, testCompile_add8, testCompile_add9, testCompile_add10, testCompile_mg11, testCompile_mg12, testCompile_mg13, testCompile_mg14, testCompile_mg15, testCompile_mg16, testCompile_mg17, testCompile_mg18, testCompile_mg19, testCompile_mg20, testCompile_mg21, testCompile_mg22, testCompilenull23] from org.junit.internal.requests.ClassRequest@b81eda8
-[INFO] 1 test fail, generating try/catch/fail blocks...
-[INFO] Could not generate any test with assertions
-[INFO] iteration 1 / 3
-[INFO] 23 tests selected to be amplified over 23 available tests
-[INFO] Amplification of inputs...
- 65% |================================ ]\ 91% |============================================= ]/ 30% |============================================= ]\ 13% |============================================= ]\ 21% |============================================= ]/ 34% |============================================= ]|100% |================================================== ]\
- 73% |==================================== ]/ 17% |==================================== ]| 26% |==================================== ]- 95% |=============================================== ]-  8% |=============================================== ]- 69% |=============================================== ]| 43% |=============================================== ]-  4% |=============================================== ]/ 47% |=============================================== ]\ 39% |=============================================== ]/ 82% |=============================================== ]\ 56% |=============================================== ]/ 78% |=============================================== ]- 86% |=============================================== ]| 52% |=============================================== ]| 60% |=============================================== ]-[INFO] 610 new tests generated
-[WARNING] Too many tests have been generated: 610
-[INFO] Number of generated test reduced to 200
-[INFO] Run tests. (200)
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(130) The constructor Object(String) is undefined
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(130) The constructor Object(String) is undefined
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(130) The constructor Object(String) is undefined
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(130) The constructor Object(String) is undefined
-[WARNING] Trying three time to compile with no success. Give up.
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/joda-time_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/joda-time_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/joda/joda-convert/1.2/joda-convert-1.2.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/joda-time_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.joda.time.tz.TestCompiler testCompile_mg13_mg512:testCompile_mg20_mg635:testCompile_mg16_mg350:testCompile_mg19_mg460:testCompile_mg13_mg525:testCompile_mg19_mg466:testCompile_mg19_mg463:testCompile_mg13_mg522:testCompile_mg20_mg620:testCompile_mg19_mg472:testCompile_mg16_mg363:testCompile_mg20_mg646:testCompile_mg13_mg526:testCompile_mg11_mg405:testCompile_mg16_mg355:testCompile_mg12_mg567:testCompile_mg13_mg507:testCompile_mg13_mg509:testCompile_mg16_mg365:testCompile_mg12_mg579:testCompile_mg16_mg347:testCompile_mg16_mg349:testCompile_mg20_mg624:testCompile_add9null476:testCompile_add10null373:testCompile_mg19_mg459:testCompile_mg19_mg458:testCompile_mg20_mg653:testCompilenull23_mg172:testCompile_mg22null417:testCompile_mg11_mg413:testCompile_mg11_mg408:testCompile_literalMutationString1null411:testCompile_literalMutationString3null130:testCompile_literalMutationString5null225:testCompile_literalMutationString4null273:testCompile_literalMutationString6null309:testCompile_literalMutationString2null368:testCompile_add8_rv212:testCompile_mg12_mg570:testCompile_mg12_mg580:testCompile_add9_literalMutationString414:testCompile_add10_literalMutationString312:testCompile_literalMutationString1_mg385:testCompile_mg11_mg412:testCompile_mg22_rv364:testCompile_mg22_literalMutationString257:testCompile_mg20_mg652:testCompile_mg17_mg187:testCompile_literalMutationString3_literalMutationString50:testCompile_add8_rv219:testCompile_literalMutationString5_literalMutationString131:testCompile_literalMutationString2_literalMutationString282:testCompile_literalMutationString4_literalMutationString227:testCompile_literalMutationString6_literalMutationString246:testCompile_literalMutationString1_literalMutationString369:testCompile_literalMutationString1_literalMutationString371:testCompile_literalMutationString2_literalMutationString285:testCompile_mg13_mg523:testCompile_mg20_mg649:testCompile_add9_literalMutationString416:testCompile_add8null244:testCompile_add8null245:testCompile_mg14_mg561:testCompile_add9_mg451:testCompile_add8_rv216:testCompile_add9_literalMutationString415:testCompile_add10_literalMutationString317:testCompile_add10_mg353:testCompile_add9_literalMutationString420:testCompile_add10_literalMutationString315:testCompile_mg13_mg519:testCompile_add9_literalMutationString418:testCompile_add9_literalMutationString422:testCompile_mg22_mg297:testCompile_literalMutationString2_mg313:testCompile_add10_literalMutationString326:testCompile_mg22_literalMutationString259:testCompile_literalMutationString4_mg243:testCompile_add10_literalMutationString319:testCompile_mg18_mg500:testCompile_mg22_literalMutationString263:testCompile_literalMutationString3_mg92:testCompile_literalMutationString3_literalMutationString59:testCompile_add10_literalMutationString324:testCompile_mg13_mg530:testCompile_literalMutationString6_mg272:testCompile_mg22_literalMutationString261:testCompile_mg21_mg111:testCompile_mg22_literalMutationString264:testCompile_literalMutationString6_literalMutationString250:testCompile_literalMutationString3_literalMutationString52:testCompile_literalMutationString2_literalMutationString284:testCompile_literalMutationString1_literalMutationString370:testCompile_literalMutationString5_literalMutationString135:testCompile_literalMutationString4_literalMutationString228:testCompile_literalMutationString6_literalMutationString249:testCompile_mg22_literalMutationString266:testCompile_mg17_mg190:testCompile_literalMutationString2_literalMutationString283:testCompile_literalMutationString2_literalMutationString274:testCompile_literalMutationString4_literalMutationString231:testCompile_literalMutationString5_mg180:testCompile_literalMutationString4_literalMutationString229:testCompile_literalMutationString5_literalMutationString138:testCompile_literalMutationString3_literalMutationString57:testCompile_literalMutationString4_literalMutationString226:testCompile_literalMutationString4_literalMutationString230:testCompile_literalMutationString3_literalMutationString54:testCompile_mg16_mg356:testCompile_literalMutationString6_literalMutationString248:testCompile_literalMutationString3_literalMutationString56:testCompile_add7_mg67:testCompile_literalMutationString6_literalMutationString251:testCompile_literalMutationString6_literalMutationString247:testCompile_mg13_mg524:testCompile_mg20_mg644:testCompile_literalMutationString5_literalMutationString136:testCompile_literalMutationString5_literalMutationString133:testCompile_add8_literalMutationString137:testCompile_add8_literalMutationString165:testCompile_mg11_mg403:testCompile_literalMutationString2_literalMutationString286:testCompile_literalMutationString5_literalMutationString132:testCompile_mg20_mg645:testCompile_mg14_mg564:testCompile_mg11_mg404:testCompile_mg12_mg555:testCompile_mg15_mg107:testCompile_mg12_mg565:testCompile_mg16_mg352:testCompile_mg13_mg521:testCompile_mg15null162:testCompile_mg20_mg589:testCompilenull23_mg153:testCompile_mg19_mg464:testCompile_mg16_mg366:testCompile_add7_mg79:testCompile_mg18_mg506:testCompile_add7null134:testCompile_mg18null541:testCompilenull23_mg159:testCompile_mg16_mg360:testCompile_mg21null129:testCompile_add8_literalMutationString173:testCompile_mg19_mg461:testCompile_add8_mg206:testCompile_add8_literalMutationString141:testCompile_add8_literalMutationString167:testCompile_add8_literalMutationString139:testCompilenull23_mg168:testCompile_add8_literalMutationString143:testCompile_add8_literalMutationString177:testCompile_add8_literalMutationString170:testCompile_add8_literalMutationString162:testCompile_mg16_mg354:testCompile_mg19_mg474:testCompile_mg15_literalMutationString91:testCompile_mg14null582:testCompile_add8_literalMutationString175:testCompile_add8_literalMutationString163:testCompile_mg18_mg511:testCompile_add8_mg193:testCompilenull23_mg151:testCompile_literalMutationString1_mg378:testCompile_mg18_mg513:testCompile_mg17_mg201:testCompile_mg19_mg465:testCompile_mg21_mg117:testCompile_mg21_mg124:testCompile_add7_literalMutationString49:testCompile_mg18_literalMutationString482:testCompile_literalMutationString1_mg381:testCompile_mg20_mg636:testCompile_mg17null299:testCompilenull23_mg157:testCompile_mg21_literalMutationString93:testCompile_mg20_mg619:testCompile_mg19_mg462:testCompile_mg20_mg639:testCompile_add7_mg73:testCompile_add9_mg444:testCompile_mg14_mg574:testCompile_mg22_rv390:testCompile_literalMutationString1_mg384:testCompile_mg22_rv358:testCompile_mg20_mg623:testCompile_mg15_literalMutationNumber47:testCompile_add10_mg338:testCompile_mg15_mg128:testCompile_mg15_literalMutationString96:testCompile_mg14_literalMutationString554:testCompile_mg22_rv399:testCompile_mg20_mg633:testCompile_mg22_mg276:testCompile_add8_rv208:testCompile_add9_mg447:testCompile_literalMutationString2_mg291:testCompile_mg14_mg575:testCompile_literalMutationString4_mg236
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/joda-time_parent/target/dspot/TestListener.ser
-Loading /tmp/icst-2019/september-2018/dataset/joda-time_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: initializationError(org.junit.runner.manipulation.Filter): No tests found matching Filter test methods according their simple name: [testCompile_mg13_mg512, testCompile_mg20_mg635, testCompile_mg16_mg350, testCompile_mg19_mg460, testCompile_mg13_mg525, testCompile_mg19_mg466, testCompile_mg19_mg463, testCompile_mg13_mg522, testCompile_mg20_mg620, testCompile_mg19_mg472, testCompile_mg16_mg363, testCompile_mg20_mg646, testCompile_mg13_mg526, testCompile_mg11_mg405, testCompile_mg16_mg355, testCompile_mg12_mg567, testCompile_mg13_mg507, testCompile_mg13_mg509, testCompile_mg16_mg365, testCompile_mg12_mg579, testCompile_mg16_mg347, testCompile_mg16_mg349, testCompile_mg20_mg624, testCompile_add9null476, testCompile_add10null373, testCompile_mg19_mg459, testCompile_mg19_mg458, testCompile_mg20_mg653, testCompilenull23_mg172, testCompile_mg22null417, testCompile_mg11_mg413, testCompile_mg11_mg408, testCompile_literalMutationString1null411, testCompile_literalMutationString3null130, testCompile_literalMutationString5null225, testCompile_literalMutationString4null273, testCompile_literalMutationString6null309, testCompile_literalMutationString2null368, testCompile_add8_rv212, testCompile_mg12_mg570, testCompile_mg12_mg580, testCompile_add9_literalMutationString414, testCompile_add10_literalMutationString312, testCompile_literalMutationString1_mg385, testCompile_mg11_mg412, testCompile_mg22_rv364, testCompile_mg22_literalMutationString257, testCompile_mg20_mg652, testCompile_mg17_mg187, testCompile_literalMutationString3_literalMutationString50, testCompile_add8_rv219, testCompile_literalMutationString5_literalMutationString131, testCompile_literalMutationString2_literalMutationString282, testCompile_literalMutationString4_literalMutationString227, testCompile_literalMutationString6_literalMutationString246, testCompile_literalMutationString1_literalMutationString369, testCompile_literalMutationString1_literalMutationString371, testCompile_literalMutationString2_literalMutationString285, testCompile_mg13_mg523, testCompile_mg20_mg649, testCompile_add9_literalMutationString416, testCompile_add8null244, testCompile_add8null245, testCompile_mg14_mg561, testCompile_add9_mg451, testCompile_add8_rv216, testCompile_add9_literalMutationString415, testCompile_add10_literalMutationString317, testCompile_add10_mg353, testCompile_add9_literalMutationString420, testCompile_add10_literalMutationString315, testCompile_mg13_mg519, testCompile_add9_literalMutationString418, testCompile_add9_literalMutationString422, testCompile_mg22_mg297, testCompile_literalMutationString2_mg313, testCompile_add10_literalMutationString326, testCompile_mg22_literalMutationString259, testCompile_literalMutationString4_mg243, testCompile_add10_literalMutationString319, testCompile_mg18_mg500, testCompile_mg22_literalMutationString263, testCompile_literalMutationString3_mg92, testCompile_literalMutationString3_literalMutationString59, testCompile_add10_literalMutationString324, testCompile_mg13_mg530, testCompile_literalMutationString6_mg272, testCompile_mg22_literalMutationString261, testCompile_mg21_mg111, testCompile_mg22_literalMutationString264, testCompile_literalMutationString6_literalMutationString250, testCompile_literalMutationString3_literalMutationString52, testCompile_literalMutationString2_literalMutationString284, testCompile_literalMutationString1_literalMutationString370, testCompile_literalMutationString5_literalMutationString135, testCompile_literalMutationString4_literalMutationString228, testCompile_literalMutationString6_literalMutationString249, testCompile_mg22_literalMutationString266, testCompile_mg17_mg190, testCompile_literalMutationString2_literalMutationString283, testCompile_literalMutationString2_literalMutationString274, testCompile_literalMutationString4_literalMutationString231, testCompile_literalMutationString5_mg180, testCompile_literalMutationString4_literalMutationString229, testCompile_literalMutationString5_literalMutationString138, testCompile_literalMutationString3_literalMutationString57, testCompile_literalMutationString4_literalMutationString226, testCompile_literalMutationString4_literalMutationString230, testCompile_literalMutationString3_literalMutationString54, testCompile_mg16_mg356, testCompile_literalMutationString6_literalMutationString248, testCompile_literalMutationString3_literalMutationString56, testCompile_add7_mg67, testCompile_literalMutationString6_literalMutationString251, testCompile_literalMutationString6_literalMutationString247, testCompile_mg13_mg524, testCompile_mg20_mg644, testCompile_literalMutationString5_literalMutationString136, testCompile_literalMutationString5_literalMutationString133, testCompile_add8_literalMutationString137, testCompile_add8_literalMutationString165, testCompile_mg11_mg403, testCompile_literalMutationString2_literalMutationString286, testCompile_literalMutationString5_literalMutationString132, testCompile_mg20_mg645, testCompile_mg14_mg564, testCompile_mg11_mg404, testCompile_mg12_mg555, testCompile_mg15_mg107, testCompile_mg12_mg565, testCompile_mg16_mg352, testCompile_mg13_mg521, testCompile_mg15null162, testCompile_mg20_mg589, testCompilenull23_mg153, testCompile_mg19_mg464, testCompile_mg16_mg366, testCompile_add7_mg79, testCompile_mg18_mg506, testCompile_add7null134, testCompile_mg18null541, testCompilenull23_mg159, testCompile_mg16_mg360, testCompile_mg21null129, testCompile_add8_literalMutationString173, testCompile_mg19_mg461, testCompile_add8_mg206, testCompile_add8_literalMutationString141, testCompile_add8_literalMutationString167, testCompile_add8_literalMutationString139, testCompilenull23_mg168, testCompile_add8_literalMutationString143, testCompile_add8_literalMutationString177, testCompile_add8_literalMutationString170, testCompile_add8_literalMutationString162, testCompile_mg16_mg354, testCompile_mg19_mg474, testCompile_mg15_literalMutationString91, testCompile_mg14null582, testCompile_add8_literalMutationString175, testCompile_add8_literalMutationString163, testCompile_mg18_mg511, testCompile_add8_mg193, testCompilenull23_mg151, testCompile_literalMutationString1_mg378, testCompile_mg18_mg513, testCompile_mg17_mg201, testCompile_mg19_mg465, testCompile_mg21_mg117, testCompile_mg21_mg124, testCompile_add7_literalMutationString49, testCompile_mg18_literalMutationString482, testCompile_literalMutationString1_mg381, testCompile_mg20_mg636, testCompile_mg17null299, testCompilenull23_mg157, testCompile_mg21_literalMutationString93, testCompile_mg20_mg619, testCompile_mg19_mg462, testCompile_mg20_mg639, testCompile_add7_mg73, testCompile_add9_mg444, testCompile_mg14_mg574, testCompile_mg22_rv390, testCompile_literalMutationString1_mg384, testCompile_mg22_rv358, testCompile_mg20_mg623, testCompile_mg15_literalMutationNumber47, testCompile_add10_mg338, testCompile_mg15_mg128, testCompile_mg15_literalMutationString96, testCompile_mg14_literalMutationString554, testCompile_mg22_rv399, testCompile_mg20_mg633, testCompile_mg22_mg276, testCompile_add8_rv208, testCompile_add9_mg447, testCompile_literalMutationString2_mg291, testCompile_mg14_mg575, testCompile_literalMutationString4_mg236] from org.junit.internal.requests.ClassRequest@b81eda8
-[INFO] 1 test fail, generating try/catch/fail blocks...
-[INFO] Could not generate any test with assertions
-[INFO] iteration 2 / 3
-[INFO] 200 tests selected to be amplified over 200 available tests
-[INFO] Amplification of inputs...
- 63% |=============================================== ]- 88% |=============================================== ]| 56% |=============================================== ]/ 31% |=============================================== ]\ 88% |=============================================== ]/ 57% |=============================================== ]- 89% |=============================================== ]- 32% |=============================================== ]| 57% |=============================================== ]\ 63% |=============================================== ]\ 89% |=============================================== ]\ 32% |=============================================== ]/ 58% |=============================================== ]| 64% |=============================================== ]| 90% |=============================================== ]| 58% |=============================================== ]/ 33% |=============================================== ]- 64% |=============================================== ]/ 33% |=============================================== ]\ 65% |=============================================== ]- 34% |=============================================== ]| 90% |=============================================== ]/ 59% |=============================================== ]- 59% |=============================================== ]\ 34% |=============================================== ]/ 65% |=============================================== ]\ 91% |=============================================== ]- 60% |=============================================== ]| 91% |=============================================== ]\ 35% |=============================================== ]- 60% |=============================================== ]/ 66% |=============================================== ]| 35% |=============================================== ]\ 61% |=============================================== ]- 92% |=============================================== ]| 66% |=============================================== ]/ 61% |=============================================== ]\ 36% |=============================================== ]| 92% |=============================================== ]/ 67% |=============================================== ]- 93% |=============================================== ]- 62% |=============================================== ]| 36% |=============================================== ]/ 93% |=============================================== ]\ 62% |=============================================== ]/ 37% |=============================================== ]- 37% |=============================================== ]\ 67% |=============================================== ]\ 94% |=============================================== ]| 68% |=============================================== ]| 50% |=============================================== ]/ 25% |=============================================== ]\ 51% |=============================================== ]- 94% |=============================================== ]/ 51% |=============================================== ]\ 68% |=============================================== ]/ 95% |=============================================== ]- 26% |=============================================== ]| 52% |=============================================== ]| 26% |=============================================== ]/ 69% |=============================================== ]- 52% |=============================================== ]/ 27% |=============================================== ]- 95% |=============================================== ]\ 53% |=============================================== ]- 27% |=============================================== ]\ 69% |=============================================== ]\ 96% |================================================ ]| 28% |================================================ ]| 53% |================================================ ]\ 54% |================================================ ]| 70% |================================================ ]| 28% |================================================ ]/ 70% |================================================ ]/ 96% |================================================ ]/ 54% |================================================ ]/ 29% |================================================ ]- 71% |================================================ ]- 97% |================================================ ]- 71% |================================================ ]\ 55% |================================================ ]- 29% |================================================ ]\ 30% |================================================ ]| 55% |================================================ ]\ 72% |================================================ ]| 30% |================================================ ]/ 56% |================================================ ]| 72% |================================================ ]/ 97% |================================================ ]\ 31% |================================================ ]- 13% |================================================ ]- 44% |================================================ ]| 98% |================================================= ]| 73% |================================================= ]- 13% |================================================= ]\ 44% |================================================= ]/ 98% |================================================= ]/ 73% |================================================= ]\ 14% |================================================= ]| 45% |================================================= ]- 99% |================================================= ]- 45% |================================================= ]\ 99% |================================================= ]\ 74% |================================================= ]| 46% |================================================= ]| 14% |================================================= ]/ 46% |================================================= ]/ 74% |================================================= ]/100% |================================================== ]|
- 15% |======= ]- 47% |======================= ]- 81% |======================================== ]\ 15% |======================================== ]\ 75% |======================================== ]- 47% |======================================== ]\ 48% |======================================== ]| 38% |======================================== ]| 82% |========================================= ]| 48% |========================================= ]/ 16% |========================================= ]| 38% |========================================= ]/ 39% |========================================= ]- 16% |========================================= ]/ 82% |========================================= ]/ 49% |========================================= ]- 39% |========================================= ]\ 17% |========================================= ]- 83% |========================================= ]- 17% |========================================= ]\ 49% |========================================= ]\ 40% |========================================= ]| 18% |========================================= ]| 83% |========================================= ]\ 18% |========================================= ]/ 40% |========================================= ]/ 84% |========================================== ]| 50% |========================================== ]| 19% |========================================== ]- 41% |========================================== ]-  6% |========================================== ]/ 41% |========================================== ]\ 19% |========================================== ]\ 84% |========================================== ]/ 42% |========================================== ]| 20% |========================================== ]| 85% |========================================== ]- 42% |========================================== ]/  7% |========================================== ]- 20% |========================================== ]/  7% |========================================== ]\ 43% |========================================== ]- 43% |========================================== ]\  8% |========================================== ]|  0% |========================================== ]/ 85% |========================================== ]\ 21% |========================================== ]-  8% |========================================== ]/ 21% |========================================== ]\  1% |========================================== ]- 86% |=========================================== ]|  9% |=========================================== ]- 22% |=========================================== ]| 86% |=========================================== ]/  9% |=========================================== ]\ 87% |=========================================== ]-  1% |=========================================== ]\ 22% |=========================================== ]/ 23% |=========================================== ]- 10% |=========================================== ]|  2% |=========================================== ]| 23% |=========================================== ]\ 87% |=========================================== ]\ 10% |=========================================== ]/ 75% |=========================================== ]\ 24% |=========================================== ]| 76% |=========================================== ]| 11% |=========================================== ]-  2% |=========================================== ]/ 76% |=========================================== ]/ 24% |=========================================== ]/ 77% |=========================================== ]-  3% |=========================================== ]- 25% |=========================================== ]- 11% |=========================================== ]\ 77% |=========================================== ]\ 78% |=========================================== ]|  3% |=========================================== ]\ 78% |=========================================== ]/  4% |=========================================== ]| 12% |=========================================== ]| 12% |=========================================== ]/ 79% |=========================================== ]-  4% |=========================================== ]/ 79% |=========================================== ]\ 80% |=========================================== ]|  5% |=========================================== ]- 80% |=========================================== ]/ 81% |=========================================== ]-  5% |=========================================== ]\  6% |=========================================== ]|[INFO] 8112 new tests generated
-[WARNING] Too many tests have been generated: 8112
-[INFO] Number of generated test reduced to 200
-[INFO] Run tests. (200)
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(130) The constructor Object(String) is undefined
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(130) The constructor Object(String) is undefined
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(130) The constructor Object(String) is undefined
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(130) The constructor Object(String) is undefined
-[WARNING] Trying three time to compile with no success. Give up.
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/joda-time_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/joda-time_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/joda/joda-convert/1.2/joda-convert-1.2.jar:/home/spirals/danglot/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar:/tmp/icst-2019/september-2018/dataset/joda-time_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.joda.time.tz.TestCompiler testCompile_mg20_mg635_rv6970:testCompile_mg20_mg635_mg6820:testCompile_mg20_mg635_rv6951:testCompile_mg20_mg624_rv8355:testCompile_mg20_mg635_rv6959:testCompile_mg20_mg620_mg8591:testCompile_mg20_mg635_mg6805:testCompile_mg19_mg472_mg8802:testCompile_mg13_mg512_mg6641:testCompile_mg20_mg646_mg8992:testCompile_mg13_mg526_mg6048:testCompile_mg20_mg635_mg6840:testCompile_mg20_mg635_rv6877:testCompile_mg16_mg350_mg7279:testCompile_mg16_mg365_mg7226:testCompile_mg20_mg624_mg8156:testCompile_mg20_mg635_mg6809:testCompile_mg19_mg460_mg7493:testCompile_mg13_mg525_mg7822:testCompile_mg13_mg512_mg6647:testCompile_mg20_mg653_mg4556:testCompile_mg20_mg653_mg4656:testCompile_mg16_mg350_mg7282:testCompile_mg19_mg466_mg8076:testCompile_mg13_mg512_mg6644:testCompile_mg11_mg413_mg5172:testCompile_mg13_mg512_mg6648:testCompile_mg20_mg635_mg6848:testCompile_mg13_mg525_mg7850:testCompile_mg12_mg580_mg6501:testCompile_mg20_mg624_rv8340:testCompile_mg19_mg463_mg8300:testCompile_mg13_mg525_mg7842:testCompile_mg20_mg620_mg8576:testCompile_mg20_mg635_mg6855:testCompile_mg20_mg652_mg7758:testCompile_mg13_mg522_mg8453:testCompile_mg16_mg365_mg7174:testCompile_mg20_mg646_mg8977:testCompile_mg19_mg466_mg8083:testCompile_mg19_mg472_mg8787:testCompile_mg20_mg620_mg8602:testCompile_mg19_mg460_mg7499:testCompile_mg20_mg649_mg3809:testCompile_mg19_mg460_mg7511:testCompile_mg20_mg635_mg6857:testCompile_mg19_mg463_mg8313:testCompile_mg19_mg463_mg8306:testCompile_mg16_mg350_mg7285:testCompile_mg19_mg472_mg8813:testCompile_mg16_mg363_mg8912:testCompile_mg13_mg525_mg7854:testCompile_mg20_mg620_mg8608:testCompile_mg20_mg646_mg9003:testCompile_mg20_mg636_rv7461:testCompile_mg13_mg526_mg6068:testCompile_mg11_mg405_mg6227:testCompile_mg16_mg355_mg6400:testCompile_mg20_mg635_rv6971:testCompile_mg12_mg567_mg6585:testCompile_mg16_mg350_mg7286:testCompile_mg19_mg466_mg8092:testCompile_mg20_mg639_rv1691:testCompile_mg20_mg620_mg8605:testCompile_mg13_mg507_mg6700:testCompile_mg13_mg509_mg6867:testCompile_mg20_mg635_rv6976:testCompile_mg20_mg635_rv6949:testCompile_mg20_mg623_rv2703:testCompile_add8null244null4135:testCompile_add8null245null1056:testCompile_mg20_mg624_rv8344:testCompile_mg13_mg512_mg6639:testCompile_add9_mg451null1392:testCompile_add9null476_mg8438:testCompile_mg13_mg512_mg6640:testCompile_mg20_mg620_mg8580:testCompile_mg20_mg635_rv6958:testCompile_mg20_mg635_mg6835:testCompile_mg20_mg645_mg2677:testCompile_mg20_mg633_rv3933:testCompile_mg13_mg526_mg6020:testCompile_add10_mg353null1996:testCompile_add10null373_mg8476:testCompile_mg20_mg635_mg6837:testCompile_mg20_mg644_mg1595:testCompile_add9_literalMutationString420null2092:testCompile_add9_literalMutationString415null1718:testCompile_add9_literalMutationString422null2684:testCompile_add9_literalMutationString418null2557:testCompile_add9_literalMutationString414null6693:testCompile_add9_literalMutationString416null3998:testCompile_mg20_mg589_mg2539:testCompile_mg20_mg635_rv6968:testCompilenull23_mg172_mg4804:testCompile_mg22null417_mg4923:testCompile_mg22_mg297null2844:testCompile_mg13_mg526_mg6101:testCompile_mg19_mg460_mg7496:testCompile_add10_literalMutationString324null6414:testCompile_add10_literalMutationString315null2185:testCompile_add10_literalMutationString317null1816:testCompile_add10_literalMutationString326null5337:testCompile_add10_literalMutationString319null5732:testCompile_add10_literalMutationString312null6894:testCompile_mg16_mg365_mg7259:testCompile_mg20_mg635_rv6960:testCompile_literalMutationString3_mg92null6070:testCompile_literalMutationString3null130_mg5472:testCompile_mg19_mg472_mg8791:testCompile_literalMutationString1null411_mg5386:testCompile_literalMutationString4_mg243null5623:testCompile_literalMutationString2_mg313null5287:testCompile_literalMutationString5null225_mg5564:testCompile_literalMutationString1_mg385null7055:testCompile_literalMutationString5_mg180null3099:testCompile_literalMutationString4null273_mg5654:testCompile_literalMutationString6null309_mg5726:testCompile_literalMutationString2null368_mg5817:testCompile_literalMutationString6_mg272null6595:testCompile_mg13_mg522_mg8459:testCompile_mg22_literalMutationString261null4292:testCompile_mg22_literalMutationString264null4562:testCompile_mg22_literalMutationString259null5416:testCompile_mg22_literalMutationString266null5582:testCompile_mg22_literalMutationString257null7617:testCompile_mg22_literalMutationString263null5874:testCompile_mg12_mg579_mg7443:testCompile_mg12_mg580_mg6443:testCompile_mg13_mg509_mg6879:testCompile_mg20_mg635_rv6969:testCompile_mg20_mg635_rv6979:testCompile_mg16_mg347_mg7590:testCompile_mg20_mg635_rv6966:testCompile_mg20_mg635_rv6962:testCompile_mg20_mg635_rv6961:testCompile_mg16_mg350_mg7275:testCompile_mg20_mg589_mg2364:testCompile_mg20_mg646_mg9006:testCompile_mg19_mg466_mg8090:testCompile_literalMutationString3_literalMutationString56null4030:testCompile_literalMutationString3_literalMutationString50null8109:testCompile_literalMutationString3_literalMutationString57null3327:testCompile_literalMutationString3_literalMutationString52null4774:testCompile_literalMutationString3_literalMutationString54null3549:testCompile_literalMutationString3_literalMutationString59null6159:testCompile_mg20_mg635_rv6967:testCompile_mg20_mg635_rv6973:testCompile_literalMutationString5_literalMutationString131null3124:testCompile_literalMutationString4_literalMutationString230null3453:testCompile_literalMutationString6_literalMutationString250null4702:testCompile_literalMutationString6_literalMutationString251null1129:testCompile_literalMutationString5_literalMutationString136null1803:testCompile_literalMutationString5_literalMutationString133null1923:testCompile_literalMutationString6_literalMutationString247null1215:testCompile_literalMutationString2_literalMutationString274null2922:testCompile_literalMutationString4_literalMutationString229null3172:testCompile_literalMutationString4_literalMutationString226null3382:testCompile_literalMutationString4_literalMutationString231null2973:testCompile_literalMutationString2_literalMutationString282null3195:testCompile_literalMutationString1_literalMutationString369null3415:testCompile_literalMutationString6_literalMutationString249null5402:testCompile_literalMutationString2_literalMutationString286null2309:testCompile_mg13_mg526_mg6030:testCompile_literalMutationString4_literalMutationString227null3249:testCompile_literalMutationString6_literalMutationString246null3327:testCompile_literalMutationString1_literalMutationString371null3486:testCompile_literalMutationString5_literalMutationString138null3238:testCompile_literalMutationString5_literalMutationString135null5159:testCompile_literalMutationString4_literalMutationString228null5239:testCompile_literalMutationString5_literalMutationString132null2499:testCompile_literalMutationString2_literalMutationString283null5872:testCompile_literalMutationString2_literalMutationString284null4927:testCompile_literalMutationString1_literalMutationString370null4995:testCompile_literalMutationString2_literalMutationString285null3598:testCompile_literalMutationString6_literalMutationString248null3958:testCompile_add8null245_literalMutationString865:testCompile_mg20_mg624_mg8167:testCompile_mg16_mg355_mg6410:testCompile_add8null244_literalMutationString4001:testCompile_mg16_mg350_mg7277:testCompile_add8_literalMutationString137null2016:testCompile_add8_literalMutationString165null2095:testCompile_mg16_mg349_mg7826:testCompile_mg20_mg646_mg8981:testCompile_mg20_mg635_rv6911:testCompile_mg20_mg635_rv6909:testCompile_mg20_mg635_rv6965:testCompile_mg13_mg509_mg6873:testCompile_add9_mg451_literalMutationString1212:testCompile_add9_literalMutationString414_mg6667:testCompile_mg20_mg635_rv6925:testCompile_mg20_mg635_rv6929:testCompile_mg20_mg653_mg4636:testCompile_mg20_mg635_rv6910:testCompile_add10_mg353_literalMutationString1817:testCompile_add10_literalMutationString312_mg6765:testCompile_mg20_mg635_rv6908:testCompile_mg19_mg472_mg8819:testCompile_add8_rv212_mg6038
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/joda-time_parent/target/dspot/TestListener.ser
-Loading /tmp/icst-2019/september-2018/dataset/joda-time_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: initializationError(org.junit.runner.manipulation.Filter): No tests found matching Filter test methods according their simple name: [testCompile_mg20_mg635_rv6970, testCompile_mg20_mg635_mg6820, testCompile_mg20_mg635_rv6951, testCompile_mg20_mg624_rv8355, testCompile_mg20_mg635_rv6959, testCompile_mg20_mg620_mg8591, testCompile_mg20_mg635_mg6805, testCompile_mg19_mg472_mg8802, testCompile_mg13_mg512_mg6641, testCompile_mg20_mg646_mg8992, testCompile_mg13_mg526_mg6048, testCompile_mg20_mg635_mg6840, testCompile_mg20_mg635_rv6877, testCompile_mg16_mg350_mg7279, testCompile_mg16_mg365_mg7226, testCompile_mg20_mg624_mg8156, testCompile_mg20_mg635_mg6809, testCompile_mg19_mg460_mg7493, testCompile_mg13_mg525_mg7822, testCompile_mg13_mg512_mg6647, testCompile_mg20_mg653_mg4556, testCompile_mg20_mg653_mg4656, testCompile_mg16_mg350_mg7282, testCompile_mg19_mg466_mg8076, testCompile_mg13_mg512_mg6644, testCompile_mg11_mg413_mg5172, testCompile_mg13_mg512_mg6648, testCompile_mg20_mg635_mg6848, testCompile_mg13_mg525_mg7850, testCompile_mg12_mg580_mg6501, testCompile_mg20_mg624_rv8340, testCompile_mg19_mg463_mg8300, testCompile_mg13_mg525_mg7842, testCompile_mg20_mg620_mg8576, testCompile_mg20_mg635_mg6855, testCompile_mg20_mg652_mg7758, testCompile_mg13_mg522_mg8453, testCompile_mg16_mg365_mg7174, testCompile_mg20_mg646_mg8977, testCompile_mg19_mg466_mg8083, testCompile_mg19_mg472_mg8787, testCompile_mg20_mg620_mg8602, testCompile_mg19_mg460_mg7499, testCompile_mg20_mg649_mg3809, testCompile_mg19_mg460_mg7511, testCompile_mg20_mg635_mg6857, testCompile_mg19_mg463_mg8313, testCompile_mg19_mg463_mg8306, testCompile_mg16_mg350_mg7285, testCompile_mg19_mg472_mg8813, testCompile_mg16_mg363_mg8912, testCompile_mg13_mg525_mg7854, testCompile_mg20_mg620_mg8608, testCompile_mg20_mg646_mg9003, testCompile_mg20_mg636_rv7461, testCompile_mg13_mg526_mg6068, testCompile_mg11_mg405_mg6227, testCompile_mg16_mg355_mg6400, testCompile_mg20_mg635_rv6971, testCompile_mg12_mg567_mg6585, testCompile_mg16_mg350_mg7286, testCompile_mg19_mg466_mg8092, testCompile_mg20_mg639_rv1691, testCompile_mg20_mg620_mg8605, testCompile_mg13_mg507_mg6700, testCompile_mg13_mg509_mg6867, testCompile_mg20_mg635_rv6976, testCompile_mg20_mg635_rv6949, testCompile_mg20_mg623_rv2703, testCompile_add8null244null4135, testCompile_add8null245null1056, testCompile_mg20_mg624_rv8344, testCompile_mg13_mg512_mg6639, testCompile_add9_mg451null1392, testCompile_add9null476_mg8438, testCompile_mg13_mg512_mg6640, testCompile_mg20_mg620_mg8580, testCompile_mg20_mg635_rv6958, testCompile_mg20_mg635_mg6835, testCompile_mg20_mg645_mg2677, testCompile_mg20_mg633_rv3933, testCompile_mg13_mg526_mg6020, testCompile_add10_mg353null1996, testCompile_add10null373_mg8476, testCompile_mg20_mg635_mg6837, testCompile_mg20_mg644_mg1595, testCompile_add9_literalMutationString420null2092, testCompile_add9_literalMutationString415null1718, testCompile_add9_literalMutationString422null2684, testCompile_add9_literalMutationString418null2557, testCompile_add9_literalMutationString414null6693, testCompile_add9_literalMutationString416null3998, testCompile_mg20_mg589_mg2539, testCompile_mg20_mg635_rv6968, testCompilenull23_mg172_mg4804, testCompile_mg22null417_mg4923, testCompile_mg22_mg297null2844, testCompile_mg13_mg526_mg6101, testCompile_mg19_mg460_mg7496, testCompile_add10_literalMutationString324null6414, testCompile_add10_literalMutationString315null2185, testCompile_add10_literalMutationString317null1816, testCompile_add10_literalMutationString326null5337, testCompile_add10_literalMutationString319null5732, testCompile_add10_literalMutationString312null6894, testCompile_mg16_mg365_mg7259, testCompile_mg20_mg635_rv6960, testCompile_literalMutationString3_mg92null6070, testCompile_literalMutationString3null130_mg5472, testCompile_mg19_mg472_mg8791, testCompile_literalMutationString1null411_mg5386, testCompile_literalMutationString4_mg243null5623, testCompile_literalMutationString2_mg313null5287, testCompile_literalMutationString5null225_mg5564, testCompile_literalMutationString1_mg385null7055, testCompile_literalMutationString5_mg180null3099, testCompile_literalMutationString4null273_mg5654, testCompile_literalMutationString6null309_mg5726, testCompile_literalMutationString2null368_mg5817, testCompile_literalMutationString6_mg272null6595, testCompile_mg13_mg522_mg8459, testCompile_mg22_literalMutationString261null4292, testCompile_mg22_literalMutationString264null4562, testCompile_mg22_literalMutationString259null5416, testCompile_mg22_literalMutationString266null5582, testCompile_mg22_literalMutationString257null7617, testCompile_mg22_literalMutationString263null5874, testCompile_mg12_mg579_mg7443, testCompile_mg12_mg580_mg6443, testCompile_mg13_mg509_mg6879, testCompile_mg20_mg635_rv6969, testCompile_mg20_mg635_rv6979, testCompile_mg16_mg347_mg7590, testCompile_mg20_mg635_rv6966, testCompile_mg20_mg635_rv6962, testCompile_mg20_mg635_rv6961, testCompile_mg16_mg350_mg7275, testCompile_mg20_mg589_mg2364, testCompile_mg20_mg646_mg9006, testCompile_mg19_mg466_mg8090, testCompile_literalMutationString3_literalMutationString56null4030, testCompile_literalMutationString3_literalMutationString50null8109, testCompile_literalMutationString3_literalMutationString57null3327, testCompile_literalMutationString3_literalMutationString52null4774, testCompile_literalMutationString3_literalMutationString54null3549, testCompile_literalMutationString3_literalMutationString59null6159, testCompile_mg20_mg635_rv6967, testCompile_mg20_mg635_rv6973, testCompile_literalMutationString5_literalMutationString131null3124, testCompile_literalMutationString4_literalMutationString230null3453, testCompile_literalMutationString6_literalMutationString250null4702, testCompile_literalMutationString6_literalMutationString251null1129, testCompile_literalMutationString5_literalMutationString136null1803, testCompile_literalMutationString5_literalMutationString133null1923, testCompile_literalMutationString6_literalMutationString247null1215, testCompile_literalMutationString2_literalMutationString274null2922, testCompile_literalMutationString4_literalMutationString229null3172, testCompile_literalMutationString4_literalMutationString226null3382, testCompile_literalMutationString4_literalMutationString231null2973, testCompile_literalMutationString2_literalMutationString282null3195, testCompile_literalMutationString1_literalMutationString369null3415, testCompile_literalMutationString6_literalMutationString249null5402, testCompile_literalMutationString2_literalMutationString286null2309, testCompile_mg13_mg526_mg6030, testCompile_literalMutationString4_literalMutationString227null3249, testCompile_literalMutationString6_literalMutationString246null3327, testCompile_literalMutationString1_literalMutationString371null3486, testCompile_literalMutationString5_literalMutationString138null3238, testCompile_literalMutationString5_literalMutationString135null5159, testCompile_literalMutationString4_literalMutationString228null5239, testCompile_literalMutationString5_literalMutationString132null2499, testCompile_literalMutationString2_literalMutationString283null5872, testCompile_literalMutationString2_literalMutationString284null4927, testCompile_literalMutationString1_literalMutationString370null4995, testCompile_literalMutationString2_literalMutationString285null3598, testCompile_literalMutationString6_literalMutationString248null3958, testCompile_add8null245_literalMutationString865, testCompile_mg20_mg624_mg8167, testCompile_mg16_mg355_mg6410, testCompile_add8null244_literalMutationString4001, testCompile_mg16_mg350_mg7277, testCompile_add8_literalMutationString137null2016, testCompile_add8_literalMutationString165null2095, testCompile_mg16_mg349_mg7826, testCompile_mg20_mg646_mg8981, testCompile_mg20_mg635_rv6911, testCompile_mg20_mg635_rv6909, testCompile_mg20_mg635_rv6965, testCompile_mg13_mg509_mg6873, testCompile_add9_mg451_literalMutationString1212, testCompile_add9_literalMutationString414_mg6667, testCompile_mg20_mg635_rv6925, testCompile_mg20_mg635_rv6929, testCompile_mg20_mg653_mg4636, testCompile_mg20_mg635_rv6910, testCompile_add10_mg353_literalMutationString1817, testCompile_add10_literalMutationString312_mg6765, testCompile_mg20_mg635_rv6908, testCompile_mg19_mg472_mg8819, testCompile_add8_rv212_mg6038] from org.junit.internal.requests.ClassRequest@b81eda8
-[INFO] 1 test fail, generating try/catch/fail blocks...
-[INFO] Could not generate any test with assertions
-[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 53305
-======= REPORT =======
-0 amplified test fails on the new versions.
-
-[WARNING] DSpot could not obtain any amplified test method.
-[WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
-[INFO] Amplification succeed.
-[INFO] Elapsed time 56105 ms
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 01:45 min
-[INFO] Finished at: 2018-09-29T02:55:38+02:00
-[INFO] ------------------------------------------------------------------------
