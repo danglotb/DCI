@@ -1,0 +1,276 @@
+diff --git a/src/main/java/org/apache/commons/lang3/CharSet.java b/src/main/java/org/apache/commons/lang3/CharSet.java
+index 6cf0246..27e9464 100644
+--- a/src/main/java/org/apache/commons/lang3/CharSet.java
++++ b/src/main/java/org/apache/commons/lang3/CharSet.java
+@@ -75,7 +75,7 @@
+      * Subclasses can add more common patterns if desired
+      * @since 2.0
+      */
+-    protected static final Map<String, CharSet> COMMON = Collections.synchronizedMap(new HashMap<>());
++    protected static final Map<String, CharSet> COMMON = Collections.synchronizedMap(new HashMap<String, CharSet>());
+ 
+     static {
+         COMMON.put(null, EMPTY);
+@@ -88,7 +88,7 @@
+     }
+ 
+     /** The set of CharRange objects. */
+-    private final Set<CharRange> set = Collections.synchronizedSet(new HashSet<>());
++    private final Set<CharRange> set = Collections.synchronizedSet(new HashSet<CharRange>());
+ 
+     //-----------------------------------------------------------------------
+     /**
+diff --git a/src/main/java/org/apache/commons/lang3/ClassUtils.java b/src/main/java/org/apache/commons/lang3/ClassUtils.java
+index 28500a5..be9f0dd 100644
+--- a/src/main/java/org/apache/commons/lang3/ClassUtils.java
++++ b/src/main/java/org/apache/commons/lang3/ClassUtils.java
+@@ -1383,7 +1383,7 @@ private static String getCanonicalName(String className) {
+ 
+             @Override
+             public Iterator<Class<?>> iterator() {
+-                final MutableObject<Class<?>> next = new MutableObject<>(type);
++                final MutableObject<Class<?>> next = new MutableObject<Class<?>>(type);
+                 return new Iterator<Class<?>>() {
+ 
+                     @Override
+diff --git a/src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java b/src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java
+index 5874f59..c3b4a03 100644
+--- a/src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java
++++ b/src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java
+@@ -903,7 +903,7 @@ private static int distance(final Class<?>[] classArray, final Class<?>[] toClas
+         Validate.isTrue(cls != null, "The class must not be null");
+         Validate.isTrue(annotationCls != null, "The annotation class must not be null");
+         final List<Class<?>> classes = (searchSupers ? getAllSuperclassesAndInterfaces(cls)
+-                : new ArrayList<>());
++                : new ArrayList<Class<?>>());
+         classes.add(0, cls);
+         final List<Method> annotatedMethods = new ArrayList<>();
+         for (final Class<?> acls : classes) {
+diff --git a/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java b/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java
+index 0ec0fb6..037c3a4 100644
+--- a/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java
++++ b/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java
+@@ -864,7 +864,7 @@ private static Type substituteTypeVariables(final Type type, final Map<TypeVaria
+                     getRawType(parameterizedOwnerType), subtypeVarAssigns);
+         } else {
+             // no owner, prep the type variable assignments map
+-            typeVarAssigns = subtypeVarAssigns == null ? new HashMap<>()
++            typeVarAssigns = subtypeVarAssigns == null ? new HashMap<TypeVariable<?>, Type>()
+                     : new HashMap<>(subtypeVarAssigns);
+         }
+ 
+@@ -918,7 +918,7 @@ private static Type substituteTypeVariables(final Type type, final Map<TypeVaria
+         }
+ 
+         // create a copy of the incoming map, or an empty one if it's null
+-        final HashMap<TypeVariable<?>, Type> typeVarAssigns = subtypeVarAssigns == null ? new HashMap<>()
++        final HashMap<TypeVariable<?>, Type> typeVarAssigns = subtypeVarAssigns == null ? new HashMap<TypeVariable<?>, Type>()
+                 : new HashMap<>(subtypeVarAssigns);
+ 
+         // has target class been reached?
+diff --git a/src/test/java/org/apache/commons/lang3/ObjectUtilsTest.java b/src/test/java/org/apache/commons/lang3/ObjectUtilsTest.java
+index e12ac3f..2ec631f 100644
+--- a/src/test/java/org/apache/commons/lang3/ObjectUtilsTest.java
++++ b/src/test/java/org/apache/commons/lang3/ObjectUtilsTest.java
+@@ -207,13 +207,13 @@ public void testHashCodeMulti_multiple_likeList() {
+         final List<Object> list0 = new ArrayList<>(Arrays.asList(new Object[0]));
+         assertEquals(list0.hashCode(), ObjectUtils.hashCodeMulti());
+ 
+-        final List<Object> list1 = new ArrayList<>(Arrays.asList("a"));
++        final List<Object> list1 = new ArrayList<Object>(Arrays.asList("a"));
+         assertEquals(list1.hashCode(), ObjectUtils.hashCodeMulti("a"));
+ 
+-        final List<Object> list2 = new ArrayList<>(Arrays.asList("a", "b"));
++        final List<Object> list2 = new ArrayList<Object>(Arrays.asList("a", "b"));
+         assertEquals(list2.hashCode(), ObjectUtils.hashCodeMulti("a", "b"));
+ 
+-        final List<Object> list3 = new ArrayList<>(Arrays.asList("a", "b", "c"));
++        final List<Object> list3 = new ArrayList<Object>(Arrays.asList("a", "b", "c"));
+         assertEquals(list3.hashCode(), ObjectUtils.hashCodeMulti("a", "b", "c"));
+     }
+ 
+diff --git a/src/test/java/org/apache/commons/lang3/builder/EqualsBuilderTest.java b/src/test/java/org/apache/commons/lang3/builder/EqualsBuilderTest.java
+index 00c463a..05f1da9 100644
+--- a/src/test/java/org/apache/commons/lang3/builder/EqualsBuilderTest.java
++++ b/src/test/java/org/apache/commons/lang3/builder/EqualsBuilderTest.java
+@@ -433,9 +433,9 @@ public void testObjectBuild() {
+ 
+     @Test
+     public void testObjectRecursiveGenericInteger() {
+-        final TestRecursiveGenericObject<Integer> o1_a = new TestRecursiveGenericObject<>(1);
+-        final TestRecursiveGenericObject<Integer> o1_b = new TestRecursiveGenericObject<>(1);
+-        final TestRecursiveGenericObject<Integer> o2 = new TestRecursiveGenericObject<>(2);
++        final TestRecursiveGenericObject<Integer> o1_a = new TestRecursiveGenericObject<Integer>(1);
++        final TestRecursiveGenericObject<Integer> o1_b = new TestRecursiveGenericObject<Integer>(1);
++        final TestRecursiveGenericObject<Integer> o2 = new TestRecursiveGenericObject<Integer>(2);
+ 
+         assertTrue(new EqualsBuilder().setTestRecursive(true).append(o1_a, o1_b).isEquals());
+         assertTrue(new EqualsBuilder().setTestRecursive(true).append(o1_b, o1_a).isEquals());
+@@ -447,9 +447,9 @@ public void testObjectRecursiveGenericInteger() {
+     public void testObjectRecursiveGenericString() {
+         // Note: Do not use literals, because string literals are always mapped by same object (internal() of String))!
+         String s1_a = String.valueOf(1);
+-        final TestRecursiveGenericObject<String> o1_a = new TestRecursiveGenericObject<>(s1_a);
+-        final TestRecursiveGenericObject<String> o1_b = new TestRecursiveGenericObject<>(String.valueOf(1));
+-        final TestRecursiveGenericObject<String> o2 = new TestRecursiveGenericObject<>(String.valueOf(2));
++        final TestRecursiveGenericObject<String> o1_a = new TestRecursiveGenericObject<String>(s1_a);
++        final TestRecursiveGenericObject<String> o1_b = new TestRecursiveGenericObject<String>(String.valueOf(1));
++        final TestRecursiveGenericObject<String> o2 = new TestRecursiveGenericObject<String>(String.valueOf(2));
+ 
+         // To trigger bug reported in LANG-1356, call hashCode only on string in instance o1_a
+         s1_a.hashCode();
+diff --git a/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderConcurrencyTest.java b/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderConcurrencyTest.java
+index daa5111..6f07650 100644
+--- a/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderConcurrencyTest.java
++++ b/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderConcurrencyTest.java
+@@ -65,19 +65,19 @@
+     @Test
+     @Ignore
+     public void testLinkedList() throws InterruptedException, ExecutionException {
+-        this.testConcurrency(new CollectionHolder<>(new LinkedList<>()));
++        this.testConcurrency(new CollectionHolder<List<Integer>>(new LinkedList<Integer>()));
+     }
+ 
+     @Test
+     @Ignore
+     public void testArrayList() throws InterruptedException, ExecutionException {
+-        this.testConcurrency(new CollectionHolder<>(new ArrayList<>()));
++        this.testConcurrency(new CollectionHolder<List<Integer>>(new ArrayList<Integer>()));
+     }
+ 
+     @Test
+     @Ignore
+     public void testCopyOnWriteArrayList() throws InterruptedException, ExecutionException {
+-        this.testConcurrency(new CollectionHolder<>(new CopyOnWriteArrayList<>()));
++        this.testConcurrency(new CollectionHolder<List<Integer>>(new CopyOnWriteArrayList<Integer>()));
+     }
+ 
+     private void testConcurrency(final CollectionHolder<List<Integer>> holder) throws InterruptedException,
+diff --git a/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java b/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java
+index 49c131a..c0fa901 100644
+--- a/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java
++++ b/src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest.java
+@@ -104,7 +104,7 @@ public void test_toStringExcludeEmptyArray() {
+ 
+     @Test
+     public void test_toStringExcludeEmptyCollection() {
+-        final String toString = ReflectionToStringBuilder.toStringExclude(new TestFixture(), new ArrayList<>());
++        final String toString = ReflectionToStringBuilder.toStringExclude(new TestFixture(), new ArrayList<String>());
+         this.validateSecretFieldPresent(toString);
+     }
+ 
+diff --git a/src/test/java/org/apache/commons/lang3/builder/ToStringStyleConcurrencyTest.java b/src/test/java/org/apache/commons/lang3/builder/ToStringStyleConcurrencyTest.java
+index 12bcdb4..83fa068 100644
+--- a/src/test/java/org/apache/commons/lang3/builder/ToStringStyleConcurrencyTest.java
++++ b/src/test/java/org/apache/commons/lang3/builder/ToStringStyleConcurrencyTest.java
+@@ -68,17 +68,17 @@
+ 
+     @Test
+     public void testLinkedList() throws InterruptedException, ExecutionException {
+-        this.testConcurrency(new CollectionHolder<>(new LinkedList<>()));
++        this.testConcurrency(new CollectionHolder<List<Integer>>(new LinkedList<Integer>()));
+     }
+ 
+     @Test
+     public void testArrayList() throws InterruptedException, ExecutionException {
+-        this.testConcurrency(new CollectionHolder<>(new ArrayList<>()));
++        this.testConcurrency(new CollectionHolder<List<Integer>>(new ArrayList<Integer>()));
+     }
+ 
+     @Test
+     public void testCopyOnWriteArrayList() throws InterruptedException, ExecutionException {
+-        this.testConcurrency(new CollectionHolder<>(new CopyOnWriteArrayList<>()));
++        this.testConcurrency(new CollectionHolder<List<Integer>>(new CopyOnWriteArrayList<Integer>()));
+     }
+ 
+     private void testConcurrency(final CollectionHolder<List<Integer>> holder) throws InterruptedException,
+diff --git a/src/test/java/org/apache/commons/lang3/concurrent/ConcurrentUtilsTest.java b/src/test/java/org/apache/commons/lang3/concurrent/ConcurrentUtilsTest.java
+index 004a92e..6cbf183 100644
+--- a/src/test/java/org/apache/commons/lang3/concurrent/ConcurrentUtilsTest.java
++++ b/src/test/java/org/apache/commons/lang3/concurrent/ConcurrentUtilsTest.java
+@@ -580,7 +580,7 @@ public void testCreateIfAbsentUncheckedException()
+         EasyMock.replay(init);
+         try {
+             ConcurrentUtils.createIfAbsentUnchecked(
+-                    new ConcurrentHashMap<>(), "test", init);
++                    new ConcurrentHashMap<String, Integer>(), "test", init);
+             fail("Exception not thrown!");
+         } catch (final ConcurrentRuntimeException crex) {
+             assertEquals("Wrong cause", ex, crex.getCause());
+diff --git a/src/test/java/org/apache/commons/lang3/reflect/MethodUtilsTest.java b/src/test/java/org/apache/commons/lang3/reflect/MethodUtilsTest.java
+index f5ea7a7..0496664 100644
+--- a/src/test/java/org/apache/commons/lang3/reflect/MethodUtilsTest.java
++++ b/src/test/java/org/apache/commons/lang3/reflect/MethodUtilsTest.java
+@@ -275,19 +275,19 @@ public static String numOverload(final Number... args) {
+         // not only is the correct overloaded variant invoked, but that the varags arguments
+         // are also delivered correctly to the method.
+         public ImmutablePair<String, Object[]> varOverloadEcho(final String... args) {
+-            return new ImmutablePair<>("String...", args);
++            return new ImmutablePair<String, Object[]>("String...", args);
+         }
+ 
+         public ImmutablePair<String, Object[]> varOverloadEcho(final Number... args) {
+-            return new ImmutablePair<>("Number...", args);
++            return new ImmutablePair<String, Object[]>("Number...", args);
+         }
+ 
+         public static ImmutablePair<String, Object[]> varOverloadEchoStatic(final String... args) {
+-            return new ImmutablePair<>("String...", args);
++            return new ImmutablePair<String, Object[]>("String...", args);
+         }
+ 
+         public static ImmutablePair<String, Object[]> varOverloadEchoStatic(final Number... args) {
+-            return new ImmutablePair<>("Number...", args);
++            return new ImmutablePair<String, Object[]>("Number...", args);
+         }
+ 
+         static void verify(final ImmutablePair<String, Object[]> a, final ImmutablePair<String, Object[]> b) {
+@@ -441,13 +441,13 @@ public void testInvokeMethod() throws Exception {
+         } catch (final NoSuchMethodException expected) {
+         }
+ 
+-        TestBean.verify(new ImmutablePair<>("String...", new String[]{"x", "y"}),
++        TestBean.verify(new ImmutablePair<String, Object[]>("String...", new String[]{"x", "y"}),
+                 MethodUtils.invokeMethod(testBean, "varOverloadEcho", "x", "y"));
+-        TestBean.verify(new ImmutablePair<>("Number...", new Number[]{17, 23, 42}),
++        TestBean.verify(new ImmutablePair<String, Object[]>("Number...", new Number[]{17, 23, 42}),
+                 MethodUtils.invokeMethod(testBean, "varOverloadEcho", 17, 23, 42));
+-        TestBean.verify(new ImmutablePair<>("String...", new String[]{"x", "y"}),
++        TestBean.verify(new ImmutablePair<String, Object[]>("String...", new String[]{"x", "y"}),
+                 MethodUtils.invokeMethod(testBean, "varOverloadEcho", "x", "y"));
+-        TestBean.verify(new ImmutablePair<>("Number...", new Number[]{17, 23, 42}),
++        TestBean.verify(new ImmutablePair<String, Object[]>("Number...", new Number[]{17, 23, 42}),
+                 MethodUtils.invokeMethod(testBean, "varOverloadEcho", 17, 23, 42));
+     }
+ 
+@@ -516,13 +516,13 @@ public void testInvokeStaticMethod() throws Exception {
+         assertEquals("bar(int, String...)", MethodUtils.invokeStaticMethod(
+                 TestBean.class, "bar", NumberUtils.INTEGER_ONE, "a", "b"));
+ 
+-        TestBean.verify(new ImmutablePair<>("String...", new String[]{"x", "y"}),
++        TestBean.verify(new ImmutablePair<String, Object[]>("String...", new String[]{"x", "y"}),
+                 MethodUtils.invokeStaticMethod(TestBean.class, "varOverloadEchoStatic", "x", "y"));
+-        TestBean.verify(new ImmutablePair<>("Number...", new Number[]{17, 23, 42}),
++        TestBean.verify(new ImmutablePair<String, Object[]>("Number...", new Number[]{17, 23, 42}),
+                 MethodUtils.invokeStaticMethod(TestBean.class, "varOverloadEchoStatic", 17, 23, 42));
+-        TestBean.verify(new ImmutablePair<>("String...", new String[]{"x", "y"}),
++        TestBean.verify(new ImmutablePair<String, Object[]>("String...", new String[]{"x", "y"}),
+                 MethodUtils.invokeStaticMethod(TestBean.class, "varOverloadEchoStatic", "x", "y"));
+-        TestBean.verify(new ImmutablePair<>("Number...", new Number[]{17, 23, 42}),
++        TestBean.verify(new ImmutablePair<String, Object[]>("Number...", new Number[]{17, 23, 42}),
+                 MethodUtils.invokeStaticMethod(TestBean.class, "varOverloadEchoStatic", 17, 23, 42));
+ 
+         try {
+diff --git a/src/test/java/org/apache/commons/lang3/reflect/TypeUtilsTest.java b/src/test/java/org/apache/commons/lang3/reflect/TypeUtilsTest.java
+index 7bd5380..a9bb9fa 100644
+--- a/src/test/java/org/apache/commons/lang3/reflect/TypeUtilsTest.java
++++ b/src/test/java/org/apache/commons/lang3/reflect/TypeUtilsTest.java
+@@ -430,7 +430,7 @@ public void testIsAssignable() throws SecurityException, NoSuchMethodException,
+         final Type dClassType = AClass.class.getField("dClass").getGenericType();
+         final Type eClassType = AClass.class.getField("eClass").getGenericType();
+         final Type fClassType = AClass.class.getField("fClass").getGenericType();
+-        final AClass aClass = new AClass(new AAClass<>());
++        final AClass aClass = new AClass(new AAClass<String>());
+         aClass.bClass = aClass.cClass;
+         assertTrue(TypeUtils.isAssignable(cClassType, bClassType));
+         aClass.bClass = aClass.dClass;
