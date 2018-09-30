@@ -1,0 +1,124 @@
+diff --git a/src/main/java/org/apache/commons/lang3/ClassUtils.java b/src/main/java/org/apache/commons/lang3/ClassUtils.java
+index be3770b..7456626 100644
+--- a/src/main/java/org/apache/commons/lang3/ClassUtils.java
++++ b/src/main/java/org/apache/commons/lang3/ClassUtils.java
+@@ -1347,7 +1347,7 @@ private static String getCanonicalName(String className) {
+                     ? className.length() - 1
+                     : className.length());
+         } else {
+-            if (className.length() > 0) {
++            if (!className.isEmpty()) {
+                 className = reverseAbbreviationMap.get(className.substring(0, 1));
+             }
+         }
+diff --git a/src/main/java/org/apache/commons/lang3/LocaleUtils.java b/src/main/java/org/apache/commons/lang3/LocaleUtils.java
+index cd11781..d5b5043 100644
+--- a/src/main/java/org/apache/commons/lang3/LocaleUtils.java
++++ b/src/main/java/org/apache/commons/lang3/LocaleUtils.java
+@@ -150,8 +150,8 @@ private static Locale parseLocale(final String str) {
+             final String country = segments[1];
+             final String variant = segments[2];
+             if (isISO639LanguageCode(language) &&
+-                    (country.length() == 0 || isISO3166CountryCode(country) || isNumericAreaCode(country)) &&
+-                    variant.length() > 0) {
++                    (country.isEmpty() || isISO3166CountryCode(country) || isNumericAreaCode(country)) &&
++                    !variant.isEmpty()) {
+                 return new Locale(language, country, variant);
+             }
+         }
+@@ -227,10 +227,10 @@ private static boolean isNumericAreaCode(final String str) {
+         final List<Locale> list = new ArrayList<>(4);
+         if (locale != null) {
+             list.add(locale);
+-            if (locale.getVariant().length() > 0) {
++            if (!locale.getVariant().isEmpty()) {
+                 list.add(new Locale(locale.getLanguage(), locale.getCountry()));
+             }
+-            if (locale.getCountry().length() > 0) {
++            if (!locale.getCountry().isEmpty()) {
+                 list.add(new Locale(locale.getLanguage(), StringUtils.EMPTY));
+             }
+             if (!list.contains(defaultLocale)) {
+@@ -330,7 +330,7 @@ public static boolean isAvailableLocale(final Locale locale) {
+             final List<Locale> locales = availableLocaleList();
+             for (final Locale locale : locales) {
+                 if (languageCode.equals(locale.getLanguage()) &&
+-                    locale.getCountry().length() != 0 &&
++                        !locale.getCountry().isEmpty() &&
+                     locale.getVariant().isEmpty()) {
+                     countries.add(locale);
+                 }
+diff --git a/src/main/java/org/apache/commons/lang3/builder/DiffResult.java b/src/main/java/org/apache/commons/lang3/builder/DiffResult.java
+index d8fa976..93b7f2f 100644
+--- a/src/main/java/org/apache/commons/lang3/builder/DiffResult.java
++++ b/src/main/java/org/apache/commons/lang3/builder/DiffResult.java
+@@ -170,7 +170,7 @@ public String toString() {
+      * @return a {@code String} description of the differences.
+      */
+     public String toString(final ToStringStyle style) {
+-        if (diffs.size() == 0) {
++        if (diffs.isEmpty()) {
+             return OBJECTS_SAME_STRING;
+         }
+ 
+diff --git a/src/main/java/org/apache/commons/lang3/exception/DefaultExceptionContext.java b/src/main/java/org/apache/commons/lang3/exception/DefaultExceptionContext.java
+index 69a4ccf..277c224 100644
+--- a/src/main/java/org/apache/commons/lang3/exception/DefaultExceptionContext.java
++++ b/src/main/java/org/apache/commons/lang3/exception/DefaultExceptionContext.java
+@@ -130,7 +130,7 @@ public String getFormattedExceptionMessage(final String baseMessage){
+             buffer.append(baseMessage);
+         }
+ 
+-        if (contextValues.size() > 0) {
++        if (!contextValues.isEmpty()) {
+             if (buffer.length() > 0) {
+                 buffer.append('\n');
+             }
+diff --git a/src/main/java/org/apache/commons/lang3/math/NumberUtils.java b/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+index 3837cc9..ff5552d 100644
+--- a/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
++++ b/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+@@ -526,7 +526,7 @@ public static Number createNumber(final String str) {
+                 case 'L' :
+                     if (dec == null
+                         && exp == null
+-                        && (numeric.length() > 0 && numeric.charAt(0) == '-' && isDigits(numeric.substring(1)) || isDigits(numeric))) {
++                        && (!numeric.isEmpty() && numeric.charAt(0) == '-' && isDigits(numeric.substring(1)) || isDigits(numeric))) {
+                         try {
+                             return createLong(numeric);
+                         } catch (final NumberFormatException nfe) { // NOPMD
+@@ -661,7 +661,7 @@ private static boolean isAllZeros(final String str) {
+                 return false;
+             }
+         }
+-        return str.length() > 0;
++        return !str.isEmpty();
+     }
+ 
+     //-----------------------------------------------------------------------
+diff --git a/src/main/java/org/apache/commons/lang3/text/StrLookup.java b/src/main/java/org/apache/commons/lang3/text/StrLookup.java
+index a99c1b3..bf6ccb2 100644
+--- a/src/main/java/org/apache/commons/lang3/text/StrLookup.java
++++ b/src/main/java/org/apache/commons/lang3/text/StrLookup.java
+@@ -171,7 +171,7 @@ public String lookup(final String key) {
+          */
+         @Override
+         public String lookup(final String key) {
+-            if (key.length() > 0) {
++            if (!key.isEmpty()) {
+                 try {
+                     return System.getProperty(key);
+                 } catch (final SecurityException scex) {
+diff --git a/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java b/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
+index e09260c..8c6e20a 100644
+--- a/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
++++ b/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
+@@ -195,7 +195,7 @@ public static String formatDurationWords(
+                     }
+                 }
+             }
+-            if (duration.length() != 0) {
++            if (!duration.isEmpty()) {
+                 // strip the space off again
+                 duration = duration.substring(1);
+             }

@@ -1,0 +1,395 @@
+diff --git a/src/changes/changes.xml b/src/changes/changes.xml
+index bbb5f34..ee04711 100644
+--- a/src/changes/changes.xml
++++ b/src/changes/changes.xml
+@@ -71,7 +71,6 @@ The <action> type attribute can be add,update,fix,remove.
+     <action issue="LANG-1392" type="add" dev="pschumacher" due-to="Jeff Nelson">Methods for getting first non empty or non blank value</action>
+     <action issue="LANG-1405" type="update" dev="ggregory" due-to="Lars Grefer">Remove checks for java versions below the minimum supported one</action>
+     <action issue="LANG-1402" type="update" dev="chtompki" due-to="Mark Dacek">Null/index safe get methods for ArrayUtils</action>
+-    <action issue="LANG-1408" type="add" dev="chtompki">Rounding utilities for converting to BigDecimal</action>
+   </release>
+ 
+   <release version="3.7" date="2017-11-04" description="New features and bug fixes. Requires Java 7, supports Java 8, 9, 10.">
+diff --git a/src/main/java/org/apache/commons/lang3/math/NumberUtils.java b/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+index 821ee66..5d17a5b 100644
+--- a/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
++++ b/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+@@ -20,7 +20,6 @@
+ import java.math.BigDecimal;
+ import java.math.BigInteger;
+ 
+-import java.math.RoundingMode;
+ import org.apache.commons.lang3.StringUtils;
+ import org.apache.commons.lang3.Validate;
+ 
+@@ -41,8 +40,6 @@
+     public static final Integer INTEGER_ZERO = Integer.valueOf(0);
+     /** Reusable Integer constant for one. */
+     public static final Integer INTEGER_ONE = Integer.valueOf(1);
+-    /** Reusable Integer constant for two */
+-    public static final Integer INTEGER_TWO = Integer.valueOf(2);
+     /** Reusable Integer constant for minus one. */
+     public static final Integer INTEGER_MINUS_ONE = Integer.valueOf(-1);
+     /** Reusable Short constant for zero. */
+@@ -301,7 +298,7 @@ public static double toDouble(final String str, final double defaultValue) {
+      *  <code>0.0d</code> if the <code>BigDecimal</code> is <code>null</code>.
+      * @since 3.8
+      */
+-    public static double toDouble(final BigDecimal value) {
++    public static double toDouble(BigDecimal value) {
+         return toDouble(value, 0.0d);
+     }
+ 
+@@ -322,7 +319,7 @@ public static double toDouble(final BigDecimal value) {
+      *  defaultValue if the <code>BigDecimal</code> is <code>null</code>.
+      * @since 3.8
+      */
+-    public static double toDouble(final BigDecimal value, final double defaultValue) {
++    public static double toDouble(BigDecimal value, double defaultValue) {
+         return value == null ? defaultValue : value.doubleValue();
+     }
+ 
+@@ -425,161 +422,6 @@ public static short toShort(final String str, final short defaultValue) {
+         }
+     }
+ 
+-    /**
+-     * Convert a <code>BigDecimal</code> to a <code>BigDecimal</code> with a scale of
+-     * two that has been rounded using <code>RoundingMode.HALF_EVEN</code>. If the supplied
+-     * <code>value</code> is null, then <code>BigDecimal.ZERO</code> is returned.
+-     *
+-     * <p>Note, the scale of a <code>BigDecimal</code> is the number of digits to the right of the
+-     * decimal point.</p>
+-     *
+-     * @param value the <code>BigDecimal</code> to convert, may be null.
+-     * @return the scaled, with appropriate rounding, <code>BigDecimal</code>.
+-     * @since 3.8
+-     */
+-    public static BigDecimal toScaledBigDecimal(BigDecimal value) {
+-        return toScaledBigDecimal(value, INTEGER_TWO, RoundingMode.HALF_EVEN);
+-    }
+-
+-    /**
+-     * Convert a <code>BigDecimal</code> to a <code>BigDecimal</code> whose scale is the
+-     * specified value with a <code>RoundingMode</code> applied. If the input <code>value</code>
+-     * is <code>null</code>, we simply return <code>BigDecimal.ZERO</code>.
+-     *
+-     * @param value the <code>BigDecimal</code> to convert, may be null.
+-     * @param scale the number of digits to the right of the decimal point.
+-     * @param roundingMode a rounding behavior for numerical operations capable of
+-     *  discarding precision.
+-     * @return the scaled, with appropriate rounding, <code>BigDecimal</code>.
+-     * @since 3.8
+-     */
+-    public static BigDecimal toScaledBigDecimal(BigDecimal value, int scale, RoundingMode roundingMode) {
+-        if (value == null) {
+-            return BigDecimal.ZERO;
+-        }
+-        return value.setScale(
+-            scale,
+-            (roundingMode == null) ? RoundingMode.HALF_EVEN : roundingMode
+-        );
+-    }
+-
+-    /**
+-     * Convert a <code>Float</code> to a <code>BigDecimal</code> with a scale of
+-     * two that has been rounded using <code>RoundingMode.HALF_EVEN</code>. If the supplied
+-     * <code>value</code> is null, then <code>BigDecimal.ZERO</code> is returned.
+-     *
+-     * <p>Note, the scale of a <code>BigDecimal</code> is the number of digits to the right of the
+-     * decimal point.</p>
+-     *
+-     * @param value the <code>Float</code> to convert, may be null.
+-     * @return the scaled, with appropriate rounding, <code>BigDecimal</code>.
+-     * @since 3.8
+-     */
+-    public static BigDecimal toScaledBigDecimal(Float value) {
+-        return toScaledBigDecimal(value, INTEGER_TWO, RoundingMode.HALF_EVEN);
+-    }
+-
+-    /**
+-     * Convert a <code>Float</code> to a <code>BigDecimal</code> whose scale is the
+-     * specified value with a <code>RoundingMode</code> applied. If the input <code>value</code>
+-     * is <code>null</code>, we simply return <code>BigDecimal.ZERO</code>.
+-     *
+-     * @param value the <code>Float</code> to convert, may be null.
+-     * @param scale the number of digits to the right of the decimal point.
+-     * @param roundingMode a rounding behavior for numerical operations capable of
+-     *  discarding precision.
+-     * @return the scaled, with appropriate rounding, <code>BigDecimal</code>.
+-     * @since 3.8
+-     */
+-    public static BigDecimal toScaledBigDecimal(Float value, int scale, RoundingMode roundingMode) {
+-        if (value == null) {
+-            return BigDecimal.ZERO;
+-        }
+-        return toScaledBigDecimal(
+-            BigDecimal.valueOf(value),
+-            scale,
+-            roundingMode
+-        );
+-    }
+-
+-    /**
+-     * Convert a <code>Double</code> to a <code>BigDecimal</code> with a scale of
+-     * two that has been rounded using <code>RoundingMode.HALF_EVEN</code>. If the supplied
+-     * <code>value</code> is null, then <code>BigDecimal.ZERO</code> is returned.
+-     *
+-     * <p>Note, the scale of a <code>BigDecimal</code> is the number of digits to the right of the
+-     * decimal point.</p>
+-     *
+-     * @param value the <code>Double</code> to convert, may be null.
+-     * @return the scaled, with appropriate rounding, <code>BigDecimal</code>.
+-     * @since 3.8
+-     */
+-    public static BigDecimal toScaledBigDecimal(Double value) {
+-        return toScaledBigDecimal(value, INTEGER_TWO, RoundingMode.HALF_EVEN);
+-    }
+-
+-    /**
+-     * Convert a <code>Double</code> to a <code>BigDecimal</code> whose scale is the
+-     * specified value with a <code>RoundingMode</code> applied. If the input <code>value</code>
+-     * is <code>null</code>, we simply return <code>BigDecimal.ZERO</code>.
+-     *
+-     * @param value the <code>Double</code> to convert, may be null.
+-     * @param scale the number of digits to the right of the decimal point.
+-     * @param roundingMode a rounding behavior for numerical operations capable of
+-     *  discarding precision.
+-     * @return the scaled, with appropriate rounding, <code>BigDecimal</code>.
+-     * @since 3.8
+-     */
+-    public static BigDecimal toScaledBigDecimal(Double value, int scale, RoundingMode roundingMode) {
+-        if (value == null) {
+-            return BigDecimal.ZERO;
+-        }
+-        return toScaledBigDecimal(
+-            BigDecimal.valueOf(value),
+-            scale,
+-            roundingMode
+-        );
+-    }
+-
+-    /**
+-     * Convert a <code>String</code> to a <code>BigDecimal</code> with a scale of
+-     * two that has been rounded using <code>RoundingMode.HALF_EVEN</code>. If the supplied
+-     * <code>value</code> is null, then <code>BigDecimal.ZERO</code> is returned.
+-     *
+-     * <p>Note, the scale of a <code>BigDecimal</code> is the number of digits to the right of the
+-     * decimal point.</p>
+-     *
+-     * @param value the <code>String</code> to convert, may be null.
+-     * @return the scaled, with appropriate rounding, <code>BigDecimal</code>.
+-     * @since 3.8
+-     */
+-    public static BigDecimal toScaledBigDecimal(String value) {
+-        return toScaledBigDecimal(value, INTEGER_TWO, RoundingMode.HALF_EVEN);
+-    }
+-
+-    /**
+-     * Convert a <code>String</code> to a <code>BigDecimal</code> whose scale is the
+-     * specified value with a <code>RoundingMode</code> applied. If the input <code>value</code>
+-     * is <code>null</code>, we simply return <code>BigDecimal.ZERO</code>.
+-     *
+-     * @param value the <code>String</code> to convert, may be null.
+-     * @param scale the number of digits to the right of the decimal point.
+-     * @param roundingMode a rounding behavior for numerical operations capable of
+-     *  discarding precision.
+-     * @return the scaled, with appropriate rounding, <code>BigDecimal</code>.
+-     * @since 3.8
+-     */
+-    public static BigDecimal toScaledBigDecimal(String value, int scale, RoundingMode roundingMode) {
+-        if (value == null) {
+-            return BigDecimal.ZERO;
+-        }
+-        return toScaledBigDecimal(
+-            createBigDecimal(value),
+-            scale,
+-            roundingMode
+-        );
+-    }
+-
+     //-----------------------------------------------------------------------
+     // must handle Long, Float, Integer, Float, Short,
+     //                  BigDecimal, BigInteger and Byte
+diff --git a/src/test/java/org/apache/commons/lang3/math/NumberUtilsTest.java b/src/test/java/org/apache/commons/lang3/math/NumberUtilsTest.java
+index 468d91e..c819765 100644
+--- a/src/test/java/org/apache/commons/lang3/math/NumberUtilsTest.java
++++ b/src/test/java/org/apache/commons/lang3/math/NumberUtilsTest.java
+@@ -27,7 +27,6 @@
+ import java.math.BigDecimal;
+ import java.math.BigInteger;
+ 
+-import java.math.RoundingMode;
+ import org.junit.Test;
+ 
+ /**
+@@ -239,169 +238,6 @@ public void testToShortStringI() {
+         assertTrue("toShort(String,short) 2 failed", NumberUtils.toShort("1234.5", (short) 5) == 5);
+     }
+ 
+-    /**
+-     * Test for {@link NumberUtils#toScaledBigDecimal(BigDecimal)}.
+-     */
+-    @Test
+-    public void testToScaledBigDecimalBigDecimal() {
+-        assertTrue("toScaledBigDecimal(BigDecimal) 1 failed",
+-            NumberUtils.toScaledBigDecimal(BigDecimal.valueOf(123.456)).equals(BigDecimal.valueOf(123.46)));
+-        // Test RoudingMode.HALF_EVEN default rounding.
+-        assertTrue("toScaledBigDecimal(BigDecimal) 2 failed",
+-            NumberUtils.toScaledBigDecimal(BigDecimal.valueOf(23.515)).equals(BigDecimal.valueOf(23.52)));
+-        assertTrue("toScaledBigDecimal(BigDecimal) 3 failed",
+-            NumberUtils.toScaledBigDecimal(BigDecimal.valueOf(23.525)).equals(BigDecimal.valueOf(23.52)));
+-        assertTrue("toScaledBigDecimal(BigDecimal) 4 failed",
+-            NumberUtils.toScaledBigDecimal(BigDecimal.valueOf(23.525))
+-                .multiply(BigDecimal.valueOf(100)).toString()
+-                .equals("2352.00"));
+-        assertTrue("toScaledBigDecimal(BigDecimal) 5 failed",
+-            NumberUtils.toScaledBigDecimal((BigDecimal) null).equals(BigDecimal.ZERO));
+-    }
+-
+-    /**
+-     * Test for {@link NumberUtils#toScaledBigDecimal(BigDecimal, int, RoundingMode)}.
+-     */
+-    @Test
+-    public void testToScaledBigDecimalBigDecimalIRM() {
+-        assertTrue("toScaledBigDecimal(BigDecimal, int, RoudingMode) 1 failed",
+-            NumberUtils.toScaledBigDecimal(BigDecimal.valueOf(123.456), 1, RoundingMode.CEILING).equals(BigDecimal.valueOf(123.5)));
+-        assertTrue("toScaledBigDecimal(BigDecimal, int, RoudingMode) 2 failed",
+-            NumberUtils.toScaledBigDecimal(BigDecimal.valueOf(23.5159), 3, RoundingMode.FLOOR).equals(BigDecimal.valueOf(23.515)));
+-        assertTrue("toScaledBigDecimal(BigDecimal, int, RoudingMode) 3 failed",
+-            NumberUtils.toScaledBigDecimal(BigDecimal.valueOf(23.525), 2, RoundingMode.HALF_UP).equals(BigDecimal.valueOf(23.53)));
+-        assertTrue("toScaledBigDecimal(BigDecimal, int, RoudingMode) 4 failed",
+-            NumberUtils.toScaledBigDecimal(BigDecimal.valueOf(23.521), 4, RoundingMode.HALF_EVEN)
+-                .multiply(BigDecimal.valueOf(1000))
+-                .toString()
+-                .equals("23521.0000"));
+-        assertTrue("toScaledBigDecimal(BigDecimal, int, RoudingMode) 5 failed",
+-            NumberUtils.toScaledBigDecimal((BigDecimal) null, 2, RoundingMode.HALF_UP).equals(BigDecimal.ZERO));
+-    }
+-
+-    /**
+-     * Test for {@link NumberUtils#toScaledBigDecimal(Float)}.
+-     */
+-    @Test
+-    public void testToScaledBigDecimalFloat() {
+-        assertTrue("toScaledBigDecimal(Float) 1 failed",
+-            NumberUtils.toScaledBigDecimal(Float.valueOf(123.456f)).equals(BigDecimal.valueOf(123.46)));
+-        // Test RoudingMode.HALF_EVEN default rounding.
+-        assertTrue("toScaledBigDecimal(Float) 2 failed",
+-            NumberUtils.toScaledBigDecimal(Float.valueOf(23.515f)).equals(BigDecimal.valueOf(23.51)));
+-        // Note. NumberUtils.toScaledBigDecimal(Float.valueOf(23.515f)).equals(BigDecimal.valueOf(23.51))
+-        // because of roundoff error. It is ok.
+-        assertTrue("toScaledBigDecimal(Float) 3 failed",
+-            NumberUtils.toScaledBigDecimal(Float.valueOf(23.525f)).equals(BigDecimal.valueOf(23.52)));
+-        assertTrue("toScaledBigDecimal(Float) 4 failed",
+-            NumberUtils.toScaledBigDecimal(Float.valueOf(23.525f))
+-                .multiply(BigDecimal.valueOf(100)).toString()
+-                .equals("2352.00"));
+-        assertTrue("toScaledBigDecimal(Float) 5 failed",
+-            NumberUtils.toScaledBigDecimal((Float) null).equals(BigDecimal.ZERO));
+-    }
+-
+-    /**
+-     * Test for {@link NumberUtils#toScaledBigDecimal(Float, int, RoundingMode)}.
+-     */
+-    @Test
+-    public void testToScaledBigDecimalFloatIRM() {
+-        assertTrue("toScaledBigDecimal(Float, int, RoudingMode) 1 failed",
+-            NumberUtils.toScaledBigDecimal(Float.valueOf(123.456f), 1, RoundingMode.CEILING).equals(BigDecimal.valueOf(123.5)));
+-        assertTrue("toScaledBigDecimal(Float, int, RoudingMode) 2 failed",
+-            NumberUtils.toScaledBigDecimal(Float.valueOf(23.5159f), 3, RoundingMode.FLOOR).equals(BigDecimal.valueOf(23.515)));
+-        // The following happens due to roundoff error. We're ok with this.
+-        assertTrue("toScaledBigDecimal(Float, int, RoudingMode) 3 failed",
+-            NumberUtils.toScaledBigDecimal(Float.valueOf(23.525f), 2, RoundingMode.HALF_UP).equals(BigDecimal.valueOf(23.52)));
+-        assertTrue("toScaledBigDecimal(Float, int, RoudingMode) 4 failed",
+-            NumberUtils.toScaledBigDecimal(Float.valueOf(23.521f), 4, RoundingMode.HALF_EVEN)
+-                .multiply(BigDecimal.valueOf(1000))
+-                .toString()
+-                .equals("23521.0000"));
+-        assertTrue("toScaledBigDecimal(Float, int, RoudingMode) 5 failed",
+-            NumberUtils.toScaledBigDecimal((Float) null, 2, RoundingMode.HALF_UP).equals(BigDecimal.ZERO));
+-    }
+-
+-    /**
+-     * Test for {@link NumberUtils#toScaledBigDecimal(Double)}.
+-     */
+-    @Test
+-    public void testToScaledBigDecimalDouble() {
+-        assertTrue("toScaledBigDecimal(Double) 1 failed",
+-            NumberUtils.toScaledBigDecimal(Double.valueOf(123.456d)).equals(BigDecimal.valueOf(123.46)));
+-        // Test RoudingMode.HALF_EVEN default rounding.
+-        assertTrue("toScaledBigDecimal(Double) 2 failed",
+-            NumberUtils.toScaledBigDecimal(Double.valueOf(23.515d)).equals(BigDecimal.valueOf(23.52)));
+-        assertTrue("toScaledBigDecimal(Double) 3 failed",
+-            NumberUtils.toScaledBigDecimal(Double.valueOf(23.525d)).equals(BigDecimal.valueOf(23.52)));
+-        assertTrue("toScaledBigDecimal(Double) 4 failed",
+-            NumberUtils.toScaledBigDecimal(Double.valueOf(23.525d))
+-                .multiply(BigDecimal.valueOf(100)).toString()
+-                .equals("2352.00"));
+-        assertTrue("toScaledBigDecimal(Double) 5 failed",
+-            NumberUtils.toScaledBigDecimal((Double) null).equals(BigDecimal.ZERO));
+-    }
+-
+-    /**
+-     * Test for {@link NumberUtils#toScaledBigDecimal(Double, int, RoundingMode)}.
+-     */
+-    @Test
+-    public void testToScaledBigDecimalDoubleIRM() {
+-        assertTrue("toScaledBigDecimal(Double, int, RoudingMode) 1 failed",
+-            NumberUtils.toScaledBigDecimal(Double.valueOf(123.456d), 1, RoundingMode.CEILING).equals(BigDecimal.valueOf(123.5)));
+-        assertTrue("toScaledBigDecimal(Double, int, RoudingMode) 2 failed",
+-            NumberUtils.toScaledBigDecimal(Double.valueOf(23.5159d), 3, RoundingMode.FLOOR).equals(BigDecimal.valueOf(23.515)));
+-        assertTrue("toScaledBigDecimal(Double, int, RoudingMode) 3 failed",
+-            NumberUtils.toScaledBigDecimal(Double.valueOf(23.525d), 2, RoundingMode.HALF_UP).equals(BigDecimal.valueOf(23.53)));
+-        assertTrue("toScaledBigDecimal(Double, int, RoudingMode) 4 failed",
+-            NumberUtils.toScaledBigDecimal(Double.valueOf(23.521d), 4, RoundingMode.HALF_EVEN)
+-                .multiply(BigDecimal.valueOf(1000))
+-                .toString()
+-                .equals("23521.0000"));
+-        assertTrue("toScaledBigDecimal(Double, int, RoudingMode) 5 failed",
+-            NumberUtils.toScaledBigDecimal((Double) null, 2, RoundingMode.HALF_UP).equals(BigDecimal.ZERO));
+-    }
+-
+-    /**
+-     * Test for {@link NumberUtils#toScaledBigDecimal(Double)}.
+-     */
+-    @Test
+-    public void testToScaledBigDecimalString() {
+-        assertTrue("toScaledBigDecimal(String) 1 failed",
+-            NumberUtils.toScaledBigDecimal("123.456").equals(BigDecimal.valueOf(123.46)));
+-        // Test RoudingMode.HALF_EVEN default rounding.
+-        assertTrue("toScaledBigDecimal(String) 2 failed",
+-            NumberUtils.toScaledBigDecimal("23.515").equals(BigDecimal.valueOf(23.52)));
+-        assertTrue("toScaledBigDecimal(String) 3 failed",
+-            NumberUtils.toScaledBigDecimal("23.525").equals(BigDecimal.valueOf(23.52)));
+-        assertTrue("toScaledBigDecimal(String) 4 failed",
+-            NumberUtils.toScaledBigDecimal("23.525")
+-                .multiply(BigDecimal.valueOf(100)).toString()
+-                .equals("2352.00"));
+-        assertTrue("toScaledBigDecimal(String) 5 failed",
+-            NumberUtils.toScaledBigDecimal((String) null).equals(BigDecimal.ZERO));
+-    }
+-
+-    /**
+-     * Test for {@link NumberUtils#toScaledBigDecimal(Double, int, RoundingMode)}.
+-     */
+-    @Test
+-    public void testToScaledBigDecimalStringIRM() {
+-        assertTrue("toScaledBigDecimal(String, int, RoudingMode) 1 failed",
+-            NumberUtils.toScaledBigDecimal("123.456", 1, RoundingMode.CEILING).equals(BigDecimal.valueOf(123.5)));
+-        assertTrue("toScaledBigDecimal(String, int, RoudingMode) 2 failed",
+-            NumberUtils.toScaledBigDecimal("23.5159", 3, RoundingMode.FLOOR).equals(BigDecimal.valueOf(23.515)));
+-        assertTrue("toScaledBigDecimal(String, int, RoudingMode) 3 failed",
+-            NumberUtils.toScaledBigDecimal("23.525", 2, RoundingMode.HALF_UP).equals(BigDecimal.valueOf(23.53)));
+-        assertTrue("toScaledBigDecimal(String, int, RoudingMode) 4 failed",
+-            NumberUtils.toScaledBigDecimal("23.521", 4, RoundingMode.HALF_EVEN)
+-                .multiply(BigDecimal.valueOf(1000))
+-                .toString()
+-                .equals("23521.0000"));
+-        assertTrue("toScaledBigDecimal(String, int, RoudingMode) 5 failed",
+-            NumberUtils.toScaledBigDecimal((String) null, 2, RoundingMode.HALF_UP).equals(BigDecimal.ZERO));
+-    }
+-
+     @Test
+     public void testCreateNumber() {
+         // a lot of things can go wrong
