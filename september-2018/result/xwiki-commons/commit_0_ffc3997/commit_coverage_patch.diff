@@ -1,5 +1,5 @@
 diff --git a/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/VerifyMojo.java b/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/VerifyMojo.java
-index 0d7d209..c358d42 100644
+index 0d7d209f5..c358d425e 100644
 --- a/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/VerifyMojo.java
 +++ b/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/VerifyMojo.java
 @@ -24,6 +24,7 @@
@@ -78,13 +78,14 @@ index 0d7d209..c358d42 100644
      {
          if (!AUTHOR.equals(author)) {
 diff --git a/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/internal/XWikiDocument.java b/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/internal/XWikiDocument.java
-index add9f4e..9e48c2f 100644
+index add9f4eeb..9e48c2fd1 100644
 --- a/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/internal/XWikiDocument.java
 +++ b/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/internal/XWikiDocument.java
-@@ -134,6 +134,21 @@
+@@ -133,6 +133,21 @@
+      */
      private List<String> translationVisibilities = new ArrayList<>();
  
-     /**
++    /**
 +     * @see #datePresent()
 +     */
 +    private boolean datePresent;
@@ -99,10 +100,9 @@ index add9f4e..9e48c2f 100644
 +     */
 +    private boolean creationDatePresent;
 +
-+    /**
+     /**
       * Parse XML file to extract document information.
       *
-      * @param file the xml file
 @@ -170,20 +185,7 @@ public void fromXML(Document domdoc) throws DocumentException
  
          Element rootElement = domdoc.getRootElement();
@@ -136,10 +136,11 @@ index add9f4e..9e48c2f 100644
          // Does this document contain a XWiki.TranslationDocumentClass xobject?
          if (rootElement.selectNodes("//object/className[text() = 'XWiki.TranslationDocumentClass']").size() > 0) {
              this.containsTranslations = true;
-@@ -217,13 +223,51 @@ public void fromXML(Document domdoc) throws DocumentException
+@@ -216,6 +222,44 @@ public void fromXML(Document domdoc) throws DocumentException
+         }
      }
  
-     /**
++    /**
 +     * @param domdoc the DOM document containing and XML wiki page
 +     * @return the reference of the wiki page
 +     * @throws DocumentException if it is not a valid XML wiki page
@@ -177,10 +178,10 @@ index add9f4e..9e48c2f 100644
 +        return element != null;
 +    }
 +
-+    /**
+     /**
       * Read an element from the XML.
       *
-      * @param rootElement the root XML element under which to find the element
+@@ -223,7 +267,7 @@ public void fromXML(Document domdoc) throws DocumentException
       * @param elementName the name of the element to read
       * @return null or the element value as a String
       */

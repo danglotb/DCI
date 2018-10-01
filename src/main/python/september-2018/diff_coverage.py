@@ -67,6 +67,7 @@ def diff_coverage(project):
 
         #preparation.prepare(project)
 
+        '''
         compute_diff_coverage_for_given_commit(path_to_concerned_module_parent,
                                                path_to_concerned_module,
                                                commit_json,
@@ -74,6 +75,7 @@ def diff_coverage(project):
                                                "sha",
                                                "parent_coverage"
                                                )
+        '''
         compute_diff_coverage_for_given_commit(path_to_concerned_module,
                                                path_to_concerned_module_parent,
                                                commit_json,

@@ -1,5 +1,5 @@
 diff --git a/src/main/java/org/apache/commons/lang3/ArchUtils.java b/src/main/java/org/apache/commons/lang3/ArchUtils.java
-index 4b0d3ff..05f2f8a 100644
+index 4b0d3ff4..05f2f8ae 100644
 --- a/src/main/java/org/apache/commons/lang3/ArchUtils.java
 +++ b/src/main/java/org/apache/commons/lang3/ArchUtils.java
 @@ -86,10 +86,12 @@ private static void init_PPC_64Bit() {
@@ -19,7 +19,7 @@ index 4b0d3ff..05f2f8a 100644
  
      /**
 diff --git a/src/main/java/org/apache/commons/lang3/BitField.java b/src/main/java/org/apache/commons/lang3/BitField.java
-index dc70df4..bc2147e 100644
+index dc70df4a..bc2147e0 100644
 --- a/src/main/java/org/apache/commons/lang3/BitField.java
 +++ b/src/main/java/org/apache/commons/lang3/BitField.java
 @@ -84,7 +84,7 @@
@@ -32,7 +32,7 @@ index dc70df4..bc2147e 100644
  
      /**
 diff --git a/src/main/java/org/apache/commons/lang3/ObjectUtils.java b/src/main/java/org/apache/commons/lang3/ObjectUtils.java
-index c3b031e..c18e33b 100644
+index c3b031e5..c18e33b4 100644
 --- a/src/main/java/org/apache/commons/lang3/ObjectUtils.java
 +++ b/src/main/java/org/apache/commons/lang3/ObjectUtils.java
 @@ -689,14 +689,14 @@ public static String toString(final Object obj, final String nullStr) {
@@ -54,7 +54,7 @@ index c3b031e..c18e33b 100644
              } else {
                  try {
 diff --git a/src/main/java/org/apache/commons/lang3/StringUtils.java b/src/main/java/org/apache/commons/lang3/StringUtils.java
-index 1d7b9b9..ff06e8c 100644
+index 1d7b9b99..ff06e8cc 100644
 --- a/src/main/java/org/apache/commons/lang3/StringUtils.java
 +++ b/src/main/java/org/apache/commons/lang3/StringUtils.java
 @@ -8857,15 +8857,15 @@ public static String normalizeSpace(final String str) {
@@ -79,7 +79,7 @@ index 1d7b9b9..ff06e8c 100644
          }
          if (startWhitespaces) {
 diff --git a/src/main/java/org/apache/commons/lang3/builder/CompareToBuilder.java b/src/main/java/org/apache/commons/lang3/builder/CompareToBuilder.java
-index f4082a9..0884543 100644
+index f4082a90..0884543b 100644
 --- a/src/main/java/org/apache/commons/lang3/builder/CompareToBuilder.java
 +++ b/src/main/java/org/apache/commons/lang3/builder/CompareToBuilder.java
 @@ -600,10 +600,10 @@ public CompareToBuilder append(final boolean lhs, final boolean rhs) {
@@ -97,7 +97,7 @@ index f4082a9..0884543 100644
          return this;
      }
 diff --git a/src/main/java/org/apache/commons/lang3/builder/EqualsBuilder.java b/src/main/java/org/apache/commons/lang3/builder/EqualsBuilder.java
-index 2af57c3..22ad16c 100644
+index 2af57c30..22ad16c0 100644
 --- a/src/main/java/org/apache/commons/lang3/builder/EqualsBuilder.java
 +++ b/src/main/java/org/apache/commons/lang3/builder/EqualsBuilder.java
 @@ -637,17 +637,17 @@ public EqualsBuilder append(final Object lhs, final Object rhs) {
@@ -124,7 +124,7 @@ index 2af57c3..22ad16c 100644
          return this;
      }
 diff --git a/src/main/java/org/apache/commons/lang3/concurrent/EventCountCircuitBreaker.java b/src/main/java/org/apache/commons/lang3/concurrent/EventCountCircuitBreaker.java
-index 4a0a2e2..daac026 100644
+index 4a0a2e24..daac0261 100644
 --- a/src/main/java/org/apache/commons/lang3/concurrent/EventCountCircuitBreaker.java
 +++ b/src/main/java/org/apache/commons/lang3/concurrent/EventCountCircuitBreaker.java
 @@ -469,8 +469,8 @@ public long getCheckIntervalStart() {
@@ -139,7 +139,7 @@ index 4a0a2e2..daac026 100644
      }
  
 diff --git a/src/main/java/org/apache/commons/lang3/time/FastDateParser.java b/src/main/java/org/apache/commons/lang3/time/FastDateParser.java
-index 05eeb47..6f31af3 100644
+index 05eeb47e..6f31af38 100644
 --- a/src/main/java/org/apache/commons/lang3/time/FastDateParser.java
 +++ b/src/main/java/org/apache/commons/lang3/time/FastDateParser.java
 @@ -958,7 +958,7 @@ int modify(final FastDateParser parser, final int iValue) {
@@ -152,7 +152,7 @@ index 05eeb47..6f31af3 100644
      };
  
 diff --git a/src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java b/src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java
-index eaf95e8..df7af4e 100644
+index eaf95e88..df7af4eb 100644
 --- a/src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java
 +++ b/src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java
 @@ -1266,7 +1266,7 @@ public int estimateLength() {

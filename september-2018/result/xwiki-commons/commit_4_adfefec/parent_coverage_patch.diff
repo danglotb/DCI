@@ -1,5 +1,5 @@
 diff --git a/xwiki-commons-core/xwiki-commons-xml/src/main/java/org/htmlcleaner/XWikiDOMSerializer.java b/xwiki-commons-core/xwiki-commons-xml/src/main/java/org/htmlcleaner/XWikiDOMSerializer.java
-index 91acb76..ba7c22e 100644
+index 91acb767f..ba7c22e07 100644
 --- a/xwiki-commons-core/xwiki-commons-xml/src/main/java/org/htmlcleaner/XWikiDOMSerializer.java
 +++ b/xwiki-commons-core/xwiki-commons-xml/src/main/java/org/htmlcleaner/XWikiDOMSerializer.java
 @@ -155,7 +155,7 @@ public Document createDOM(DocumentBuilder documentDocumentBuilder, TagNode rootN
@@ -40,7 +40,7 @@ index 91acb76..ba7c22e 100644
 -    }
  }
 diff --git a/xwiki-commons-core/xwiki-commons-xml/src/main/java/org/xwiki/xml/internal/html/DefaultHTMLCleaner.java b/xwiki-commons-core/xwiki-commons-xml/src/main/java/org/xwiki/xml/internal/html/DefaultHTMLCleaner.java
-index 0a40228..bb10fc6 100644
+index 0a4022896..bb10fc68e 100644
 --- a/xwiki-commons-core/xwiki-commons-xml/src/main/java/org/xwiki/xml/internal/html/DefaultHTMLCleaner.java
 +++ b/xwiki-commons-core/xwiki-commons-xml/src/main/java/org/xwiki/xml/internal/html/DefaultHTMLCleaner.java
 @@ -175,7 +175,7 @@ public Document clean(Reader originalHtmlContent, HTMLCleanerConfiguration confi
@@ -65,7 +65,7 @@ index 0a40228..bb10fc6 100644
          // Note: Tests are broken if we don't set the version 4, meaning that supporting HTML5 requires some work.
          // TODO: handle HTML5 correctly (see: https://jira.xwiki.org/browse/XCOMMONS-901)
 diff --git a/xwiki-commons-core/xwiki-commons-xml/src/test/java/org/xwiki/xml/internal/html/DefaultHTMLCleanerTest.java b/xwiki-commons-core/xwiki-commons-xml/src/test/java/org/xwiki/xml/internal/html/DefaultHTMLCleanerTest.java
-index ba8c86f..3568783 100644
+index ba8c86fd7..35687838d 100644
 --- a/xwiki-commons-core/xwiki-commons-xml/src/test/java/org/xwiki/xml/internal/html/DefaultHTMLCleanerTest.java
 +++ b/xwiki-commons-core/xwiki-commons-xml/src/test/java/org/xwiki/xml/internal/html/DefaultHTMLCleanerTest.java
 @@ -88,12 +88,16 @@ public void elementExpansion()

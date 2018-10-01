@@ -1,5 +1,5 @@
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/ExtensionUtils.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/ExtensionUtils.java
-index 5de1eef..1b4f702 100644
+index 5de1eef45..1b4f7028d 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/ExtensionUtils.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/internal/ExtensionUtils.java
 @@ -26,8 +26,10 @@
@@ -13,10 +13,11 @@ index 5de1eef..1b4f702 100644
  
  import org.apache.commons.lang3.StringUtils;
  import org.xwiki.extension.CoreExtension;
-@@ -132,6 +134,23 @@ public static ExtensionDependency getDependency(ExtensionDependency dependency,
+@@ -131,6 +133,23 @@ public static ExtensionDependency getDependency(ExtensionDependency dependency,
+         return newManagedDependencies;
      }
  
-     /**
++    /**
 +     * "add" an object in a readonly {@link Set}. This method return a new Set which contains the passed set and object
 +     * to add.
 +     * 
@@ -33,12 +34,11 @@ index 5de1eef..1b4f702 100644
 +        return writable;
 +    }
 +
-+    /**
+     /**
       * Delete and return the value of the passed special property.
       * 
-      * @param <T> type of the property value
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/job/internal/AbstractInstallPlanJob.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/job/internal/AbstractInstallPlanJob.java
-index aa602b3..f7696e7 100644
+index aa602b37a..f7696e7cf 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/job/internal/AbstractInstallPlanJob.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/main/java/org/xwiki/extension/job/internal/AbstractInstallPlanJob.java
 @@ -494,18 +494,21 @@ private ExtensionDependency checkInstalledDependency(ExtensionDependency extensi
@@ -233,7 +233,7 @@ index aa602b3..f7696e7 100644
  
                          this.progressManager.endStep(this);
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/TestResources.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/TestResources.java
-index 9061732..ccd63de 100644
+index 906173208..ccd63de94 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/TestResources.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/TestResources.java
 @@ -119,6 +119,10 @@
@@ -248,7 +248,7 @@ index 9061732..ccd63de 100644
  
      public void init(InstalledExtensionRepository installedExtensionRepository) throws ResolveException
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/InstallPlanJobTest.java b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/InstallPlanJobTest.java
-index 73212a4..4960b06 100644
+index 73212a4e9..4960b0678 100644
 --- a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/InstallPlanJobTest.java
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/java/org/xwiki/extension/job/internal/InstallPlanJobTest.java
 @@ -750,6 +750,29 @@ public void testInstallWithInvalidOptionalDependency() throws Throwable
@@ -283,10 +283,10 @@ index 73212a4..4960b06 100644
      @Test(expected = InstallException.class)
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/resources/repository/remote/crossdependency1-version.test b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/resources/repository/remote/crossdependency1-version.test
 new file mode 100644
-index 0000000..e69de29
+index 000000000..e69de29bb
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/resources/repository/remote/crossdependency1-version.xed b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/resources/repository/remote/crossdependency1-version.xed
 new file mode 100644
-index 0000000..bc8fd44
+index 000000000..bc8fd446e
 --- /dev/null
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/resources/repository/remote/crossdependency1-version.xed
 @@ -0,0 +1,13 @@
@@ -306,10 +306,10 @@ index 0000000..bc8fd44
 \ No newline at end of file
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/resources/repository/remote/crossdependency2-version.test b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/resources/repository/remote/crossdependency2-version.test
 new file mode 100644
-index 0000000..e69de29
+index 000000000..e69de29bb
 diff --git a/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/resources/repository/remote/crossdependency2-version.xed b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/resources/repository/remote/crossdependency2-version.xed
 new file mode 100644
-index 0000000..04de5ef
+index 000000000..04de5ef7b
 --- /dev/null
 +++ b/xwiki-commons-core/xwiki-commons-extension/xwiki-commons-extension-api/src/test/resources/repository/remote/crossdependency2-version.xed
 @@ -0,0 +1,13 @@

@@ -8,7 +8,7 @@ def run(project):
     json_project = toolbox.get_json_file(toolbox.prefix_current_dataset + project)
     coverage_project = []
     commits = json_project["commits"]
-    for commit in commits:
+    for commit in commits[0:10]:
         file_name = toolbox.get_output_folder_for_commit(commits=commits, commit=commit)
         commit_result_directory = root_project_folder_result + "/" + file_name + "/" + \
                                   "commit_coverage_" + toolbox.name_of_csv_with_list_of_test_that_execute_the_changes + "_coverage.csv"
@@ -18,7 +18,7 @@ def run(project):
                     splitted = line.split(";")
                     executed = int(splitted[1])
                     total = int(splitted[2])
-                    if total == 0:
+                    if total == 0 or executed > total:
                         print commit_result_directory
                         continue
                     coverage = (float(executed) / float(total)) * 100.0
