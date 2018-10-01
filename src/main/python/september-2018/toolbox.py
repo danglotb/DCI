@@ -25,38 +25,45 @@ name_of_csv_with_list_of_test_that_execute_the_changes = "testsThatExecuteTheCha
 
 
 projects = [
-    'commons-cli',
     'commons-io',
     'commons-lang',
     'gson',
     'jsoup',
+    'pdfbox',
     'xwiki-commons'
 ]
 
 new_projects = [
-    'core',
-    'commons-codec',
-    'commons-collection',
+    'commons-collections', # 6 commits
     'commons-io',
     'commons-lang',
+    'flink',
     'gson',
-    'jaxen',
-    'joda-time'
+    'jopt-simple',
     'jsoup',
+    'pdfbox',
     'xwiki-commons'
 ]
 
 new_owners = [
-    'authzforce',
     'apache',
     'apache',
     'apache',
     'apache',
     'google',
-    'jaxen-xpath',
-    'JodaOrg',
+    'jopt-simple',
     'jhy',
+    'apache',
     'xwiki'
+]
+
+
+not_enough_commits = [
+    'apache/commons-codec', # cannot run clover, something wrong with the instrumentation
+    'authzforce/core',
+    'jaxen-xpath/jaxen',
+    'JodaOrg/joda-time', # JUnit 3
+    'eclipse/jgit' # not a classical maven hierarchy of files
 ]
 
 # input: commit from json array, and the array itself

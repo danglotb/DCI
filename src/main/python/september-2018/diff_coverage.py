@@ -12,6 +12,8 @@ def diff_coverage(project):
     ))
     commits = project_json["commits"]
     for commit_json in commits:
+        if not commit_json['sha'].startswith('3378280'):
+            continue
         concerned_module = commit_json["concernedModule"]
         commit_setter.set_commit(
             toolbox.get_absolute_path(toolbox.prefix_current_dataset + project), project, commits.index(commit_json)
