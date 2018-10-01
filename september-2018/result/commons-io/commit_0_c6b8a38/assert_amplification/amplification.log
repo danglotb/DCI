@@ -139,14 +139,14 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1230418, ConflictMarker.markTime=675506, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=703356, ConflictIdSorter.topsortTime=604948, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5109397, ConflictResolver.conflictItemCount=2, DefaultDependencyCollector.collectTime=31817081, DefaultDependencyCollector.transformTime=11648735}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=823991, ConflictMarker.markTime=8519248, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=508514, ConflictIdSorter.topsortTime=433430, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=27566337, ConflictResolver.conflictItemCount=2, DefaultDependencyCollector.collectTime=202567050, DefaultDependencyCollector.transformTime=40243320}
 [DEBUG] commons-io:commons-io:jar:2.7-SNAPSHOT
 [DEBUG]    junit:junit:jar:4.12:test
 [DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test
 [INFO] 
 [INFO] --- dspot-maven:1.1.1-SNAPSHOT:amplify-unit-tests (default-cli) @ commons-io ---
-[DEBUG] Failure to find eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Skipped remote request for eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Skipped remote request for eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://stamp-project.github.io/stamp-maven-repository/
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://stamp-project.github.io/stamp-maven-repository/
 Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.io/stamp-maven-repository/eu/stamp-project/dspot/1.1.1-SNAPSHOT/maven-metadata.xml
@@ -154,8 +154,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Could not find metadata eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml in stamp-maven-repository-mvn-repo (https://stamp-project.github.io/stamp-maven-repository/)
 [DEBUG] Skipped remote request for eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml, already updated during this session.
 [DEBUG] Failure to find eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml in https://stamp-project.github.io/stamp-maven-repository/ was cached in the local repository, resolution will not be reattempted until the update interval of stamp-maven-repository-mvn-repo has elapsed or updates are forced
-[DEBUG] Failure to find eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
-[DEBUG] Skipped remote request for eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Skipped remote request for eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for eu.stamp-project:dspot:1.1.1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
 [DEBUG] Could not find metadata fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml in local (/home/spirals/danglot/.m2/repository)
 [DEBUG] Failure to find fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml in https://repo.gradle.org/gradle/libs-releases-local/ was cached in the local repository, resolution will not be reattempted until the update interval of gradle-repo has elapsed or updates are forced
 [DEBUG] Failure to find fr.inria.gforge.spoon:spoon-core:7.1.0-SNAPSHOT/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
@@ -450,7 +450,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=5667674, ConflictMarker.markTime=1404420, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=4457757, ConflictIdSorter.topsortTime=235178, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=22182451, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=6832561942, DefaultDependencyCollector.transformTime=34165317}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3542048, ConflictMarker.markTime=27173782, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=2907999, ConflictIdSorter.topsortTime=145969, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=94370442, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=9846111764, DefaultDependencyCollector.transformTime=128291664}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -654,7 +654,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [WARNING] automaticBuilderName: unknown automatic builder specified in configuration, going to default.
 [INFO] Default: provided Maven automatic builder.
 [INFO] Using /home/spirals/danglot/apache-maven-3.5.4 for maven home
-[INFO] run maven: {}/bin/mvn /home/spirals/danglot/apache-maven-3.5.4
+[INFO] run maven: /home/spirals/danglot/apache-maven-3.5.4/bin/mvn clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
 [WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
 [INFO] Scanning for projects...
 [INFO] 
@@ -663,7 +663,6 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ commons-io ---
-[INFO] Deleting /tmp/icst-2019/september-2018/dataset/commons-io_parent/target
 [INFO] 
 [INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ commons-io ---
 [INFO] Skipping Rule Enforcement.
@@ -685,7 +684,7 @@ main:
 [INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-io ---
 [INFO] Executing: /bin/sh -c cd '/tmp/icst-2019/september-2018/dataset/commons-io_parent' && 'git' 'rev-parse' '--verify' 'HEAD'
 [INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-io_parent
-[INFO] Storing buildNumber: 4597f38c3608cfe8ef872144ed4bfe393a05dc84 at timestamp: 1538316096184
+[INFO] Storing buildNumber: 4597f38c3608cfe8ef872144ed4bfe393a05dc84 at timestamp: 1538410014419
 [INFO] Storing buildScmBranch: master
 [INFO] 
 [INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ commons-io ---
@@ -721,11 +720,11 @@ main:
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 14.297 s
-[INFO] Finished at: 2018-09-30T16:01:46+02:00
+[INFO] Total time: 59.770 s
+[INFO] Finished at: 2018-10-01T18:07:40+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Using /home/spirals/danglot/apache-maven-3.5.4 for maven home
-[INFO] run maven: {}/bin/mvn /home/spirals/danglot/apache-maven-3.5.4
+[INFO] run maven: /home/spirals/danglot/apache-maven-3.5.4/bin/mvn clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
 [WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
 [INFO] Scanning for projects...
 [INFO] 
@@ -734,7 +733,6 @@ main:
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ commons-io ---
-[INFO] Deleting /tmp/icst-2019/september-2018/dataset/commons-io/target
 [INFO] 
 [INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ commons-io ---
 [INFO] Skipping Rule Enforcement.
@@ -756,7 +754,7 @@ main:
 [INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-io ---
 [INFO] Executing: /bin/sh -c cd '/tmp/icst-2019/september-2018/dataset/commons-io' && 'git' 'rev-parse' '--verify' 'HEAD'
 [INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-io
-[INFO] Storing buildNumber: c6b8a383de96cd0a8e94037a04510f162e4bbc68 at timestamp: 1538316119364
+[INFO] Storing buildNumber: c6b8a383de96cd0a8e94037a04510f162e4bbc68 at timestamp: 1538410109972
 [INFO] Storing buildScmBranch: master
 [INFO] 
 [INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ commons-io ---
@@ -792,8 +790,8 @@ main:
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 13.461 s
-[INFO] Finished at: 2018-09-30T16:02:08+02:00
+[INFO] Total time: 56.175 s
+[INFO] Finished at: 2018-10-01T18:09:13+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of org.apache.commons.io.FileUtilsTestCase (3 test(s))
 [INFO] Assertion amplification of org.apache.commons.io.FileUtilsTestCase (3 test(s))
@@ -802,82 +800,46 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-
 Loading /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: testCopyURLToFileWithTimeout,testContentEquals,testCopyURLToFile
 [INFO] Run tests. (3)
-[ERROR] Error(s) during compilation:
-[ERROR] Pb(83) file cannot be resolved to a variable
-[ERROR] Pb(83) file cannot be resolved to a variable
-[ERROR] Pb(83) file cannot be resolved to a variable
-[ERROR] Pb(83) file2 cannot be resolved to a variable
-[ERROR] Pb(83) file2 cannot be resolved to a variable
-[ERROR] Pb(83) file2 cannot be resolved to a variable
-[ERROR] Pb(83) file2 cannot be resolved to a variable
-[ERROR] Pb(83) file cannot be resolved to a variable
-[ERROR] Pb(50) objFile1 cannot be resolved
-[ERROR] Pb(83) objFile1 cannot be resolved to a variable
-[ERROR] Pb(50) objFile1 cannot be resolved
-[ERROR] Pb(83) objFile1b cannot be resolved to a variable
-[ERROR] Pb(50) objFile2 cannot be resolved
-[ERROR] Pb(83) objFile2 cannot be resolved to a variable
-[ERROR] Pb(83) objFile1 cannot be resolved to a variable
-[ERROR] Pb(83) objFile2 cannot be resolved to a variable
-[ERROR] Pb(83) objFile1b cannot be resolved to a variable
-[ERROR] Pb(83) objFile2 cannot be resolved to a variable
-[ERROR] Pb(83) objFile1 cannot be resolved to a variable
-[ERROR] Pb(83) objFile1b cannot be resolved to a variable
-[WARNING] Error when executing tests before Assertion Amplification:
-eu.stamp_project.dspot.AmplificationException: Every test methods are uncompilable
-	at eu.stamp_project.utils.compilation.TestCompiler.compileAndDiscardUncompilableMethods(TestCompiler.java:124)
-	at eu.stamp_project.utils.compilation.TestCompiler.compileAndRun(TestCompiler.java:93)
-	at eu.stamp_project.dspot.assertgenerator.AssertGenerator.innerAssertionAmplification(AssertGenerator.java:100)
-	at eu.stamp_project.dspot.assertgenerator.AssertGenerator.assertionAmplification(AssertGenerator.java:71)
-	at eu.stamp_project.dspot.Amplification.assertionsAmplification(Amplification.java:150)
-	at eu.stamp_project.dspot.Amplification.amplification(Amplification.java:84)
-	at eu.stamp_project.dspot.DSpot.amplifyTest(DSpot.java:181)
-	at eu.stamp_project.dspot.DSpot.amplifyTest(DSpot.java:171)
-	at eu.stamp_project.Main.lambda$run$1(Main.java:69)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1374)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
-	at eu.stamp_project.Main.run(Main.java:71)
-	at eu.stamp_project.DSpotMojo.execute(DSpotMojo.java:263)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:146)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:954)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:192)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
-[INFO] Could not generate any test with assertions
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-io_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-io_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.io.FileUtilsTestCase testContentEquals:testCopyURLToFileWithTimeout:testCopyURLToFile
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testCopyURLToFileWithTimeout,testContentEquals,testCopyURLToFile
+[INFO] 3 test pass, generating assertion...
+[INFO] Add observations points in passing tests.
+[INFO] Instrumentation...
+ 33% |================ ]/ 66% |================================= ]-100% |================================================== ]\
+[INFO] Run instrumented tests. (9)
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-io_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-io_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.io.FileUtilsTestCase testContentEquals_withlog0:testCopyURLToFileWithTimeout_withlog0:testCopyURLToFile_withlog0:testContentEquals_withlog1:testCopyURLToFileWithTimeout_withlog1:testCopyURLToFile_withlog1:testContentEquals_withlog2:testCopyURLToFileWithTimeout_withlog2:testCopyURLToFile_withlog2
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/dspot/observations.ser
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testContentEquals_withlog0,testContentEquals_withlog1,testContentEquals_withlog2,testCopyURLToFile_withlog0,testCopyURLToFile_withlog1,testCopyURLToFile_withlog2,testCopyURLToFileWithTimeout_withlog0,testCopyURLToFileWithTimeout_withlog1,testCopyURLToFileWithTimeout_withlog2
+[INFO] Generating assertions...
+[INFO] 3 new tests with assertions generated
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-io_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-io_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.io.FileUtilsTestCase testContentEquals:testCopyURLToFileWithTimeout:testCopyURLToFile
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testCopyURLToFileWithTimeout,testContentEquals,testCopyURLToFile
+[INFO] Assertion amplification: 3 test method(s) has been successfully amplified.
+[WARN] 2018-10-01 18:09:50 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-io/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-01 18:09:50 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-io/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-01 18:09:50 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-io/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-io/target/classes/:/tmp/icst-2019/september-2018/dataset/commons-io/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/tmp/icst-2019/september-2018/dataset/commons-io/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.io.FileUtilsTestCase testContentEquals:testCopyURLToFileWithTimeout:testCopyURLToFile
+File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/dspot/TestListener.ser
+Loading /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/dspot/TestListener.ser
+[INFO] Test has been run: testCopyURLToFileWithTimeout,testContentEquals,testCopyURLToFile
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 6028
+[INFO] elapsedTime 37082
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
 [WARNING] DSpot could not obtain any amplified test method.
 [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
 [INFO] Amplification succeed.
-[INFO] Elapsed time 8528 ms
+[INFO] Elapsed time 40301 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 55.621 s
-[INFO] Finished at: 2018-09-30T16:02:17+02:00
+[INFO] Total time: 03:30 min
+[INFO] Finished at: 2018-10-01T18:09:54+02:00
 [INFO] ------------------------------------------------------------------------
