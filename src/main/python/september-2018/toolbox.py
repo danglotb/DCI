@@ -29,7 +29,7 @@ projects = [
     'commons-lang',
     'gson',
     'jsoup',
-    #'pdfbox',
+    'pdfbox',
     'xwiki-commons'
 ]
 

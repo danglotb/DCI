@@ -65,7 +65,7 @@ def diff_coverage(project):
             )
         )
 
-        #preparation.prepare(project)
+        preparation.prepare(project)
 
         '''
         compute_diff_coverage_for_given_commit(path_to_concerned_module_parent,
