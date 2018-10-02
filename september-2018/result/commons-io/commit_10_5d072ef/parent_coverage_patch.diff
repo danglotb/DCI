@@ -1,5 +1,5 @@
 diff --git a/src/main/java/org/apache/commons/io/FilenameUtils.java b/src/main/java/org/apache/commons/io/FilenameUtils.java
-index 2035622d..8dd9cf2e 100644
+index 2035622..8dd9cf2 100644
 --- a/src/main/java/org/apache/commons/io/FilenameUtils.java
 +++ b/src/main/java/org/apache/commons/io/FilenameUtils.java
 @@ -351,19 +351,19 @@ public class FilenameUtils {
@@ -66,11 +66,10 @@ index 2035622d..8dd9cf2e 100644
      }
  
      /**
-@@ -991,6 +986,18 @@ public class FilenameUtils {
-         }
+@@ -992,6 +987,18 @@ public class FilenameUtils {
      }
  
-+    /**
+     /**
 +     * Filters the supplied path for null byte characters. Can be used for normalizations to avoid poison byte attacks.
 +     *
 +     * This mimicks behaviour of 1.7u40+. Once minimum java requirement is above this version, this code can be removed.
@@ -82,9 +81,10 @@ index 2035622d..8dd9cf2e 100644
 +        return path.contains("\u0000") ? path.replace("\u0000", "") : path;
 +    }
 +
-     /**
++    /**
       * Gets the base name, minus the full path and extension, from a full filename.
       * <p>
+      * This method will handle a file in either Unix or Windows format.
 @@ -1065,13 +1072,13 @@ public class FilenameUtils {
          if (filename == null) {
              return null;
@@ -104,7 +104,7 @@ index 2035622d..8dd9cf2e 100644
      }
  
 diff --git a/src/test/java/org/apache/commons/io/FilenameUtilsTestCase.java b/src/test/java/org/apache/commons/io/FilenameUtilsTestCase.java
-index 06fed648..552129f1 100644
+index 06fed64..552129f 100644
 --- a/src/test/java/org/apache/commons/io/FilenameUtilsTestCase.java
 +++ b/src/test/java/org/apache/commons/io/FilenameUtilsTestCase.java
 @@ -216,18 +216,8 @@ public class FilenameUtilsTestCase extends FileBasedTestCase {

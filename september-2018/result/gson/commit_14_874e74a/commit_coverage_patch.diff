@@ -1,0 +1,100 @@
+diff --git a/examples/android-proguard-example/AndroidManifest.xml b/examples/android-proguard-example/AndroidManifest.xml
+old mode 100755
+new mode 100644
+diff --git a/gson/src/main/java/com/google/gson/JsonParser.java b/gson/src/main/java/com/google/gson/JsonParser.java
+old mode 100755
+new mode 100644
+diff --git a/gson/src/main/java/com/google/gson/internal/bind/JsonTreeWriter.java b/gson/src/main/java/com/google/gson/internal/bind/JsonTreeWriter.java
+index 5f9f039..51dc1f3 100644
+--- a/gson/src/main/java/com/google/gson/internal/bind/JsonTreeWriter.java
++++ b/gson/src/main/java/com/google/gson/internal/bind/JsonTreeWriter.java
+@@ -159,6 +159,14 @@ public final class JsonTreeWriter extends JsonWriter {
+     return this;
+   }
+ 
++  @Override public JsonWriter value(Boolean value) throws IOException {
++    if (value == null) {
++      return nullValue();
++    }
++    put(new JsonPrimitive(value));
++    return this;
++  }
++
+   @Override public JsonWriter value(double value) throws IOException {
+     if (!isLenient() && (Double.isNaN(value) || Double.isInfinite(value))) {
+       throw new IllegalArgumentException("JSON forbids NaN and infinities: " + value);
+diff --git a/gson/src/main/java/com/google/gson/internal/bind/TypeAdapters.java b/gson/src/main/java/com/google/gson/internal/bind/TypeAdapters.java
+index 0d6d013..23ab8a1 100644
+--- a/gson/src/main/java/com/google/gson/internal/bind/TypeAdapters.java
++++ b/gson/src/main/java/com/google/gson/internal/bind/TypeAdapters.java
+@@ -162,10 +162,6 @@ public final class TypeAdapters {
+     }
+     @Override
+     public void write(JsonWriter out, Boolean value) throws IOException {
+-      if (value == null) {
+-        out.nullValue();
+-        return;
+-      }
+       out.value(value);
+     }
+   };
+diff --git a/gson/src/main/java/com/google/gson/stream/JsonWriter.java b/gson/src/main/java/com/google/gson/stream/JsonWriter.java
+index 9bf2d22..e2fc196 100644
+--- a/gson/src/main/java/com/google/gson/stream/JsonWriter.java
++++ b/gson/src/main/java/com/google/gson/stream/JsonWriter.java
+@@ -471,6 +471,21 @@ public class JsonWriter implements Closeable, Flushable {
+   /**
+    * Encodes {@code value}.
+    *
++   * @return this writer.
++   */
++  public JsonWriter value(Boolean value) throws IOException {
++    if (value == null) {
++      return nullValue();
++    }
++    writeDeferredName();
++    beforeValue();
++    out.write(value ? "true" : "false");
++    return this;
++  }
++
++  /**
++   * Encodes {@code value}.
++   *
+    * @param value a finite value. May not be {@link Double#isNaN() NaNs} or
+    *     {@link Double#isInfinite() infinities}.
+    * @return this writer.
+diff --git a/gson/src/test/java/com/google/gson/GsonBuilderTest.java b/gson/src/test/java/com/google/gson/GsonBuilderTest.java
+old mode 100755
+new mode 100644
+diff --git a/gson/src/test/java/com/google/gson/functional/ConcurrencyTest.java b/gson/src/test/java/com/google/gson/functional/ConcurrencyTest.java
+old mode 100755
+new mode 100644
+diff --git a/gson/src/test/java/com/google/gson/functional/MapTest.java b/gson/src/test/java/com/google/gson/functional/MapTest.java
+old mode 100755
+new mode 100644
+diff --git a/gson/src/test/java/com/google/gson/functional/NullObjectAndFieldTest.java b/gson/src/test/java/com/google/gson/functional/NullObjectAndFieldTest.java
+old mode 100755
+new mode 100644
+diff --git a/gson/src/test/java/com/google/gson/stream/JsonWriterTest.java b/gson/src/test/java/com/google/gson/stream/JsonWriterTest.java
+index 91763d1..34dc914 100644
+--- a/gson/src/test/java/com/google/gson/stream/JsonWriterTest.java
++++ b/gson/src/test/java/com/google/gson/stream/JsonWriterTest.java
+@@ -283,6 +283,17 @@ public final class JsonWriterTest extends TestCase {
+     assertEquals("[true,false]", stringWriter.toString());
+   }
+ 
++  public void testBoxedBooleans() throws IOException {
++    StringWriter stringWriter = new StringWriter();
++    JsonWriter jsonWriter = new JsonWriter(stringWriter);
++    jsonWriter.beginArray();
++    jsonWriter.value((Boolean) true);
++    jsonWriter.value((Boolean) false);
++    jsonWriter.value((Boolean) null);
++    jsonWriter.endArray();
++    assertEquals("[true,false,null]", stringWriter.toString());
++  }
++
+   public void testNulls() throws IOException {
+     StringWriter stringWriter = new StringWriter();
+     JsonWriter jsonWriter = new JsonWriter(stringWriter);

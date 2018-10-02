@@ -1,5 +1,5 @@
 diff --git a/xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-api/src/main/java/org/xwiki/component/namespace/NamespaceUtils.java b/xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-api/src/main/java/org/xwiki/component/namespace/NamespaceUtils.java
-index c72e535b9..a964d07cc 100644
+index c72e535..a964d07 100644
 --- a/xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-api/src/main/java/org/xwiki/component/namespace/NamespaceUtils.java
 +++ b/xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-api/src/main/java/org/xwiki/component/namespace/NamespaceUtils.java
 @@ -19,6 +19,9 @@
@@ -39,7 +39,7 @@ index c72e535b9..a964d07cc 100644
          StringBuilder typeBuilder = null;
          for (int i = 0; i < namespace.length(); ++i) {
 diff --git a/xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-api/src/test/java/org/xwiki/component/internal/namespace/NamespaceUtilsTest.java b/xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-api/src/test/java/org/xwiki/component/internal/namespace/NamespaceUtilsTest.java
-index ace217d32..30d3c4578 100644
+index ace217d..30d3c45 100644
 --- a/xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-api/src/test/java/org/xwiki/component/internal/namespace/NamespaceUtilsTest.java
 +++ b/xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-api/src/test/java/org/xwiki/component/internal/namespace/NamespaceUtilsTest.java
 @@ -51,5 +51,6 @@ public void toNamespace()

@@ -1,5 +1,5 @@
 diff --git a/src/main/java/org/apache/commons/lang3/ClassUtils.java b/src/main/java/org/apache/commons/lang3/ClassUtils.java
-index 74566263..be3770b5 100644
+index 7456626..be3770b 100644
 --- a/src/main/java/org/apache/commons/lang3/ClassUtils.java
 +++ b/src/main/java/org/apache/commons/lang3/ClassUtils.java
 @@ -1347,7 +1347,7 @@ private static String getCanonicalName(String className) {
@@ -12,7 +12,7 @@ index 74566263..be3770b5 100644
              }
          }
 diff --git a/src/main/java/org/apache/commons/lang3/LocaleUtils.java b/src/main/java/org/apache/commons/lang3/LocaleUtils.java
-index d5b50432..cd117813 100644
+index d5b5043..cd11781 100644
 --- a/src/main/java/org/apache/commons/lang3/LocaleUtils.java
 +++ b/src/main/java/org/apache/commons/lang3/LocaleUtils.java
 @@ -150,8 +150,8 @@ private static Locale parseLocale(final String str) {
@@ -49,7 +49,7 @@ index d5b50432..cd117813 100644
                      countries.add(locale);
                  }
 diff --git a/src/main/java/org/apache/commons/lang3/builder/DiffResult.java b/src/main/java/org/apache/commons/lang3/builder/DiffResult.java
-index 93b7f2f7..d8fa976c 100644
+index 93b7f2f..d8fa976 100644
 --- a/src/main/java/org/apache/commons/lang3/builder/DiffResult.java
 +++ b/src/main/java/org/apache/commons/lang3/builder/DiffResult.java
 @@ -170,7 +170,7 @@ public String toString() {
@@ -62,7 +62,7 @@ index 93b7f2f7..d8fa976c 100644
          }
  
 diff --git a/src/main/java/org/apache/commons/lang3/exception/DefaultExceptionContext.java b/src/main/java/org/apache/commons/lang3/exception/DefaultExceptionContext.java
-index 277c224a..69a4ccf5 100644
+index 277c224..69a4ccf 100644
 --- a/src/main/java/org/apache/commons/lang3/exception/DefaultExceptionContext.java
 +++ b/src/main/java/org/apache/commons/lang3/exception/DefaultExceptionContext.java
 @@ -130,7 +130,7 @@ public String getFormattedExceptionMessage(final String baseMessage){
@@ -75,7 +75,7 @@ index 277c224a..69a4ccf5 100644
                  buffer.append('\n');
              }
 diff --git a/src/main/java/org/apache/commons/lang3/math/NumberUtils.java b/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
-index ff5552d5..3837cc97 100644
+index ff5552d..3837cc9 100644
 --- a/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
 +++ b/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
 @@ -526,7 +526,7 @@ public static Number createNumber(final String str) {
@@ -97,7 +97,7 @@ index ff5552d5..3837cc97 100644
  
      //-----------------------------------------------------------------------
 diff --git a/src/main/java/org/apache/commons/lang3/text/StrLookup.java b/src/main/java/org/apache/commons/lang3/text/StrLookup.java
-index bf6ccb23..a99c1b34 100644
+index bf6ccb2..a99c1b3 100644
 --- a/src/main/java/org/apache/commons/lang3/text/StrLookup.java
 +++ b/src/main/java/org/apache/commons/lang3/text/StrLookup.java
 @@ -171,7 +171,7 @@ public String lookup(final String key) {
@@ -110,7 +110,7 @@ index bf6ccb23..a99c1b34 100644
                      return System.getProperty(key);
                  } catch (final SecurityException scex) {
 diff --git a/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java b/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
-index 8c6e20a5..e09260cd 100644
+index 8c6e20a..e09260c 100644
 --- a/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
 +++ b/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
 @@ -195,7 +195,7 @@ public static String formatDurationWords(

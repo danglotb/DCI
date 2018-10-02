@@ -1,5 +1,5 @@
 diff --git a/.travis.yml b/.travis.yml
-index fd1f6f5b..661c4a8e 100644
+index fd1f6f5..661c4a8 100644
 --- a/.travis.yml
 +++ b/.travis.yml
 @@ -22,7 +22,7 @@ jdk:
@@ -12,7 +12,7 @@ index fd1f6f5b..661c4a8e 100644
  after_success:
    - mvn clean cobertura:cobertura coveralls:report
 diff --git a/README.md b/README.md
-index fc28d5ff..c5da7579 100644
+index fc28d5f..c5da757 100644
 --- a/README.md
 +++ b/README.md
 @@ -45,6 +45,7 @@ Apache Commons IO
@@ -24,7 +24,7 @@ index fc28d5ff..c5da7579 100644
  The Apache Commons IO library contains utility classes, stream implementations, file filters, 
  file comparators, endian transformation classes, and much more.
 diff --git a/checkstyle.xml b/checkstyle.xml
-index b06c8184..bd420ddd 100644
+index b06c818..bd420dd 100644
 --- a/checkstyle.xml
 +++ b/checkstyle.xml
 @@ -36,6 +36,10 @@ limitations under the License.
@@ -39,7 +39,7 @@ index b06c8184..bd420ddd 100644
        <property name="max" value="160"/>
      </module>
 diff --git a/pom.xml b/pom.xml
-index 6246c770..10c1df50 100644
+index 6246c77..10c1df5 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -19,7 +19,7 @@
@@ -61,12 +61,10 @@ index 6246c770..10c1df50 100644
    </properties>
  
    <build>
-@@ -313,15 +310,6 @@ file comparators, endian transformation classes, and much more.
-           <tarLongFileMode>gnu</tarLongFileMode>
-         </configuration>
+@@ -315,15 +312,6 @@ file comparators, endian transformation classes, and much more.
        </plugin>
--      <plugin>
--        <groupId>org.apache.maven.plugins</groupId>
+       <plugin>
+         <groupId>org.apache.maven.plugins</groupId>
 -        <artifactId>maven-checkstyle-plugin</artifactId>
 -        <version>${checkstyle.plugin.version}</version>
 -        <configuration>
@@ -74,9 +72,11 @@ index 6246c770..10c1df50 100644
 -          <enableRulesSummary>false</enableRulesSummary>
 -        </configuration>
 -      </plugin>
-       <plugin>
-         <groupId>org.apache.maven.plugins</groupId>
+-      <plugin>
+-        <groupId>org.apache.maven.plugins</groupId>
          <artifactId>maven-scm-publish-plugin</artifactId>
+         <configuration>
+           <ignorePathsToDelete>
 @@ -344,7 +332,7 @@ file comparators, endian transformation classes, and much more.
        <plugin>
          <groupId>org.apache.maven.plugins</groupId>
@@ -87,7 +87,7 @@ index 6246c770..10c1df50 100644
            <configLocation>${basedir}/checkstyle.xml</configLocation>
            <enableRulesSummary>false</enableRulesSummary>
 diff --git a/src/changes/changes.xml b/src/changes/changes.xml
-index a3950058..1247b0a0 100644
+index a395005..1247b0a 100644
 --- a/src/changes/changes.xml
 +++ b/src/changes/changes.xml
 @@ -47,12 +47,6 @@ The <action> type attribute can be add,update,fix,remove.
@@ -104,7 +104,7 @@ index a3950058..1247b0a0 100644
          FileUtilTestCase.testForceDeleteDir() should not delete testDirectory parent
        </action>
 diff --git a/src/main/java/org/apache/commons/io/FileUtils.java b/src/main/java/org/apache/commons/io/FileUtils.java
-index 10f39b97..51f82d7f 100644
+index 10f39b9..51f82d7 100644
 --- a/src/main/java/org/apache/commons/io/FileUtils.java
 +++ b/src/main/java/org/apache/commons/io/FileUtils.java
 @@ -1531,75 +1531,6 @@ public static void copyToFile(final InputStream source, final File destination)
@@ -184,7 +184,7 @@ index 10f39b97..51f82d7f 100644
      /**
       * Deletes a directory recursively.
 diff --git a/src/main/java/org/apache/commons/io/IOUtils.java b/src/main/java/org/apache/commons/io/IOUtils.java
-index f4ccaf4a..daa9505a 100644
+index f4ccaf4..daa9505 100644
 --- a/src/main/java/org/apache/commons/io/IOUtils.java
 +++ b/src/main/java/org/apache/commons/io/IOUtils.java
 @@ -818,14 +818,14 @@ public static BufferedInputStream buffer(final InputStream inputStream, int size
@@ -207,7 +207,7 @@ index f4ccaf4a..daa9505a 100644
  
          return data;
 diff --git a/src/main/java/org/apache/commons/io/filefilter/FileFilterUtils.java b/src/main/java/org/apache/commons/io/filefilter/FileFilterUtils.java
-index 0326a406..431bf2ae 100644
+index 0326a40..431bf2a 100644
 --- a/src/main/java/org/apache/commons/io/filefilter/FileFilterUtils.java
 +++ b/src/main/java/org/apache/commons/io/filefilter/FileFilterUtils.java
 @@ -518,8 +518,8 @@ public static IOFileFilter asFileFilter(final FilenameFilter filter) {
@@ -244,7 +244,7 @@ index 0326a406..431bf2ae 100644
       * @param cutoffReference  the file whose last modification
       *        time is used as the threshold age of the files
 diff --git a/src/main/java/org/apache/commons/io/input/MessageDigestCalculatingInputStream.java b/src/main/java/org/apache/commons/io/input/MessageDigestCalculatingInputStream.java
-index 21d2d5cc..c3605608 100644
+index 21d2d5c..c360560 100644
 --- a/src/main/java/org/apache/commons/io/input/MessageDigestCalculatingInputStream.java
 +++ b/src/main/java/org/apache/commons/io/input/MessageDigestCalculatingInputStream.java
 @@ -31,16 +31,9 @@
@@ -301,7 +301,7 @@ index 21d2d5cc..c3605608 100644
      public MessageDigest getMessageDigest() {
          return messageDigest;
 diff --git a/src/main/java/org/apache/commons/io/input/ObservableInputStream.java b/src/main/java/org/apache/commons/io/input/ObservableInputStream.java
-index bae3b469..a8dd078c 100644
+index bae3b46..a8dd078 100644
 --- a/src/main/java/org/apache/commons/io/input/ObservableInputStream.java
 +++ b/src/main/java/org/apache/commons/io/input/ObservableInputStream.java
 @@ -18,6 +18,7 @@
@@ -402,7 +402,7 @@ index bae3b469..a8dd078c 100644
          return observers;
      }
 diff --git a/src/main/java/org/apache/commons/io/output/WriterOutputStream.java b/src/main/java/org/apache/commons/io/output/WriterOutputStream.java
-index 58382837..0043d87d 100644
+index 5838283..0043d87 100644
 --- a/src/main/java/org/apache/commons/io/output/WriterOutputStream.java
 +++ b/src/main/java/org/apache/commons/io/output/WriterOutputStream.java
 @@ -310,11 +310,6 @@ private void flushOutput() throws IOException {
@@ -419,12 +419,12 @@ index 58382837..0043d87d 100644
              return;
 diff --git a/src/site/resources/profile.clirr b/src/site/resources/profile.clirr
 deleted file mode 100644
-index e69de29b..00000000
+index e69de29..0000000
 diff --git a/src/site/resources/profile.cobertura b/src/site/resources/profile.cobertura
 deleted file mode 100644
-index e69de29b..00000000
+index e69de29..0000000
 diff --git a/src/test/java/org/apache/commons/io/FileUtilsTestCase.java b/src/test/java/org/apache/commons/io/FileUtilsTestCase.java
-index 303b7c96..04dc7f0b 100644
+index 303b7c9..04dc7f0 100644
 --- a/src/test/java/org/apache/commons/io/FileUtilsTestCase.java
 +++ b/src/test/java/org/apache/commons/io/FileUtilsTestCase.java
 @@ -1534,95 +1534,6 @@ public void testCopyDirectoryErrors() throws Exception {
@@ -524,7 +524,7 @@ index 303b7c96..04dc7f0b 100644
  
      @Test
 diff --git a/src/test/java/org/apache/commons/io/IOUtilsTestCase.java b/src/test/java/org/apache/commons/io/IOUtilsTestCase.java
-index 43564677..a29a41e2 100644
+index 4356467..a29a41e 100644
 --- a/src/test/java/org/apache/commons/io/IOUtilsTestCase.java
 +++ b/src/test/java/org/apache/commons/io/IOUtilsTestCase.java
 @@ -904,7 +904,7 @@ public synchronized void close() throws IOException {
