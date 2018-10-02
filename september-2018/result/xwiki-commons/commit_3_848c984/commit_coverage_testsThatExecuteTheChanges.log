@@ -35,38 +35,63 @@
 [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-tool-xar-plugin ---
 [INFO] 
 [INFO] --- clover-maven-plugin:4.2.0:setup (default-cli) @ xwiki-commons-tool-xar-plugin ---
-[INFO] Skipping clover instrumentation.
+[INFO] No 'maven.clover.licenseLocation' configured. Using default license.
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 10 files (2 packages).
+[INFO] Elapsed time = 1.499 secs. (6.671 files/sec, 1,778.519 srclines/sec)
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Updating existing database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 2 files (1 package).
+[INFO] 5 test methods detected.
+[INFO] Elapsed time = 0.112 secs. (17.857 files/sec, 1,589.286 srclines/sec)
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-tool-xar-plugin ---
+[INFO] Skipping Rule Enforcement.
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-jcl-log4j-isolation) @ xwiki-commons-tool-xar-plugin ---
 [INFO] Skipping Rule Enforcement.
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glasshfish-jaxb) @ xwiki-commons-tool-xar-plugin ---
+[INFO] Skipping Rule Enforcement.
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-open-json) @ xwiki-commons-tool-xar-plugin ---
+[INFO] Skipping Rule Enforcement.
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-glassfish-el) @ xwiki-commons-tool-xar-plugin ---
+[INFO] Skipping Rule Enforcement.
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-lang3) @ xwiki-commons-tool-xar-plugin ---
+[INFO] Skipping Rule Enforcement.
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-commons-configuration2) @ xwiki-commons-tool-xar-plugin ---
+[INFO] Skipping Rule Enforcement.
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bouncycastle-ids) @ xwiki-commons-tool-xar-plugin ---
+[INFO] Skipping Rule Enforcement.
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-javase-dependencies) @ xwiki-commons-tool-xar-plugin ---
+[INFO] Skipping Rule Enforcement.
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-upper-bounds) @ xwiki-commons-tool-xar-plugin ---
+[INFO] Skipping Rule Enforcement.
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ xwiki-commons-tool-xar-plugin ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] skip non existing resourceDirectory /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/resources
+[INFO] Copying 1 resource
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ xwiki-commons-tool-xar-plugin ---
 [INFO] Changes detected - recompiling the module!
 [INFO] Compiling 10 source files to /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/target/classes
-[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/AbstractXARMojo.java: Some input files use or override a deprecated API.
-[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/AbstractXARMojo.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/target/clover/src-instrumented/org/xwiki/tool/xar/AbstractXARMojo.java: Some input files use or override a deprecated API.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/target/clover/src-instrumented/org/xwiki/tool/xar/AbstractXARMojo.java: Recompile with -Xlint:deprecation for details.
 [INFO] 
 [INFO] --- maven-plugin-plugin:3.5:descriptor (default-descriptor) @ xwiki-commons-tool-xar-plugin ---
 [WARNING] 
@@ -84,17 +109,19 @@ Goal prefix is specified as: 'xar'. Maven currently expects it to be 'xwiki-comm
 [INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ xwiki-commons-tool-xar-plugin ---
 [INFO] Changes detected - recompiling the module!
 [INFO] Compiling 2 source files to /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/target/test-classes
-[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/test/java/org/xwiki/tool/xar/FormatMojoTest.java: /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/test/java/org/xwiki/tool/xar/FormatMojoTest.java uses unchecked or unsafe operations.
-[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/test/java/org/xwiki/tool/xar/FormatMojoTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/target/clover/src-test-instrumented/org/xwiki/tool/xar/FormatMojoTest.java: /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/target/clover/src-test-instrumented/org/xwiki/tool/xar/FormatMojoTest.java uses unchecked or unsafe operations.
+[INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/target/clover/src-test-instrumented/org/xwiki/tool/xar/FormatMojoTest.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ xwiki-commons-tool-xar-plugin ---
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
+Running org.xwiki.tool.xar.XWikiDocumentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.399 sec - in org.xwiki.tool.xar.XWikiDocumentTest
 Running org.xwiki.tool.xar.FormatMojoTest
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.231 sec <<< FAILURE! - in org.xwiki.tool.xar.FormatMojoTest
-formatSpecialContentFailingWithXercesFromJDK8  Time elapsed: 0.218 sec  <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.149 sec <<< FAILURE! - in org.xwiki.tool.xar.FormatMojoTest
+formatSpecialContentFailingWithXercesFromJDK8  Time elapsed: 0.111 sec  <<< FAILURE!
 org.junit.ComparisonFailure: 
 expected:<...nel testo|{{{Questo [? un URL: http://xwiki.org}}}|Questo ? un URL: http://xwiki.org
 |Link ad un URL|{{{[http://xwiki.org]}}}|[[http://xwiki.org]]
@@ -209,7 +236,8 @@ Il formato completo di un link ?? **##[etichetta {&gt; o |}] (risorsa) [@interWi
 |Link ad un URL direttamente nel testo|{{{Questo ?? un URL: http://xwiki.org}}}|Questo ??] un URL: http://xwik...>
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at org.xwiki.tool.xar.FormatMojoTest.formatSpecialContentFailingWithXercesFromJDK8(FormatMojoTest.java:105)
+	at org.xwiki.tool.xar.FormatMojoTest.__CLR4_2_0g61c7rpz(FormatMojoTest.java:105)
+	at org.xwiki.tool.xar.FormatMojoTest.formatSpecialContentFailingWithXercesFromJDK8(FormatMojoTest.java:88)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -251,13 +279,11 @@ Il formato completo di un link ?? **##[etichetta {&gt; o |}] (risorsa) [@interWi
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 
-Running org.xwiki.tool.xar.XWikiDocumentTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.xwiki.tool.xar.XWikiDocumentTest
 
 Results :
 
 Failed tests: 
-  FormatMojoTest.formatSpecialContentFailingWithXercesFromJDK8:105 expected:<...nel testo|{{{Questo [? un URL: http://xwiki.org}}}|Questo ? un URL: http://xwiki.org
+  FormatMojoTest.formatSpecialContentFailingWithXercesFromJDK8:88->__CLR4_2_0g61c7rpz:105 expected:<...nel testo|{{{Questo [? un URL: http://xwiki.org}}}|Questo ? un URL: http://xwiki.org
 |Link ad un URL|{{{[http://xwiki.org]}}}|[[http://xwiki.org]]
 |Link ad un URL con etichetta|{{{[XWiki&gt;http://xwiki.org]}}}|[[XWiki&gt;&gt;http://xwiki.org]]
 |Link ad un indirizzo email|{{{[john@smith.net&gt;mailto:john@smith.net]}}}|[[john@smith.net&gt;&gt;mailto:john@smith.net]]
@@ -374,8 +400,8 @@ Tests run: 5, Failures: 1, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 13.271 s
-[INFO] Finished at: 2018-09-29T17:16:40+02:00
+[INFO] Total time: 27.265 s
+[INFO] Finished at: 2018-10-02T06:42:46+02:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project xwiki-commons-tool-xar-plugin: There are test failures.
 [ERROR] 
@@ -387,9 +413,8 @@ Tests run: 5, Failures: 1, Errors: 0, Skipped: 0
 [ERROR] 
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-ERROR: A problem was encountered while rendering the report: Clover registry file "/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/target/clover/clover.db" does not exist, cannot be read or is a directory. 
-Please ensure Clover has instrumented your source files. 
-You may need to remove existing .class files for this to occur.
+Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/target/clover/report'
+Done. Processed 2 packages in 3904ms (1952ms per package).
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/../xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/java/org/xwiki/tool/xar/VerifyMojoTest.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/../xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/java/org/xwiki/tool/xar/VerifyMojoTest.java
 java.io.FileNotFoundException: /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/../xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/java/org/xwiki/tool/xar/VerifyMojoTest.java does not exist
@@ -466,18 +491,23 @@ java.io.FileNotFoundException: /tmp/icst-2019/september-2018/dataset/xwiki-commo
 [info] org.xwiki.tool.xar.internal.XWikiDocument:251 is modified.
 [info] org.xwiki.tool.xar.internal.XWikiDocument:250 is modified.
 [info] org.xwiki.tool.xar.internal.XWikiDocument:253 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:238 covered.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:202 covered.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:255 covered.
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_3_848c984/commit_coverage_testsThatExecuteTheChanges.csv ...
-[INFO] 
+[INFO] org.xwiki.tool.xar.XWikiDocumentTest;createReference
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_3_848c984/commit_coverage_testsThatExecuteTheChanges_coverage.csv
-[INFO] total;0;0
+[INFO] org.xwiki.tool.xar.internal.XWikiDocument;3;14
+
+[INFO] total;3;14
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 19.898 s
-[INFO] Finished at: 2018-09-29T17:16:43+02:00
+[INFO] Total time: 45.104 s
+[INFO] Finished at: 2018-10-02T06:42:56+02:00
 [INFO] ------------------------------------------------------------------------
-2018-09-29 17:16:44,101 INFO icst.experiments.repositories.RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
-2018-09-29 17:16:44,797 INFO icst.experiments.repositories.RepositoriesSetter - Checkout adfefecde0c2a6bbeaa85f24bde1a0cd2949daa7 revision...
-2018-09-29 17:16:45,259 INFO icst.experiments.repositories.RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
-2018-09-29 17:16:45,628 INFO icst.experiments.repositories.RepositoriesSetter - Checkout e6c85fb2f0ef9dcd11d35bddddd736c68d1bfbc4 revision...
+[INFO] 2018-10-02 06:42:57 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-10-02 06:42:58 RepositoriesSetter - Checkout adfefecde0c2a6bbeaa85f24bde1a0cd2949daa7 revision...
+[INFO] 2018-10-02 06:42:59 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-10-02 06:43:00 RepositoriesSetter - Checkout e6c85fb2f0ef9dcd11d35bddddd736c68d1bfbc4 revision...

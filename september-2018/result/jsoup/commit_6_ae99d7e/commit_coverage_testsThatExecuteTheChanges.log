@@ -26,7 +26,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/jsoup/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 68 files (8 packages).
-[INFO] Elapsed time = 2.818 secs. (24.131 files/sec, 6,427.608 srclines/sec)
+[INFO] Elapsed time = 6.043 secs. (11.253 files/sec, 2,997.352 srclines/sec)
 [INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [INFO] Clover free edition.
@@ -34,7 +34,7 @@
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 46 files (9 packages).
 [INFO] 712 test methods detected.
-[INFO] Elapsed time = 0.86 secs. (53.488 files/sec, 11,463.953 srclines/sec)
+[INFO] Elapsed time = 3.106 secs. (14.81 files/sec, 3,174.179 srclines/sec)
 [INFO] 
 [INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ jsoup ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -89,23 +89,42 @@
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
+Running org.jsoup.select.SelectorTest
+Tests run: 62, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.405 sec
+Running org.jsoup.select.QueryParserTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+Running org.jsoup.select.ElementsTest
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.402 sec
+Running org.jsoup.select.CssTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.511 sec
+Running org.jsoup.select.TraversorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec
+Running org.jsoup.integration.ParseTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.737 sec
+Running org.jsoup.integration.ConnectTest
+2018-10-02 02:43:18.693:INFO::main: Logging initialized @5037ms
+2018-10-02 02:43:18.837:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2018-10-02 02:43:19.082:INFO:oejs.ServerConnector:main: Started ServerConnector@71123ba5{HTTP/1.1}{0.0.0.0:52424}
+2018-10-02 02:43:19.091:INFO:oejs.Server:main: Started @5435ms
+2018-10-02 02:43:21.122:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71123ba5{HTTP/1.1}{0.0.0.0:0}
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 2.632 sec
+Running org.jsoup.integration.UrlConnectTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec
 Running org.jsoup.parser.ParserSettingsTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec
-Running org.jsoup.parser.TokeniserTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.357 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running org.jsoup.parser.HtmlTreeBuilderStateTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
-Running org.jsoup.parser.TagTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
-Running org.jsoup.parser.TokenQueueTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.jsoup.parser.TokeniserStateTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 sec
-Running org.jsoup.parser.HtmlTreeBuilderTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.211 sec
+Running org.jsoup.parser.TagTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+Running org.jsoup.parser.CharacterReaderTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.061 sec
+Running org.jsoup.parser.XmlTreeBuilderTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.132 sec
 Running org.jsoup.parser.HtmlParserTest
-Tests run: 129, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 2.723 sec <<< FAILURE!
-handlesDeepStack(org.jsoup.parser.HtmlParserTest)  Time elapsed: 2.104 sec  <<< FAILURE!
+Tests run: 129, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 6.187 sec <<< FAILURE!
+handlesDeepStack(org.jsoup.parser.HtmlParserTest)  Time elapsed: 4.28 sec  <<< FAILURE!
 java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -142,75 +161,94 @@ java.lang.AssertionError
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
+handlesManyChildren(org.jsoup.parser.HtmlParserTest)  Time elapsed: 1.173 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.jsoup.parser.HtmlParserTest.__CLR4_2_0b8f634b2q(HtmlParserTest.java:975)
+	at org.jsoup.parser.HtmlParserTest.handlesManyChildren(HtmlParserTest.java:962)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running org.jsoup.parser.TokeniserTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 sec
+Running org.jsoup.parser.HtmlTreeBuilderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.jsoup.parser.AttributeParseTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
-Running org.jsoup.parser.XmlTreeBuilderTest
-Tests run: 22, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.052 sec
-Running org.jsoup.parser.CharacterReaderTest
-Tests run: 22, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.018 sec
-Running org.jsoup.helper.StringUtilTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
-Running org.jsoup.helper.HttpConnectionTest
-Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
-Running org.jsoup.helper.W3CDomTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.256 sec
-Running org.jsoup.helper.DataUtilTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
-Running org.jsoup.safety.CleanerTest
-Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec
-Running org.jsoup.nodes.EntitiesTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
-Running org.jsoup.nodes.TextNodeTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
-Running org.jsoup.nodes.AttributesTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
-Running org.jsoup.nodes.AttributeTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
-Running org.jsoup.nodes.NodeTest
-Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
-Running org.jsoup.nodes.DocumentTypeTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
-Running org.jsoup.nodes.DocumentTest
-Tests run: 29, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.114 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
+Running org.jsoup.parser.TokenQueueTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
 Running org.jsoup.nodes.ElementTest
-Tests run: 91, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec
+Tests run: 91, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.404 sec
+Running org.jsoup.nodes.DocumentTypeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 sec
+Running org.jsoup.nodes.EntitiesTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+Running org.jsoup.nodes.AttributesTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.jsoup.nodes.NodeTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec
+Running org.jsoup.nodes.DocumentTest
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.364 sec
 Running org.jsoup.nodes.FormElementTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec
+Running org.jsoup.nodes.AttributeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Running org.jsoup.nodes.TextNodeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
 Running org.jsoup.internal.ConstrainableInputStreamTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec
-Running org.jsoup.select.TraversorTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
-Running org.jsoup.select.ElementsTest
-Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
-Running org.jsoup.select.QueryParserTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
-Running org.jsoup.select.SelectorTest
-Tests run: 62, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec
-Running org.jsoup.select.CssTest
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 sec
-Running org.jsoup.integration.ParseTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.494 sec
-Running org.jsoup.integration.ConnectTest
-2018-09-29 12:26:52.022:INFO::main: Logging initialized @5423ms
-2018-09-29 12:26:52.119:INFO:oejs.Server:main: jetty-9.2.22.v20170606
-2018-09-29 12:26:52.191:INFO:oejs.ServerConnector:main: Started ServerConnector@2e44e4e6{HTTP/1.1}{0.0.0.0:52842}
-2018-09-29 12:26:52.191:INFO:oejs.Server:main: Started @5592ms
-2018-09-29 12:26:53.656:INFO:oejs.ServerConnector:main: Stopped ServerConnector@2e44e4e6{HTTP/1.1}{0.0.0.0:0}
-Tests run: 29, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 1.708 sec
-Running org.jsoup.integration.UrlConnectTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
+Running org.jsoup.safety.CleanerTest
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.296 sec
+Running org.jsoup.helper.DataUtilTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec
+Running org.jsoup.helper.W3CDomTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.631 sec
+Running org.jsoup.helper.StringUtilTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Running org.jsoup.helper.HttpConnectionTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec
 
 Results :
 
 Failed tests:   handlesDeepStack(org.jsoup.parser.HtmlParserTest)
+  handlesManyChildren(org.jsoup.parser.HtmlParserTest)
 
-Tests run: 666, Failures: 1, Errors: 0, Skipped: 11
+Tests run: 666, Failures: 2, Errors: 0, Skipped: 11
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 25.974 s
-[INFO] Finished at: 2018-09-29T12:26:53+02:00
+[INFO] Total time: 01:05 min
+[INFO] Finished at: 2018-10-02T02:43:30+02:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project jsoup: There are test failures.
 [ERROR] 
@@ -223,7 +261,7 @@ Tests run: 666, Failures: 1, Errors: 0, Skipped: 11
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/jsoup/target/clover/report'
-Done. Processed 10 packages in 10322ms (1032ms per package).
+Done. Processed 10 packages in 27504ms (2750ms per package).
 [INFO] /tmp/icst-2019/september-2018/dataset/jsoup/src/main/java/org/jsoup/parser/CharacterReader.java
 [INFO] /tmp/icst-2019/september-2018/dataset/jsoup_parent/src/main/java/org/jsoup/parser/CharacterReader.java
 [info] org.jsoup.parser.CharacterReader:202 is modified.
@@ -292,28 +330,28 @@ Done. Processed 10 packages in 10322ms (1032ms per package).
 [INFO] /tmp/icst-2019/september-2018/dataset/jsoup/src/test/java/org/jsoup/parser/HtmlTreeBuilderStateTest.java
 [INFO] /tmp/icst-2019/september-2018/dataset/jsoup_parent/src/test/java/org/jsoup/parser/HtmlTreeBuilderStateTest.java
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/jsoup/commit_6_ae99d7e/commit_coverage_testsThatExecuteTheChanges.csv ...
-[INFO] org.jsoup.nodes.EntitiesTest;escapesGtInXmlAttributesButNotInHtml;letterDigitEntities
-org.jsoup.parser.HtmlParserTest;testNormalisesIsIndex;handlesInvalidDoctypes;noErrorsByDefault;normalizesDiscordantTags;handlesCdata;fallbackToUtfIfCantEncode;preSkipsFirstNewline;testHandlesDeepSpans;handlesQuotesInCommentsInScripts;parsesComments;tracksErrorsWhenRequested;associatedFormControlsWithDisjointForms;handlesKnownEmptyTitle;parsesUnterminatedTextarea;selfClosingOnNonvoidIsError;handlesEscapedData;testFragment;handlesJavadocFont;testHgroup;dropsUnterminatedAttribute;handlesXmlDeclAndCommentsBeforeDoctype;handlesDeepStack;handlesKnownEmptyBlocks;cdataNodesAreTextNodes;handlesUnknownTags;reconstructFormattingElements;noTableDirectInTable;normalisesHeadlessBody;preservesSpaceInTextArea;commentAtEnd;handlesManyChildren;handlesProtocolRelativeUrl;handleCDataInText;handlesNullInData;testRelaxedTags;parsesRoughAttributes;handlesFrames;handlesBlocksInDefinitions;preservesSpaceInScript;handlesEscapedScript;roundTripsCdata;createsStructureFromBodySnippet;canPreserveAttributeCase;handlesWhitespaceInoDocType;handlesSolidusInA;handlesWhatWgExpensesTableExample;handlesMultiClosingBody;parsesSimpleDocument;handlesTbodyTable;handlesDataOnlyTags;handlesUnexpectedMarkupInTables;testAFlowContents;handlesNestedImplicitTable;handlesImplicitCaptionClose;handlesMisnestedTagsBP;normalisesDocument;doesNotFindShortestMatchingEntity;testSupportsPartiallyNonAsciiTags;handlesControlCodeInAttributeName;canPreserveTagCase;testNoImagesInNoScriptInHead;handlesKnownEmptyIframe;handlesCdataInScript;handlesUnclosedCdataAtEOF;handlesMisnestedTagsBI;handlesKnownEmptyStyle;testTemplateInsideTable;handlesInputInTable;emptyTdTag;testUsingSingleQuotesInQueries;selfClosingVoidIsNotAnError;handlesUnclosedRawtextAtEof;discardsNakedTds;testFontFlowContents;ignoresContentAfterFrameset;caseInsensitiveParseTree;handlesUnclosedDefinitionLists;findsCharsetInMalformedMeta;handlesNewlinesAndWhitespaceInTag;testSpanContents;handlesTextAfterData;parsesQuiteRoughAttributes;normalisesEmptyDocument;caseSensitiveParseTree;testReinsertionModeForThCelss;testSpaceAfterTag;handlesUnclosedAnchors;handlesUnclosedScriptAtEof;testInvalidTableContents;handlesUnknownInlineTags;noImplicitFormForTextAreas;createsFormElements;commentBeforeHtml;handlesXmlDeclarationAsBogusComment;relaxedBaseEntityMatchAndStrictExtendedMatch;handlesKnownEmptyNoFrames;handlesBaseTags;normalisedBodyAfterContent;testHeaderContents;convertsImageToImg;handlesSpanInTbody;doesNotCreateImplicitLists;dropsUnterminatedTag;handlesCommentsInTable;handlesTagsInTextarea;handlesTextArea;handlesUnclosedFormattingElements;handlesNullInComments;ignoresDupeEndTrTag;parsesBodyFragment;handlesUnclosedTitleAtEof;tracksLimitedErrorsWhenRequested;testSelectWithOption;reconstructFormattingElementsInTable;handlesUnknownNamespaceTags;handlesCdataAcrossBuffer;parsesUnterminatedOption;testSupportsNonAsciiTags;canPreserveBothCase;handlesBaseWithoutHref;createsDocumentStructure;handlesSolidusAtAttributeEnd;parsesUnterminatedComments;handles0CharacterAsText;testHtmlLowerCase;handleNullContextInParseFragment;handlesInvalidStartTags;handlesUnclosedTitle
-org.jsoup.safety.CleanerTest;basicWithImagesTest;addsTagOnAttributesIfNotSet;preservesRelativeLinksIfConfigured;testDropImageScript;testRemoveTags;testIsValidDocument;basicBehaviourTest;testRemoveEnforcedAttributes;testDropXmlProc;testDropScript;testCleanAnchorProtocol;testIsValidBodyHtml;supplyOutputSettings;testDropComments;testHandlesEmptyAttributes;simpleBehaviourTest2;cleansInternationalText;handlesCustomProtocols;testRemoveAttributes;simpleBehaviourTest;testRelaxed;testRemoveProtocols;resolvesRelativeLinks;testDropsUnknownTags;handlesAttributesWithNoValue;whitelistedProtocolShouldBeRetained;handlesControlCharactersAfterTagName;handlesAllPseudoTag;dropsUnresolvableRelativeLinks;testScriptTagInWhiteList;testCleanJavascriptHref;handlesFramesets
-org.jsoup.nodes.DocumentTest;testLocation;parseAndHtmlOnDifferentThreads;testHtmlAndXmlSyntax;setTextPreservesDocumentStructure;testClone;testHtmlAppendable;DocumentsWithSameContentAreEqual;testXhtmlReferences;testClonesDeclarations;testOutputEncoding;testShiftJisRoundtrip;testTitles;DocumentsWithSameContentAreVerifialbe;testNormalisesStructure;htmlParseDefaultsToHtmlOutputSyntax
-org.jsoup.parser.XmlTreeBuilderTest;testDoesNotForceSelfClosingKnownTags;testCommentAndDocType
-org.jsoup.nodes.ElementTest;testChainedRemoveAttributes;before;testThrowsOnAddNullText;testKeepsPreText;testGetSiblings;testCssPath;testRemoveAfterIndex;testPrependElement;moveByAppend;testFormatOutline;testChildThrowsIndexOutOfBoundsOnMissing;testTagNameSet;testAddNewText;testGetTextNodes;testWholeText;testAddNewHtml;testElementSiblingIndex;testSetIndent;testGetElementsWithAttributeValue;testKeepsPreTextAtDepth;insertChildrenArgumentValidation;testClassDomMethods;testNamespacedElements;testEmptyElementFormatHtml;booleanAttributeOutput;testManipulateTextNodes;testNormalizesInvisiblesInText;testWrapWithRemainder;testGetText;testBrHasSpace;testHtmlContainsOuter;testGetElementsWithClass;testGetElementById;testRelativeUrls;testClonesClassnames;testRemoveBeforeIndex;testOuterHtml;testInnerHtml;testGetElementsWithAttribute;testPrependText;elementIsNotASiblingOfItself;classNamesAndAttributeNameIsCaseInsensitive;testClassNames;testShadowElementsAreUpdated;testPrependNewHtml;testFormatHtml;insertChildrenAsCopy;textHasSpaceAfterBlockTags;testKeepsPreTextInCode;insertChildrenAtPosition;testGetChildText;testNormalizesNbspInText;testSetText;testHasText;getNamespacedElementsByTag;testElementSiblingIndexSameContent;testAppendRowToTable;testWrap;after;getElementsByTagName;testChildrenElements;testGetSiblingsWithDuplicateContent;testSetHtml;testNextElementSiblingAfterClone;testRemovingEmptyClassAttributeWhenLastClassRemoved;testAppendTo;testGetDataNodes;testIs;testLoopedRemoveAttributes;testGetElementsWithAttributeDash;testHashAndEqualsAndValue;testClone;testGetParents;testSetHtmlTitle;testThrowsOnPrependNullText;testNoIndentOnScriptAndStyle;parentlessToString;testNotPretty;testAddNewElement;testPrependRowToTable;testClassUpdates;dataset;testContainerOutput;testShallowClone;testNormalisesText
-org.jsoup.helper.W3CDomTest;convertsGoogleLocation;treatsUndeclaredNamespaceAsLocalName;simpleConversion;handlesInvalidAttributeNames;convertsGoogle;namespacePreservation
-org.jsoup.helper.DataUtilTest;firstMetaElementWithCharsetShouldBeUsedForDecoding;supportsXmlCharsetDeclaration;supportsUTF8BOM;supportsBOMinFiles;secondMetaElementWithContentTypeContainsCharsetParameter;discardsSpuriousByteOrderMark;wrongMetaCharsetFallback;discardsSpuriousByteOrderMarkWhenNoCharsetSet
-org.jsoup.select.SelectorTest;containsOwn;testByAttributeStarting;descendant;matchText;testByAttributeRegex;notClass;adjacentSiblings;mixCombinator;testPseudoContains;notAdjacent;testPsuedoContainsWithParentheses;testById;caseInsensitive;testPseudoCombined;notParas;adjacentSiblingsWithId;attributeWithBrackets;handlesCommasInSelector;testSupportsLeadingCombinator;testNamespacedTag;testPseudoGreaterThan;testPseudoBetween;selectSupplementaryCharacter;selectSameElements;testPseudoHas;matchTextAttributes;containsData;testByAttribute;selectClassWithSpace;testByTag;testGroupOr;testCombinedWithContains;testAllElements;notAll;parentChildStar;testGroupOrAttribute;matchesOwn;and;testRelaxedTags;testCharactersInIdAndClass;selectFirstWithAnd;selectFirstWithOr;parentChildElement;parentWithClassChild;splitOnBr;deeperDescendant;testAllWithClass;selectFirst;testByAttributeRegexCharacterClass;containsWithQuote;testByAttributeRegexCombined;testWildcardNamespacedTag;testByClassCaseInsensitive;findBetweenSpan;testPseudoEquals;testNestedHas;testByClass;testMatches;testPseudoLessThan;generalSiblings;multiChildDescent;mixCombinatorGroup
-org.jsoup.parser.TokeniserTest;cp1252EntitiesProduceError;handleSuperLargeAttributeName;handleLargeComment;bufferUpInAttributeVal;handleLargeCdata;handleLargeText;cp1252Entities;handleSuperLargeTagNames;handleLargeTitle
-org.jsoup.select.ElementsTest;unwrapKeepsSpace;siblings;before;hasAbsAttr;classes;eachAttr;remove;unwrap;empty;not;html;after;text;classWithHyphen;attr;val;setHtml;absAttr;hasClassCaseInsensitive;hasAttr;is;eachText;outerHtml;eq;hasText;filter;traverse;tagNameSet;attributes;unwrapP;wrap;forms;wrapDiv;parents
+[INFO] org.jsoup.parser.HtmlParserTest;testNormalisesIsIndex;handlesInvalidDoctypes;noErrorsByDefault;normalizesDiscordantTags;handlesCdata;fallbackToUtfIfCantEncode;preSkipsFirstNewline;testHandlesDeepSpans;handlesQuotesInCommentsInScripts;parsesComments;tracksErrorsWhenRequested;associatedFormControlsWithDisjointForms;handlesKnownEmptyTitle;parsesUnterminatedTextarea;selfClosingOnNonvoidIsError;handlesEscapedData;testFragment;handlesJavadocFont;testHgroup;dropsUnterminatedAttribute;handlesXmlDeclAndCommentsBeforeDoctype;handlesDeepStack;handlesKnownEmptyBlocks;handlesUnknownTags;cdataNodesAreTextNodes;reconstructFormattingElements;noTableDirectInTable;normalisesHeadlessBody;preservesSpaceInTextArea;commentAtEnd;handlesManyChildren;handlesProtocolRelativeUrl;handleCDataInText;handlesNullInData;testRelaxedTags;parsesRoughAttributes;handlesFrames;handlesBlocksInDefinitions;preservesSpaceInScript;handlesEscapedScript;roundTripsCdata;createsStructureFromBodySnippet;canPreserveAttributeCase;handlesSolidusInA;handlesWhitespaceInoDocType;handlesWhatWgExpensesTableExample;parsesSimpleDocument;handlesMultiClosingBody;handlesTbodyTable;handlesDataOnlyTags;handlesUnexpectedMarkupInTables;testAFlowContents;handlesNestedImplicitTable;handlesImplicitCaptionClose;handlesMisnestedTagsBP;normalisesDocument;doesNotFindShortestMatchingEntity;testSupportsPartiallyNonAsciiTags;handlesControlCodeInAttributeName;canPreserveTagCase;testNoImagesInNoScriptInHead;handlesCdataInScript;handlesKnownEmptyIframe;handlesUnclosedCdataAtEOF;handlesMisnestedTagsBI;handlesKnownEmptyStyle;testTemplateInsideTable;handlesInputInTable;emptyTdTag;testUsingSingleQuotesInQueries;selfClosingVoidIsNotAnError;handlesUnclosedRawtextAtEof;discardsNakedTds;testFontFlowContents;ignoresContentAfterFrameset;caseInsensitiveParseTree;handlesUnclosedDefinitionLists;findsCharsetInMalformedMeta;handlesNewlinesAndWhitespaceInTag;testSpanContents;handlesTextAfterData;parsesQuiteRoughAttributes;normalisesEmptyDocument;testReinsertionModeForThCelss;caseSensitiveParseTree;testSpaceAfterTag;handlesUnclosedAnchors;handlesUnclosedScriptAtEof;testInvalidTableContents;handlesUnknownInlineTags;noImplicitFormForTextAreas;createsFormElements;commentBeforeHtml;handlesXmlDeclarationAsBogusComment;relaxedBaseEntityMatchAndStrictExtendedMatch;handlesKnownEmptyNoFrames;handlesBaseTags;normalisedBodyAfterContent;testHeaderContents;convertsImageToImg;handlesSpanInTbody;doesNotCreateImplicitLists;handlesCommentsInTable;dropsUnterminatedTag;handlesTagsInTextarea;handlesTextArea;handlesUnclosedFormattingElements;handlesNullInComments;ignoresDupeEndTrTag;parsesBodyFragment;handlesUnclosedTitleAtEof;tracksLimitedErrorsWhenRequested;reconstructFormattingElementsInTable;testSelectWithOption;handlesUnknownNamespaceTags;handlesCdataAcrossBuffer;parsesUnterminatedOption;testSupportsNonAsciiTags;canPreserveBothCase;createsDocumentStructure;handlesBaseWithoutHref;handlesSolidusAtAttributeEnd;parsesUnterminatedComments;handles0CharacterAsText;testHtmlLowerCase;handleNullContextInParseFragment;handlesInvalidStartTags;handlesUnclosedTitle
+org.jsoup.safety.CleanerTest;basicWithImagesTest;addsTagOnAttributesIfNotSet;preservesRelativeLinksIfConfigured;testDropImageScript;testRemoveTags;testIsValidDocument;testRemoveEnforcedAttributes;basicBehaviourTest;testDropXmlProc;testDropScript;testCleanAnchorProtocol;testIsValidBodyHtml;supplyOutputSettings;testDropComments;testHandlesEmptyAttributes;simpleBehaviourTest2;cleansInternationalText;handlesCustomProtocols;testRemoveAttributes;simpleBehaviourTest;testRelaxed;testRemoveProtocols;resolvesRelativeLinks;testDropsUnknownTags;handlesAttributesWithNoValue;whitelistedProtocolShouldBeRetained;handlesControlCharactersAfterTagName;dropsUnresolvableRelativeLinks;handlesAllPseudoTag;testScriptTagInWhiteList;testCleanJavascriptHref;handlesFramesets
+org.jsoup.nodes.ElementTest;testChainedRemoveAttributes;testThrowsOnAddNullText;before;testKeepsPreText;testGetSiblings;testCssPath;testPrependElement;testRemoveAfterIndex;moveByAppend;testFormatOutline;testChildThrowsIndexOutOfBoundsOnMissing;testTagNameSet;testAddNewText;testWholeText;testAddNewHtml;testGetTextNodes;testElementSiblingIndex;testSetIndent;testGetElementsWithAttributeValue;testKeepsPreTextAtDepth;insertChildrenArgumentValidation;testClassDomMethods;testNamespacedElements;testEmptyElementFormatHtml;booleanAttributeOutput;testManipulateTextNodes;testNormalizesInvisiblesInText;testWrapWithRemainder;testGetText;testBrHasSpace;testHtmlContainsOuter;testGetElementsWithClass;testGetElementById;testClonesClassnames;testRelativeUrls;testRemoveBeforeIndex;testOuterHtml;testInnerHtml;testGetElementsWithAttribute;testPrependText;classNamesAndAttributeNameIsCaseInsensitive;elementIsNotASiblingOfItself;testClassNames;testShadowElementsAreUpdated;testPrependNewHtml;testFormatHtml;insertChildrenAsCopy;testKeepsPreTextInCode;textHasSpaceAfterBlockTags;insertChildrenAtPosition;testGetChildText;testNormalizesNbspInText;testSetText;testHasText;getNamespacedElementsByTag;testElementSiblingIndexSameContent;testAppendRowToTable;testWrap;after;getElementsByTagName;testChildrenElements;testSetHtml;testGetSiblingsWithDuplicateContent;testNextElementSiblingAfterClone;testRemovingEmptyClassAttributeWhenLastClassRemoved;testAppendTo;testIs;testGetDataNodes;testLoopedRemoveAttributes;testGetElementsWithAttributeDash;testHashAndEqualsAndValue;testClone;testGetParents;testSetHtmlTitle;testThrowsOnPrependNullText;testNoIndentOnScriptAndStyle;parentlessToString;testNotPretty;testAddNewElement;testClassUpdates;testPrependRowToTable;dataset;testContainerOutput;testShallowClone;testNormalisesText
+org.jsoup.nodes.DocumentTest;testLocation;parseAndHtmlOnDifferentThreads;testHtmlAndXmlSyntax;setTextPreservesDocumentStructure;testClone;testHtmlAppendable;DocumentsWithSameContentAreEqual;testXhtmlReferences;testClonesDeclarations;testOutputEncoding;testShiftJisRoundtrip;testTitles;testNormalisesStructure;DocumentsWithSameContentAreVerifialbe;htmlParseDefaultsToHtmlOutputSyntax
+org.jsoup.parser.TokeniserTest;cp1252EntitiesProduceError;handleSuperLargeAttributeName;handleLargeComment;handleLargeCdata;bufferUpInAttributeVal;handleLargeText;cp1252Entities;handleSuperLargeTagNames;handleLargeTitle
 org.jsoup.parser.AttributeParseTest;canStartWithEq;moreAttributeUnescapes;parsesEmptyString;handlesNewLinesAndReturns;dropsSlashFromAttributeName;parsesBooleanAttributes;strictAttributeUnescapes;parsesRoughAttributeString
-org.jsoup.nodes.NodeTest;literalAbsPrefix;before;testRemove;handleAbsOnLocalhostFileUris;childNodesCopy;absHandlesRelativeQuery;unwrap;unwrapNoChildren;traverse;handleAbsOnFileUris;testReplace;absHandlesDotFromIndex;handlesAbsOnImage;changingAttributeValueShouldReplaceExistingAttributeCaseInsensitive;root;supportsClone;handlesAbsPrefixOnHasAttr;after;ownerDocument;setBaseUriIsRecursive;handlesAbsPrefix;nodeIsNotASiblingOfItself;handlesAbsOnProtocolessAbsoluteUris
+org.jsoup.parser.XmlTreeBuilderTest;testDoesNotForceSelfClosingKnownTags;testCommentAndDocType
+org.jsoup.helper.DataUtilTest;firstMetaElementWithCharsetShouldBeUsedForDecoding;supportsXmlCharsetDeclaration;supportsUTF8BOM;supportsBOMinFiles;secondMetaElementWithContentTypeContainsCharsetParameter;discardsSpuriousByteOrderMark;wrongMetaCharsetFallback;discardsSpuriousByteOrderMarkWhenNoCharsetSet
+org.jsoup.select.SelectorTest;containsOwn;testByAttributeStarting;descendant;matchText;testByAttributeRegex;notClass;mixCombinator;adjacentSiblings;testPseudoContains;notAdjacent;testPsuedoContainsWithParentheses;caseInsensitive;testById;testPseudoCombined;adjacentSiblingsWithId;notParas;attributeWithBrackets;handlesCommasInSelector;testSupportsLeadingCombinator;testNamespacedTag;testPseudoGreaterThan;testPseudoBetween;selectSupplementaryCharacter;selectSameElements;testPseudoHas;matchTextAttributes;containsData;testByAttribute;selectClassWithSpace;testByTag;testGroupOr;testCombinedWithContains;testAllElements;notAll;parentChildStar;matchesOwn;testGroupOrAttribute;and;testRelaxedTags;testCharactersInIdAndClass;selectFirstWithAnd;selectFirstWithOr;parentChildElement;parentWithClassChild;splitOnBr;deeperDescendant;testAllWithClass;selectFirst;containsWithQuote;testByAttributeRegexCharacterClass;testByAttributeRegexCombined;testByClassCaseInsensitive;testWildcardNamespacedTag;findBetweenSpan;testPseudoEquals;testNestedHas;testMatches;testByClass;testPseudoLessThan;generalSiblings;multiChildDescent;mixCombinatorGroup
+org.jsoup.nodes.EntitiesTest;escapesGtInXmlAttributesButNotInHtml;letterDigitEntities
+org.jsoup.helper.W3CDomTest;convertsGoogleLocation;treatsUndeclaredNamespaceAsLocalName;simpleConversion;handlesInvalidAttributeNames;convertsGoogle;namespacePreservation
+org.jsoup.select.ElementsTest;unwrapKeepsSpace;siblings;before;hasAbsAttr;classes;eachAttr;remove;unwrap;empty;not;html;after;text;attr;classWithHyphen;val;setHtml;hasClassCaseInsensitive;absAttr;hasAttr;eachText;is;outerHtml;eq;hasText;filter;traverse;tagNameSet;attributes;unwrapP;wrap;forms;parents;wrapDiv
 org.jsoup.parser.TokeniserStateTest;testPublicIdentifiersWithWhitespace;testEndTagOpen;testCommentEndBangCoverage;testRcdataLessthanSign;testSystemIdentifiersWithWhitespace;testCommentEndCoverage;handlesLessInTagThanAsNewTag;testPublicAndSystemIdentifiersWithWhitespace;testBeforeTagName;testCharacterReferenceInRcdata;testRCDATAEndTagName
-org.jsoup.integration.ParseTest;testNewsHomepage;testSmhBizArticle;testYahooArticle;testBaiduVariant;testGoogleSearchIpod;testLowercaseUtf8Charset;testYahooJp;testBrokenHtml5CharsetWithASingleDoubleQuote;testHtml5Charset;testBaidu;testNytArticle;testBinary
-org.jsoup.integration.ConnectTest;doesGet;doesPost;sendsRequestBody;doesPostFor307;multiCookieSet;postFiles;sendsRequestBodyJsonWithData;doesPut;sendsRequestBodyWithUrlParams;canConnectToLocalServer;handlesEmptyStreamDuringParseRead;sendsRequestBodyJsonWithoutData;multipleParsesOkAfterBufferUp;handlesRedirect;parseParseThrowsValidates;supportsDeflate;fetchURl;doesNotPostFor302;bodyAndBytesAvailableBeforeParse;bodyAfterParseThrowsValidationError;fetchURIWithWihtespace
+org.jsoup.nodes.NodeTest;literalAbsPrefix;before;testRemove;handleAbsOnLocalhostFileUris;childNodesCopy;absHandlesRelativeQuery;unwrap;traverse;unwrapNoChildren;handleAbsOnFileUris;testReplace;absHandlesDotFromIndex;handlesAbsOnImage;changingAttributeValueShouldReplaceExistingAttributeCaseInsensitive;root;supportsClone;handlesAbsPrefixOnHasAttr;after;ownerDocument;handlesAbsPrefix;setBaseUriIsRecursive;nodeIsNotASiblingOfItself;handlesAbsOnProtocolessAbsoluteUris
+org.jsoup.integration.ConnectTest;doesGet;doesPost;sendsRequestBody;doesPostFor307;multiCookieSet;postFiles;doesPut;sendsRequestBodyJsonWithData;sendsRequestBodyWithUrlParams;handlesEmptyStreamDuringParseRead;canConnectToLocalServer;handlesRedirect;multipleParsesOkAfterBufferUp;sendsRequestBodyJsonWithoutData;parseParseThrowsValidates;fetchURl;supportsDeflate;doesNotPostFor302;bodyAndBytesAvailableBeforeParse;bodyAfterParseThrowsValidationError;fetchURIWithWihtespace
+org.jsoup.nodes.TextNodeTest;testSplitText;testSplitAnEmbolden;testTextBean;testWithSupplementaryCharacter;testLeadNodesHaveNoChildren
 org.jsoup.select.TraversorTest;filterVisit;filterStop;filterSkipChildren;filterRemove;filterSkipEntirely
 org.jsoup.nodes.DocumentTypeTest;testRoundTrip
-org.jsoup.nodes.FormElementTest;adoptedFormsRetainInputs;createsFormData;createsSubmitableConnection;formsAddedAfterParseAreFormElements;actionWithNoValue;usesOnForCheckboxValueIfNoValueSet;controlsAddedAfterParseAreLinkedWithForms;actionWithNoBaseUri;hasAssociatedControls;removeFormElement
-org.jsoup.nodes.TextNodeTest;testSplitText;testSplitAnEmbolden;testTextBean;testWithSupplementaryCharacter;testLeadNodesHaveNoChildren
-org.jsoup.helper.StringUtilTest;normaliseWhiteSpaceHandlesHighSurrogates
+org.jsoup.integration.ParseTest;testNewsHomepage;testYahooArticle;testSmhBizArticle;testBaiduVariant;testGoogleSearchIpod;testLowercaseUtf8Charset;testYahooJp;testBrokenHtml5CharsetWithASingleDoubleQuote;testHtml5Charset;testNytArticle;testBaidu;testBinary
+org.jsoup.nodes.FormElementTest;adoptedFormsRetainInputs;createsFormData;createsSubmitableConnection;actionWithNoValue;formsAddedAfterParseAreFormElements;controlsAddedAfterParseAreLinkedWithForms;usesOnForCheckboxValueIfNoValueSet;hasAssociatedControls;actionWithNoBaseUri;removeFormElement
 org.jsoup.parser.TokenQueueTest;testNestedQuotes
+org.jsoup.helper.StringUtilTest;normaliseWhiteSpaceHandlesHighSurrogates
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/jsoup/commit_6_ae99d7e/commit_coverage_testsThatExecuteTheChanges_coverage.csv
 [INFO] org.jsoup.parser.CharacterReader;28;11
 
@@ -324,10 +362,10 @@ org.jsoup.parser.TokenQueueTest;testNestedQuotes
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 45.517 s
-[INFO] Finished at: 2018-09-29T12:27:09+02:00
+[INFO] Total time: 01:52 min
+[INFO] Finished at: 2018-10-02T02:44:10+02:00
 [INFO] ------------------------------------------------------------------------
-[INFO] 2018-09-29 12:27:09 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/jsoup} Cleaning local repository...
-[INFO] 2018-09-29 12:27:09 RepositoriesSetter - Checkout eec4cf3503d226272642c7507686e96870307dfb revision...
-[INFO] 2018-09-29 12:27:10 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/jsoup_parent} Cleaning local repository...
-[INFO] 2018-09-29 12:27:10 RepositoriesSetter - Checkout a810d2e3615da9a37ad74a7db2ca8bc6945ab9a8 revision...
+[INFO] 2018-10-02 02:44:11 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/jsoup} Cleaning local repository...
+[INFO] 2018-10-02 02:44:11 RepositoriesSetter - Checkout eec4cf3503d226272642c7507686e96870307dfb revision...
+[INFO] 2018-10-02 02:44:11 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/jsoup_parent} Cleaning local repository...
+[INFO] 2018-10-02 02:44:12 RepositoriesSetter - Checkout a810d2e3615da9a37ad74a7db2ca8bc6945ab9a8 revision...

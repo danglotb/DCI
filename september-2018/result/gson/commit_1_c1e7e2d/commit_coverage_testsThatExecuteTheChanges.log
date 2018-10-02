@@ -42,7 +42,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/gson/extras/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 8 files (4 packages).
-[INFO] Elapsed time = 0.342 secs. (23.392 files/sec, 3,298.246 srclines/sec)
+[INFO] Elapsed time = 1.355 secs. (5.904 files/sec, 832.472 srclines/sec)
 [INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [INFO] Clover free edition.
@@ -50,7 +50,7 @@
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 5 files (3 packages).
 [INFO] 37 test methods detected.
-[INFO] Elapsed time = 0.143 secs. (34.965 files/sec, 5,454.545 srclines/sec)
+[INFO] Elapsed time = 0.576 secs. (8.681 files/sec, 1,354.167 srclines/sec)
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ gson-extras ---
 [INFO] Skipping Rule Enforcement.
@@ -78,23 +78,23 @@
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
-Running com.google.gson.interceptors.InterceptorTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec
 Running com.google.gson.typeadapters.UtcDateTypeAdapterTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.188 sec
-Running com.google.gson.typeadapters.RuntimeTypeAdapterFactoryTest
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.03 sec
 Running com.google.gson.typeadapters.PostConstructAdapterFactoryTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec
+Running com.google.gson.typeadapters.RuntimeTypeAdapterFactoryTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 sec
 Running com.google.gson.graph.GraphAdapterBuilderTest
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec <<< FAILURE!
-testSerializationDirectSelfReference(com.google.gson.graph.GraphAdapterBuilderTest)  Time elapsed: 0.009 sec  <<< FAILURE!
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.22 sec <<< FAILURE!
+testSerializationDirectSelfReference(com.google.gson.graph.GraphAdapterBuilderTest)  Time elapsed: 0.075 sec  <<< FAILURE!
 junit.framework.ComparisonFailure: expected:<...1':{'name':'SUICIDE'[,'beats':'0x1']}}> but was:<...1':{'name':'SUICIDE'[]}}>
 	at junit.framework.Assert.assertEquals(Assert.java:81)
 	at junit.framework.Assert.assertEquals(Assert.java:87)
 	at com.google.gson.graph.GraphAdapterBuilderTest.__CLR4_2_0bacie9dq(GraphAdapterBuilderTest.java:79)
 	at com.google.gson.graph.GraphAdapterBuilderTest.testSerializationDirectSelfReference(GraphAdapterBuilderTest.java:69)
 
+Running com.google.gson.interceptors.InterceptorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 sec
 
 Results :
 
@@ -105,8 +105,8 @@ Tests run: 37, Failures: 1, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 6.391 s
-[INFO] Finished at: 2018-09-29T12:36:37+02:00
+[INFO] Total time: 18.169 s
+[INFO] Finished at: 2018-10-02T01:55:41+02:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project gson-extras: There are test failures.
 [ERROR] 
@@ -119,7 +119,7 @@ Tests run: 37, Failures: 1, Errors: 0, Skipped: 0
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/gson/extras/target/clover/report'
-Done. Processed 4 packages in 1414ms (353ms per package).
+Done. Processed 4 packages in 4271ms (1067ms per package).
 [INFO] /tmp/icst-2019/september-2018/dataset/gson/extras/src/main/java/com/google/gson/typeadapters/RuntimeTypeAdapterFactory.java
 [INFO] /tmp/icst-2019/september-2018/dataset/gson_parent/extras/src/main/java/com/google/gson/typeadapters/RuntimeTypeAdapterFactory.java
 [info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:146 is modified.
@@ -146,7 +146,7 @@ Done. Processed 4 packages in 1414ms (353ms per package).
 [info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:246 covered.
 [info] com.google.gson.typeadapters.RuntimeTypeAdapterFactory:154 covered.
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/gson/commit_1_c1e7e2d/commit_coverage_testsThatExecuteTheChanges.csv ...
-[INFO] com.google.gson.typeadapters.RuntimeTypeAdapterFactoryTest;testRuntimeTypeIsBaseType;testNullTypeFieldName;testDuplicateSubtype;testDeserializeMissingTypeField;testDeserializeMissingSubtype;testNullSubtype;testNullBaseType;testSerializeMissingSubtype;testSerializeCollidingTypeFieldName;testDuplicateLabel;testRuntimeTypeAdapter;testSerializeWrappedNullValue;testNullLabel
+[INFO] com.google.gson.typeadapters.RuntimeTypeAdapterFactoryTest;testRuntimeTypeIsBaseType;testNullTypeFieldName;testDuplicateSubtype;testDeserializeMissingTypeField;testDeserializeMissingSubtype;testNullBaseType;testNullSubtype;testSerializeMissingSubtype;testSerializeCollidingTypeFieldName;testDuplicateLabel;testRuntimeTypeAdapter;testSerializeWrappedNullValue;testNullLabel
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/gson/commit_1_c1e7e2d/commit_coverage_testsThatExecuteTheChanges_coverage.csv
 [INFO] com.google.gson.typeadapters.RuntimeTypeAdapterFactory;8;10
 
@@ -155,10 +155,10 @@ Done. Processed 4 packages in 1414ms (353ms per package).
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 13.829 s
-[INFO] Finished at: 2018-09-29T12:36:41+02:00
+[INFO] Total time: 36.274 s
+[INFO] Finished at: 2018-10-02T01:55:50+02:00
 [INFO] ------------------------------------------------------------------------
-[INFO] 2018-09-29 12:36:41 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/gson} Cleaning local repository...
-[INFO] 2018-09-29 12:36:41 RepositoriesSetter - Checkout b1fb9ca9a1bea5440bc6a5b506ccf67236b08243 revision...
-[INFO] 2018-09-29 12:36:42 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/gson_parent} Cleaning local repository...
-[INFO] 2018-09-29 12:36:42 RepositoriesSetter - Checkout 08bbb226f11a1f7f76835f953e700d905e1fab4d revision...
+[INFO] 2018-10-02 01:55:51 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/gson} Cleaning local repository...
+[INFO] 2018-10-02 01:55:51 RepositoriesSetter - Checkout b1fb9ca9a1bea5440bc6a5b506ccf67236b08243 revision...
+[INFO] 2018-10-02 01:55:52 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/gson_parent} Cleaning local repository...
+[INFO] 2018-10-02 01:55:52 RepositoriesSetter - Checkout 08bbb226f11a1f7f76835f953e700d905e1fab4d revision...
