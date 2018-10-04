@@ -1,6 +1,7 @@
 import sys
 import toolbox
 import os
+import diff_size
 
 
 def build_table(projects):
@@ -19,14 +20,16 @@ def build_table(projects):
             path_to_commit_folder = toolbox.get_absolute_path(
                 toolbox.prefix_result + project + '/' + toolbox.get_output_folder_for_commit(commit_json, commits)
             ) + '/'
+            coverage_commit = get_diff_coverage_commit(path_to_commit_folder)
+            if coverage_commit == -1:
+                continue
+            coverage.append(round(coverage_commit, 2))
             nb_test_to_be_amplified = nb_test_to_be_amplified + get_nb_test_to_be_amplified(path_to_commit_folder)
             modes = ["assert_amplification", "input_amplification"]
             nb_test_amplified_mode = [0, 0]
             time_mode = [0, 0]
             success_mode = [0, 0]
-            #coverage_commit = get_diff_coverage_commit(path_to_commit_folder)
-            coverage_commit = 0.0
-            coverage.append(coverage_commit)
+            size_diff = diff_size.size(path_to_commit_folder + "commit_coverage_patch.diff")
             for mode in modes:
                 path_to_mode_result = path_to_commit_folder + '/' + mode + '/'
                 if os.path.isdir(path_to_mode_result):
@@ -49,7 +52,8 @@ def build_table(projects):
             gray = not gray
             print_line(
                 str(commit_json["sha"])[0:7],
-                str(coverage_commit),
+                size_diff,
+                str(round(coverage_commit, 2)),
                 get_nb_test_to_be_amplified(path_to_commit_folder),
                 nb_test_amplified_mode[0],
                 "\\cmark" if success_mode[0] == 1 else "\\xmark",
@@ -64,8 +68,8 @@ def build_table(projects):
             nb_success[0] = nb_success[0] + success_mode[0]
             nb_success[1] = nb_success[1] + success_mode[1]
 
-        #percentage_success_aampl = compute_percentage(nb_commit, nb_success[0])
-        #percentage_success_iampl = compute_percentage(nb_commit, nb_success[1])
+        # percentage_success_aampl = compute_percentage(nb_commit, nb_success[0])
+        # percentage_success_iampl = compute_percentage(nb_commit, nb_success[1])
 
         time[0] = convert_time(time[0])
         time[1] = convert_time(time[1])
@@ -77,7 +81,8 @@ def build_table(projects):
         gray = not gray
         print_line(
             '\\textsc{' + project + '}',
-            '0',
+            (0, 0),
+            round(avg(coverage), 2),
             nb_test_to_be_amplified,
             nb_test_amplified[0],
             nb_success[0],
@@ -88,11 +93,20 @@ def build_table(projects):
         )
         print '\\hline'
 
-def print_line(id, diff_coverage, number_test_to_be_amplified, number_aampl, success_mark_aampl, time_aampl, number_iampl,
+
+def avg(table):
+    if len(table) == 0:
+        return 0.0
+    return sum(table) / float(len(table))
+
+
+def print_line(id, size_diff, diff_coverage, number_test_to_be_amplified, number_aampl, success_mark_aampl, time_aampl,
+               number_iampl,
                success_mark_iampl,
                time_iampl):
-    print "\t{}\t&\t{}&\t{}\t&\t{}\t&\t{}\t&\t{}\t&\t{}\t&\t{}\t&\t{}\\\\".format(
+    print "  {}  &  {} &  {}  &  {}  &  {}  &  {}  &  {}  &  {}  &  {}  &  {}\\\\".format(
         id,
+        convert_diff_size(size_diff),
         diff_coverage,
         number_test_to_be_amplified,
         number_aampl,
@@ -103,16 +117,30 @@ def print_line(id, diff_coverage, number_test_to_be_amplified, number_aampl, suc
         time_iampl
     )
 
+
+def convert_diff_size(size_diff):
+    return '{\\color{ForestGreen}{' + \
+           str(size_diff[0]) + \
+           '\\xspace}} / {\\color{red}{' + \
+           str(size_diff[1]) + '\\xspace}}'
+
+
 def print_header():
-    print 'id\t&\tCov\t&\t\\#Test\t&\t\\#Aampl Tests\t&\tSuccess\t&\tTime(min)\t&\t\\#Iampl Tests\t&\tSuccess\t&\tTime(min)\\\\'
+    print 'id  &  SizeDiff' + convert_diff_size(('+',
+                                                 '-')) + ' &Cov  &  \\#Test  &  \\#Aampl Tests  &  Success  &  Time(min)  &  \\#Iampl Tests  &  Success  &  Time(min)\\\\'
     print '\\hline'
+
 
 def get_diff_coverage_commit(path_to_commit_folder):
     with open(path_to_commit_folder + '/commit_coverage_testsThatExecuteTheChanges_coverage.csv') as coverage_cvs:
         for line in coverage_cvs:
             if line.startswith('total;'):
                 splitted_line = line.split(';')
+                if int(splitted_line[2]) == 0:
+                    print path_to_commit_folder
+                    return -1
                 return compute_percentage(splitted_line[2], splitted_line[1])
+
 
 def compute_percentage(total, actual):
     return float(actual) / float(total) * 100.0
@@ -129,6 +157,7 @@ def is_success(path_to_mode_result):
                 # print path_to_mode_result
                 return True
     return False
+
 
 def get_nb_test_amplified(path_to_mode_result):
     nb_test_amplified = 0
