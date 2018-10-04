@@ -42,7 +42,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 10 files (2 packages).
-[INFO] Elapsed time = 1.499 secs. (6.671 files/sec, 1,778.519 srclines/sec)
+[INFO] Elapsed time = 1.65 secs. (6.061 files/sec, 1,615.758 srclines/sec)
 [INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [INFO] Clover free edition.
@@ -50,7 +50,7 @@
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 2 files (1 package).
 [INFO] 5 test methods detected.
-[INFO] Elapsed time = 0.112 secs. (17.857 files/sec, 1,589.286 srclines/sec)
+[INFO] Elapsed time = 0.185 secs. (10.811 files/sec, 962.162 srclines/sec)
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-tool-xar-plugin ---
 [INFO] Skipping Rule Enforcement.
@@ -118,10 +118,10 @@ Goal prefix is specified as: 'xar'. Maven currently expects it to be 'xwiki-comm
  T E S T S
 -------------------------------------------------------
 Running org.xwiki.tool.xar.XWikiDocumentTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.399 sec - in org.xwiki.tool.xar.XWikiDocumentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.619 sec - in org.xwiki.tool.xar.XWikiDocumentTest
 Running org.xwiki.tool.xar.FormatMojoTest
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.149 sec <<< FAILURE! - in org.xwiki.tool.xar.FormatMojoTest
-formatSpecialContentFailingWithXercesFromJDK8  Time elapsed: 0.111 sec  <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.302 sec <<< FAILURE! - in org.xwiki.tool.xar.FormatMojoTest
+formatSpecialContentFailingWithXercesFromJDK8  Time elapsed: 0.228 sec  <<< FAILURE!
 org.junit.ComparisonFailure: 
 expected:<...nel testo|{{{Questo [? un URL: http://xwiki.org}}}|Questo ? un URL: http://xwiki.org
 |Link ad un URL|{{{[http://xwiki.org]}}}|[[http://xwiki.org]]
@@ -400,8 +400,8 @@ Tests run: 5, Failures: 1, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 27.265 s
-[INFO] Finished at: 2018-10-02T06:42:46+02:00
+[INFO] Total time: 29.304 s
+[INFO] Finished at: 2018-10-02T15:55:23+02:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project xwiki-commons-tool-xar-plugin: There are test failures.
 [ERROR] 
@@ -414,7 +414,7 @@ Tests run: 5, Failures: 1, Errors: 0, Skipped: 0
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/target/clover/report'
-Done. Processed 2 packages in 3904ms (1952ms per package).
+Done. Processed 2 packages in 3369ms (1684ms per package).
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/../xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/java/org/xwiki/tool/xar/VerifyMojoTest.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/../xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/java/org/xwiki/tool/xar/VerifyMojoTest.java
 java.io.FileNotFoundException: /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/../xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/java/org/xwiki/tool/xar/VerifyMojoTest.java does not exist
@@ -422,9 +422,9 @@ java.io.FileNotFoundException: /tmp/icst-2019/september-2018/dataset/xwiki-commo
 	at spoon.compiler.SpoonResourceHelper.createResource(SpoonResourceHelper.java:83)
 	at gumtree.spoon.AstComparator.getCtType(AstComparator.java:95)
 	at gumtree.spoon.AstComparator.compare(AstComparator.java:72)
-	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getModifiedLinesPerQualifiedName(DiffTestSelectionMojo.java:147)
-	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getTestThatExecuteChanges(DiffTestSelectionMojo.java:111)
-	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.execute(DiffTestSelectionMojo.java:83)
+	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getModifiedLinesPerQualifiedName(DiffTestSelectionMojo.java:151)
+	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getTestThatExecuteChanges(DiffTestSelectionMojo.java:115)
+	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.execute(DiffTestSelectionMojo.java:87)
 	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)
@@ -450,64 +450,61 @@ java.io.FileNotFoundException: /tmp/icst-2019/september-2018/dataset/xwiki-commo
 [ERROR] Error when trying to compare /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/../xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/java/org/xwiki/tool/xar/VerifyMojoTest.java and /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/../xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-integration-tests/src/test/java/org/xwiki/tool/xar/VerifyMojoTest.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/VerifyMojo.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/VerifyMojo.java
+[info] org.xwiki.tool.xar.VerifyMojo:209 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:205 is modified.
 [info] org.xwiki.tool.xar.VerifyMojo:119 is modified.
 [info] org.xwiki.tool.xar.VerifyMojo:204 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:198 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:213 is modified.
 [info] org.xwiki.tool.xar.VerifyMojo:177 is modified.
 [info] org.xwiki.tool.xar.VerifyMojo:177 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:204 is modified.
 [info] org.xwiki.tool.xar.VerifyMojo:211 is modified.
 [info] org.xwiki.tool.xar.VerifyMojo:211 is modified.
 [info] org.xwiki.tool.xar.VerifyMojo:212 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:212 is modified.
 [info] org.xwiki.tool.xar.VerifyMojo:219 is modified.
-[info] org.xwiki.tool.xar.VerifyMojo:219 is modified.
 [info] org.xwiki.tool.xar.VerifyMojo:220 is modified.
 [info] org.xwiki.tool.xar.VerifyMojo:220 is modified.
-[info] org.xwiki.tool.xar.VerifyMojo:220 is modified.
-[info] org.xwiki.tool.xar.VerifyMojo:222 is modified.
-[info] org.xwiki.tool.xar.VerifyMojo:222 is modified.
-[info] org.xwiki.tool.xar.VerifyMojo:222 is modified.
 [info] org.xwiki.tool.xar.VerifyMojo:221 is modified.
-[info] org.xwiki.tool.xar.VerifyMojo:219 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:222 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:222 is modified.
+[info] org.xwiki.tool.xar.VerifyMojo:222 is modified.
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/internal/XWikiDocument.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/src/main/java/org/xwiki/tool/xar/internal/XWikiDocument.java
-[info] org.xwiki.tool.xar.internal.XWikiDocument:238 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:84 is modified.
 [info] org.xwiki.tool.xar.internal.XWikiDocument:202 is modified.
-[info] org.xwiki.tool.xar.internal.XWikiDocument:234 is modified.
-[info] org.xwiki.tool.xar.internal.XWikiDocument:241 is modified.
-[info] org.xwiki.tool.xar.internal.XWikiDocument:240 is modified.
-[info] org.xwiki.tool.xar.internal.XWikiDocument:240 is modified.
-[info] org.xwiki.tool.xar.internal.XWikiDocument:240 is modified.
-[info] org.xwiki.tool.xar.internal.XWikiDocument:241 is modified.
-[info] org.xwiki.tool.xar.internal.XWikiDocument:241 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:255 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:372 is modified.
 [info] org.xwiki.tool.xar.internal.XWikiDocument:243 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:241 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:240 is modified.
 [info] org.xwiki.tool.xar.internal.XWikiDocument:242 is modified.
 [info] org.xwiki.tool.xar.internal.XWikiDocument:245 is modified.
 [info] org.xwiki.tool.xar.internal.XWikiDocument:245 is modified.
-[info] org.xwiki.tool.xar.internal.XWikiDocument:245 is modified.
-[info] org.xwiki.tool.xar.internal.XWikiDocument:247 is modified.
 [info] org.xwiki.tool.xar.internal.XWikiDocument:246 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:247 is modified.
 [info] org.xwiki.tool.xar.internal.XWikiDocument:249 is modified.
 [info] org.xwiki.tool.xar.internal.XWikiDocument:249 is modified.
-[info] org.xwiki.tool.xar.internal.XWikiDocument:249 is modified.
-[info] org.xwiki.tool.xar.internal.XWikiDocument:251 is modified.
 [info] org.xwiki.tool.xar.internal.XWikiDocument:250 is modified.
+[info] org.xwiki.tool.xar.internal.XWikiDocument:251 is modified.
 [info] org.xwiki.tool.xar.internal.XWikiDocument:253 is modified.
-[info] org.xwiki.tool.xar.internal.XWikiDocument:238 covered.
 [info] org.xwiki.tool.xar.internal.XWikiDocument:202 covered.
 [info] org.xwiki.tool.xar.internal.XWikiDocument:255 covered.
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_3_848c984/commit_coverage_testsThatExecuteTheChanges.csv ...
 [INFO] org.xwiki.tool.xar.XWikiDocumentTest;createReference
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_3_848c984/commit_coverage_testsThatExecuteTheChanges_coverage.csv
-[INFO] org.xwiki.tool.xar.internal.XWikiDocument;3;14
+[INFO] org.xwiki.tool.xar.internal.XWikiDocument;2;15
 
-[INFO] total;3;14
+[INFO] total;2;15
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 45.104 s
-[INFO] Finished at: 2018-10-02T06:42:56+02:00
+[INFO] Total time: 46.212 s
+[INFO] Finished at: 2018-10-02T15:55:32+02:00
 [INFO] ------------------------------------------------------------------------
-[INFO] 2018-10-02 06:42:57 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
-[INFO] 2018-10-02 06:42:58 RepositoriesSetter - Checkout adfefecde0c2a6bbeaa85f24bde1a0cd2949daa7 revision...
-[INFO] 2018-10-02 06:42:59 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
-[INFO] 2018-10-02 06:43:00 RepositoriesSetter - Checkout e6c85fb2f0ef9dcd11d35bddddd736c68d1bfbc4 revision...
+[INFO] 2018-10-02 15:55:32 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-10-02 15:55:34 RepositoriesSetter - Checkout adfefecde0c2a6bbeaa85f24bde1a0cd2949daa7 revision...
+[INFO] 2018-10-02 15:55:35 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-10-02 15:55:35 RepositoriesSetter - Checkout e6c85fb2f0ef9dcd11d35bddddd736c68d1bfbc4 revision...

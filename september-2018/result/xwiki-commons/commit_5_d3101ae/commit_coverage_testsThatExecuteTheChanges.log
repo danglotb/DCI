@@ -42,7 +42,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 20 files (2 packages).
-[INFO] Elapsed time = 1.067 secs. (18.744 files/sec, 1,805.061 srclines/sec)
+[INFO] Elapsed time = 1.348 secs. (14.837 files/sec, 1,428.783 srclines/sec)
 [INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [INFO] Clover free edition.
@@ -50,7 +50,7 @@
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 1 file (1 package).
 [INFO] 7 test methods detected.
-[INFO] Elapsed time = 0.229 secs. (4.367 files/sec, 1,646.288 srclines/sec)
+[INFO] Elapsed time = 0.327 secs. (3.058 files/sec, 1,152.905 srclines/sec)
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-diff-api ---
 [INFO] Skipping Rule Enforcement.
@@ -118,7 +118,7 @@
  T E S T S
 -------------------------------------------------------
 Running org.xwiki.diff.internal.DefaultDiffManagerTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.514 sec - in org.xwiki.diff.internal.DefaultDiffManagerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.865 sec - in org.xwiki.diff.internal.DefaultDiffManagerTest
 
 Results :
 
@@ -127,47 +127,40 @@ Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 29.009 s
-[INFO] Finished at: 2018-10-02T06:56:27+02:00
+[INFO] Total time: 29.988 s
+[INFO] Finished at: 2018-10-02T16:09:01+02:00
 [INFO] ------------------------------------------------------------------------
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/clover/report'
-Done. Processed 2 packages in 3693ms (1846ms per package).
+Done. Processed 2 packages in 3820ms (1910ms per package).
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/src/main/java/org/xwiki/diff/internal/DefaultDiffManager.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/src/main/java/org/xwiki/diff/internal/DefaultDiffManager.java
-[info] org.xwiki.diff.internal.DefaultDiffManager:118 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:119 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:124 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:126 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:128 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:128 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManager:130 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManager:140 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:130 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:134 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:134 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManager:134 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:135 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:135 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:135 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:136 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:136 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:136 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:137 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:134 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:139 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:139 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:130 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:128 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManager:116 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManager:148 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:151 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:151 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManager:152 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:153 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:153 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:155 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:152 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:160 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:159 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:162 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:161 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:164 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:163 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:158 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManager:159 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManager:160 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManager:161 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManager:162 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManager:164 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManager:164 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:400 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:400 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:400 is modified.
@@ -175,11 +168,6 @@ Done. Processed 2 packages in 3693ms (1846ms per package).
 [info] org.xwiki.diff.internal.DefaultDiffManager:400 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:400 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:130 covered.
-[info] org.xwiki.diff.internal.DefaultDiffManager:118 covered.
-[info] org.xwiki.diff.internal.DefaultDiffManager:119 covered.
-[info] org.xwiki.diff.internal.DefaultDiffManager:124 covered.
-[info] org.xwiki.diff.internal.DefaultDiffManager:126 covered.
-[info] org.xwiki.diff.internal.DefaultDiffManager:128 covered.
 [info] org.xwiki.diff.internal.DefaultDiffManager:134 covered.
 [info] org.xwiki.diff.internal.DefaultDiffManager:139 covered.
 [info] org.xwiki.diff.internal.DefaultDiffManager:151 covered.
@@ -187,47 +175,45 @@ Done. Processed 2 packages in 3693ms (1846ms per package).
 [info] org.xwiki.diff.internal.DefaultDiffManager:155 covered.
 [info] org.xwiki.diff.internal.DefaultDiffManager:158 covered.
 [info] org.xwiki.diff.internal.DefaultDiffManager:164 covered.
-[info] org.xwiki.diff.internal.DefaultDiffManager:163 covered.
 [info] org.xwiki.diff.internal.DefaultDiffManager:400 covered.
 [info] org.xwiki.diff.internal.DefaultDiffManager:135 covered.
 [info] org.xwiki.diff.internal.DefaultDiffManager:136 covered.
 [info] org.xwiki.diff.internal.DefaultDiffManager:137 covered.
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/src/test/java/org/xwiki/diff/internal/DefaultDiffManagerTest.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/src/test/java/org/xwiki/diff/internal/DefaultDiffManagerTest.java
+[info] org.xwiki.diff.internal.DefaultDiffManagerTest:270 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManagerTest:282 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManagerTest:267 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManagerTest:267 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManagerTest:279 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManagerTest:359 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:361 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManagerTest:361 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManagerTest:364 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManagerTest:364 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:364 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:364 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:365 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:366 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManagerTest:364 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManagerTest:364 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManagerTest:368 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:368 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:368 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:371 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:371 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManagerTest:372 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:373 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManagerTest:371 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManagerTest:371 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManagerTest:375 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManagerTest:375 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:375 is modified.
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_5_d3101ae/commit_coverage_testsThatExecuteTheChanges.csv ...
 [INFO] org.xwiki.diff.internal.DefaultDiffManagerTest;testMergeStringList;testMergeCharList;testMergeWithEmptyNew;testMergeCharOnConflicts;testMergeWhenUserHasChangedAllContent
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_5_d3101ae/commit_coverage_testsThatExecuteTheChanges_coverage.csv
-[INFO] org.xwiki.diff.internal.DefaultDiffManager;18;23
+[INFO] org.xwiki.diff.internal.DefaultDiffManager;12;20
 
-[INFO] total;18;23
+[INFO] total;12;20
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 49.646 s
-[INFO] Finished at: 2018-10-02T06:56:38+02:00
+[INFO] Total time: 49.437 s
+[INFO] Finished at: 2018-10-02T16:09:13+02:00
 [INFO] ------------------------------------------------------------------------
-[INFO] 2018-10-02 06:56:39 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
-[INFO] 2018-10-02 06:56:40 RepositoriesSetter - Checkout a0e8b778741e6f6aa85c3cd0dbb6a8474641fe03 revision...
-[INFO] 2018-10-02 06:56:41 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
-[INFO] 2018-10-02 06:56:42 RepositoriesSetter - Checkout 26a5f83f6dde83e1384a1e29832f84b2dbfaa279 revision...
+[INFO] 2018-10-02 16:09:14 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-10-02 16:09:15 RepositoriesSetter - Checkout a0e8b778741e6f6aa85c3cd0dbb6a8474641fe03 revision...
+[INFO] 2018-10-02 16:09:16 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-10-02 16:09:17 RepositoriesSetter - Checkout 26a5f83f6dde83e1384a1e29832f84b2dbfaa279 revision...

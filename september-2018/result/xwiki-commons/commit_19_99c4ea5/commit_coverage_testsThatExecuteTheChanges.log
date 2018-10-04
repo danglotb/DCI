@@ -42,7 +42,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 32 files (11 packages).
-[INFO] Elapsed time = 2.142 secs. (14.939 files/sec, 1,579.832 srclines/sec)
+[INFO] Elapsed time = 2.041 secs. (15.679 files/sec, 1,658.011 srclines/sec)
 [INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [INFO] Clover free edition.
@@ -50,7 +50,7 @@
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 1 file (1 package).
 [INFO] 10 test methods detected.
-[INFO] Elapsed time = 0.114 secs. (8.772 files/sec, 1,807.018 srclines/sec)
+[INFO] Elapsed time = 0.107 secs. (9.346 files/sec, 1,925.234 srclines/sec)
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-filter-xml ---
 [INFO] 
@@ -115,7 +115,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.xwiki.filter.xml.XMLFilterTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.521 s - in org.xwiki.filter.xml.XMLFilterTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.561 s - in org.xwiki.filter.xml.XMLFilterTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -124,11 +124,11 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 33.390 s
-[INFO] Finished at: 2018-10-02T08:21:43+02:00
+[INFO] Total time: 33.024 s
+[INFO] Finished at: 2018-10-02T17:33:58+02:00
 [INFO] ------------------------------------------------------------------------
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/target/clover/report'
-Done. Processed 11 packages in 4549ms (413ms per package).
+Done. Processed 11 packages in 4861ms (441ms per package).
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/../xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-streams/xwiki-commons-filter-stream-xml/src/main/java/org/xwiki/filter/filterxml/input/FilterXMLInputProperties.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/../xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-streams/xwiki-commons-filter-stream-xml/src/main/java/org/xwiki/filter/filterxml/input/FilterXMLInputProperties.java
 java.io.FileNotFoundException: /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/../xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-streams/xwiki-commons-filter-stream-xml/src/main/java/org/xwiki/filter/filterxml/input/FilterXMLInputProperties.java does not exist
@@ -136,9 +136,9 @@ java.io.FileNotFoundException: /tmp/icst-2019/september-2018/dataset/xwiki-commo
 	at spoon.compiler.SpoonResourceHelper.createResource(SpoonResourceHelper.java:83)
 	at gumtree.spoon.AstComparator.getCtType(AstComparator.java:95)
 	at gumtree.spoon.AstComparator.compare(AstComparator.java:72)
-	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getModifiedLinesPerQualifiedName(DiffTestSelectionMojo.java:147)
-	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getTestThatExecuteChanges(DiffTestSelectionMojo.java:111)
-	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.execute(DiffTestSelectionMojo.java:83)
+	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getModifiedLinesPerQualifiedName(DiffTestSelectionMojo.java:151)
+	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getTestThatExecuteChanges(DiffTestSelectionMojo.java:115)
+	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.execute(DiffTestSelectionMojo.java:87)
 	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)
@@ -169,9 +169,9 @@ java.io.FileNotFoundException: /tmp/icst-2019/september-2018/dataset/xwiki-commo
 	at spoon.compiler.SpoonResourceHelper.createResource(SpoonResourceHelper.java:83)
 	at gumtree.spoon.AstComparator.getCtType(AstComparator.java:95)
 	at gumtree.spoon.AstComparator.compare(AstComparator.java:72)
-	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getModifiedLinesPerQualifiedName(DiffTestSelectionMojo.java:147)
-	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getTestThatExecuteChanges(DiffTestSelectionMojo.java:111)
-	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.execute(DiffTestSelectionMojo.java:83)
+	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getModifiedLinesPerQualifiedName(DiffTestSelectionMojo.java:151)
+	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getTestThatExecuteChanges(DiffTestSelectionMojo.java:115)
+	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.execute(DiffTestSelectionMojo.java:87)
 	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)
@@ -202,9 +202,9 @@ java.io.FileNotFoundException: /tmp/icst-2019/september-2018/dataset/xwiki-commo
 	at spoon.compiler.SpoonResourceHelper.createResource(SpoonResourceHelper.java:83)
 	at gumtree.spoon.AstComparator.getCtType(AstComparator.java:95)
 	at gumtree.spoon.AstComparator.compare(AstComparator.java:72)
-	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getModifiedLinesPerQualifiedName(DiffTestSelectionMojo.java:147)
-	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getTestThatExecuteChanges(DiffTestSelectionMojo.java:111)
-	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.execute(DiffTestSelectionMojo.java:83)
+	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getModifiedLinesPerQualifiedName(DiffTestSelectionMojo.java:151)
+	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getTestThatExecuteChanges(DiffTestSelectionMojo.java:115)
+	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.execute(DiffTestSelectionMojo.java:87)
 	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)
@@ -234,11 +234,9 @@ java.io.FileNotFoundException: /tmp/icst-2019/september-2018/dataset/xwiki-commo
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/src/main/java/org/xwiki/filter/xml/internal/output/AbstractXMLOutputFilterStream.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/src/main/java/org/xwiki/filter/xml/internal/output/AbstractXMLOutputFilterStream.java
 [info] org.xwiki.filter.xml.internal.output.AbstractXMLOutputFilterStream:70 is modified.
-[info] org.xwiki.filter.xml.internal.output.AbstractXMLOutputFilterStream:72 is modified.
+[info] org.xwiki.filter.xml.internal.output.AbstractXMLOutputFilterStream:70 is modified.
 [info] org.xwiki.filter.xml.internal.output.AbstractXMLOutputFilterStream:74 is modified.
 [info] org.xwiki.filter.xml.internal.output.AbstractXMLOutputFilterStream:84 is modified.
-[info] org.xwiki.filter.xml.internal.output.AbstractXMLOutputFilterStream:70 is modified.
-[info] org.xwiki.filter.xml.internal.output.AbstractXMLOutputFilterStream:70 is modified.
 [info] org.xwiki.filter.xml.internal.output.AbstractXMLOutputFilterStream:70 is modified.
 [info] org.xwiki.filter.xml.internal.output.AbstractXMLOutputFilterStream:84 is modified.
 [info] org.xwiki.filter.xml.internal.output.AbstractXMLOutputFilterStream:75 is modified.
@@ -252,52 +250,39 @@ java.io.FileNotFoundException: /tmp/icst-2019/september-2018/dataset/xwiki-commo
 [info] org.xwiki.filter.xml.internal.output.AbstractXMLOutputFilterStream:78 is modified.
 [info] org.xwiki.filter.xml.internal.output.AbstractXMLOutputFilterStream:81 is modified.
 [info] org.xwiki.filter.xml.internal.output.AbstractXMLOutputFilterStream:78 is modified.
-[info] org.xwiki.filter.xml.internal.output.AbstractXMLOutputFilterStream:79 is modified.
+[info] org.xwiki.filter.xml.internal.output.AbstractXMLOutputFilterStream:70 is modified.
 [info] org.xwiki.filter.xml.internal.output.AbstractXMLOutputFilterStream:81 is modified.
-[info] org.xwiki.filter.xml.internal.output.AbstractXMLOutputFilterStream:70 is modified.
-[info] org.xwiki.filter.xml.internal.output.AbstractXMLOutputFilterStream:70 is modified.
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/src/main/java/org/xwiki/filter/xml/internal/output/FilterStreamXMLStreamWriter.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/src/main/java/org/xwiki/filter/xml/internal/output/FilterStreamXMLStreamWriter.java
 [info] org.xwiki.filter.xml.internal.output.FilterStreamXMLStreamWriter:39 is modified.
+[info] org.xwiki.filter.xml.internal.output.FilterStreamXMLStreamWriter:55 is modified.
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/src/main/java/org/xwiki/filter/xml/internal/output/XMLOutputFilterStreamUtils.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/src/main/java/org/xwiki/filter/xml/internal/output/XMLOutputFilterStreamUtils.java
 [info] org.xwiki.filter.xml.internal.output.XMLOutputFilterStreamUtils:51 is modified.
-[info] org.xwiki.filter.xml.internal.output.XMLOutputFilterStreamUtils:51 is modified.
 [info] org.xwiki.filter.xml.internal.output.XMLOutputFilterStreamUtils:44 is modified.
+[info] org.xwiki.filter.xml.internal.output.XMLOutputFilterStreamUtils:54 is modified.
+[info] org.xwiki.filter.xml.internal.output.XMLOutputFilterStreamUtils:57 is modified.
+[info] org.xwiki.filter.xml.internal.output.XMLOutputFilterStreamUtils:54 is modified.
+[info] org.xwiki.filter.xml.internal.output.XMLOutputFilterStreamUtils:56 is modified.
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/src/main/java/org/xwiki/filter/xml/internal/parser/DefaultXMLParser.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/src/main/java/org/xwiki/filter/xml/internal/parser/DefaultXMLParser.java
-[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:428 is modified.
 [info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:80 is modified.
 [info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:430 is modified.
 [info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:253 is modified.
-[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:268 is modified.
-[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:316 is modified.
-[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:379 is modified.
-[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:379 is modified.
-[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:392 is modified.
-[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:430 is modified.
-[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:430 is modified.
 [info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:254 is modified.
-[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:269 is modified.
+[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:315 is modified.
 [info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:433 is modified.
-[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:482 is modified.
-[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:492 is modified.
-[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:500 is modified.
 [info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:482 is modified.
 [info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:483 is modified.
 [info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:492 is modified.
 [info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:493 is modified.
 [info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:500 is modified.
 [info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:501 is modified.
+[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:316 is modified.
+[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:316 is modified.
 [info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:317 is modified.
-[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:315 is modified.
-[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:428 covered.
 [info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:430 covered.
-[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:268 covered.
 [info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:316 covered.
-[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:379 covered.
-[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:392 covered.
-[info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:269 covered.
 [info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:315 covered.
 [info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:433 covered.
 [info] org.xwiki.filter.xml.internal.parser.DefaultXMLParser:317 covered.
@@ -309,18 +294,24 @@ java.io.FileNotFoundException: /tmp/icst-2019/september-2018/dataset/xwiki-commo
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/src/main/java/org/xwiki/filter/xml/internal/serializer/DefaultXMLSerializer.java
 [info] org.xwiki.filter.xml.internal.serializer.DefaultXMLSerializer:87 is modified.
 [info] org.xwiki.filter.xml.internal.serializer.DefaultXMLSerializer:59 is modified.
+[info] org.xwiki.filter.xml.internal.serializer.DefaultXMLSerializer:59 is modified.
 [info] org.xwiki.filter.xml.internal.serializer.DefaultXMLSerializer:64 is modified.
+[info] org.xwiki.filter.xml.internal.serializer.DefaultXMLSerializer:87 is modified.
 [info] org.xwiki.filter.xml.internal.serializer.DefaultXMLSerializer:87 covered.
 [info] org.xwiki.filter.xml.internal.serializer.DefaultXMLSerializer:64 covered.
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/src/test/java/org/xwiki/filter/xml/XMLFilterTest.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/src/test/java/org/xwiki/filter/xml/XMLFilterTest.java
-[info] org.xwiki.filter.xml.XMLFilterTest:79 is modified.
+[info] org.xwiki.filter.xml.XMLFilterTest:135 is modified.
+[info] org.xwiki.filter.xml.XMLFilterTest:119 is modified.
+[info] org.xwiki.filter.xml.XMLFilterTest:125 is modified.
+[info] org.xwiki.filter.xml.XMLFilterTest:131 is modified.
+[info] org.xwiki.filter.xml.XMLFilterTest:137 is modified.
+[info] org.xwiki.filter.xml.XMLFilterTest:154 is modified.
+[info] org.xwiki.filter.xml.XMLFilterTest:160 is modified.
+[info] org.xwiki.filter.xml.XMLFilterTest:191 is modified.
+[info] org.xwiki.filter.xml.XMLFilterTest:204 is modified.
 [info] org.xwiki.filter.xml.XMLFilterTest:78 is modified.
-[info] org.xwiki.filter.xml.XMLFilterTest:103 is modified.
-[info] org.xwiki.filter.xml.XMLFilterTest:102 is modified.
-[info] org.xwiki.filter.xml.XMLFilterTest:176 is modified.
-[info] org.xwiki.filter.xml.XMLFilterTest:189 is modified.
-[info] org.xwiki.filter.xml.XMLFilterTest:202 is modified.
+[info] org.xwiki.filter.xml.XMLFilterTest:79 is modified.
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/../xwiki-commons-core/xwiki-commons-xml/src/main/java/org/xwiki/xml/stax/StAXUtils.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/../xwiki-commons-core/xwiki-commons-xml/src/main/java/org/xwiki/xml/stax/StAXUtils.java
 java.io.FileNotFoundException: /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-filter/xwiki-commons-filter-xml/../xwiki-commons-core/xwiki-commons-xml/src/main/java/org/xwiki/xml/stax/StAXUtils.java does not exist
@@ -328,9 +319,9 @@ java.io.FileNotFoundException: /tmp/icst-2019/september-2018/dataset/xwiki-commo
 	at spoon.compiler.SpoonResourceHelper.createResource(SpoonResourceHelper.java:83)
 	at gumtree.spoon.AstComparator.getCtType(AstComparator.java:95)
 	at gumtree.spoon.AstComparator.compare(AstComparator.java:72)
-	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getModifiedLinesPerQualifiedName(DiffTestSelectionMojo.java:147)
-	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getTestThatExecuteChanges(DiffTestSelectionMojo.java:111)
-	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.execute(DiffTestSelectionMojo.java:83)
+	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getModifiedLinesPerQualifiedName(DiffTestSelectionMojo.java:151)
+	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.getTestThatExecuteChanges(DiffTestSelectionMojo.java:115)
+	at eu.stamp_project.diff_test_selection.DiffTestSelectionMojo.execute(DiffTestSelectionMojo.java:87)
 	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)
@@ -357,15 +348,15 @@ java.io.FileNotFoundException: /tmp/icst-2019/september-2018/dataset/xwiki-commo
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_19_99c4ea5/commit_coverage_testsThatExecuteTheChanges.csv ...
 [INFO] org.xwiki.filter.xml.XMLFilterTest;testFromSAX;testSerializeExtendedTestData;testContainer;testContainerAndChild;testContainerWithParameters;testSerializeWithNamedChild;testContainerWithNamedParameters;testContainerWithMap;testSerializeWithDefaultValue;testCustomData
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_19_99c4ea5/commit_coverage_testsThatExecuteTheChanges_coverage.csv
-[INFO] org.xwiki.filter.xml.internal.parser.DefaultXMLParser;14;19
+[INFO] org.xwiki.filter.xml.internal.parser.DefaultXMLParser;9;14
 
 [INFO] org.xwiki.filter.xml.internal.serializer.DefaultXMLSerializer;2;3
 
-[INFO] total;16;22
+[INFO] total;11;17
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 55.405 s
-[INFO] Finished at: 2018-10-02T08:21:57+02:00
+[INFO] Total time: 55.806 s
+[INFO] Finished at: 2018-10-02T17:34:12+02:00
 [INFO] ------------------------------------------------------------------------

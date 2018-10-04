@@ -26,7 +26,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/jsoup/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 68 files (8 packages).
-[INFO] Elapsed time = 6.934 secs. (9.807 files/sec, 2,607.297 srclines/sec)
+[INFO] Elapsed time = 7.091 secs. (9.59 files/sec, 2,549.57 srclines/sec)
 [INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [INFO] Clover free edition.
@@ -34,7 +34,7 @@
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 46 files (9 packages).
 [INFO] 709 test methods detected.
-[INFO] Elapsed time = 2.743 secs. (16.77 files/sec, 3,576.376 srclines/sec)
+[INFO] Elapsed time = 2.894 secs. (15.895 files/sec, 3,389.772 srclines/sec)
 [INFO] 
 [INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ jsoup ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -90,41 +90,41 @@
  T E S T S
 -------------------------------------------------------
 Running org.jsoup.select.SelectorTest
-Tests run: 62, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.418 sec
+Tests run: 62, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.412 sec
 Running org.jsoup.select.QueryParserTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
 Running org.jsoup.select.ElementsTest
-Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.48 sec
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.437 sec
 Running org.jsoup.select.CssTest
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.525 sec
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.544 sec
 Running org.jsoup.select.TraversorTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
 Running org.jsoup.integration.ParseTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.692 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.761 sec
 Running org.jsoup.integration.ConnectTest
-2018-10-02 02:56:49.988:INFO::main: Logging initialized @5093ms
-2018-10-02 02:56:50.126:INFO:oejs.Server:main: jetty-9.2.22.v20170606
-2018-10-02 02:56:50.330:INFO:oejs.ServerConnector:main: Started ServerConnector@38d9fd64{HTTP/1.1}{0.0.0.0:49712}
-2018-10-02 02:56:50.331:INFO:oejs.Server:main: Started @5437ms
-2018-10-02 02:56:52.422:INFO:oejs.ServerConnector:main: Stopped ServerConnector@38d9fd64{HTTP/1.1}{0.0.0.0:0}
-Tests run: 29, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 2.62 sec
+2018-10-02 12:08:35.943:INFO::main: Logging initialized @5274ms
+2018-10-02 12:08:36.121:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2018-10-02 12:08:36.321:INFO:oejs.ServerConnector:main: Started ServerConnector@4960bfeb{HTTP/1.1}{0.0.0.0:46949}
+2018-10-02 12:08:36.323:INFO:oejs.Server:main: Started @5653ms
+2018-10-02 12:08:38.454:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4960bfeb{HTTP/1.1}{0.0.0.0:0}
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 2.697 sec
 Running org.jsoup.integration.UrlConnectTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
 Running org.jsoup.parser.ParserSettingsTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
 Running org.jsoup.parser.HtmlTreeBuilderStateTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.jsoup.parser.TokeniserStateTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.211 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.223 sec
 Running org.jsoup.parser.TagTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
 Running org.jsoup.parser.CharacterReaderTest
-Tests run: 22, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.059 sec
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.063 sec
 Running org.jsoup.parser.XmlTreeBuilderTest
-Tests run: 22, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.128 sec
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.126 sec
 Running org.jsoup.parser.HtmlParserTest
-Tests run: 128, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 6.68 sec <<< FAILURE!
-handlesDeepStack(org.jsoup.parser.HtmlParserTest)  Time elapsed: 4.766 sec  <<< FAILURE!
+Tests run: 128, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 6.814 sec <<< FAILURE!
+handlesDeepStack(org.jsoup.parser.HtmlParserTest)  Time elapsed: 4.896 sec  <<< FAILURE!
 java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -161,7 +161,7 @@ java.lang.AssertionError
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-handlesManyChildren(org.jsoup.parser.HtmlParserTest)  Time elapsed: 1.155 sec  <<< FAILURE!
+handlesManyChildren(org.jsoup.parser.HtmlParserTest)  Time elapsed: 1.164 sec  <<< FAILURE!
 java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -199,43 +199,43 @@ java.lang.AssertionError
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
 Running org.jsoup.parser.TokeniserTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.23 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.282 sec
 Running org.jsoup.parser.HtmlTreeBuilderTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
 Running org.jsoup.parser.AttributeParseTest
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
 Running org.jsoup.parser.TokenQueueTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
 Running org.jsoup.nodes.ElementTest
-Tests run: 91, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.4 sec
+Tests run: 91, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.471 sec
 Running org.jsoup.nodes.DocumentTypeTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
 Running org.jsoup.nodes.EntitiesTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 sec
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 sec
 Running org.jsoup.nodes.AttributesTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
 Running org.jsoup.nodes.NodeTest
-Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 sec
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec
 Running org.jsoup.nodes.DocumentTest
-Tests run: 29, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.371 sec
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.344 sec
 Running org.jsoup.nodes.FormElementTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec
 Running org.jsoup.nodes.AttributeTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
 Running org.jsoup.nodes.TextNodeTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
 Running org.jsoup.internal.ConstrainableInputStreamTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec
 Running org.jsoup.safety.CleanerTest
-Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.268 sec
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.24 sec
 Running org.jsoup.helper.DataUtilTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 sec
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 sec
 Running org.jsoup.helper.W3CDomTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.647 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.628 sec
 Running org.jsoup.helper.StringUtilTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
 Running org.jsoup.helper.HttpConnectionTest
-Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec
 
 Results :
 
@@ -247,8 +247,8 @@ Tests run: 663, Failures: 2, Errors: 0, Skipped: 11
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 01:06 min
-[INFO] Finished at: 2018-10-02T02:57:02+02:00
+[INFO] Total time: 01:05 min
+[INFO] Finished at: 2018-10-02T12:08:48+02:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project jsoup: There are test failures.
 [ERROR] 
@@ -261,27 +261,24 @@ Tests run: 663, Failures: 2, Errors: 0, Skipped: 11
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/jsoup/target/clover/report'
-Done. Processed 10 packages in 26227ms (2622ms per package).
+Done. Processed 10 packages in 24757ms (2475ms per package).
 [INFO] /tmp/icst-2019/september-2018/dataset/jsoup/src/main/java/org/jsoup/helper/HttpConnection.java
 [INFO] /tmp/icst-2019/september-2018/dataset/jsoup_parent/src/main/java/org/jsoup/helper/HttpConnection.java
+[info] org.jsoup.helper.HttpConnection:743 is modified.
 [info] org.jsoup.helper.HttpConnection:743 is modified.
 [info] org.jsoup.helper.HttpConnection:743 covered.
 [INFO] /tmp/icst-2019/september-2018/dataset/jsoup/src/test/java/org/jsoup/integration/ConnectTest.java
 [INFO] /tmp/icst-2019/september-2018/dataset/jsoup_parent/src/test/java/org/jsoup/integration/ConnectTest.java
-[info] org.jsoup.integration.ConnectTest:405 is modified.
-[info] org.jsoup.integration.ConnectTest:420 is modified.
 [info] org.jsoup.integration.ConnectTest:83 is modified.
-[info] org.jsoup.integration.ConnectTest:85 is modified.
-[info] org.jsoup.integration.ConnectTest:85 is modified.
-[info] org.jsoup.integration.ConnectTest:85 is modified.
+[info] org.jsoup.integration.ConnectTest:402 is modified.
 [info] org.jsoup.integration.ConnectTest:85 is modified.
 [info] org.jsoup.integration.ConnectTest:86 is modified.
+[info] org.jsoup.integration.ConnectTest:86 is modified.
+[info] org.jsoup.integration.ConnectTest:423 is modified.
 [info] org.jsoup.integration.ConnectTest:424 is modified.
 [info] org.jsoup.integration.ConnectTest:424 is modified.
 [info] org.jsoup.integration.ConnectTest:424 is modified.
 [info] org.jsoup.integration.ConnectTest:424 is modified.
-[info] org.jsoup.integration.ConnectTest:424 is modified.
-[info] org.jsoup.integration.ConnectTest:428 is modified.
 [info] org.jsoup.integration.ConnectTest:428 is modified.
 [info] org.jsoup.integration.ConnectTest:428 is modified.
 [info] org.jsoup.integration.ConnectTest:429 is modified.
@@ -289,25 +286,18 @@ Done. Processed 10 packages in 26227ms (2622ms per package).
 [info] org.jsoup.integration.ConnectTest:431 is modified.
 [info] org.jsoup.integration.ConnectTest:431 is modified.
 [info] org.jsoup.integration.ConnectTest:435 is modified.
-[info] org.jsoup.integration.ConnectTest:435 is modified.
 [info] org.jsoup.integration.ConnectTest:437 is modified.
 [info] org.jsoup.integration.ConnectTest:437 is modified.
-[info] org.jsoup.integration.ConnectTest:437 is modified.
-[info] org.jsoup.integration.ConnectTest:437 is modified.
+[info] org.jsoup.integration.ConnectTest:439 is modified.
 [info] org.jsoup.integration.ConnectTest:440 is modified.
 [info] org.jsoup.integration.ConnectTest:440 is modified.
 [info] org.jsoup.integration.ConnectTest:440 is modified.
 [info] org.jsoup.integration.ConnectTest:441 is modified.
-[info] org.jsoup.integration.ConnectTest:436 is modified.
 [info] org.jsoup.integration.ConnectTest:443 is modified.
 [info] org.jsoup.integration.ConnectTest:447 is modified.
 [info] org.jsoup.integration.ConnectTest:447 is modified.
 [info] org.jsoup.integration.ConnectTest:447 is modified.
 [info] org.jsoup.integration.ConnectTest:447 is modified.
-[info] org.jsoup.integration.ConnectTest:447 is modified.
-[info] org.jsoup.integration.ConnectTest:447 is modified.
-[info] org.jsoup.integration.ConnectTest:447 is modified.
-[info] org.jsoup.integration.ConnectTest:452 is modified.
 [info] org.jsoup.integration.ConnectTest:452 is modified.
 [info] org.jsoup.integration.ConnectTest:453 is modified.
 [info] org.jsoup.integration.ConnectTest:453 is modified.
@@ -316,16 +306,7 @@ Done. Processed 10 packages in 26227ms (2622ms per package).
 [info] org.jsoup.integration.ConnectTest:458 is modified.
 [info] org.jsoup.integration.ConnectTest:458 is modified.
 [info] org.jsoup.integration.ConnectTest:458 is modified.
-[info] org.jsoup.integration.ConnectTest:458 is modified.
-[info] org.jsoup.integration.ConnectTest:458 is modified.
-[info] org.jsoup.integration.ConnectTest:458 is modified.
-[info] org.jsoup.integration.ConnectTest:458 is modified.
-[info] org.jsoup.integration.ConnectTest:458 is modified.
-[info] org.jsoup.integration.ConnectTest:464 is modified.
-[info] org.jsoup.integration.ConnectTest:464 is modified.
 [info] org.jsoup.integration.ConnectTest:465 is modified.
-[info] org.jsoup.integration.ConnectTest:465 is modified.
-[info] org.jsoup.integration.ConnectTest:466 is modified.
 [info] org.jsoup.integration.ConnectTest:466 is modified.
 [WARNING] Could not match /src/test/java/org/jsoup/integration/servlets/RedirectServlet.java and -0,0
 [INFO] /tmp/icst-2019/september-2018/dataset/jsoup/src/test/java/org/jsoup/integration/servlets/SlowRider.java
@@ -340,10 +321,10 @@ Done. Processed 10 packages in 26227ms (2622ms per package).
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 01:51 min
-[INFO] Finished at: 2018-10-02T02:57:40+02:00
+[INFO] Total time: 01:50 min
+[INFO] Finished at: 2018-10-02T12:09:26+02:00
 [INFO] ------------------------------------------------------------------------
-[INFO] 2018-10-02 02:57:40 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/jsoup} Cleaning local repository...
-[INFO] 2018-10-02 02:57:41 RepositoriesSetter - Checkout f1b885d238d8576d91d71a09f8658358dd846921 revision...
-[INFO] 2018-10-02 02:57:41 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/jsoup_parent} Cleaning local repository...
-[INFO] 2018-10-02 02:57:41 RepositoriesSetter - Checkout d2fb53fd1ca0e06d877c8e9b8cd5da897c0d6618 revision...
+[INFO] 2018-10-02 12:09:27 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/jsoup} Cleaning local repository...
+[INFO] 2018-10-02 12:09:27 RepositoriesSetter - Checkout f1b885d238d8576d91d71a09f8658358dd846921 revision...
+[INFO] 2018-10-02 12:09:27 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/jsoup_parent} Cleaning local repository...
+[INFO] 2018-10-02 12:09:27 RepositoriesSetter - Checkout d2fb53fd1ca0e06d877c8e9b8cd5da897c0d6618 revision...

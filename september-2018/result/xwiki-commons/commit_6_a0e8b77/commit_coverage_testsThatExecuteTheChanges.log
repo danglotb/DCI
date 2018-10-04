@@ -42,7 +42,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 20 files (2 packages).
-[INFO] Elapsed time = 1.126 secs. (17.762 files/sec, 1,693.606 srclines/sec)
+[INFO] Elapsed time = 1.253 secs. (15.962 files/sec, 1,521.947 srclines/sec)
 [INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [INFO] Clover free edition.
@@ -50,7 +50,7 @@
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 1 file (1 package).
 [INFO] 7 test methods detected.
-[INFO] Elapsed time = 0.23 secs. (4.348 files/sec, 1,639.13 srclines/sec)
+[INFO] Elapsed time = 0.214 secs. (4.673 files/sec, 1,761.682 srclines/sec)
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-diff-api ---
 [INFO] Skipping Rule Enforcement.
@@ -118,7 +118,7 @@
  T E S T S
 -------------------------------------------------------
 Running org.xwiki.diff.internal.DefaultDiffManagerTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.588 sec - in org.xwiki.diff.internal.DefaultDiffManagerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.533 sec - in org.xwiki.diff.internal.DefaultDiffManagerTest
 
 Results :
 
@@ -127,24 +127,22 @@ Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 29.764 s
-[INFO] Finished at: 2018-10-02T07:02:55+02:00
+[INFO] Total time: 29.369 s
+[INFO] Finished at: 2018-10-02T16:15:21+02:00
 [INFO] ------------------------------------------------------------------------
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/target/clover/report'
-Done. Processed 2 packages in 3821ms (1910ms per package).
+Done. Processed 2 packages in 3993ms (1996ms per package).
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/src/main/java/org/xwiki/diff/internal/DefaultDiffManager.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/src/main/java/org/xwiki/diff/internal/DefaultDiffManager.java
 [info] org.xwiki.diff.internal.DefaultDiffManager:190 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManager:190 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:191 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:191 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:191 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:192 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:192 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:192 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:194 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:195 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:196 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManager:190 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManager:380 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:381 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:381 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManager:381 is modified.
@@ -156,44 +154,42 @@ Done. Processed 2 packages in 3821ms (1910ms per package).
 [info] org.xwiki.diff.internal.DefaultDiffManager:192 covered.
 [info] org.xwiki.diff.internal.DefaultDiffManager:194 covered.
 [info] org.xwiki.diff.internal.DefaultDiffManager:195 covered.
-[info] org.xwiki.diff.internal.DefaultDiffManager:196 covered.
 [info] org.xwiki.diff.internal.DefaultDiffManager:381 covered.
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/src/test/java/org/xwiki/diff/internal/DefaultDiffManagerTest.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-diff/xwiki-commons-diff-api/src/test/java/org/xwiki/diff/internal/DefaultDiffManagerTest.java
+[info] org.xwiki.diff.internal.DefaultDiffManagerTest:270 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManagerTest:282 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManagerTest:267 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManagerTest:267 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManagerTest:279 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManagerTest:359 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:361 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManagerTest:361 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManagerTest:364 is modified.
+[info] org.xwiki.diff.internal.DefaultDiffManagerTest:364 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:364 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:364 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:365 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:366 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManagerTest:364 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManagerTest:364 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManagerTest:368 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:368 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:368 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:371 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:371 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManagerTest:372 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:373 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManagerTest:371 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManagerTest:371 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManagerTest:375 is modified.
-[info] org.xwiki.diff.internal.DefaultDiffManagerTest:375 is modified.
 [info] org.xwiki.diff.internal.DefaultDiffManagerTest:375 is modified.
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_6_a0e8b77/commit_coverage_testsThatExecuteTheChanges.csv ...
 [INFO] org.xwiki.diff.internal.DefaultDiffManagerTest;testMergeStringList;testMergeCharList;testMergeWithEmptyNew;testMergeCharOnConflicts;testMergeWhenUserHasChangedAllContent
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_6_a0e8b77/commit_coverage_testsThatExecuteTheChanges_coverage.csv
-[INFO] org.xwiki.diff.internal.DefaultDiffManager;7;7
+[INFO] org.xwiki.diff.internal.DefaultDiffManager;6;7
 
-[INFO] total;7;7
+[INFO] total;6;7
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 49.220 s
-[INFO] Finished at: 2018-10-02T07:03:06+02:00
+[INFO] Total time: 48.432 s
+[INFO] Finished at: 2018-10-02T16:15:33+02:00
 [INFO] ------------------------------------------------------------------------
-[INFO] 2018-10-02 07:03:07 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
-[INFO] 2018-10-02 07:03:09 RepositoriesSetter - Checkout 78ff0991d97c3148fc8c43aa5bd9e16b089323f0 revision...
-[INFO] 2018-10-02 07:03:10 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
-[INFO] 2018-10-02 07:03:11 RepositoriesSetter - Checkout c37ead5f9152df88c17a854afc5f2ac89e9a3036 revision...
+[INFO] 2018-10-02 16:15:34 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-10-02 16:15:35 RepositoriesSetter - Checkout 78ff0991d97c3148fc8c43aa5bd9e16b089323f0 revision...
+[INFO] 2018-10-02 16:15:36 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-10-02 16:15:37 RepositoriesSetter - Checkout c37ead5f9152df88c17a854afc5f2ac89e9a3036 revision...

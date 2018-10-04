@@ -42,7 +42,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-xml/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 26 files (8 packages).
-[INFO] Elapsed time = 2.107 secs. (12.34 files/sec, 2,074.039 srclines/sec)
+[INFO] Elapsed time = 1.93 secs. (13.472 files/sec, 2,264.249 srclines/sec)
 [INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [INFO] Clover free edition.
@@ -50,7 +50,7 @@
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 4 files (4 packages).
 [INFO] 47 test methods detected.
-[INFO] Elapsed time = 0.584 secs. (6.849 files/sec, 1,472.603 srclines/sec)
+[INFO] Elapsed time = 0.448 secs. (8.929 files/sec, 1,919.643 srclines/sec)
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-xml ---
 [INFO] Skipping Rule Enforcement.
@@ -119,13 +119,13 @@
  T E S T S
 -------------------------------------------------------
 Running org.xwiki.xml.html.HTMLUtilsTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.289 sec - in org.xwiki.xml.html.HTMLUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.786 sec - in org.xwiki.xml.html.HTMLUtilsTest
 Running org.xwiki.xml.XMLUtilsTest
-Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.194 sec - in org.xwiki.xml.XMLUtilsTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 sec - in org.xwiki.xml.XMLUtilsTest
 Running org.xwiki.xml.internal.html.DefaultHTMLCleanerTest
-Tests run: 22, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 2.42 sec - in org.xwiki.xml.internal.html.DefaultHTMLCleanerTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 1.735 sec - in org.xwiki.xml.internal.html.DefaultHTMLCleanerTest
 Running org.xwiki.xml.stax.StAXUtilsTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.164 sec - in org.xwiki.xml.stax.StAXUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.951 sec - in org.xwiki.xml.stax.StAXUtilsTest
 
 Results :
 
@@ -134,38 +134,33 @@ Tests run: 49, Failures: 0, Errors: 0, Skipped: 2
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 36.499 s
-[INFO] Finished at: 2018-10-02T07:15:34+02:00
+[INFO] Total time: 34.062 s
+[INFO] Finished at: 2018-10-02T16:28:03+02:00
 [INFO] ------------------------------------------------------------------------
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-xml/target/clover/report'
-Done. Processed 8 packages in 5279ms (659ms per package).
+Done. Processed 8 packages in 5786ms (723ms per package).
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-xml/src/main/java/org/xwiki/xml/internal/html/filter/BodyFilter.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-xml/src/main/java/org/xwiki/xml/internal/html/filter/BodyFilter.java
 [info] org.xwiki.xml.internal.html.filter.BodyFilter:72 is modified.
+[info] org.xwiki.xml.internal.html.filter.BodyFilter:101 is modified.
 [info] org.xwiki.xml.internal.html.filter.BodyFilter:81 is modified.
-[info] org.xwiki.xml.internal.html.filter.BodyFilter:81 is modified.
 [info] org.xwiki.xml.internal.html.filter.BodyFilter:79 is modified.
-[info] org.xwiki.xml.internal.html.filter.BodyFilter:93 is modified.
-[info] org.xwiki.xml.internal.html.filter.BodyFilter:79 is modified.
-[info] org.xwiki.xml.internal.html.filter.BodyFilter:79 is modified.
-[info] org.xwiki.xml.internal.html.filter.BodyFilter:80 is modified.
-[info] org.xwiki.xml.internal.html.filter.BodyFilter:83 is modified.
 [info] org.xwiki.xml.internal.html.filter.BodyFilter:82 is modified.
-[info] org.xwiki.xml.internal.html.filter.BodyFilter:80 is modified.
 [info] org.xwiki.xml.internal.html.filter.BodyFilter:86 is modified.
 [info] org.xwiki.xml.internal.html.filter.BodyFilter:90 is modified.
-[info] org.xwiki.xml.internal.html.filter.BodyFilter:90 is modified.
-[info] org.xwiki.xml.internal.html.filter.BodyFilter:101 is modified.
+[info] org.xwiki.xml.internal.html.filter.BodyFilter:80 is modified.
+[info] org.xwiki.xml.internal.html.filter.BodyFilter:80 is modified.
+[info] org.xwiki.xml.internal.html.filter.BodyFilter:83 is modified.
+[info] org.xwiki.xml.internal.html.filter.BodyFilter:89 is modified.
 [info] org.xwiki.xml.internal.html.filter.BodyFilter:72 covered.
 [info] org.xwiki.xml.internal.html.filter.BodyFilter:101 covered.
+[info] org.xwiki.xml.internal.html.filter.BodyFilter:89 covered.
 [info] org.xwiki.xml.internal.html.filter.BodyFilter:81 covered.
 [info] org.xwiki.xml.internal.html.filter.BodyFilter:79 covered.
 [info] org.xwiki.xml.internal.html.filter.BodyFilter:82 covered.
 [info] org.xwiki.xml.internal.html.filter.BodyFilter:86 covered.
 [info] org.xwiki.xml.internal.html.filter.BodyFilter:90 covered.
 [info] org.xwiki.xml.internal.html.filter.BodyFilter:80 covered.
-[info] org.xwiki.xml.internal.html.filter.BodyFilter:93 covered.
-[info] org.xwiki.xml.internal.html.filter.BodyFilter:89 covered.
 [info] org.xwiki.xml.internal.html.filter.BodyFilter:83 covered.
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-xml/src/test/java/org/xwiki/xml/internal/html/DefaultHTMLCleanerTest.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-xml/src/test/java/org/xwiki/xml/internal/html/DefaultHTMLCleanerTest.java
@@ -175,20 +170,20 @@ Done. Processed 8 packages in 5279ms (659ms per package).
 [info] org.xwiki.xml.internal.html.DefaultHTMLCleanerTest:424 is modified.
 [info] org.xwiki.xml.internal.html.DefaultHTMLCleanerTest:426 is modified.
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_8_1b79714/commit_coverage_testsThatExecuteTheChanges.csv ...
-[INFO] org.xwiki.xml.internal.html.DefaultHTMLCleanerTest;convertImplicitParagraphs;explicitFilterList;convertImageAlignment;specialCharacters;cleanEmptyDIV;fullXHTMLHeader;scriptAndCData;verifySpanIsExpanded;duplicateIds;verifyLegendTagNotStripped;restrictedHtml;closeUnbalancedTags;elementExpansion;cleanNonXHTMLLists;verifyEntitiesAreNotBroken;conversionsFromHTML;cleanSVGTags;verifyIFRAMECleaning;styleAndCData;verifyExternalLinksAreSecure
-org.xwiki.xml.html.HTMLUtilsTest;testStripTopLevelParagraph;testStripHTMLEnvelope
+[INFO] org.xwiki.xml.html.HTMLUtilsTest;testStripTopLevelParagraph;testStripHTMLEnvelope
+org.xwiki.xml.internal.html.DefaultHTMLCleanerTest;convertImplicitParagraphs;explicitFilterList;cleanEmptyDIV;fullXHTMLHeader;specialCharacters;convertImageAlignment;scriptAndCData;verifySpanIsExpanded;verifyLegendTagNotStripped;restrictedHtml;duplicateIds;closeUnbalancedTags;cleanNonXHTMLLists;elementExpansion;verifyEntitiesAreNotBroken;conversionsFromHTML;verifyIFRAMECleaning;cleanSVGTags;verifyExternalLinksAreSecure;styleAndCData
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_8_1b79714/commit_coverage_testsThatExecuteTheChanges_coverage.csv
-[INFO] org.xwiki.xml.internal.html.filter.BodyFilter;11;10
+[INFO] org.xwiki.xml.internal.html.filter.BodyFilter;10;10
 
-[INFO] total;11;10
+[INFO] total;10;10
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 55.620 s
-[INFO] Finished at: 2018-10-02T07:15:45+02:00
+[INFO] Total time: 54.172 s
+[INFO] Finished at: 2018-10-02T16:28:15+02:00
 [INFO] ------------------------------------------------------------------------
-[INFO] 2018-10-02 07:15:46 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
-[INFO] 2018-10-02 07:15:47 RepositoriesSetter - Checkout 6dc90595fb844f143b81c2cd314e5f872a5c9b62 revision...
-[INFO] 2018-10-02 07:15:48 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
-[INFO] 2018-10-02 07:15:49 RepositoriesSetter - Checkout 7b9ed5a88b7d2cfe76bb372a0cac1f9553210194 revision...
+[INFO] 2018-10-02 16:28:15 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-10-02 16:28:17 RepositoriesSetter - Checkout 6dc90595fb844f143b81c2cd314e5f872a5c9b62 revision...
+[INFO] 2018-10-02 16:28:18 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-10-02 16:28:18 RepositoriesSetter - Checkout 7b9ed5a88b7d2cfe76bb372a0cac1f9553210194 revision...

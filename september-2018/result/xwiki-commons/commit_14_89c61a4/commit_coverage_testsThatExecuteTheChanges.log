@@ -41,7 +41,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 65 files (8 packages).
-[INFO] Elapsed time = 2.81 secs. (23.132 files/sec, 2,575.089 srclines/sec)
+[INFO] Elapsed time = 2.967 secs. (21.908 files/sec, 2,438.827 srclines/sec)
 [INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [INFO] Clover free edition.
@@ -49,7 +49,7 @@
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 15 files (3 packages).
 [INFO] 56 test methods detected.
-[INFO] Elapsed time = 1.22 secs. (12.295 files/sec, 1,747.541 srclines/sec)
+[INFO] Elapsed time = 1.231 secs. (12.185 files/sec, 1,731.925 srclines/sec)
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-job ---
 [INFO] Skipping Rule Enforcement.
@@ -251,12 +251,12 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.xwiki.job.internal.xstream.SafeXStreamTest
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.799 s - in org.xwiki.job.internal.xstream.SafeXStreamTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.342 s - in org.xwiki.job.internal.xstream.SafeXStreamTest
 [INFO] Running org.xwiki.job.internal.xstream.XStreamUtilsTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.xwiki.job.internal.xstream.XStreamUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.xwiki.job.internal.xstream.XStreamUtilsTest
 [INFO] Running org.xwiki.job.internal.DefaultJobStatusStoreTest
-[ERROR] Tests run: 7, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 2.161 s <<< FAILURE! - in org.xwiki.job.internal.DefaultJobStatusStoreTest
-[ERROR] getJobStatusInWrongPlaceAndWithInvalidLogArgument(org.xwiki.job.internal.DefaultJobStatusStoreTest)  Time elapsed: 1.713 s  <<< ERROR!
+[ERROR] Tests run: 7, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 2.131 s <<< FAILURE! - in org.xwiki.job.internal.DefaultJobStatusStoreTest
+[ERROR] getJobStatusInWrongPlaceAndWithInvalidLogArgument(org.xwiki.job.internal.DefaultJobStatusStoreTest)  Time elapsed: 1.709 s  <<< ERROR!
 java.lang.NullPointerException
 	at org.xwiki.job.internal.DefaultJobStatusStoreTest.__CLR4_2_0kykw521f4(DefaultJobStatusStoreTest.java:116)
 	at org.xwiki.job.internal.DefaultJobStatusStoreTest.getJobStatusInWrongPlaceAndWithInvalidLogArgument(DefaultJobStatusStoreTest.java:112)
@@ -287,7 +287,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 
-[ERROR] getJobStatusInOldPlace(org.xwiki.job.internal.DefaultJobStatusStoreTest)  Time elapsed: 0.036 s  <<< FAILURE!
+[ERROR] getJobStatusInOldPlace(org.xwiki.job.internal.DefaultJobStatusStoreTest)  Time elapsed: 0.01 s  <<< FAILURE!
 java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -323,17 +323,17 @@ java.lang.AssertionError
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 
 [INFO] Running org.xwiki.job.internal.DefaultJobManagerTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 s - in org.xwiki.job.internal.DefaultJobManagerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 s - in org.xwiki.job.internal.DefaultJobManagerTest
 [INFO] Running org.xwiki.job.internal.DefaultJobExecutorTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 s - in org.xwiki.job.internal.DefaultJobExecutorTest
 [INFO] Running org.xwiki.job.internal.JobStatusSerializerTest
-[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.768 s - in org.xwiki.job.internal.JobStatusSerializerTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.747 s - in org.xwiki.job.internal.JobStatusSerializerTest
 [INFO] Running org.xwiki.job.internal.DefaultJobProgressTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.296 s - in org.xwiki.job.internal.DefaultJobProgressTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.29 s - in org.xwiki.job.internal.DefaultJobProgressTest
 [INFO] Running org.xwiki.job.internal.DefaultJobStatusTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.212 s - in org.xwiki.job.internal.DefaultJobStatusTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.21 s - in org.xwiki.job.internal.DefaultJobStatusTest
 [INFO] Running org.xwiki.job.internal.DefaultRequestTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.xwiki.job.internal.DefaultRequestTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.xwiki.job.internal.DefaultRequestTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -347,8 +347,8 @@ java.lang.AssertionError
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 39.612 s
-[INFO] Finished at: 2018-10-02T07:48:37+02:00
+[INFO] Total time: 39.326 s
+[INFO] Finished at: 2018-10-02T17:00:40+02:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20:test (default-test) on project xwiki-commons-job: There are test failures.
 [ERROR] 
@@ -362,21 +362,19 @@ java.lang.AssertionError
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/report'
-Done. Processed 9 packages in 7501ms (833ms per package).
+Done. Processed 9 packages in 6967ms (774ms per package).
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobStatusStore.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobStatusStore.java
+[info] org.xwiki.job.internal.DefaultJobStatusStore:297 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:299 is modified.
+[info] org.xwiki.job.internal.DefaultJobStatusStore:145 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:144 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:146 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:302 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStore:151 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:152 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStore:144 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStore:144 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:145 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:301 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStore:302 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStore:302 is modified.
+[info] org.xwiki.job.internal.DefaultJobStatusStore:301 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:302 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:301 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:299 covered.
@@ -394,9 +392,9 @@ Done. Processed 9 packages in 7501ms (833ms per package).
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
 [INFO] Total time: 01:00 min
-[INFO] Finished at: 2018-10-02T07:48:50+02:00
+[INFO] Finished at: 2018-10-02T17:00:54+02:00
 [INFO] ------------------------------------------------------------------------
-[INFO] 2018-10-02 07:48:50 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
-[INFO] 2018-10-02 07:48:52 RepositoriesSetter - Checkout b2dc094ca1dc26608541fc9ae32d8726fe3842c3 revision...
-[INFO] 2018-10-02 07:48:54 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
-[INFO] 2018-10-02 07:48:54 RepositoriesSetter - Checkout fa9bd1125ed67dbaea717576313bd88268093630 revision...
+[INFO] 2018-10-02 17:00:54 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-10-02 17:00:56 RepositoriesSetter - Checkout b2dc094ca1dc26608541fc9ae32d8726fe3842c3 revision...
+[INFO] 2018-10-02 17:00:57 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-10-02 17:00:58 RepositoriesSetter - Checkout fa9bd1125ed67dbaea717576313bd88268093630 revision...

@@ -42,7 +42,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 65 files (8 packages).
-[INFO] Elapsed time = 3.09 secs. (21.036 files/sec, 2,342.718 srclines/sec)
+[INFO] Elapsed time = 2.695 secs. (24.119 files/sec, 2,686.085 srclines/sec)
 [INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [INFO] Clover free edition.
@@ -50,7 +50,7 @@
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 15 files (3 packages).
 [INFO] 56 test methods detected.
-[INFO] Elapsed time = 1.248 secs. (12.019 files/sec, 1,709.936 srclines/sec)
+[INFO] Elapsed time = 1.16 secs. (12.931 files/sec, 1,839.655 srclines/sec)
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-job ---
 [INFO] Skipping Rule Enforcement.
@@ -252,23 +252,23 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.xwiki.job.internal.xstream.SafeXStreamTest
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.278 s - in org.xwiki.job.internal.xstream.SafeXStreamTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.834 s - in org.xwiki.job.internal.xstream.SafeXStreamTest
 [INFO] Running org.xwiki.job.internal.xstream.XStreamUtilsTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.xwiki.job.internal.xstream.XStreamUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.xwiki.job.internal.xstream.XStreamUtilsTest
 [INFO] Running org.xwiki.job.internal.DefaultJobStatusStoreTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.275 s - in org.xwiki.job.internal.DefaultJobStatusStoreTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.133 s - in org.xwiki.job.internal.DefaultJobStatusStoreTest
 [INFO] Running org.xwiki.job.internal.DefaultJobManagerTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 s - in org.xwiki.job.internal.DefaultJobManagerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 s - in org.xwiki.job.internal.DefaultJobManagerTest
 [INFO] Running org.xwiki.job.internal.DefaultJobExecutorTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 s - in org.xwiki.job.internal.DefaultJobExecutorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 s - in org.xwiki.job.internal.DefaultJobExecutorTest
 [INFO] Running org.xwiki.job.internal.JobStatusSerializerTest
-[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.744 s - in org.xwiki.job.internal.JobStatusSerializerTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.726 s - in org.xwiki.job.internal.JobStatusSerializerTest
 [INFO] Running org.xwiki.job.internal.DefaultJobProgressTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.287 s - in org.xwiki.job.internal.DefaultJobProgressTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 s - in org.xwiki.job.internal.DefaultJobProgressTest
 [INFO] Running org.xwiki.job.internal.DefaultJobStatusTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.235 s - in org.xwiki.job.internal.DefaultJobStatusTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.221 s - in org.xwiki.job.internal.DefaultJobStatusTest
 [INFO] Running org.xwiki.job.internal.DefaultRequestTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.xwiki.job.internal.DefaultRequestTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.xwiki.job.internal.DefaultRequestTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -277,35 +277,27 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 38.165 s
-[INFO] Finished at: 2018-10-02T07:39:22+02:00
+[INFO] Total time: 39.701 s
+[INFO] Finished at: 2018-10-02T16:51:27+02:00
 [INFO] ------------------------------------------------------------------------
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/target/clover/report'
-Done. Processed 9 packages in 6709ms (745ms per package).
+Done. Processed 9 packages in 6749ms (749ms per package).
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobStatusStore.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/src/main/java/org/xwiki/job/internal/DefaultJobStatusStore.java
-[info] org.xwiki.job.internal.DefaultJobStatusStore:145 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStore:301 is modified.
+[info] org.xwiki.job.internal.DefaultJobStatusStore:297 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:301 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:154 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:154 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:302 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStore:152 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:150 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:146 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStore:146 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStore:146 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStore:148 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStore:148 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStore:148 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStore:148 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStore:149 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStore:150 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStore:149 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:163 is modified.
+[info] org.xwiki.job.internal.DefaultJobStatusStore:148 is modified.
+[info] org.xwiki.job.internal.DefaultJobStatusStore:148 is modified.
+[info] org.xwiki.job.internal.DefaultJobStatusStore:149 is modified.
+[info] org.xwiki.job.internal.DefaultJobStatusStore:149 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:163 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:297 covered.
-[info] org.xwiki.job.internal.DefaultJobStatusStore:145 covered.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:301 covered.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:146 covered.
 [info] org.xwiki.job.internal.DefaultJobStatusStore:163 covered.
@@ -313,39 +305,21 @@ Done. Processed 9 packages in 6709ms (745ms per package).
 [info] org.xwiki.job.internal.DefaultJobStatusStore:149 covered.
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-job/src/test/java/org/xwiki/job/internal/DefaultJobStatusStoreTest.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-job/src/test/java/org/xwiki/job/internal/DefaultJobStatusStoreTest.java
-[info] org.xwiki.job.internal.DefaultJobStatusStoreTest:81 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStoreTest:82 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStoreTest:83 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStoreTest:85 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStoreTest:93 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStoreTest:94 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStoreTest:95 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStoreTest:97 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStoreTest:106 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStoreTest:107 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStoreTest:108 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStoreTest:118 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStoreTest:144 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStoreTest:145 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStoreTest:146 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStoreTest:148 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStoreTest:152 is modified.
-[info] org.xwiki.job.internal.DefaultJobStatusStoreTest:166 is modified.
 [info] org.xwiki.job.internal.DefaultJobStatusStoreTest:117 is modified.
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_12_7ee5210/commit_coverage_testsThatExecuteTheChanges.csv ...
 [INFO] org.xwiki.job.internal.DefaultJobStatusStoreTest;removeJobStatus;getJobStatusWithMultipleId;getJobStatusWithNullId;getJobStatusInWrongPlaceAndWithInvalidLogArgument;storeJobStatus;getJobStatusThatDoesNotExist;getJobStatusInOldPlace
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_12_7ee5210/commit_coverage_testsThatExecuteTheChanges_coverage.csv
-[INFO] org.xwiki.job.internal.DefaultJobStatusStore;7;10
+[INFO] org.xwiki.job.internal.DefaultJobStatusStore;6;9
 
-[INFO] total;7;10
+[INFO] total;6;9
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 58.923 s
-[INFO] Finished at: 2018-10-02T07:39:35+02:00
+[INFO] Total time: 01:00 min
+[INFO] Finished at: 2018-10-02T16:51:40+02:00
 [INFO] ------------------------------------------------------------------------
-[INFO] 2018-10-02 07:39:36 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
-[INFO] 2018-10-02 07:39:37 RepositoriesSetter - Checkout 6287cb5d5a0f3f0bbe7dcbe568f2531bdea91ed1 revision...
-[INFO] 2018-10-02 07:39:38 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
-[INFO] 2018-10-02 07:39:39 RepositoriesSetter - Checkout d840365e0248d6591f8176cd19dd493351d76512 revision...
+[INFO] 2018-10-02 16:51:41 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-10-02 16:51:42 RepositoriesSetter - Checkout 6287cb5d5a0f3f0bbe7dcbe568f2531bdea91ed1 revision...
+[INFO] 2018-10-02 16:51:43 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-10-02 16:51:44 RepositoriesSetter - Checkout d840365e0248d6591f8176cd19dd493351d76512 revision...

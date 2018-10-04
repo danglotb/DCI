@@ -42,7 +42,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-default/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 17 files (4 packages).
-[INFO] Elapsed time = 1.739 secs. (9.776 files/sec, 1,459.459 srclines/sec)
+[INFO] Elapsed time = 1.566 secs. (10.856 files/sec, 1,620.69 srclines/sec)
 [INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [INFO] Clover free edition.
@@ -50,7 +50,7 @@
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 7 files (5 packages).
 [INFO] 41 test methods detected.
-[INFO] Elapsed time = 0.946 secs. (7.4 files/sec, 1,848.837 srclines/sec)
+[INFO] Elapsed time = 0.942 secs. (7.431 files/sec, 1,856.688 srclines/sec)
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-component-default ---
 [INFO] Skipping Rule Enforcement.
@@ -335,17 +335,17 @@
  T E S T S
 -------------------------------------------------------
 Running org.xwiki.component.guice.GuiceCompatibilityTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.112 sec - in org.xwiki.component.guice.GuiceCompatibilityTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.009 sec - in org.xwiki.component.guice.GuiceCompatibilityTest
 Running org.xwiki.component.annotation.ComponentDescriptorFactoryTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec - in org.xwiki.component.annotation.ComponentDescriptorFactoryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in org.xwiki.component.annotation.ComponentDescriptorFactoryTest
 Running org.xwiki.component.annotation.ComponentAnnotationLoaderTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.271 sec - in org.xwiki.component.annotation.ComponentAnnotationLoaderTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.247 sec - in org.xwiki.component.annotation.ComponentAnnotationLoaderTest
 Running org.xwiki.component.ProviderTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in org.xwiki.component.ProviderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in org.xwiki.component.ProviderTest
 Running org.xwiki.component.embed.EmbeddableComponentManagerTest
-Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.239 sec - in org.xwiki.component.embed.EmbeddableComponentManagerTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.77 sec - in org.xwiki.component.embed.EmbeddableComponentManagerTest
 Running org.xwiki.component.internal.StackingComponentEventManagerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in org.xwiki.component.internal.StackingComponentEventManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in org.xwiki.component.internal.StackingComponentEventManagerTest
 
 Results :
 
@@ -354,270 +354,218 @@ Tests run: 41, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 35.556 s
-[INFO] Finished at: 2018-10-02T07:35:04+02:00
+[INFO] Total time: 33.683 s
+[INFO] Finished at: 2018-10-02T16:47:07+02:00
 [INFO] ------------------------------------------------------------------------
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-default/target/clover/report'
-Done. Processed 6 packages in 5006ms (834ms per package).
+Done. Processed 6 packages in 4950ms (825ms per package).
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-default/src/main/java/org/xwiki/component/embed/EmbeddableComponentManager.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-default/src/main/java/org/xwiki/component/embed/EmbeddableComponentManager.java
-[info] org.xwiki.component.embed.EmbeddableComponentManager:190 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:229 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:209 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:292 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:258 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:303 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:313 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:190 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:295 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:212 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:440 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:452 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:461 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:464 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:477 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:490 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:506 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:498 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:499 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:549 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:569 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:612 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:686 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:687 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:438 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:174 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:184 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:190 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:235 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:295 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:295 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:210 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:212 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:204 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:255 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:275 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:248 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:260 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:260 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:259 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:388 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:194 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:390 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:440 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:452 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:452 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:455 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:458 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:469 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:472 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:477 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:479 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:506 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:507 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:507 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:498 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:508 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:507 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:507 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:509 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:567 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:564 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:564 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:594 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:606 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:631 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:612 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:631 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:631 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:675 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:686 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:686 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:687 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:699 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:699 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:688 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:692 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:168 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:174 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:184 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:190 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:231 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:249 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:212 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:231 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:239 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:259 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:391 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:398 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:262 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:475 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:388 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:461 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:461 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:521 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:533 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:533 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:452 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:479 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:508 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:519 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:564 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:594 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:587 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:606 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:609 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:634 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:634 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:616 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:632 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:632 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:675 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:699 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:687 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:688 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:178 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:184 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:190 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:212 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:213 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:297 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:239 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:259 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:393 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:246 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:296 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:400 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:521 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:519 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:634 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:235 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:238 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:250 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:263 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:260 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:196 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:298 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:197 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:500 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:501 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:510 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:502 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:612 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:688 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:689 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:237 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:250 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:214 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:205 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:248 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:260 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:394 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:399 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:401 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:500 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:298 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:688 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:214 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:205 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:260 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:239 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:240 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:394 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:399 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:401 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:502 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:689 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:239 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:240 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:237 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:394 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:248 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:399 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:399 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:661 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:394 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:200 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:297 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:637 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:661 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:395 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:399 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:174 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:192 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:174 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:184 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:192 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:192 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:199 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:198 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:198 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:195 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:205 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:205 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:208 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:207 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:207 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:204 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:194 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:231 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:231 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:235 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:236 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:235 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:234 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:275 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:263 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:263 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:260 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:260 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:262 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:266 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:297 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:298 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:297 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:472 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:472 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:472 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:472 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:474 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:474 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:475 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:475 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:473 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:474 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:477 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:507 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:490 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:509 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:508 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:508 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:507 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:532 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:533 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:531 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:564 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:564 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:567 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:567 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:532 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:566 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:567 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:606 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:606 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:631 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:631 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:632 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:632 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:633 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:633 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:633 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:634 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:634 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:634 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:633 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:632 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:640 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:640 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:640 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:640 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:661 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:661 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:675 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:675 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:675 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:699 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:699 is modified.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:699 is modified.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:709 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:709 is modified.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:438 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:190 covered.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:229 covered.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:212 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:461 covered.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:464 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:477 covered.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:569 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:174 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:184 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:235 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:255 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:260 covered.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:383 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:194 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:469 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:472 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:567 covered.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:564 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:594 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:231 covered.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:212 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:262 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:475 covered.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:391 covered.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:564 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:178 covered.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:196 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:393 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:246 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:237 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:263 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:394 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:192 covered.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:195 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:234 covered.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:236 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:266 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:473 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:474 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:566 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:198 covered.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:490 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:204 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:205 covered.
+[info] org.xwiki.component.embed.EmbeddableComponentManager:490 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:248 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:249 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:207 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:606 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:631 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:675 covered.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:682 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:699 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:634 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:632 covered.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:651 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:633 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:640 covered.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:292 covered.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:303 covered.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:313 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:295 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:297 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:296 covered.
@@ -633,38 +581,38 @@ Done. Processed 6 packages in 5006ms (834ms per package).
 [info] org.xwiki.component.embed.EmbeddableComponentManager:510 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:531 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:532 covered.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:398 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:399 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:168 covered.
-[info] org.xwiki.component.embed.EmbeddableComponentManager:683 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:686 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:275 covered.
 [info] org.xwiki.component.embed.EmbeddableComponentManager:661 covered.
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-default/src/main/java/org/xwiki/component/internal/RoleHint.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-default/src/main/java/org/xwiki/component/internal/RoleHint.java
+[info] org.xwiki.component.internal.RoleHint:64 is modified.
+[info] org.xwiki.component.internal.RoleHint:38 is modified.
+[info] org.xwiki.component.internal.RoleHint:69 is modified.
 [info] org.xwiki.component.internal.RoleHint:69 covered.
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-default/src/test/java/org/xwiki/component/ProviderTest.java
 [INFO] /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-component/xwiki-commons-component-default/src/test/java/org/xwiki/component/ProviderTest.java
+[info] org.xwiki.component.ProviderTest:177 is modified.
+[info] org.xwiki.component.ProviderTest:181 is modified.
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_11_8f82e34/commit_coverage_testsThatExecuteTheChanges.csv ...
 [INFO] org.xwiki.component.ProviderTest;loadAndInjectProviders;loadAndInjectProviderWhenExceptionInInitialize
-org.xwiki.component.embed.EmbeddableComponentManagerTest;testUnregisterDisposableSingletonComponent;testGetInstanceWhenComponentInParent;testRegisterComponentNotificationOnSecondRegistration;testUnregisterComponentNotification;testRegisterComponentInstance;testGetInstanceListAndMapWhenSomeComponentsInParent;testRegisterInitializableComponent;testRegisterComponentNotification;testUnregisterComponent;diposeWhenImplementationIsECM;testGetComponentDescriptorList;testRelease;testComponentDescriptorInjection;testLookupThisComponentManager;testHasComponent;testDispose;testRegisterComponentOverExistingOne;testLoggingInjection;getComponentDescriptorWhenSomeComponentsInParent;getComponentDescriptorListInParent;testReleaseDisposableComponent;testHasComponentWhenComponentInParent;getComponentDescriptorInParent;testUnregisterDisposableSingletonComponentWithInstance
+org.xwiki.component.embed.EmbeddableComponentManagerTest;testGetInstanceWhenComponentInParent;testUnregisterDisposableSingletonComponent;testRegisterComponentNotificationOnSecondRegistration;testUnregisterComponentNotification;testRegisterComponentInstance;testGetInstanceListAndMapWhenSomeComponentsInParent;testRegisterInitializableComponent;testRegisterComponentNotification;testUnregisterComponent;diposeWhenImplementationIsECM;testGetComponentDescriptorList;testRelease;testComponentDescriptorInjection;testLookupThisComponentManager;testHasComponent;testDispose;testRegisterComponentOverExistingOne;testLoggingInjection;getComponentDescriptorWhenSomeComponentsInParent;getComponentDescriptorListInParent;testReleaseDisposableComponent;testHasComponentWhenComponentInParent;getComponentDescriptorInParent;testUnregisterDisposableSingletonComponentWithInstance
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/xwiki-commons/commit_11_8f82e34/commit_coverage_testsThatExecuteTheChanges_coverage.csv
-[INFO] org.xwiki.component.embed.EmbeddableComponentManager;81;96
+[INFO] org.xwiki.component.embed.EmbeddableComponentManager;66;100
+
+[INFO] org.xwiki.component.internal.RoleHint;1;3
+
+[INFO] total;67;103
 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 58.338 s
-[INFO] Finished at: 2018-10-02T07:35:18+02:00
+[INFO] Total time: 55.927 s
+[INFO] Finished at: 2018-10-02T16:47:21+02:00
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal eu.stamp-project:diff-test-selection:0.5-SNAPSHOT:list (default-cli) on project xwiki-commons-component-default: Execution default-cli of goal eu.stamp-project:diff-test-selection:0.5-SNAPSHOT:list failed.: NullPointerException -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
-[INFO] 2018-10-02 07:35:19 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
-[INFO] 2018-10-02 07:35:21 RepositoriesSetter - Checkout 7ee5210fed142e81b3323640a6bb478e7b8f7286 revision...
-[INFO] 2018-10-02 07:35:22 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
-[INFO] 2018-10-02 07:35:22 RepositoriesSetter - Checkout 6287cb5d5a0f3f0bbe7dcbe568f2531bdea91ed1 revision...
+[INFO] 2018-10-02 16:47:22 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons} Cleaning local repository...
+[INFO] 2018-10-02 16:47:23 RepositoriesSetter - Checkout 7ee5210fed142e81b3323640a6bb478e7b8f7286 revision...
+[INFO] 2018-10-02 16:47:24 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/xwiki-commons_parent} Cleaning local repository...
+[INFO] 2018-10-02 16:47:25 RepositoriesSetter - Checkout 6287cb5d5a0f3f0bbe7dcbe568f2531bdea91ed1 revision...

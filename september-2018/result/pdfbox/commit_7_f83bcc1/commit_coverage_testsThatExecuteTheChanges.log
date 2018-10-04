@@ -26,7 +26,7 @@
 [INFO] Creating new database at '/tmp/icst-2019/september-2018/dataset/pdfbox/pdfbox/target/clover/clover.db'.
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 598 files (52 packages).
-[INFO] Elapsed time = 26.36 secs. (22.686 files/sec, 5,195.751 srclines/sec)
+[INFO] Elapsed time = 26.882 secs. (22.245 files/sec, 5,094.859 srclines/sec)
 [INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
 [INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
 [INFO] Clover free edition.
@@ -34,7 +34,7 @@
 [INFO] Processing files at 1.8 source level.
 [INFO] Clover all over. Instrumented 103 files (28 packages).
 [INFO] 426 test methods detected.
-[INFO] Elapsed time = 5.268 secs. (19.552 files/sec, 3,277.904 srclines/sec)
+[INFO] Elapsed time = 4.689 secs. (21.966 files/sec, 3,682.662 srclines/sec)
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ pdfbox ---
 [INFO] Skipping Rule Enforcement.
@@ -139,58 +139,58 @@
 [INFO] Running org.apache.pdfbox.rendering.TestRendering
 JDK: Java(TM) SE Runtime Environment
 Version: 1.8
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.677 s - in org.apache.pdfbox.rendering.TestRendering
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.557 s - in org.apache.pdfbox.rendering.TestRendering
 [INFO] Running org.apache.pdfbox.pdfparser.TestPDFParser
-Oct 02, 2018 4:17:36 AM org.apache.pdfbox.contentstream.operator.state.SetGraphicsStateParameters process
+Oct 02, 2018 1:30:14 PM org.apache.pdfbox.contentstream.operator.state.SetGraphicsStateParameters process
 SEVERE: name for 'gs' operator not found in resources: /GS7
-[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.837 s - in org.apache.pdfbox.pdfparser.TestPDFParser
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.872 s - in org.apache.pdfbox.pdfparser.TestPDFParser
 [INFO] Running org.apache.pdfbox.pdfparser.EndstreamOutputStreamTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 s - in org.apache.pdfbox.pdfparser.EndstreamOutputStreamTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 s - in org.apache.pdfbox.pdfparser.EndstreamOutputStreamTest
 [INFO] Running org.apache.pdfbox.pdfparser.PDFStreamParserTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s - in org.apache.pdfbox.pdfparser.PDFStreamParserTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in org.apache.pdfbox.pdfparser.PDFStreamParserTest
 [INFO] Running org.apache.pdfbox.cos.TestCOSInteger
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 s - in org.apache.pdfbox.cos.TestCOSInteger
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s - in org.apache.pdfbox.cos.TestCOSInteger
 [INFO] Running org.apache.pdfbox.cos.TestCOSStream
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 s - in org.apache.pdfbox.cos.TestCOSStream
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s - in org.apache.pdfbox.cos.TestCOSStream
 [INFO] Running org.apache.pdfbox.cos.TestCOSString
-[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 s - in org.apache.pdfbox.cos.TestCOSString
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 s - in org.apache.pdfbox.cos.TestCOSString
 [INFO] Running org.apache.pdfbox.cos.TestCOSName
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 s - in org.apache.pdfbox.cos.TestCOSName
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in org.apache.pdfbox.cos.TestCOSName
 [INFO] Running org.apache.pdfbox.cos.TestCOSFloat
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 s - in org.apache.pdfbox.cos.TestCOSFloat
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 s - in org.apache.pdfbox.cos.TestCOSFloat
 [INFO] Running org.apache.pdfbox.cos.TestCOSUpdateInfo
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.pdfbox.cos.TestCOSUpdateInfo
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.apache.pdfbox.cos.TestCOSUpdateInfo
 [INFO] Running org.apache.pdfbox.cos.PDFDocEncodingTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in org.apache.pdfbox.cos.PDFDocEncodingTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in org.apache.pdfbox.cos.PDFDocEncodingTest
 [INFO] Running org.apache.pdfbox.util.TestNumberFormatUtil
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.98 s - in org.apache.pdfbox.util.TestNumberFormatUtil
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.14 s - in org.apache.pdfbox.util.TestNumberFormatUtil
 [INFO] Running org.apache.pdfbox.util.TestDateUtil
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.364 s - in org.apache.pdfbox.util.TestDateUtil
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.313 s - in org.apache.pdfbox.util.TestDateUtil
 [INFO] Running org.apache.pdfbox.util.TestHexUtil
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.pdfbox.util.TestHexUtil
 [INFO] Running org.apache.pdfbox.util.TestQuickSort
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.781 s - in org.apache.pdfbox.util.TestQuickSort
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.107 s - in org.apache.pdfbox.util.TestQuickSort
 [INFO] Running org.apache.pdfbox.util.TestMatrix
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.pdfbox.util.TestMatrix
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.pdfbox.util.TestMatrix
 [INFO] Running org.apache.pdfbox.util.MatrixTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.pdfbox.util.MatrixTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.pdfbox.util.MatrixTest
 [INFO] Running org.apache.pdfbox.encryption.TestPublicKeyEncryption
-[ERROR] Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.453 s <<< FAILURE! - in org.apache.pdfbox.encryption.TestPublicKeyEncryption
-[ERROR] testMultipleRecipients(org.apache.pdfbox.encryption.TestPublicKeyEncryption)  Time elapsed: 0.415 s  <<< FAILURE!
+[ERROR] Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.455 s <<< FAILURE! - in org.apache.pdfbox.encryption.TestPublicKeyEncryption
+[ERROR] testMultipleRecipients(org.apache.pdfbox.encryption.TestPublicKeyEncryption)  Time elapsed: 0.444 s  <<< FAILURE!
 junit.framework.AssertionFailedError: JCE unlimited strength jurisdiction policy files are not installed
 	at org.apache.pdfbox.encryption.TestPublicKeyEncryption.setUp(TestPublicKeyEncryption.java:74)
 
-[ERROR] testProtection(org.apache.pdfbox.encryption.TestPublicKeyEncryption)  Time elapsed: 0 s  <<< FAILURE!
+[ERROR] testProtection(org.apache.pdfbox.encryption.TestPublicKeyEncryption)  Time elapsed: 0.003 s  <<< FAILURE!
 junit.framework.AssertionFailedError: JCE unlimited strength jurisdiction policy files are not installed
 	at org.apache.pdfbox.encryption.TestPublicKeyEncryption.setUp(TestPublicKeyEncryption.java:74)
 
-[ERROR] testProtectionError(org.apache.pdfbox.encryption.TestPublicKeyEncryption)  Time elapsed: 0.002 s  <<< FAILURE!
+[ERROR] testProtectionError(org.apache.pdfbox.encryption.TestPublicKeyEncryption)  Time elapsed: 0 s  <<< FAILURE!
 junit.framework.AssertionFailedError: JCE unlimited strength jurisdiction policy files are not installed
 	at org.apache.pdfbox.encryption.TestPublicKeyEncryption.setUp(TestPublicKeyEncryption.java:74)
 
 [INFO] Running org.apache.pdfbox.encryption.TestSymmetricKeyEncryption
 [ERROR] Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.007 s <<< FAILURE! - in org.apache.pdfbox.encryption.TestSymmetricKeyEncryption
-[ERROR] testProtectionInnerAttachment(org.apache.pdfbox.encryption.TestSymmetricKeyEncryption)  Time elapsed: 0 s  <<< FAILURE!
+[ERROR] testProtectionInnerAttachment(org.apache.pdfbox.encryption.TestSymmetricKeyEncryption)  Time elapsed: 0.001 s  <<< FAILURE!
 junit.framework.AssertionFailedError: JCE unlimited strength jurisdiction policy files are not installed
 	at org.apache.pdfbox.encryption.TestSymmetricKeyEncryption.setUp(TestSymmetricKeyEncryption.java:87)
 
@@ -202,52 +202,52 @@ junit.framework.AssertionFailedError: JCE unlimited strength jurisdiction policy
 junit.framework.AssertionFailedError: JCE unlimited strength jurisdiction policy files are not installed
 	at org.apache.pdfbox.encryption.TestSymmetricKeyEncryption.setUp(TestSymmetricKeyEncryption.java:87)
 
-[ERROR] testProtection(org.apache.pdfbox.encryption.TestSymmetricKeyEncryption)  Time elapsed: 0.001 s  <<< FAILURE!
+[ERROR] testProtection(org.apache.pdfbox.encryption.TestSymmetricKeyEncryption)  Time elapsed: 0 s  <<< FAILURE!
 junit.framework.AssertionFailedError: JCE unlimited strength jurisdiction policy files are not installed
 	at org.apache.pdfbox.encryption.TestSymmetricKeyEncryption.setUp(TestSymmetricKeyEncryption.java:87)
 
 [INFO] Running org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureElementTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 s - in org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureElementTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.246 s - in org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureElementTest
 [INFO] Running org.apache.pdfbox.pdmodel.TestPDPageContentStream
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.apache.pdfbox.pdmodel.TestPDPageContentStream
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in org.apache.pdfbox.pdmodel.TestPDPageContentStream
 [INFO] Running org.apache.pdfbox.pdmodel.PageLayoutTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.pdfbox.pdmodel.PageLayoutTest
 [INFO] Running org.apache.pdfbox.pdmodel.TestPDDocumentCatalog
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.754 s - in org.apache.pdfbox.pdmodel.TestPDDocumentCatalog
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.629 s - in org.apache.pdfbox.pdmodel.TestPDDocumentCatalog
 [INFO] Running org.apache.pdfbox.pdmodel.TestPDDocument
-Oct 02, 2018 4:18:05 AM org.apache.pdfbox.pdmodel.PDDocument setVersion
+Oct 02, 2018 1:30:42 PM org.apache.pdfbox.pdmodel.PDDocument setVersion
 SEVERE: It's not allowed to downgrade the version of a pdf.
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s - in org.apache.pdfbox.pdmodel.TestPDDocument
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s - in org.apache.pdfbox.pdmodel.TestPDDocument
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.annotation.PDSquareAnnotationTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in org.apache.pdfbox.pdmodel.interactive.annotation.PDSquareAnnotationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in org.apache.pdfbox.pdmodel.interactive.annotation.PDSquareAnnotationTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.annotation.PDCircleAnnotationTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.pdfbox.pdmodel.interactive.annotation.PDCircleAnnotationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.pdfbox.pdmodel.interactive.annotation.PDCircleAnnotationTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.annotation.AppearanceGenerationTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.922 s - in org.apache.pdfbox.pdmodel.interactive.annotation.AppearanceGenerationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.917 s - in org.apache.pdfbox.pdmodel.interactive.annotation.AppearanceGenerationTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionDirectionTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionDirectionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionDirectionTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 s - in org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 s - in org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.action.PDActionURITest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in org.apache.pdfbox.pdmodel.interactive.action.PDActionURITest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in org.apache.pdfbox.pdmodel.interactive.action.PDActionURITest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.form.TestCheckBox
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.pdfbox.pdmodel.interactive.form.TestCheckBox
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.pdfbox.pdmodel.interactive.form.TestCheckBox
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.form.TestListBox
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 s - in org.apache.pdfbox.pdmodel.interactive.form.TestListBox
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s - in org.apache.pdfbox.pdmodel.interactive.form.TestListBox
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest
 Files differ: /tmp/icst-2019/september-2018/dataset/pdfbox/pdfbox/src/test/resources/org/apache/pdfbox/pdmodel/interactive/form/AlignmentTests.pdf-1.png
               /tmp/icst-2019/september-2018/dataset/pdfbox/pdfbox/target/test-output/AlignmentTests.pdf-1.png
 Rendering of target/test-output/AlignmentTests.pdf failed or is not identical to expected rendering in src/test/resources/org/apache/pdfbox/pdmodel/interactive/form directory
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.644 s - in org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.929 s - in org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest
 Files differ: /tmp/icst-2019/september-2018/dataset/pdfbox/pdfbox/src/test/resources/org/apache/pdfbox/pdmodel/interactive/form/MultilineFields.pdf-1.png
               /tmp/icst-2019/september-2018/dataset/pdfbox/pdfbox/target/test-output/MultilineFields.pdf-1.png
 Rendering of target/test-output/MultilineFields.pdf failed or is not identical to expected rendering in src/test/resources/org/apache/pdfbox/pdmodel/interactive/form directory
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.697 s - in org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.556 s - in org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.form.PDTextFieldTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.pdfbox.pdmodel.interactive.form.PDTextFieldTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.pdfbox.pdmodel.interactive.form.PDTextFieldTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest
 Files differ: /tmp/icst-2019/september-2018/dataset/pdfbox/pdfbox/src/test/resources/org/apache/pdfbox/pdmodel/interactive/form/AlignmentTests-flattened.pdf-1.png
               /tmp/icst-2019/september-2018/dataset/pdfbox/pdfbox/target/test-output/AlignmentTests-flattened.pdf-1.png
@@ -255,130 +255,130 @@ Rendering of target/test-output/AlignmentTests-flattened.pdf failed or is not id
 Files differ: /tmp/icst-2019/september-2018/dataset/pdfbox/pdfbox/src/test/resources/org/apache/pdfbox/pdmodel/interactive/form/AlignmentTests-flattened-noRef.pdf-1.png
               /tmp/icst-2019/september-2018/dataset/pdfbox/pdfbox/target/test-output/AlignmentTests-flattened-noRef.pdf-1.png
 Rendering of target/test-output/AlignmentTests-flattened-noRef.pdf failed or is not identical to expected rendering in src/test/resources/org/apache/pdfbox/pdmodel/interactive/form directory
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.523 s - in org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.623 s - in org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.form.PDDefaultAppearanceStringTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.apache.pdfbox.pdmodel.interactive.form.PDDefaultAppearanceStringTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.apache.pdfbox.pdmodel.interactive.form.PDDefaultAppearanceStringTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest
 Files differ: /tmp/icst-2019/september-2018/dataset/pdfbox/pdfbox/src/test/resources/org/apache/pdfbox/pdmodel/interactive/form/AcroFormsRotation.pdf-2.png
               /tmp/icst-2019/september-2018/dataset/pdfbox/pdfbox/target/test-output/AcroFormsRotation.pdf-2.png
 Files differ: /tmp/icst-2019/september-2018/dataset/pdfbox/pdfbox/src/test/resources/org/apache/pdfbox/pdmodel/interactive/form/AcroFormsRotation.pdf-1.png
               /tmp/icst-2019/september-2018/dataset/pdfbox/pdfbox/target/test-output/AcroFormsRotation.pdf-1.png
 Rendering of target/test-output/AcroFormsRotation.pdf failed or is not identical to expected rendering in src/test/resources/org/apache/pdfbox/pdmodel/interactive/form directory
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.366 s - in org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.538 s - in org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest
-[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.24 s - in org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.348 s - in org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.form.PDChoiceTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.apache.pdfbox.pdmodel.interactive.form.PDChoiceTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.pdfbox.pdmodel.interactive.form.PDChoiceTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.208 s - in org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.193 s - in org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.form.PDSignatureFieldTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.apache.pdfbox.pdmodel.interactive.form.PDSignatureFieldTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.pdfbox.pdmodel.interactive.form.PDSignatureFieldTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.form.TestFields
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.223 s - in org.apache.pdfbox.pdmodel.interactive.form.TestFields
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 s - in org.apache.pdfbox.pdmodel.interactive.form.TestFields
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.form.PlainTextTest
 [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in org.apache.pdfbox.pdmodel.interactive.form.PlainTextTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.form.HandleDifferentDALevelsTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 s - in org.apache.pdfbox.pdmodel.interactive.form.HandleDifferentDALevelsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.23 s - in org.apache.pdfbox.pdmodel.interactive.form.HandleDifferentDALevelsTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineNodeTest
-[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 s - in org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineNodeTest
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s - in org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineNodeTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItemIteratorTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItemIteratorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItemIteratorTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItemTest
-[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItemTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItemTest
 [INFO] Running org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDDocumentOutlineTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDDocumentOutlineTest
 [INFO] Running org.apache.pdfbox.pdmodel.graphics.image.CCITTFactoryTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.177 s - in org.apache.pdfbox.pdmodel.graphics.image.CCITTFactoryTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.089 s - in org.apache.pdfbox.pdmodel.graphics.image.CCITTFactoryTest
 [INFO] Running org.apache.pdfbox.pdmodel.graphics.image.JPEGFactoryTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.854 s - in org.apache.pdfbox.pdmodel.graphics.image.JPEGFactoryTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.361 s - in org.apache.pdfbox.pdmodel.graphics.image.JPEGFactoryTest
 [INFO] Running org.apache.pdfbox.pdmodel.graphics.image.LosslessFactoryTest
-[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.794 s - in org.apache.pdfbox.pdmodel.graphics.image.LosslessFactoryTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.875 s - in org.apache.pdfbox.pdmodel.graphics.image.LosslessFactoryTest
 [INFO] Running org.apache.pdfbox.pdmodel.graphics.image.PDInlineImageTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s - in org.apache.pdfbox.pdmodel.graphics.image.PDInlineImageTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in org.apache.pdfbox.pdmodel.graphics.image.PDInlineImageTest
 [INFO] Running org.apache.pdfbox.pdmodel.graphics.blend.BlendModeTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.pdfbox.pdmodel.graphics.blend.BlendModeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.pdfbox.pdmodel.graphics.blend.BlendModeTest
 [INFO] Running org.apache.pdfbox.pdmodel.graphics.color.PDDeviceCMYKTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.pdfbox.pdmodel.graphics.color.PDDeviceCMYKTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.pdfbox.pdmodel.graphics.color.PDDeviceCMYKTest
 [INFO] Running org.apache.pdfbox.pdmodel.graphics.color.PDLabTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.pdfbox.pdmodel.graphics.color.PDLabTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.pdfbox.pdmodel.graphics.color.PDLabTest
 [INFO] Running org.apache.pdfbox.pdmodel.graphics.color.PDICCBasedTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.pdfbox.pdmodel.graphics.color.PDICCBasedTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.pdfbox.pdmodel.graphics.color.PDICCBasedTest
 [INFO] Running org.apache.pdfbox.pdmodel.graphics.optionalcontent.TestOptionalContentGroups
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 s - in org.apache.pdfbox.pdmodel.graphics.optionalcontent.TestOptionalContentGroups
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s - in org.apache.pdfbox.pdmodel.graphics.optionalcontent.TestOptionalContentGroups
 [INFO] Running org.apache.pdfbox.pdmodel.fdf.FDFAnnotationTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.354 s - in org.apache.pdfbox.pdmodel.fdf.FDFAnnotationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.466 s - in org.apache.pdfbox.pdmodel.fdf.FDFAnnotationTest
 [INFO] Running org.apache.pdfbox.pdmodel.fdf.FDFFieldTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in org.apache.pdfbox.pdmodel.fdf.FDFFieldTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in org.apache.pdfbox.pdmodel.fdf.FDFFieldTest
 [INFO] Running org.apache.pdfbox.pdmodel.TestPDPageAnnotationsFiltering
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.apache.pdfbox.pdmodel.TestPDPageAnnotationsFiltering
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.pdfbox.pdmodel.TestPDPageAnnotationsFiltering
 [INFO] Running org.apache.pdfbox.pdmodel.common.function.TestPDFunctionType4
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 s - in org.apache.pdfbox.pdmodel.common.function.TestPDFunctionType4
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 s - in org.apache.pdfbox.pdmodel.common.function.TestPDFunctionType4
 [INFO] Running org.apache.pdfbox.pdmodel.common.function.type4.TestParser
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.apache.pdfbox.pdmodel.common.function.type4.TestParser
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in org.apache.pdfbox.pdmodel.common.function.type4.TestParser
 [INFO] Running org.apache.pdfbox.pdmodel.common.function.type4.TestOperators
-[INFO] Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.16 s - in org.apache.pdfbox.pdmodel.common.function.type4.TestOperators
+[INFO] Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 s - in org.apache.pdfbox.pdmodel.common.function.type4.TestOperators
 [INFO] Running org.apache.pdfbox.pdmodel.common.function.TestFunctions
-[INFO] Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 s - in org.apache.pdfbox.pdmodel.common.function.TestFunctions
+[INFO] Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 s - in org.apache.pdfbox.pdmodel.common.function.TestFunctions
 [INFO] Running org.apache.pdfbox.pdmodel.common.PDStreamTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.apache.pdfbox.pdmodel.common.PDStreamTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.pdfbox.pdmodel.common.PDStreamTest
 [INFO] Running org.apache.pdfbox.pdmodel.common.TestEmbeddedFiles
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.apache.pdfbox.pdmodel.common.TestEmbeddedFiles
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.apache.pdfbox.pdmodel.common.TestEmbeddedFiles
 [INFO] Running org.apache.pdfbox.pdmodel.common.TestPDNameTreeNode
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.pdfbox.pdmodel.common.TestPDNameTreeNode
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.pdfbox.pdmodel.common.TestPDNameTreeNode
 [INFO] Running org.apache.pdfbox.pdmodel.common.TestPDNumberTreeNode
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.apache.pdfbox.pdmodel.common.TestPDNumberTreeNode
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.pdfbox.pdmodel.common.TestPDNumberTreeNode
 [INFO] Running org.apache.pdfbox.pdmodel.TestPDPageTree
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in org.apache.pdfbox.pdmodel.TestPDPageTree
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 s - in org.apache.pdfbox.pdmodel.TestPDPageTree
 [INFO] Running org.apache.pdfbox.pdmodel.TestFDF
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 s - in org.apache.pdfbox.pdmodel.TestFDF
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 s - in org.apache.pdfbox.pdmodel.TestFDF
 [INFO] Running org.apache.pdfbox.pdmodel.TestPDDocumentInformation
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in org.apache.pdfbox.pdmodel.TestPDDocumentInformation
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 s - in org.apache.pdfbox.pdmodel.TestPDDocumentInformation
 [INFO] Running org.apache.pdfbox.pdmodel.font.TestFontEmbedding
 Files differ: /tmp/icst-2019/september-2018/dataset/pdfbox/pdfbox/src/test/resources/org/apache/pdfbox/ttf/Bengali.pdf-1.png
               /tmp/icst-2019/september-2018/dataset/pdfbox/pdfbox/target/test-output/Bengali.pdf-1.png
 Rendering of target/test-output/Bengali.pdf failed or is not identical to expected rendering in src/test/resources/org/apache/pdfbox/ttf directory
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.324 s - in org.apache.pdfbox.pdmodel.font.TestFontEmbedding
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.366 s - in org.apache.pdfbox.pdmodel.font.TestFontEmbedding
 [INFO] Running org.apache.pdfbox.pdmodel.font.PDFontTest
 testPDFBox3747 skipped
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.223 s - in org.apache.pdfbox.pdmodel.font.PDFontTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.139 s - in org.apache.pdfbox.pdmodel.font.PDFontTest
 [INFO] Running org.apache.pdfbox.pdmodel.font.TestTTFParser
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.apache.pdfbox.pdmodel.font.TestTTFParser
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.pdfbox.pdmodel.font.TestTTFParser
 [INFO] Running org.apache.pdfbox.pdmodel.font.TestFontEncoding
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.apache.pdfbox.pdmodel.font.TestFontEncoding
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in org.apache.pdfbox.pdmodel.font.TestFontEncoding
 [INFO] Running org.apache.pdfbox.pdmodel.TestPDPageTransitions
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in org.apache.pdfbox.pdmodel.TestPDPageTransitions
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.apache.pdfbox.pdmodel.TestPDPageTransitions
 [INFO] Running org.apache.pdfbox.multipdf.PDFMergerUtilityTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.689 s - in org.apache.pdfbox.multipdf.PDFMergerUtilityTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.114 s - in org.apache.pdfbox.multipdf.PDFMergerUtilityTest
 [INFO] Running org.apache.pdfbox.multipdf.PageExtractorTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.213 s - in org.apache.pdfbox.multipdf.PageExtractorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 s - in org.apache.pdfbox.multipdf.PageExtractorTest
 [INFO] Running org.apache.pdfbox.multipdf.MergeAcroFormsTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.072 s - in org.apache.pdfbox.multipdf.MergeAcroFormsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.972 s - in org.apache.pdfbox.multipdf.MergeAcroFormsTest
 [INFO] Running org.apache.pdfbox.multipdf.MergeAnnotationsTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.761 s - in org.apache.pdfbox.multipdf.MergeAnnotationsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.803 s - in org.apache.pdfbox.multipdf.MergeAnnotationsTest
 [INFO] Running org.apache.pdfbox.multipdf.PDFCloneUtilityTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.apache.pdfbox.multipdf.PDFCloneUtilityTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.pdfbox.multipdf.PDFCloneUtilityTest
 [INFO] Running org.apache.pdfbox.multipdf.TestLayerUtility
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in org.apache.pdfbox.multipdf.TestLayerUtility
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in org.apache.pdfbox.multipdf.TestLayerUtility
 [INFO] Running org.apache.pdfbox.it.gsub.GsubWorkerForBengaliTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.221 s - in org.apache.pdfbox.it.gsub.GsubWorkerForBengaliTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.264 s - in org.apache.pdfbox.it.gsub.GsubWorkerForBengaliTest
 [INFO] Running org.apache.pdfbox.filter.TestFilters
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 78.816 s - in org.apache.pdfbox.filter.TestFilters
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 84.183 s - in org.apache.pdfbox.filter.TestFilters
 [INFO] Running org.apache.pdfbox.filter.PredictorTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.pdfbox.filter.PredictorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.pdfbox.filter.PredictorTest
 [INFO] Running org.apache.pdfbox.pdfwriter.COSWriterTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.pdfbox.pdfwriter.COSWriterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.pdfbox.pdfwriter.COSWriterTest
 [INFO] Running org.apache.pdfbox.text.TestTextStripper
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.591 s - in org.apache.pdfbox.text.TestTextStripper
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.609 s - in org.apache.pdfbox.text.TestTextStripper
 [INFO] Running org.apache.pdfbox.text.BidiTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.558 s - in org.apache.pdfbox.text.BidiTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.512 s - in org.apache.pdfbox.text.BidiTest
 [INFO] Running org.apache.pdfbox.io.TestRandomAccessOutputStream
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.pdfbox.io.TestRandomAccessOutputStream
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.pdfbox.io.TestRandomAccessOutputStream
 [INFO] Running org.apache.pdfbox.io.TestRandomAccessBuffer
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in org.apache.pdfbox.io.TestRandomAccessBuffer
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in org.apache.pdfbox.io.TestRandomAccessBuffer
 [INFO] Running org.apache.pdfbox.io.TestIOUtils
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.pdfbox.io.TestIOUtils
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.pdfbox.io.TestIOUtils
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -396,8 +396,8 @@ testPDFBox3747 skipped
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 05:38 min
-[INFO] Finished at: 2018-10-02T04:21:07+02:00
+[INFO] Total time: 05:37 min
+[INFO] Finished at: 2018-10-02T13:33:42+02:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project pdfbox: There are test failures.
 [ERROR] 
@@ -411,31 +411,29 @@ testPDFBox3747 skipped
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
 Writing HTML report to '/tmp/icst-2019/september-2018/dataset/pdfbox/pdfbox/target/clover/report'
-Done. Processed 55 packages in 48502ms (881ms per package).
+Done. Processed 55 packages in 48205ms (876ms per package).
 [INFO] /tmp/icst-2019/september-2018/dataset/pdfbox/pdfbox/src/main/java/org/apache/pdfbox/rendering/PDFRenderer.java
 [INFO] /tmp/icst-2019/september-2018/dataset/pdfbox_parent/pdfbox/src/main/java/org/apache/pdfbox/rendering/PDFRenderer.java
 [info] org.apache.pdfbox.rendering.PDFRenderer:200 is modified.
-[info] org.apache.pdfbox.rendering.PDFRenderer:200 is modified.
-[info] org.apache.pdfbox.rendering.PDFRenderer:201 is modified.
 [info] org.apache.pdfbox.rendering.PDFRenderer:201 is modified.
 [info] org.apache.pdfbox.rendering.PDFRenderer:200 is modified.
 [info] org.apache.pdfbox.rendering.PDFRenderer:201 is modified.
 [info] org.apache.pdfbox.rendering.PDFRenderer:200 covered.
 [info] org.apache.pdfbox.rendering.PDFRenderer:201 covered.
 [INFO] Saving result in /tmp/icst-2019/september-2018/result/pdfbox/commit_7_f83bcc1/commit_coverage_testsThatExecuteTheChanges.csv ...
-[INFO] org.apache.pdfbox.multipdf.PDFMergerUtilityTest;testPDFMergerUtility2;testJpegCcitt;testPDFMergerUtility
-org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest;fillFields
-org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest;testFlattenWidgetNoRef;testFlatten
+[INFO] org.apache.pdfbox.pdmodel.font.PDFontTest;testPDFBox988;testPDFBox3826
 org.apache.pdfbox.rendering.TestRendering;render
 org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest;fillFields
+org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest;testFlattenWidgetNoRef;testFlatten
+org.apache.pdfbox.pdmodel.font.TestFontEmbedding;testBengali
 org.apache.pdfbox.pdmodel.interactive.annotation.AppearanceGenerationTest;renderTest
 org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest;fillFields
-org.apache.pdfbox.pdfparser.TestPDFParser;testPDFBox3950
-org.apache.pdfbox.pdmodel.font.PDFontTest;testPDFBox988;testPDFBox3826
-org.apache.pdfbox.pdmodel.font.TestFontEmbedding;testBengali
+org.apache.pdfbox.multipdf.PDFMergerUtilityTest;testPDFMergerUtility2;testJpegCcitt;testPDFMergerUtility
+org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest;fillFields
 org.apache.pdfbox.pdmodel.graphics.image.PDInlineImageTest;testInlineImage
-org.apache.pdfbox.pdmodel.graphics.image.JPEGFactoryTest;testCreateFromImage256;testCreateFromStream256;testCreateFromImage4BYTE_ABGR;testCreateFromImageRGB;testCreateFromStream;testCreateFromStreamCMYK;testCreateFromImageINT_ARGB
-org.apache.pdfbox.pdmodel.graphics.image.LosslessFactoryTest;testCreateLosslessFromImageRGB;testCreateLosslessFromImageINT_ARGB;testCreateLosslessFromImageCMYK;testCreateLosslessFromImage4BYTE_ABGR;testCreateLosslessFromTransparentGIF;testCreateLosslessFromImageBITMASK4BYTE_ABGR;testCreateLosslessFromImageBITMASK_INT_ARGB;testCreateLosslessFromGovdocs032163;testCreateLosslessFrom16Bit;testCreateLosslessFrom16BitPNG
+org.apache.pdfbox.pdfparser.TestPDFParser;testPDFBox3950
+org.apache.pdfbox.pdmodel.graphics.image.LosslessFactoryTest;testCreateLosslessFromImageRGB;testCreateLosslessFromImageINT_ARGB;testCreateLosslessFromImageCMYK;testCreateLosslessFromImage4BYTE_ABGR;testCreateLosslessFromTransparentGIF;testCreateLosslessFromImageBITMASK4BYTE_ABGR;testCreateLosslessFromGovdocs032163;testCreateLosslessFromImageBITMASK_INT_ARGB;testCreateLosslessFrom16Bit;testCreateLosslessFrom16BitPNG
+org.apache.pdfbox.pdmodel.graphics.image.JPEGFactoryTest;testCreateFromImage256;testCreateFromStream256;testCreateFromImage4BYTE_ABGR;testCreateFromImageRGB;testCreateFromStreamCMYK;testCreateFromStream;testCreateFromImageINT_ARGB
 [INFO] Writing Coverage in /tmp/icst-2019/september-2018/result/pdfbox/commit_7_f83bcc1/commit_coverage_testsThatExecuteTheChanges_coverage.csv
 [INFO] org.apache.pdfbox.rendering.PDFRenderer;2;2
 
@@ -444,10 +442,10 @@ org.apache.pdfbox.pdmodel.graphics.image.LosslessFactoryTest;testCreateLosslessF
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 06:43 min
-[INFO] Finished at: 2018-10-02T04:22:02+02:00
+[INFO] Total time: 06:42 min
+[INFO] Finished at: 2018-10-02T13:34:38+02:00
 [INFO] ------------------------------------------------------------------------
-[INFO] 2018-10-02 04:22:02 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/pdfbox} Cleaning local repository...
-[INFO] 2018-10-02 04:22:03 RepositoriesSetter - Checkout c125360ce89853e162726061a7f9982bc0a22cbd revision...
-[INFO] 2018-10-02 04:22:04 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/pdfbox_parent} Cleaning local repository...
-[INFO] 2018-10-02 04:22:04 RepositoriesSetter - Checkout c7d7cff04c5b6866fe91ec607458aeb357c02546 revision...
+[INFO] 2018-10-02 13:34:38 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/pdfbox} Cleaning local repository...
+[INFO] 2018-10-02 13:34:39 RepositoriesSetter - Checkout c125360ce89853e162726061a7f9982bc0a22cbd revision...
+[INFO] 2018-10-02 13:34:40 RepositoriesSetter - {/tmp/icst-2019/september-2018/dataset/pdfbox_parent} Cleaning local repository...
+[INFO] 2018-10-02 13:34:40 RepositoriesSetter - Checkout c7d7cff04c5b6866fe91ec607458aeb357c02546 revision...
