@@ -47,7 +47,7 @@ def run(project, index_begin, index_end, amplifiers):
         ]
         if amplifiers:
             cmd.append(
-                "-Damplifiers=TestDataMutator,MethodAdd,MethodRemove,MethodGeneratorAmplifier,ReturnValueAmplifier,NullifierAmplifier")
+                "-Damplifiers=TestDataMutator,MethodAdd,MethodRemove,NullifierAmplifier")
             cmd.append("-Diteration=3")
             cmd.append("-Dbudgetizer=SimpleBudgetizer")
         cmd = preparation.add_needed_options(cmd, project)
