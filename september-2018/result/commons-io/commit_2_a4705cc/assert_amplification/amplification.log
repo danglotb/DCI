@@ -139,7 +139,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1533161, ConflictMarker.markTime=758636, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=943880, ConflictIdSorter.topsortTime=707335, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5803749, ConflictResolver.conflictItemCount=2, DefaultDependencyCollector.collectTime=28198866, DefaultDependencyCollector.transformTime=14034396}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=668901, ConflictMarker.markTime=412374, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=398103, ConflictIdSorter.topsortTime=343351, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=17171997, ConflictResolver.conflictItemCount=2, DefaultDependencyCollector.collectTime=64206559, DefaultDependencyCollector.transformTime=21159037}
 [DEBUG] commons-io:commons-io:jar:2.7-SNAPSHOT
 [DEBUG]    junit:junit:jar:4.12:test
 [DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test
@@ -450,7 +450,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=6132295, ConflictMarker.markTime=1533058, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=3998690, ConflictIdSorter.topsortTime=241241, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=23538917, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=5325490646, DefaultDependencyCollector.transformTime=35688752}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=7558982, ConflictMarker.markTime=698977, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=26739334, ConflictIdSorter.topsortTime=175838, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=37398527, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=7498647450, DefaultDependencyCollector.transformTime=72756899}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -654,7 +654,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [WARNING] automaticBuilderName: unknown automatic builder specified in configuration, going to default.
 [INFO] Default: provided Maven automatic builder.
 [INFO] Using /home/spirals/danglot/apache-maven-3.5.4 for maven home
-[INFO] run maven: {}/bin/mvn /home/spirals/danglot/apache-maven-3.5.4
+[INFO] run maven: /home/spirals/danglot/apache-maven-3.5.4/bin/mvn clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
 [WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
 [INFO] Scanning for projects...
 [INFO] 
@@ -682,7 +682,7 @@ main:
 [INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-io ---
 [INFO] Executing: /bin/sh -c cd '/tmp/icst-2019/september-2018/dataset/commons-io_parent' && 'git' 'rev-parse' '--verify' 'HEAD'
 [INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-io_parent
-[INFO] Storing buildNumber: e9eb2d8b5a858bb6810c941ee7891c3adcf9949d at timestamp: 1538316220733
+[INFO] Storing buildNumber: e9eb2d8b5a858bb6810c941ee7891c3adcf9949d at timestamp: 1538847960168
 [INFO] Storing buildScmBranch: master
 [INFO] 
 [INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-io ---
@@ -718,11 +718,11 @@ main:
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 12.902 s
-[INFO] Finished at: 2018-09-30T16:03:49+02:00
+[INFO] Total time: 28.449 s
+[INFO] Finished at: 2018-10-06T19:46:20+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Using /home/spirals/danglot/apache-maven-3.5.4 for maven home
-[INFO] run maven: {}/bin/mvn /home/spirals/danglot/apache-maven-3.5.4
+[INFO] run maven: /home/spirals/danglot/apache-maven-3.5.4/bin/mvn clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
 [WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
 [INFO] Scanning for projects...
 [INFO] 
@@ -750,7 +750,7 @@ main:
 [INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-io ---
 [INFO] Executing: /bin/sh -c cd '/tmp/icst-2019/september-2018/dataset/commons-io' && 'git' 'rev-parse' '--verify' 'HEAD'
 [INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-io
-[INFO] Storing buildNumber: a4705cc3c310ffb422336b319891f63eef021f1c at timestamp: 1538316242883
+[INFO] Storing buildNumber: a4705cc3c310ffb422336b319891f63eef021f1c at timestamp: 1538848007010
 [INFO] Storing buildScmBranch: master
 [INFO] 
 [INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-io ---
@@ -786,8 +786,8 @@ main:
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 12.707 s
-[INFO] Finished at: 2018-09-30T16:04:11+02:00
+[INFO] Total time: 28.019 s
+[INFO] Finished at: 2018-10-06T19:47:07+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of org.apache.commons.io.monitor.FileAlterationMonitorTestCase (2 test(s))
 [INFO] Assertion amplification of org.apache.commons.io.monitor.FileAlterationMonitorTestCase (2 test(s))
@@ -843,17 +843,17 @@ eu.stamp_project.dspot.AmplificationException: Every test methods are uncompilab
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 [INFO] Could not generate any test with assertions
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 2051
+[INFO] elapsedTime 3760
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
 [WARNING] DSpot could not obtain any amplified test method.
 [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
 [INFO] Amplification succeed.
-[INFO] Elapsed time 2480 ms
+[INFO] Elapsed time 4691 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 46.076 s
-[INFO] Finished at: 2018-09-30T16:04:14+02:00
+[INFO] Total time: 01:32 min
+[INFO] Finished at: 2018-10-06T19:47:12+02:00
 [INFO] ------------------------------------------------------------------------

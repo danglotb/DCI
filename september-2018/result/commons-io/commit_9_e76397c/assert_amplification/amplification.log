@@ -139,7 +139,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1424085, ConflictMarker.markTime=1054091, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=937905, ConflictIdSorter.topsortTime=648427, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5312688, ConflictResolver.conflictItemCount=2, DefaultDependencyCollector.collectTime=28116713, DefaultDependencyCollector.transformTime=12957025}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=666919, ConflictMarker.markTime=418675, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=396093, ConflictIdSorter.topsortTime=342504, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=19505362, ConflictResolver.conflictItemCount=2, DefaultDependencyCollector.collectTime=76885697, DefaultDependencyCollector.transformTime=23467300}
 [DEBUG] commons-io:commons-io:jar:2.6-SNAPSHOT
 [DEBUG]    junit:junit:jar:4.12:test
 [DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test
@@ -450,7 +450,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=5795926, ConflictMarker.markTime=1535365, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=4081067, ConflictIdSorter.topsortTime=237749, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=22546983, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=5103460831, DefaultDependencyCollector.transformTime=34431798}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=7103173, ConflictMarker.markTime=687160, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=22316964, ConflictIdSorter.topsortTime=164872, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=47443616, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=7193230139, DefaultDependencyCollector.transformTime=77898229}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -654,7 +654,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [WARNING] automaticBuilderName: unknown automatic builder specified in configuration, going to default.
 [INFO] Default: provided Maven automatic builder.
 [INFO] Using /home/spirals/danglot/apache-maven-3.5.4 for maven home
-[INFO] run maven: {}/bin/mvn /home/spirals/danglot/apache-maven-3.5.4
+[INFO] run maven: /home/spirals/danglot/apache-maven-3.5.4/bin/mvn clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
 [WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
 [INFO] Scanning for projects...
 [INFO] 
@@ -682,7 +682,7 @@ main:
 [INFO] --- buildnumber-maven-plugin:1.3:create (default) @ commons-io ---
 [INFO] Executing: /bin/sh -c cd /tmp/icst-2019/september-2018/dataset/commons-io_parent && svn --non-interactive info
 [INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-io_parent
-[INFO] Storing buildNumber: ?????? at timestamp: 1538316615083
+[INFO] Storing buildNumber: ?????? at timestamp: 1538848712132
 [INFO] Executing: /bin/sh -c cd /tmp/icst-2019/september-2018/dataset/commons-io_parent && svn --non-interactive info
 [INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-io_parent
 [INFO] Storing buildScmBranch: UNKNOWN_BRANCH
@@ -718,11 +718,11 @@ main:
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 11.762 s
-[INFO] Finished at: 2018-09-30T16:10:23+02:00
+[INFO] Total time: 25.724 s
+[INFO] Finished at: 2018-10-06T19:58:51+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Using /home/spirals/danglot/apache-maven-3.5.4 for maven home
-[INFO] run maven: {}/bin/mvn /home/spirals/danglot/apache-maven-3.5.4
+[INFO] run maven: /home/spirals/danglot/apache-maven-3.5.4/bin/mvn clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
 [WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
 [INFO] Scanning for projects...
 [INFO] 
@@ -750,7 +750,7 @@ main:
 [INFO] --- buildnumber-maven-plugin:1.3:create (default) @ commons-io ---
 [INFO] Executing: /bin/sh -c cd /tmp/icst-2019/september-2018/dataset/commons-io && svn --non-interactive info
 [INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-io
-[INFO] Storing buildNumber: ?????? at timestamp: 1538316635148
+[INFO] Storing buildNumber: ?????? at timestamp: 1538848755546
 [INFO] Executing: /bin/sh -c cd /tmp/icst-2019/september-2018/dataset/commons-io && svn --non-interactive info
 [INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-io
 [INFO] Storing buildScmBranch: UNKNOWN_BRANCH
@@ -786,13 +786,13 @@ main:
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 12.029 s
-[INFO] Finished at: 2018-09-30T16:10:43+02:00
+[INFO] Total time: 26.002 s
+[INFO] Finished at: 2018-10-06T19:59:34+02:00
 [INFO] ------------------------------------------------------------------------
-[WARN] 2018-09-30 16:10:44 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-30 16:10:44 Launcher - You're trying to give source code in the classpath, this should be given to addInputSource [/tmp/icst-2019/september-2018/dataset/commons-io_parent/target/test-classes/org/apache/commons/io/testtools/FileBasedTestCase.java]
-[WARN] 2018-09-30 16:10:44 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-09-30 16:10:44 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-06 19:59:36 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-06 19:59:36 Launcher - You're trying to give source code in the classpath, this should be given to addInputSource [/tmp/icst-2019/september-2018/dataset/commons-io_parent/target/test-classes/org/apache/commons/io/testtools/FileBasedTestCase.java]
+[WARN] 2018-10-06 19:59:36 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-06 19:59:36 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Amplification of org.apache.commons.io.input.TailerTest (7 test(s))
 [INFO] Assertion amplification of org.apache.commons.io.input.TailerTest (7 test(s))
 [ERROR] Error(s) during compilation:
@@ -802,17 +802,17 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-
 Loading /tmp/icst-2019/september-2018/dataset/commons-io_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: initializationError(org.apache.commons.io.input.TailerTest): Test class should have exactly one public zero-argument constructor
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 2475
+[INFO] elapsedTime 3835
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
 [WARNING] DSpot could not obtain any amplified test method.
 [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
 [INFO] Amplification succeed.
-[INFO] Elapsed time 3776 ms
+[INFO] Elapsed time 6798 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 44.324 s
-[INFO] Finished at: 2018-09-30T16:10:47+02:00
+[INFO] Total time: 01:29 min
+[INFO] Finished at: 2018-10-06T19:59:41+02:00
 [INFO] ------------------------------------------------------------------------
