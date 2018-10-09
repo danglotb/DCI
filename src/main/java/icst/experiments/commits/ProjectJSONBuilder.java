@@ -57,7 +57,7 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
         if (new File(this.absoluteOutputPath + ".json").exists()) {
             try {
                 this.projectJSON = gson.fromJson(new FileReader(this.absoluteOutputPath + ".json"), ProjectJSON.class);
-                new RepositoriesSetter(pathToRepository, project, this.projectJSON).setUpForGivenCommit(this.projectJSON.masterSha);
+                new RepositoriesSetter(pathToRepository, this.projectJSON).setUpForGivenCommit(this.projectJSON.masterSha);
             } catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
             }
@@ -175,7 +175,7 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                         new File(this.pathToRootFolder + "/").getAbsolutePath(),
                         new File(this.pathToRootFolder + "_parent/").getAbsolutePath(),
                         concernedModule,
-                        true // HERE WE COMPUTE ALSO THE COVERAGE
+                        false // HERE WE COMPUTE ALSO THE COVERAGE
                 );
                 TestSuiteSwitcherAndChecker.PATH_TEST =
                         new File(new File(this.pathToRootFolder).getAbsolutePath() + concernedModule + "/src/test/java/").exists() ?
@@ -186,7 +186,8 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                         concernedModule,
                         false
                 );
-                if (!containsAtLeastOneFailingTestCaseTsOnPPrime && !containsAtLeastOneFAilingTestCaseTsPrimeOnP) {
+                if (!containsAtLeastOneFailingTestCaseTsOnPPrime && !containsAtLeastOneFAilingTestCaseTsPrimeOnP ||
+                        containsAtLeastOneFailingTestCaseTsOnPPrime && containsAtLeastOneFAilingTestCaseTsPrimeOnP) {
                     return addToBlackListWithMessageAndCause(commitName, "No behavioral changes could be checked for {}", "NoBehavioralChanges");
                 }
                 // checks if we find test to be amplified
@@ -217,8 +218,8 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                                 new CommitJSON(commitName,
                                         parentCommit.getName(),
                                         concernedModule,
-                                        time
-                                )
+                                        time,
+                                        0)
                         );
                         LOGGER.warn("could find test to be amplified for {}", commitName.substring(0, 7));
                         return true;
