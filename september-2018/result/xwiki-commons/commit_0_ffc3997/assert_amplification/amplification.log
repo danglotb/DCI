@@ -141,7 +141,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3262618, ConflictMarker.markTime=1548916, ConflictMarker.nodeCount=271, ConflictIdSorter.graphTime=1508973, ConflictIdSorter.topsortTime=587041, ConflictIdSorter.conflictIdCount=49, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=13569409, ConflictResolver.conflictItemCount=126, DefaultDependencyCollector.collectTime=602055505, DefaultDependencyCollector.transformTime=23638568}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=2480188, ConflictMarker.markTime=1124257, ConflictMarker.nodeCount=271, ConflictIdSorter.graphTime=1308429, ConflictIdSorter.topsortTime=613308, ConflictIdSorter.conflictIdCount=49, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9960702, ConflictResolver.conflictItemCount=126, DefaultDependencyCollector.collectTime=646648598, DefaultDependencyCollector.transformTime=18131623}
 [DEBUG] org.xwiki.commons:xwiki-commons-tool-xar-plugin:maven-plugin:10.8-SNAPSHOT
 [DEBUG]    org.dom4j:dom4j:jar:2.1.1:compile
 [DEBUG]    org.codehaus.plexus:plexus-archiver:jar:3.6.0:compile
@@ -499,7 +499,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=2558285, ConflictMarker.markTime=1058923, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=2101764, ConflictIdSorter.topsortTime=208630, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=10342336, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=4809430253, DefaultDependencyCollector.transformTime=16492361}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=2510099, ConflictMarker.markTime=779939, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=1402168, ConflictIdSorter.topsortTime=137581, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6619990, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=4471405050, DefaultDependencyCollector.transformTime=11622692}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -703,7 +703,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [WARNING] automaticBuilderName: unknown automatic builder specified in configuration, going to default.
 [INFO] Default: provided Maven automatic builder.
 [INFO] Using /home/spirals/danglot/apache-maven-3.5.4 for maven home
-[INFO] run maven: {}/bin/mvn /home/spirals/danglot/apache-maven-3.5.4
+[INFO] run maven: /home/spirals/danglot/apache-maven-3.5.4/bin/mvn clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
 [WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
 [INFO] Scanning for projects...
 [INFO] 
@@ -712,7 +712,6 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ----------------------------[ maven-plugin ]----------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-tool-xar-plugin ---
-[INFO] Deleting /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/target
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-tool-xar-plugin ---
 [INFO] Skipping Rule Enforcement.
@@ -781,11 +780,11 @@ Goal prefix is specified as: 'xar'. Maven currently expects it to be 'xwiki-comm
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 8.466 s
-[INFO] Finished at: 2018-09-30T09:09:36+02:00
+[INFO] Total time: 7.825 s
+[INFO] Finished at: 2018-10-08T09:44:00+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Using /home/spirals/danglot/apache-maven-3.5.4 for maven home
-[INFO] run maven: {}/bin/mvn /home/spirals/danglot/apache-maven-3.5.4
+[INFO] run maven: /home/spirals/danglot/apache-maven-3.5.4/bin/mvn clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
 [WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
 [INFO] Scanning for projects...
 [INFO] 
@@ -794,7 +793,6 @@ Goal prefix is specified as: 'xar'. Maven currently expects it to be 'xwiki-comm
 [INFO] ----------------------------[ maven-plugin ]----------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-tool-xar-plugin ---
-[INFO] Deleting /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-tools/xwiki-commons-tool-xar/xwiki-commons-tool-xar-plugin/target
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-tool-xar-plugin ---
 [INFO] Skipping Rule Enforcement.
@@ -863,8 +861,8 @@ Goal prefix is specified as: 'xar'. Maven currently expects it to be 'xwiki-comm
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 8.047 s
-[INFO] Finished at: 2018-09-30T09:09:48+02:00
+[INFO] Total time: 7.109 s
+[INFO] Finished at: 2018-10-08T09:44:10+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of org.xwiki.tool.xar.XWikiDocumentTest (1 test(s))
 [INFO] Assertion amplification of org.xwiki.tool.xar.XWikiDocumentTest (1 test(s))
@@ -890,17 +888,17 @@ Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons
 [INFO] Generating assertions...
 [INFO] Could not generate any test with assertions
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 2532
+[INFO] elapsedTime 2024
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
 [WARNING] DSpot could not obtain any amplified test method.
 [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
 [INFO] Amplification succeed.
-[INFO] Elapsed time 2928 ms
+[INFO] Elapsed time 2282 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 32.138 s
-[INFO] Finished at: 2018-09-30T09:09:51+02:00
+[INFO] Total time: 28.154 s
+[INFO] Finished at: 2018-10-08T09:44:13+02:00
 [INFO] ------------------------------------------------------------------------
