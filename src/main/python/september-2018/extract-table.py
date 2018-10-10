@@ -13,14 +13,17 @@ def build_table(projects):
         commits = project_json["commits"]
         nb_test_to_be_amplified = 0  # DATA 2
         nb_success = [0, 0]  # DATA 3
-        nb_test_amplified = [0, 0]  # DATA 4
-        time = [0, 0]
+        nb_test_amplified = [[], []]  # DATA 4
+        time = [[], []]
         coverage = []
+        nb_test_total_project = []
+        print '\multirow{11}{*}{\\rotvertical{' + project + '}}'
         for commit_json in commits[0:10]:
             path_to_commit_folder = toolbox.get_absolute_path(
                 toolbox.prefix_result + project + '/' + toolbox.get_output_folder_for_commit(commit_json, commits)
             ) + '/'
             coverage_commit = get_diff_coverage_commit(path_to_commit_folder)
+            nb_test_total = commit_json['nb_test_per_commit']
             if coverage_commit == -1:
                 continue
             coverage.append(round(coverage_commit, 2))
@@ -30,6 +33,8 @@ def build_table(projects):
             time_mode = [0, 0]
             success_mode = [0, 0]
             size_diff = diff_size.size(path_to_commit_folder + "commit_coverage_patch.diff")
+            date = commit_json['date']
+            nb_test_modified_commit = commit_json['nbModifiedTest']
             for mode in modes:
                 path_to_mode_result = path_to_commit_folder + '/' + mode + '/'
                 if os.path.isdir(path_to_mode_result):
@@ -47,49 +52,49 @@ def build_table(projects):
                     else:
                         time_mode[modes.index(mode)] = time_mode[modes.index(mode)] + get_time(path_to_mode_result,
                                                                                                project + toolbox.suffix_parent)
-            if gray:
-                print '\\rowcolor[HTML]{EFEFEF}'
-            gray = not gray
             print_line(
                 str(commit_json["sha"])[0:7],
-                size_diff,
+                convert_date(date),
+                str(nb_test_modified_commit),
+                str(nb_test_total),
+                convert_diff_size(size_diff),
                 str(round(coverage_commit, 2)),
                 get_nb_test_to_be_amplified(path_to_commit_folder),
-                nb_test_amplified_mode[0],
-                "\\cmark" if success_mode[0] == 1 else "\\xmark",
+                '\\cmark(' + str(nb_test_amplified_mode[0]) + ')' if success_mode[0] == 1 else "0",
                 convert_time(time_mode[0]),
-                nb_test_amplified_mode[1],
-                "\\cmark" if success_mode[1] == 1 else "\\xmark",
+                '\\cmark(' + str(nb_test_amplified_mode[1]) + ')' if success_mode[1] == 1 else "0",
                 convert_time(time_mode[1])
             )
 
-            time[0] = time[0] + time_mode[0]
-            time[1] = time[1] + time_mode[1]
+            time[0].append(convert_time(time_mode[0]))
+            time[1].append(convert_time(time_mode[1]))
             nb_success[0] = nb_success[0] + success_mode[0]
             nb_success[1] = nb_success[1] + success_mode[1]
+            nb_test_total_project.append(nb_test_total)
+            nb_test_amplified[0].append(nb_test_amplified_mode[0])
+            nb_test_amplified[1].append(nb_test_amplified_mode[1])
 
         # percentage_success_aampl = compute_percentage(nb_commit, nb_success[0])
         # percentage_success_iampl = compute_percentage(nb_commit, nb_success[1])
 
-        time[0] = convert_time(time[0])
-        time[1] = convert_time(time[1])
+        # time[0] = convert_time(time[0])
+        # time[1] = convert_time(time[1])
 
         print '\\hline'
 
-        if gray:
-            print '\\rowcolor[HTML]{EFEFEF}'
-        gray = not gray
+        print '\\rowcolor[HTML]{EFEFEF}'
         print_line(
-            '\\textsc{' + project + '}',
-            (0, 0),
-            round(avg(coverage), 2),
+            'total',
+            '\\xspace{}',
+            '\\xspace{}',
+            '\\xspace{}',
+            '\\xspace{}',
+            '\\xspace{}',
             nb_test_to_be_amplified,
-            nb_test_amplified[0],
-            nb_success[0],
-            time[0],
-            nb_test_amplified[1],
-            nb_success[1],
-            time[1]
+            avg(nb_test_amplified[0]),
+            'avg(' + str(avg(time[0])) + ')',
+            avg(nb_test_amplified[1]),
+            'avg(' + str(avg(time[1])) + ')'
         )
         print '\\hline'
 
@@ -100,22 +105,35 @@ def avg(table):
     return sum(table) / float(len(table))
 
 
-def print_line(id, size_diff, diff_coverage, number_test_to_be_amplified, number_aampl, success_mark_aampl, time_aampl,
+def print_line(id,
+               date,
+               nb_modified_test,
+               nb_test,
+               size_diff,
+               diff_coverage,
+               number_test_to_be_amplified,
+               number_aampl,
+               time_aampl,
                number_iampl,
-               success_mark_iampl,
                time_iampl):
-    print "  {}  &  {} &  {}  &  {}  &  {}  &  {}  &  {}  &  {}  &  {}  &  {}\\\\".format(
+    print "&  {}  &  {} &  {}  &  {}  &  {}  &  {}  &  {}  &  {}  &  {}  &  {}  &  {}\\\\".format(
         id,
-        convert_diff_size(size_diff),
+        date,
+        nb_test,
+        nb_modified_test,
+        size_diff,
         diff_coverage,
         number_test_to_be_amplified,
         number_aampl,
-        success_mark_aampl,
         time_aampl,
         number_iampl,
-        success_mark_iampl,
         time_iampl
     )
+
+
+def convert_date(date):
+    splitted_date = date.split('/')
+    return '/'.join([splitted_date[0], splitted_date[1], splitted_date[2][2:4]])
 
 
 def convert_diff_size(size_diff):
@@ -126,8 +144,8 @@ def convert_diff_size(size_diff):
 
 
 def print_header():
-    print 'id  &  SizeDiff' + convert_diff_size(('+',
-                                                 '-')) + ' &Cov  &  \\#Test  &  \\#Aampl Tests  &  Success  &  Time(min)  &  \\#Iampl Tests  &  Success  &  Time(min)\\\\'
+    print '& id  &  date  &  \\#Test &  \\#ModifiedTest  &' + convert_diff_size(('+',
+                                                                                 '-')) + ' &  Cov  &  \\#SelectedTest  &  \\#Aampl Tests  &  Time(min)  &  \\#Iampl Tests  &  Time(min)\\\\'
     print '\\hline'
 
 
