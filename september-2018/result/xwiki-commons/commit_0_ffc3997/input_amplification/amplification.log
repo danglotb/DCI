@@ -141,7 +141,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=2601596, ConflictMarker.markTime=1175717, ConflictMarker.nodeCount=271, ConflictIdSorter.graphTime=1298703, ConflictIdSorter.topsortTime=539940, ConflictIdSorter.conflictIdCount=49, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=10300858, ConflictResolver.conflictItemCount=126, DefaultDependencyCollector.collectTime=509825369, DefaultDependencyCollector.transformTime=18911699}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=2500736, ConflictMarker.markTime=1445526, ConflictMarker.nodeCount=271, ConflictIdSorter.graphTime=1236646, ConflictIdSorter.topsortTime=585388, ConflictIdSorter.conflictIdCount=49, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=10613453, ConflictResolver.conflictItemCount=126, DefaultDependencyCollector.collectTime=747049928, DefaultDependencyCollector.transformTime=19147664}
 [DEBUG] org.xwiki.commons:xwiki-commons-tool-xar-plugin:maven-plugin:10.8-SNAPSHOT
 [DEBUG]    org.dom4j:dom4j:jar:2.1.1:compile
 [DEBUG]    org.codehaus.plexus:plexus-archiver:jar:3.6.0:compile
@@ -499,7 +499,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=2299933, ConflictMarker.markTime=658028, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=1129361, ConflictIdSorter.topsortTime=123316, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7045777, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=4583313488, DefaultDependencyCollector.transformTime=11420694}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=2805407, ConflictMarker.markTime=783287, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=2241833, ConflictIdSorter.topsortTime=140616, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7125118, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=5159267429, DefaultDependencyCollector.transformTime=13302088}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -781,8 +781,8 @@ Goal prefix is specified as: 'xar'. Maven currently expects it to be 'xwiki-comm
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 6.865 s
-[INFO] Finished at: 2018-10-08T09:45:25+02:00
+[INFO] Total time: 8.761 s
+[INFO] Finished at: 2018-10-09T10:11:29+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Using /home/spirals/danglot/apache-maven-3.5.4 for maven home
 [INFO] run maven: /home/spirals/danglot/apache-maven-3.5.4/bin/mvn clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
@@ -863,8 +863,8 @@ Goal prefix is specified as: 'xar'. Maven currently expects it to be 'xwiki-comm
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 6.570 s
-[INFO] Finished at: 2018-10-08T09:45:35+02:00
+[INFO] Total time: 7.182 s
+[INFO] Finished at: 2018-10-09T10:11:39+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of org.xwiki.tool.xar.XWikiDocumentTest (1 test(s))
 [INFO] Assertion amplification of org.xwiki.tool.xar.XWikiDocumentTest (1 test(s))
@@ -902,17 +902,17 @@ Loading /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons
 [INFO] iteration 2 / 3
 [WARNING] No test could be selected to be amplified.
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 3493
+[INFO] elapsedTime 2759
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
 [WARNING] DSpot could not obtain any amplified test method.
 [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
 [INFO] Amplification succeed.
-[INFO] Elapsed time 3736 ms
+[INFO] Elapsed time 3000 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 28.191 s
-[INFO] Finished at: 2018-10-08T09:45:39+02:00
+[INFO] Total time: 31.107 s
+[INFO] Finished at: 2018-10-09T10:11:42+02:00
 [INFO] ------------------------------------------------------------------------

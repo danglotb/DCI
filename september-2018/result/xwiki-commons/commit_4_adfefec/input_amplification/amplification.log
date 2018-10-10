@@ -149,7 +149,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1423586, ConflictMarker.markTime=731497, ConflictMarker.nodeCount=83, ConflictIdSorter.graphTime=744610, ConflictIdSorter.topsortTime=461103, ConflictIdSorter.conflictIdCount=49, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9844735, ConflictResolver.conflictItemCount=78, DefaultDependencyCollector.collectTime=606216835, DefaultDependencyCollector.transformTime=15992043}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1273848, ConflictMarker.markTime=694911, ConflictMarker.nodeCount=83, ConflictIdSorter.graphTime=716145, ConflictIdSorter.topsortTime=450093, ConflictIdSorter.conflictIdCount=49, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9401344, ConflictResolver.conflictItemCount=78, DefaultDependencyCollector.collectTime=546637046, DefaultDependencyCollector.transformTime=15527376}
 [DEBUG] org.xwiki.commons:xwiki-commons-xml:jar:10.6-SNAPSHOT
 [DEBUG]    org.jdom:jdom:jar:1.1.3:compile
 [DEBUG]    org.xwiki.commons:xwiki-commons-component-api:jar:10.6-SNAPSHOT:compile
@@ -507,7 +507,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3810503, ConflictMarker.markTime=1061094, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=2322379, ConflictIdSorter.topsortTime=128339, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6838363, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=5112427426, DefaultDependencyCollector.transformTime=14323061}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3481422, ConflictMarker.markTime=881917, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=2407955, ConflictIdSorter.topsortTime=128522, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7421845, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=4726731426, DefaultDependencyCollector.transformTime=14490223}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -728,6 +728,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-xml ---
+[INFO] Deleting /tmp/icst-2019/september-2018/dataset/xwiki-commons_parent/xwiki-commons-core/xwiki-commons-xml/target
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-xml ---
 Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/xwiki/commons/xwiki-commons-tool-enforcer-dependencies/10.6-SNAPSHOT/maven-metadata.xml
@@ -803,8 +804,8 @@ Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/xw
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 9.720 s
-[INFO] Finished at: 2018-10-08T14:07:24+02:00
+[INFO] Total time: 10.226 s
+[INFO] Finished at: 2018-10-10T02:10:05+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Using /home/spirals/danglot/apache-maven-3.5.4 for maven home
 [INFO] run maven: /home/spirals/danglot/apache-maven-3.5.4/bin/mvn clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
@@ -824,6 +825,7 @@ Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/xw
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ xwiki-commons-xml ---
+[INFO] Deleting /tmp/icst-2019/september-2018/dataset/xwiki-commons/xwiki-commons-core/xwiki-commons-xml/target
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-plugins) @ xwiki-commons-xml ---
 [INFO] Skipping Rule Enforcement.
@@ -896,16 +898,16 @@ Downloading from apache.snapshots: http://repository.apache.org/snapshots/org/xw
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 8.134 s
-[INFO] Finished at: 2018-10-08T14:07:36+02:00
+[INFO] Total time: 7.493 s
+[INFO] Finished at: 2018-10-10T02:10:15+02:00
 [INFO] ------------------------------------------------------------------------
 [WARNING] Could not match any test methods
 [WARNING] Could not match any test methods
 [INFO] Amplification failed.
-[INFO] Elapsed time 1008 ms
+[INFO] Elapsed time 1029 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 30.652 s
-[INFO] Finished at: 2018-10-08T14:07:37+02:00
+[INFO] Total time: 29.985 s
+[INFO] Finished at: 2018-10-10T02:10:17+02:00
 [INFO] ------------------------------------------------------------------------
