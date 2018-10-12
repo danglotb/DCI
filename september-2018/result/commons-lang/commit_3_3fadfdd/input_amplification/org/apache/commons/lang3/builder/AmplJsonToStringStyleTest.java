@@ -39,7 +39,8 @@ public class AmplJsonToStringStyleTest {
         ToStringBuilder o_testNestingPerson_add33752_add35496__20 = new ToStringBuilder(nestP).append("pid", nestP.pid).append("person", nestP.person);
         Assert.assertEquals("{\"pid\":\"#1@Jane\",\"person\":{\"name\":\"Jane Doe\",\"age\":25,\"smoker\":true},", ((StringBuffer) (((ToStringBuilder) (o_testNestingPerson_add33752_add35496__20)).getStringBuffer())).toString());
         Assert.assertEquals("{\"pid\":\"#1@Jane\",\"person\":{\"name\":\"Jane Doe\",\"age\":25,\"smoker\":true}}", ((ToStringBuilder) (o_testNestingPerson_add33752_add35496__20)).toString());
-        ToStringBuilder o_testNestingPerson_add33752__20 = new ToStringBuilder(nestP).append("pid", nestP.pid).append("per/on", nestP.person);
+        ToStringBuilder o_testNestingPerson_add33752__20 = 
+            new ToStringBuilder(nestP).append("pid", nestP.pid).append("per/on", nestP.person);
         Assert.assertEquals("{\"pid\":\"#1@Jane\",\"per/on\":{\"name\":\"Jane Doe\",\"age\":25,\"smoker\":true},", ((StringBuffer) (((ToStringBuilder) (o_testNestingPerson_add33752__20)).getStringBuffer())).toString());
         Assert.assertEquals("{\"pid\":\"#1@Jane\",\"per/on\":{\"name\":\"Jane Doe\",\"age\":25,\"smoker\":true}}", ((ToStringBuilder) (o_testNestingPerson_add33752__20)).toString());
         new ToStringBuilder(nestP).append("pid", nestP.pid).append("person", nestP.person).toString();
