@@ -139,7 +139,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=907826, ConflictMarker.markTime=523540, ConflictMarker.nodeCount=11, ConflictIdSorter.graphTime=545665, ConflictIdSorter.topsortTime=434305, ConflictIdSorter.conflictIdCount=9, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4221909, ConflictResolver.conflictItemCount=10, DefaultDependencyCollector.collectTime=82561945, DefaultDependencyCollector.transformTime=9248141}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=950637, ConflictMarker.markTime=927296, ConflictMarker.nodeCount=11, ConflictIdSorter.graphTime=475564, ConflictIdSorter.topsortTime=442907, ConflictIdSorter.conflictIdCount=9, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4092129, ConflictResolver.conflictItemCount=10, DefaultDependencyCollector.collectTime=101930465, DefaultDependencyCollector.transformTime=9484834}
 [DEBUG] org.apache.commons:commons-lang3:jar:3.8-SNAPSHOT
 [DEBUG]    junit:junit:jar:4.12:test
 [DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test
@@ -457,7 +457,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=4079977, ConflictMarker.markTime=950922, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=3191742, ConflictIdSorter.topsortTime=155061, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=13402110, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=4378537771, DefaultDependencyCollector.transformTime=21933380}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3978302, ConflictMarker.markTime=1827328, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=2596804, ConflictIdSorter.topsortTime=151370, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=12874110, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=5711936779, DefaultDependencyCollector.transformTime=21588213}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -670,7 +670,6 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ commons-lang3 ---
-[INFO] Deleting /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-3) @ commons-lang3 ---
 [INFO] Skipping Rule Enforcement.
@@ -689,7 +688,7 @@ main:
 [INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-lang3 ---
 [INFO] Executing: /bin/sh -c cd '/tmp/icst-2019/september-2018/dataset/commons-lang_parent' && 'git' 'rev-parse' '--verify' 'HEAD'
 [INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-lang_parent
-[INFO] Storing buildNumber: cb686673a70a6f14c35575550c48c37d19a1598b at timestamp: 1539103550205
+[INFO] Storing buildNumber: cb686673a70a6f14c35575550c48c37d19a1598b at timestamp: 1539333389736
 [INFO] Storing buildScmBranch: master
 [INFO] 
 [INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-lang3 ---
@@ -731,8 +730,8 @@ main:
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 15.670 s
-[INFO] Finished at: 2018-10-09T18:46:02+02:00
+[INFO] Total time: 20.679 s
+[INFO] Finished at: 2018-10-12T10:36:45+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Using /home/spirals/danglot/apache-maven-3.5.4 for maven home
 [INFO] run maven: /home/spirals/danglot/apache-maven-3.5.4/bin/mvn clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
@@ -744,7 +743,6 @@ main:
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ commons-lang3 ---
-[INFO] Deleting /tmp/icst-2019/september-2018/dataset/commons-lang/target
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-3) @ commons-lang3 ---
 [INFO] Skipping Rule Enforcement.
@@ -763,7 +761,7 @@ main:
 [INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-lang3 ---
 [INFO] Executing: /bin/sh -c cd '/tmp/icst-2019/september-2018/dataset/commons-lang' && 'git' 'rev-parse' '--verify' 'HEAD'
 [INFO] Working directory: /tmp/icst-2019/september-2018/dataset/commons-lang
-[INFO] Storing buildNumber: 50ce8c44e1601acffa39f5568f0fc140aade0564 at timestamp: 1539103578352
+[INFO] Storing buildNumber: 50ce8c44e1601acffa39f5568f0fc140aade0564 at timestamp: 1539333420770
 [INFO] Storing buildScmBranch: master
 [INFO] 
 [INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-lang3 ---
@@ -805,8 +803,8 @@ main:
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 15.949 s
-[INFO] Finished at: 2018-10-09T18:46:31+02:00
+[INFO] Total time: 16.179 s
+[INFO] Finished at: 2018-10-12T10:37:13+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of org.apache.commons.lang3.StringUtilsTest (1 test(s))
 [INFO] Assertion amplification of org.apache.commons.lang3.StringUtilsTest (1 test(s))
@@ -836,67 +834,25 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-
 Loading /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: testToString
 [INFO] Assertion amplification: 1 test method(s) has been successfully amplified.
-[WARN] 2018-10-09 18:46:39 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-lang/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-09 18:46:39 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-lang/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-09 18:46:39 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-lang/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 10:37:21 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-lang/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 10:37:21 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-lang/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 10:37:21 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-lang/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-lang/target/classes/:/tmp/icst-2019/september-2018/dataset/commons-lang/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/home/spirals/danglot/.m2/repository/org/easymock/easymock/3.5.1/easymock-3.5.1.jar:/home/spirals/danglot/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/home/spirals/danglot/.m2/repository/org/openjdk/jmh/jmh-core/1.19/jmh-core-1.19.jar:/home/spirals/danglot/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/home/spirals/danglot/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/spirals/danglot/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.19/jmh-generator-annprocess-1.19.jar:/tmp/icst-2019/september-2018/dataset/commons-lang/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.lang3.StringUtilsTest testToString
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: testToString
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 8625
+[INFO] elapsedTime 8140
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
 [WARNING] DSpot could not obtain any amplified test method.
 [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
-[INFO] Amplification of org.apache.commons.lang3.JavaVersionTest (2 test(s))
-[INFO] Assertion amplification of org.apache.commons.lang3.JavaVersionTest (2 test(s))
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/home/spirals/danglot/.m2/repository/org/easymock/easymock/3.5.1/easymock-3.5.1.jar:/home/spirals/danglot/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/home/spirals/danglot/.m2/repository/org/openjdk/jmh/jmh-core/1.19/jmh-core-1.19.jar:/home/spirals/danglot/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/home/spirals/danglot/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/spirals/danglot/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.19/jmh-generator-annprocess-1.19.jar:/tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.lang3.JavaVersionTest testToString:testGetJavaVersion
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/dspot/TestListener.ser
-Loading /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testToString,testGetJavaVersion
-[INFO] Run tests. (2)
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/home/spirals/danglot/.m2/repository/org/easymock/easymock/3.5.1/easymock-3.5.1.jar:/home/spirals/danglot/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/home/spirals/danglot/.m2/repository/org/openjdk/jmh/jmh-core/1.19/jmh-core-1.19.jar:/home/spirals/danglot/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/home/spirals/danglot/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/spirals/danglot/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.19/jmh-generator-annprocess-1.19.jar:/tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.lang3.JavaVersionTest testToString:testGetJavaVersion
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/dspot/TestListener.ser
-Loading /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testToString,testGetJavaVersion
-[INFO] 2 test pass, generating assertion...
-[INFO] Add observations points in passing tests.
-[INFO] Instrumentation...
- 50% |========================= ]/100% |================================================== ]-
-[INFO] Run instrumented tests. (6)
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/home/spirals/danglot/.m2/repository/org/easymock/easymock/3.5.1/easymock-3.5.1.jar:/home/spirals/danglot/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/home/spirals/danglot/.m2/repository/org/openjdk/jmh/jmh-core/1.19/jmh-core-1.19.jar:/home/spirals/danglot/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/home/spirals/danglot/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/spirals/danglot/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.19/jmh-generator-annprocess-1.19.jar:/tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.lang3.JavaVersionTest testToString_withlog0:testGetJavaVersion_withlog0:testToString_withlog1:testGetJavaVersion_withlog1:testToString_withlog2:testGetJavaVersion_withlog2
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/dspot/observations.ser
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/dspot/TestListener.ser
-Loading /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testToString_withlog0,testToString_withlog1,testToString_withlog2,testGetJavaVersion_withlog0,testGetJavaVersion_withlog1,testGetJavaVersion_withlog2
-[INFO] Generating assertions...
-[INFO] 1 new tests with assertions generated
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/home/spirals/danglot/.m2/repository/org/easymock/easymock/3.5.1/easymock-3.5.1.jar:/home/spirals/danglot/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/home/spirals/danglot/.m2/repository/org/openjdk/jmh/jmh-core/1.19/jmh-core-1.19.jar:/home/spirals/danglot/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/home/spirals/danglot/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/spirals/danglot/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.19/jmh-generator-annprocess-1.19.jar:/tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.lang3.JavaVersionTest testGetJavaVersion
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/dspot/TestListener.ser
-Loading /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testGetJavaVersion
-[INFO] Assertion amplification: 1 test method(s) has been successfully amplified.
-[WARN] 2018-10-09 18:46:44 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-lang/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-09 18:46:44 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-lang/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-09 18:46:44 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/commons-lang/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/commons-lang/target/classes/:/tmp/icst-2019/september-2018/dataset/commons-lang/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/home/spirals/danglot/.m2/repository/org/easymock/easymock/3.5.1/easymock-3.5.1.jar:/home/spirals/danglot/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/home/spirals/danglot/.m2/repository/org/openjdk/jmh/jmh-core/1.19/jmh-core-1.19.jar:/home/spirals/danglot/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/home/spirals/danglot/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/spirals/danglot/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.19/jmh-generator-annprocess-1.19.jar:/tmp/icst-2019/september-2018/dataset/commons-lang/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.apache.commons.lang3.JavaVersionTest testGetJavaVersion
-File saved to the following path: /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/dspot/TestListener.ser
-Loading /tmp/icst-2019/september-2018/dataset/commons-lang_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: testGetJavaVersion(org.apache.commons.lang3.JavaVersionTest): expected:<1[.8]> but was:<1[1]>
-[INFO] 1 amplified test methods has been selected to be kept. (global: 1)
-[INFO] elapsedTime 2594
-======= REPORT =======
-1 amplified test fails on the new versions.
-testGetJavaVersion(org.apache.commons.lang3.JavaVersionTest): expected:<1[.8]> but was:<1[1]>
-
-[INFO] Print AmplJavaVersionTest with 1?amplified test cases in /tmp/icst-2019/september-2018/result/commons-lang/commit_5_50ce8c4/assert_amplification
 [INFO] Amplification succeed.
-[INFO] Elapsed time 13758 ms
+[INFO] Elapsed time 10549 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 01:05 min
-[INFO] Finished at: 2018-10-09T18:46:45+02:00
+[INFO] Total time: 01:08 min
+[INFO] Finished at: 2018-10-12T10:37:24+02:00
 [INFO] ------------------------------------------------------------------------
