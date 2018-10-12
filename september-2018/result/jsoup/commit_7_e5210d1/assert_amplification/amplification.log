@@ -135,7 +135,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=973943, ConflictMarker.markTime=483970, ConflictMarker.nodeCount=13, ConflictIdSorter.graphTime=544916, ConflictIdSorter.topsortTime=470755, ConflictIdSorter.conflictIdCount=10, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4516744, ConflictResolver.conflictItemCount=12, DefaultDependencyCollector.collectTime=157994434, DefaultDependencyCollector.transformTime=9584373}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=934734, ConflictMarker.markTime=511714, ConflictMarker.nodeCount=13, ConflictIdSorter.graphTime=519405, ConflictIdSorter.topsortTime=447719, ConflictIdSorter.conflictIdCount=10, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4390810, ConflictResolver.conflictItemCount=12, DefaultDependencyCollector.collectTime=126584990, DefaultDependencyCollector.transformTime=9394859}
 [DEBUG] org.jsoup:jsoup:jar:1.11.3-SNAPSHOT
 [DEBUG]    junit:junit:jar:4.12:test
 [DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test
@@ -454,7 +454,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=5585630, ConflictMarker.markTime=1506290, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=2897554, ConflictIdSorter.topsortTime=191406, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=13517003, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=5163877411, DefaultDependencyCollector.transformTime=23878433}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3213472, ConflictMarker.markTime=792015, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=2531088, ConflictIdSorter.topsortTime=144158, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=12308927, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=4738310545, DefaultDependencyCollector.transformTime=19126925}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -722,8 +722,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 9.397 s
-[INFO] Finished at: 2018-10-10T14:56:08+02:00
+[INFO] Total time: 8.273 s
+[INFO] Finished at: 2018-10-12T00:42:58+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Using /home/spirals/danglot/apache-maven-3.5.4 for maven home
 [INFO] run maven: /home/spirals/danglot/apache-maven-3.5.4/bin/mvn clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
@@ -790,8 +790,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 8.837 s
-[INFO] Finished at: 2018-10-10T14:56:23+02:00
+[INFO] Total time: 8.001 s
+[INFO] Finished at: 2018-10-12T00:43:11+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of org.jsoup.parser.XmlTreeBuilderTest (14 test(s))
 [INFO] Assertion amplification of org.jsoup.parser.XmlTreeBuilderTest (14 test(s))
@@ -815,31 +815,35 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_pa
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: testDoesNotForceSelfClosingKnownTags_withlog0,testDoesNotForceSelfClosingKnownTags_withlog1,testDoesNotForceSelfClosingKnownTags_withlog2,xmlFragment_withlog0,xmlFragment_withlog1,xmlFragment_withlog2,preservesCaseByDefault_withlog0,preservesCaseByDefault_withlog1,preservesCaseByDefault_withlog2,testSimpleXmlParse_withlog0,testSimpleXmlParse_withlog1,testSimpleXmlParse_withlog2,testParseDeclarationAttributes_withlog0,testParseDeclarationAttributes_withlog1,testParseDeclarationAttributes_withlog2,cdataPreservesWhiteSpace_withlog0,cdataPreservesWhiteSpace_withlog1,cdataPreservesWhiteSpace_withlog2,testDetectCharsetEncodingDeclaration_withlog0,testDetectCharsetEncodingDeclaration_withlog1,testDetectCharsetEncodingDeclaration_withlog2,testSupplyParserToDataStream_withlog0,testSupplyParserToDataStream_withlog1,testSupplyParserToDataStream_withlog2,roundTripsCdata_withlog0,roundTripsCdata_withlog1,roundTripsCdata_withlog2,canNormalizeCase_withlog0,canNormalizeCase_withlog1,canNormalizeCase_withlog2,testSupplyParserToJsoupClass_withlog0,testSupplyParserToJsoupClass_withlog1,testSupplyParserToJsoupClass_withlog2,normalizesDiscordantTags_withlog0,normalizesDiscordantTags_withlog1,normalizesDiscordantTags_withlog2,testPopToClose_withlog0,testPopToClose_withlog1,testPopToClose_withlog2,handlesXmlDeclarationAsDeclaration_withlog0,handlesXmlDeclarationAsDeclaration_withlog1,handlesXmlDeclarationAsDeclaration_withlog2
 [INFO] Generating assertions...
+Skipping //
+
+  foo();
+//
 [INFO] 14 new tests with assertions generated
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/jsoup_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.parser.XmlTreeBuilderTest preservesCaseByDefault:testPopToClose:handlesXmlDeclarationAsDeclaration:testDoesNotForceSelfClosingKnownTags:normalizesDiscordantTags:testSupplyParserToJsoupClass:testDetectCharsetEncodingDeclaration:canNormalizeCase:testParseDeclarationAttributes:xmlFragment:cdataPreservesWhiteSpace:testSimpleXmlParse:testSupplyParserToDataStream:roundTripsCdata
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: testPopToClose,handlesXmlDeclarationAsDeclaration,testSupplyParserToJsoupClass,normalizesDiscordantTags,testDoesNotForceSelfClosingKnownTags,testSimpleXmlParse,xmlFragment,testDetectCharsetEncodingDeclaration,roundTripsCdata,canNormalizeCase,cdataPreservesWhiteSpace,preservesCaseByDefault,testParseDeclarationAttributes,testSupplyParserToDataStream
 [INFO] Assertion amplification: 14 test method(s) has been successfully amplified.
-[WARN] 2018-10-10 14:56:28 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:56:28 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:56:28 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:43:16 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:43:16 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:43:16 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup/target/classes/:/tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.parser.XmlTreeBuilderTest preservesCaseByDefault:testPopToClose:handlesXmlDeclarationAsDeclaration:testDoesNotForceSelfClosingKnownTags:normalizesDiscordantTags:testSupplyParserToJsoupClass:testDetectCharsetEncodingDeclaration:canNormalizeCase:testParseDeclarationAttributes:xmlFragment:cdataPreservesWhiteSpace:testSimpleXmlParse:testSupplyParserToDataStream:roundTripsCdata
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: testPopToClose,handlesXmlDeclarationAsDeclaration,testSupplyParserToJsoupClass,normalizesDiscordantTags,testDoesNotForceSelfClosingKnownTags,testSimpleXmlParse,xmlFragment,testDetectCharsetEncodingDeclaration,roundTripsCdata,canNormalizeCase,cdataPreservesWhiteSpace,preservesCaseByDefault,testParseDeclarationAttributes,testSupplyParserToDataStream
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 4847
+[INFO] elapsedTime 4783
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
 [WARNING] DSpot could not obtain any amplified test method.
 [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
 [INFO] Amplification succeed.
-[INFO] Elapsed time 5703 ms
+[INFO] Elapsed time 5544 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 37.645 s
-[INFO] Finished at: 2018-10-10T14:56:29+02:00
+[INFO] Total time: 34.962 s
+[INFO] Finished at: 2018-10-12T00:43:17+02:00
 [INFO] ------------------------------------------------------------------------

@@ -135,7 +135,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1129998, ConflictMarker.markTime=484286, ConflictMarker.nodeCount=13, ConflictIdSorter.graphTime=524871, ConflictIdSorter.topsortTime=449695, ConflictIdSorter.conflictIdCount=10, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4510390, ConflictResolver.conflictItemCount=12, DefaultDependencyCollector.collectTime=143496141, DefaultDependencyCollector.transformTime=9941777}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=953236, ConflictMarker.markTime=530445, ConflictMarker.nodeCount=13, ConflictIdSorter.graphTime=532809, ConflictIdSorter.topsortTime=443096, ConflictIdSorter.conflictIdCount=10, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4518911, ConflictResolver.conflictItemCount=12, DefaultDependencyCollector.collectTime=128322904, DefaultDependencyCollector.transformTime=9632509}
 [DEBUG] org.jsoup:jsoup:jar:1.12.1-SNAPSHOT
 [DEBUG]    junit:junit:jar:4.12:test
 [DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test
@@ -454,7 +454,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=5483652, ConflictMarker.markTime=1292330, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=2707453, ConflictIdSorter.topsortTime=232172, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=13953461, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=5059821649, DefaultDependencyCollector.transformTime=23867567}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3385627, ConflictMarker.markTime=1151617, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=2672657, ConflictIdSorter.topsortTime=139921, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=11598669, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=11863519317, DefaultDependencyCollector.transformTime=19089582}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -722,8 +722,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 9.313 s
-[INFO] Finished at: 2018-10-10T14:40:53+02:00
+[INFO] Total time: 8.177 s
+[INFO] Finished at: 2018-10-12T00:29:10+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Using /home/spirals/danglot/apache-maven-3.5.4 for maven home
 [INFO] run maven: /home/spirals/danglot/apache-maven-3.5.4/bin/mvn clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
@@ -790,8 +790,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 9.073 s
-[INFO] Finished at: 2018-10-10T14:41:08+02:00
+[INFO] Total time: 8.115 s
+[INFO] Finished at: 2018-10-12T00:29:24+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of org.jsoup.helper.DataUtilTest (3 test(s))
 [INFO] Assertion amplification of org.jsoup.helper.DataUtilTest (3 test(s))
@@ -824,15 +824,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_pa
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: wrongMetaCharsetFallback
 [INFO] Assertion amplification: 1 test method(s) has been successfully amplified.
-[WARN] 2018-10-10 14:41:12 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:41:12 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:41:12 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:29:28 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:29:28 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:29:28 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup/target/classes/:/tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.helper.DataUtilTest wrongMetaCharsetFallback
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: wrongMetaCharsetFallback
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 4399
+[INFO] elapsedTime 4294
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -866,15 +866,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_pa
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: handlesXmlDeclarationAsDeclaration,caseSensitiveDeclaration,handlesDodgyXmlDecl,testCommentAndDocType,testDetectCharsetEncodingDeclaration,testParseDeclarationAttributes,testSupplyParserToDataStream
 [INFO] Assertion amplification: 7 test method(s) has been successfully amplified.
-[WARN] 2018-10-10 14:41:16 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:41:16 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:41:16 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:29:32 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:29:32 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:29:32 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup/target/classes/:/tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.parser.XmlTreeBuilderTest caseSensitiveDeclaration:testSupplyParserToDataStream:handlesXmlDeclarationAsDeclaration:testDetectCharsetEncodingDeclaration:handlesDodgyXmlDecl:testCommentAndDocType:testParseDeclarationAttributes
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: handlesXmlDeclarationAsDeclaration,caseSensitiveDeclaration,handlesDodgyXmlDecl,testCommentAndDocType,testDetectCharsetEncodingDeclaration,testParseDeclarationAttributes,testSupplyParserToDataStream
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 3910
+[INFO] elapsedTime 3977
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -908,15 +908,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_pa
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: testLocation,testShiftJisRoundtrip
 [INFO] Assertion amplification: 2 test method(s) has been successfully amplified.
-[WARN] 2018-10-10 14:41:25 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:41:25 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:41:25 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:29:41 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:29:41 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:29:41 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup/target/classes/:/tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.nodes.DocumentTest testLocation:testShiftJisRoundtrip
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: testLocation,testShiftJisRoundtrip
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 8997
+[INFO] elapsedTime 8871
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -950,25 +950,25 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_pa
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: testBrokenHtml5CharsetWithASingleDoubleQuote,testNytArticle,testLowercaseUtf8Charset
 [INFO] Assertion amplification: 3 test method(s) has been successfully amplified.
-[WARN] 2018-10-10 14:41:30 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:41:30 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:41:30 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:29:46 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:29:46 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:29:46 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup/target/classes/:/tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.integration.ParseTest testLowercaseUtf8Charset:testBrokenHtml5CharsetWithASingleDoubleQuote:testNytArticle
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: testBrokenHtml5CharsetWithASingleDoubleQuote,testNytArticle,testLowercaseUtf8Charset
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 3692
+[INFO] elapsedTime 3811
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
 [WARNING] DSpot could not obtain any amplified test method.
 [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
 [INFO] Amplification succeed.
-[INFO] Elapsed time 23259 ms
+[INFO] Elapsed time 23250 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 55.320 s
-[INFO] Finished at: 2018-10-10T14:41:31+02:00
+[INFO] Total time: 59.657 s
+[INFO] Finished at: 2018-10-12T00:29:47+02:00
 [INFO] ------------------------------------------------------------------------
