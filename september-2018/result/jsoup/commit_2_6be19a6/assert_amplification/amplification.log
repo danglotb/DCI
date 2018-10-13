@@ -135,7 +135,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1087682, ConflictMarker.markTime=583918, ConflictMarker.nodeCount=13, ConflictIdSorter.graphTime=536724, ConflictIdSorter.topsortTime=451089, ConflictIdSorter.conflictIdCount=10, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4510485, ConflictResolver.conflictItemCount=12, DefaultDependencyCollector.collectTime=163744889, DefaultDependencyCollector.transformTime=10048672}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=954065, ConflictMarker.markTime=541841, ConflictMarker.nodeCount=13, ConflictIdSorter.graphTime=540373, ConflictIdSorter.topsortTime=450394, ConflictIdSorter.conflictIdCount=10, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4635722, ConflictResolver.conflictItemCount=12, DefaultDependencyCollector.collectTime=131295182, DefaultDependencyCollector.transformTime=9740578}
 [DEBUG] org.jsoup:jsoup:jar:1.12.1-SNAPSHOT
 [DEBUG]    junit:junit:jar:4.12:test
 [DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test
@@ -454,7 +454,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=7556362, ConflictMarker.markTime=1661333, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=2181562, ConflictIdSorter.topsortTime=183278, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=12260994, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=5029276917, DefaultDependencyCollector.transformTime=24033043}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=4195059, ConflictMarker.markTime=1093843, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=2959972, ConflictIdSorter.topsortTime=201388, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=14146436, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=4706427819, DefaultDependencyCollector.transformTime=22781627}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -722,8 +722,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 9.241 s
-[INFO] Finished at: 2018-10-10T14:39:30+02:00
+[INFO] Total time: 8.314 s
+[INFO] Finished at: 2018-10-12T00:27:44+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Using /home/spirals/danglot/apache-maven-3.5.4 for maven home
 [INFO] run maven: /home/spirals/danglot/apache-maven-3.5.4/bin/mvn clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
@@ -790,8 +790,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 9.002 s
-[INFO] Finished at: 2018-10-10T14:39:44+02:00
+[INFO] Total time: 8.107 s
+[INFO] Finished at: 2018-10-12T00:27:57+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of org.jsoup.parser.HtmlParserTest (3 test(s))
 [INFO] Assertion amplification of org.jsoup.parser.HtmlParserTest (3 test(s))
@@ -821,15 +821,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_pa
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: handlesXmlDeclAndCommentsBeforeDoctype,testInvalidTableContents
 [INFO] Assertion amplification: 2 test method(s) has been successfully amplified.
-[WARN] 2018-10-10 14:39:50 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:39:50 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:39:50 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:03 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:03 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:03 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup/target/classes/:/tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.parser.HtmlParserTest handlesXmlDeclAndCommentsBeforeDoctype:testInvalidTableContents
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: handlesXmlDeclAndCommentsBeforeDoctype,testInvalidTableContents
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 5781
+[INFO] elapsedTime 5766
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -857,26 +857,28 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_pa
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: convertsGoogle_withlog0,convertsGoogle_withlog1,convertsGoogle_withlog2,convertsGoogleLocation_withlog0,convertsGoogleLocation_withlog1,convertsGoogleLocation_withlog2,namespacePreservation_withlog0,namespacePreservation_withlog1,namespacePreservation_withlog2
 [INFO] Generating assertions...
+Skipping /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/test-classes/htmltests/google-ipod.html
+Skipping /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/test-classes/htmltests/google-ipod.html
 [INFO] 2 new tests with assertions generated
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/jsoup_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.helper.W3CDomTest convertsGoogleLocation:convertsGoogle
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: convertsGoogleLocation,convertsGoogle
 [INFO] Assertion amplification: 2 test method(s) has been successfully amplified.
-[WARN] 2018-10-10 14:39:57 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:39:57 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:39:57 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:10 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:10 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:10 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup/target/classes/:/tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.helper.W3CDomTest convertsGoogleLocation:convertsGoogle
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: convertsGoogle,convertsGoogleLocation(org.jsoup.helper.W3CDomTest): expected:<...r-2018/dataset/jsoup[_parent]/target/test-classes...> but was:<...r-2018/dataset/jsoup[]/target/test-classes...>
-[INFO] 1 amplified test methods has been selected to be kept. (global: 1)
-[INFO] elapsedTime 4858
+[INFO] Test has been run: convertsGoogleLocation,convertsGoogle
+[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+[INFO] elapsedTime 4884
 ======= REPORT =======
-1 amplified test fails on the new versions.
-convertsGoogleLocation(org.jsoup.helper.W3CDomTest): expected:<...r-2018/dataset/jsoup[_parent]/target/test-classes...> but was:<...r-2018/dataset/jsoup[]/target/test-classes...>
+0 amplified test fails on the new versions.
 
-[INFO] Print AmplW3CDomTest with 1?amplified test cases in /tmp/icst-2019/september-2018/result/jsoup/commit_2_6be19a6/assert_amplification
+[WARNING] DSpot could not obtain any amplified test method.
+[WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
 [INFO] Amplification of org.jsoup.parser.XmlTreeBuilderTest (2 test(s))
 [INFO] Assertion amplification of org.jsoup.parser.XmlTreeBuilderTest (2 test(s))
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/jsoup_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.parser.XmlTreeBuilderTest testSupplyParserToDataStream:testDetectCharsetEncodingDeclaration
@@ -905,15 +907,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_pa
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: testDetectCharsetEncodingDeclaration,testSupplyParserToDataStream
 [INFO] Assertion amplification: 2 test method(s) has been successfully amplified.
-[WARN] 2018-10-10 14:40:01 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:40:01 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:40:01 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:13 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:13 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:13 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup/target/classes/:/tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.parser.XmlTreeBuilderTest testSupplyParserToDataStream:testDetectCharsetEncodingDeclaration
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: testDetectCharsetEncodingDeclaration,testSupplyParserToDataStream
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 3306
+[INFO] elapsedTime 3177
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -947,15 +949,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_pa
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: testLocation,testShiftJisRoundtrip
 [INFO] Assertion amplification: 2 test method(s) has been successfully amplified.
-[WARN] 2018-10-10 14:40:09 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:40:09 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:40:09 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:22 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:22 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:22 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup/target/classes/:/tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.nodes.DocumentTest testLocation:testShiftJisRoundtrip
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: testLocation,testShiftJisRoundtrip
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 8663
+[INFO] elapsedTime 8549
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -992,15 +994,15 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_pa
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: supportsUTF8BOM,discardsSpuriousByteOrderMarkWhenNoCharsetSet,discardsSpuriousByteOrderMark,wrongMetaCharsetFallback
 [INFO] Assertion amplification: 4 test method(s) has been successfully amplified.
-[WARN] 2018-10-10 14:40:14 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:40:14 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:40:14 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:27 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:27 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:27 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup/target/classes/:/tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.helper.DataUtilTest supportsUTF8BOM:discardsSpuriousByteOrderMark:wrongMetaCharsetFallback:discardsSpuriousByteOrderMarkWhenNoCharsetSet
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: supportsUTF8BOM,discardsSpuriousByteOrderMarkWhenNoCharsetSet,discardsSpuriousByteOrderMark,wrongMetaCharsetFallback
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 3670
+[INFO] elapsedTime 3613
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -1009,21 +1011,21 @@ Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestList
 [INFO] Amplification of org.jsoup.integration.ConnectTest (20 test(s))
 [INFO] Assertion amplification of org.jsoup.integration.ConnectTest (20 test(s))
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/jsoup_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.integration.ConnectTest doesGet:doesPost:sendsRequestBody:doesPostFor307:multiCookieSet:postFiles:doesPut:sendsRequestBodyJsonWithData:sendsRequestBodyWithUrlParams:canConnectToLocalServer:multipleParsesOkAfterBufferUp:handlesRedirect:sendsRequestBodyJsonWithoutData:parseParseThrowsValidates:supportsDeflate:fetchURl:doesNotPostFor302:bodyAndBytesAvailableBeforeParse:fetchURIWithWihtespace:bodyAfterParseThrowsValidationError
-[0] INFO log - Logging initialized @479ms
-[48] INFO Server - jetty-9.2.22.v20170606
-[107] INFO ServerConnector - Started ServerConnector@2344fc66{HTTP/1.1}{0.0.0.0:36244}
-[107] INFO Server - Started @589ms
-[1343] INFO ServerConnector - Stopped ServerConnector@2344fc66{HTTP/1.1}{0.0.0.0:0}
+[0] INFO log - Logging initialized @502ms
+[47] INFO Server - jetty-9.2.22.v20170606
+[99] INFO ServerConnector - Started ServerConnector@72e43ec4{HTTP/1.1}{0.0.0.0:50447}
+[99] INFO Server - Started @603ms
+[1166] INFO ServerConnector - Stopped ServerConnector@72e43ec4{HTTP/1.1}{0.0.0.0:0}
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: multipleParsesOkAfterBufferUp,multiCookieSet,bodyAndBytesAvailableBeforeParse,parseParseThrowsValidates,fetchURIWithWihtespace,fetchURl,sendsRequestBody,bodyAfterParseThrowsValidationError,handlesRedirect,doesPost,supportsDeflate,sendsRequestBodyJsonWithoutData,sendsRequestBodyJsonWithData,doesPostFor307,canConnectToLocalServer,doesGet,doesPut,doesNotPostFor302,postFiles,sendsRequestBodyWithUrlParams(org.jsoup.integration.ConnectTest): expected:<...oup&uname=Jonathan&%[E7%99%BE=%E5%BA%A6%E4%B8%80%E4%B8%8B]> but was:<...oup&uname=Jonathan&%[3F=%3F%3F%3F]>
 [INFO] Run tests. (19)
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/jsoup_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.integration.ConnectTest doesGet:doesPost:sendsRequestBody:doesPostFor307:multiCookieSet:postFiles:doesPut:sendsRequestBodyJsonWithData:canConnectToLocalServer:multipleParsesOkAfterBufferUp:handlesRedirect:sendsRequestBodyJsonWithoutData:parseParseThrowsValidates:supportsDeflate:fetchURl:doesNotPostFor302:bodyAndBytesAvailableBeforeParse:fetchURIWithWihtespace:bodyAfterParseThrowsValidationError
-[0] INFO log - Logging initialized @492ms
-[50] INFO Server - jetty-9.2.22.v20170606
-[100] INFO ServerConnector - Started ServerConnector@2344fc66{HTTP/1.1}{0.0.0.0:54443}
-[101] INFO Server - Started @595ms
-[1451] INFO ServerConnector - Stopped ServerConnector@2344fc66{HTTP/1.1}{0.0.0.0:0}
+[0] INFO log - Logging initialized @534ms
+[51] INFO Server - jetty-9.2.22.v20170606
+[118] INFO ServerConnector - Started ServerConnector@594e5052{HTTP/1.1}{0.0.0.0:57393}
+[118] INFO Server - Started @655ms
+[1224] INFO ServerConnector - Stopped ServerConnector@594e5052{HTTP/1.1}{0.0.0.0:0}
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: multipleParsesOkAfterBufferUp,multiCookieSet,bodyAndBytesAvailableBeforeParse,fetchURIWithWihtespace,fetchURl,sendsRequestBody,handlesRedirect,doesPost,supportsDeflate,sendsRequestBodyJsonWithoutData,sendsRequestBodyJsonWithData,doesPostFor307,canConnectToLocalServer,doesGet,doesPut,doesNotPostFor302,postFiles,parseParseThrowsValidates(org.jsoup.integration.ConnectTest): Input stream already read and parsed, cannot re-read.,bodyAfterParseThrowsValidationError(org.jsoup.integration.ConnectTest): Request has already been read (with .parse())
@@ -1033,11 +1035,11 @@ Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestList
   5% |== ]/ 11% |===== ]- 17% |======== ]\ 23% |=========== ]| 29% |============== ]/ 35% |================= ]- 41% |==================== ]\ 47% |======================= ]| 52% |========================== ]/ 58% |============================= ]- 64% |================================ ]\ 70% |=================================== ]| 76% |====================================== ]/ 82% |========================================= ]- 88% |============================================ ]\ 94% |=============================================== ]|100% |================================================== ]/
 [INFO] Run instrumented tests. (51)
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/jsoup_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.integration.ConnectTest doesGet_withlog0:doesPost_withlog0:sendsRequestBody_withlog0:doesPostFor307_withlog0:multiCookieSet_withlog0:postFiles_withlog0:doesPut_withlog0:sendsRequestBodyJsonWithData_withlog0:canConnectToLocalServer_withlog0:multipleParsesOkAfterBufferUp_withlog0:handlesRedirect_withlog0:sendsRequestBodyJsonWithoutData_withlog0:supportsDeflate_withlog0:fetchURl_withlog0:doesNotPostFor302_withlog0:bodyAndBytesAvailableBeforeParse_withlog0:fetchURIWithWihtespace_withlog0:doesGet_withlog1:doesPost_withlog1:sendsRequestBody_withlog1:doesPostFor307_withlog1:multiCookieSet_withlog1:postFiles_withlog1:doesPut_withlog1:sendsRequestBodyJsonWithData_withlog1:canConnectToLocalServer_withlog1:multipleParsesOkAfterBufferUp_withlog1:handlesRedirect_withlog1:sendsRequestBodyJsonWithoutData_withlog1:supportsDeflate_withlog1:fetchURl_withlog1:doesNotPostFor302_withlog1:bodyAndBytesAvailableBeforeParse_withlog1:fetchURIWithWihtespace_withlog1:doesGet_withlog2:doesPost_withlog2:sendsRequestBody_withlog2:doesPostFor307_withlog2:multiCookieSet_withlog2:postFiles_withlog2:doesPut_withlog2:sendsRequestBodyJsonWithData_withlog2:canConnectToLocalServer_withlog2:multipleParsesOkAfterBufferUp_withlog2:handlesRedirect_withlog2:sendsRequestBodyJsonWithoutData_withlog2:supportsDeflate_withlog2:fetchURl_withlog2:doesNotPostFor302_withlog2:bodyAndBytesAvailableBeforeParse_withlog2:fetchURIWithWihtespace_withlog2
-[0] INFO log - Logging initialized @576ms
-[55] INFO Server - jetty-9.2.22.v20170606
-[111] INFO ServerConnector - Started ServerConnector@2344fc66{HTTP/1.1}{0.0.0.0:36022}
-[111] INFO Server - Started @689ms
-[3118] INFO ServerConnector - Stopped ServerConnector@2344fc66{HTTP/1.1}{0.0.0.0:0}
+[0] INFO log - Logging initialized @545ms
+[47] INFO Server - jetty-9.2.22.v20170606
+[94] INFO ServerConnector - Started ServerConnector@2344fc66{HTTP/1.1}{0.0.0.0:36023}
+[94] INFO Server - Started @641ms
+[2775] INFO ServerConnector - Stopped ServerConnector@2344fc66{HTTP/1.1}{0.0.0.0:0}
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/observations.ser
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
@@ -1047,31 +1049,31 @@ Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestList
 [INFO] 2 test fail, generating try/catch/fail blocks...
 [INFO] 19 new tests with assertions generated
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/jsoup_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.integration.ConnectTest doesGet:doesPost:sendsRequestBody:doesPostFor307:multiCookieSet:postFiles:doesPut:sendsRequestBodyJsonWithData:canConnectToLocalServer:multipleParsesOkAfterBufferUp:handlesRedirect:sendsRequestBodyJsonWithoutData:supportsDeflate:fetchURl:doesNotPostFor302:bodyAndBytesAvailableBeforeParse:fetchURIWithWihtespace:parseParseThrowsValidates_failAssert0:bodyAfterParseThrowsValidationError_failAssert1
-[0] INFO log - Logging initialized @505ms
-[49] INFO Server - jetty-9.2.22.v20170606
-[118] INFO ServerConnector - Started ServerConnector@2344fc66{HTTP/1.1}{0.0.0.0:37816}
-[118] INFO Server - Started @625ms
-[1418] INFO ServerConnector - Stopped ServerConnector@2344fc66{HTTP/1.1}{0.0.0.0:0}
+[0] INFO log - Logging initialized @532ms
+[47] INFO Server - jetty-9.2.22.v20170606
+[97] INFO ServerConnector - Started ServerConnector@2344fc66{HTTP/1.1}{0.0.0.0:38066}
+[97] INFO Server - Started @632ms
+[1235] INFO ServerConnector - Stopped ServerConnector@2344fc66{HTTP/1.1}{0.0.0.0:0}
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: multipleParsesOkAfterBufferUp,bodyAfterParseThrowsValidationError_failAssert1,multiCookieSet,fetchURIWithWihtespace,fetchURl,sendsRequestBody,doesPost,supportsDeflate,sendsRequestBodyJsonWithoutData,sendsRequestBodyJsonWithData,doesGet,doesPut,parseParseThrowsValidates_failAssert0,postFiles,bodyAndBytesAvailableBeforeParse(org.jsoup.integration.ConnectTest): expected:<...</th><td>localhost:3[6022]</td></tr>
-<tr><th>A...> but was:<...</th><td>localhost:3[7816]</td></tr>
-<tr><th>A...>,handlesRedirect(org.jsoup.integration.ConnectTest): expected:<http://localhost:3[6022]/HelloServlet> but was:<http://localhost:3[7816]/HelloServlet>,doesPostFor307(org.jsoup.integration.ConnectTest): expected:<http://localhost:3[6022]/EchoServlet> but was:<http://localhost:3[7816]/EchoServlet>,canConnectToLocalServer(org.jsoup.integration.ConnectTest): expected:<http://localhost:3[6022]/HelloServlet> but was:<http://localhost:3[7816]/HelloServlet>,doesNotPostFor302(org.jsoup.integration.ConnectTest): expected:<http://localhost:3[6022]/EchoServlet> but was:<http://localhost:3[7816]/EchoServlet>
+[INFO] Test has been run: multipleParsesOkAfterBufferUp,bodyAfterParseThrowsValidationError_failAssert1,multiCookieSet,fetchURIWithWihtespace,fetchURl,sendsRequestBody,doesPost,supportsDeflate,sendsRequestBodyJsonWithoutData,sendsRequestBodyJsonWithData,doesGet,doesPut,parseParseThrowsValidates_failAssert0,postFiles,bodyAndBytesAvailableBeforeParse(org.jsoup.integration.ConnectTest): expected:<...</th><td>localhost:3[6023]</td></tr>
+<tr><th>A...> but was:<...</th><td>localhost:3[8066]</td></tr>
+<tr><th>A...>,handlesRedirect(org.jsoup.integration.ConnectTest): expected:<http://localhost:3[6023]/HelloServlet> but was:<http://localhost:3[8066]/HelloServlet>,doesPostFor307(org.jsoup.integration.ConnectTest): expected:<http://localhost:3[6023]/EchoServlet> but was:<http://localhost:3[8066]/EchoServlet>,canConnectToLocalServer(org.jsoup.integration.ConnectTest): expected:<http://localhost:3[6023]/HelloServlet> but was:<http://localhost:3[8066]/HelloServlet>,doesNotPostFor302(org.jsoup.integration.ConnectTest): expected:<http://localhost:3[6023]/EchoServlet> but was:<http://localhost:3[8066]/EchoServlet>
 [INFO] Assertion amplification: 14 test method(s) has been successfully amplified.
-[WARN] 2018-10-10 14:40:26 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:40:26 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:40:26 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:38 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:38 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:38 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup/target/classes/:/tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.integration.ConnectTest doesGet:doesPost:sendsRequestBody:multiCookieSet:postFiles:doesPut:sendsRequestBodyJsonWithData:multipleParsesOkAfterBufferUp:sendsRequestBodyJsonWithoutData:supportsDeflate:fetchURl:fetchURIWithWihtespace:parseParseThrowsValidates_failAssert0:bodyAfterParseThrowsValidationError_failAssert1
-[0] INFO log - Logging initialized @491ms
-[48] INFO Server - jetty-9.2.22.v20170606
-[108] INFO ServerConnector - Started ServerConnector@2344fc66{HTTP/1.1}{0.0.0.0:52287}
-[108] INFO Server - Started @601ms
-[1289] INFO ServerConnector - Stopped ServerConnector@2344fc66{HTTP/1.1}{0.0.0.0:0}
+[0] INFO log - Logging initialized @466ms
+[47] INFO Server - jetty-9.2.22.v20170606
+[96] INFO ServerConnector - Started ServerConnector@2344fc66{HTTP/1.1}{0.0.0.0:34043}
+[96] INFO Server - Started @565ms
+[1182] INFO ServerConnector - Stopped ServerConnector@2344fc66{HTTP/1.1}{0.0.0.0:0}
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: multipleParsesOkAfterBufferUp,bodyAfterParseThrowsValidationError_failAssert1,multiCookieSet,fetchURIWithWihtespace,fetchURl,sendsRequestBody,doesPost,supportsDeflate,sendsRequestBodyJsonWithoutData,sendsRequestBodyJsonWithData,doesGet,doesPut,parseParseThrowsValidates_failAssert0,postFiles
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 12691
+[INFO] elapsedTime 11836
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
@@ -1099,31 +1101,33 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_pa
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: testBrokenHtml5CharsetWithASingleDoubleQuote_withlog0,testBrokenHtml5CharsetWithASingleDoubleQuote_withlog1,testBrokenHtml5CharsetWithASingleDoubleQuote_withlog2,testNytArticle_withlog0,testNytArticle_withlog1,testNytArticle_withlog2,testYahooArticle_withlog0,testYahooArticle_withlog1,testYahooArticle_withlog2,testNewsHomepage_withlog0,testNewsHomepage_withlog1,testNewsHomepage_withlog2,testBinary_withlog0,testBinary_withlog1,testBinary_withlog2,testGoogleSearchIpod_withlog0,testGoogleSearchIpod_withlog1,testGoogleSearchIpod_withlog2,testLowercaseUtf8Charset_withlog0,testLowercaseUtf8Charset_withlog1,testLowercaseUtf8Charset_withlog2
 [INFO] Generating assertions...
+Skipping /entertainment/horoscopes
+Skipping /entertainment/horoscopes
 [INFO] 7 new tests with assertions generated
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/jsoup_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.integration.ParseTest testNewsHomepage:testYahooArticle:testGoogleSearchIpod:testLowercaseUtf8Charset:testBrokenHtml5CharsetWithASingleDoubleQuote:testNytArticle:testBinary
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: testGoogleSearchIpod,testYahooArticle,testBrokenHtml5CharsetWithASingleDoubleQuote,testNytArticle,testLowercaseUtf8Charset,testBinary,testNewsHomepage
 [INFO] Assertion amplification: 7 test method(s) has been successfully amplified.
-[WARN] 2018-10-10 14:40:32 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:40:32 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:40:32 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:44 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:44 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:28:44 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup/target/classes/:/tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.integration.ParseTest testNewsHomepage:testYahooArticle:testGoogleSearchIpod:testLowercaseUtf8Charset:testBrokenHtml5CharsetWithASingleDoubleQuote:testNytArticle:testBinary
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: testGoogleSearchIpod,testYahooArticle,testBrokenHtml5CharsetWithASingleDoubleQuote,testNytArticle,testLowercaseUtf8Charset,testBinary,testNewsHomepage
 [INFO] 0 amplified test methods has been selected to be kept. (global: 0)
-[INFO] elapsedTime 4557
+[INFO] elapsedTime 4401
 ======= REPORT =======
 0 amplified test fails on the new versions.
 
 [WARNING] DSpot could not obtain any amplified test method.
 [WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
 [INFO] Amplification succeed.
-[INFO] Elapsed time 48509 ms
+[INFO] Elapsed time 47159 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 01:20 min
-[INFO] Finished at: 2018-10-10T14:40:33+02:00
+[INFO] Total time: 01:16 min
+[INFO] Finished at: 2018-10-12T00:28:45+02:00
 [INFO] ------------------------------------------------------------------------

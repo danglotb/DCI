@@ -186,8 +186,8 @@ public class ProjectJSONBuilder extends AbstractRepositoryAndGit {
                         concernedModule,
                         false
                 );
-                if (!containsAtLeastOneFailingTestCaseTsOnPPrime && !containsAtLeastOneFAilingTestCaseTsPrimeOnP ||
-                        containsAtLeastOneFailingTestCaseTsOnPPrime && containsAtLeastOneFAilingTestCaseTsPrimeOnP) {
+                if ((!containsAtLeastOneFailingTestCaseTsOnPPrime && !containsAtLeastOneFAilingTestCaseTsPrimeOnP) ||
+                        (containsAtLeastOneFailingTestCaseTsOnPPrime && containsAtLeastOneFAilingTestCaseTsPrimeOnP)) {
                     return addToBlackListWithMessageAndCause(commitName, "No behavioral changes could be checked for {}", "NoBehavioralChanges");
                 }
                 // checks if we find test to be amplified

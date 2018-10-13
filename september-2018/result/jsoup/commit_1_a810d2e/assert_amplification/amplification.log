@@ -135,7 +135,7 @@ OS name: "linux", version: "3.16.0-4-amd64", arch: "amd64", family: "unix"
   <workingDirectory default-value="false">${working-directory}</workingDirectory>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1079903, ConflictMarker.markTime=571901, ConflictMarker.nodeCount=13, ConflictIdSorter.graphTime=615232, ConflictIdSorter.topsortTime=515451, ConflictIdSorter.conflictIdCount=10, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4677520, ConflictResolver.conflictItemCount=12, DefaultDependencyCollector.collectTime=156681857, DefaultDependencyCollector.transformTime=10318311}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=947534, ConflictMarker.markTime=508161, ConflictMarker.nodeCount=13, ConflictIdSorter.graphTime=535484, ConflictIdSorter.topsortTime=450552, ConflictIdSorter.conflictIdCount=10, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4292936, ConflictResolver.conflictItemCount=12, DefaultDependencyCollector.collectTime=123204310, DefaultDependencyCollector.transformTime=9333710}
 [DEBUG] org.jsoup:jsoup:jar:1.12.1-SNAPSHOT
 [DEBUG]    junit:junit:jar:4.12:test
 [DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test
@@ -454,7 +454,7 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in https://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/spoon-public-snapshot was cached in the local repository, resolution will not be reattempted until the update interval of maven.inria.fr-snapshot has elapsed or updates are forced
 [DEBUG] Failure to find org.eclipse.platform:org.eclipse.core.runtime/maven-metadata.xml in http://maven.inria.fr/artifactory/triskell-public-release was cached in the local repository, resolution will not be reattempted until the update interval of inria has elapsed or updates are forced
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=9745071, ConflictMarker.markTime=1699319, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=3592191, ConflictIdSorter.topsortTime=269138, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=13707885, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=5282338714, DefaultDependencyCollector.transformTime=29193557}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3351484, ConflictMarker.markTime=833729, ConflictMarker.nodeCount=672, ConflictIdSorter.graphTime=2150015, ConflictIdSorter.topsortTime=141889, ConflictIdSorter.conflictIdCount=98, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=11626726, ConflictResolver.conflictItemCount=307, DefaultDependencyCollector.collectTime=4709859063, DefaultDependencyCollector.transformTime=18243738}
 [DEBUG] eu.stamp-project:dspot-maven:jar:1.1.1-SNAPSHOT:
 [DEBUG]    eu.stamp-project:dspot:jar:1.1.1-SNAPSHOT:compile
 [DEBUG]       fr.inria.gforge.spoon:spoon-core:jar:7.1.0-SNAPSHOT:compile
@@ -722,8 +722,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 9.125 s
-[INFO] Finished at: 2018-10-10T14:38:49+02:00
+[INFO] Total time: 8.304 s
+[INFO] Finished at: 2018-10-12T00:27:06+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Using /home/spirals/danglot/apache-maven-3.5.4 for maven home
 [INFO] run maven: /home/spirals/danglot/apache-maven-3.5.4/bin/mvn clean test -DskipTests dependency:build-classpath -Dmdep.outputFile=target/dspot/classpath
@@ -790,8 +790,8 @@ Downloading from stamp-maven-repository-mvn-repo: https://stamp-project.github.i
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 8.841 s
-[INFO] Finished at: 2018-10-10T14:39:04+02:00
+[INFO] Total time: 8.434 s
+[INFO] Finished at: 2018-10-12T00:27:20+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Amplification of org.jsoup.helper.W3CDomTest (5 test(s))
 [INFO] Assertion amplification of org.jsoup.helper.W3CDomTest (5 test(s))
@@ -815,31 +815,33 @@ File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_pa
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: handlesInvalidAttributeNames_withlog0,handlesInvalidAttributeNames_withlog1,handlesInvalidAttributeNames_withlog2,convertsGoogle_withlog0,convertsGoogle_withlog1,convertsGoogle_withlog2,convertsGoogleLocation_withlog0,convertsGoogleLocation_withlog1,convertsGoogleLocation_withlog2,simpleConversion_withlog0,simpleConversion_withlog1,simpleConversion_withlog2,namespacePreservation_withlog0,namespacePreservation_withlog1,namespacePreservation_withlog2
 [INFO] Generating assertions...
+Skipping /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/test-classes/htmltests/google-ipod.html
+Skipping /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/test-classes/htmltests/google-ipod.html
 [INFO] 4 new tests with assertions generated
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/test-classes:/tmp/icst-2019/september-2018/dataset/jsoup_parent/target/classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.helper.W3CDomTest convertsGoogleLocation:simpleConversion:handlesInvalidAttributeNames:convertsGoogle
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 [INFO] Test has been run: simpleConversion,convertsGoogleLocation,handlesInvalidAttributeNames,convertsGoogle
 [INFO] Assertion amplification: 4 test method(s) has been successfully amplified.
-[WARN] 2018-10-10 14:39:09 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:39:09 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
-[WARN] 2018-10-10 14:39:09 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:27:25 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:27:25 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
+[WARN] 2018-10-12 00:27:25 Launcher - You specified the directory /tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies in source classpath, please note that only class files will be considered. Jars and subdirectories will be ignored.
 [INFO] Run: java -classpath /tmp/icst-2019/september-2018/dataset/jsoup/target/classes/:/tmp/icst-2019/september-2018/dataset/jsoup/target/test-classes/:/home/spirals/danglot/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/spirals/danglot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/spirals/danglot/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/home/spirals/danglot/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/tmp/icst-2019/september-2018/dataset/jsoup/target/dspot/dependencies/:/home/spirals/danglot/.m2/repository/eu/stamp-project/test-runner/1.1.0/test-runner-1.1.0-jar-with-dependencies.jar eu.stamp_project.testrunner.runner.test.TestRunner org.jsoup.helper.W3CDomTest convertsGoogleLocation:simpleConversion:handlesInvalidAttributeNames:convertsGoogle
 File saved to the following path: /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
 Loading /tmp/icst-2019/september-2018/dataset/jsoup_parent/target/dspot/TestListener.ser
-[INFO] Test has been run: simpleConversion,handlesInvalidAttributeNames,convertsGoogle,convertsGoogleLocation(org.jsoup.helper.W3CDomTest): expected:<...r-2018/dataset/jsoup[_parent]/target/test-classes...> but was:<...r-2018/dataset/jsoup[]/target/test-classes...>
-[INFO] 1 amplified test methods has been selected to be kept. (global: 1)
-[INFO] elapsedTime 5476
+[INFO] Test has been run: simpleConversion,convertsGoogleLocation,handlesInvalidAttributeNames,convertsGoogle
+[INFO] 0 amplified test methods has been selected to be kept. (global: 0)
+[INFO] elapsedTime 5365
 ======= REPORT =======
-1 amplified test fails on the new versions.
-convertsGoogleLocation(org.jsoup.helper.W3CDomTest): expected:<...r-2018/dataset/jsoup[_parent]/target/test-classes...> but was:<...r-2018/dataset/jsoup[]/target/test-classes...>
+0 amplified test fails on the new versions.
 
-[INFO] Print AmplW3CDomTest with 1?amplified test cases in /tmp/icst-2019/september-2018/result/jsoup/commit_1_a810d2e/assert_amplification
+[WARNING] DSpot could not obtain any amplified test method.
+[WARNING] You can customize the following options: --amplifiers, --test-criterion, --iteration, --budgetizer etc, and retry with a new configuration.
 [INFO] Amplification succeed.
-[INFO] Elapsed time 5972 ms
+[INFO] Elapsed time 5777 ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 37.674 s
-[INFO] Finished at: 2018-10-10T14:39:10+02:00
+[INFO] Total time: 35.671 s
+[INFO] Finished at: 2018-10-12T00:27:26+02:00
 [INFO] ------------------------------------------------------------------------
