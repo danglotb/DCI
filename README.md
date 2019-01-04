@@ -1,4 +1,4 @@
-# ICST-2019
+# DCI
 
 ## Selection of commits
 
